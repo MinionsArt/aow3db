@@ -7,11 +7,17 @@ html{
 
 }
 
+h2{
+    color:aliceblue;
+}
+
+p{
+    color:aliceblue;
+}
 
 
-.researchSkillSlot .tooltiptext {
+.researchResultImage .tooltiptext {
   visibility: hidden;
-  width: 120px;
   background-color: black;
   color: #fff;
   text-align: left;
@@ -19,12 +25,13 @@ html{
   border: 1px solid darkgrey;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
   padding: 10px 10px;
-  position: absolute;
+    position: absolute;
   z-index: 3;
-     width: fit-content;
+    min-width: 100px;
+    width: fit-content;
   top: 50%;
   left: 50%;
-  margin-left: 60px;
+  margin-left: 20px;
   
   transition: opacity 0.5s;
 }
@@ -38,6 +45,7 @@ html{
     background-color:  #002159;
      border-radius: 10px 0px 10px 10px;
      border: 2px solid aliceblue; 
+    
    }
 
 .researchSkillSlotIcon {
@@ -66,7 +74,50 @@ width: 75px;
 }
 
 
-.researchSkillSlot:hover .tooltiptext {
+.researchResultImage:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.turns{
+    float:right;
+    position: relative;
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 10px;
+}
+
+.researchName{
+     float:left;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 5px;
+    position: relative;
+    height: 15px;
+}
+.sprite_turn{
+    background: url(http://cloud3.gw2skills.net/img/ico/profession/ui/revenant.png) no-repeat 0 0;
+    height: 20px;
+    width: 20px;
+}
+
+.researchResult{
+      margin-left: 15%;
+    margin-top: 30px;
+    height: 40px;
+    position: absolute;
+}
+
+.researchResultImage{
+    position:relative;
+    float: left;
+ margin-left: 10px;
+    text-align: center;
+   width: 50px;
+    height: 50px;
+    background: url(http://cloud3.gw2skills.net/img/ico/profession/ui/elementalist.png) no-repeat 0 0;}
+    
+    background-color:  #002159;
+   
+         border: 2px solid aliceblue; 
 }
