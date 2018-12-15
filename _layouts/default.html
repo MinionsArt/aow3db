@@ -10,9 +10,9 @@
 <h2>Tooltip</h2>
 <p>Move the mouse over the text below:</p>
 
-<div class="researchSkillSlot"><div class="researchSkillSlotIcon"><img class="img-circle" onmouseover="showResearch(1);" onmouseout="hideResearch()" border-radius= "40px 40px 40px 40px" src="huh.png" alt="Smiley" width="60" height="60"></div>Perimeter Security <div class="block"></div>
-    <img onmouseover="showResearch(1);" onmouseout="hideResearch()" border="0" src="huh.png" alt="Smiley" width="32" height="32">
-  <span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span>
+<div class="researchSkillSlot"><div class="researchSkillSlotIcon"><img class="img-circle" onmouseover="showResearch(1);"  border-radius= "40px 40px 40px 40px" src="huh.png" alt="Smiley" width="60" height="60"></div><p class="researchName">Perimeter Security </p> <p class="turns">4 <img class="sprite_turn"></p>
+  <div class="researchResult"><div class="researchResultImage"><img onmouseover="showResearch(0);"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div><div class="researchResultImage"><img onmouseover="showResearch(1);"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div><div class="researchResultImage"><img onmouseover="showResearch(2);"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div></div>
+  
 </div>
     <br>
    
@@ -24,32 +24,39 @@
  
 
     
-<script>
+<script type="text/javascript">
+  // $(document).ready(function(e) {
+  //    $.each(jsonUnits.units, function(i, item) {
+   // alert(jsonUnits.units[i].abilities[0].txt);
+//});
+  // });
+
     
         var data = [ 
  {"Id": 10004, "PageName": "club"}, 
  {"Id": 10040, "PageName": "qaz"}, 
  {"Id": 10059, "PageName": "jjjjjjj"}
 ];
-    
-    
-   $(document).ready(function(e) {    
-       $.each(data, function(i, item) {
-    var text2 = $("<p></p>").text(item.PageName);
-             $('.block:last').before(text2);
-});
+         
+  // $(document).ready(function(e) {    
+  //     $.each(jsonObject, function(i, item) {
+  //  var text2 = $("<p></p>").text(item.car);
+  //           $('.block:last').before(text2);
+//});
         //var txt2 = $("<p></p>").text("Text."); 
-    $('.block:last').before('<div class="block"><input type="text" /><span class="remove">Remove Option</span></div>', txt2);
-});
+  //  $('.block:last').before('<div class="block"><input type="text" /><span class="remove">Remove Option</span></div>', txt2);
+//});
 //$('.optionBox').on('click','.remove',function() {
 // 	$(this).parent().remove();
 //});
     
-function showResearch(a){
-    var skill = document.getElementById(a);
+   
     
-    $(".tooltipicon").attr("src", skill.getAttribute('skill-icon'));
-    $(".tooltipname").text(skill.getAttribute('skill-name'));
+function showResearch(a){
+    //var skill = document.getElementById(a);
+    var research = jsonUnits.units[a];
+    //$(".tooltipicon").attr("src", research.getAttribute('hp'));
+    $(".tooltipname").text(research.hp);
     
    // document.getElementsByClassName("tooltipname").text = skill.getAttribute('skill-name');
     
@@ -57,7 +64,7 @@ function showResearch(a){
 }        
 function hideResearch(a){
     
-    $(".tooltipicon").attr("src", "");
+    $(".tooltipicon").attr("src", null);
     $(".tooltipname").text("");    
 }
     
