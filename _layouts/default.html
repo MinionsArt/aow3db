@@ -3,19 +3,38 @@
  <head>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-       <script type="text/javascript" language="javascript" src="Units.json"></script>
+      <script type="text/javascript" language="javascript" src="UnitAbilities.json"></script>
+     
+     <script type="text/javascript" language="javascript" src="Units.json"></script>
  </head>
+    
 <body style="text-align:center;">
 
 <h2>Tooltip</h2>
-<p>Move the mouse over the text below:</p>
-
-<div class="researchSkillSlot"><div class="researchSkillSlotIcon"><img class="img-circle" onmouseover="showResearch(1);"  border-radius= "40px 40px 40px 40px" src="huh.png" alt="Smiley" width="60" height="60"></div><p class="researchName">Perimeter Security </p> <p class="turns">4 <img class="sprite_turn"></p>
-  <div class="researchResult"><div class="researchResultImage"><img onmouseover="showResearch(0);"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div><div class="researchResultImage"><img onmouseover="showResearch(1);"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div><div class="researchResultImage"><img onmouseover="showResearch(2);"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div></div>
-  
-</div>
-    <br>
+<p>Move the mouse over the text below:</p> 
+    
+    <!–– research test -->
+ <div class="researchSkillSlot"><div class="researchSkillSlotIcon"><img class="img-circle" onmouseover="showResearch(5);"  border-radius= "40px 40px 40px 40px" src="huh.png" alt="Smiley" width="60" height="60"></div><p class="researchName">Perimeter Security </p> <p class="turns">4 <img class="sprite_turn"></p>
+  <div class="researchResult"><div class="researchResultImage"><img onmouseover="showAbility('walking');"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div><div class="researchResultImage"><img onmouseover="showUnit('Tigran Prowler');"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div><div class="researchResultImage"><img onmouseover="showUnit('Tigran Cheetah');"  border="0" src="huh.png" alt="Smiley" width="50" height="50"><span class="tooltiptext"><img class = "tooltipicon" src="huh.png" alt="name" width="32" height="32"> <p class="tooltipname">2</p><br> </span></div></div>
    
+    
+    
+    <!–– unit test -->
+</div>
+    <div> </div>
+  
+    <br>
+    <div class="unitImage"><img  onmouseover="showResearch(5);"  border-radius= "40px 40px 40px 40px" src="https://66.media.tumblr.com/dd964942a3a9da72805363f94d3f72df/tumblr_inline_nmjd23VeaQ1qkvi0e_500.gif" alt="Smiley" ></div>
+    
+    <div class="unitStats">
+   <div class="basestats">
+       <p class="hp_number">5 </p><div class="sprite_hp"></div><p class="shield_number">3 </p><div class="sprite_shield"></div><p class="armor_number">3 </p><div class="sprite_armor"></div>
+       <p class="mp_number">3 </p><div class="sprite_mp"></div></div>
+    <p class="unit_name"> Name</p>
+    
+    <br>
+    <div class="abilityText"> ability text</div>
+        </div>
     
     
 <div id='1' skill-name='skill name' skill-icon='halloweenKat2.png' skill-cost="20"></div>
@@ -50,18 +69,60 @@
 // 	$(this).parent().remove();
 //});
     
+
+    
+function showUnit(a){
+    var hp, mp, shield, armor, name, j, abilityname = "";
+    $('.abilityholders').remove();
+    for (i in jsonUnits.units) {
+    if(a == jsonUnits.units[i].name){    
+        name = jsonUnits.units[i].name;
+      hp = jsonUnits.units[i].hp;   
+        mp = jsonUnits.units[i].mp;   
+        shield = jsonUnits.units[i].shield;   
+        armor = jsonUnits.units[i].armor;  
+        for(j in jsonUnits.units[i].abilities){
+           abilityname = showAbility(jsonUnits.units[i].abilities[j].name);
+           var txt2 = $("<div class='abilityholders'></div>").text(abilityname); 
+            $('.abilityText').before ($(txt2 ) );
+        }
+    }
+  
+}
    
-    
-function showResearch(a){
-    //var skill = document.getElementById(a);
-    var research = jsonUnits.units[a];
     //$(".tooltipicon").attr("src", research.getAttribute('hp'));
-    $(".tooltipname").text(research.hp);
+    $(".hp_number").text(hp);
+    $(".mp_number").text(mp);
+    $(".shield_number").text(shield);
+    $(".armor_number").text(armor);
+     $(".unit_name").text(name);
     
+   // $(".abilityText").text(abilityname);
    // document.getElementsByClassName("tooltipname").text = skill.getAttribute('skill-name');
+        
+}      
     
+
     
-}        
+function showAbility(a){
+var abilityName, abilityIcon, abilityDamage, i = "";
+for (i in jsonUnitAbilities.abilities) 
+{
+    if(a == jsonUnitAbilities.abilities[i].name){
+        abilityName = jsonUnitAbilities.abilities[i].description;  
+        //abilityIcon += jsonUnitAbilities.abilities[i].icon;
+        //abilityDamage += jsonUnitAbilities.abilities[i].damage;
+        
+    } 
+   
+  }
+    return abilityName;
+    
+//$(".tooltipicon").attr("src",abilityIcon);
+//$(".tooltipname").text(abilityName + abilityDamage);
+   // $(".abilityText").text(abilityName);
+   // return abilityName;
+}      
 function hideResearch(a){
     
     $(".tooltipicon").attr("src", null);
