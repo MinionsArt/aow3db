@@ -1,61 +1,70 @@
 var jsonUnits = {
 "units": [{
     "hp": "5",
-    "title": "start",
+    "name": "Tigran Cheetah",
+   "armor" : "333",
+    "shield" : "6666",
+            "mp": "34",
     "abilities": [
         {
-            "txt": "Work"
+            "name": "walking"
         },
         {
-            "txt": "Time Sense"
+            "name": "laser_attack"
         },
         {
-            "txt": "Dicipline"
+            "name": "spoekie"
         },
         {
-            "txt": "Confidence"
+            "name": "walking"
         },
         {
-            "txt": "CrossFunctional"
+            "name": "laser_attack"
         }
     ]
 },
     {"hp": "50",
-    "title": "3",
+    "name": "Tigran Prowler",
+     "armor" : "333",
+    "shield" : "6666",
+            "mp": "34",
     "abilities": [
         {
-            "txt": "Work2"
+            "name": "spoekie"
         },
         {
-            "txt": "Time Sense2"
+            "name": "walking"
         },
         {
-            "txt": "Dicipline2"
+            "name": "laser_attack"
         },
         {
-            "txt": "Confidence2"
+            "name": "walking"
         },
         {
-            "txt": "CrossFunctional2"
+            "name": "spoekie"
         }
     ]},
            {"hp": "500",
-    "title": "30",
+    "name": "30",
+             "armor" : "333",
+    "shield" : "6666",
+            "mp": "34",
     "abilities": [
         {
-            "txt": "Work2"
+            "name": "Work2"
         },
         {
-            "txt": "Time Sense2"
+            "name": "Time Sense2"
         },
         {
-            "txt": "Dicipline2"
+            "name": "Dicipline2"
         },
         {
-            "txt": "Confidence2"
+            "name": "Confidence2"
         },
         {
-            "txt": "CrossFunctional2"
+            "name": "CrossFunctional2"
         }
     ]}
  ]
