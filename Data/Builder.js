@@ -187,7 +187,7 @@ function showUnit(a) {
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].name) {
             icon = document.getElementById("uniticon");
-            icon.setAttribute("src", "/Icons/UnitIcons/" + a + ".png");
+            icon.setAttribute("src", "Icons/UnitIcons/" + a + ".png");
             unitName = document.getElementById("unitstring");
             unitName.innerHTML =  jsonUnits.units[i].string;
             descr = document.getElementById("description");
