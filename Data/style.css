@@ -620,7 +620,7 @@ x-frost {
 x-medal_trooper {
     min-height: 20px;
     min-width: 20px;
-    background-image: url("data:Icons/Text/medal_trooper.png");
+    background-image: url(/Testing/Icons/Text/medal_trooper.png);
     position: absolute;
     background-size: 20px;
 
