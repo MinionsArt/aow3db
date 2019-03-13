@@ -639,7 +639,7 @@ x-medal_veteran {
 x-medal_expert {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/medal_expert.png);
+    background-image: url(/Icons/Text/medal_expert.png);
     position: absolute;
     background-size: 20px;
 
