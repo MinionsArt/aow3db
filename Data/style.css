@@ -450,7 +450,7 @@ x-bio {
 x-fire {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Fire.png);
+    background-image: url(../Icons/Text/fire.png);
     position: absolute;
     background-size: 20px;
 
@@ -458,7 +458,7 @@ x-fire {
 x-fire_res {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/fire_res.png);
+    background-image: url(../Icons/Text/fire_res.png);
     position: absolute;
     background-size: 20px;
 
@@ -467,7 +467,7 @@ x-fire_res {
 x-frost_res {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Frost_Resistance_Text.png);
+    background-image: url(../Icons/Text/Frost_Resistance_Text.png);
     position: absolute;
     background-size: 20px;
 
@@ -493,7 +493,7 @@ x-arc {
 x-physical {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Physical.png);
+    background-image: url(../Icons/Text/physical.png);
     position: absolute;
     background-size: 20px;
 
@@ -502,7 +502,7 @@ x-physical {
 x-turn {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Turn.png);
+    background-image: url(../Icons/Text/turn.png);
     position: absolute;
     background-size: 20px;
 
@@ -511,7 +511,7 @@ x-turn {
 x-resistance {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/resistance.png);
+    background-image: url(../Icons/Text/resistance.png);
     position: absolute;
     background-size: 20px;
 
@@ -521,7 +521,7 @@ x-resistance {
 x-defense {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/defense.png);
+    background-image: url(../Icons/Text/defense.png);
     position: absolute;
     background-size: 20px;
 
@@ -531,7 +531,7 @@ x-defense {
 x-gold {
     min-height: 15px;
     min-width: 15px;
-    background-image: url(Icons/Text/gold.png);
+    background-image: url(../Icons/Text/gold.png);
     position: absolute;
     background-size: 15px;
 
@@ -541,7 +541,7 @@ x-gold {
 x-hp {
     min-height: 15px;
     min-width: 15px;
-    background-image: url(Icons/Text/hp.png);
+    background-image: url(../Icons/Text/hp.png);
     position: absolute;
     background-size: 15px;
 
@@ -550,7 +550,7 @@ x-hp {
 x-mp {
     min-height: 15px;
     min-width: 15px;
-    background-image: url(Icons/Text/mp.png);
+    background-image: url(../Icons/Text/mp.png);
     position: absolute;
     background-size: 15px;
 
@@ -560,7 +560,7 @@ x-mp {
 x-production {
     min-height: 15px;
     min-width: 15px;
-    background-image: url(Icons/Text/Production.png);
+    background-image: url(../Icons/Text/Production.png);
     position: absolute;
     background-size: 15px;
 
@@ -570,7 +570,7 @@ x-production {
 x-accuracy {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Accuracy.png);
+    background-image: url(../Icons/Text/Accuracy.png);
     position: absolute;
     background-size: 20px;
     align-content: center;
@@ -581,7 +581,7 @@ x-accuracy {
 x-range {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Range.png);
+    background-image: url(../Icons/Text/Range.png);
     position: absolute;
     background-size: 20px;
 
@@ -591,7 +591,7 @@ x-range {
 x-cosmite {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Cosmite.png);
+    background-image: url(../Icons/Text/Cosmite.png);
     position: absolute;
     background-size: 20px;
 
@@ -601,7 +601,7 @@ x-cosmite {
 x-kineticres {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/kineticRes.png);
+    background-image: url(../Icons/Text/kineticRes.png);
     position: absolute;
     background-size: 20px;
 
@@ -611,7 +611,7 @@ x-kineticres {
 x-frost {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/frost.png);
+    background-image: url(../Icons/Text/frost.png);
     position: absolute;
     background-size: 20px;
 
@@ -620,7 +620,7 @@ x-frost {
 x-medal_trooper {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(/Testing/Icons/Text/medal_trooper.png);
+    background-image: url(../Icons/Text/medal_trooper.png);
     position: absolute;
     background-size: 20px;
 
@@ -630,7 +630,7 @@ x-medal_trooper {
 x-medal_veteran {
     min-height: 20px;
     min-width: 20px;
-    background-image: url('~/Icons/Text/medal_veteran.png');
+    background-image: url(../Icons/Text/medal_veteran.png);
     position: absolute;
     background-size: 20px;
 
@@ -639,7 +639,7 @@ x-medal_veteran {
 x-medal_expert {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(/Icons/Text/medal_expert.png);
+    background-image: url(../Icons/Text/medal_expert.png);
     position: absolute;
     background-size: 20px;
 
@@ -648,7 +648,7 @@ x-medal_expert {
 x-medal_elite {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/metal_elite.png);
+    background-image: url(../Icons/Text/metal_elite.png);
     position: absolute;
     background-size: 20px;
 
@@ -668,7 +668,7 @@ x-medal_champion {
 x-repeating {
     min-height: 20px;
     min-width: 80px;
-    background-image: url(Icons/Text/Repeating.png);
+    background-image: url(../Icons/Text/Repeating.png);
     position: absolute;
     background-size: 80px;
 
