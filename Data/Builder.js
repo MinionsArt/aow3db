@@ -16,7 +16,7 @@ function addUnitTypeIcon(a) {
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -60,7 +60,7 @@ function addAbilityslot(a) {
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp;" + abilityDam + "</span>" + "</p>"+
                 abilityRange + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Abilities/" + abilityIcon + ".png");
+            imag.setAttribute("src", "Icons/Abilities/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
