@@ -541,7 +541,7 @@ x-gold {
 x-hp {
     min-height: 15px;
     min-width: 15px;
-    background-image: url(Icons/Text/HP.png);
+    background-image: url(Icons/Text/hp.png);
     position: absolute;
     background-size: 15px;
 
@@ -611,7 +611,7 @@ x-kineticres {
 x-frost {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/Frost.png);
+    background-image: url(Icons/Text/frost.png);
     position: absolute;
     background-size: 20px;
 
