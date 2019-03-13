@@ -1,0 +1,159 @@
+var jsonUnits = {
+    "units": [{
+            "hp": "33",
+            "name": "draconian_hatchling",
+            "string": "Draconian Hatchling",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "1: 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
+            "cost": "40 <x-gold></x-gold> ",
+            "origin-research": "",
+         "origin-building": "",
+            "description": "\"Draconian eggs are quite delicious on toast, but beware! Many a young cook has discovered their cooking eggs hatching, and what came out was not a sweet little baby animal, as is the case in most of the tasty animal world. I once lost an entire breakfast crew, slaughtered by the unexpected hatching of a clutch of eggs. Their fiery spit and nasty bite had overwhelmed my cooks. By the time I discovered them, most of the hatchlings had fed so well that I had to call the city guard to remove fully transformed draconian flamers, crushers and chargers. Which good cooks know are far too gamey to be good eating.\" <br> <i>--Cooking all of Nature, by Emibeek, Ogre Gourmet</i>\"",
+            "image_link": 'draconian_hatchling.gif',
+         "level_trooper":  "    <ul> \
+                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+                                </ul>",
+           "level_veteran":  "    <ul> \
+                                <li>+1 <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ranged</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+                                </ul>",
+                   "level_expert":  "    <ul> \
+                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-resistance> </x-resistance> </li>\
+                                </ul>",
+                  "level_elite":  "    <ul> \
+                                <li>+1 <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ranged</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+                                </ul>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike_6P_1F"
+        },
+                {
+                    "slug": "fire_spit_11F"
+        },
+              
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_draconian"
+        },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_60"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+              
+                ],  "resistances": [
+                {
+                    
+        }
+
+        ]
+
+},
+       {
+            "hp": "46",
+            "name": "draconian_crusher",
+            "string": "Draconian Crusher",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "1: 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
+            "cost": "50 <x-gold></x-gold>",
+            "origin-research": "",
+         "origin-building": "Barracks",
+            "description": "\"I once heard a drunken Draconian Crusher tell of a secret legend of an ancient dragon whose image was trapped in a magic mirror. The mirror shattered over the first draconian nest, with pieces of it falling into each egg. The Draconian telling the tale was particularly proud that the Crushers were given the dragon's haunches. Apparantly it symbolized the craeture's strength. He than rose and split the table with his club, and made a terrible mess of the bar. It took three bouncers to restrain him. I suppose he was right.\" <br> <i>--Secret Draconian Lore, by Lord Milligan</i>\"",
+            "image_link": 'draconian_crusher.gif',
+         "level_trooper":  "    <ul> \
+                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+                                </ul>",
+           "level_veteran":  "    <ul> \
+                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li>+20% <x-fire> </x-fire>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protection </li>\
+                                </ul>",
+                   "level_expert":  "    <ul> \
+                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-resistance> </x-resistance> </li>\
+                                </ul>",
+                  "level_elite":  "    <ul> \
+                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li>+20% <x-fire> </x-fire>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protection </li>\
+<li>Tireless</li>\
+                                </ul>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike_12P"
+        }
+              
+               ],
+            "passives": [
+                {
+                    "slug": "improved_wall_climbing"
+        },
+                {
+                    "slug": "projectile_resistance"
+        },
+                   {
+                    "slug": "overwhelm"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+              
+                ],  "resistances": [
+                {
+                    
+        }
+
+        ]
+
+}
+]
+}

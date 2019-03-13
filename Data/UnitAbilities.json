@@ -1,0 +1,176 @@
+var jsonUnitAbilities = {
+    "abilities": [
+         {
+            "slug": "melee_strike_12P",
+            "name": "Melee Strike",
+            "description": "<p>Strikes target enemy unit\
+                                <ul> \
+                                <li>Can trigger up to 3 times</li>\
+                                <li>Allows retaliations</li>\
+                                </ul>",
+
+            "damage": "12 <x-physical></x-physical>",
+            "icon_name": "melee_strike",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "melee_strike_6P_1F",
+            "name": "Melee Strike",
+            "description": "<p>Strikes target enemy unit\
+                                <ul> \
+                                <li>Can trigger up to 3 times</li>\
+                                <li>Allows retaliations</li>\
+                                </ul>",
+
+            "damage": "6 <x-physical></x-physical> &nbsp;&nbsp;&nbsp; 1 <x-fire></x-fire>",
+            "icon_name": "melee_strike",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "fire_spit_11F",
+            "name": "Fire Spit",
+            "description":  "<p>Spits fire at target enemy unit\
+                                <ul> \
+                                <li>Does less damage at long range</li>\
+                                <li>Straight Shot</li>\
+                                </ul>",
+            "damage": "11 <x-fire></x-fire>",
+            "icon_name": "fire_spit",
+            "range": "Medium",
+
+       },
+          {
+            "slug": "draconian",
+            "name": "Draconian",
+            "description":  "<p>This unit is a member of the Draconian race, and has:\
+                                <ul> \
+                                <li>Fast Healing</li>\
+                                <li>20 % <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp; Protection</li>\
+<li>20 % <x-frost> </x-frost> &nbsp;&nbsp;&nbsp;&nbsp; Weakness</li>\
+<li>Likes Barrens and Lava</li>\
+<li>Dislikes Arctic Terrain</li>\
+<li>Hates Blighted Terrain</li>\
+                                </ul>",
+            "damage": "11 <x-fire></x-fire>",
+            "icon_name": "draconian",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "evolve_draconian",
+            "name": "Evolve (Draconian)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+
+       },
+          {
+            "slug": "fast_healing",
+            "name": "Fast Healing",
+            "description": "This unit gains +6<x-hp></x-hp> &nbsp;&nbsp;&nbsp; regeneration per <x-turn></x-turn> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turn.",
+            "damage": "",
+            "icon_name": "fast_healing",
+            "range": "",
+
+
+       },
+        
+         {
+            "slug": "irregular",
+            "name": "Irregular",
+            "description": "This unit is an irregular",
+            "damage": "",
+            "icon_name": "irregular",
+            "range": "",
+
+
+       },
+           {
+            "slug": "walking",
+            "name": "Walking",
+            "description": "This unit is able to walk",
+            "damage": "",
+            "icon_name": "walking",
+            "range": "",
+
+
+       },
+        {
+            "slug": "fire_protection_60",
+            "name": "<span style =\"color: lawngreen\">60% <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp; Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<ul> \
+                                <li>The unit will take 60% less damage from<x-fire></x-fire>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will have a 60% lower chance to affect this unit.</li>\
+                                </ul>",
+
+            "icon_name": "fire_protection",
+       },
+        {
+            "slug": "fire_protection_20",
+            "name": "<span style =\"color: lawngreen\">20% <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp; Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<ul> \
+                                <li>The unit will take 20% less damage from<x-fire></x-fire>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will have a 20% lower chance to affect this unit.</li>\
+                                </ul>",
+
+            "icon_name": "fire_protection",
+
+
+
+       },
+        {
+            "slug": "frost_weakness_20",
+            "name": "<span style =\"color: deeppink\">20% <x-frost> </x-frost> &nbsp;&nbsp;&nbsp;&nbsp; Weakness </span>",
+            "type": "Repeating <x-repeating>  </x-repeating>",
+            "description": "<ul> \
+                                <li>The unit will take 20% more damage from<x-frost></x-frost>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;based attacks.</li>\
+                                <li>Status effects that check against <x-frost_res></x-frost_res>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will have a 20% higher chance to affect this unit.</li>\
+                                </ul>",
+            "icon_name": "frost_weakness",
+
+
+       },
+ 
+        {
+            "slug": "infantry",
+            "name": "Infantry",
+            "description": "This unit is infantry and has Wall Climbing",
+            "damage": "",
+            "icon_name": "infantry",
+
+       },
+          {
+            "slug": "improved_wall_climbing",
+            "name": "Improved Wall Climbing",
+            "description": "This unit is able to climb city walls, without suffering a Wall Climbing Penalty",
+            "damage": "",
+            "icon_name": "improved_wall_climbing",
+
+       },
+          
+          {
+            "slug": "projectile_resistance",
+            "name": "Projectile Resistance",
+            "description": "This unit is gains +2 <x-defense> </x-defense>&nbsp;&nbsp;&nbsp;&nbsp; against ranged attacks.",
+            "damage": "",
+            "icon_name": "projectile_resistance",
+
+       },
+               {
+            "slug": "overwhelm",
+            "name": "Overwhelm",
+            "description": "This unit is gains +3 <x-physical> </x-physical>&nbsp;&nbsp;&nbsp;&nbsp; against Pikeman, and (Sun) Shieled units.",
+            "damage": "",
+            "icon_name": "overwhelm",
+
+       },
+    
+
+]
+}
