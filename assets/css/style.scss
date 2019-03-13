@@ -2,223 +2,700 @@
 ---
 
 @import "{{ site.theme }}";
-html{
-  background-color: dimgrey;
+html {
+    background-color: #040605;
+    cursor: url(/UI/Cursor.png), auto;
 
 }
 
-h2{
-    color:aliceblue;
+#menu {
+    background: #343434;
+    color: #eee;
+    height: 35px;
+    border-bottom: 4px solid #eeeded
 }
 
-p{
-    color:aliceblue;
+#menu ul,
+#menu li {
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none
 }
 
+#menu ul {
+    height: 35px
+}
 
-.researchResultImage .tooltiptext {
-  visibility: hidden;
-  background-color: black;
-  color: #fff;
-  text-align: justify;
-    white-space: nowrap;
-  border-radius: 10px 0px 10px 0px;
-  border: 1px solid darkgrey;
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
-  padding: 10px 10px;
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+    font: bold 12px Arial;
+    text-shadow: 0 -1px 0 #000;
+    text-transform: uppercase
+}
+
+#menu li:first-child {
+    border-left: none
+}
+
+#menu a {
     display: block;
+    line-height: 35px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #eee;
+}
+
+#menu li:hover > a,
+#menu li a:hover {
+    background: #111
+}
+
+#menu input {
+    display: none;
+    margin: 0 0;
+    padding: 0 0;
+    width: 80px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer
+}
+
+#menu label {
+    font: bold 30px Arial;
+    display: none;
+    width: 35px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+}
+
+#menu label span {
+    font-size: 12px;
     position: absolute;
-  z-index: 3;
-    min-width: 100px;
-    max-width: 500px;
-    min-height: 50px;
-    
-  margin-left: 20px;
-  
-  transition: opacity 0.5s;
+    left: 35px
 }
 
-.researchSkillSlot{
-    color: aliceblue;
-    width: 280px;
-    height: 90px;
-    position: relative;
-  display: inline-block;
-    background-color:  #002159;
-     border-radius: 10px 0px 10px 10px;
-     border: 2px solid aliceblue; 
-    
-    
-   }
-
-.researchSkillSlot:hover .researchSkillSlotIcon{
-    background-color: #8e5616;
-    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.3);
-  
-    
-}
-.researchSkillSlot:hover{
-    background-color: #8e5616;
-    box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.3);
-  
-}
-
-.researchSkillSlotIcon {
-    margin-left: -35px;
+#menu ul.menus {
+    height: auto;
+    width: 180px;
+    background: #111;
     position: absolute;
-   margin-top: 5px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-width: 75px;
-    height: 75px;
-    z-index: 2;
-    background-color:  #002159;
-     border-radius: 40px 40px 40px 40px;
-         border: 2px solid aliceblue; 
-
-}
-.img-circle {
-    border-radius: 50%;
-      border: 2px solid aliceblue; 
-    margin-left: auto;
-    margin-top: 5px;
-    margin-right: auto;
-    display: inline-block;
-    vertical-align: middle;
+    z-index: 99;
+    display: none;
+    border: 0;
 }
 
-
-.researchResultImage:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+#menu ul.menus li {
+    display: block;
+    width: 100%;
+    font: 12px Arial;
+    text-transform: none;
 }
 
-.researchResultImage:hover .researchSkillSlotIcon {
-  visibility: visible;
-  opacity: 1;
+#menu li:hover ul.menus {
+    display: block
 }
 
-.turns{
-    float:right;
-    position: relative;
-    margin-top: 5px;
-    margin-right: 10px;
-    height: 10px;
+#menu a.home {
+    background: #c00;
 }
 
-.researchName{
-     float:left;
-    margin-left: 20%;
-    text-align: center;
-    margin-top: 5px;
-    position: relative;
-    height: 15px;
+#menu a.prett {
+    padding: 0 27px 0 14px
 }
 
-.basestats{
-    height: 20px;
-    width: 500px;
-}
-
-.hp_number{
-    display:inline-block;
-    position: relative;
-    height: 20px;
-    
-}
-
-.mp_number{
-    display:inline-block;
-    position: relative;
-    height: 20px;
-    
-}
-.armor_number{
-    display:inline-block;
-    position: relative;
-    height: 20px;
-    
-}
-
-.shield_number{
-    display:inline-block;
-    position: relative;
-    height: 20px;
-    
-}
-.sprite_turn{
-    background-image: url("https://66.media.tumblr.com/4e362967193f3ce1cf03e1236462afc5/tumblr_inline_nnqvmdxaU01qkvi0e_540.png");/* replace */ 
-    display:inline-block;
-    position: relative;
-    height: 20px;
-    width: 20px;
-}
-
-.sprite_hp{
-    background: url("https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png") ; /* replace */ 
-    height: 20px;
-    display:inline-block;
-    position: relative;
-    width: 20px;
-}
-
-.sprite_shield{
-    background: url("https://66.media.tumblr.com/f46d4c36999a6ae6cb62e5f73755c3de/tumblr_inline_nmg0hw5d1Q1qkvi0e_540.png") ; /* replace */ 
-    display:inline-block;
-    position: relative;
-    height: 20px;
-    width: 20px;
-}
-
-.sprite_armor{
-    background: url("https://66.media.tumblr.com/2d9b846a27c8102f5fc556c6257b38ba/tumblr_inline_nmg0hq7g4E1qkvi0e_540.png") ; /* replace */ 
-    height: 20px;
-    display:inline-block;
-    position: relative;
-    width: 20px;
-}
-
-.sprite_mp{
-    background: url("https://66.media.tumblr.com/cf96a27256e0f536312256895cef642a/tumblr_inline_nmg0i4r8S91qkvi0e_540.png") ; /* replace */ 
-     display:inline-block;
-    position: relative;
-    height: 20px;
-    width: 20px;
-}
-
-.abilityholders{
-    color: aqua;
-}
-
-.abilityText{
-    color:aquamarine;
-}
-
-.researchResult{
-      margin-left: 15%;
-    margin-top: 30px;
-    height: 40px;
+#menu a.prett::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 6px 5px;
+    border-color: #eee transparent transparent transparent;
     position: absolute;
+    top: 15px;
+    right: 9px
 }
 
-.researchResultImage{
-   display:inline-block;
-    position: relative;
-    margin-left: 10px;
-    text-align: center;
-   width: 50px;
-    height: 50px;
-    background: "huh.png" no-repeat 0 0; /* replace */ 
+#menu ul.menus a:hover {
+    background: #333;
 }
 
-.unitImage{
-     display:inline-block;
-    position: relative;
+#menu ul.menus .submenu {
+    display: none;
+    position: absolute;
+    left: 180px;
+    background: #111;
+    top: 0;
+    width: 180px;
 }
 
-.unitStats{
-     display:inline-block;
-    position: relative;
+#menu ul.menus .submenu li {
+    background: #111;
 }
+
+#menu ul.menus .has-submenu:hover .submenu {
+    display: block;
+}
+
+p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 15px;
+
+}
+
+.unit_description {
+    font-family: "Noto Sans", Times, sans-serif;
+    color: white;
+    position: relative;
+    margin-top: -240px;
+    padding: 10px;
    
+}
+.unit_description_bg{
+     background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    height: 240px;
+    margin-top: -90px;
+   filter: blur(8px);
+}
+
+.unit_image {
+    float: left;
+   
+}
+
+.unit_image_holder {
+    position: relative;
+    width: 350px;
+    float: left;
+   background-image: url("/UI/AbilityListBackground.png");
+    background-size: 300px;
+    
+    border: 2px solid white;
+    border-color: rgba(255, 255, 150, 0.4);
+    margin: 5px;
+}
+
+.unit_levelup {
+    position: relative;
+    width: 230px;
+    float: left;
+   background-image: url("/UI/AbilityListBackground.png");
+    background-size: 300px;
+    
+    border: 2px solid white;
+    border-color: rgba(255, 255, 150, 0.4);
+    margin: 5px;
+}
+
+.unit_card {
+    background-color: #19313d;
+    color: white;
+    width: 940px;
+    height: 600px;
+    padding: 35px;
+
+    margin: auto;
+}
+
+.unit_elite_skill {
+    overflow: hidden;
+    width: 310px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(100, 100, 20, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.unit_passiveslot {
+    overflow: hidden;
+    width: 310px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(50, 50, 100, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.unit_abilityslot {
+    overflow: hidden;
+    width: 310px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.unit_typeslot {
+    overflow: hidden;
+    width: 310px;
+    height: 40px;
+    margin: 1px;
+    background-color: rgba(60, 0, 20, 0.5);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Change the color of links on hover */
+.unit_abilityslot:hover {
+    background-color: darkslategray;
+
+}
+/* Change the color of links on hover */
+.unit_typeslot:hover {
+    background-color: darkmagenta;
+
+}
+
+/* Change the color of links on hover */
+.unit_passiveslot:hover {
+    background-color: darkblue;
+
+}
+
+/* Change the color of links on hover */
+.unit_elite_skill:hover {
+    background-color: darkslateblue;
+
+}
+
+.unit_ability_holder {
+    background-image: url("/UI/AbilityListBackground.png");
+    background-size: 320px;
+   float:left;
+    width: 310px;
+    border: 2px solid white;
+    border-color: rgba(105, 255, 255, 0.4);
+    margin: 5px;
+
+}
+
+.unit_stats {
+    height: 30px;
+ 
+    top: 0px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    position: relative;
+    background-color: rgba(10, 10, 10, 0.4);
+}
+
+.unit_types {
+    height: 40px;
+    position: relative;
+    top: -20px;
+    padding-top: 5px;
+    clear: left;
+    width: 300px;
+    border: 5px solid black;
+    background-color: rgba(10, 10, 40, 0.4);
+
+}
+
+.unit_ability_icon {
+    float: left;
+}
+
+.unit_stat_icon {
+    position: relative;
+    align-content: left;
+    padding-right: 10px;
+    float: left;
+    height;
+    left: 10%
+}
+
+.unit_stat_icon .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid darkgrey;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    min-width: 100px;
+    max-width: 400px;
+    min-height: 50px;
+    margin-left: 50px;
+
+    transition: opacity 0.5s;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.unit_stat_icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+.unit_prod {
+    color: bisque;
+    font-size: 12px;
+    position: relative;
+    top: -15px;
+    padding: 10px;
+    text-align: left;
+}
+
+.ability_damage {
+    float: right;
+    font-size: 20px;
+    align-content: right;
+
+    margin-top: 10px;
+    display: inline-block;
+
+    min-width: 70px;
+}
+
+
+.unit_name {
+    font-size: 18px;
+    position: relative;
+    top: -15px;
+    text-align: center;
+    text-shadow: 2px 2px 5px cyan;
+}
+
+.tooltip {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+.tooltiptext {
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+    min-width: 100px;
+    max-width: 400px;
+    min-height: 50px;
+    margin-left: 100px;
+
+    transition: opacity 0.5s;
+
+}
+
+.unittype_icon {
+    position: relative;
+    float: left;
+
+}
+
+/* Tooltip text */
+.unittype_icon .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid darkgrey;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 40px;
+    margin-left: 40px;
+
+    transition: opacity 0.5s;
+
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.unittype_icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+x-bio {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Biochemical.png);
+    position: absolute;
+    background-size: 20px;
+
+}
+
+x-fire {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Fire.png);
+    position: absolute;
+    background-size: 20px;
+
+}
+x-fire_res {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/fire_res.png);
+    position: absolute;
+    background-size: 20px;
+
+}
+
+x-frost_res {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Frost_Resistance_Text.png);
+    position: absolute;
+    background-size: 20px;
+
+}
+
+x-psionic {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(huh.png);
+    position: absolute;
+    background-size: 20px;
+
+}
+
+x-arc {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(huh.png);
+    position: absolute;
+    background-size: 20px;
+}
+
+x-physical {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Physical.png);
+    position: absolute;
+    background-size: 20px;
+
+}
+
+x-turn {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Turn.png);
+    position: absolute;
+    background-size: 20px;
+
+}
+
+x-resistance {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/resistance.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-defense {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/defense.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-gold {
+    min-height: 15px;
+    min-width: 15px;
+    background-image: url(Icons/Text/gold.png);
+    position: absolute;
+    background-size: 15px;
+
+
+}
+
+x-hp {
+    min-height: 15px;
+    min-width: 15px;
+    background-image: url(Icons/Text/HP.png);
+    position: absolute;
+    background-size: 15px;
+
+
+}
+x-mp {
+    min-height: 15px;
+    min-width: 15px;
+    background-image: url(Icons/Text/mp.png);
+    position: absolute;
+    background-size: 15px;
+
+
+}
+
+x-production {
+    min-height: 15px;
+    min-width: 15px;
+    background-image: url(Icons/Text/Production.png);
+    position: absolute;
+    background-size: 15px;
+
+
+}
+
+x-accuracy {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Accuracy.png);
+    position: absolute;
+    background-size: 20px;
+    align-content: center;
+
+
+}
+
+x-range {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Range.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-cosmite {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Cosmite.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-kineticres {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/kineticRes.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-frost {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/Frost.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+x-medal_trooper {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/medal_trooper.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-medal_veteran {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/medal_veteran.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+x-medal_expert {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/medal_expert.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+x-medal_elite {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/metal_elite.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-medal_champion {
+    min-height: 20px;
+    min-width: 20px;
+    background-image: url(Icons/Text/medal_champion.png);
+    position: absolute;
+    background-size: 20px;
+
+
+}
+
+x-repeating {
+    min-height: 20px;
+    min-width: 80px;
+    background-image: url(Icons/Text/Repeating.png);
+    position: absolute;
+    background-size: 80px;
+
+
+}
+
+x-singleaction {
+    min-height: 20px;
+    min-width: 80px;
+    background-image: url(Icons/Text/Single_action.png);
+    position: absolute;
+    background-size: 80px;
+
+
+}
+
+x-fullcontinue {
+    min-height: 20px;
+    min-width: 80px;
+    background-image: url(Icons/Text/fullaction_continue.png);
+    position: absolute;
+    background-size: 80px;
+
+
+}
+
