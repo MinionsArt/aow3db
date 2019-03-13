@@ -630,7 +630,7 @@ x-medal_trooper {
 x-medal_veteran {
     min-height: 20px;
     min-width: 20px;
-    background-image: url('~Icons/Text/medal_veteran.png');
+    background-image: url('~/Icons/Text/medal_veteran.png');
     position: absolute;
     background-size: 20px;
 
