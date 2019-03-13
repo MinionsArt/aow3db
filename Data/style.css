@@ -658,7 +658,7 @@ x-medal_elite {
 x-medal_champion {
     min-height: 20px;
     min-width: 20px;
-    background-image: url(Icons/Text/medal_champion.png);
+    background-image: url(../Icons/Text/medal_champion.png);
     position: absolute;
     background-size: 20px;
 
