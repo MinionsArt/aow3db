@@ -19,7 +19,7 @@ function addUnitTypeIcon(a,b) {
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "./Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -66,7 +66,7 @@ function addAbilityslot(a,b) {
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp;" + abilityDam + "</span>" + "</p>"+
                 abilityRange + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Abilities/" + abilityIcon + ".png");
+            imag.setAttribute("src", "./Icons/Abilities/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -104,7 +104,7 @@ function addPassiveslot(a,b) {
          
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "./Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -145,7 +145,7 @@ function addResistanceSlot(a,b) {
 
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Resistances/" + abilityIcon + ".png");
+            imag.setAttribute("src", "./Icons/Resistances/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -180,7 +180,7 @@ function addEliteSkill(a) {
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "UI/elite_rank.png");
+            imag.setAttribute("src", "./Icons/UI/elite_rank.png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -200,13 +200,13 @@ function showUnit(a) {
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].name) {
             icon = document.getElementById("uniticon");
-            icon.setAttribute("src", "/Icons/UnitIcons/" + a + ".png");
+            icon.setAttribute("src", "./Icons/UnitIcons/" + a + ".png");
             unitName = document.getElementById("unitstring");
             unitName.innerHTML =  jsonUnits.units[i].string;
             descr = document.getElementById("description");
             descr.innerHTML = jsonUnits.units[i].description;
             imagelink = document.getElementById("vid")
-            imagelink.setAttribute('src', "/UnitPreviews/" + jsonUnits.units[i].image_link);
+            imagelink.setAttribute('src', "./UnitPreviews/" + jsonUnits.units[i].image_link);
             hp = document.getElementById("hp")
             hp.innerHTML = jsonUnits.units[i].hp + "/" +jsonUnits.units[i].hp;
             armor = document.getElementById("defense")
