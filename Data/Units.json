@@ -6,7 +6,7 @@ var jsonUnits = {
             "armor": "9",
             "shield": "8",
             "mp": "28",
-            "tier": "1: 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
+            "tier": "I - 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
             "cost": "40 <x-gold></x-gold> ",
             "origin-research": "",
          "origin-building": "",
@@ -81,16 +81,15 @@ var jsonUnits = {
             "armor": "9",
             "shield": "8",
             "mp": "28",
-            "tier": "1: 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
+            "tier": "I - 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
             "cost": "50 <x-gold></x-gold>",
             "origin-research": "",
          "origin-building": "Barracks",
             "description": "\"I once heard a drunken Draconian Crusher tell of a secret legend of an ancient dragon whose image was trapped in a magic mirror. The mirror shattered over the first draconian nest, with pieces of it falling into each egg. The Draconian telling the tale was particularly proud that the Crushers were given the dragon's haunches. Apparantly it symbolized the craeture's strength. He than rose and split the table with his club, and made a terrible mess of the bar. It took three bouncers to restrain him. I suppose he was right.\" <br> <i>--Secret Draconian Lore, by Lord Milligan</i>\"",
             "image_link": 'draconian_crusher.gif',
-         "level_trooper":  "    <ul> \
-                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+         "level_trooper":  "   <ul> <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
  <li>+2 <x-hp> </x-hp> </li>\
-                                </ul>",
+                                ",
            "level_veteran":  "    <ul> \
                                 <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
  <li>+2 <x-hp> </x-hp> </li>\
