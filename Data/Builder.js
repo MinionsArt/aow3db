@@ -53,7 +53,7 @@ function addUnitTypeIcon(a, b, c) {
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -103,7 +103,7 @@ function addAbilityslot(a, unique, damage, c) {
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDam + "</span>" + "</p>" +
                 abilityRange + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Abilities/" + abilityIcon + ".png");
+            imag.setAttribute("src", "Icons/Abilities/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -141,7 +141,7 @@ function addPassiveslot(a, b, c) {
 
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -182,7 +182,7 @@ function addResistanceSlot(a, b, c) {
 
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/Resistances/" + abilityIcon + ".png");
+            imag.setAttribute("src", "Icons/Resistances/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -199,38 +199,6 @@ function addResistanceSlot(a, b, c) {
 
 }
 
-function addEliteSkill(a, b) {
-    var abilityName, abilityIcon, abilityDescr = "";
-    for (j in jsonUnitAbilities.abilities) {
-        if (a == jsonUnitAbilities.abilities[j].slug) {
-            abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].slug;
-            abilityDescr = jsonUnitAbilities.abilities[j].description;
-
-            var btn = document.createElement("DIV");
-            btn.className = "unit_elite_skill";
-            var imag = document.createElement("IMG");
-            imag.className = "unit_ability_icon";
-            var spa = document.createElement("SPAN");
-            var tex = document.createElement("DIV");
-            tex.className = "tooltip";
-            tex.innerHTML = abilityName;
-            spa.className = "tooltiptext";
-            spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Icons/UI/elite_rank.png");
-            imag.setAttribute("width", "40");
-            imag.setAttribute("height", "40");
-
-            document.getElementById("unitabholder_" + b).appendChild(btn);
-            tex.appendChild(spa);
-
-            btn.appendChild(imag);
-            btn.append(tex);
-
-        }
-    }
-
-}
 
 
 
@@ -240,13 +208,13 @@ function showUnit(a) {
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].name) {
             icon = document.getElementById("uniticon_" + a);
-            icon.setAttribute("src", "/Icons/UnitIcons/" + a + ".png");
+            icon.setAttribute("src", "Icons/UnitIcons/" + a + ".png");
             unitName = document.getElementById("unitstring_" + a);
             unitName.innerHTML = jsonUnits.units[i].string;
             descr = document.getElementById("description_" + a);
             descr.innerHTML = jsonUnits.units[i].description;
             imagelink = document.getElementById("vid_" + a);
-            imagelink.setAttribute('src', "/PreviewGifs/" + jsonUnits.units[i].image_link);
+            imagelink.setAttribute('src', "PreviewGifs/" + jsonUnits.units[i].image_link);
             hp = document.getElementById("hp_" + a);
             hp.innerHTML = jsonUnits.units[i].hp + "/" + jsonUnits.units[i].hp;
             armor = document.getElementById("defense_" + a);
@@ -255,10 +223,10 @@ function showUnit(a) {
             shield.innerHTML = jsonUnits.units[i].shield;
             mpicon = document.getElementById("mp_icon_" + a);
             if (jsonUnits.units[i].movement_type == "walking") {
-                mpicon.setAttribute('src', "/Icons/Text/mp.png");
+                mpicon.setAttribute('src', "Icons/Text/mp.png");
             }
             if (jsonUnits.units[i].movement_type == "flying") {
-                mpicon.setAttribute('src', "/Icons/Text/flying.png");
+                mpicon.setAttribute('src', "Icons/Text/flying.png");
             }
             mp = document.getElementById("mp_" + a);
             mp.innerHTML = jsonUnits.units[i].mp;
@@ -269,7 +237,7 @@ function showUnit(a) {
             if (jsonUnits.units[i].origin_building != "") {
                 origin_building = document.getElementById("originbuilding_" + a);
                 var aTag = document.createElement('a');
-                aTag.setAttribute('href', "/Pages/Other/buildings.html#" + jsonUnits.units[i].origin_building);
+                aTag.setAttribute('href', "Pages/Other/buildings.html#" + jsonUnits.units[i].origin_building);
                 aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_building;
                 origin_building.appendChild(aTag);
             }
@@ -369,7 +337,7 @@ function searchUnits(keyword) {
 
     spa.className = "tooltiptext";
     spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-    imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
+    imag.setAttribute("src", "Icons/Passives/" + abilityIcon + ".png");
     imag.setAttribute("width", "40");
     imag.setAttribute("height", "40");
 
