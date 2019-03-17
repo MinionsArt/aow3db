@@ -1,85 +1,108 @@
 var jsonUnitAbilities = {
     "abilities": [
-         {
-            "slug": "melee_strike_12P",
+
+        {
+            "slug": "melee_strike",
             "name": "Melee Strike",
             "description": "<p>Strikes target enemy unit\
-                                <ul> \
                                 <li>Can trigger up to 3 times</li>\
-                                <li>Allows retaliations</li>\
-                                </ul>",
+                                <li>Allows retaliations</li>",
 
-            "damage": "12 <x-physical></x-physical>",
+            "damage": "",
             "icon_name": "melee_strike",
             "range": "Touch",
 
        },
         {
-            "slug": "melee_strike_6P_1F",
-            "name": "Melee Strike",
-            "description": "<p>Strikes target enemy unit\
-                                <ul> \
-                                <li>Can trigger up to 3 times</li>\
-                                <li>Allows retaliations</li>\
-                                </ul>",
-
-            "damage": "6 <x-physical></x-physical> &nbsp;&nbsp;&nbsp; 1 <x-fire></x-fire>",
-            "icon_name": "melee_strike",
-            "range": "Touch",
-
-       },
-        {
-            "slug": "fire_spit_11F",
+            "slug": "fire_spit",
             "name": "Fire Spit",
-            "description":  "<p>Spits fire at target enemy unit\
-                                <ul> \
+            "description": "<p>Spits fire at target enemy unit\
                                 <li>Does less damage at long range</li>\
-                                <li>Straight Shot</li>\
-                                </ul>",
-            "damage": "11 <x-fire></x-fire>",
+                                <li>Straight Shot</li>",
+            "damage": "",
             "icon_name": "fire_spit",
             "range": "Medium",
 
        },
-          {
+        {
+            "slug": "fire_bomb",
+            "name": "Fire Bomb",
+            "description": "<p>Launches a volley of fire explosions at target unit\
+                                <li>Deals damage in a 1 hex radius</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "fire_bomb",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "fire_bolts",
+            "name": "Fire Bolts",
+            "description": "<p>Shoots fire bolts at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "fire_bolts",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "steal_enchantment",
+            "name": "Steal Enchantment",
+            "description": "<p>Removes all enchantments from target unit and moves them to this unit.\<li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "steal_enchantment",
+            "range": "Short",
+
+       },
+        {
             "slug": "draconian",
             "name": "Draconian",
-            "description":  "<p>This unit is a member of the Draconian race, and has:\
-                                <ul> \
+            "description": "<p>This unit is a member of the Draconian race, and has:\
                                 <li>Fast Healing</li>\
-                                <li>20 % <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp; Protection</li>\
-<li>20 % <x-frost> </x-frost> &nbsp;&nbsp;&nbsp;&nbsp; Weakness</li>\
+                                <li>20 % <x-fire> </x-fire> Protection</li>\
+<li>20 % <x-frost> </x-frost> Weakness</li>\
 <li>Likes Barrens and Lava</li>\
 <li>Dislikes Arctic Terrain</li>\
-<li>Hates Blighted Terrain</li>\
-                                </ul>",
+<li>Hates Blighted Terrain</li>",
             "damage": "11 <x-fire></x-fire>",
             "icon_name": "draconian",
             "range": "Medium",
 
        },
         {
+            "slug": "dragon_ancestry",
+            "name": "Dragon Ancestry",
+            "description": "<p>Bestows High Morale,  40%<x-fire></x-fire> Protection, and Fire Strike on target friendly Draconian unit until end of combat.\                            <li>Can only be used once per battle.</li>\
+                            ",
+            "damage": "",
+            "icon_name": "dragon_ancestry",
+            "range": "Touch",
+
+       },
+        {
             "slug": "evolve_draconian",
             "name": "Evolve (Draconian)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Crusher, Charger</li>\\<li>Flamer, Elder</li>\\<li>Flyer</li>\
+                            >",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
 
-
        },
-          {
+        {
             "slug": "fast_healing",
             "name": "Fast Healing",
-            "description": "This unit gains +6<x-hp></x-hp> &nbsp;&nbsp;&nbsp; regeneration per <x-turn></x-turn> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turn.",
+            "description": "This unit gains +6<x-hp></x-hp> regeneration per <x-turn></x-turn> Turn.",
             "damage": "",
             "icon_name": "fast_healing",
             "range": "",
 
 
        },
-        
-         {
+
+        {
             "slug": "irregular",
             "name": "Irregular",
             "description": "This unit is an irregular",
@@ -89,7 +112,7 @@ var jsonUnitAbilities = {
 
 
        },
-           {
+        {
             "slug": "walking",
             "name": "Walking",
             "description": "This unit is able to walk",
@@ -100,24 +123,150 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "support",
+            "name": "Support",
+            "description": "This unit is a Support unit and has True Sight",
+            "damage": "",
+            "icon_name": "support",
+
+
+
+       },
+        {
+            "slug": "cavalry",
+            "name": "Cavalry",
+            "description": "The unit is a Cavalry unit, is Mounted and has Charge",
+            "damage": "",
+            "icon_name": "cavalry",
+
+
+
+       },
+        {
+            "slug": "mounted",
+            "name": "Mounted",
+            "description": "The unit is Mounted",
+            "damage": "",
+            "icon_name": "mounted",
+
+
+
+       },
+        {
+            "slug": "fire_aura",
+            "name": "Fire Aura",
+            "description": "Every time an enemy unit performs a Melee or Touch attack against the unit, the enemy receives 5 <x-fire></x-fire> damage and has a 9 <x-fire_res> </x-fire_res> chance to be Immolated.",
+            "damage": "",
+            "icon_name": "fire_aura",
+
+
+
+       },
+        {
+            "slug": "polearm",
+            "name": "Polearm",
+            "description": "This unit deals +4 <x-physical></x-physical> Melee damage against Mounted, Flying, and Lesser Flying units.",
+            "damage": "",
+            "icon_name": "polearm",
+
+
+
+       },
+        {
+            "slug": "true_sight",
+            "name": "True Sight",
+            "description": "This unit is able to see units that are Concealed or have Invisibility",
+            "damage": "",
+            "icon_name": "true_sight",
+
+
+
+       },
+        {
+            "slug": "armor_piercing",
+            "name": "Armor Piercing",
+            "description": "Deals +2 <x-physical></x-physical> damage against Armored units.",
+            "damage": "",
+            "icon_name": "armor_piercing",
+
+
+
+       },
+        {
+            "slug": "first_strike",
+            "name": "First Strike",
+            "description": "This unit attacks first when defending.",
+            "damage": "",
+            "icon_name": "first_strike",
+
+
+
+       },
+
+        {
+            "slug": "pike_square",
+            "name": "Pike Square",
+            "description": "This unit gains +3 <x-defense></x-defense> against Mounted, Flying, and Lesser Flying units.",
+            "damage": "",
+            "icon_name": "pike_square",
+
+
+       },
+
+        {
+            "slug": "inflict_scorching_heat",
+            "name": "Inflict Scorching Heat",
+            "description": "Melee and Ranged attacks can inflict Scorching Heat. Scorched units suffer -3 strength for 3 <x-turn></x-turn>",
+            "damage": "7 <x-fire_res></x-fire_res>",
+            "icon_name": "scorching_heat",
+
+       },
+        {
+            "slug": "inflict_immolation",
+            "name": "Inflict Immolation",
+            "description": "Melee and Ranged attacks can inflict Immolation. Immolated units suffer 3 <x-fire></x-fire> damage at the start of each combat round. They also suffers -1 <x-defense></x-defense>, -1 <x-resistance></x-resistance> -400 <x-happiness></x-happiness> and -2 <x-physical></x-physical> strength for 3 <x-turn></x-turn>",
+            "damage": "9 <x-fire_res></x-fire_res>",
+            "icon_name": "scorching_heat",
+
+       },
+        {
             "slug": "fire_protection_60",
-            "name": "<span style =\"color: lawngreen\">60% <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp; Protection </span>",
-            "type": "Single Action  <x-singleaction>  </x-singleaction>",
-            "description": "<ul> \
-                                <li>The unit will take 60% less damage from<x-fire></x-fire>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;based attacks.</li>\
-                                <li>Status effects that check against <x-fire_res></x-fire_res>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will have a 60% lower chance to affect this unit.</li>\
-                                </ul>",
+            "name": "<span style =\"color: lawngreen\">60% <x-fire> </x-fire> Protection </span>",
+            "description": "<li>The unit will take 60% less damage from<x-fire></x-fire> based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res> will have a 60% lower chance to affect this unit.</li>",
+
+            "icon_name": "fire_protection",
+       },
+        {
+            "slug": "fire_protection_100",
+            "name": "<span style =\"color: lawngreen\">100% <x-fire> </x-fire> Protection </span>",
+            "description": "<li>The unit will take 100% less damage from<x-fire></x-fire> based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res> will have a 100% lower chance to affect this unit.</li>",
+
+            "icon_name": "fire_protection",
+       },
+        {
+            "slug": "fire_protection_40",
+            "name": "<span style =\"color: lawngreen\">40% <x-fire> </x-fire> Protection </span>",
+            "description": "<li>The unit will take 40% less damage from<x-fire></x-fire> based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res> will have a 40% lower chance to affect this unit.</li>",
+
+            "icon_name": "fire_protection",
+       },
+        {
+            "slug": "fire_protection_80",
+            "name": "<span style =\"color: lawngreen\">80% <x-fire> </x-fire> Protection </span>",
+            "description": "<li>The unit will take 80% less damage from<x-fire></x-fire> based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res> will have a 80% lower chance to affect this unit.</li>",
 
             "icon_name": "fire_protection",
        },
         {
             "slug": "fire_protection_20",
-            "name": "<span style =\"color: lawngreen\">20% <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp; Protection </span>",
+            "name": "<span style =\"color: lawngreen\">20% <x-fire> </x-fire> Protection </span>",
             "type": "Single Action  <x-singleaction>  </x-singleaction>",
-            "description": "<ul> \
-                                <li>The unit will take 20% less damage from<x-fire></x-fire>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;based attacks.</li>\
-                                <li>Status effects that check against <x-fire_res></x-fire_res>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will have a 20% lower chance to affect this unit.</li>\
-                                </ul>",
+            "description": "<li>The unit will take 20% less damage from<x-fire></x-fire> based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res> will have a 20% lower chance to affect this unit.</li>",
 
             "icon_name": "fire_protection",
 
@@ -126,17 +275,15 @@ var jsonUnitAbilities = {
        },
         {
             "slug": "frost_weakness_20",
-            "name": "<span style =\"color: deeppink\">20% <x-frost> </x-frost> &nbsp;&nbsp;&nbsp;&nbsp; Weakness </span>",
+            "name": "<span style =\"color: deeppink\">20% <x-frost> </x-frost> Weakness </span>",
             "type": "Repeating <x-repeating>  </x-repeating>",
-            "description": "<ul> \
-                                <li>The unit will take 20% more damage from<x-frost></x-frost>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;based attacks.</li>\
-                                <li>Status effects that check against <x-frost_res></x-frost_res>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; will have a 20% higher chance to affect this unit.</li>\
-                                </ul>",
+            "description": "<li>The unit will take 20% more damage from<x-frost></x-frost> based attacks.</li>\
+                                <li>Status effects that check against <x-frost_res></x-frost_res> will have a 20% higher chance to affect this unit.</li>",
             "icon_name": "frost_weakness",
 
 
        },
- 
+
         {
             "slug": "infantry",
             "name": "Infantry",
@@ -145,7 +292,15 @@ var jsonUnitAbilities = {
             "icon_name": "infantry",
 
        },
-          {
+        {
+            "slug": "archer",
+            "name": "Archer",
+            "description": "This unit is an Archer",
+            "damage": "",
+            "icon_name": "archer",
+
+       },
+        {
             "slug": "improved_wall_climbing",
             "name": "Improved Wall Climbing",
             "description": "This unit is able to climb city walls, without suffering a Wall Climbing Penalty",
@@ -153,24 +308,80 @@ var jsonUnitAbilities = {
             "icon_name": "improved_wall_climbing",
 
        },
-          
-          {
+        {
+            "slug": "lava_walking",
+            "name": "Lava Walking",
+            "description": "This unit can traverse Lava",
+            "damage": "",
+            "icon_name": "lava_walking",
+
+       },
+        {
+            "slug": "lesser_flying",
+            "name": "Lesser Flying",
+            "description": "The unit can fly during tactical combat, but not on the strategic map.",
+            "damage": "",
+            "icon_name": "flying",
+
+       },
+        {
+            "slug": "flying",
+            "name": "Flying",
+            "description": "Unit can fly over all terrain at a movement cost of 3 <x-mp></x-mp> per hex",
+            "damage": "",
+            "icon_name": "flying",
+
+       },
+        {
+            "slug": "killing_momentum",
+            "name": "Killing Momentum",
+            "description": "Once per combat round, this unit gains 1 additional Action Point and can move 1 additional hex upon killing an enemy unit.",
+            "damage": "",
+            "icon_name": "killing_momentum",
+
+       },
+        {
+            "slug": "vision_range_upgrade",
+            "name": "Vision Range Upgrade",
+            "description": "This unit gains +1 Vision Range",
+            "damage": "",
+            "icon_name": "vision_range_upgrade",
+
+       },
+        {
+            "slug": "charge",
+            "name": "Charge",
+            "description": "This unit gains +6 <x-physical> </x-physical> damage on its first strike in melee combat if the unit has moved 4 or more hexes this turn.",
+            "damage": "",
+            "icon_name": "charge",
+
+       },
+        {
+            "slug": "tireless",
+            "name": "Tireless",
+            "description": "This unit spends no Action Points on retaliations and Attacks of Opportunity",
+            "damage": "",
+            "icon_name": "tireless",
+
+       },
+
+        {
             "slug": "projectile_resistance",
             "name": "Projectile Resistance",
-            "description": "This unit is gains +2 <x-defense> </x-defense>&nbsp;&nbsp;&nbsp;&nbsp; against ranged attacks.",
+            "description": "This unit is gains +2 <x-defense> </x-defense> against ranged attacks.",
             "damage": "",
             "icon_name": "projectile_resistance",
 
        },
-               {
+        {
             "slug": "overwhelm",
             "name": "Overwhelm",
-            "description": "This unit is gains +3 <x-physical> </x-physical>&nbsp;&nbsp;&nbsp;&nbsp; against Pikeman, and (Sun) Shieled units.",
+            "description": "This unit is gains +3 <x-physical> </x-physical> against Pikeman, and (Sun) Shielded units.",
             "damage": "",
             "icon_name": "overwhelm",
 
        },
-    
+
 
 ]
 }

@@ -1,0 +1,62 @@
+var jsonBuildings = {
+    "buildings": [{
+            "slug": "barracks",
+            "name": "Barracks",
+            "description": "Unlocks the production of Infantry and Archer units for a city",
+            "cost": "100 <x-gold> </x-gold> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gold",
+            "requires":[
+                {
+                    
+        }],
+        "leadsto": [
+                {
+                    "slug": "shooting_grounds"
+        },
+         {
+                    "slug": "war_hall"
+        },
+         {
+                    "slug": "arena"
+        }],
+         "unlocksunit": [
+                {
+                    "slug": "draconian_crusher"
+        },
+         {
+                    "slug": "draconian_flamer"
+        }
+        ],
+            "image_link": "barracks",
+        },
+                  {
+            "slug": "war_hall",
+            "name": "War Hall",
+            "description": "Unlocks the production of Pikeman and Cavalry units for a city",
+            "cost": "175 <x-gold> </x-gold> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gold",
+            "requires":[
+                {
+                     "slug": "barracks"
+        }],
+        "leadsto": [
+                {
+                    "slug": "guard_house"
+        },
+         {
+                    "slug": "riders_hall"
+        },
+         {
+                    "slug": "peak_of_the_forefathers"
+        }],
+         "unlocksunit": [
+                {
+                    "slug": "draconian_charger"
+        },
+         {
+                    "slug": "draconian_raptor"
+        }
+        ],
+            "image_link": "war_hall",
+        },
+
+    ]
+}

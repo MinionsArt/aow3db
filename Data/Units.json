@@ -6,40 +6,36 @@ var jsonUnits = {
             "armor": "9",
             "shield": "8",
             "mp": "28",
-            "tier": "I - 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
             "cost": "40 <x-gold></x-gold> ",
-            "origin-research": "",
-         "origin-building": "",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
             "description": "\"Draconian eggs are quite delicious on toast, but beware! Many a young cook has discovered their cooking eggs hatching, and what came out was not a sweet little baby animal, as is the case in most of the tasty animal world. I once lost an entire breakfast crew, slaughtered by the unexpected hatching of a clutch of eggs. Their fiery spit and nasty bite had overwhelmed my cooks. By the time I discovered them, most of the hatchlings had fed so well that I had to call the city guard to remove fully transformed draconian flamers, crushers and chargers. Which good cooks know are far too gamey to be good eating.\" <br> <i>--Cooking all of Nature, by Emibeek, Ogre Gourmet</i>\"",
-            "image_link": 'draconian_hatchling.gif',
-         "level_trooper":  "    <ul> \
-                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
- <li>+2 <x-hp> </x-hp> </li>\
-                                </ul>",
-           "level_veteran":  "    <ul> \
-                                <li>+1 <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ranged</li>\
- <li>+2 <x-hp> </x-hp> </li>\
-<li>+1 <x-defense> </x-defense> </li>\
-                                </ul>",
-                   "level_expert":  "    <ul> \
-                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
- <li>+2 <x-hp> </x-hp> </li>\
-<li>+1 <x-resistance> </x-resistance> </li>\
-                                </ul>",
-                  "level_elite":  "    <ul> \
-                                <li>+1 <x-fire> </x-fire> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ranged</li>\
- <li>+4 <x-hp> </x-hp> </li>\
-<li>+1 <x-defense> </x-defense> </li>\
-                                </ul>",
+            "image_link": 'Draconian/draconian_hatchling.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
 
             "abilities": [
                 {
-                    "slug": "melee_strike_6P_1F"
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 1<x-fire> </x-fire>"
         },
                 {
-                    "slug": "fire_spit_11F"
+                    "slug": "fire_spit",
+                    "damage": "11 <x-fire> </x-fire>"
         },
-              
+
                ],
             "passives": [
                 {
@@ -65,55 +61,51 @@ var jsonUnits = {
                     }, {
                     "slug": "frost_weakness_20"
                     },
-              
-                ],  "resistances": [
+
+                ],
+            "resistances": [
                 {
-                    
+
         }
 
         ]
 
 },
-       {
+        {
             "hp": "46",
             "name": "draconian_crusher",
             "string": "Draconian Crusher",
             "armor": "9",
             "shield": "8",
             "mp": "28",
-            "tier": "I - 4 <x-gold></x-gold> &nbsp;&nbsp;&nbsp;",
+            "xp": "10",
+            "tier": "I - 4 <x-gold></x-gold>",
             "cost": "50 <x-gold></x-gold>",
-            "origin-research": "",
-         "origin-building": "Barracks",
-            "description": "\"I once heard a drunken Draconian Crusher tell of a secret legend of an ancient dragon whose image was trapped in a magic mirror. The mirror shattered over the first draconian nest, with pieces of it falling into each egg. The Draconian telling the tale was particularly proud that the Crushers were given the dragon's haunches. Apparantly it symbolized the craeture's strength. He than rose and split the table with his club, and made a terrible mess of the bar. It took three bouncers to restrain him. I suppose he was right.\" <br> <i>--Secret Draconian Lore, by Lord Milligan</i>\"",
-            "image_link": 'draconian_crusher.gif',
-         "level_trooper":  "   <ul> <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
- <li>+2 <x-hp> </x-hp> </li>\
-                                ",
-           "level_veteran":  "    <ul> \
-                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+            "origin_research": "",
+            "origin_building": "Barracks",
+            "description": "\"I once heard a drunken Draconian Crusher tell of a secret legend of an ancient dragon whose image was trapped in a magic mirror. The mirror shattered over the first draconian nest, with pieces of it falling into each egg. The Draconian telling the tale was particularly proud that the Crushers were given the dragon's haunches. Apparantly it symbolized the creature's strength. He than rose and split the table with his club, and made a terrible mess of the bar. It took three bouncers to restrain him. I suppose he was right.\" <br> <i>--Secret Draconian Lore, by Lord Milligan</i>\"",
+            "image_link": 'Draconian/draconian_crusher.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> </li>\
 <li>+1 <x-defense> </x-defense> </li>\
-<li>+20% <x-fire> </x-fire>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protection </li>\
-                                </ul>",
-                   "level_expert":  "    <ul> \
-                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+<li>+20% <x-fire> </x-fire> Protection </li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> </li>\
-<li>+1 <x-resistance> </x-resistance> </li>\
-                                </ul>",
-                  "level_elite":  "    <ul> \
-                                <li>+1 <x-physical> </x-physical> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Melee</li>\
+<li>+1 <x-resistance> </x-resistance> </li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+4 <x-hp> </x-hp> </li>\
 <li>+1 <x-defense> </x-defense> </li>\
-<li>+20% <x-fire> </x-fire>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protection </li>\
-<li>Tireless</li>\
-                                </ul>",
+<li>+20% <x-fire> </x-fire> Protection </li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
 
             "abilities": [
                 {
-                    "slug": "melee_strike_12P"
+                    "slug": "melee_strike",
+                    "damage": "12 <x-physical> </x-physical>"
         }
-              
+
                ],
             "passives": [
                 {
@@ -122,7 +114,7 @@ var jsonUnits = {
                 {
                     "slug": "projectile_resistance"
         },
-                   {
+                {
                     "slug": "overwhelm"
                 },
                 {
@@ -145,10 +137,417 @@ var jsonUnits = {
                     }, {
                     "slug": "frost_weakness_20"
                     },
-              
-                ],  "resistances": [
+
+                ],
+            "resistances": [
                 {
-                    
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "34",
+            "name": "draconian_flamer",
+            "string": "Draconian Flamer",
+            "armor": "7",
+            "shield": "8",
+            "mp": "28",
+            "xp": "10",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "cost": "70 <x-gold></x-gold>",
+            "origin_research": "",
+            "origin_building": "Barracks",
+            "description": "\"As a little girl, my father took my to the circus in Stronghelm City. We saw every imaginable oddity. I first saw the Draconian Flamer shackled in black iron chains. The people in the audience booed. As a girl, I didn't understand most citizens hate Draconians, so I felt sad. The Flamer stood bravely against the mockery, and I inched forward on the bench. Its mounth glowed with fire. Then fire bolts launched from its hands, striking a series of targets. The audience erupted in exuberant cheers. I spent the rest of the summer trying to find a way to throw fire from my hands.\" <br> <i>--Life of a Fire-Eater, Flambella, Circus Performer</i>\"",
+            "image_link": 'Draconian/draconian_flamer.gif',
+            "level_trooper": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> </li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-resistance> </x-resistance> </li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li><div class=\"tooltip\">Inflict Scorching Heat<span class=\"tooltiptext2\" id=\"inflict_scorching_heat\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5 <x-physical> </x-physical> 2 <x-fire></x-fire>"
+        },
+                {
+                    "slug": "fire_bomb",
+                    "damage": "4 <x-physical> </x-physical> 7 <x-fire></x-fire>"
+        }
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        },
+                {
+                    "slug": "projectile_resistance"
+        },
+                {
+                    "slug": "lava_walking"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_100"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "46",
+            "name": "draconian_charger",
+            "string": "Draconian Charger",
+            "armor": "9",
+            "shield": "8",
+            "mp": "30",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "60 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "description": "\"Our horsemen circled the village, eager to steal riches from the draconian outcasts. Rumors say these descendents of dragons have treasure hoards and no one in the Commonwealth cares if Draconians die. While most of the villagers fled, a few grabbed long spears and charged. We tried to retreat, but the Chargers attacked our steeds. Our horses died beneath us. We tried to fight back, but their long spears struck first. Once we were captured, they cooked and ate our horses. They promised to release me, if I signed this confession.\" <br> <i>--Confession of Crimes, Godeon Valk, Brigand</i>\"",
+            "image_link": 'Draconian/draconian_charger.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li>+20% <x-fire> </x-fire> Protection </li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> </li>\
+<li>+1 <x-resistance> </x-resistance> </li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li>+20% <x-fire> </x-fire> Protection </li>\
+<li><div class=\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        },
+                {
+                    "slug": "polearm"
+                },
+                {
+                    "slug": "pike_square"
+                },
+                {
+                    "slug": "first_strike"
+                },
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "lesser_flying"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "35",
+            "name": "draconian_elder",
+            "string": "Draconian Elder",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "xp": "20",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "cost": "70 <x-gold></x-gold> 20 <x-mana></x-mana",
+            "origin_research": "",
+            "origin_building": "Temple",
+            "description": "\"The Draconian Elder stood in the bonfire unharmed. He touched two draconian guards. The two attacked, clearly invigorated and eager to prove their worth to the priest, despite being severly outnumbered. My men dispatched the guard, and restrained the priets. He grabbed one of his captors. The poor man burst into flames. My remaining soldier beat the priest near to death. I thought I would have trouble explaining this, only to discover the Elder healed completely on the morrow. Since that day, I try to avoid Draconians and their dragon priests.\" <br> <i>--Enforcer's Log, Brenton Silverstar, Lawman</i>\"",
+            "image_link": 'Draconian/draconian_elder.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> </li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li><div class=\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-resistance> </x-resistance> </li>\
+<li><div class=\"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li><div class=\"tooltip\">Fire Aura<span class=\"tooltiptext2\" id=\"fire_aura\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "4 <x-physical> </x-physical> 4 <x-fire></x-fire>"
+        },
+                {
+                    "slug": "fire_bolts",
+                    "damage": "8 <x-physical> </x-physical> 7 <x-fire></x-fire>"
+        },
+                {
+                    "slug": "dragon_ancestry",
+                    "damage": ""
+        }
+
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        },
+                {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "lava_walking"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_100"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "55",
+            "name": "draconian_raptor",
+            "string": "Draconian Raptor",
+            "armor": "11",
+            "shield": "9",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "description": "\"It wasn't just their speed that struck me with dread. The raptor riders of the draconian hordes shot across the open field with such vigor that one could only conclude they wanted to kill. Everything about the fearsome new steed was designed for killing. The well-trained rider atop the beast seemed secondary to the danger of the raptor. They left a path of carnage in their wake. We had no choice but to flee behind the walls of the fortress where archers and pikeman could form up and slow down their vicious unyielding advance.\" <br> <i>--Rebellions on the Frontier, Rugger Taggat, Troop Commander</i>\"",
+            "image_link": 'Draconian/draconian_raptor.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> </li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li>+20% <x-fire> </x-fire> Protection </li>\
+<li><div class=\"tooltip\">Inflict Scorching Heat<span class=\"tooltiptext2\" id=\"inflict_scorching_heat\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> </li>\
+<li>+1 <x-resistance> </x-resistance> </li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+8 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li>+20% <x-fire> </x-fire> Protection </li>\
+<li><div class=\"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 6<x-fire></x-fire>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        },
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mounted"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_40"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "64",
+            "name": "draconian_flyer",
+            "string": "Draconian Flyer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold> 20 <x-mana></x-mana> ",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "peak_of_the_forefathers",
+            "description": "\"It was a joke among the men that the Draconians had no cavalry left because the animals that might have served as mounts served as dinner instead. I did not expect any trouble as I supervised the Draconian migration out of the Springtree Vale. I took many bowman, thinking to strike slower moving Draconians if they resisted. Unexpectedly, some Draconian troops swept past our footmen with all the speed and devastation of a cavalry force. Their quick short swords decimated my archers. These Draconians had functional wings. I call them flyers.\" <br> <i>--Rebellions on the Frontier, Rugger Taggat, Troop Commander</i>\"",
+            "image_link": 'Draconian/draconian_flyer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> </li>\
+<li>+20% <x-fire> </x-fire> Protection </li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li>+20% <x-fire> </x-fire> Protection </li>\
+<li><div class=\"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> </li>\
+<li>+1 <x-resistance> </x-resistance> </li>\
+<li>+20% <x-fire> </x-fire> Protection </li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> </li>\
+<li>+1 <x-defense> </x-defense> </li>\
+<li><div class=\"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        },
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "wall_climbing"
+                },
+                {
+                    "slug": "projectile_resistance"
+                },
+                {
+                    "slug": "overwhelm"
+                },
+                {
+                    "slug": "flying"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
         }
 
         ]

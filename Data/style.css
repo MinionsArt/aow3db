@@ -3,8 +3,22 @@
 
 html {
     background-color: #040605;
-    cursor: url(/UI/Cursor.png), auto;
 
+
+}
+
+
+
+iframe {
+
+    /* iframes are inline by default */
+    background: #000;
+    border: none;
+
+}
+
+a {
+    color: cyan;
 }
 
 #menu {
@@ -102,7 +116,7 @@ html {
 }
 
 #menu a.prett {
-    padding: 0 27px 0 14px
+    padding: 0 100px 0 14px
 }
 
 #menu a.prett::after {
@@ -140,7 +154,7 @@ html {
 p {
     font-family: 'IM Fell English SC', serif;
     font-size: 15px;
-     margin: 0px 0 0 0;
+    margin: 0px 0 0 0;
 
 }
 
@@ -151,13 +165,14 @@ p {
     font-size: 13px;
     margin-top: -200px;
     padding: 9px;
-   
+
 }
-.unit_description_bg{
-     background-color: rgba(0, 0, 0, 0.8);
+
+.unit_description_bg {
+    background-color: rgba(0, 0, 0, 0.8);
     height: 200px;
     margin-top: -90px;
-   filter: blur(8px);
+    filter: blur(8px);
 }
 
 .unit_image {
@@ -172,11 +187,11 @@ p {
     position: relative;
     width: 350px;
     float: left;
-   background-image: url(../Icons/UI/AbilityListBackground.png);
+    background-image: url(../Icons/UI/AbilityListBackground.png);
     background-size: 300px;
-    
+
     border: 3px solid white;
-      border-color: rgba(255, 255, 200,0.6);
+    border-color: rgba(255, 255, 200, 0.6);
     margin: 5px;
 }
 
@@ -185,11 +200,11 @@ p {
     width: 200px;
     float: left;
     padding: 5px;
-   background-image: url("/UI/AbilityListBackground.png");
+    background-image: url("/UI/AbilityListBackground.png");
     background-size: 300px;
-    box-shadow:         inset 0 0 10px #000000;
-     border: 3px solid white;
-      border-color: rgba(255, 255, 200,0.6);
+    box-shadow: inset 0 0 10px #000000;
+    border: 3px solid white;
+    border-color: rgba(255, 255, 200, 0.6);
     margin: 5px;
     margin-bottom: -10px;
 }
@@ -199,13 +214,13 @@ p {
     color: white;
     width: 940px;
 
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     padding: 15px;
     padding-top: 40px;
- border: 3px solid white;
-      border-color: rgba(255, 255, 200,1);
-display:table;
+    border: 3px solid white;
+    border-color: rgba(255, 255, 200, 1);
+    display: table;
 
 }
 
@@ -217,26 +232,26 @@ display:table;
     background-color: rgba(100, 100, 20, 0.5);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-   
-    box-shadow:         inset 0 0 10px #000000;
+
+    box-shadow: inset 0 0 10px #000000;
 
 }
 
 .unit_passiveslot {
-  
-     position: relative;
+
+    position: relative;
     height: 40px;
     margin: 1px;
     background-color: rgba(50, 50, 100, 0.5);
-     border-top: 1px solid black;
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
     display: block;
-    box-shadow:         inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
 
 }
 
 .unit_abilityslot {
-   
+
     width: 308px;
     height: 40px;
     margin: 1px;
@@ -244,20 +259,20 @@ display:table;
     background-color: rgba(0, 0, 0, 0.5);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-   
-    box-shadow:         inset 0 0 10px #000000;
+
+    box-shadow: inset 0 0 10px #000000;
 }
 
 .unit_typeslot {
-   
+
     width: 308px;
     height: 40px;
     margin: 1px;
     background-color: rgba(60, 0, 20, 0.5);
-     border-top: 1px solid black;
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
-     position: relative;
-    box-shadow:         inset 0 0 10px #000000;
+    position: relative;
+    box-shadow: inset 0 0 10px #000000;
 }
 
 /* Change the color of links on hover */
@@ -265,6 +280,7 @@ display:table;
     background-color: darkslategray;
 
 }
+
 /* Change the color of links on hover */
 .unit_typeslot:hover {
     background-color: darkmagenta;
@@ -286,11 +302,12 @@ display:table;
 .unit_ability_holder {
     background-image: url("/UI/AbilityListBackground.png");
     background-size: 320px;
-   float:left;
+    float: left;
     width: 310px;
-    box-shadow:         inset 0 0 10px #000000;
-  border: 3px solid white;
-      border-color: rgba(255, 255, 200,0.6);
+    box-shadow: inset 0 0 10px #000000;
+    border: 3px solid white;
+    border-color: rgba(255, 255, 200, 0.6);
+
     margin: 5px;
 
 }
@@ -300,12 +317,12 @@ display:table;
     display: block;
     padding-bottom: 5px;
     padding-top: 10px;
-   
-  border: 3px solid white;
-      border-color: rgba(255, 255, 200,1);
+
+    border: 3px solid white;
+    border-color: rgba(255, 255, 200, 1);
     background-color: rgba(30, 30, 40, 1);
-     box-shadow:         inset 0 0 10px #000000;
-    
+    box-shadow: inset 0 0 10px #000000;
+
 }
 
 .unit_types {
@@ -372,7 +389,7 @@ display:table;
 
 .ability_damage {
     float: right;
-    font-size: 20px;
+    font-size: 16px;
     align-content: right;
 
     margin-top: 10px;
@@ -389,8 +406,8 @@ display:table;
     text-align: center;
     height: 30px;
     text-shadow: 1px 1px 10px white;
-     border: 3px solid white;
-      border-color: rgba(255, 255, 200,1);
+    border: 3px solid white;
+    border-color: rgba(255, 255, 200, 1);
 }
 
 .tooltip {
@@ -400,6 +417,10 @@ display:table;
 }
 
 .tooltiptext {
+    display: inline-block;
+}
+
+.tooltiptext2 {
     display: inline-block;
 }
 
@@ -416,8 +437,30 @@ display:table;
     position: absolute;
     z-index: 1;
     font-size: 16px;
+    width: 100%;
+
+    min-height: 50px;
+    margin-left: 100px;
+
+    transition: opacity 0.5s;
+
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext2 {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
     min-width: 200px;
-    
+
     min-height: 50px;
     margin-left: 100px;
 
@@ -464,219 +507,181 @@ display:table;
     visibility: visible;
 }
 
-x-blight {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/Biochemical.png);
-    position: absolute;
-    background-size: 20px;
+.tooltip:hover .tooltiptext2 {
+    visibility: visible;
+}
 
+x-blight {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/blight.png);
+    position: relative;
 }
 
 x-fire {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/fire.png);
-    position: absolute;
-    background-size: 20px;
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/fire.png);
+    position: relative;
 }
-x-fire_res {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/fire_res.png);
-    position: absolute;
-    background-size: 20px;
 
+x-fire_res {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/fire_res.png);
+    position: relative;
 }
 
 x-frost_res {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/Frost_Resistance_Text.png);
-    position: absolute;
-    background-size: 20px;
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/frost_res.png);
+    position: relative;
 
 }
 
 x-spirit {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(huh.png);
-    position: absolute;
-    background-size: 20px;
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/spirit.png);
+    position: relative;
 }
 
 x-shock {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(huh.png);
-    position: absolute;
-    background-size: 20px;
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/shock.png);
+    position: relative;
 }
 
 x-physical {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/physical.png);
-    position: absolute;
-    background-size: 20px;
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/physical.png);
+    position: relative;
 }
 
 x-turn {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/turn.png);
-    position: absolute;
-    background-size: 20px;
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/turn.png);
+    position: relative;
 }
 
 x-resistance {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/resistance.png);
-    position: absolute;
-    background-size: 20px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/resistance.png);
+    position: relative;
 }
 
 x-defense {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/defense.png);
-    position: absolute;
-    background-size: 20px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/defense.png);
+    position: relative;
 }
 
 x-gold {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/gold.png);
-    position: absolute;
-    background-size: 20px;
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/gold.png);
+    position: relative;
+}
 
+x-mana {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/mana.png);
+    position: relative;
+}
 
+x-happiness {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/happiness.png);
+    position: relative;
 }
 
 x-hp {
-    min-height: 15px;
-    min-width: 15px;
-    background-image: url(../Icons/Text/hp.png);
-    position: absolute;
-    background-size: 15px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/hp.png);
+    position: relative;
 }
+
 x-mp {
-    min-height: 15px;
-    min-width: 15px;
-    background-image: url(../Icons/Text/mp.png);
-    position: absolute;
-    background-size: 15px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/mp.png);
+    position: relative;
 }
 
 x-production {
-    min-height: 15px;
-    min-width: 15px;
-    background-image: url(../Icons/Text/Production.png);
-    position: absolute;
-    background-size: 15px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/production.png);
+    position: relative;
 }
 
-
-x-kineticres {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/kineticRes.png);
-    position: absolute;
-    background-size: 20px;
-
-
-}
 
 x-frost {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/frost.png);
-    position: absolute;
-    background-size: 20px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/frost.png);
+    position: relative;
 }
+
 x-medal_trooper {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/medal_trooper.png);
-    position: absolute;
-    background-size: 20px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/medal_trooper.png);
+    position: relative;
 }
 
 x-medal_veteran {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/medal_veteran.png);
-    position: absolute;
-    background-size: 20px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/medal_veteran.png);
+    position: relative;
 }
+
 x-medal_expert {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/medal_expert.png);
-    position: absolute;
-    background-size: 20px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/medal_expert.png);
+    position: relative;
 }
-x-medal_elite {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/metal_elite.png);
-    position: absolute;
-    background-size: 20px;
 
+x-medal_elite {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/medal_elite.png);
+    position: relative;
 
 }
 
 x-medal_none {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/medal_none.png);
-    position: absolute;
-    background-size: 20px;
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/medal_none.png);
+    position: relative;
 
 
 }
 
 x-medal_champion {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/medal_champion.png);
-    position: absolute;
-    background-size: 20px;
-
-
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/medal_champion.png);
+    position: relative;
 }
 
 x-xp {
-    min-height: 20px;
-    min-width: 20px;
-    background-image: url(../Icons/Text/xp.png);
-    position: absolute;
-    background-size: 20px;
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/xp.png);
+    position: relative;
 
 
 }

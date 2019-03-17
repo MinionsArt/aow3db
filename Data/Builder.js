@@ -1,5 +1,39 @@
-function addUnitTypeIcon(a,b) {
-    var abilityName, abilityIcon, abilityDescr = "";
+function setUnitIds(a) {
+    var icon, unitName, descr, imagelink, hp, armor, shield, mpicon, mp, tier, prodcost, origin_building, origin_research, levels, holder = "";
+    icon = document.getElementById("uniticon");
+    icon.id = "uniticon_" + a;
+    unitName = document.getElementById("unitstring");
+    unitName.id = "unitstring_" + a;
+    descr = document.getElementById("description");
+    descr.id = "description_" + a;
+    imagelink = document.getElementById("vid");
+    imagelink.id = "vid_" + a;
+    hp = document.getElementById("hp");
+    hp.id = "hp_" + a;
+    armor = document.getElementById("defense");
+    armor.id = "defense_" + a;
+    shield = document.getElementById("resistance");
+    shield.id = "resistance_" + a;
+    mpicon = document.getElementById("mp_icon");
+    mpicon.id = "mp_icon_" + a;
+    mp = document.getElementById("mp");
+    mp.id = "mp_" + a;
+    tier = document.getElementById("tier");
+    tier.id = "tier_" + a;
+    prodcost = document.getElementById("productioncost");
+    prodcost.id = "productioncost_" + a;
+    origin_building = document.getElementById("originbuilding");
+    origin_building.id = "originbuilding_" + a;
+    origin_research = document.getElementById("originresearch");
+    origin_research.id = "originresearch_" + a;
+    levels = document.getElementById("levelups");
+    levels.id = "levelups_" + a;
+    holder = document.getElementById("unitabholder");
+    holder.id = "unitabholder_" + a;
+}
+
+function addUnitTypeIcon(a, b, c) {
+    var abilityName, abilityIcon, abilityDescr, j = "";
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
             abilityName = jsonUnitAbilities.abilities[j].name;
@@ -13,17 +47,17 @@ function addUnitTypeIcon(a,b) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
-                  if(b == "yes"){
+            if (b == "yes") {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "./Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
-            document.getElementById("unitabholder").appendChild(btn);
+            document.getElementById("unitabholder_" + c).appendChild(btn);
             tex.appendChild(spa);
 
             btn.appendChild(imag);
@@ -34,8 +68,8 @@ function addUnitTypeIcon(a,b) {
 
 }
 
-function addAbilityslot(a,b) {
-    var abilityName, abilityIcon, abilityDescr, abilityDam, abilityAcc, abilityRange, abilityType = "";
+function addAbilityslot(a, unique, damage, c) {
+    var abilityName, abilityIcon, abilityDescr, abilityDam, abilityRange = "";
 
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
@@ -56,21 +90,24 @@ function addAbilityslot(a,b) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
-               if(b == "yes"){
+            if (unique == "yes") {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
+            }
+            if (damage != "") {
+                abilityDam = damage;
             }
             tex.innerHTML = abilityName;
             var dam = document.createElement("DIV");
             dam.className = "ability_damage";
             dam.innerHTML = abilityDam;
             spa.className = "tooltiptext";
-            spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp;" + abilityDam + "</span>" + "</p>"+
+            spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDam + "</span>" + "</p>" +
                 abilityRange + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "./Icons/Abilities/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Icons/Abilities/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
-            document.getElementById("unitabholder").append(btn);
+            document.getElementById("unitabholder_" + c).appendChild(btn);
             tex.appendChild(spa);
 
             btn.appendChild(imag);
@@ -82,7 +119,7 @@ function addAbilityslot(a,b) {
 
 }
 
-function addPassiveslot(a,b) {
+function addPassiveslot(a, b, c) {
     var abilityName, abilityIcon, abilityDescr = "";
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
@@ -97,18 +134,18 @@ function addPassiveslot(a,b) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             tex.className = "tooltip";
-                  if(b == "yes"){
+            if (b == "yes") {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
             tex.innerHTML = abilityName;
-         
+
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "./Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
-            document.getElementById("unitabholder").appendChild(btn);
+            document.getElementById("unitabholder_" + c).appendChild(btn);
             tex.appendChild(spa);
 
             btn.appendChild(imag);
@@ -119,7 +156,7 @@ function addPassiveslot(a,b) {
 
 }
 
-function addResistanceSlot(a,b) {
+function addResistanceSlot(a, b, c) {
     var abilityName, abilityIcon, abilityDescr, abilityDam = "";
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
@@ -138,18 +175,18 @@ function addResistanceSlot(a,b) {
             dam.innerHTML = abilityDam;
 
             tex.className = "tooltip";
-                  if(b == "yes"){
+            if (b == "yes") {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
             tex.innerHTML = abilityName;
 
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "./Icons/Resistances/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Icons/Resistances/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
-            document.getElementById("unitabholder").appendChild(btn);
+            document.getElementById("unitabholder_" + c).appendChild(btn);
             tex.appendChild(spa);
 
             btn.appendChild(imag);
@@ -162,7 +199,7 @@ function addResistanceSlot(a,b) {
 
 }
 
-function addEliteSkill(a) {
+function addEliteSkill(a, b) {
     var abilityName, abilityIcon, abilityDescr = "";
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
@@ -180,11 +217,11 @@ function addEliteSkill(a) {
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "./Icons/UI/elite_rank.png");
+            imag.setAttribute("src", "/Icons/UI/elite_rank.png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
-            document.getElementById("unitabholder").appendChild(btn);
+            document.getElementById("unitabholder_" + b).appendChild(btn);
             tex.appendChild(spa);
 
             btn.appendChild(imag);
@@ -195,53 +232,80 @@ function addEliteSkill(a) {
 
 }
 
+
+
 function showUnit(a) {
-    var hp, mp, shield, armor, descr, j, k, x, y, z, unitName, icon, imagelink, prodcost, tier, levels = "";
+
+    var hp, mp, shield, armor, descr, j, k, x, t, y, z, unitName, icon, imagelink, mpicon, prodcost, tier, levels = "";
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].name) {
-            icon = document.getElementById("uniticon");
-            icon.setAttribute("src", "./Icons/UnitIcons/" + a + ".png");
-            unitName = document.getElementById("unitstring");
-            unitName.innerHTML =  jsonUnits.units[i].string;
-            descr = document.getElementById("description");
+            icon = document.getElementById("uniticon_" + a);
+            icon.setAttribute("src", "/Icons/UnitIcons/" + a + ".png");
+            unitName = document.getElementById("unitstring_" + a);
+            unitName.innerHTML = jsonUnits.units[i].string;
+            descr = document.getElementById("description_" + a);
             descr.innerHTML = jsonUnits.units[i].description;
-            imagelink = document.getElementById("vid")
-            imagelink.setAttribute('src', "./UnitPreviews/" + jsonUnits.units[i].image_link);
-            hp = document.getElementById("hp")
-            hp.innerHTML = jsonUnits.units[i].hp + "/" +jsonUnits.units[i].hp;
-            armor = document.getElementById("defense")
+            imagelink = document.getElementById("vid_" + a);
+            imagelink.setAttribute('src', "/PreviewGifs/" + jsonUnits.units[i].image_link);
+            hp = document.getElementById("hp_" + a);
+            hp.innerHTML = jsonUnits.units[i].hp + "/" + jsonUnits.units[i].hp;
+            armor = document.getElementById("defense_" + a);
             armor.innerHTML = jsonUnits.units[i].armor;
-            shield = document.getElementById("resistance")
+            shield = document.getElementById("resistance_" + a);
             shield.innerHTML = jsonUnits.units[i].shield;
-            mp = document.getElementById("mp");
-            mp.innerHTML = jsonUnits.units[i].mp +"/" + jsonUnits.units[i].mp;
-            tier = document.getElementById("tier");
+            mpicon = document.getElementById("mp_icon_" + a);
+            if (jsonUnits.units[i].movement_type == "walking") {
+                mpicon.setAttribute('src', "/Icons/Text/mp.png");
+            }
+            if (jsonUnits.units[i].movement_type == "flying") {
+                mpicon.setAttribute('src', "/Icons/Text/flying.png");
+            }
+            mp = document.getElementById("mp_" + a);
+            mp.innerHTML = jsonUnits.units[i].mp;
+            tier = document.getElementById("tier_" + a);
             tier.innerHTML = "Tier " + jsonUnits.units[i].tier;
-            prodcost = document.getElementById("productioncost");
+            prodcost = document.getElementById("productioncost_" + a);
             prodcost.innerHTML = "Cost: " + jsonUnits.units[i].cost;
-            levels = document.getElementById("levelups");
-           levels.innerHTML = "<div style=\"background-color: rgba(30, 30, 40, 1); padding-bottom:5px; margin-bottom:5px;\"> Level Up: &nbsp;<x-medal_none> </x-medal_none>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Recruit </div>"  +"<div style=\"background-color: #23545B; \">"+ "<p><x-medal_trooper> </x-medal_trooper> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trooper"+ jsonUnits.units[i].level_trooper + "</div>"+ "<p><x-medal_veteran> </x-medal_veteran> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Veteran" + jsonUnits.units[i].level_veteran +"<div style=\"background-color: #23545B;\">"+  "<p><x-medal_expert> </x-medal_expert> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expert" + jsonUnits.units[i].level_expert + "</div>"+ "<p><x-medal_elite> </x-medal_elite> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Elite" + jsonUnits.units[i].level_elite + "<div style=\"background-color: #23545B;\">"+  "<p><x-medal_champion> </x-medal_champion> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Champion <ul> <li> +10 <x-hp> </x-hp></li></ul>" + "</div>";
+            if (jsonUnits.units[i].origin_building != "") {
+                origin_building = document.getElementById("originbuilding_" + a);
+                var aTag = document.createElement('a');
+                aTag.setAttribute('href', "/Pages/Other/buildings.html#" + jsonUnits.units[i].origin_building);
+                aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_building;
+                origin_building.appendChild(aTag);
+            }
+            if (jsonUnits.units[i].origin_research != "") {
+                origin_research = document.getElementById("originresearch_" + a);
+                var aTag = document.createElement('a');
+                aTag.setAttribute('href', "DraconianHatchling.html");
+                aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_research;
+                origin_research.appendChild(aTag);
+            }
+            levels = document.getElementById("levelups_" + a);
+            levels.innerHTML = "<div style=\"background-color: rgba(30, 30, 40, 1); padding-bottom:5px; margin-bottom:5px;\"> Level Up: <x-medal_none> </x-medal_none> Recruit 0/" + jsonUnits.units[i].xp + " <x-xp></x-xp></div>" + "<div style=\"background-color: #23545B; \">" + "<p><x-medal_trooper> </x-medal_trooper> Trooper" + jsonUnits.units[i].level_trooper + "</div>" + "<p><x-medal_veteran> </x-medal_veteran> Veteran" + jsonUnits.units[i].level_veteran + "<div style=\"background-color: #23545B;\">" + "<p><x-medal_expert> </x-medal_expert> Expert" + jsonUnits.units[i].level_expert + "</div>" + "<p><x-medal_elite> </x-medal_elite> Elite" + jsonUnits.units[i].level_elite + "<div style=\"background-color: #23545B;\">" + "<p><x-medal_champion> </x-medal_champion> Champion<li> +10 <x-hp> </x-hp> Hit Points</li>" + "</div>";
             for (k in jsonUnits.units[i].abilities) {
-                addAbilityslot(jsonUnits.units[i].abilities[k].slug, jsonUnits.units[i].abilities[k].unique);
+                addAbilityslot(jsonUnits.units[i].abilities[k].slug, jsonUnits.units[i].abilities[k].unique, jsonUnits.units[i].abilities[k].damage, a);
 
             }
-           
+
 
             for (x in jsonUnits.units[i].passives) {
-                addPassiveslot(jsonUnits.units[i].passives[x].slug,jsonUnits.units[i].passives[x].unique);
+                addPassiveslot(jsonUnits.units[i].passives[x].slug, jsonUnits.units[i].passives[x].unique, a);
 
             }
-             for (z in jsonUnits.units[i].resistances) {
-                addResistanceSlot(jsonUnits.units[i].resistances[z].slug,jsonUnits.units[i].resistances[z].unique);
+            for (z in jsonUnits.units[i].resistances) {
+                addResistanceSlot(jsonUnits.units[i].resistances[z].slug, jsonUnits.units[i].resistances[z].unique, a);
 
             }
-             for (j in jsonUnits.units[i].unit_types) {
-                addUnitTypeIcon(jsonUnits.units[i].unit_types[j].slug,jsonUnits.units[i].unit_types[j].unique);
+            for (j in jsonUnits.units[i].unit_types) {
+                addUnitTypeIcon(jsonUnits.units[i].unit_types[j].slug, jsonUnits.units[i].unit_types[j].unique, a);
 
             }
 
+            var extratooltips = document.getElementsByClassName("tooltiptext2");
+            for (t in extratooltips) {
+                extratooltips[t].innerHTML = showAbility(extratooltips[t].id);
+            }
 
-            addEliteSkill(jsonUnits.units[i].elite_skill);
 
 
 
@@ -251,12 +315,92 @@ function showUnit(a) {
 }
 
 function showAbility(a) {
-    var hp, mp, shield, armor, descr, j, abilityname, imagelink = "";
+    var j, text, abilityDam, abilityName, abilityDescr, abilityType = "";
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
-            abilityname = document.getElementById(a + "_description");
-            abilityname.innerHTML = jsonUnitAbilities.abilities[j].description;
+            abilityName = jsonUnitAbilities.abilities[j].name;
 
+            abilityDescr = jsonUnitAbilities.abilities[j].description;
+            abilityDam = jsonUnitAbilities.abilities[j].damage;
+            abilityType = jsonUnitAbilities.abilities[j].range;
+            if (abilityType != null) {
+                text = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "" + abilityDam + "</span>" + "</p>" +
+                    abilityType + "<hr>" + abilityDescr;
+            } else {
+                text = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "" + abilityDam + "</span>" + "<hr>" + abilityDescr;
+            }
+
+        }
+
+    }
+    return text;
+}
+
+function searchData() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    searchUnits(filter);
+}
+
+function searchUnits(keyword) {
+    var i, output, textvalue, list = "";
+    output = document.getElementById("searchOutput");
+
+    for (i = 0; i < jsonUnits.units.length; i++) {
+        textvalue = jsonUnits.units[i].string;
+        if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+            list += "<br>" + jsonUnits.units[i].string;
+
+        }
+    }
+    output.innerHTML = list;
+    var btn = document.createElement("DIV");
+    btn.className = "unit_passiveslot";
+    var imag = document.createElement("IMG");
+    imag.className = "unit_ability_icon";
+    var spa = document.createElement("SPAN");
+    var tex = document.createElement("DIV");
+    tex.className = "tooltip";
+    if (b == "yes") {
+        abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
+    }
+    tex.innerHTML = abilityName;
+
+    spa.className = "tooltiptext";
+    spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
+    imag.setAttribute("src", "/Icons/Passives/" + abilityIcon + ".png");
+    imag.setAttribute("width", "40");
+    imag.setAttribute("height", "40");
+
+    document.getElementById("searchOutput").appendChild(btn);
+    tex.appendChild(spa);
+
+    btn.appendChild(imag);
+    btn.append(tex);
+}
+
+
+function showBuilding(a, b) {
+    var buildingName, description, cost, type, prereq, j, imagelink = "";
+    for (j in jsonBuildings.buildings) {
+        if (a == jsonBuildings.buildings[j].slug) {
+            buildingName = document.getElementById("buildingname" + b);
+            buildingName.innerHTML = jsonBuildings.buildings[j].name;
+            description = document.getElementById("buildingdescription" + b);
+            description.innerHTML = jsonBuildings.buildings[j].description;
+            type = document.getElementById("buildingtype" + b);
+            type.innerHTML = jsonBuildings.buildings[j].type;
+
+            cost = document.getElementById("buildingcost" + b);
+            cost.innerHTML = "Cost : " + jsonBuildings.buildings[j].cost;
+            if (jsonBuildings.buildings[j].prereq != "") {
+
+                prereq = document.getElementById("buildingprereq" + b);
+                prereq.innerHTML = jsonBuildings.buildings[j].prereq;
+            }
+            imagelink = document.getElementById("buildingicon" + b);
+            imagelink.setAttribute("src", "/Icons/Buildings/" + jsonBuildings.buildings[j].image_link + ".png");
         }
     }
 }
