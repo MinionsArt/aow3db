@@ -2,82 +2,56 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="Data/style.css">
+    <base href="/Testing/" target="_blank">
+    <link rel="stylesheet" type="text/css" href="/Data/style.css">
     <meta charset="UTF-8">
-    <script type="text/javascript" language="javascript" src="Data/UnitAbilities.json"></script>
-    <script type="text/javascript" language="javascript" src="Data/Units.json"></script>
-    <script type="text/javascript" language="javascript" src="Data/Builder.js"></script>
+    <script type="text/javascript" language="javascript" src="/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/Data/Builder.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function loadheader() {
+            $("#header").load("/Pages/header.html");
+            $("#draconianhatchling").load("/Pages/Units/Draconians/DraconianHatchling.html");
+            $("#draconiancrusher").load("/Pages/Units/Draconians/DraconianCrusher.html");
+            $("#draconianflamer").load("/Pages/Units/Draconians/Draconianflamer.html");
+            $("#draconiancharger").load("/Pages/Units/Draconians/DraconianCharger.html");
+            $("#draconianelder").load("/Pages/Units/Draconians/DraconianElder.html");
+            $("#draconianraptor").load("/Pages/Units/Draconians/DraconianRaptor.html");
+            $("#draconianflyer").load("/Pages/Units/Draconians/DraconianFlyer.html");
+        });
+    </script>
 
-    <title></title>
+    <title>AowDatabase - Draconians</title>
 </head>
 
 <body>
-
-
+    <div id="header"></div>
 
     <div class="unit_card">
- 
-         <div style="position: absolute;   height: 25px; width: 400px;">
+        <p style="background-color:black; font-size: 26px" class="unit_name">Draconians</p>
+        <img class="unit_image" src="/Icons/Passives/draconian.png" style="position: relative; padding: 4px" width="100">
+        <img class="unit_image" src="/PreviewGifs/StrategicMap/draconian.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
 
-                <p class="unit_name" style="left:60%; background-color: black; " id="unitstring"> KIR'KO - Test</p>
-                <img class="unit_image" id="uniticon" src="Emergent.png" style="position: absolute; top: -40px;  left:50%; padding: 4px" width="100">
-            </div>
-            <div style="position: absolute; top: 25px;  height: 25px; width: 120px;">
+        <p>When the Human race rose to power, the race of dragons, especially the young dragons, suffered a terrible price. Among the Humans, dragons were more valuable dead than alive, hunted for glory, sport, money, and to mix in their foul-smelling potions. With no regard to the intelligent creatures that dragons might become in time, the humans devastated the dragon kin. The Dragons turned to the Wizards of Evermore, using powerful magic to create a new breed of followers. They sacrificed their remaining young for the power to keep the humans at bay. The dragons unleashed the power in their eggs, vowing that once they achieved supremacy they would reform themselves into ancient dragonkind again.<br><br>
 
-                <p class="unit_prod" id="productioncost"> Cost: 20 EN 150 PR</p>
-            </div>
-            <div style="position: absolute; top: 50px; height: 25px; width: 100px;">
+            Draconians recover from their wounds more quickly than other races, and are resistant to fire while being more vulnerable to the cold. Most Draconian spell casters have the ability to hurl fire at their enemies.</p>
+        <hr>
 
-                <p class="unit_prod" id="tier"> Tier 1: 4 EN</p>
-            </div>
-         <div style="position: absolute; top: 25px;  height: 25px; width: 220px;">
-
-                <p class="unit_prod" id="origin_research" style="left:800px;"> Research</p>
-            </div>
-            <div style="position: absolute; top: 50px;  height: 25px; width: 220px;">
-
-                <p class="unit_prod" id="origin_building" style="left:800px;"> Building</p>
-            </div>
-     
-       <br><br><br>
-        <div class="unit_ability_holder" id="unitabholder" style="width: 310px; float: left;">
-
-            <div class="unit_stats">
-
-                <p style="font-size: 20px;position: relative; float: left; left:10%" id="hp"> hp </p>
-                <div class="unit_stat_icon"> <img class="unit_stat_icon" src="./Icons/Text/hp.png" width="25 " height="25 ">
-                    <span class="tooltiptext">Hit Points </span>
-                </div>
-                <p style="font-size: 20px;position: relative; float: left; left:10%" id="mp"> mp </p>
-                <div class="unit_stat_icon"> <img class="unit_stat_icon" src="./Icons/Text/mp.png" width="25 " height="25 ">
-                    <span class="tooltiptext">Move Points </span>
-                </div>
-               <p style="font-size: 20px;position: relative; float: left; left:10%" id="defense"> defense </p>
-                <div class="unit_stat_icon"> <img class="unit_stat_icon" src="./Icons/Text/defense.png" width="25 " height="25 ">
-                    <span class="tooltiptext">Defense </span>
-                </div>
-                <p style="font-size: 20px;position: relative; float: left; left:10%" id="resistance"> resistance </p>
-                <div class="unit_stat_icon"> <img class="unit_stat_icon" src="./Icons/Text/resistance.png" width="25 " height="25 ">
-                    <span class="tooltiptext">Resistance </span>
-                </div>
-
-
-            </div>
-           
-        </div>
-         <div class="unit_levelup" id="levelups">
-             fdsfdsfds
-        </div>
-         <div class="unit_image_holder">
-              <img id="vid" src="/Icons/Text/defense.png" width="350 ">
-            <div class="unit_description_bg"></div>
-            <p class="unit_description" id="description"> "Test" </p>
-           
-        </div>
-        <script>
-            showUnit('draconian_hatchling');
-        </script>
     </div>
-</body>
 
-</html>
+    <br><br>
+    <div id="draconianhatchling"></div>
+    <br><br>
+    <div id="draconiancrusher"></div>
+    <br><br>
+    <div id="draconianflamer"></div>
+    <br><br>
+    <div id="draconiancharger"></div>
+    <br><br>
+    <div id="draconianelder"></div>
+    <br><br>
+    <div id="draconianraptor"></div>
+    <br><br>
+    <div id="draconianflyer"></div>
+</body></html>
