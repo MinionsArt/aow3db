@@ -53,7 +53,7 @@ function addUnitTypeIcon(a, b, c) {
             tex.innerHTML = abilityName;
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Testing/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -103,7 +103,7 @@ function addAbilityslot(a, unique, damage, c) {
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDam + "</span>" + "</p>" +
                 abilityRange + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "Icons/Abilities/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Testing/Icons/Abilities/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -141,7 +141,7 @@ function addPassiveslot(a, b, c) {
 
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "Icons/Passives/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Testing/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -182,7 +182,7 @@ function addResistanceSlot(a, b, c) {
 
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "Icons/Resistances/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Testing/Icons/Resistances/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
@@ -208,13 +208,13 @@ function showUnit(a) {
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].name) {
             icon = document.getElementById("uniticon_" + a);
-            icon.setAttribute("src", "Icons/UnitIcons/" + a + ".png");
+            icon.setAttribute("src", "/Testing/Icons/UnitIcons/" + a + ".png");
             unitName = document.getElementById("unitstring_" + a);
             unitName.innerHTML = jsonUnits.units[i].string;
             descr = document.getElementById("description_" + a);
             descr.innerHTML = jsonUnits.units[i].description;
             imagelink = document.getElementById("vid_" + a);
-            imagelink.setAttribute('src', "PreviewGifs/" + jsonUnits.units[i].image_link);
+            imagelink.setAttribute('src', "/Testing/PreviewGifs/" + jsonUnits.units[i].image_link);
             hp = document.getElementById("hp_" + a);
             hp.innerHTML = jsonUnits.units[i].hp + "/" + jsonUnits.units[i].hp;
             armor = document.getElementById("defense_" + a);
@@ -223,10 +223,10 @@ function showUnit(a) {
             shield.innerHTML = jsonUnits.units[i].shield;
             mpicon = document.getElementById("mp_icon_" + a);
             if (jsonUnits.units[i].movement_type == "walking") {
-                mpicon.setAttribute('src', "Icons/Text/mp.png");
+                mpicon.setAttribute('src', "/Testing/Icons/Text/mp.png");
             }
             if (jsonUnits.units[i].movement_type == "flying") {
-                mpicon.setAttribute('src', "Icons/Text/flying.png");
+                mpicon.setAttribute('src', "/Testing/Icons/Text/flying.png");
             }
             mp = document.getElementById("mp_" + a);
             mp.innerHTML = jsonUnits.units[i].mp;
@@ -237,7 +237,7 @@ function showUnit(a) {
             if (jsonUnits.units[i].origin_building != "") {
                 origin_building = document.getElementById("originbuilding_" + a);
                 var aTag = document.createElement('a');
-                aTag.setAttribute('href', "Pages/Other/buildings.html#" + jsonUnits.units[i].origin_building);
+                aTag.setAttribute('href', "/Testing/Pages/Other/buildings.html#" + jsonUnits.units[i].origin_building);
                 aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_building;
                 origin_building.appendChild(aTag);
             }
@@ -337,7 +337,7 @@ function searchUnits(keyword) {
 
     spa.className = "tooltiptext";
     spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-    imag.setAttribute("src", "Icons/Passives/" + abilityIcon + ".png");
+    imag.setAttribute("src", "/Testing/Icons/Passives/" + abilityIcon + ".png");
     imag.setAttribute("width", "40");
     imag.setAttribute("height", "40");
 
@@ -368,7 +368,7 @@ function showBuilding(a, b) {
                 prereq.innerHTML = jsonBuildings.buildings[j].prereq;
             }
             imagelink = document.getElementById("buildingicon" + b);
-            imagelink.setAttribute("src", "/Icons/Buildings/" + jsonBuildings.buildings[j].image_link + ".png");
+            imagelink.setAttribute("src", "/Testing//Icons/Buildings/" + jsonBuildings.buildings[j].image_link + ".png");
         }
     }
 }
