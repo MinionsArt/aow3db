@@ -292,7 +292,7 @@ function showAbility(a) {
             abilityDam = jsonUnitAbilities.abilities[j].damage;
             abilityType = jsonUnitAbilities.abilities[j].range;
             if (abilityType != null) {
-                text = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "" + abilityDam + "</span>" + "</p>" +
+                text = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp;" + abilityDam + "</span>" + "</p>" +
                     abilityType + "<hr>" + abilityDescr;
             } else {
                 text = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "" + abilityDam + "</span>" + "<hr>" + abilityDescr;
