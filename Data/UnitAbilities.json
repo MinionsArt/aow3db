@@ -25,6 +25,17 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "poison_spit",
+            "name": "Poison Spit",
+            "description": "<p>Spits poison at target enemy unit\
+                                <li>Does less damage at long range</li>\
+                                <li>Straight Shot</li>",
+            "damage": "",
+            "icon_name": "poison_spit",
+            "range": "Medium",
+
+       },
+        {
             "slug": "fire_bomb",
             "name": "Fire Bomb",
             "description": "<p>Launches a volley of fire explosions at target unit\
@@ -48,12 +59,150 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "poison_bolts",
+            "name": "Poison Bolts",
+            "description": "<p>Shoots poison bolts at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "poison_spit",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "castigate",
+            "name": "Castigate",
+            "description": "<p>Shoots fire bolts at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "castigate",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "mosquito_darts",
+            "name": "Mosquito Darts",
+            "description": "<p>Shoots mosquito darts at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>No obstacle penalties</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "mosquito_darts",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "throw_stones",
+            "name": "Throw Stones",
+            "description": "<p>Throws stones at target enemy unit.\
+                                <li>Does less damage at long range</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "throw_stones",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "throw_harpoon",
+            "name": "Throw Harpoon",
+            "description": "<p>Throws Harpoons at target enemy unit and can cause the Immobilized (8 <x-physical_def></x-physical_def>) status.\
+                                <li>Does less damage at long range</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "throw_harpoon",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "throw_ice_ball",
+            "name": "Throw Ice Ball",
+            "description": "<p>Throws Ice Balls at target enemy unit and can cause Frozen (8 <x-frost_res></x-frost_res>) status.\
+                                <li>Does less damage at long range</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "throw_ice_ball",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "shoot_heavy_crossbow",
+            "name": "Shoot Heavy Crossbow",
+            "description": "<p>Shoots bolts at target enemy unit.\
+                                <li>Does less damage at long range</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "shoot_heavy_crossbow",
+            "range": "Medium",
+
+       },
+        {
             "slug": "steal_enchantment",
             "name": "Steal Enchantment",
-            "description": "<p>Removes all enchantments from target unit and moves them to this unit.\<li>Can only be used once per battle.</li>",
+            "description": "<p>Removes all enchantments from target unit and moves them to this unit.\<li>Can only be used once per battle.",
             "damage": "",
             "icon_name": "steal_enchantment",
             "range": "Short",
+
+       },
+        {
+            "slug": "cure_disease",
+            "name": "Cure Disease",
+            "description": "<p>Dispells all Blight debuffs on target friendy unit.",
+            "damage": "",
+            "icon_name": "cure_disease",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "throw_net",
+            "name": "Throw Net",
+            "description": "<p>Throw Net Attempts to Ensnare target enemy in a net. Ensnared units cannot take actions for 2 turns. <li>Cooldown 2 <x-turn></x-turn></li>",
+            "damage": "11 <x-physical_def> </x-physical_def>",
+            "icon_name": "throw_net",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "weakening",
+            "name": "Weakening",
+            "description": "<p>Weaken target enemy unit. Weakened units suffer -1 <x-resistance></x-resistance>, -1 <x-defense></x-defense>, -200 <x-morale></x-morale>and 60% <x-blight></x-blight> Weakness \<li>-Cooldown 1 <x-turn></x-turn>.",
+            "damage": "",
+            "icon_name": "weakening",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "ice_nova",
+            "name": "Ice Nova",
+            "description": "<p>Blasts icy wind 3 Hexes outward dealing 8 <x-frost></x-frost> damage. Units hit by blast are taken out of Guard Mode\<li>-Cooldown 3 <x-turn></x-turn>.",
+            "damage": "",
+            "icon_name": "ice_nova",
+            "range": "Short",
+
+       },
+        {
+            "slug": "defensive_strike",
+            "name": "Defensive Strike",
+            "description": "<p>Allows the unit to make a single melee attack and then go into a guarded stance.\<li>Can only be used once per battle.",
+            "damage": "",
+            "icon_name": "defensive_strike",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "shatter_strike",
+            "name": "Shatter Strike",
+            "description": "<p>This unit's weapon can easily shatter ice and stone. The unit deals an additional +5 <x-physical></x-physical> damage against Frozen and Petrified enemies and enemies under the Stone Skin spell.",
+            "damage": "",
+            "icon_name": "shatter_strike",
+            "range": "",
 
        },
         {
@@ -66,19 +215,124 @@ var jsonUnitAbilities = {
 <li>Likes Barrens and Lava</li>\
 <li>Dislikes Arctic Terrain</li>\
 <li>Hates Blighted Terrain</li>",
-            "damage": "11 <x-fire></x-fire>",
+            "damage": "",
             "icon_name": "draconian",
-            "range": "Medium",
+            "range": "",
+
+       },
+        {
+            "slug": "frostling",
+            "name": "Frostling",
+            "description": "<p>This unit is a member of the Frostling race, and has:\
+                                <li>Arctic Walking</li>\
+ <li>Fast Embark</li>\
+                                <li>60 % <x-frost> </x-frost> Protection</li>\
+<li>40 % <x-fire> </x-fire> Weakness</li>\
+<li>Likes Fertile Plains</li>\
+<li>Dislikes Blighted, Subterranean, Tropical Terrain</li>\
+<li>Hates Volcanic Terrain</li>",
+            "damage": "",
+            "icon_name": "frostling",
+            "range": "",
+
+       },
+        {
+            "slug": "dwarf",
+            "name": "Dwarf",
+            "description": "<p>This unit is a member of the Dwarf race, costs 10% more and has:\
+ <li>+1 <x-defense></x-defense> Defense</li>\
+ <li>+1 <x-resistance></x-resistance> Resistance</li>\
+                                <li>Mountaineering</li>\
+                                <li>Cave Crawling</li>\
+ <li>Night Vision</li>\
+<li>20 % <x-blight> </x-blight> Protection</li>\
+<li>Likes Mountains</li>\
+<li>Dislikes Troplical Terrain</li>\
+<li>Hates Blighted Terrain</li>",
+            "damage": "",
+            "icon_name": "dwarf",
+            "range": "",
+
+       },
+        {
+            "slug": "goblin",
+            "name": "Goblin",
+            "description": "<p>This unit is a member of the Goblin race, costs 10% less and has:\
+<li>-5 <x-hp></x-hp> Resistance</li>\
+                                <li>Wetland Walking</li>\
+  <li>Wetland Foraging</li>\
+                                <li>Cave Crawling</li>\
+ <li>Night Vision</li>\
+<li>40 % <x-blight> </x-blight> Protection</li>\
+<li>Likes Wetlands</li>\
+<li>Dislikes Troplical and Arctic Terrain</li>\
+<li>Hates Volcanic Terrain</li>",
+            "damage": "",
+            "icon_name": "goblin",
+            "range": "",
 
        },
         {
             "slug": "dragon_ancestry",
             "name": "Dragon Ancestry",
-            "description": "<p>Bestows High Morale,  40%<x-fire></x-fire> Protection, and Fire Strike on target friendly Draconian unit until end of combat.\                            <li>Can only be used once per battle.</li>\
-                            ",
+            "description": "<p>Bestows High Morale,  40%<x-fire></x-fire> Protection, and Fire Strike on target friendly Draconian unit until end of combat.\                            <li>Can only be used once per battle.</li> ",
             "damage": "",
             "icon_name": "dragon_ancestry",
             "range": "Touch",
+
+       },
+        {
+            "slug": "grant_frozen_flame",
+            "name": "Grant Frozen Flame",
+            "description": "<p>Bestows Inflict Chilling,  80%<x-fire></x-fire> Protection, and +2 <x-fire></x-fire> +2 <x-frost></x-frost> on target friendly unit until end of combat.\                            <li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "grant_frozen_flame",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "guardian_flame",
+            "name": "Guardian Flame",
+            "description": "<p>Restores 10 <x-hp></x-hp> to target friendly unit. In addition, the unit receives 40% <x-fire></x-fire> Protection and the unit's melee attacks deal +2 <x-fire></x-fire> damage until the end of combat.<li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "guardian_flame",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "pledge_of_protection",
+            "name": "Pledge of Protection",
+            "description": "<p>This unit gains + 2 <x-defense></x-defense> and links itself to target friendly female Frostling unit. Linked unit takes 35% less damage and remaining damage is dealt to this unit instead",
+            "damage": "",
+            "icon_name": "pledge_of_protection",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "dispel_magic",
+            "name": "Dispel Magic",
+            "description": "<p>Removes all magical debuffs and buffs from target unit.<li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "dispel_magic",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "freezing_touch",
+            "name": "Freezing Touch",
+            "description": "<p>Attempts to Freeze target enemy unit. Frozen units cannot take actions for 1 turn and resist Fire and Frost damage.</li>",
+            "damage": "11 <x-frost_res></x-frost_res>",
+            "icon_name": "freezing_touch",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "disgusting_stench",
+            "name": "Disgusting Stench",
+            "description": "<p>Units standing next to this unit suffer -300 <x-morale></x-morale> and -1 <x-resistance></x-resistance>.</li>",
+            "damage": "",
+            "icon_name": "disgusting_stench",
+            "range": "",
 
        },
         {
@@ -101,6 +355,367 @@ var jsonUnitAbilities = {
 
 
        },
+        {
+            "slug": "wall_crushing",
+            "name": "Wall Crushing",
+            "description": "This unit's attacks are capable of damaging city walls.",
+            "damage": "",
+            "icon_name": "wall_crushing",
+            "range": "",
+
+
+       },
+        {
+            "slug": "frost_weapons",
+            "name": "Frost Weapons",
+            "description": "This units weapons are made out of an enchanted frozen metal and deals +5 <x-frost></x-frost> and - 4 <x-physical></x-physical> damage with every melee attack.",
+            "damage": "",
+            "icon_name": "frost_weapons",
+            "range": "",
+
+
+       },
+        {
+            "slug": "backstab",
+            "name": "Backstab",
+            "description": "Deals an additional+ 6 <x-physical></x-physical> Melee damage performing a flanking melee attack.",
+            "damage": "",
+            "icon_name": "backstab",
+            "range": "",
+
+
+       },
+        {
+            "slug": "explosive_ice_death",
+            "name": "Explosive Ice Death",
+            "description": "	Upon death, this unit deals 10 <x-physical></x-physical> 10 <x-frost></x-frost> damage to all units surrounding it.",
+            "damage": "",
+            "icon_name": "explosive_ice_death",
+            "range": "",
+
+
+       },
+        {
+            "slug": "fast_embark",
+            "name": "Fast Embark",
+            "description": "This unit doesn’t pay extra movement points for disembark and embarking onto a water hex. Embarking still soaks all movement points",
+            "damage": "",
+            "icon_name": "fast_embark",
+            "range": "",
+
+
+       },
+        {
+            "slug": "fishing",
+            "name": "Fishing",
+            "description": "Unit regenerates an extra 10 <x-hp></x-hp> per turn when embarked on water",
+            "damage": "",
+            "icon_name": "fishing",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_bleeding_wounds",
+            "name": "Inflict Bleeding Wounds",
+            "description": "Melee and Ranged attacks can inflict Bleeding Wounds. Bleeding units suffer 4 <x-physical></x-physical> damage at the start of each combat round for 2 <x-turn></x-turn>",
+            "damage": "9 <x-physical_def></x-physical_def>",
+            "icon_name": "inflict_bleeding_wounds",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_noxious_vulnerability",
+            "name": "Inflict Noxious Vulnerability",
+            "description": "Melee and Ranged attacks can inflict Noxious Vulnerability. Noxious units suffer -2 <x-resistance></x-resistance> and -300 <x-morale></x-morale> for 4 <x-turn></x-turn>",
+            "damage": "7 <x-blight_res></x-blight_res>",
+            "icon_name": "inflict_noxious_vulnerability",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_enfeebling_fever",
+            "name": "Inflict Enfeebling Fever",
+            "description": "Melee and Ranged attacks can inflict Enfeebling Fever. Fevered units suffer -3 <x-defense></x-defense> and -300 <x-morale></x-morale> for 4 <x-turn></x-turn>",
+            "damage": "7 <x-blight_res></x-blight_res>",
+            "icon_name": "inflict_enfeebling_fever",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_frostbite",
+            "name": "Inflict Frostbite",
+            "description": "Melee and Ranged attacks can inflict Frostbite. Frostbitten units suffer -2 <x-defense></x-defense> for 3 <x-turn></x-turn>",
+            "damage": "7 <x-frost_res></x-frost_res>",
+            "icon_name": "inflict_frostbite",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_chilling",
+            "name": "Inflict Chilling",
+            "description": "Melee and Ranged attacks can inflict Chilling. Chilled units suffer -1 <x-defense></x-defense> and 20% <x-frost></x-frost> Weakness for 2 <x-turn></x-turn>",
+            "damage": "8 <x-frost_res></x-frost_res>",
+            "icon_name": "inflict_chilling",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_freezing_cold",
+            "name": "Inflict Freezing Cold",
+            "description": "Melee and Ranged attacks can inflict Frozen. Frozen units cannot take actions for 1 turn and resist Fire and Frost damage.",
+            "damage": "8 <x-frost_res></x-frost_res>",
+            "icon_name": "inflict_freezing_cold",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_exhausting_fatigue",
+            "name": "Inflict Exhausting Fatigue",
+            "description": "Melee and Ranged attacks can inflict Exhausting Fatigue. Fatigued units suffer -3 <x-physical></x-physical> Melee strength and -300 <x-morale></x-morale> for 4 <x-turn></x-turn>",
+            "damage": "7 <x-blight_res></x-blight_res>",
+            "icon_name": "inflict_exhausting_fatigue",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_crippling_wounds",
+            "name": "Inflict Crippling Wounds",
+            "description": "Melee and Ranged attacks can inflict Crippling Wounds. Bleeding units have -12 <x-mp></x-mp> for 2 <x-turn></x-turn>",
+            "damage": "9 <x-physical_def></x-physical_def>",
+            "icon_name": "inflict_crippling_wounds",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_severely_poisoned",
+            "name": "Inflict Severely Poisoned",
+            "description": "Attacks from this unit can inflict Severely Poisoned. Severely Poisoned units take 4 <x-blight></x-blight> damage and -400 <x-morale></x-morale> for 3 <x-turn></x-turn> and cannot be healed on the Strategic map during that time",
+            "damage": "9 <x-blight_res></x-blight_res>",
+            "icon_name": "inflict_severely_poisoned",
+            "range": "",
+
+
+       },
+        {
+            "slug": "dome_of_frost",
+            "name": "Dome of Frost",
+            "description": "Units in a 1 hex radius are Exposed. Exposed units suffer -40% <x-frost></x-frost> Weakness, -1 <x-resistance></x-resistance> and 5 <x-frost></x-frost> damage.",
+            "damage": "",
+            "icon_name": "dome_of_frost",
+            "range": "",
+
+
+       },
+        {
+            "slug": "mountaineering",
+            "name": "Mountaineering",
+            "description": "This units movement cost for walking through Mountains is reduced by 8 <x-mp></x-mp>.",
+            "damage": "",
+            "icon_name": "mountaineering",
+            "range": "",
+
+
+       },
+        {
+            "slug": "last_rite_of_winter",
+            "name": "Last Rite of Winter",
+            "description": "Sacrifices unit to spread Arctic terrain in a 3 hex radius on the Strategic map.",
+            "damage": "",
+            "icon_name": "last_rite_of_winter",
+            "range": "",
+
+
+       },
+        {
+            "slug": "cave_crawling",
+            "name": "Cave Crawling",
+            "description": "This units movement cost for walking in the Underground is reduced by 1 <x-mp></x-mp>.",
+            "damage": "",
+            "icon_name": "cave_crawling",
+            "range": "",
+
+
+       },
+        {
+            "slug": "wetland_walking",
+            "name": "Wetland Walking",
+            "description": "This units movement cost for walking in Wetlands is reduced by 2 <x-mp></x-mp>.",
+            "damage": "",
+            "icon_name": "wetland_walking",
+            "range": "",
+
+
+       },
+        {
+            "slug": "forestry",
+            "name": "Forestry",
+            "description": "This units movement cost for walking in Dense Vegetation is reduced by 2 <x-mp></x-mp>.",
+            "damage": "",
+            "icon_name": "forestry",
+            "range": "",
+
+
+       },
+        {
+            "slug": "wetland_foraging",
+            "name": "Wetland Foraging",
+            "description": "This unit heals an additional +9 <x-hp></x-hp> when on Wetlands terrain.",
+            "damage": "",
+            "icon_name": "wetland_foraging",
+            "range": "",
+
+
+       },
+        {
+            "slug": "life_steal",
+            "name": "Life Steal",
+            "description": "Restores 3-5 <x-hp></x-hp> every time the unit performs a melee attack against an enemy unit.",
+            "damage": "",
+            "icon_name": "life_steal",
+            "range": "",
+
+
+       },
+        {
+            "slug": "guard_breaker",
+            "name": "Guard Breaker",
+            "description": "Melee attacks from this unit will stop the target from guarding.",
+            "damage": "",
+            "icon_name": "guard_breaker",
+            "range": "",
+
+
+       },
+        {
+            "slug": "regrowth",
+            "name": "Regrowth",
+            "description": "This unit regains 20% of its <x-hp></x-hp> Hit Points each combat turn. Regains all its <x-hp></x-hp> Hit Points at the start of its owners turn on the Strategic map.",
+            "damage": "",
+            "icon_name": "regrowth",
+            "range": "",
+
+
+       },
+        {
+            "slug": "fearsome",
+            "name": "Fearsome",
+            "description": "Every time an enemy unit performs an attack against this unit it has a chance to become Panicked. Panicked units don’t obey orders and attempt to flee for 2 turns.",
+            "damage": "9 <x-spirit_res></x-spirit_res>",
+            "icon_name": "fearsome",
+            "range": "",
+
+
+       },
+        {
+            "slug": "wetland_concealment",
+            "name": "Wetland Concealment",
+            "description": "This unit is invisible when on Wetlands terrain.",
+            "damage": "",
+            "icon_name": "wetland_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "arctic_concealment",
+            "name": "Arctic Concealment",
+            "description": "This unit is invisible when on Arctic terrain.",
+            "damage": "",
+            "icon_name": "arctic_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "dragon_slayer",
+            "name": "Dragon Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Dragons.",
+            "damage": "",
+            "icon_name": "dragon_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "giant_slayer",
+            "name": "Giant Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Giants.",
+            "damage": "",
+            "icon_name": "giant_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "night_vision",
+            "name": "Night Vision",
+            "description": "This unit gains + 2 Vision range in the Underground.",
+            "damage": "",
+            "icon_name": "night_vision",
+            "range": "",
+
+
+       },
+        {
+            "slug": "swimming",
+            "name": "Swimming",
+            "description": "The unit is able to traverse Water.",
+            "damage": "",
+            "icon_name": "swimming",
+            "range": "",
+
+
+       },
+        {
+            "slug": "mind_control_immunity",
+            "name": "Mind Control Immunity",
+            "description": "This unit is immune to all Mind Control effects.",
+            "damage": "",
+            "icon_name": "mind_control_immunity",
+            "range": "",
+
+
+       },
+        {
+            "slug": "shield",
+            "name": "Shield",
+            "description": "This unit gains +2 <x-defense></x-defense> against all non-flanking attacks.",
+            "damage": "",
+            "icon_name": "shield",
+            "range": "",
+
+
+       },
+        {
+            "slug": "armored",
+            "name": "Armored",
+            "description": "This unit is Armored and has +2 <x-defense></x-defense>.",
+            "damage": "",
+            "icon_name": "armored",
+            "range": "",
+
+
+       },
+        {
+            "slug": "demolisher",
+            "name": "Demolisher",
+            "description": "Deals +4 <x-physical></x-physical> damage to Machine Machine units and obstacles.",
+            "damage": "",
+            "icon_name": "demolisher",
+            "range": "",
+
+
+       },
+
 
         {
             "slug": "irregular",
@@ -138,6 +753,16 @@ var jsonUnitAbilities = {
             "description": "The unit is a Cavalry unit, is Mounted and has Charge",
             "damage": "",
             "icon_name": "cavalry",
+
+
+
+       },
+        {
+            "slug": "tunneling",
+            "name": "Tunneling",
+            "description": "Unit can dig through Dirt Cavern Walls, turning them to Barrens. Gives 3-5 <x-gold></x-gold> per hex",
+            "damage": "",
+            "icon_name": "tunneling",
 
 
 
@@ -198,6 +823,16 @@ var jsonUnitAbilities = {
             "description": "This unit attacks first when defending.",
             "damage": "",
             "icon_name": "first_strike",
+
+
+
+       },
+        {
+            "slug": "volunteer",
+            "name": "Volunteer",
+            "description": "This unit has -50% Upkeep.",
+            "damage": "",
+            "icon_name": "volunteer",
 
 
 
@@ -274,6 +909,50 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "blight_protection_60",
+            "name": "<span style =\"color: lawngreen\">60% <x-blight> </x-blight> Protection </span>",
+            "description": "<li>The unit will take 60% less damage from<x-blight></x-blight> based attacks.</li>\
+                                <li>Status effects that check against <x-blight_res></x-blight_res> will have a 60% lower chance to affect this unit.</li>",
+
+            "icon_name": "blight_protection",
+       },
+        {
+            "slug": "blight_protection_100",
+            "name": "<span style =\"color: lawngreen\">100% <x-blight> </x-blight> Protection </span>",
+            "description": "<li>The unit will take 100% less damage from<x-blight></x-blight> based attacks.</li>\
+                                <li>Status effects that check against <x-blight_res></x-blight_res> will have a 100% lower chance to affect this unit.</li>",
+
+            "icon_name": "blight_protection",
+       },
+        {
+            "slug": "blight_protection_40",
+            "name": "<span style =\"color: lawngreen\">40% <x-blight> </x-blight> Protection </span>",
+            "description": "<li>The unit will take 40% less damage from<x-blight></x-blight> based attacks.</li>\
+                                <li>Status effects that check against <x-blight_res></x-blight_res> will have a 40% lower chance to affect this unit.</li>",
+
+            "icon_name": "blight_protection",
+       },
+        {
+            "slug": "blight_protection_80",
+            "name": "<span style =\"color: lawngreen\">80% <x-blight> </x-blight> Protection </span>",
+            "description": "<li>The unit will take 80% less damage from<x-blight></x-blight> based attacks.</li>\
+                                <li>Status effects that check against <x-blight_res></x-blight_res> will have a 80% lower chance to affect this unit.</li>",
+
+            "icon_name": "blight_protection",
+       },
+        {
+            "slug": "blight_protection_20",
+            "name": "<span style =\"color: lawngreen\">20% <x-blight> </x-blight> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 20% less damage from<x-blight></x-blight> based attacks.</li>\
+                                <li>Status effects that check against <x-blight_res></x-blight_res> will have a 20% lower chance to affect this unit.</li>",
+
+            "icon_name": "blight_protection",
+
+
+
+       },
+        {
             "slug": "frost_weakness_20",
             "name": "<span style =\"color: deeppink\">20% <x-frost> </x-frost> Weakness </span>",
             "type": "Repeating <x-repeating>  </x-repeating>",
@@ -283,6 +962,27 @@ var jsonUnitAbilities = {
 
 
        },
+        {
+            "slug": "fire_weakness_20",
+            "name": "<span style =\"color: deeppink\">20% <x-fire> </x-fire> Weakness </span>",
+            "type": "Repeating <x-repeating>  </x-repeating>",
+            "description": "<li>The unit will take 20% more damage from<x-fire></x-fire> based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res> will have a 20% higher chance to affect this unit.</li>",
+            "icon_name": "fire_weakness",
+
+
+       },
+        {
+            "slug": "fire_weakness_40",
+            "name": "<span style =\"color: deeppink\">40% <x-fire> </x-fire> Weakness </span>",
+            "type": "Repeating <x-repeating>  </x-repeating>",
+            "description": "<li>The unit will take 40% more damage from<x-fire></x-fire> based attacks.</li>\
+                                <li>Status effects that check against <x-fire_res></x-fire_res> will have a 40% higher chance to affect this unit.</li>",
+            "icon_name": "fire_weakness",
+
+
+       },
+
 
         {
             "slug": "infantry",
@@ -290,6 +990,14 @@ var jsonUnitAbilities = {
             "description": "This unit is infantry and has Wall Climbing",
             "damage": "",
             "icon_name": "infantry",
+
+       },
+        {
+            "slug": "monster",
+            "name": "Monster",
+            "description": "This unit is a Monster",
+            "damage": "",
+            "icon_name": "monster",
 
        },
         {
@@ -354,6 +1062,14 @@ var jsonUnitAbilities = {
             "description": "This unit gains +6 <x-physical> </x-physical> damage on its first strike in melee combat if the unit has moved 4 or more hexes this turn.",
             "damage": "",
             "icon_name": "charge",
+
+       },
+        {
+            "slug": "devastating_charge",
+            "name": "Devastating Charge",
+            "description": "This unit gains an additional +4 <x-physical> </x-physical> damage when Charging",
+            "damage": "",
+            "icon_name": "devastating_charge",
 
        },
         {
