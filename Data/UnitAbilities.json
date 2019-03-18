@@ -36,6 +36,17 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "throw_chicken",
+            "name": "Throw Chicken",
+            "description": "<p>Throws Chicken at target unit. Has a chance (6 <x-physical_def></x-physical_def>) to drain half of the target units Movement Points\
+                                <li>Can be used once per combat</li>\
+                                <li>No range or obstacle penalties</li>",
+            "damage": "",
+            "icon_name": "throw_chicken",
+            "range": "Long",
+
+       },
+        {
             "slug": "fire_bomb",
             "name": "Fire Bomb",
             "description": "<p>Launches a volley of fire explosions at target unit\
@@ -56,6 +67,18 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "fire_bolts",
             "range": "Medium",
+
+       },
+        {
+            "slug": "throw_cleavers",
+            "name": "Throw Cleavers",
+            "description": "<p>Throws cleavers at an enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "throw_cleavers",
+            "range": "Short",
 
        },
         {
@@ -103,6 +126,29 @@ var jsonUnitAbilities = {
                                 <li>Cannot be used while unit is engaged</li>",
             "damage": "",
             "icon_name": "throw_stones",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "fireworks",
+            "name": "Fireworks",
+            "description": "<p>Throws Fireworks at target unit. Units hit have a chance to become Dazzled, Animals have a chance to become Panicked.\
+                                <li>1 Hex Area of Effect for Dazzle/Panic</li>",
+            "damage": "",
+            "icon_name": "fireworks",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "slingshot",
+            "name": "Slingshot",
+            "description": "<p>Throws stones at target enemy unit.\
+                                <li>Does less damage at long range</li>\
+ <li>Straight Shot</li>\
+<li>Can trigger up to 3 times</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "slingshot",
             "range": "Medium",
 
        },
@@ -170,6 +216,15 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "wing_beat",
+            "name": "Wing Beat",
+            "description": "<p>Wing Beat hits the frontal 3 enemies for normal melee damage, and has no retaliation. <li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "wing_beat",
+            "range": "Short",
+
+       },
+        {
             "slug": "weakening",
             "name": "Weakening",
             "description": "<p>Weaken target enemy unit. Weakened units suffer -1 <x-resistance></x-resistance>, -1 <x-defense></x-defense>, -200 <x-morale></x-morale>and 60% <x-blight></x-blight> Weakness \<li>-Cooldown 1 <x-turn></x-turn>.",
@@ -193,6 +248,15 @@ var jsonUnitAbilities = {
             "description": "<p>Allows the unit to make a single melee attack and then go into a guarded stance.\<li>Can only be used once per battle.",
             "damage": "",
             "icon_name": "defensive_strike",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "nourishing_meal",
+            "name": "Nourishing Meal",
+            "description": "<p>Increases max Hitpoints of target friendly units by 15 and gives +100 <x-morale></x-morale>. Automatically heals 15 Hitponts divided among valid units in the stack on the Strategic map Undead Units can be healed by this, but will not gain the Morale bonus\<li>Can only be used once per battle.",
+            "damage": "",
+            "icon_name": "nourishing_meal",
             "range": "Touch",
 
        },
@@ -269,6 +333,23 @@ var jsonUnitAbilities = {
 <li>Hates Volcanic Terrain</li>",
             "damage": "",
             "icon_name": "goblin",
+            "range": "",
+
+       },
+        {
+            "slug": "halfling",
+            "name": "Halfling",
+            "description": "<p>This unit is a member of the Halfling race, and has:\
+<li>-1 <x-physical></x-physical> Melee</li>\
+<li>+1 <x-physical></x-physical> Ranged</li>\
+<li>Forestry</li>\
+                                <li>Lucky</li>\
+<li>20 % <x-physical> </x-physical> Weakness</li>\
+<li>Likes Fertile Plains, Dense Vegetation</li>\
+<li>Dislikes Subterranean Terrain</li>\
+<li>Hates Blighted, Arctic, Volcanic Terrain</li>",
+            "damage": "",
+            "icon_name": "halfling",
             "range": "",
 
        },
@@ -381,6 +462,16 @@ var jsonUnitAbilities = {
             "description": "Deals an additional+ 6 <x-physical></x-physical> Melee damage performing a flanking melee attack.",
             "damage": "",
             "icon_name": "backstab",
+            "range": "",
+
+
+       },
+        {
+            "slug": "explosive_death",
+            "name": "Explosive Death",
+            "description": "	Upon death, this unit deals 10 <x-physical></x-physical> 10 <x-fire></x-fire> damage to all units surrounding it.",
+            "damage": "",
+            "icon_name": "explosive_death",
             "range": "",
 
 
@@ -626,11 +717,51 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "urban_concealment",
+            "name": "Urban Concealment",
+            "description": "This unit is invisible when on Structures.",
+            "damage": "",
+            "icon_name": "urban_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "forest_concealment",
+            "name": "Forest Concealment",
+            "description": "This unit is invisible when in Dense Vegetation.",
+            "damage": "",
+            "icon_name": "forest_concealment",
+            "range": "",
+
+
+       },
+        {
             "slug": "arctic_concealment",
             "name": "Arctic Concealment",
             "description": "This unit is invisible when on Arctic terrain.",
             "damage": "",
             "icon_name": "arctic_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "monster_slayer",
+            "name": "Monster Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Monsters.",
+            "damage": "",
+            "icon_name": "monster_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "animal_slayer",
+            "name": "Animal Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Animals.",
+            "damage": "",
+            "icon_name": "animal_slayer",
             "range": "",
 
 
@@ -651,6 +782,16 @@ var jsonUnitAbilities = {
             "description": "This unit deals +3 <x-physical></x-physical> damage against Giants.",
             "damage": "",
             "icon_name": "giant_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "lucky",
+            "name": "Lucky",
+            "description": "10% Attacks against this unit have a chance to miss. Chance increases with higher Morale.",
+            "damage": "",
+            "icon_name": "lucky",
             "range": "",
 
 
@@ -857,11 +998,19 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "scorching_projectiles",
+            "name": "Scorching Projectiles",
+            "description": "Ranged attacks can inflict Scorching Heat. Scorched units suffer -3 strength for 3 <x-turn></x-turn>",
+            "damage": "7 <x-fire_res></x-fire_res>",
+            "icon_name": "scorching_heat",
+
+       },
+        {
             "slug": "inflict_immolation",
             "name": "Inflict Immolation",
             "description": "Melee and Ranged attacks can inflict Immolation. Immolated units suffer 3 <x-fire></x-fire> damage at the start of each combat round. They also suffers -1 <x-defense></x-defense>, -1 <x-resistance></x-resistance> -400 <x-happiness></x-happiness> and -2 <x-physical></x-physical> strength for 3 <x-turn></x-turn>",
             "damage": "9 <x-fire_res></x-fire_res>",
-            "icon_name": "scorching_heat",
+            "icon_name": "immolated",
 
        },
         {
@@ -1087,6 +1236,22 @@ var jsonUnitAbilities = {
             "description": "This unit is gains +2 <x-defense> </x-defense> against ranged attacks.",
             "damage": "",
             "icon_name": "projectile_resistance",
+
+       },
+        {
+            "slug": "minor_bard_skills",
+            "name": "Minor Bard Skills",
+            "description": "This unit gives its party + 200 <x-morale> </x-morale>.",
+            "damage": "",
+            "icon_name": "minor_bard_skills",
+
+       },
+        {
+            "slug": "strong_will",
+            "name": "Strong Will",
+            "description": "This unit gains Mind Control Immunity and Spirit Protection 100% <x-spirit> </x-spirit> Protection",
+            "damage": "",
+            "icon_name": "strong_will",
 
        },
         {
