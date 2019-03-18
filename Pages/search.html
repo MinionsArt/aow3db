@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="/Testing/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/Testing/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/Testing/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/Testing/Data/Builder.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function loadheader() {
+            $("#header").load("/Testing/Pages/header.html");
+        });
+    </script>
+
+    <title>AowDatabase - Search Results</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+
+
+
+    <input type="text" id="searchInput" placeholder="Search.." name="search">
+    <button id="example"><i class="fa fa-search"></i></button>
+    <div id="searchOutput" style="font-size: 30px; color: aqua">text</div>
+    <div id="re" style="font-size: 30px; color: aqua">text</div>
+    <script>
+        $("#example").click(function(event) {
+            var string = $("#searchInput").val();
+            alert("Handler for .keyup() called.");
+
+            searchData(string);
+
+        });
+    </script>
+</body></html>

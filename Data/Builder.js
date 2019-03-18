@@ -249,7 +249,7 @@ function showUnit(a) {
                 origin_research.appendChild(aTag);
             }
             levels = document.getElementById("levelups_" + a);
-            levels.innerHTML = "<div style=\"background-color: rgba(30, 30, 40, 1); padding:10px; padding-bottom:5px; margin-bottom: 5 px;\"> Level Up: <x-medal_none> </x-medal_none> Recruit 0/" + jsonUnits.units[i].xp + " <x-xp></x-xp></div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_trooper> </x-medal_trooper> Trooper" + jsonUnits.units[i].level_trooper + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><x-medal_veteran> </x-medal_veteran> Veteran" + jsonUnits.units[i].level_veteran + "</div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_expert> </x-medal_expert> Expert" + jsonUnits.units[i].level_expert + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><x-medal_elite> </x-medal_elite> Elite" + jsonUnits.units[i].level_elite + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;background-color: #23545B;\"><x-medal_champion> </x-medal_champion> Champion<li> +10 <x-hp> </x-hp> Hit Points</li>" + "</div>";
+            levels.innerHTML = "<div style=\"background-color: rgba(30, 30, 40, 1); padding:10px; padding-bottom:5px; margin-bottom: 5 px;\"> Level Up: <x-medal_none> </x-medal_none> Recruit 0/" + jsonUnits.units[i].xp + " <x-xp></x-xp></div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_trooper> </x-medal_trooper> Trooper" + jsonUnits.units[i].level_trooper + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><p><x-medal_veteran> </x-medal_veteran> Veteran</p>" + jsonUnits.units[i].level_veteran + "</div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_expert> </x-medal_expert> Expert" + jsonUnits.units[i].level_expert + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><x-medal_elite> </x-medal_elite> Elite" + jsonUnits.units[i].level_elite + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;background-color: #23545B;\"><p><x-medal_champion> </x-medal_champion> Champion</p><li> +10 <x-hp> </x-hp> Hit Points</li>" + "</div>";
             for (k in jsonUnits.units[i].abilities) {
                 addAbilityslot(jsonUnits.units[i].abilities[k].slug, jsonUnits.units[i].abilities[k].unique, jsonUnits.units[i].abilities[k].damage, a);
 
@@ -312,42 +312,85 @@ function searchData() {
 }
 
 function searchUnits(keyword) {
-    var i, output, textvalue, list = "";
+    var i, output, textvalue, j, l = "";
+    var list = new Array();
     output = document.getElementById("searchOutput");
 
     for (i = 0; i < jsonUnits.units.length; i++) {
         textvalue = jsonUnits.units[i].string;
         if (textvalue.toUpperCase().indexOf(keyword) > -1) {
-            list += "<br>" + jsonUnits.units[i].string;
+            if (list.length >= 1) {
+                if (!isInArray(list, jsonUnits.units[i].name)) {
+                    list.push(jsonUnits.units[i].name);
+                }
+            } else {
+                list.push(jsonUnits.units[i].name);
+            }
+
+
 
         }
+        for (j = 0; j < jsonUnits.units[i].abilities.length; j++) {
+            textvalue = jsonUnits.units[i].abilities[j].slug;
+            if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                if (list.length >= 1) {
+                    if (!isInArray(list, jsonUnits.units[i].string)) {
+                        list.push(jsonUnits.units[i].name);
+                    }
+                } else {
+                    list.push(jsonUnits.units[i].name);
+                }
+
+
+
+            }
+        }
+        for (j = 0; j < jsonUnits.units[i].passives.length; j++) {
+            textvalue = jsonUnits.units[i].passives[j].slug;
+            if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                if (list.length >= 1) {
+                    if (!isInArray(list, jsonUnits.units[i].string)) {
+                        list.push(jsonUnits.units[i].name);
+                    }
+                } else {
+                    list.push(jsonUnits.units[i].name);
+                }
+
+
+
+            }
+        }
+        for (j = 0; j < list.length; j++) {
+            addSearchResultUnit(list[j]);
+        }
+
+        // output.innerHTML = list.toString();
     }
-    output.innerHTML = list;
-    var btn = document.createElement("DIV");
-    btn.className = "unit_passiveslot";
-    var imag = document.createElement("IMG");
-    imag.className = "unit_ability_icon";
-    var spa = document.createElement("SPAN");
-    var tex = document.createElement("DIV");
-    tex.className = "tooltip";
-    if (b == "yes") {
-        abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
-    }
-    tex.innerHTML = abilityName;
-
-    spa.className = "tooltiptext";
-    spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-    imag.setAttribute("src", "/Testing/Icons/Passives/" + abilityIcon + ".png");
-    imag.setAttribute("width", "40");
-    imag.setAttribute("height", "40");
-
-    document.getElementById("searchOutput").appendChild(btn);
-    tex.appendChild(spa);
-
-    btn.appendChild(imag);
-    btn.append(tex);
 }
 
+function addSearchResultUnit(unit) {
+    var output = document.getElementById("searchOutput");
+    for (l = 0; l < jsonUnits.units.length; l++)
+        if (unit == jsonUnits.units[l].name) {
+            var holder = document.createElement("div");
+            holder.className = ".unit_abilityslot ";
+            var icon = document.createElement("img");
+            icon.setAttribute("src", "/Testing/Icons/UnitIcons/" + unit + ".png");
+            var unitName = document.createElement("p");
+            unitName.innerHTML = jsonUnits.units[l].string;
+            output.innerHTML = "done the thing";
+            output.appendChild(holder);
+            holder.appendChild(icon);
+            holder.append(unitName);
+        } else {
+            //output.innerHTML = "done some thing";
+        }
+
+}
+
+function isInArray(array, search) {
+    return array.indexOf(search) >= 0;
+}
 
 function showBuilding(a, b) {
     var buildingName, description, cost, type, prereq, j, imagelink = "";
