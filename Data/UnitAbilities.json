@@ -82,6 +82,18 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "throw_blades",
+            "name": "Throw Blades",
+            "description": "<p>Throws blades at an enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "throw_blades",
+            "range": "medium",
+
+       },
+        {
             "slug": "poison_bolts",
             "name": "Poison Bolts",
             "description": "<p>Shoots poison bolts at target enemy unit.\
@@ -225,6 +237,15 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "pounce",
+            "name": "Pounce",
+            "description": "<p>Unit teleports to a hex behind target unit and strikes it. entering Guard Mode.<li>Cooldown 2 <x-turn></x-turn></li> <li> No line of sight or range penalties</li>",
+            "damage": "",
+            "icon_name": "pounce",
+            "range": "Short",
+
+       },
+        {
             "slug": "weakening",
             "name": "Weakening",
             "description": "<p>Weaken target enemy unit. Weakened units suffer -1 <x-resistance></x-resistance>, -1 <x-defense></x-defense>, -200 <x-morale></x-morale>and 60% <x-blight></x-blight> Weakness \<li>-Cooldown 1 <x-turn></x-turn>.",
@@ -281,6 +302,22 @@ var jsonUnitAbilities = {
 <li>Hates Blighted Terrain</li>",
             "damage": "",
             "icon_name": "draconian",
+            "range": "",
+
+       },
+        {
+            "slug": "tigran",
+            "name": "Tigran",
+            "description": "<p>This unit is a member of the Tigran race, and has:\
+                <li>-1 <x-resistance></x-resistanc></li>\  <li>Athletics</li>\                 <li>Predator</li>\
+                                <li>Night Vision</li>\
+                                <li>40 % <x-spirit> </x-spirit> Protection</li>\
+<li>20 % <x-frost> </x-frost> Weakness</li>\
+<li>Likes Barrens and Dense Vegetation</li>\
+<li>Dislikes Blighted Terrain</li>\
+<li>Hates Arctic Terrain</li>",
+            "damage": "",
+            "icon_name": "tigran",
             "range": "",
 
        },
@@ -517,6 +554,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "razor_projectiles",
+            "name": "Razor Projectiles",
+            "description": "Ranged attacks can inflict Bleeding Wounds. Bleeding units suffer 4 <x-physical></x-physical> damage at the start of each combat round for 2 <x-turn></x-turn>",
+            "damage": "9 <x-physical_def></x-physical_def>",
+            "icon_name": "razor_projectiles",
+            "range": "",
+
+
+       },
+        {
             "slug": "inflict_noxious_vulnerability",
             "name": "Inflict Noxious Vulnerability",
             "description": "Melee and Ranged attacks can inflict Noxious Vulnerability. Noxious units suffer -2 <x-resistance></x-resistance> and -300 <x-morale></x-morale> for 4 <x-turn></x-turn>",
@@ -732,6 +779,16 @@ var jsonUnitAbilities = {
             "description": "This unit is invisible when in Dense Vegetation.",
             "damage": "",
             "icon_name": "forest_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "sprint",
+            "name": "Sprint",
+            "description": "This unit is able to sprint in combat. Sprinting gives an addition + 12 <x-mp></x-mp> and avoids enemy Attacks of Opportunity. <li>Cooldown 3 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "sprint",
             "range": "",
 
 
@@ -1252,6 +1309,22 @@ var jsonUnitAbilities = {
             "description": "This unit gains Mind Control Immunity and Spirit Protection 100% <x-spirit> </x-spirit> Protection",
             "damage": "",
             "icon_name": "strong_will",
+
+       },
+        {
+            "slug": "athletics",
+            "name": "Athletics",
+            "description": "This unit spends 5 <x-mp></x-mp> instead of 6 in Tactical Combat. Movement for Flyers is reduced to 4 <x-mp></x-mp>",
+            "damage": "",
+            "icon_name": "athletics",
+
+       },
+        {
+            "slug": "predator",
+            "name": "Predator",
+            "description": "This units deals +3 damage on Attacks of Opportunity.",
+            "damage": "",
+            "icon_name": "predator",
 
        },
         {
