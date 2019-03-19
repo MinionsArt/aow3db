@@ -3157,5 +3157,565 @@ var jsonUnits = {
         ]
 
                 },
+ //HIGHELF--------------------------------------------------------------------------------------------------------HIGHELF--------------------
+
+        {
+            "hp": "33",
+            "name": "high_elf_initiate",
+            "string": "High Elf Initiate",
+            "armor": "8",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "45 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/HighElves/HighElfInitiate",
+            "description": "\"I like the ladies and don't descriminate by race. So who should enter my tavern but an elf lady straight from my dreams? She wore a fine robe, so I put on my best manners, hinting that for favors she could stay the night free of charge. She said something about being a priestess. I told her I adored her. She said she was saving herself for the storm. I said I'd be her storm of love. She raised both arms to embrace me. I knew I'd conquered her. Then there was a brilliant flash and a boom of thunder. I could not move a muscle, but she could. Faster than lightning she fled my irresistable charms.\" <br> <i>--Tavern of Romance, by Godwin the Seducer</i>\"",
+            "image_link": 'HighElf/high_elf_initiate.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "4<x-physical> </x-physical> 4<x-shock>"
+        },
+                {
+                    "slug": "lightning_shock",
+                    "damage": "12<x-shock>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        },
+                {
+                    "slug": "evolve_initiate"
+                },
+                {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "43",
+            "name": "high_elf_swordsman",
+            "string": "High Elf Swordsman",
+            "armor": "8",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/HighElves/HighElfSwordsman",
+            "description": "\"We are the pinnacle of fitness, better than past generations. Nowhere is this more evident than in our basic infantry. No longer do we allow any elf who can lift a knife to fight. High Elves are stronger and quicker than ever. We train to fight with both sword and shield. Those who survive without crippling injuries are guaranteed the honor of having children, so that only the fittest elves father the next generation. They are eager to kill our enemies with perfect obedience.\" <br> <i>--Improving Traditions, by Commandant Wincer Ludstar</i>\"",
+            "image_link": 'HighElf/high_elf_swordsman.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee </li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li><li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">First Strike<span class=\"tooltiptext2\" id=\"first_strike\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> 4<x-shock>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        },
+                {
+                    "slug": "armored"
+                },
+                {
+                    "slug": "shield"
+                },
+                {
+                    "slug": "wall_climbing"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "32",
+            "name": "high_elf_longbowman",
+            "string": "High Elf Longbowman",
+            "armor": "8",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/HighElves/HighElfLongbowman",
+            "description": "\"Near forty year ago, a slender fellow named Nockfeather entered our archery tournament. He took the Archer's Pact, declaring himself a human from Wellers Townships. He pretended to shoot just a fraction better than his competitors. We were about to award him the gold prize, when a servant girl, who'd fallen in love with him, noticed his strange scars. The tips of his pointed ears were missing, but Nockfeather was an elf. Elves are prohibited from competing in Archery events. Disqualified, Nockfeahter fled through thick forest with freakish elven speed, never to be seen again. Still, officials must inspect the ears of all competitors, because Elven Archers are too skilled with the longbow.\" <br> <i>--The Commonwealth Games Rulebook, under 'Nockfeather's rule</i>\"",
+            "image_link": 'HighElf/high_elf_longbowman.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Projectile Resistance<span class=\"tooltiptext2\" id=\"projectile_resistance\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 4<x-shock>"
+        },
+                {
+                    "slug": "shoot_longbow",
+                    "damage": "9<x-physical> </x-physical> 4<x-shock>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        },
+                {
+                    "slug": "armored"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "43",
+            "name": "high_elf_union_guard",
+            "string": "High Elf Union Guard",
+            "armor": "10",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/HighElves/HighElfUnionGuard",
+            "description": "\"It is as we feared. The High Elves are not Wood Elves. They've changed. They are merciless. They no longer regard all life as sacred. Wood Elves were content to hide in the forest. Now a forest of long spears made up their battlefield formation. Their pikeman skewered my cavalry. With ruthless efficiency these Union Guards cut down every living thing. One of our past advantages in battle is gone. The time when Elves tried to avoid hurting our innocent horses is over. The Union Guard left no man or animal alive.\" <br> <i>--Killing the Enemy, by Lady Loki</i>\"",
+            "image_link": 'HighElf/high_elf_union_guard.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Shocking<span class=\"tooltiptext2\" id=\"inflict_shocking\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> 2<x-shock>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        }, {
+                    "slug": "pike_square"
+        }, {
+                    "slug": "polearm"
+        }, {
+                    "slug": "first_strike"
+        },
+                {
+                    "slug": "armored"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "36",
+            "name": "high_elf_storm_sister",
+            "string": "High Elf Storm Sister",
+            "armor": "9",
+            "shield": "12",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold> 20 <x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "temple",
+            "location": "Units/HighElves/HighElfStormSister",
+            "description": "\"She stood in a tall hooded hat, raising her long, jeweled staff, and insisted that we all bow. I complied immediately, as I had heard of these Storm Sisters, but the dwarves, ever stubborn and full of pride, refused. They let me pass as a vortex of black clouds formed overhead. The Dwarves took cover, but how does one hide from the sky? Needless to say, I continued my journey alone.\" <br> <i>--Chronicles of Deepmir, by Ham the Wanderer</i>\"",
+            "image_link": 'HighElf/high_elf_storm_sister.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Stun<span class=\"tooltiptext2\" id=\"inflict_stun\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 2<x-shock>"
+        }, {
+                    "slug": "shock_bolts",
+                    "damage": "9<x-physical> </x-physical> 2<x-shock>"
+        }, {
+                    "slug": "stunning_touch",
+
+        },
+
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "total_awareness"
+        },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_80"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "55",
+            "name": "high_elf_unicorn_rider",
+            "string": "High Elf Unicorn Rider",
+            "armor": "11",
+            "shield": "11",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold> 20 <x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/HighElves/HighElfUnicornRider",
+            "description": "\"She penetrated the deepest glade, her staff aglow with the light of life. The Wizard Queen Julia petitioned the forces of nature to fight for Elvenkind. The gracious and wild Unicorns answered her plea with thundering hooves. These friends of the forest, enchanted by the maiden queen of gentle virtues, have never left her side. Though their forests turn to ash and men deny magic, they continue in the sea foam, in the gentle breeze, in the golden glow of the setting sun to fight for their eternal queen. Watch them ride into fields of crimson, like a surging tide, moving quick as thought to any point on the battlefield with sword at the ready piercing enemy flesh like lightning--too quickly they strike before the enemy can wound.\" <br> <i>--Leaf on the Wind: Poetry and Praise for the Rise of the High Elves, by Monsignor Rukrukmaguk</i>\"",
+            "image_link": 'HighElf/high_elf_unicorn_rider.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical> 2<x-shock>"
+        }, {
+                    "slug": "phase",
+
+        },
+
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        }, {
+                    "slug": "armor_piercing"
+        }, {
+                    "slug": "charge"
+        }, {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "armored"
+        },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "55",
+            "name": "high_elf_gryphon_rider",
+            "string": "High Elf Gryphon Rider",
+            "armor": "12",
+            "shield": "12",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "140 <x-gold></x-gold> 30 <x-mana>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "gryphon_spire",
+            "location": "Units/HighElves/HighElfGryphonRider",
+            "description": "\"The gryphon and its rider moved together on the battlefield like graceful dancers. When the rider struck the gryphon parried and when the gryphon struck the rider guarded its flank. The quick, sharp eyes of the gryphon enabled its rider to dive between the long spear of the pikeman and strike first. Each complemented the other, striking in perfect balanced efficiency until the battlefield was nothing more than a banquet table for crows and vultures.\" <br> <i>--Knocking on the Gryphon Door, Barrow Platte, Tactician</i>\"",
+            "image_link": 'HighElf/high_elf_gryphon_rider.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "15<x-physical> </x-physical> 2<x-shock>"
+        },
+
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        }, {
+                    "slug": "first_strike"
+        }, {
+                    "slug": "charge"
+        }, {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "flying"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
             ]
 }
