@@ -25,6 +25,28 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "lightning_shock",
+            "name": "Lightning Shock",
+            "description": "<p>Shoots shock bolts at target enemy unit\
+                                <li>Does less damage at long range</li>\
+                                <li>Straight Shot</li>",
+            "damage": "",
+            "icon_name": "lightning_shock",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "spirit_ray",
+            "name": "Spirit Ray",
+            "description": "<p>Shoots a spirit ray at target enemy unit\
+                                <li>Does less damage at long range</li>\
+                                <li>Straight Shot</li>",
+            "damage": "",
+            "icon_name": "spirit_ray",
+            "range": "Medium",
+
+       },
+        {
             "slug": "poison_spit",
             "name": "Poison Spit",
             "description": "<p>Spits poison at target enemy unit\
@@ -70,6 +92,18 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "shock_bolts",
+            "name": "Shock Bolts",
+            "description": "<p>Shoots shock bolts at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "shock_bolts",
+            "range": "Medium",
+
+       },
+        {
             "slug": "throw_cleavers",
             "name": "Throw Cleavers",
             "description": "<p>Throws cleavers at an enemy unit.\
@@ -79,6 +113,42 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "throw_cleavers",
             "range": "Short",
+
+       },
+        {
+            "slug": "shoot_longbow",
+            "name": "Shoot Longbow",
+            "description": "<p>Shoots arrows at an enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "shoot_longbow",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "shoot_bow",
+            "name": "Shoot Bow",
+            "description": "<p>Shoots arrows at an enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\<li>Does less damage at long range</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "shoot_bow",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "shoot_shortbow",
+            "name": "Shoot ShortBow",
+            "description": "<p>Shoots arrows at an enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\<li>Does less damage at long range</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "shoot_shortbow",
+            "range": "Medium",
 
        },
         {
@@ -115,6 +185,42 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "castigate",
             "range": "Medium",
+
+       },
+        {
+            "slug": "bane_fire",
+            "name": "Bane Fire",
+            "description": "<p>Shoots Bane Fire at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "bane_fire",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "magic_bolts",
+            "name": "Magic Bolts",
+            "description": "<p>Shoots magic bolts at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+<li>Does less damage at long range</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "magic_bolts",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "throw_curse",
+            "name": "Throw Curse",
+            "description": "<p>Attempts to Curse target unit. Cursed units suffer -300 <x-morale></x-morale>, -2 <x-defense></x-defense> and -2 <x-resistance></x-resistance> until end of combat.\
+                                <li>Cooldown 1 <x-turn></x-turn></li>\
+ <li>Cannot be used on Elemental, Undead, and Machine units</li>",
+            "damage": "11 <x-blight_res></x-blight_res>",
+            "icon_name": "throw_curse",
+            "range": "Extreme",
 
        },
         {
@@ -201,6 +307,39 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "throw_javelin",
+            "name": "Throw Javelin",
+            "description": "<p>Throws Javelins at target enemy unit.\
+                                <li>Does less damage at long range</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "throw_javelin",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "war_cry",
+            "name": "War Cry",
+            "description": "<p>Grants the unit +3 Melee damage until the end of the turn.<li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "war_cry",
+            "range": "Buff",
+
+       },
+        {
+            "slug": "shoot_light_crossbow",
+            "name": "Shoot Light Crossbow",
+            "description": "<p>Shoots bolts at target enemy unit.\
+                                <li>Does less damage at long range</li>\
+ <li>Straight Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "shoot_light_crossbow",
+            "range": "Medium",
+
+       },
+        {
             "slug": "steal_enchantment",
             "name": "Steal Enchantment",
             "description": "<p>Removes all enchantments from target unit and moves them to this unit.\<li>Can only be used once per battle.",
@@ -215,6 +354,33 @@ var jsonUnitAbilities = {
             "description": "<p>Dispells all Blight debuffs on target friendy unit.",
             "damage": "",
             "icon_name": "cure_disease",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "break_control",
+            "name": "Break Control",
+            "description": "<p>Dispells all Mind Control and Spirit debuffs on target friendy unit. Gives Strong will for 1 <x-turn></x-turn>",
+            "damage": "",
+            "icon_name": "break_control",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "phase",
+            "name": "Phase",
+            "description": "<p>Teleports unit to target unoccupied hex. <li>Requires 3 Action Points</li> <li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "phase",
+            "range": "Long",
+
+       },
+        {
+            "slug": "were_panther",
+            "name": "Were Panther",
+            "description": "<p>The Unit heals 15 <x-hp></x-hp> Hit Points and transforms into a Dire Panther.",
+            "damage": "",
+            "icon_name": "were_panther",
             "range": "Touch",
 
        },
@@ -311,6 +477,7 @@ var jsonUnitAbilities = {
             "description": "<p>This unit is a member of the Tigran race, and has:\
                 <li>-1 <x-resistance></x-resistanc></li>\  <li>Athletics</li>\                 <li>Predator</li>\
                                 <li>Night Vision</li>\
+ <li>Barrens Running</li>\
                                 <li>40 % <x-spirit> </x-spirit> Protection</li>\
 <li>20 % <x-frost> </x-frost> Weakness</li>\
 <li>Likes Barrens and Dense Vegetation</li>\
@@ -318,6 +485,50 @@ var jsonUnitAbilities = {
 <li>Hates Arctic Terrain</li>",
             "damage": "",
             "icon_name": "tigran",
+            "range": "",
+
+       },
+        {
+            "slug": "highelf",
+            "name": "High Elf",
+            "description": "<p>This unit is a member of the High Elf race, and has:\
+                <li>+1 <x-resistance></x-resistanc></li>\  <li>Forestry</li>\                 <li>+1 <x-physical></x-physical> Ranged</li>\
+                                 <li>+1 <x-shock></x-shock> Ranged</li>\
+<li>20 % <x-blight> </x-blight> Weakness</li>\
+<li>Likes  Dense Vegetation</li>\
+<li>Dislikes Tropical and Subterranean Terrain</li>\
+<li>Hates Blighted, Volcanic Terrain</li>",
+            "damage": "",
+            "icon_name": "highelf",
+            "range": "",
+
+       },
+        {
+            "slug": "orc",
+            "name": "Orc",
+            "description": "<p>This unit is a member of the Orc race, and has:\
+                <li>-1 <x-resistance></x-resistanc></li>\  <li>Forestry</li>\                 <li>+1 <x-physical></x-physical> Melee</li>\ <li>-1 <x-physical></x-physical> Ranged</li>\
+                                 <li>+5 <x-hp></x-hp></li>\
+<li>Night Vision</li>\
+<li>Victory Rush</li>\
+<li>Likes Barrens</li>\
+<li>Dislikes Arctic Terrain</li>\
+<li>Hates Blighted, Volcanic Terrain</li>",
+            "damage": "",
+            "icon_name": "orc",
+            "range": "",
+
+       },
+        {
+            "slug": "human",
+            "name": "Human",
+            "description": "<p>This unit is a member of the Human race, and has:\
+                <li>Mariner</li>\
+<li>Likes Fertile Plains and Water</li>\
+<li>Dislikes Subterranean Terrain</li>\
+<li>Hates Blighted, Volcanic Terrain</li>",
+            "damage": "",
+            "icon_name": "human",
             "range": "",
 
        },
@@ -400,6 +611,15 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "bestow_iron_heart",
+            "name": "Bestow Iron Heart",
+            "description": "<p>Restores 15 <x-hp></x-hp> to target friendly unit. In addition, the unit receives +1 <x-defense></x-defense> +1 <x-resistance></x-resistance> , and Strong Will until the end of combat.<li>Can only be used once per battle.</li> ",
+            "damage": "",
+            "icon_name": "bestow_iron_heart",
+            "range": "Touch",
+
+       },
+        {
             "slug": "grant_frozen_flame",
             "name": "Grant Frozen Flame",
             "description": "<p>Bestows Inflict Chilling,  80%<x-fire></x-fire> Protection, and +2 <x-fire></x-fire> +2 <x-frost></x-frost> on target friendly unit until end of combat.\                            <li>Can only be used once per battle.</li>",
@@ -456,8 +676,24 @@ var jsonUnitAbilities = {
         {
             "slug": "evolve_draconian",
             "name": "Evolve (Draconian)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Crusher, Charger</li>\\<li>Flamer, Elder</li>\\<li>Flyer</li>\
-                            >",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Crusher, Charger</li>\<li>Flamer, Elder</li>\<li>Flyer</li>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       }, {
+            "slug": "evolve_initiate",
+            "name": "Evolve (Initiate)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>High Elf Storm Sister</li>>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       },
+        {
+            "slug": "evolve_cavalry",
+            "name": "Evolve (Cavalry)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Human Knight</li>>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -479,6 +715,16 @@ var jsonUnitAbilities = {
             "description": "This unit's attacks are capable of damaging city walls.",
             "damage": "",
             "icon_name": "wall_crushing",
+            "range": "",
+
+
+       },
+        {
+            "slug": "total_awareness",
+            "name": "Total Awareness",
+            "description": "This unit cannot be flanked.",
+            "damage": "",
+            "icon_name": "total_awareness",
             "range": "",
 
 
@@ -554,6 +800,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "inflict_daze",
+            "name": "Inflict Daze",
+            "description": "Melee and Ranged attacks can Daze. Dazed units cannot perform actions other than move and Guard for 2 <x-turn></x-turn>",
+            "damage": "7 <x-spirit_res></x-spirit_res>",
+            "icon_name": "inflict_daze",
+            "range": "",
+
+
+       },
+        {
             "slug": "razor_projectiles",
             "name": "Razor Projectiles",
             "description": "Ranged attacks can inflict Bleeding Wounds. Bleeding units suffer 4 <x-physical></x-physical> damage at the start of each combat round for 2 <x-turn></x-turn>",
@@ -580,6 +836,36 @@ var jsonUnitAbilities = {
             "damage": "7 <x-blight_res></x-blight_res>",
             "icon_name": "inflict_enfeebling_fever",
             "range": "",
+
+
+       },
+        {
+            "slug": "inflict_stun",
+            "name": "Inflict Stun",
+            "description": "Melee and Ranged attacks can inflict Stun. Stunned units cannot take actions and are always flanked for 1 <x-turn></x-turn>",
+            "damage": "8 <x-shock_res></x-shock_res>",
+            "icon_name": "stunned",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_shocking",
+            "name": "Inflict Shocking",
+            "description": "Melee and Ranged attacks can inflict Shocking. Shocked units suffer -8 <x-mp></x-mp> and 40% <x-shock></x-shock> Weakness for 2 <x-turn></x-turn>",
+            "damage": "8 <x-shock_res></x-shock_res>",
+            "icon_name": "stunned",
+            "range": "",
+
+
+       },
+        {
+            "slug": "stunning_touch",
+            "name": "Stunning Touch",
+            "description": "Attempts to Stun target enemy unit. Stunned units cannot take actions and are always flanked for 1 <x-turn></x-turn>",
+            "damage": "11 <x-shock_res></x-shock_res>",
+            "icon_name": "stunned",
+            "range": "Touch",
 
 
        },
@@ -684,6 +970,66 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "barrens_running",
+            "name": "Barrens Running",
+            "description": "This units movement cost for walking in Barrens is reduced by 1 <x-mp></x-mp>.",
+            "damage": "",
+            "icon_name": "barrens_running",
+            "range": "",
+
+
+       },
+        {
+            "slug": "fear_strike",
+            "name": "Fear Strike",
+            "description": "Melee attacks can inflict Panic. Panicked units don't obey orders and attempt to flee",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "fear_strike",
+            "range": "",
+
+
+       },
+        {
+            "slug": "cause_fear",
+            "name": "Cause Fear",
+            "description": "Attempts to Cause Fear Panic target enemy unit. If failed, the target unit is Shaken(2 <x-turn></x-turn>. Panicked units don't obey orders and attempt to flee. <li>Can only be used once per battle</li>",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "fear_strike",
+            "range": "",
+
+
+       },
+        {
+            "slug": "throw_sun_spear",
+            "name": "Throw Sun Spear",
+            "description": "Throws fiery spears target enemy unit. <li>Straight Shot</li><li>Does less damage at long range</li><li>Does not use Action Points</li><li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "throw_sun_spear",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "sun_disc",
+            "name": "Sun Disc",
+            "description": "Fires a beam that damages all units in a 4 hex line",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "sun_disc",
+            "range": "4 Hex",
+
+
+       },
+        {
+            "slug": "plains_running",
+            "name": "Plains Running",
+            "description": "This units movement cost for walking in Plains is reduced by 1 <x-mp></x-mp>.",
+            "damage": "",
+            "icon_name": "plains_running",
+            "range": "",
+
+
+       },
+        {
             "slug": "wetland_walking",
             "name": "Wetland Walking",
             "description": "This units movement cost for walking in Wetlands is reduced by 2 <x-mp></x-mp>.",
@@ -764,6 +1110,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "cave_concealment",
+            "name": "Cave Concealment",
+            "description": "This unit is invisible when on Undergroun.",
+            "damage": "",
+            "icon_name": "cave_concealment",
+            "range": "",
+
+
+       },
+        {
             "slug": "urban_concealment",
             "name": "Urban Concealment",
             "description": "This unit is invisible when on Structures.",
@@ -819,6 +1175,16 @@ var jsonUnitAbilities = {
             "description": "This unit deals +3 <x-physical></x-physical> damage against Animals.",
             "damage": "",
             "icon_name": "animal_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "devout",
+            "name": "Devout",
+            "description": "This unit is Devout and deals +3 <x-physical></x-physical> damage against Heretics.",
+            "damage": "",
+            "icon_name": "devout",
             "range": "",
 
 
@@ -976,6 +1342,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "mariner",
+            "name": "Mariner",
+            "description": "Embarking does not give the -3 <x-defense></x-defense> and -1 <x-resistance></x-resistance> penalty and gives extra +3 <x-mp></x-mp> when embarked",
+            "damage": "",
+            "icon_name": "mariner",
+
+
+
+       },
+        {
             "slug": "fire_aura",
             "name": "Fire Aura",
             "description": "Every time an enemy unit performs a Melee or Touch attack against the unit, the enemy receives 5 <x-fire></x-fire> damage and has a 9 <x-fire_res> </x-fire_res> chance to be Immolated.",
@@ -1071,6 +1447,14 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "immolating_projectiles",
+            "name": "Immolating Projectiles",
+            "description": "Ranged attacks can inflict Immolation. Immolated units suffer 3 <x-fire></x-fire> damage at the start of each combat round. They also suffers -1 <x-defense></x-defense>, -1 <x-resistance></x-resistance> -400 <x-happiness></x-happiness> and -2 <x-physical></x-physical> strength for 3 <x-turn></x-turn>",
+            "damage": "9 <x-fire_res></x-fire_res>",
+            "icon_name": "immolated",
+
+       },
+        {
             "slug": "fire_protection_60",
             "name": "<span style =\"color: lawngreen\">60% <x-fire> </x-fire> Protection </span>",
             "description": "<li>The unit will take 60% less damage from<x-fire></x-fire> based attacks.</li>\
@@ -1110,6 +1494,126 @@ var jsonUnitAbilities = {
                                 <li>Status effects that check against <x-fire_res></x-fire_res> will have a 20% lower chance to affect this unit.</li>",
 
             "icon_name": "fire_protection",
+
+
+
+       },
+        {
+            "slug": "spirit_protection_60",
+            "name": "<span style =\"color: lawngreen\">60% <x-spirit> </x-spirit> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 60% less damage from<x-spirit></x-spirit> based attacks.</li>\
+                                <li>Status effects that check against <x-spirit_res></x-spirit_res> will have a 60% lower chance to affect this unit.</li>",
+
+            "icon_name": "spirit_protection",
+
+
+
+       },
+        {
+            "slug": "spirit_protection_100",
+            "name": "<span style =\"color: lawngreen\">100% <x-spirit> </x-spirit> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 100% less damage from<x-spirit></x-spirit> based attacks.</li>\
+                                <li>Status effects that check against <x-spirit_res></x-spirit_res> will have a 100% lower chance to affect this unit.</li>",
+
+            "icon_name": "spirit_protection",
+
+
+
+       },
+        {
+            "slug": "spirit_protection_40",
+            "name": "<span style =\"color: lawngreen\">40% <x-spirit> </x-spirit> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 40% less damage from<x-spirit></x-spirit> based attacks.</li>\
+                                <li>Status effects that check against <x-spirit_res></x-spirit_res> will have a 40% lower chance to affect this unit.</li>",
+
+            "icon_name": "spirit_protection",
+
+
+
+       },
+        {
+            "slug": "spirit_protection_80",
+            "name": "<span style =\"color: lawngreen\">80% <x-spirit> </x-spirit> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 80% less damage from<x-spirit></x-spirit> based attacks.</li>\
+                                <li>Status effects that check against <x-spirit_res></x-spirit_res> will have a 80% lower chance to affect this unit.</li>",
+
+            "icon_name": "spirit_protection",
+
+
+
+       },
+        {
+            "slug": "spirit_protection_20",
+            "name": "<span style =\"color: lawngreen\">20% <x-spirit> </x-spirit> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 20% less damage from<x-spirit></x-spirit> based attacks.</li>\
+                                <li>Status effects that check against <x-spirit_res></x-spirit_res> will have a 20% lower chance to affect this unit.</li>",
+
+            "icon_name": "spirit_protection",
+
+
+
+       },
+        {
+            "slug": "shock_protection_60",
+            "name": "<span style =\"color: lawngreen\">60% <x-shock> </x-shock> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 60% less damage from<x-shock></x-shock> based attacks.</li>\
+                                <li>Status effects that check against <x-shock_res></x-shock_res> will have a 60% lower chance to affect this unit.</li>",
+
+            "icon_name": "shock_protection",
+
+
+
+       },
+        {
+            "slug": "shock_protection_100",
+            "name": "<span style =\"color: lawngreen\">100% <x-shock> </x-shock> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 100% less damage from<x-shock></x-shock> based attacks.</li>\
+                                <li>Status effects that check against <x-shock_res></x-shock_res> will have a 100% lower chance to affect this unit.</li>",
+
+            "icon_name": "shock_protection",
+
+
+
+       },
+        {
+            "slug": "shock_protection_40",
+            "name": "<span style =\"color: lawngreen\">40% <x-shock> </x-shock> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 40% less damage from<x-shock></x-shock> based attacks.</li>\
+                                <li>Status effects that check against <x-shock_res></x-shock_res> will have a 40% lower chance to affect this unit.</li>",
+
+            "icon_name": "shock_protection",
+
+
+
+       },
+        {
+            "slug": "shock_protection_80",
+            "name": "<span style =\"color: lawngreen\">80% <x-shock> </x-shock> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 80% less damage from<x-shock></x-shock> based attacks.</li>\
+                                <li>Status effects that check against <x-shock_res></x-shock_res> will have a 80% lower chance to affect this unit.</li>",
+
+            "icon_name": "shock_protection",
+
+
+
+       },
+        {
+            "slug": "shock_protection_20",
+            "name": "<span style =\"color: lawngreen\">20% <x-shock> </x-shock> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 20% less damage from<x-shock></x-shock> based attacks.</li>\
+                                <li>Status effects that check against <x-shock_res></x-shock_res> will have a 20% lower chance to affect this unit.</li>",
+
+            "icon_name": "shock_protection",
 
 
 
@@ -1169,6 +1673,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "blight_weakness_20",
+            "name": "<span style =\"color: deeppink\">20% <x-blight> </x-blight> Weakness </span>",
+            "type": "Repeating <x-repeating>  </x-repeating>",
+            "description": "<li>The unit will take 20% more damage from<x-blight></x-blight> based attacks.</li>\
+                                <li>Status effects that check against <x-blight_res></x-blight_res> will have a 20% higher chance to affect this unit.</li>",
+            "icon_name": "blight_weakness",
+
+
+       },
+        {
             "slug": "fire_weakness_20",
             "name": "<span style =\"color: deeppink\">20% <x-fire> </x-fire> Weakness </span>",
             "type": "Repeating <x-repeating>  </x-repeating>",
@@ -1196,6 +1710,62 @@ var jsonUnitAbilities = {
             "description": "This unit is infantry and has Wall Climbing",
             "damage": "",
             "icon_name": "infantry",
+
+       },
+        {
+            "slug": "sun_shield",
+            "name": "Sun Shield",
+            "description": "This unit gains +2 <x-defense></x-defense> and +2 <x-resistance></x-resistance> to non-flanking attacks and 60% <x-fire></x-fire> Protection.",
+            "damage": "",
+            "icon_name": "sun_shield",
+
+       },
+        {
+            "slug": "bloodthirsty",
+            "name": "Bloodthirsty",
+            "description": "Deals +4 damage against Bleeding units.",
+            "damage": "",
+            "icon_name": "bloodthirsty",
+
+       },
+        {
+            "slug": "martial_arts",
+            "name": "Martial Arts",
+            "description": "This unit gains +5 <x-defense></x-defense> against enemy retaliations and Attacks of Opportunity.",
+            "damage": "",
+            "icon_name": "martial_arts",
+
+       },
+        {
+            "slug": "projectile_reflection",
+            "name": "Projectile Reflection",
+            "description": "This unit reflects 50 % of all ranged damage it receives back to the attacker.",
+            "damage": "",
+            "icon_name": "projectile_reflection",
+
+       },
+        {
+            "slug": "coup_de_grace",
+            "name": "Coup de Grace",
+            "description": "This unit deals +5 damage against Immobilized units.",
+            "damage": "",
+            "icon_name": "coup_de_grace",
+
+       },
+        {
+            "slug": "victory_rush",
+            "name": "Victory Rush",
+            "description": "	After winning a battle, this unit regenerates 10 <x-hp></x-hp>.",
+            "damage": "",
+            "icon_name": "victory_rush",
+
+       },
+        {
+            "slug": "blessed_arrows",
+            "name": "Blessed Arrows",
+            "description": "This units ranged attacks gain +2 <x-spirit></x-spirit> damage",
+            "damage": "",
+            "icon_name": "blessed_arrows",
 
        },
         {
