@@ -1,5 +1,7 @@
 var jsonUnits = {
-    "units": [{
+    "units": [
+        //DRACONIANS--------------------------------------------------------------------------------------------------------DRACONIANS--------------------
+        {
             "hp": "33",
             "name": "draconian_hatchling",
             "string": "Draconian Hatchling",
@@ -549,6 +551,93 @@ var jsonUnits = {
                     "slug": "fire_protection_20"
                     }, {
                     "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+//DWARVES--------------------------------------------------------------------------------------------------------DWARVES--------------------
+
+        {
+            "hp": "33",
+            "name": "dwarf_prospector",
+            "string": "Dwarf Prospector",
+            "armor": "9",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "44 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Dwarves/DwarfInspector",
+            "description": "\"In the underground city, I saw plenty of prospectors. They seemed to have an affinity with stone, knowing just where to strike with their pickaxes, and when they struck a vein of ore, the precious cargo seemed to leap into the ore carts. At first I thought this skill with pick and flying stones to be lucky--a trick of the machinery, perhaps, until a bat creature swooped into the cavern an mauled a hapless dwarf. The other prospectors rushed to him swinging their pickaxes, pelting the creature with a barrage of stones. Not once did they hit their compatriot as they drove the winged nightmare back into the shadows.\" <br> <i>--Chronicles of Deepmir, by Ham the Wanderer</i>\"",
+            "image_link": 'Dwarf/dwarf_prospector.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Demolisher<span class=\"tooltiptext2\" id=\"demolisher\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Wall Crushing<span class=\"tooltiptext2\" id=\"wall_crushing\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "throw_stones",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        },
+                {
+                    "slug": "shatter_strike"
+                },
+                {
+                    "slug": "tunneling"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
                     },
 
                 ],

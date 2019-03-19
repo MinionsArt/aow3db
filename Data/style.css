@@ -521,6 +521,13 @@ x-blight {
     position: relative;
 }
 
+x-blight_res {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/blight_res.png);
+    position: relative;
+}
+
 x-fire {
     max-height: 20px;
     top: 5px;
