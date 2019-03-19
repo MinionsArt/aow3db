@@ -648,6 +648,537 @@ var jsonUnits = {
 
         ]
 
-}
-]
+},
+        {
+            "hp": "46",
+            "name": "dwarf_axeman",
+            "string": "Dwarf Axeman",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "55 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Dwarves/DwarfAxeman",
+            "description": "\"The wall of dwarf soldier advanced, undaunted by the cacophony of battle. Standing as wide as they were tall with their gleaming heavy axes, they felled their enemies like lumberjacks in a virgin wood. At first I thought they would buckle under the barrage of goblin darts, but the thick dwarven plate mail kept most of the venomous stingers from reaching their targets, and before the sun stretched shadows across the battlefield, even the massive trolls retreated before the relentless advance.\" <br> <i>--The Goblin Wars, by Duren Dirkhammer, Historian</i>\"",
+            "image_link": 'Dwarf/dwarf_axeman.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "defensive_strike",
+                    "damage": "14<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        },
+                {
+                    "slug": "wall_climbing"
+                },
+                {
+                    "slug": "armored"
+                },
+                {
+                    "slug": "shield"
+                },
+                {
+                    "slug": "demolisher"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "35",
+            "name": "dwarf_crossbowman",
+            "string": "Dwarf Crossbowman",
+            "armor": "9",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "72 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Dwarves/DwarfCrossbowman",
+            "description": "\"What honor can a crossbowman hold, with his tiny dagger and stick springer?' asked the Axeman, his beard aglitter with medals proclaiming his battle skills. The warrior's compatriots surrounded the dwarf cripple who wore a crossbow accross his back. The gray dwarf limped forward, straightening before the mob and said in a tired voice: 'Axeman. Did it thirty years. Had to bury a hunderd friends, all for Honor. Pinned in a canyon, surrounded by archers. Honor didn't save them. Left for dead, I was.' The crowd hushed. Together our eyes all seemed to notice the crossbowman's wooden leg. 'Lost it to an arrow. Your gravestone, that's your honor. I keep mine on my back.' He patted his crossbow, passing through the stilled ruffians unmolested..\" <br> <i>--Honor's Price, by Duren Dirkhammer, Historian</i>\"",
+            "image_link": 'Dwarf/dwarf_crossbowman.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "shoot_heavy_crossbowman",
+                    "damage": "16<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        },
+
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "46",
+            "name": "dwarf_deepguard",
+            "string": "Dwarf Deepguard",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "55 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Dwarves/DwarfDeepguard",
+            "description": "\"I only caught a glimpse of the Deep Guards before being escorted to the Dining Hall of the center of Deepmir Fortress. They were practicing a sequence of training exercises with the long pike atop the city's curtain wall. I didn't think much of it at the time, because every race has some form of pikeman, but the way they moved in their formidable dwarven plate armor and through the cramped caves with those extra long shafts, well, I suppose the dwarves have good reason to hold them in such high esteem.\" <br> <i>--Chronicles of Deepmir, by Ham the Wanderer</i>\"",
+            "image_link": 'Dwarf/dwarf_deepguard.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        }, {
+                    "slug": "pike_square"
+        }, {
+                    "slug": "polearm"
+        }, {
+                    "slug": "first_strike"
+        },
+
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "36",
+            "name": "dwarf_forge_priest",
+            "string": "Dwarf Forge Priest",
+            "armor": "11",
+            "shield": "12",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "83 <x-gold></x-gold> 22 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "temple",
+            "location": "Units/Dwarves/DwarfForgePriest",
+            "description": "\"I am Forge and Furnace, Hammer and Anvil.<br> I will walk through fire, wielding my hammer for Justice.<br>By Virtue's glow, I cleanse all wounds and bind broken bones.<br>I kindle the dying coals of my people's souls and blaze in Honor's kiln.<br>In candlelight, I will cast away the shadows of the mind.<br>I am the Forge Priest, keeper of the Guardian Flame..\" <br> <i>--Oath of the Forge Priest</i>\"",
+            "image_link": 'Dwarf/dwarf_forge_priest.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "fire_bolts",
+                    "damage": "8<x-fire> </x-fire>"
+        },
+                {
+                    "slug": "guardian_flame",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "lava_walking"
+        }, {
+                    "slug": "true_sight"
+        },
+
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                    },
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "57",
+            "name": "dwarf_boar_rider",
+            "string": "Dwarf Boar Rider",
+            "armor": "13",
+            "shield": "10",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "99 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Dwarves/DwarfBoarRider",
+            "description": "\"Dwarves trace the first boar rider to a wild dwarf girl named Ahnnha who had an unnatural love of boars. She survived in the mountain caves, raiding lowland villages then retreating on the back of her nimble-footed boar up the slopes so quickly that none could catch her. No animal traverses rugged terrain with such speed. Though legends vary, most agree she was captured by a clever and nameless Axeman who demanded she marry him. Together they started a family and formed a clan. Later rival clans started to include boar riders as well. Nowadays boar riders are common from many origins, and still they revere the nameless Axeman by wielding a poleaxe, and they spare no expense on the finest dwarven armor in honor of the love the wild dwarf woman had for her boar..\" <br> <i>--Dwarf Society Made Simple, by Lord Milligan</i>\"",
+            "image_link": 'Dwarf/dwarf_boar_rider.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        }, {
+                    "slug": "charge"
+        }, {
+                    "slug": "mounted"
+        },
+
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+
+
+
+
+                    ]
+
+                },
+        {
+            "hp": "70",
+            "name": "dwarf_firstborn",
+            "string": "Dwarf Boar Rider",
+            "armor": "14",
+            "shield": "12",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "165 <x-gold></x-gold> 22 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "pool_of_the_firstborn",
+            "location": "Units/Dwarves/DwarfFirstborn",
+            "description": "\"We fled to the deep vaults, where the dwarves of Deepmir vowed never to return. Too many terrible things dwelled deep in the earth. I assured them that with sufficient courage, allies might be found to protect us from the invading enemy. Believing, they broke down the sealed walls. The screaming of the enemy hordes pursued us. I led them to a realm where rocks melted. We found allies bathing in a molten river. For centuries, the First Born where known in legend only. They recognized the dwarves with me with eyes reflecting fatherly compassion. They turned on the pursuing hordes. Each strike a blast of lava from which even giant and dragon fled.\" <br> <i>--Chronicles of Deepmir, by Ham the Wanderer</i>\"",
+            "image_link": 'Dwarf/dwarf_firstborn.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Fire Aura<span class=\"tooltiptext2\" id=\"fire_aura\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "14<x-physical> </x-physical> 2<x-fire></x-fire>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "shatter_strike"
+        }, {
+                    "slug": "lava_walking"
+        }, {
+                    "slug": "dragon_slayer"
+        }, {
+                    "slug": "giant_slayer"
+        }, {
+                    "slug": "mind_control_immunity"
+        },
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                    },
+
+
+
+                    ]
+
+                }
+            ]
 }

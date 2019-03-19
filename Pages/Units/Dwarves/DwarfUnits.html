@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <base href="/Testing/" target="_blank">
+    <link rel="stylesheet" type="text/css" href="Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="Data/Builder.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function loadheader() {
+            $("#header").load("/Testing/Pages/header.html");
+            $("#dwarfprospector").load("/Testing/Pages/Units/Dwarves/DwarfProspector.html");
+            $("#dwarfaxeman").load("/Testing/Pages/Units/Dwarves/DwarfAxeman.html");
+            $("#dwarfcrossbowman").load("/Testing/Pages/Units/Dwarves/DwarfCrossbowman.html");
+            $("#dwarfdeepguard").load("/Testing/Pages/Units/Dwarves/DwarfDeepguard.html");
+            $("#dwarfforgepriest").load("/Testing/Pages/Units/Dwarves/DwarfForgePriest.html");
+            $("#dwarfboarrider").load("/Testing/Pages/Units/Dwarves/DwarfBoarRider.html");
+            $("#dwarffirstborn").load("/Testing/Pages/Units/Dwarves/DwarfFirstborn.html");
+        });
+    </script>
+
+    <title>AowDatabase - Draconians</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="unit_card">
+        <p style="background-color:black; font-size: 26px" class="unit_name">Dwarves</p>
+        <img class="unit_image" src="/Testing/Icons/Passives/dwarf.png" style="position: relative; padding: 4px" width="100">
+        <img class="unit_image" src="/Testing/PreviewGifs/StrategicMap/dwarf.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
+
+        <p>Dwarves are hardy mountain kin which live in the earth and rugged placed of the land. They value strength and hard work. Their minds are slow to the subtle ways of diplomacy, preferring to strike the enemy with the force of their blows over spending inordinate amounts of energy in lengthy, sleep-inducing talk.
+            They love to create things, and find great satisfaction in creating vast structures adorned with the treasures discovered deep within the earth.
+            <br><br>
+            Dwarves are strong fighters, some preferring to forego armor and shield to wield two axes and pure rage. Their surefooted strides carry them over the high slopes they revere.</p>
+        <hr>
+
+    </div>
+
+    <br><br>
+    <div id="dwarfprospector"></div>
+    <br><br>
+    <div id="dwarfaxeman"></div>
+    <br><br>
+    <div id="dwarfcrossbowman"></div>
+    <br><br>
+    <div id="dwarfdeepguard"></div>
+    <br><br>
+    <div id="dwarfforgepriest"></div>
+    <br><br>
+    <div id="dwarfboarrider"></div>
+    <br><br>
+    <div id="dwarffirstborn"></div>
+</body></html>

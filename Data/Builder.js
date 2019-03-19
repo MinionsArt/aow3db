@@ -171,8 +171,6 @@ function addResistanceSlot(a, b, c) {
             var spa = document.createElement("SPAN");
             var tex = document.createElement("DIV");
             var dam = document.createElement("DIV");
-            dam.className = "ability_damage";
-            dam.innerHTML = abilityDam;
 
             tex.className = "tooltip";
             if (b == "yes") {
@@ -191,7 +189,7 @@ function addResistanceSlot(a, b, c) {
 
             btn.appendChild(imag);
             btn.append(tex);
-            btn.append(dam);
+
 
 
         }
@@ -260,15 +258,15 @@ function showUnit(a) {
                 addPassiveslot(jsonUnits.units[i].passives[x].slug, jsonUnits.units[i].passives[x].unique, a);
 
             }
-            for (z in jsonUnits.units[i].resistances) {
-                addResistanceSlot(jsonUnits.units[i].resistances[z].slug, jsonUnits.units[i].resistances[z].unique, a);
 
-            }
             for (j in jsonUnits.units[i].unit_types) {
                 addUnitTypeIcon(jsonUnits.units[i].unit_types[j].slug, jsonUnits.units[i].unit_types[j].unique, a);
 
             }
+            for (z in jsonUnits.units[i].resistances) {
+                addResistanceSlot(jsonUnits.units[i].resistances[z].slug, jsonUnits.units[i].resistances[z].unique, a);
 
+            }
             var extratooltips = document.getElementsByClassName("tooltiptext2");
             for (t in extratooltips) {
                 extratooltips[t].innerHTML = showAbility(extratooltips[t].id);
