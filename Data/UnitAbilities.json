@@ -1663,6 +1663,63 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "frost_protection_20",
+            "name": "<span style =\"color: lawngreen\">20% <x-frost> </x-frost> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 20% less damage from<x-frost></x-frost> based attacks.</li>\
+                                <li>Status effects that check against <x-frost_res></x-frost_res> will have a 20% lower chance to affect this unit.</li>",
+
+            "icon_name": "frost_protection",
+
+
+
+       },
+        {
+            "slug": "frost_protection_40",
+            "name": "<span style =\"color: lawngreen\">40% <x-frost> </x-frost> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 40% less damage from<x-frost></x-frost> based attacks.</li>\
+                                <li>Status effects that check against <x-frost_res></x-frost_res> will have a 40% lower chance to affect this unit.</li>",
+
+            "icon_name": "frost_protection",
+
+
+
+       }, {
+            "slug": "frost_protection_60",
+            "name": "<span style =\"color: lawngreen\">60% <x-frost> </x-frost> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 60% less damage from<x-frost></x-frost> based attacks.</li>\
+                                <li>Status effects that check against <x-frost_res></x-frost_res> will have a 60% lower chance to affect this unit.</li>",
+
+            "icon_name": "frost_protection",
+
+
+
+       }, {
+            "slug": "frost_protection_80",
+            "name": "<span style =\"color: lawngreen\">80% <x-frost> </x-frost> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 80% less damage from<x-frost></x-frost> based attacks.</li>\
+                                <li>Status effects that check against <x-frost_res></x-frost_res> will have a 80% lower chance to affect this unit.</li>",
+
+            "icon_name": "frost_protection",
+
+
+
+       }, {
+            "slug": "frost_protection_100",
+            "name": "<span style =\"color: lawngreen\">100% <x-frost> </x-frost> Protection </span>",
+            "type": "Single Action  <x-singleaction>  </x-singleaction>",
+            "description": "<li>The unit will take 100% less damage from<x-frost></x-frost> based attacks.</li>\
+                                <li>Status effects that check against <x-frost_res></x-frost_res> will have a 100% lower chance to affect this unit.</li>",
+
+            "icon_name": "frost_protection",
+
+
+
+       },
+        {
             "slug": "frost_weakness_20",
             "name": "<span style =\"color: deeppink\">20% <x-frost> </x-frost> Weakness </span>",
             "type": "Repeating <x-repeating>  </x-repeating>",

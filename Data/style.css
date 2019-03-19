@@ -177,6 +177,9 @@ p {
 
 .unit_image {
     float: left;
+    max-height: 80px;
+    max-width: 80px;
+    object-fit: none;
     background-image: url(../Icons/UI/unit_icon_bg.png);
     background-size: 80px;
     background-repeat: no-repeat;

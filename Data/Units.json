@@ -1179,6 +1179,630 @@ var jsonUnits = {
 
                     ]
 
-                }
+                },
+//FROSTLING--------------------------------------------------------------------------------------------------------FROSTLING--------------------
+
+        {
+            "hp": "30",
+            "name": "frostling_ice_scaper",
+            "string": "Frostling Ice Scaper",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Frostlings/FrostlingIceScaper",
+            "description": "\"The ice city glittered in the dim sunlight. Along the walls, Frostling artisans called Ice Scapers used their picks to craft delicated filigrees covering the tops of the walls like the fingers of a snowflake. The ice pick looked more like a tool than a weapon and with no other guards for the city some in my company thought they could take advantage of the city's amenities without paying. That's when the Ice Scapers attacked. They pelted them with ice balls, freezing them where they stood; then struck with devastating effect.\" <br> <i>--Mercenary Mishaps, by Mistress Millicent</i>\"",
+            "image_link": 'Frostling/frostling_ice_scaper.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Arctic Concealment<span class=\"tooltiptext2\" id=\"arctic_concealment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Frostbite<span class=\"tooltiptext2\" id=\"inflict_frostbite\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "3<x-physical> </x-physical> 5<x-frost>"
+        },
+                {
+                    "slug": "throw_stones",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        },
+                {
+                    "slug": "shatter_strike"
+                },
+                {
+                    "slug": "frost_weapons"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "47",
+            "name": "frostling_raider",
+            "string": "Frostling Raider",
+            "armor": "10",
+            "shield": "8",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Frostlings/FrostlingRaider",
+            "description": "\"The Ice Queens are driving their followers our of the ice floes. The ice and snow follows them. We need help. Walls. Barricades. Timbers. Every obstacle that normally slows other footmen, the Frostling Raiders can break through or pass over with ease and the expert use of their axes. The Ice Queens cover the lands with frost and the Raiders are invisible to our scout patrols. They fall upon us before we know they are there. We require immediate reinforcements.\" <br> <i>--Troop Report 9-19-67, by Sentinel Sherwood</i>\"",
+            "image_link": 'Frostling/frostling_raider.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Shatter Strike<span class=\"tooltiptext2\" id=\"shatter_strike\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 5<x-frost>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        },
+                {
+                    "slug": "improved_wall_climbing"
+                }, {
+                    "slug": "demolisher"
+                }, {
+                    "slug": "arctic_concealment"
+                },
+                {
+                    "slug": "frost_weapons"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "34",
+            "name": "frostling_harpoon_thrower",
+            "string": "Frostling Harpoon Thrower",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Frostlings/FrostlingHarpoonThrower",
+            "description": "\"My friend, a huntsman named Nuptuck, sneaked up on the vicious Dire Penguin. Its glowing red eyes focused on me. I should not have worn my bright green parka onto the ice shelf. Unlike my Frostling friend, I stood out like a piece of broccoli on iced cream. The creature charged, but Nuptuck launched his harpoon. The penguin squawked with ferocity, pinned to an ice column, it thrashed about unable to attack. Nuptuck wasted no time. He impaled the creature. We ate well that night. Penguin is better on iced cream than broccoli..\" <br> <i>--Legends of Nuptuck, by Ranged Ricker</i>\"",
+            "image_link": 'Frostling/frostling_harpoon_thrower.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Fishing<span class=\"tooltiptext2\" id=\"fishing\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Throw Net<span class=\"tooltiptext2\" id=\"throw_net\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "2<x-physical> </x-physical> 5<x-frost>"
+        },
+                {
+                    "slug": "throw_harpoon",
+                    "damage": "7<x-physical> </x-physical> 7<x-frost>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        },
+                {
+                    "slug": "polearm"
+                }, {
+                    "slug": "arctic_concealment"
+                },
+                {
+                    "slug": "frost_weapons"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "55",
+            "name": "frostling_royal_guard",
+            "string": "Frostling Royal Guard",
+            "armor": "9",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "75 <x-gold></x-gold> 10 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Frostlings/FrostlingRoyalGuard",
+            "description": "\"Royal Guards surrounded the fugitive White Witch. They were clad in icicles. We warned the guards that they were interfering with Commonwealth justice, but they stood emotionless, frozen like snowmen. Only the witch cackled. 'My children share my frigid blood. Leave now, and I will let you live.' I ordered my men to focus on the witch, but every strike was met by her guardians. Their wounds healed with every successful blow against my company. Each fallen guard exploded in a shower of icy shards. We took many casualties to catch the icy hag.\" <br> <i>--Hunting Stixenvitch, by Borraxis, Bounty Hunter</i>\"",
+            "image_link": 'Frostling/frostling_royal_guard.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 5<x-frost>"
+        },
+                {
+                    "slug": "pledge_of_protection"
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        },
+                {
+                    "slug": "polearm"
+                }, {
+                    "slug": "pike_square"
+                },
+                {
+                    "slug": "frost_weapons"
+                }, {
+                    "slug": "inflict_frostbite"
+                }, {
+                    "slug": "arctic_concealment"
+                },
+                {
+                    "slug": "explosive_ice_death"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "35",
+            "name": "frostling_white_witch",
+            "string": "Frostling White Witch",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "temple",
+            "location": "Units/Frostlings/FrostlingWhiteWitch",
+            "description": "\"As Keeper, I've spent my life studying Frostlings in books. When I heard of Frostling encroachments into the Elven Court territories, I sought an opportunity to pursue my studies. I surrendered, volunteering my freedom for the hope of learning. The first real discovery is that Frostling society is matriarchal. Frostling males labor for Ice Queens and their White Witch daughters. I watched a White Witch blast her opponents with ice of such intensity that it burns when it strikes. She is the frozen north. They command perfect respect from Frostlings. They embody the frozen lands..\" <br> <i>--My Life as a Frostling Slave, by Keeper Norkinnion</i>\"",
+            "image_link": 'Frostling/frostling_white_witch.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>\
+<li><div class=\"tooltip\">Inflict Scorching Heat<span class=\"tooltiptext2\" id=\"inflict_scorching_heat\"></span></div></li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li><li><div class=\"tooltip\">Inflict Frostbite<span class=\"tooltiptext2\" id=\"inflict_frostbite\"></span></div></li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Freezing Touch<span class=\"tooltiptext2\" id=\"freezing_touch\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "4<x-fire> 4<x-frost>"
+        },
+                {
+                    "slug": "castigate",
+                    "damage": "4<x-fire> 4<x-frost>"
+
+        },
+                {
+                    "slug": "grant_frozen_flames"
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        },
+                {
+                    "slug": "true_sight"
+                }, {
+                    "slug": "inflict_chilling"
+                },
+                {
+                    "slug": "swimming"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "arctic_concealment"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "80",
+            "name": "frostling_mammoth_rider",
+            "string": "Frostling Mammoth Rider",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "110 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Frostlings/FrostlingMammothRider",
+            "description": "\"There's a lesson in the ancient stories. I always assumed the Commonwealth drove them away because of weakness. The stories' warnings sounded like prattling children, and I thought the stories of the Mammoth Riders to be exaggerations of some bored keeper. Then I saw one. With devastating force it charged through my militia. This mountain of shaggy fur and muscle battered our city wall. Now I scrawl this warning from a slave pit to our neighboring settlers. The might of the Frostling nation is far greater than we anticipated.\" <br> <i>--Northern Warning, by Mayor Holden Strong</i>\"",
+            "image_link": 'Frostling/frostling_mammoth_rider.gif',
+            "level_trooper": "<li>+1 <x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "15<x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        },
+                {
+                    "slug": "wall_crushing"
+                }, {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "devastating_charge"
+                }, {
+                    "slug": "mounted"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "65",
+            "name": "frostling_ice_queen",
+            "string": "Frostling Ice Queen",
+            "armor": "12",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "frost_castle",
+            "location": "Units/Frostlings/FrostlingIceQueen",
+            "description": "\"Our forces felt her chilled wind before we could strike her. She ruled the battlefield with the slightest gesture. There was grace in her heartlessness, as though she could see into our souls. No secret could be hidden from her soulless eyes. I ordered my orcs to charge her, determined to break her control over the other Frostlings. A star of deadly ice cascaded from the Ice Queen. My troops were immobilized, encrusted in crystalline cold. Her Frostlings shattered my frozen hordes, leaving me to walk back to the garrison without an army. I only survived because she said I reminded the queen of her White Witch daughters.\" <br> <i>--Crushed Ice, by Lady Loki</i>\"",
+            "image_link": 'Frostling/frostling_ice_queen.gif',
+            "level_trooper": "<li>+1 <x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Chilling<span class=\"tooltiptext2\" id=\"inflict_chilling\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Freezing Cold<span class=\"tooltiptext2\" id=\"inflict_freezing_cold\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> 6<x-frost>"
+        }, {
+                    "slug": "ice_nova",
+                    "damage": "8<x-frost>"
+        },
+                {
+                    "slug": "last_rite_of_winter",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        },
+                {
+                    "slug": "true_sight"
+                }, {
+                    "slug": "mounted"
+                },
+                {
+                    "slug": "dome_of_frost"
+                }, {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
             ]
 }
