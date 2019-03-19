@@ -161,7 +161,7 @@ function addResistanceSlot(a, b, c) {
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
             abilityName = jsonUnitAbilities.abilities[j].name;
-            abilityIcon = jsonUnitAbilities.abilities[j].slug;
+            abilityIcon = jsonUnitAbilities.abilities[j].icon_name;
             abilityDescr = jsonUnitAbilities.abilities[j].description;
             abilityDam = jsonUnitAbilities.abilities[j].damage;
             var btn = document.createElement("DIV");
@@ -180,7 +180,7 @@ function addResistanceSlot(a, b, c) {
 
             spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
-            imag.setAttribute("src", "/Testing/Icons/Resistances/" + abilityIcon + ".png");
+            imag.setAttribute("src", "/Testing/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 

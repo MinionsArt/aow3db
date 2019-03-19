@@ -1803,6 +1803,777 @@ var jsonUnits = {
 
         ]
 
+}, //GOBLIN--------------------------------------------------------------------------------------------------------GOBLIN--------------------
+
+        {
+            "hp": "30",
+            "name": "goblin_untouchable",
+            "string": "Goblin Untouchable",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Goblins/GoblinUntouchable",
+            "description": "\"They limped towards our company like crippled beggers, but these were no downtrodden. Before we raised our bows to warn them off, these Untouchables dashed through the perimeter set by our swordsmen. These goblins were infected with every imaginable malady, and they were happy about it. They rubbed their rusty blades against their pus-oozing skin, and, though their attacks were feeble compared with trained soldiers, my men fell ill with every touch. Had there been no eagles nearby to handily whisk me away, I would've succumbed to the disease-ridden mob.\" <br> <i>--Journey to the Sunken City, by Ham the Wanderer</i>\"",
+            "image_link": 'Goblin/goblin_untouchable.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+20% <x-blight> </x-blight> Protection</li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Wetlands Concealment<span class=\"tooltiptext2\" id=\"wetlands_concealment\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 3<x-blight>"
+        },
+                {
+                    "slug": "poison_spit",
+                    "damage": "11<x-blight> </x-blight>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        },
+                {
+                    "slug": "disgusting_stench"
+                },
+                {
+                    "slug": "tunneling"
+                }, {
+                    "slug": "inflict_noxious_vulnerability"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_80"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "40",
+            "name": "goblin_marauder",
+            "string": "Goblin Untouchable",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Goblins/GoblinMarauder",
+            "description": "\"The Commonwealth will no longer tolerate raids on our holdings, so the goblins of the Obsidian Cliffs must go. We know they hide in the caves. Sure, with their hand-axes and their shields, marauders can be dangerous, but we will take precautions and mantain a defensive path out of the tunnels should we need it. Our spies keep losing track of their numbers, but our mission remains the same. Still, I am confident our forces are sufficient. How many goblins can hide in a cavern?\" <br> <i>--Last entry of the Journal of Colonel Percival Pickman</i>\"",
+            "image_link": 'Goblin/goblin_marauder.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Volunteer<span class=\"tooltiptext2\" id=\"volunteer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical>"
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        },
+                {
+                    "slug": "wall_climbing"
+                },
+                {
+                    "slug": "demolisher"
+                }, {
+                    "slug": "shield"
+                },
+                {
+                    "slug": "cave_concealment"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "27",
+            "name": "goblin_swarm_darter",
+            "string": "Goblin Swarm Darter",
+            "armor": "7",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "63 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Goblins/GoblinSwarmDarter",
+            "description": "\"We expected bugs in the blighted swamp. What we didn't expect were goblins using them as weapons. They swarmed us, carrying hives of blightstingers on their backs. We tried to take cover, but somehow these Swarm Darters have discovered how to shoot their barbed insects around any obstacle. Sting by sting, they sapped our strength, the venom from the bugs making our fighters ill. Our only choice was to chop them down with the sword or flee.\" <br> <i>--Journey to the Sunken City, by Ham the Wanderer</i>\"",
+            "image_link": 'Goblin/goblin_swarm_darter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Severely Poisoned<span class=\"tooltiptext2\" id=\"inflict_severely_poisoned\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 3<x-blight>"
+        }, {
+                    "slug": "mosquito_darts",
+                    "damage": "3<x-physical> </x-physical> 4<x-blight>"
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        },
+
+                {
+                    "slug": "cave_concealment"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_60"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "55",
+            "name": "goblin_butcher",
+            "string": "Goblin Butcher",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "81 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Goblins/GoblinButcher",
+            "description": "\"Tired of being ridiculed by the so-called stronger races and being bested in battle, the Skewers of Merrow pit revolted against their leaders and plundred the old armory. Sealed off since the days of Mab, it contained an endless supply of powerful lifestealing halberds, once wielded by the legendary Butchers. The Skewers have taken up these halberds and are now training hard. Soon they will be ready, and will unleash a whole new terror on the battlefield..\" <br> <i>--Update XI - The Goblin Threat, author unknown</i>\"",
+            "image_link": 'Goblin/goblin_butcher.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Volunteer<span class=\"tooltiptext2\" id=\"volunteer\"></span></div></li>\
+<li><div class=\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        },
+
+                {
+                    "slug": "life_steal"
+                }, {
+                    "slug": "first_strike"
+        },
+
+                {
+                    "slug": "polearm"
+                }, {
+                    "slug": "pike_square"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "31",
+            "name": "goblin_blight_doctor",
+            "string": "Goblin Blight Doctor",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "81 <x-gold></x-gold> 18 <x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Temple",
+            "location": "Units/Goblins/GoblinBlightDoctor",
+            "description": "\"Soon all of our diplomats were nauseous. Our negotiators knew goblins to be grimy creatures, and why not? They live in the blighted lands, in a cliff side riddled with filthy holes. But we were carefull only to shake hands with their revered doctors. After a week, our whole envoy developed boils. I couldn't move without excruciating pain, despite many visits by goblin doctors. After a month of torture, we abandoned hope of a profitable treaty, and surrendered garbage rights to all neighboring cities. Only as we were leaving, did a laughing goblin divulge that goblin doctors are not revered for healing, but because they inflict disease.\" <br> <i>--Diplomatic Mishaps, by Lady Flora Sweets</i>\"",
+            "image_link": 'Goblin/goblin_blight_doctor.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li><div class=\"tooltip\">Inflict Noxious Vulnerability<span class=\"tooltiptext2\" id=\"inflict_noxious_vulnerability\"></span></div></li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Enfeebling Fever<span class=\"tooltiptext2\" id=\"inflict_enfeebling_fever\"></span></div></li>\
+<li><div class=\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "4<x-physical> </x-physical> 4<x-blight>"
+        }, {
+                    "slug": "poison_bolts",
+                    "damage": "8<x-blight>"
+        },
+                {
+                    "slug": "weakening",
+
+        }, {
+                    "slug": "cure_disease",
+
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        },
+
+                {
+                    "slug": "true_sight"
+                }, {
+                    "slug": "first_strike"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "50",
+            "name": "goblin_warg_rider",
+            "string": "Goblin Warg Rider",
+            "armor": "11",
+            "shield": "10",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "81 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Goblins/GoblinWargRider",
+            "description": "\"We fled into the forest thinking it would slow the goblins. Then we heard the howling. The goblins cackled with glee. They knew we were trapped. Their massive wolves darted through the undergrowth as if it were fog. One by one, I watched the others disappear, thickets shaking violently. Finally we faced the goblins astride their wargs. They had simple axes, but the wargs were fiercely protective of them. Before we could strike, the wolves hit us with their teeth. Had I not been swept down the river ravine, I'd be nothing but a snack for their bone-crunching wargs.\" <br> <i>--The Fall of Authumn Glade, by Ham the Wanderer</i>\"",
+            "image_link": 'Goblin/goblin_warg_rider.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Volunteer<span class=\"tooltiptext2\" id=\"volunteer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">First Strike<span class=\"tooltiptext2\" id=\"first_strike\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        },
+
+                {
+                    "slug": "overwhelm"
+                }, {
+                    "slug": "forestry"
+        }, {
+                    "slug": "charge"
+        }, {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "65",
+            "name": "goblin_big_beetle",
+            "string": "Goblin Big Beetle",
+            "armor": "12",
+            "shield": "11",
+            "mp": "36",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "135 <x-gold></x-gold> 18 <x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "beetle_command",
+            "location": "Units/Goblins/GoblinBeetleRider",
+            "description": "\The nightly beatings stopped when my mother was eaten by a 'Big Beetle' pupa that I caught and named Mirky. Now that it's grown, there's nothing my Mirky won't eat. I never loved another soul like my Big Beetle. Who needs a girlfriend, when you can have the love of a giant poisonous bug? I feed it a steady diet of garbage so that its bite stays toxic to weak-blooded fools. Its strong mandibles can tunnel deep into the earth, break down walls, and cut people in two before slurping out their tasty innards. Honestly, I hope Mirky eats me when I die. I've never had a truer friend.\" <br> <i>--The Love Bug, by Gary the Goblin</i>\"",
+            "image_link": 'Goblin/goblin_big_beetle.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Noxious Vulnerability<span class=\"tooltiptext2\" id=\"inflict_noxious_vulnerability\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Severely Poisoned<span class=\"tooltiptext2\" id=\"inflict_severely_poisoned\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> 6<x-blight>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        },
+
+                {
+                    "slug": "tunneling"
+                },
+                {
+                    "slug": "demolisher"
+                }, {
+                    "slug": "demolisher"
+                }, {
+                    "slug": "wall_crushing"
+                },
+                {
+                    "slug": "overwhelm"
+                }, {
+                    "slug": "charge"
+        }, {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+//OTHER GOBLIN---------------------------------------------------------------------------------------------OTHER GOBLIN------------------
+        {
+            "hp": "40",
+            "name": "goblin_skewer",
+            "string": "Goblin Skewer",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "36 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Other/GoblinSkewer",
+            "description": "\"Goblins poured from Boktok Cavern brandishing their sticks. On the end of each pole were the skulls of innocent villagers. Incensed, I ordered my men to fall upon the brutal beasts. They trembled. We had superior number, weapons, training and the righteous will of Justice. We would avenge the fallen. My fine warriors clad in armor, astride their mounts, roared with indignant fury. The goblins quivered as if to scared to flee. Just as the horses caught them, the Goblins twisted their staves about, revealing a vicious metal blade on the end of each shaft. My horsemen were skewered. I have done a year's penance for every man I lost. All for the sin of pride.\" <br> <i>--Penance at Pelican Rock, by Sir Randall the Severely Chastened.</i>\"",
+            "image_link": 'Rest/goblin_skewer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Volunteer<span class=\"tooltiptext2\" id=\"volunteer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        },
+
+                {
+                    "slug": "pike_square"
+                }, {
+                    "slug": "polearm"
+        }, {
+                    "slug": "armor_piercing"
+        }, {
+                    "slug": "first_strike"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "68",
+            "name": "tame_troll",
+            "string": "Tame Troll",
+            "armor": "12",
+            "shield": "10",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Other/TameTroll",
+            "description": "\"A savage troll lived under Deepwood Bridge, getting hungrier and hungrier, when along came a few goat-footed Satyrs. The first was scrawny and bleated to go across the bridge, promising his two older, fatter brothers would come and be easier to catch. So the greedy troll let the first go, licking his chops. The second satyr came. It told the hungry troll that his fatter brother would be tastier and even easier to catch. So it let him pass. Of course, you know how this story ends. No third brother came, because there were only two satyrs. So the troll ate the poisonous mushrooms that always grew there in abundance because no one else can eat them without dying. Moral of the story: Don't be a stupid troll.\" <br> <i>--Fables that Mock Evil, Chastity Flowers, Storyteller.</i>\"",
+            "image_link": 'Rest/troll.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Fearsome<span class=\"tooltiptext2\" id=\"fearsome\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "17<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "demolisher"
+        },
+
+                {
+                    "slug": "wall_crushing"
+                }, {
+                    "slug": "guard_breaker"
+        }, {
+                    "slug": "regrowth"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "cave_crawling"
+        }, {
+                    "slug": "wetland_walking"
+        }, {
+                    "slug": "monster"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+
+
+
+
+        ]
+
 },
             ]
 }
