@@ -2575,5 +2575,587 @@ var jsonUnits = {
         ]
 
 },
+ //HALFLING--------------------------------------------------------------------------------------------------------HALFLING--------------------
+
+        {
+            "hp": "35",
+            "name": "halfling_adventurer",
+            "string": "Halfling Adventurer",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "45 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Halflings/HalflingAdventurer",
+            "description": "\"We pass unnoticed in most stories. We observe things, and stay out of the way. The powerful don't even know we exist, hidden in a hollow stump or in the thicket glade. So why do we do it? I suppose it's as the wizened one told me ages past, when he first aroused my wanderlust; I have adventure in my blood. Even after all these years-all the troubles I've seen and caused and escaped-I'll always be the lowliest of heart. A simple Halfling with a knife and a sling. I am an Adventurer.\" <br> <i>--The Endless Road, by Ham the Wanderer</i>\"",
+            "image_link": 'Halfling/halfling_adventurer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Forest Concealment<span class=\"tooltiptext2\" id=\"forest_concealment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Sprint<span class=\"tooltiptext2\" id=\"sprint\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "slingshot",
+                    "damage": "7<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        },
+                {
+                    "slug": "monster_slayer"
+                },
+                {
+                    "slug": "animal_slayer"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "32",
+            "name": "halfling_jester",
+            "string": "Halfling Jester",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "75 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Halflings/HalflingJester",
+            "description": "\The first Halfling Jester was nick-named Beaver. He ran away from the circus as a child. In his day, the tyrant Phobius would enslave whole cities of Halflings, forcing them to perform humiliating songs and dances in silly costumes. Dressed as a Jester, Beaver stole a wagonload of pyrotechnics and hid himself in a forested wilderness. When the Phobian Empire came for him, Beaver repelled them with his explosive projectiles. Over time many Halflings joined him and Beaver led them all to freedom. To this day, their descendants wear costumes and keep fireworks handy for the defense of their kin. Well, that, and they really love blowing things up.\" <br> <i>--Half a History, by Lamuel Samanite, Lorekeeper</i>\"",
+            "image_link": 'Halfling/halfling_jester.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Forest Concealment<span class=\"tooltiptext2\" id=\"forest_concealment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Scorching Projectiles<span class=\"tooltiptext2\" id=\"scorching_projectiles\"></span></div></li>\
+<li><div class=\"tooltip\">Explosive Death<span class=\"tooltiptext2\" id=\"explosive_death\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fireworks",
+                    "damage": "10<x-physical> </x-physical> 5<x-fire>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        },
+                {
+                    "slug": "walking"
+        },
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "44",
+            "name": "halfling_nightwatch",
+            "string": "Halfling Nightwatch",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Halflings/HalflingNightwatch",
+            "description": "\Even Halfling cities are full of scoundrels, but the blissful being don't like to admit it. So, as a culture, they only thieve at night. It's something of a game among the wee folk, and playing on the other side are the Nightwatch, who patrol the streets, keeping society \"honest\"-or so they say. I suspect the local thieves guilds secretly bankroll these infantryman, because they never seem to catch Halfling thieves. Instead, they focus on foreigners not familiar with the ways these stealthy guards sneak about, often more efficiently hidded in the shadows than the rogues they claim to hunt. It is no wonder that Nightwatchmen are said to have once been thieves themselves. It seems likely that many still are.\" <br> <i>--Racial Secrets and Scandals, by Bester Caltrop, Rogue Guildmaster</i>\"",
+            "image_link": 'Halfling/halfling_nightwatch.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li> <li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "infantry"
+                        },
+                {
+                    "slug": "wall_climbing"
+                        },
+                {
+                    "slug": "urban_concealment"
+                        },
+                {
+                    "slug": "shield"
+                        },
+                {
+                    "slug": "night_vision"
+                        },
+                {
+                    "slug": "armored"
+                        },
+                {
+                    "slug": "walking"
+                        },
+
+
+
+                    ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+                }, {
+            "hp": "45",
+            "name": "halfling_farmer",
+            "string": "Halfling Farmer",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Halflings/HalflingFarmer",
+            "description": "\We openly boast of danger. When destruction comes, we laugh. We roar when we die. We do not talk of humiliation. Like the time that the Orcs thought to take a farming village of tiny men. We had mighty swords. Their armor weak, ours strong. We thought to eat well that night, but the fat Halfling Farmers threw chickens in our faces. Distracted, my men chased noisy birds onto their pitchforks. Orcs skewered like roasted boar. I never speak of this.\" <br> <i>--Battlefield Interviews:Confessions of Orc Chieftain Mugrunt, by Vaulter Cronk</i>\"",
+            "image_link": 'Halfling/halfling_farmer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li> <li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical>"
+        }, {
+                    "slug": "throw_chicken",
+                    "damage": "13<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "pikeman"
+                        },
+                {
+                    "slug": "pike_square"
+                        },
+                {
+                    "slug": "first_strike"
+                        },
+                {
+                    "slug": "polearm"
+                        },
+
+                {
+                    "slug": "walking"
+                        },
+
+
+
+
+                    ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+                },
+        {
+            "hp": "35",
+            "name": "halfling_brew_brother",
+            "string": "Halfling Brew Brother",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold> 20 <x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "temple",
+            "location": "Units/Halflings/HalflingBrewBrother",
+            "description": "\Raise a glass to the man of the hourly hour.<br>My good Brother Brew, a half-man of great power!<br>His drink is the finest of the finest of brew,<br>You'll be stronger than strong drinking his dew.<br>His ale's good for what ails you, so taverns sing,<br>And he cooks like a cook that's been blessed by the King.<br>Quick with a knife, though he's slow on the go,<br>When he comes into town, no hunger is known.<br>So cheer with the cheerful, ring the bell tower,<br>My good Brother Brew's a half-man of great power!.\" <br> <i>--Drinking Songs, by Willa Loveday, Master Bard</i>\"",
+            "image_link": 'Halfling/halfling_brew_brother.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li> <li> <div class = \"tooltip\">Minor Bard Skill<span class=\"tooltiptext2\" id=\"minor_bard_skills\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical>"
+        }, {
+                    "slug": "throw_cleavers",
+                    "damage": "12<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "nourishing_meal",
+
+        }, {
+                    "slug": "cure_disease",
+
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "support"
+                        },
+                {
+                    "slug": "true_sight"
+                        },
+
+
+
+                {
+                    "slug": "walking"
+                        },
+
+
+
+
+                    ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+                },
+        {
+            "hp": "55",
+            "name": "halfling_pony_rider",
+            "string": "Halfling Pony Rider",
+            "armor": "11",
+            "shield": "12",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Halflings/HalflingPonyRider",
+            "description": "\The tumult of the battlefield chilled my legions. The bony monstrosity rose before a forest of spears and they all fled. A cloud of black fear followed the creature. Who could stand against this certain death? Who could resist the inborn instinct to cower like children? Then I saw them. They came on ponies. A contingent of diminutive spearmen mounted on the least fearsome creatures charged the monster that caused all others to flee. Though not the strongest fighters, my Halfling pony riders charged the enemy. They inspired disbelief in their enemies, that something so small and friendly might stand against them, sloughing off spells that ensorcelled others twice their size..\" <br> <i>--Fields of Fighting, by General Graystyle Claster</i>\"",
+            "image_link": 'Halfling/halfling_pony_rider.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li> <li> <div class = \"tooltip\">Strong Will<span class=\"tooltiptext2\" id=\"strong_will\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "cavalry"
+                        },
+                {
+                    "slug": "mounted"
+                        },
+                {
+                    "slug": "armored"
+                        },
+                {
+                    "slug": "charge"
+                        },
+
+                {
+                    "slug": "walking"
+                        },
+
+
+
+
+                    ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+                },
+        {
+            "hp": "60",
+            "name": "halfling_eagle_rider",
+            "string": "Halfling Eagle Rider",
+            "armor": "11",
+            "shield": "11",
+            "mp": "36",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "140 <x-gold></x-gold> 30<x-mana>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Halflings/HalflingEagleRider",
+            "description": "\The mighty sea eagle swept down to the verge of the lapping surf and with a single swipe of its fishhook talons cut open a fierce walrus who never saw it coming. Attacked from behind, the dangerous creature thrashed about in surprise for a moment, finding no target for its tusks, and then laid down its life. The eagle then proceeded to dine upon the corpse in perfect health. This one vision inspired the Halfling animal-handler, Campo Friendfeather, to befriend these flying fighters. The great birds use their speed and powerful claws to destroy foes everywhere on the battlefield, directed by their halfling riders who bonded with the birds since they struggled from their eggs.\" <br> <i>--Halfling Hall of Fame, by Sat Babbin, Keeper</i>\"",
+            "image_link": 'Halfling/halfling_eagle_rider.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+1 <x-defense> </x-defense> Defense</li> <li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armoer_piercing\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li> <li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>"
+        }, {
+                    "slug": "wing_beat",
+                    "damage": "13<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "cavalry"
+                        },
+                {
+                    "slug": "mounted"
+                        },
+
+                {
+                    "slug": "charge"
+                        },
+
+                {
+                    "slug": "flying"
+                        },
+
+
+
+
+                    ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+                },
             ]
 }
