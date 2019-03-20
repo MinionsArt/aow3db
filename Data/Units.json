@@ -3717,5 +3717,570 @@ var jsonUnits = {
         ]
 
 },
+//HUMAN--------------------------------------------------------------------------------------------------------HUMAN--------------------
+
+        {
+            "hp": "35",
+            "name": "human_civic_guard",
+            "string": "Human Civic Guard",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Humans/HumanCivicGuard",
+            "description": "\"I married a civic guardsman and to my great dismay,<br>did lay a stone over his head the very next day.<br>For though he quickly captured all the heart of this his maid,<br>the armored one who cut him down had a quicker blade.<br>So how long must I don Widow's garb for a man who gave away,<br>his life for a feathered cap, a puffy coat, and just a little pay?\" <br> <i>--The Many Lovers of Maid Marrigan, Ballad by Willa Loveday, Bard.</i>\"",
+            "image_link": 'Human/human_civic_guard.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">First Strike<span class=\"tooltiptext2\" id=\"first_strike\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "shoot_light_crossbow",
+                    "damage": "11<x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        },
+                {
+                    "slug": "volunteer"
+                },
+                {
+                    "slug": "fast_embark"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "human_longswordsman",
+            "string": "Human Longswordsman",
+            "armor": "11",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Humans/HumanLongswordsman",
+            "description": "\"Humanity is in its golden age, and despite the rumors that the other races are rallying, clearly humanity has the advantage. Even our most basic infantryman are trained to be stronger and fight harder. They come from a healthy stock of hard-working mariners, farmhands, workmen and tradesmen. All our swordsmen are outfitted with fine plate mail, and a long sword that we've personally tested on the strongest dwarven armor. I've seen them rush and overwhelm whole cadres of goblins on the field of battle, rendering them powerless from our fierce offensive. We have no need to fear these High Elves, for we are strong.\" <br> <i>--Strategic Operations, by Lord Jason Stormbreaker</i>\"",
+            "image_link": 'Human/human_longswordsman.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Guard Breaker<span class=\"tooltiptext2\" id=\"guard_breaker\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> "
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        },
+                {
+                    "slug": "overwhelm"
+                },
+                {
+                    "slug": "wall_climbing"
+                },
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "35",
+            "name": "human_archer",
+            "string": "Human Archer",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Humans/HumanArcher",
+            "description": "\"At the Battle of Rivermine, the Commonwealth sent a squadron of soldiers from various races on a fleet of ships. A cadre of human archers were the first off the ship. Ready with a volley of arrows, they filled the skies with death. The enemy holding the mine broke formation, running for cover. Those that did not flee, fell, forming a wall of bodies, giving the rest of the troops on the ships time to disembark. The archers' swift and deadly response saved many lives that day.\" <br> <i>--Battles of the Commonwealth, by Katya Mondragon, Historian</i>\"",
+            "image_link": 'Human/human_archer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Blessed Arrows<span class=\"tooltiptext2\" id=\"blessed_arrows\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "shoot_bow",
+                    "damage": "8<x-physical> </x-physical> "
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        },
+
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "human_halbedier",
+            "string": "Human Halbedier",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Humans/HumanHalbedier",
+            "description": "\"My first impression of the Halbedier was at the city gates. Their long, dangerous halbards looked more decorative than deadly. I wondered then how a man holding such a long unwieldy spear could do much damage in battle. Then came the horde. We were besieged for three days, and for every shrieking enemy that breached the wall, they were ready, able to reach and pierce their foes before any of the other men on the defensive line. Their armor is not as strong as the full-plated infantry, but when you hit the enemy first, their plate cuirass offers sufficient protection.\" <br> <i>--The Long Night in Trontgate, by Elderan Domitan</i>\"",
+            "image_link": 'Human/human_halbedier.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        },
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "first_strike"
+        }, {
+                    "slug": "pike_square"
+        }, {
+                    "slug": "polearm"
+        },
+                {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "36",
+            "name": "human_priest",
+            "string": "Human Priest",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold> 20 <x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "temple",
+            "location": "Units/Humans/HumanPriest",
+            "description": "\"I knew my brother would die with that hooked blade planted in his chest. Orcs poured from the supply weagons in ambush. I knew I would die next. Then a man in robes, entirely unfit for battle, appeared beside my brother's body. The priest snatched out the blade and quenched the wound with a prayer to the Allfather. I gasped as my brother rose to his feet, a fresh scar covering the place that was a torrent of blood just a moment before. The priest lifted the sword above his head and said we were chosen by a greater power, and that, if we did not doubt, we'd vanquish this evil. He cast down the orc blade, It broke at the hilt. Before I could cower, I was rushing the enemy with such ferocity that they faltered before we destroyed them.\" <br> <i>--Allfather Book of Miracles, Testimony of convert Jenn Plowright.</i>\"",
+            "image_link": 'Human/human_priest.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Daze<span class=\"tooltiptext2\" id=\"inflict_daze\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+                {
+                    "slug": "spirit_ray",
+                    "damage": "8<x-spirit>"
+        },
+
+                {
+                    "slug": "bestow_iron_heart",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "devout"
+        },
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "55",
+            "name": "human_cavalry",
+            "string": "Human Cavalry",
+            "armor": "12",
+            "shield": "9",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> ",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Humans/HumanCavalry",
+            "description": "\"The human Cavalry arrived in time to rout the orc marauders. The nimble riders on their speedy steeds made quick work of the enemy, cutting them down before they could raise their weapons. Afterwards, I watched these expert horsemen take care for their animals. They spent their days attending their every need, and they were fine animals in battle. With the countryside once again at peace, I convinced some of the horsemen to retire some of their most reliable horseflesh to me. Thats how I started breeding quality warhorses. I like to think that those original horses still protect our peacefull vale.\" <br> <i>--Stallions of the Wind River Ranch by Auster Bronx, Horse breeder..</i>\"",
+            "image_link": 'Human/human_cavalry.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_cavalry"
+        },
+                {
+                    "slug": "cavalry"
+        }, {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "armored"
+        },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "70",
+            "name": "human_knight",
+            "string": "Human Knight",
+            "armor": "13",
+            "shield": "11",
+            "mp": "36",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> ",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "hall_of_chivalry",
+            "location": "Units/Humans/HumanKnight",
+            "description": "\"THe shouted: 'I am a Knight. Sworn to protect this land. Yield!' The marauders had no chance to retort. His horse raced eagerly, crashing into the mob. The poor fool impaled on the point of his lance made no sound before dying. The marauders tried to strike him, but his steel armor deflected every blow. With sword drawn, the knight chopped down any who did not surrender. He refused my offer to pay him for putting his life in danger for our village. He said 'My duty is to die in battle for this Land. Your duty, my lady, is to live and suffer for this Land.' Long after his name faded from my memory, I have wondered what gravestone belongs to him. That's why I bring flowers for them all.\" <br> <i>--Rise of the Common Man, by Goody Curtez, Scrivener.</i>\"",
+            "image_link": 'Human/human_knight.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6<x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Strong Will<span class=\"tooltiptext2\" id=\"strong_will\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "shield"
+        }, {
+                    "slug": "monster_slayer"
+        }, {
+                    "slug": "dragon_slayer"
+        },
+                {
+                    "slug": "cavalry"
+        }, {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "devastating_charge"
+        }, {
+                    "slug": "armored"
+        },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
             ]
 }
