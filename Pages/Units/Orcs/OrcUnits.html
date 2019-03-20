@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="/Testing/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/Testing/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/Testing/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/Testing/Data/Builder.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function loadheader() {
+            $("#header").load("/Testing/Pages/header.html");
+            $("#OrcSpearman").load("/Testing/Pages/Units/Orcs/OrcSpearman.html");
+            $("#OrcGreatsword").load("/Testing/Pages/Units/Orcs/OrcGreatsword.html");
+            $("#OrcRazorbow").load("/Testing/Pages/Units/Orcs/OrcRazorbow.html");
+            $("#OrcImpaler").load("/Testing/Pages/Units/Orcs/OrcImpaler.html");
+            $("#OrcPriest").load("/Testing/Pages/Units/Orcs/OrcPriest.html");
+            $("#OrcBlackKnight").load("/Testing/Pages/Units/Orcs/OrcBlackKnight.html");
+            $("#OrcShockTrooper").load("/Testing/Pages/Units/Orcs/OrcShockTrooper.html");
+        });
+    </script>
+
+    <title>AOW3 Database - Orc Units</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="unit_card">
+        <p style="background-color:black; font-size: 26px" class="unit_name">Orcs</p>
+        <img class="unit_image" src="/Testing/Icons/Passives/orc.png" style="position: relative; padding: 4px" width="100">
+        <img src="/Testing/PreviewGifs/StrategicMap/orc.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
+
+        <p>Orcs are creatures of destruction. They live to break things down, and so it is with great difficulty that a master of Orcs must gather the tribes together and form a city. They care little for magic, but prefer to trust in the power of cruelty and strength.
+            <br><br>
+            Orcs hate things of beauty, unless that thing is cruel. When bored, they will just as readily destroy themselves as any particular race, but as a result, they are efficient workers when organized by powerful leaders, and they are accustomed to working under duress of harsh taskmasters. </p>
+        <hr>
+
+    </div>
+
+    <br><br>
+    <div id="OrcSpearman"></div>
+    <br><br>
+    <div id="OrcGreatsword"></div>
+    <br><br>
+    <div id="OrcRazorbow"></div>
+    <br><br>
+    <div id="OrcImpaler"></div>
+    <br><br>
+    <div id="OrcPriest"></div>
+    <br><br>
+    <div id="OrcBlackKnight"></div>
+    <br><br>
+    <div id="OrcShockTrooper"></div>
+</body>
+
+</html>

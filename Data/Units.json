@@ -4281,6 +4281,1263 @@ var jsonUnits = {
 
         ]
 
+}, //ORC--------------------------------------------------------------------------------------------------------ORC--------------------
+
+        {
+            "hp": "38",
+            "name": "orc_spearman",
+            "string": "Orc Spearman",
+            "armor": "8",
+            "shield": "7",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Orcs/OrcSpearman",
+            "description": "\"The Orc Spearman said he could not return to his clan a man until he had proven himself a mighty hunter. He clutched a javelin and a simple spear, yet he looked fiercely determined to kill. In our hamlet, there's not much danger. So I led him to the most dangerous animal I knew: My mother-in-law. I admit it was a cruel thing to do. My mother-in-law was a widow of three husbands already. The orc was made a man that night and compelled to marry her. Poor simple brute. Never stood a chance. Still, of the eight husbands she had, he was my favorite and lived the longest.\" <br> <i>--Maneater, by Nadalee Sunnybrook</i>\"",
+            "image_link": 'Orc/orc_spearman.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "throw_javelin",
+                    "damage": "10<x-physical>"
+        }, {
+                    "slug": "war_cry",
+        }, {
+                    "slug": "sprint",
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        },
+                {
+                    "slug": "shield"
+                },
+
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "50",
+            "name": "orc_greatsword",
+            "string": "Orc Greatsword",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Orcs/OrcGreatsword",
+            "description": "\"The Greatswords broke our ranks, wielding jagged shards of steel taller than themselves. With a roar that made me dive headlong into a barrel of pickled fish, they hacked fearlessly at anything that could be killed. The crude leather armor they wore kept the Orcs safe from our arrows until my archers were cut down. As quickly as they arrived, the Orcs overwhelmed every one of my defenders. Until finally I was left alone. Luckily, none of the Orcs favored pickled or I would have never lived to write this account.\" <br> <i>--Return to Rocky Hollow, by Ham the Wanderer</i>\"",
+            "image_link": 'Orc/orc_greatsword.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "war_cry",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "infantry"
+        },
+                {
+                    "slug": "overwhelm"
+                },
+
+
+                {
+                    "slug": "wall_climbing"
+                }, {
+                    "slug": "armored"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "37",
+            "name": "orc_razorbow",
+            "string": "Orc Razorbow",
+            "armor": "8",
+            "shield": "7",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Orcs/OrcRazorbow",
+            "description": "\"My enemy took the bait as I expected, and I was ready with my razorbows. Their aim isn't like an elf's, but with enough of them firing into enemy ranks with bows made for their brute strength, their clumsy arrows hit with lethal efficiency. A few of the faster horseman reached our ranks, but Razorbows are strong and used to the taskmaster's whip, so they stood well against the charge--and an arrow from one of their bows at point blank range is lethal. A few fast shots and even the cavalry was scattered in chaos--and the rest of them we left as detritus on the battlefield.\" <br> <i>--Killing the Enemy, by Lady Loki</i>\"",
+            "image_link": 'Orc/orc_razorbow.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">First STrike<span class=\"tooltiptext2\" id=\"first_strike\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical>"
+        }, {
+                    "slug": "shoot_shortbow",
+                    "damage": "6<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "war_cry",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "razor_projectiles"
+        },
+                {
+                    "slug": "archer"
+                },
+
+
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "50",
+            "name": "orc_impaler",
+            "string": "Orc Impaler",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Orcs/OrcImpaler",
+            "description": "\"We stab things. I live for the stabbing. I stab them first, cuz I have a big stick. This end is sharp. It's for stabbing. Stabbing is what I'm good at. When I was gruntling, me momma would say: 'That boy's good at stabbing. He'll make a good Impaler.' Made my Momma proud, stabbing stuff. I say, if it moves, stab it good. Make it nice and dead--stab the life out of it.\" <br> <i>--Battlefield Intervieuws:Conversations with an Orc Impaler, by Vaulter Cronk</i>\"",
+            "image_link": 'Orc/orc_impaler.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "war_cry",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "pikeman"
+                },
+
+                {
+                    "slug": "pike_square"
+        },
+                {
+                    "slug": "polearm"
+                },
+
+
+                {
+                    "slug": "first_strike"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "41",
+            "name": "orc_priest",
+            "string": "Orc Priest",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "temple",
+            "location": "Units/Orcs/OrcPriest",
+            "description": "\"I felt him coming. My throat caught, the hairs on the top of my feet stood on end. This orc radiated a terror that held me like a hook through my ribs. He drove the horde with a headdress of bloody feathers and the skulls of his victims. The men in my company fled. Some of the soldiers tried to organize, only to be cursed. Experienced swordsman fumbled and flailed about the Orc Priest as though they'd never fought before. He lifted a bone staff and struck down the nearest soldier. I readied my sling, but my foot slipped on a root. I tumbled backwards down a hillock into briars and passed out. I suppose it saved me, for had I not fallen unconscious in the thicket of thorns, I would not have lived to tell the tale.\" <br> <i>--Return to Rocky Hollow, by Ham the Wanderer</i>\"",
+            "image_link": 'Orc/orc_priest.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+20 <x-blight> Protection</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+20 <x-blight> Protection</li>\
+<li> <div class = \"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li>+20 <x-frost> Protection</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Noxious Vulnerability<span class=\"tooltiptext2\" id=\"inflict_noxious_vulnerability\"></span></div></li>\
+<li> <div class = \"tooltip\">Inflict Severly Poisoned<span class=\"tooltiptext2\" id=\"inflict_severely_poisoned\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical>"
+        }, {
+                    "slug": "bane_fire",
+                    "damage": "3<x-spirit></x-spirit> 3<x-blight></x-blight> 3<x-fire>"
+        },
+                {
+                    "slug": "throw_curse",
+        }, {
+                    "slug": "break_control",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        },
+                {
+                    "slug": "true_sight"
+                },
+
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "60",
+            "name": "orc_black_knight",
+            "string": "Orc Black Knight",
+            "armor": "12",
+            "shield": "8",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Orcs/OrcBlackKnight",
+            "description": "\"A great orc sat astride his monstrous steed clad in black armor. The horses in our caravan wickered with hysterical fear. Our wagon master cursed. With a snort, the black knight charged. Lifting his lance, he struck the captain squarly in the chest, knocking him to the ground. The wagon shook violently and the horse team took off like a pair of comets. I was flung into the back of the caravan, tangled in a rope. I could do nothing to help the poor wagon master as the orc finished him with a single chop of his wicked glaive. Then I saw it. That massive horse bent down to feed on the hapless wagon master. Never did I know a horse to eat meat, yet this one did. I let the team keep running far beyond the reach of the Black Knight.\" <br> <i>--Commonwealth Causeways, by Ham the Wanderer</i>\"",
+            "image_link": 'Orc/orc_black_knight.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Overwhelm<span class=\"tooltiptext2\" id=\"overwhelm\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>"
+        }, {
+                    "slug": "war_cry",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "cavalry"
+        },
+                {
+                    "slug": "armored"
+                },
+                {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "polearm"
+                },
+                {
+                    "slug": "charge"
+                },
+
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "75",
+            "name": "orc_shock_trooper",
+            "string": "Orc Shock Trooper",
+            "armor": "12",
+            "shield": "8",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "160 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "dark_citadel",
+            "location": "Units/Orcs/OrcShockTrooper",
+            "description": "\"The fearsome shock troopers leapt into the battle, carving large swathes of carnage with relentless bloodlust. The battlefield was slippery with blood. They shared nothing of the slow clumsiness of their muscle-bound kin. These elite fighting orcs chopped down every foe with their huge axes, striking with savage brutality until surrender was the only logical option. I managed to negotiate surrender, though it cost me a small fortune. Those without means to buy their freedom were enslaved or slain. I regret to say I lost many friends to the shock troopers.\" <br> <i>--Fall of Hempshire, by Lord Mandler the Negotiator</i>\"",
+            "image_link": 'Orc/orc_shock_trooper.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">War Cry<span class=\"tooltiptext2\" id=\"war_cry\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "17<x-physical> </x-physical>"
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+                },
+
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "armored"
+                },
+                {
+                    "slug": "inflict_bleeding_wounds"
+        },
+                {
+                    "slug": "guard_breaker"
+                },
+                {
+                    "slug": "infantry"
+                },
+
+                {
+                    "slug": "wall_climbing"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, //TIGRAN--------------------------------------------------------------------------------------------------------TIGRAN--------------------
+
+        {
+            "hp": "35",
+            "name": "tigran_cheetah",
+            "string": "Tigran Cheetah",
+            "armor": "9",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Tigrans/TigranCheetah",
+            "description": "\"Entering the Tigran camp, I instictively knew our best course was to surrender; especially as I saw the long-legged, spotted cheetah-ladies who served the settlement as its hunters. I tried to warn my party that it would be futile to run away. Sadly, my message didn't get through to all, the back of the party fled. Before they could even scream, the Cheetahs pounced. Their extended claws slashed the fools. I will spare the reader a description of all the blood\" <br> <i>--Where's Symba?, by Ham the Wanderer</i>\"",
+            "image_link": 'Tigran/tigran_cheetah.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Forest Concealment<span class=\"tooltiptext2\" id=\"forest_concealment\"></span></div></li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Sprint<span class=\"tooltiptext2\" id=\"sprint\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "pounce",
+                    "damage": "13<x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "irregular"
+        }, {
+                    "slug": "inflict_bleeding_wounds"
+                },
+
+                {
+                    "slug": "forestry"
+                },
+
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
 },
+        {
+            "hp": "35",
+            "name": "tigran_shredder",
+            "string": "Tigran Shredder",
+            "armor": "8",
+            "shield": "7",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Tigrans/TigranShredder",
+            "description": "\"The double-bladed skalj buzzed over our heads like a swarm of angry hornets. A group of Tigran Shredders flanked our diplomatic envoy. Our maddened horses charged furiously forward. The cabin of our carriage filled with a spray of splinters. Hundreds of Skalj blades embedded themselves into the side of our vehicle. Hostile Tigrans scrambled up the carriage walls. They cut the troats of our drivers and let our horses run. The diplomatic message was quite obvious.\" <br> <i>--Commonwealth Peace Offerings, by Vagon the Peacemaker</i>\"",
+            "image_link": 'Tigran/tigran_shredder.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Throw Net<span class=\"tooltiptext2\" id=\"throw_net\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical>"
+        },
+                {
+                    "slug": "throw_blades",
+                    "damage": "8<x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "archer"
+        }, {
+                    "slug": "razor_projectiles"
+                },
+
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "48",
+            "name": "tigran_sun_guard",
+            "string": "Tigran Sun Guard",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "60 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "barracks",
+            "location": "Units/Tigrans/TigranSunGuard",
+            "description": "\"The Tigran Sun Guards encircled the Shrine of the Scarlet Destroyer. I tried to convince the feline spearmen that in the Commonwealth, all share the Shrine, but they believe those shrines hold pieces of their god, Yaka. Though they had little armor, their catlike agility rendered our archers ineffective. We had to clear them out, but they fought with the ferocious zeal of jungle cats. I fear the cost to the Empire if all our shrines are so abused.\" <br> <i>--Report on Religious Tranquility, by Enforcer Tendoniskadin</i>\"",
+            "image_link": 'Tigran/tigran_sun_guard.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Coup de Grace<span class=\"tooltiptext2\" id=\"coup_de_grace\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Projectile Reflection<span class=\"tooltiptext2\" id=\"projectile_reflection\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "guard_breaker"
+        }, {
+                    "slug": "sun_shield"
+                },
+
+                {
+                    "slug": "pikeman"
+        }, {
+                    "slug": "polearm"
+                },
+
+                {
+                    "slug": "pike_square"
+        }, {
+                    "slug": "first_strike"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+}, {
+            "hp": "48",
+            "name": "tigran_prowler",
+            "string": "Tigran Prowler",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "60 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Tigrans/TigranProwler",
+            "description": "\"The most gifted battle surgeon I ever met had a gift for cutting up bodies. Apparently he'd witnessed his father, a Tigran Prowler, eviscerate many a foe. The cat man was dark like the night with eyes like amber jewels. He could disappear in the shadows of the trees. Unfortunately, he ran away when the city guards caught him selling our healing herbs on the black market. They say he clawed his way up the city wall and was away before any of the guards could reach him.\" <br> <i>--Battlefield Medicine, by Doctor Schwarzendoof</i>\"",
+            "image_link": 'Tigran/tigran_prowler.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+    <li> <div class = \"tooltip\">Cave Concealment<span class=\"tooltiptext2\" id=\"cave_concealment\"></span></div></li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "improved_wall_climbing"
+        }, {
+                    "slug": "bloodthirsty"
+                },
+
+                {
+                    "slug": "martial_arts"
+        }, {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "cave_crawling"
+        }, {
+                    "slug": "forestry"
+                },
+                {
+                    "slug": "coup_de_grace"
+                },
+                {
+                    "slug": "infantry"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+}, {
+            "hp": "36",
+            "name": "tigran_mystic",
+            "string": "Tigran Mystic",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "temple",
+            "location": "Units/Tigrans/TigranMystic",
+            "description": "\"The Tigran religion has changed since I last encountered them. They once envied men, doing all the could to prove they weren't animals. Now there is a powerful faction of Mystics that teach them to embrace their inner beast for their sun god. Some Mystics literally do. One morphed into a ravenous hellcat. Despite my most desperate attempts to reason with it, the creature tried to eat me. So while pretending to fight, I deliberately tripped and tumbled down a gorge.\" <br> <i>--Where's Symba?, by Ham the Wanderer</i>\"",
+            "image_link": 'Tigran/tigran_mystic.gif',
+            "level_trooper": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+    <li> <div class = \"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Phase<span class=\"tooltiptext2\" id=\"phase\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "3<x-physical> </x-physical> 3<x-spirit></x-spirit> 3<x-fire></x-fire>"
+        }, {
+                    "slug": "magic_bolts",
+                    "damage": " 4<x-spirit></x-spirit> 4<x-fire></x-fire>"
+        }, {
+                    "slug": "break_control",
+        }, {
+                    "slug": "were_panther",
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "projectile_resistance"
+        }, {
+                    "slug": "support"
+                },
+
+                {
+                    "slug": "true_sight"
+        },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+}, {
+            "hp": "55",
+            "name": "tigran_sabretooth_chariot",
+            "string": "Tigran Sabretooth Chariot",
+            "armor": "10",
+            "shield": "8",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "war_hall",
+            "location": "Units/Tigrans/TigranSabretoothChariot",
+            "description": "\"Yaka dresses in Destroyer's Flame. His breath is the Heat of Life. I serve the god of the Greatest Star. Yaka raises His head in the morning, drives His chariot across the sky, and hides His face at night. I revere Him by throwing beams of pure sunfire. My shield enables me to embrace Yaka's body. My mane is His corona of fire. I am His devout tribute.\" <br> <i>--Prayer of the Sabretooth, by Charioteer Felixine</i>\"",
+            "image_link": 'Tigran/tigran_sabretooth_chariot.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+    <li> <div class = \"tooltip\">Plains Running<span class=\"tooltiptext2\" id=\"plains_running\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical> "
+        }, {
+                    "slug": "throw_sun_spear",
+                    "damage": " 7<x-physical></x-physical> 7<x-fire></x-fire>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "immolation_projectiles"
+        }, {
+                    "slug": "cavalry"
+                },
+
+                {
+                    "slug": "mounted"
+        },
+                {
+                    "slug": "charge"
+        },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+}, {
+            "hp": "55",
+            "name": "tigran_sphinx",
+            "string": "Tigran Sphinx",
+            "armor": "11",
+            "shield": "11",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "fire_temple",
+            "location": "Units/Tigrans/TigranSphinx",
+            "description": "\"We all knew what dwelt in Hillside Tomb. The clever thing offered fortunes to anyone able to outwit it. Caleb Withers went in a beggar and left as royalty, but thousands of others never returned. The Commonwealth judged this bargain illegal. They brought their war machines against the creature. It called down the sun to incenerate the advance. It retreated into its lair. Foolishly, they followed, but it was ready. Traps slowed warriors; the creature finished them off. Even disciplined troops trembled with fear. Eventually, the Commonwealth drove it away using overwhelming numbers. That's the price of bargaining with a Sphinx.\" <br> <i>--Monsters of Hillside, by Olden Withers</i>\"",
+            "image_link": 'Tigran/tigran_sphinx.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+20% <x-fire></x-fire> Protection</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+    <li> <div class = \"tooltip\">Bloodthirsty<span class=\"tooltiptext2\" id=\"bloodthirsty\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li>+20% <x-fire></x-fire> Protection</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Fear Strike<span class=\"tooltiptext2\" id=\"fear_strike\"></span></div></li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "15<x-physical> </x-physical>"
+        }, {
+                    "slug": "sun_disc",
+                    "damage": " 22<x-fire></x-fire>"
+        }, {
+                    "slug": "cause_fear",
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "lesser_flying"
+        },
+                {
+                    "slug": "irregular"
+        },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_40"
+                    },
+        ]
+
+},
+
+
             ]
 }
