@@ -65,6 +65,9 @@ function addUnitTypeIcon(a, b, c) {
 
         }
     }
+    if (abilityName === "") {
+        console.warn("no unittype found for" + a);
+    }
 
 }
 
@@ -116,7 +119,9 @@ function addAbilityslot(a, unique, damage, c) {
 
         }
     }
-
+    if (abilityName === "") {
+        console.warn("no ability found for " + a);
+    }
 }
 
 function addPassiveslot(a, b, c) {
@@ -153,7 +158,9 @@ function addPassiveslot(a, b, c) {
 
         }
     }
-
+    if (abilityName === "") {
+        console.warn("no passive found for " + a);
+    }
 }
 
 function addResistanceSlot(a, b, c) {
@@ -194,7 +201,9 @@ function addResistanceSlot(a, b, c) {
 
         }
     }
-
+    if (abilityName === "") {
+        console.warn("no resistance found for " + a);
+    }
 }
 
 

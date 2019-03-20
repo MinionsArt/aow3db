@@ -5537,6 +5537,318 @@ var jsonUnits = {
         ]
 
 },
+//ARCHDRUID--------------------------------------------------------------------------------------------------------ARCHDRUID--------------------
+
+        {
+            "hp": "40",
+            "name": "baby_reed_serpent",
+            "string": "Baby Reed Serpent",
+            "armor": "10",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "hatching_pool",
+            "location": "Units/ArchDruid/BabyReedSerpent",
+            "description": "\"Baby Reed Serpents are a delicacy. The problem is, they are quite aggressive. They will swarm a man when they're desperate for food, so I take my brother along for the hunt. As they start biting him, I'm there with the club. I bash them on the head and catch them in a bucket. Mmm-mm! Good eatin!\" <br> <i>--Culinary Secrets of the Bayou Brothers, by Cletus Munkin</i>\"",
+            "image_link": 'ArchDruid/baby_reed_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2<x-blight></x-blight>"
+        },
+                {
+                    "slug": "poison_spit",
+                    "damage": "11<x-blight></x-blight>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_baby_reed_serpent"
+        }, {
+                    "slug": "swimming"
+                },
+
+                {
+                    "slug": "wetland_walking"
+                },
+                {
+                    "slug": "inflict_noxious_vulnerability"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+},
+        {
+            "hp": "40",
+            "name": "baby_shock_serpent",
+            "string": "Baby Shock Serpent",
+            "armor": "10",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/BabyShockSerpent",
+            "description": "\"I watched in horror as half the fishermen on the fishing vessel dropped to the deck convulsing in slurred and buzzing agony. I took an oar and broke the grip of three man who could not release the fishing nets. Using the oar, I turned the winch that drew in the fish net, and meticulously pulled in the day's catch. Sure enough, hidded in the blue deep, a small swarm of juvenile shock serpents were entangled with a whole net-load of paralyzed fish.\" <br> <i>--Fish Tales, Helam Thurgood, Fisherman</i>\"",
+            "image_link": 'ArchDruid/baby_shock_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2<x-blight></x-blight>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_baby_shock_serpent"
+        }, {
+                    "slug": "swimming"
+                },
+
+                {
+                    "slug": "wetland_walking"
+                },
+                {
+                    "slug": "inflict_shocking"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "shock_protection_60"
+                    },
+        ]
+
+}, {
+            "hp": "44",
+            "name": "boar",
+            "string": "Boar",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/Boar",
+            "description": "\"Boars are fiercely aggressive territorial creatures that like to burrow in holes deep under the ground. They charge down narrow tunnels, goring enemies trapped in their path. Dwarves have domesticated Boars as steeds, allowing them to traverse their underground kingdoms quickly and venture out to the surface. Boars have bad vision, but this is more than made up for with their excellent sense of smell.\" <br> <i>--Boars, Burlap and Boredom, by Boris the Bore</i>\"",
+            "image_link": 'ArchDruid/boar.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> "
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "fast_healing"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+},
+        {
+            "hp": "40",
+            "name": "dire_penguin",
+            "string": "Dire Penguin",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/DirePenguin",
+            "description": "\"Assured that there was a trade route, and that the Frostling people would be profitable trading partners, we followed the direction of the Frostling King Frettic the Blue, northward beyond the glacial fields, across the tundra to a sea filled with icebergs. That's where we saw them first, out on the ice, like stiff fat dark men with glowing red eyes trundling towards us. But these were no men. They were far more deadly. They were killer penguins.\" <br> <i>--Diplomatic Mishaps, Volume 2:The Case against Frostlings, by Lady Flora Sweets</i>\"",
+            "image_link": 'ArchDruid/dire_penguin.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\  <li><div class = \"tooltip\">Arctic Concealment<span class=\"tooltiptext2\" id=\"arctic_concealment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Freezing Touch<span class=\"tooltiptext2\" id=\"freezing_touch\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 3<x-frost></x-frost>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "life_steal"
+        }, {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "arctic_walking"
+                }, {
+                    "slug": "dedicated_to_evil"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_100"
+                    },
+        ]
+
+},
 
 
             ]

@@ -689,6 +689,22 @@ var jsonUnitAbilities = {
             "icon_name": "evolve",
             "range": "",
 
+       }, {
+            "slug": "evolve_baby_reed_serpent",
+            "name": "Evolve (Baby Reed Serpent)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Reed Serpent</li>>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       }, {
+            "slug": "evolve_baby_shock_serpent",
+            "name": "Evolve (Baby Shock Serpent)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Shock Serpent</li>>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
        },
         {
             "slug": "evolve_cavalry",
@@ -794,7 +810,7 @@ var jsonUnitAbilities = {
             "name": "Inflict Bleeding Wounds",
             "description": "Melee and Ranged attacks can inflict Bleeding Wounds. Bleeding units suffer 4 <x-physical></x-physical> damage at the start of each combat round for 2 <x-turn></x-turn>",
             "damage": "9 <x-physical_def></x-physical_def>",
-            "icon_name": "inflict_bleeding_wounds",
+            "icon_name": "bleeding",
             "range": "",
 
 
@@ -814,7 +830,7 @@ var jsonUnitAbilities = {
             "name": "Razor Projectiles",
             "description": "Ranged attacks can inflict Bleeding Wounds. Bleeding units suffer 4 <x-physical></x-physical> damage at the start of each combat round for 2 <x-turn></x-turn>",
             "damage": "9 <x-physical_def></x-physical_def>",
-            "icon_name": "razor_projectiles",
+            "icon_name": "bleeding",
             "range": "",
 
 
@@ -994,7 +1010,7 @@ var jsonUnitAbilities = {
             "name": "Cause Fear",
             "description": "Attempts to Cause Fear Panic target enemy unit. If failed, the target unit is Shaken(2 <x-turn></x-turn>. Panicked units don't obey orders and attempt to flee. <li>Can only be used once per battle</li>",
             "damage": "11 <x-spirit_res></x-spirit_res>",
-            "icon_name": "fear_strike",
+            "icon_name": "cause_fear",
             "range": "",
 
 
@@ -1175,6 +1191,16 @@ var jsonUnitAbilities = {
             "description": "This unit deals +3 <x-physical></x-physical> damage against Animals.",
             "damage": "",
             "icon_name": "animal_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "animal",
+            "name": "Animal",
+            "description": "This unit is an Animal and has Forestry",
+            "damage": "",
+            "icon_name": "animal",
             "range": "",
 
 
