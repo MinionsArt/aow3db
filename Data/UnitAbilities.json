@@ -14,6 +14,27 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "taunt",
+            "name": "Taunt",
+            "description": "<p>Attempts to Taunt target unit. Taunted units don’t obey orders and instead attempt to attck the nearest enemy unit with Melee attacks for 2 turns. Elemental Machine and Undead not affected\
+                                <li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "taunt",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "frost_shard",
+            "name": "Frost Shard",
+            "description": "<p>Shoots icicles at target enemy unit\
+                                <li>Does less damage at long range</li>\
+                                <li>Straight Shot</li>",
+            "damage": "",
+            "icon_name": "frost_shard",
+            "range": "Medium",
+
+       },
+        {
             "slug": "fire_spit",
             "name": "Fire Spit",
             "description": "<p>Spits fire at target enemy unit\
@@ -184,6 +205,18 @@ var jsonUnitAbilities = {
                                 <li>Cannot be used while unit is engaged</li>",
             "damage": "",
             "icon_name": "castigate",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "fairy_fire",
+            "name": "Fairy Fire",
+            "description": "<p>Shoots Fairy Fire at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "fairy_fire",
             "range": "Medium",
 
        },
@@ -376,12 +409,84 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "were_bear",
+            "name": "Were Bear",
+            "description": "<p>The Unit heals 15 <x-hp></x-hp> Hit Points and transforms into a Dire Bear.",
+            "damage": "",
+            "icon_name": "were_bear",
+            "range": "Self",
+
+       },
+        {
+            "slug": "free_movement",
+            "name": "Free Movement",
+            "description": "<p>This unit is not hindered by any terrain movement penalties.</li>",
+            "damage": "",
+            "icon_name": "free_movement",
+            "range": "",
+
+       },
+        {
+            "slug": "static_shield",
+            "name": "Static Shield",
+            "description": "<p>Every time an enemy unit performs an attack against this unit it suffers 5 <x-shock></x-shock> damage and has a chance to become Stunned. Stunned units cannot take actions for 1 <x-turn></x-turn>.</li>",
+            "damage": "",
+            "icon_name": "static_shield",
+            "range": "",
+
+       },
+        {
+            "slug": "maintenance",
+            "name": "Maintenance",
+            "description": "<p>Heals every Machine unit in the stack for 3 <x-hp></x-hp> every Strategic Turn",
+            "damage": "",
+            "icon_name": "maintenance",
+            "range": "",
+
+       },
+        {
+            "slug": "emergency_repair",
+            "name": "Emergency Repair",
+            "description": "<p>Restores 20 <x-hp></x-hp> Hit Points to target friendly Machine unit.  Outside combat this ability will heal 20 <x-hp></x-hp> among all valid units in the stack . <li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "emergency_repair",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "flash_bang",
+            "name": "Flash Bang",
+            "description": "<p>Launches Flash Bang at target unit. Attempts to Blind for 2 turns. Blinded units have a max attack range of 1 hex <li>Cooldown 1 <x-turn></x-turn></li><li>Arcing Shot</li><li>Less damage at long range</li>",
+            "damage": "",
+            "icon_name": "flash_bang",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "mend_magical_being",
+            "name": "Mend Magical Being",
+            "description": "<p>Restores 15 <x-hp></x-hp> Hit Points to target friendly Magical Origin/ Summoned unit.  Outside combat this ability will heal 20 <x-hp></x-hp> among all valid units in the stack . <li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "mend_magical_being",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "healing",
+            "name": "Healing",
+            "description": "<p>Restores 20 <x-hp></x-hp> Hit Points to target friendly unit.  Outside combat this ability will heal 20 <x-hp></x-hp> among all valid units in the stack . <li>Cooldown 2 <x-turn></x-turn></li><li>Elemental, Machine and Undead units are not affected.</li>",
+            "damage": "",
+            "icon_name": "healing",
+            "range": "Touch",
+
+       },
+        {
             "slug": "were_panther",
             "name": "Were Panther",
             "description": "<p>The Unit heals 15 <x-hp></x-hp> Hit Points and transforms into a Dire Panther.",
             "damage": "",
             "icon_name": "were_panther",
-            "range": "Touch",
+            "range": "Self",
 
        },
         {
@@ -409,6 +514,15 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "pounce",
             "range": "Short",
+
+       },
+        {
+            "slug": "inflict_weakened",
+            "name": "Inflict Weakened",
+            "description": "<p>Attacks from this unit can inflict Weakened. Weakened units suffer -1 <x-resistance></x-resistance>, -1 <x-defense></x-defense>, -200 <x-morale></x-morale>and 60% <x-blight></x-blight> Weakness ",
+            "damage": "",
+            "icon_name": "weakening",
+            "range": "Medium",
 
        },
         {
@@ -682,8 +796,32 @@ var jsonUnitAbilities = {
             "range": "",
 
        }, {
+            "slug": "evolve_dread_spider_baby",
+            "name": "Evolve (Dread Spider Queen)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Dread Spider Queen</li>>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       }, {
+            "slug": "evolve_hunter_spider_baby",
+            "name": "Evolve (Hunter Spider Queen)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Hunter Spider Queen</li>>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       }, {
+            "slug": "evolve_vampire_spider_baby",
+            "name": "Evolve (Vampire Spider Queen)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Vampire Spider Queen</li>>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       }, {
             "slug": "evolve_initiate",
-            "name": "Evolve (Initiate)",
+            "name": "Evolve (Storm Sister)",
             "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>High Elf Storm Sister</li>>",
             "damage": "",
             "icon_name": "evolve",
@@ -691,7 +829,7 @@ var jsonUnitAbilities = {
 
        }, {
             "slug": "evolve_baby_reed_serpent",
-            "name": "Evolve (Baby Reed Serpent)",
+            "name": "Evolve (Mature Reed Serpent)",
             "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Reed Serpent</li>>",
             "damage": "",
             "icon_name": "evolve",
@@ -699,7 +837,7 @@ var jsonUnitAbilities = {
 
        }, {
             "slug": "evolve_baby_shock_serpent",
-            "name": "Evolve (Baby Shock Serpent)",
+            "name": "Evolve (Mature Shock Serpent)",
             "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Shock Serpent</li>>",
             "damage": "",
             "icon_name": "evolve",
@@ -708,7 +846,7 @@ var jsonUnitAbilities = {
        },
         {
             "slug": "evolve_cavalry",
-            "name": "Evolve (Cavalry)",
+            "name": "Evolve (Knight)",
             "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Human Knight</li>>",
             "damage": "",
             "icon_name": "evolve",
@@ -721,6 +859,36 @@ var jsonUnitAbilities = {
             "description": "This unit gains +6<x-hp></x-hp> regeneration per <x-turn></x-turn> Turn.",
             "damage": "",
             "icon_name": "fast_healing",
+            "range": "",
+
+
+       },
+        {
+            "slug": "seduce",
+            "name": "Seduce",
+            "description": "Attempts to take control of target enemy unit. On fail, units are Shaken (-400 <x-morale></x-morale> Morale) for two <x-turn></x-turn><li>Can only be used once per battle.</li>",
+            "damage": "12 <x-spirit_res></x-spirit_res>",
+            "icon_name": "seduce",
+            "range": "",
+
+
+       },
+        {
+            "slug": "charm",
+            "name": "Charm",
+            "description": "Attempts to take control of target enemy unit.<li>Can only be used once per battle.</li>",
+            "damage": "9 <x-spirit_res></x-spirit_res>",
+            "icon_name": "charm",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inspiring_aura",
+            "name": "Inspiring Aura",
+            "description": "Every adjacent unit owned by the same player as this unit gets +300 <x-morale></x-morale> Morale in Tactical combat.",
+            "damage": "",
+            "icon_name": "inspiring_aura",
             "range": "",
 
 
@@ -756,6 +924,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "tree_crusher",
+            "name": "Tree Crusher",
+            "description": "This unit turns dense vegetation into barrens as it moves over it. Each hex cleared gives a small amount of gold.",
+            "damage": "",
+            "icon_name": "tree_crusher",
+            "range": "",
+
+
+       },
+        {
             "slug": "backstab",
             "name": "Backstab",
             "description": "Deals an additional+ 6 <x-physical></x-physical> Melee damage performing a flanking melee attack.",
@@ -766,9 +944,138 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "dragon",
+            "name": "Dragon",
+            "description": "This unit is a Dragon and has Mind Control Immunity, Charge, and Night Vision.",
+            "damage": "",
+            "icon_name": "dragon",
+            "range": "",
+
+
+       },
+        {
+            "slug": "inflict_brain_rot",
+            "name": "Inflict Brain Rot",
+            "description": "Ranged and Melee attacks can inflict Brain Rot, Brain Rot gives the unit -20 <x-casting></x-casting>",
+            "damage": "",
+            "icon_name": "inflict_brain_rot",
+            "range": "",
+
+
+       },
+        {
+            "slug": "shock_breath",
+            "name": "Shock Breath",
+            "description": "Breathes a cloud of electricity that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn> starts on cooldown</li>",
+            "damage": "",
+            "icon_name": "fire_breath",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "dominate",
+            "name": "Dominate",
+            "description": "Attempts to take control of target enemy unit for 3 <x-turn></x-turn>. On fail, target receives 8 <x-spirit></x-spirit> damage<li>Cooldown 3 <x-turn></x-turn></li>",
+            "damage": "13 <x-spirit_res></x-spirit_res>",
+            "icon_name": "dominate",
+            "range": "Touch",
+
+
+       },
+        {
+            "slug": "fire_throwing",
+            "name": "Fire Throwing",
+            "description": "Launches a cone of flames that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn> starts on cooldown</li>",
+            "damage": "",
+            "icon_name": "fire_breath",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "frost_throwing",
+            "name": "Frost Throwing",
+            "description": "Launches a cone of ice that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn> starts on cooldown</li>",
+            "damage": "",
+            "icon_name": "frost_breath",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "fire_cannon",
+            "name": "Fire Cannon",
+            "description": "Fires a cannonball at target enemy or object. Units within the line of fire of the cannonball will also be hit.<li>No line of sight penalties</li><li>No range penalties</li><li>Needs to be reloaded after use</li>",
+            "damage": "",
+            "icon_name": "fire_cannon",
+            "range": "Long",
+
+
+       }, {
+            "slug": "shadow_step",
+            "name": "Shadow Step",
+            "description": "Teleports the unit a short range. The unit has 1 action point after teleporting.<li>Cooldown 2 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "shadow_step",
+            "range": "Short",
+
+
+       },
+        {
+            "slug": "fire_mortar",
+            "name": "Fire Mortar",
+            "description": "Fires mortar with 1 hex radius at target enemy or object.<li>No line of sight penalties</li><li>Less damage at long range</li><li>Cooldown 1 <x-turn></x-turn>, starts on cooldown</li>",
+            "damage": "",
+            "icon_name": "fire_mortar",
+            "range": "Long",
+
+
+       },
+        {
+            "slug": "fire_broadside",
+            "name": "Fire Broadside",
+            "description": "Fires all the cannons on the ship in all directions.<li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "fire_broadside",
+            "range": "2 Hex",
+
+
+       },
+        {
+            "slug": "ram",
+            "name": "Ram",
+            "description": "Rams target object.",
+            "damage": "",
+            "icon_name": "ram",
+            "range": "Touch",
+
+
+       },
+        {
+            "slug": "seafaring",
+            "name": "Seafaring",
+            "description": "This unit is able to traverse Water.",
+            "damage": "",
+            "icon_name": "seafaring",
+            "range": "",
+
+
+       },
+        {
+            "slug": "boat",
+            "name": "Boat",
+            "description": "This unit is a Boat.",
+            "damage": "",
+            "icon_name": "boat",
+            "range": "",
+
+
+       },
+        {
             "slug": "explosive_death",
             "name": "Explosive Death",
-            "description": "	Upon death, this unit deals 10 <x-physical></x-physical> 10 <x-fire></x-fire> damage to all units surrounding it.",
+            "description": "Upon death, this unit deals 10 <x-physical></x-physical> 10 <x-fire></x-fire> damage to all units surrounding it.",
             "damage": "",
             "icon_name": "explosive_death",
             "range": "",
@@ -778,7 +1085,7 @@ var jsonUnitAbilities = {
         {
             "slug": "explosive_ice_death",
             "name": "Explosive Ice Death",
-            "description": "	Upon death, this unit deals 10 <x-physical></x-physical> 10 <x-frost></x-frost> damage to all units surrounding it.",
+            "description": "Upon death, this unit deals 10 <x-physical></x-physical> 10 <x-frost></x-frost> damage to all units surrounding it.",
             "damage": "",
             "icon_name": "explosive_ice_death",
             "range": "",
@@ -1096,6 +1403,26 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "fey",
+            "name": "Fey",
+            "description": "This unit is Fey and has Forestry, Wetland Walking, and 40% <x-blight></x-blight> Weakness.",
+            "damage": "",
+            "icon_name": "fey",
+            "range": "",
+
+
+       },
+        {
+            "slug": "regeneration",
+            "name": "Regeneration",
+            "description": "This unit regains 100% of its <x-hp></x-hp> Hit Points at the start of their owners turn.",
+            "damage": "",
+            "icon_name": "regeneration",
+            "range": "",
+
+
+       },
+        {
             "slug": "regrowth",
             "name": "Regrowth",
             "description": "This unit regains 20% of its <x-hp></x-hp> Hit Points each combat turn. Regains all its <x-hp></x-hp> Hit Points at the start of its owners turn on the Strategic map.",
@@ -1116,11 +1443,41 @@ var jsonUnitAbilities = {
 
        },
         {
-            "slug": "wetland_concealment",
-            "name": "Wetland Concealment",
+            "slug": "movement_upgrade",
+            "name": "Movement Upgrade",
+            "description": "This unit gains +8 <x-mp></x-mp>",
+            "damage": "",
+            "icon_name": "movement_upgrade",
+            "range": "",
+
+
+       },
+        {
+            "slug": "blight_concealment",
+            "name": "Blight Concealment",
+            "description": "This unit is invisible when on Blighted terrain.",
+            "damage": "",
+            "icon_name": "blight_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "wetlands_concealment",
+            "name": "Wetlands Concealment",
             "description": "This unit is invisible when on Wetlands terrain.",
             "damage": "",
-            "icon_name": "wetland_concealment",
+            "icon_name": "wetlands_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "water_concealment",
+            "name": "Water Concealment",
+            "description": "This unit is invisible when on Water.",
+            "damage": "",
+            "icon_name": "water_concealment",
             "range": "",
 
 
@@ -1128,7 +1485,7 @@ var jsonUnitAbilities = {
         {
             "slug": "cave_concealment",
             "name": "Cave Concealment",
-            "description": "This unit is invisible when on Undergroun.",
+            "description": "This unit is invisible when Underground.",
             "damage": "",
             "icon_name": "cave_concealment",
             "range": "",
@@ -1141,6 +1498,16 @@ var jsonUnitAbilities = {
             "description": "This unit is invisible when on Structures.",
             "damage": "",
             "icon_name": "urban_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "mountain_concealment",
+            "name": "Mountain Concealment",
+            "description": "This unit is invisible when on Mountains.",
+            "damage": "",
+            "icon_name": "mountain_concealment",
             "range": "",
 
 
@@ -1164,6 +1531,165 @@ var jsonUnitAbilities = {
             "range": "",
 
 
+       }, {
+            "slug": "call_lightning",
+            "name": "Call Lightning",
+            "description": "Calls down Lightning that can Stun target enemy unit, Lightning deals splash damage to units and objects 1 hex around target.  <li>Cooldown 1 <x-turn></x-turn>, starts on cooldown</li><li>Requires 3 Action Points </li><li>No line of sight or range penalties</li>",
+            "damage": "8 <x-shock_res></x-shock_res>",
+            "icon_name": "call_lightning",
+            "range": "Extreme",
+
+
+       }, {
+            "slug": "befriend_animal",
+            "name": "Befriend Animal",
+            "description": "Attempts to take control of target Animal, against Mounted units, ability causes Feral Mount. Units with Feral Mount suffer -12 <x-mp></x-mp> and -400 <x-morale></x-morale> <li>Can only be used once per battle</li>",
+            "damage": "12 <x-spirit_res></x-spirit_res>",
+            "icon_name": "befriend_animal",
+            "range": "",
+
+
+       },
+        {
+            "slug": "entangling_strike",
+            "name": "Entangling Strike",
+            "description": "Melee attacks from this unit can Entangle targets. Entangled units cannot take actions for 2 <x-turn></x-turn>.<li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "13 <x-physical_res></x-physical_res>",
+            "icon_name": "entangling_touch",
+            "range": "",
+
+
+       },
+        {
+            "slug": "entangling_touch",
+            "name": "Entangling Touch",
+            "description": "Attempts to Entangle target unit. Entangled units cannot take actions for 2 <x-turn></x-turn>.<li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "13 <x-physical_res></x-physical_res>",
+            "icon_name": "entangling_touch",
+            "range": "",
+
+
+       },
+        {
+            "slug": "throw_filth",
+            "name": "Throw Filth",
+            "description": "The unit hurls thick globs of indescribable filth at the target, doing damage and cursing the unit with a Disgusting Stench for 3 <x-turn></x-turn>.<li>Does less damage at long range</li><li>Straight Shot</li><li>Cannot be used while unit is engaged</li><li>Cooldown 2 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "throw_filth",
+            "range": "Medium",
+
+
+       },
+
+        {
+            "slug": "defender",
+            "name": "Defender",
+            "description": "This unit gains an additional 20 % <x-defense></x-defense> and <x-resistance></x-resistance> bonus when in Guard Mode.",
+            "damage": "",
+            "icon_name": "defender",
+            "range": "",
+
+
+       },
+        {
+            "slug": "rapid_reload",
+            "name": "Rapid Reload",
+            "description": "Reloads weapon of target friendly Machine or Musketeer to reset their cooldown.",
+            "damage": "",
+            "icon_name": "rapid_reload",
+            "range": "",
+
+
+       },
+        {
+            "slug": "reload",
+            "name": "Reload",
+            "description": "Reloads this unit's weapon, allowing it to fire again next turn.",
+            "damage": "",
+            "icon_name": "reload",
+            "range": "",
+
+
+       },
+        {
+            "slug": "cannot_regenerate",
+            "name": "Cannot Regenerate",
+            "description": "This unit doesn’t regenerate Hitpoints",
+            "damage": "",
+            "icon_name": "cannot_regenerate",
+            "range": "",
+
+
+       },
+        {
+            "slug": "machine",
+            "name": "Machine",
+            "description": "This unit is a Machine, Cannot Regenerate, and has 100% <x-spirit></x-spirit> Protection and 100% <x-blight></x-blight> Protection",
+            "damage": "",
+            "icon_name": "machine",
+            "range": "",
+
+
+       },
+        {
+            "slug": "reinforced",
+            "name": "Reinforced",
+            "description": "This unit gains +4 <x-defense></x-defense> against ranged attacks.",
+            "damage": "",
+            "icon_name": "reinforced",
+            "range": "",
+
+
+       },
+        {
+            "slug": "awakened",
+            "name": "Awakened",
+            "description": "This Animal gains +3 <x-physical></x-physical> damage and +500 <x-morale></x-morale>",
+            "damage": "",
+            "icon_name": "awaken_spirit",
+            "range": "",
+
+
+       },
+        {
+            "slug": "fire_blunderbuss",
+            "name": "Fire Blunderbuss",
+            "description": "Fires a spray of lead pellets at targed enemy unit.<li>Cone shaped attack </li><li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "fire_blunderbuss",
+            "range": "Short",
+
+
+       },
+        {
+            "slug": "fire_musket",
+            "name": "Fire Musket",
+            "description": " Fire musket balls target enemy unit. The impact has a chance for target to lose 50% <x-mp></x-mp>. Machine, Elemental and Incorporeal cannot be effected by impact.<li>Unit must reload after using ability </li><li>Does less damage at long range </li><li>Straight Shot</li>",
+            "damage": "",
+            "icon_name": "fire_musket",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "summon_erymanthian_boar",
+            "name": "Summon Erymanthian Boar",
+            "description": "Summons a legendary boar into battle to fight at your side until the end of combat.<li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "summon_erymanthian_boar",
+            "range": "Short",
+
+
+       },
+        {
+            "slug": "awaken_spirit",
+            "name": "Awaken Spirit",
+            "description": "Target friendly Animal gains +3 <x-physical></x-physical> damage and +500 <x-morale></x-morale> until end of combat.<li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "awaken_spirit",
+            "range": "",
+
+
        },
         {
             "slug": "arctic_concealment",
@@ -1171,6 +1697,56 @@ var jsonUnitAbilities = {
             "description": "This unit is invisible when on Arctic terrain.",
             "damage": "",
             "icon_name": "arctic_concealment",
+            "range": "",
+
+
+       },
+        {
+            "slug": "sabotage",
+            "name": "Sabotage",
+            "description": "Deals 15 <x-physical></x-physical> and 15 <x-fire></x-fire> damage to target Machine unit, or 40 <x-physical></x-physical> damage to target wall",
+            "damage": "",
+            "icon_name": "sabotage",
+            "range": "",
+
+
+       },
+        {
+            "slug": "holy_relic",
+            "name": "Holy Relic",
+            "description": "This unit heals 2 <x-hp></x-hp> for each Devout unit in the same stack on the strategic map.",
+            "damage": "",
+            "icon_name": "holy_relic",
+            "range": "",
+
+
+       },
+        {
+            "slug": "fey_slayer",
+            "name": "Fey Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Fey units.",
+            "damage": "",
+            "icon_name": "fey_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "undead_slayer",
+            "name": "Undead Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Undead units.",
+            "damage": "",
+            "icon_name": "undead_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "summon_slayer",
+            "name": "Summon Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Summoned units.",
+            "damage": "",
+            "icon_name": "summon_slayer",
             "range": "",
 
 
@@ -1988,6 +2564,109 @@ var jsonUnitAbilities = {
             "icon_name": "overwhelm",
 
        },
+        {
+            "slug": "dedicated_to_evil",
+            "name": "Dedicated to Evil",
+            "description": "This unit is Dedicated to Evil, and suffers <x-morale></x-morale> Penalties unless its owner is Evil.",
+            "damage": "",
+            "icon_name": "dedicated_to_evil",
+
+       },
+        {
+            "slug": "dedicated_to_good",
+            "name": "Dedicated to Good",
+            "description": "This unit is Dedicated to Good, and suffers <x-morale></x-morale> Penalties unless its owner is Good.",
+            "damage": "",
+            "icon_name": "dedicated_to_good",
+
+       }, {
+            "slug": "dedicated_to_neutral",
+            "name": "Dedicated to Neutral",
+            "description": "This unit is Dedicated to Neutral, and suffers <x-morale></x-morale> Penalties unless its owner is Neutral.",
+            "damage": "",
+            "icon_name": "dedicated_to_neutral",
+
+       },
+        {
+            "slug": "killing_spree",
+            "name": "Killing Spree",
+            "description": "This unit regains 1 action point and according <x-mp></x-mp> are upon killing an enemy unit.",
+            "damage": "",
+            "icon_name": "killing_spree",
+
+       },
+        {
+            "slug": "pass_wall",
+            "name": "Pass Wall",
+            "description": "This unit is able to pass through City Walls and other obstacles.",
+            "damage": "",
+            "icon_name": "pass_wall",
+
+       },
+        {
+            "slug": "inflict_spirit_breaking",
+            "name": "Inflict Spirit Breaking",
+            "description": "Attacks from this unit can inflict Spirit Breaking. Units with Spirit Breaking have -600 <x-morale></x-morale> and -2 <x-resistance></x-resistance> for 2 <x-turn></x-turn>.",
+            "damage": "9 <x-spirit_res></x-spirit_res>",
+            "icon_name": "spirit_breaking",
+
+       },
+        {
+            "slug": "incorporeal",
+            "name": "Incorporeal",
+            "description": "This unit has Pass Wall and 60% <x-physical></x-physical> Protection. It is also unaffected by physical movement impeding effects.",
+            "damage": "",
+            "icon_name": "incorporeal",
+
+       },
+        {
+            "slug": "magical_origin",
+            "name": "Magical Origin",
+            "description": "This unit is of Magical Origin and is susceptible to Banish and Arcane Binding Spells.",
+            "damage": "",
+            "icon_name": "summoned",
+
+       },
+        {
+            "slug": "summoned",
+            "name": "Summoned",
+            "description": "This unit is Summoned and is susceptible to Banish and Arcane Binding Spells.",
+            "damage": "",
+            "icon_name": "summoned",
+
+       },
+        {
+            "slug": "webbing_touch",
+            "name": "Webbing Touch",
+            "description": "Attempts to Web target enemy unit. Webbed units cannot take any action, and are always Flanked for 2 <x-turn></x-turn>",
+            "damage": "11 <x-physical_res></x-physical_res>",
+            "icon_name": "webbing_touch",
+
+       },
+        {
+            "slug": "floating",
+            "name": "Floating",
+            "description": "This unit can float and is able to traverse all terrain at a movement cost of 4. Except Mountains which cost 6 <x-mp></x-mp>, Road and Water cost 3 <x-mp></x-mp>. Only Cavern walls cannot be traversed",
+            "damage": "",
+            "icon_name": "floating",
+
+       }, {
+            "slug": "greater_webbing_touch",
+            "name": "Greater Webbing Touch",
+            "description": "Attempts to Web target enemy unit. Webbed units cannot take any action, and are always Flanked for 2 <x-turn></x-turn>",
+            "damage": "14 <x-physical_res></x-physical_res>",
+            "icon_name": "greater_webbing_touch",
+
+       },
+        {
+            "slug": "doom_gaze",
+            "name": "Doom Gaze",
+            "description": "Attempts to Petrify target unit. Petrified units units cannot take actions for 2 <x-turn></x-turn><li>Straight Shot</li><li>Less damage at long range</li>",
+            "damage": "9 <x-spirit_res></x-spirit_res>",
+            "icon_name": "doom_gaze",
+            "range": "medium"
+       },
+
 
 
 ]
