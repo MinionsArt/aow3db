@@ -141,6 +141,18 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "rime_fire",
+            "name": "Rime Fire",
+            "description": "<p>Shoots Rime Fire at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "rime_fire",
+            "range": "Medium",
+
+       },
+        {
             "slug": "black_bolts",
             "name": "Black Bolts",
             "description": "<p>Shoots black bolts at target enemy unit.\
@@ -1022,6 +1034,46 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "hurl_boulder",
+            "name": "Hurl Boulder",
+            "description": "Hurls a large boulder at target object or enemy unit.<li>Cannot be used while unit is engaged</li><li>Arcing Shot</li><li>Starts on cooldown</li>",
+            "damage": "",
+            "icon_name": "hurl_boulder",
+            "range": "Long",
+
+
+       },
+        {
+            "slug": "giant",
+            "name": "Giant",
+            "description": "This unit is a Giant and has Wall Crushing, Mountaineering, and +2 vision range",
+            "damage": "",
+            "icon_name": "giant",
+            "range": "",
+
+
+       },
+        {
+            "slug": "bard_skills",
+            "name": "Bard Skills",
+            "description": "This unit gives its party +300 <x-morale></x-morale> Morale.",
+            "damage": "",
+            "icon_name": "bard_skills",
+            "range": "",
+
+
+       },
+        {
+            "slug": "golden_dragon_inspiration",
+            "name": "Golden Dragon Inspiration",
+            "description": "This unit gives its party +250 <x-morale></x-morale> Morale and +1 <x-resistance></x-resistance>.",
+            "damage": "",
+            "icon_name": "bard_skills",
+            "range": "",
+
+
+       },
+        {
             "slug": "inspiring_aura",
             "name": "Inspiring Aura",
             "description": "Every adjacent unit owned by the same player as this unit gets +300 <x-morale></x-morale> Morale in Tactical combat.",
@@ -1102,9 +1154,139 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "sirens_wail",
+            "name": "Siren's Wail",
+            "description": "Emits a deadly scream that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "sirens_wail",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "thunderstorm",
+            "name": "Thunderstorm",
+            "description": "Summons a mighty thunderstorm for 3 <x-turn></x-turn>. All units become Drenched, gaining 40% <x-fire></x-fire> Protection, 20% <x-frost></x-frost> Weakness and 20% <x-shock></x-shock> Weakness. Lord of the Deep, Incorporeal and Elemental units are unaffected. Each <x-turn></x-turn>, between 1 and 3 lightning bolts will strike enemy units for 12 <x-shock></x-shock>.<li>Requires 3 Action Points</li><li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "thunderstorm",
+            "range": "",
+
+
+       },
+        {
+            "slug": "laborer",
+            "name": "Laborer",
+            "description": "This unit is a Laborer and cannot attack, Stops moving when alone on the battlefield.",
+            "damage": "",
+            "icon_name": "machine",
+            "range": "",
+
+
+       },
+        {
+            "slug": "found_city",
+            "name": "Found City",
+            "description": "Constructs a City at the designated location.",
+            "damage": "5 <x-gold></x-gold> per hex",
+            "icon_name": "city",
+            "range": "Strategic",
+
+
+       },
+        {
+            "slug": "build_a_road",
+            "name": "Build a Road",
+            "description": "Builds a road at the designated location.",
+            "damage": "5 <x-gold></x-gold> per hex",
+            "icon_name": "road",
+            "range": "Strategic",
+
+
+       },
+        {
+            "slug": "construct_fortress",
+            "name": "Construct Frostress",
+            "description": "Constructs a Fortress at the designated location.",
+            "damage": "100 <x-gold></x-gold>",
+            "icon_name": "fortress",
+            "range": "Strategic",
+
+
+       },
+        {
+            "slug": "build_a_watchtower",
+            "name": "Build a Watchtower",
+            "description": "Constructs a Watchtower at the designated location.",
+            "damage": "40 <x-gold></x-gold>",
+            "icon_name": "watchtower",
+            "range": "Strategic",
+
+
+       },
+        {
+            "slug": "volley_of_flaming_arrows",
+            "name": "Volley of Flaming Arrows",
+            "description": "Launches a volley of flaming arrows that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li>",
+            "damage": "",
+            "icon_name": "volley_of_flaming_arrows",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "weakening_breath",
+            "name": "Weakening Breath",
+            "description": "Breathes gas onto an area in the battlefield that damages units and objects. Units caught in the attack can become Weakened.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "11 <x-blight_res></x-blight_res>",
+            "icon_name": "gas_breath",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "gas_breath",
+            "name": "Gas Breath",
+            "description": "Breathes a cloud of poison that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "gas_breath",
+            "range": "Medium",
+
+
+       },
+        {
             "slug": "shock_breath",
             "name": "Shock Breath",
-            "description": "Breathes a cloud of electricity that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn> starts on cooldown</li>",
+            "description": "Breathes a cloud of electricity that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn> </li>",
+            "damage": "",
+            "icon_name": "shock_breath",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "spirit_breath",
+            "name": "Spirit Breath",
+            "description": "Breathes a cloud of spirit that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "spirit_breath",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "frost_breath",
+            "name": "Frost Breath",
+            "description": "Breathes a cloud of ice that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "",
+            "icon_name": "frost_breath",
+            "range": "Medium",
+
+
+       },
+        {
+            "slug": "fire_breath",
+            "name": "fire Breath",
+            "description": "Breathes a cloud of fire that deals damage to all units and objects caught in the attack.<li>Cone shaped attack</li><li>Cooldown 1 <x-turn></x-turn></li>",
             "damage": "",
             "icon_name": "fire_breath",
             "range": "Medium",
@@ -1151,12 +1333,31 @@ var jsonUnitAbilities = {
 
 
        }, {
+            "slug": "slip_away",
+            "name": "Slip Away",
+            "description": "Unit vanishes from sight, teleporting to a random location within 5 hexes and recovering 25 <x-hp></x-hp>.<li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "slip_away",
+            "range": "Medium",
+
+
+       }, {
             "slug": "shadow_step",
             "name": "Shadow Step",
             "description": "Teleports the unit a short range. The unit has 1 action point after teleporting.<li>Cooldown 2 <x-turn></x-turn></li>",
             "damage": "",
             "icon_name": "shadow_step",
             "range": "Short",
+
+
+       },
+        {
+            "slug": "naga",
+            "name": "Naga",
+            "description": "This unit is a Naga and has Wetlands Walking",
+            "damage": "",
+            "icon_name": "naga",
+            "range": "",
 
 
        },
@@ -1234,7 +1435,7 @@ var jsonUnitAbilities = {
             "slug": "wail_of_despair",
             "name": "Wail of Despair",
             "description": "Emits a scream that tears at the soul of living units and causes havoc in Machines. Living units with Despair suffer -300 <x-morale></x-morale> and 20% <x-spirit></x-spirit> Weakness for 3 <x-turn></x-turn>. Affected Machines go Haywire for 3 <x-turn></x-turn> <li>Cooldown 1 <x-turn></x-turn></li>",
-            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "damage": "13 <x-spirit_res></x-spirit_res>",
             "icon_name": "wail_of_despair",
             "range": "Short",
 
@@ -1271,11 +1472,68 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "rallying_cry",
+            "name": "Rallying Cry",
+            "description": "All friendly units in 4 hexes gain +300 <x-morale></x-morale> until end of combat and Guard Vigilant until end of turn.<li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "rallying_cry",
+            "range": "",
+
+
+       }, {
+            "slug": "instant_wrath",
+            "name": "Instant Wrath",
+            "description": "50 % of all damage dealt to this unit is also dealt to the attacker.",
+            "damage": "",
+            "icon_name": "instant_wrath",
+            "range": "",
+
+
+       }, {
+            "slug": "petrifying_scream",
+            "name": "Petrifying Scream",
+            "description": "Emits a scream that attempts to Petrify all units caught in the attack for 2 <x-turn></x-turn>. Undead, Elemental and Machine units cannot be affected<li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "petrifying_scream",
+            "range": "",
+
+
+       }, {
+            "slug": "swallow_whole",
+            "name": "Swallow Whole",
+            "description": "When engaged in Melee, this unit has a chance to devour the target. Chance is determined by size and remaining hitpoints of target. Unit heals 25 <x-hp></x-hp> in the process",
+            "damage": "",
+            "icon_name": "swallow_whole",
+            "range": "",
+
+
+       },
+        {
+            "slug": "vigilant",
+            "name": "Vigilant",
+            "description": "This unit will always enter Guard Mode after performing an action.",
+            "damage": "",
+            "icon_name": "defender",
+            "range": "",
+
+
+       },
+        {
             "slug": "life_drain",
             "name": "Life Drain",
             "description": "Restores 6-10 <x-hp></x-hp> every time the unit performs a melee attack against an enemy.",
             "damage": "",
             "icon_name": "life_drain",
+            "range": "",
+
+
+       },
+        {
+            "slug": "path_of_life",
+            "name": "Path of Life",
+            "description": "This unit turns terrain into Dense Vegetation as the unit moves over it.",
+            "damage": "",
+            "icon_name": "path_of_life",
             "range": "",
 
 
@@ -1681,6 +1939,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "invisibility",
+            "name": "Invisibility",
+            "description": "This unit is invisible on the Strategic Map.",
+            "damage": "",
+            "icon_name": "invisibility",
+            "range": "",
+
+
+       },
+        {
             "slug": "blight_concealment",
             "name": "Blight Concealment",
             "description": "This unit is invisible when on Blighted terrain.",
@@ -1789,6 +2057,16 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "petrifying_touch",
+            "name": "Petrifying Touch",
+            "description": "Attempts to Petrify target unit. Petrified units cannot take actions for 2 <x-turn></x-turn>.<li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "13 <x-spirit_res></x-spirit_res>",
+            "icon_name": "petrifying_touch",
+            "range": "",
+
+
+       },
+        {
             "slug": "entangling_touch",
             "name": "Entangling Touch",
             "description": "Attempts to Entangle target unit. Entangled units cannot take actions for 2 <x-turn></x-turn>.<li>Cooldown 1 <x-turn></x-turn></li>",
@@ -1890,9 +2168,29 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "fire_ballista",
+            "name": "Fire Ballista",
+            "description": " Fires balista at target enemy unit.<li>Does less damage at long range </li><li>Straight Shot</li>",
+            "damage": "",
+            "icon_name": "fire_ballista",
+            "range": "Long",
+
+
+       },
+        {
+            "slug": "fire_pistol",
+            "name": "Fire Pistol",
+            "description": " Fire pistol at target enemy unit.<li>Does less damage at long range </li><li>Straight Shot</li>",
+            "damage": "",
+            "icon_name": "fire_pistol",
+            "range": "Medium",
+
+
+       },
+        {
             "slug": "fire_musket",
             "name": "Fire Musket",
-            "description": " Fire musket balls target enemy unit. The impact has a chance for target to lose 50% <x-mp></x-mp>. Machine, Elemental and Incorporeal cannot be effected by impact.<li>Unit must reload after using ability </li><li>Does less damage at long range </li><li>Straight Shot</li>",
+            "description": " Fire musket balls at target enemy unit. The impact has a chance for target to lose 50% <x-mp></x-mp>. Machine, Elemental and Incorporeal cannot be effected by impact.<li>Unit must reload after using ability </li><li>Does less damage at long range </li><li>Straight Shot</li>",
             "damage": "",
             "icon_name": "fire_musket",
             "range": "Medium",
@@ -1978,12 +2276,85 @@ var jsonUnitAbilities = {
             "range": "",
 
 
+       },
+        {
+            "slug": "unholy_champion",
+            "name": "Unholy Champion",
+            "description": "This unit deals +5 <x-fire></x-fire> against Devout, Fey, Animal, and Dedicated to Good units.",
+            "damage": "",
+            "icon_name": "unholy_champion",
+            "range": "",
+
+
        }, {
             "slug": "holy_champion",
             "name": "Holy Champion",
             "description": "This unit deals +5 <x-fire></x-fire> against Undead, Monster, and Dedicated to Evil units.",
             "damage": "",
-            "icon_name": "fey_slayer",
+            "icon_name": "holy_champion",
+            "range": "",
+
+
+       }, {
+            "slug": "terror_from_the_deep",
+            "name": "Terror from the Deep",
+            "description": "This unit deals +6 <x-physical></x-physical> damage Embarked and Boat units.",
+            "damage": "",
+            "icon_name": "terror_from_the_deep",
+            "range": "",
+
+
+       }, {
+            "slug": "elemental_slayer",
+            "name": "Elemental Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Elemental units.",
+            "damage": "",
+            "icon_name": "elemental_slayer",
+            "range": "",
+
+
+       }, {
+            "slug": "electrical_skin",
+            "name": "Electrical Skin",
+            "description": "Electricity is constantly coursing through this unit's body. It gains 60% <x-shock></x-shock> Protection and any unit striking it in melee will take 5 <x-shock></x-shock> damage.",
+            "damage": "",
+            "icon_name": "spontaneous_mutation",
+            "range": "",
+
+
+       }, {
+            "slug": "somethings_inside",
+            "name": "Something's Inside",
+            "description": "There's something horrible growing inside this unit. When the unit dies, it will break free! Spawns another random unit when the original unit dies.",
+            "damage": "",
+            "icon_name": "spontaneous_mutation",
+            "range": "",
+
+
+       }, {
+            "slug": "hero_slayer",
+            "name": "Hero Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Hero units.",
+            "damage": "",
+            "icon_name": "hero_slayer",
+            "range": "",
+
+
+       }, {
+            "slug": "evil_slayer",
+            "name": "Evil Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Dedicated to Evil units.",
+            "damage": "",
+            "icon_name": "dedicated_to_good",
+            "range": "",
+
+
+       }, {
+            "slug": "good_slayer",
+            "name": "Good Slayer",
+            "description": "This unit deals +3 <x-physical></x-physical> damage against Dedicated to Good units.",
+            "damage": "",
+            "icon_name": "dedicated_to_evil",
             "range": "",
 
 
@@ -2084,6 +2455,16 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "giant_slayer",
             "range": "",
+
+
+       },
+        {
+            "slug": "lesser_reanimate_undead",
+            "name": "Lesser Reanimate Undead",
+            "description": "The corpse of target friendly Undead Undead unit is brought back to life and heals 50% <x-hp></x-hp><li>Only affects Tier 2 and below</li><li>Can only be used oncer per battle</li>",
+            "damage": "",
+            "icon_name": "lesser_reanimate_undead",
+            "range": "Short",
 
 
        },
@@ -2225,6 +2606,46 @@ var jsonUnitAbilities = {
             "description": "Embarking does not give the -3 <x-defense></x-defense> and -1 <x-resistance></x-resistance> penalty and gives extra +3 <x-mp></x-mp> when embarked",
             "damage": "",
             "icon_name": "mariner",
+
+
+
+       },
+        {
+            "slug": "frost_aura",
+            "name": "Frost Aura",
+            "description": "Every time an enemy unit performs a Melee or Touch attack against the unit, the enemy receives 5 <x-frost></x-frost> damage and has a 9 <x-frost_res> </x-frost_res> chance to be Frozen.",
+            "damage": "",
+            "icon_name": "frost_aura",
+
+
+
+       },
+        {
+            "slug": "medidate",
+            "name": "Medidate",
+            "description": "Unit randomly receives one of the following: +3 <x-fire></x-fire> Melee strenght, +3 <x-spirit></x-spirit> Melee strenght, +4 <x-physical></x-physical> Melee strength, 2 <x-resistance></x-resistance> or 3 <x-defense></x-defense> until end of combat. <li>Requires 3 Action Points</li> <li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "medidate",
+
+
+
+       },
+        {
+            "slug": "blinding_aura",
+            "name": "Blinding Aura",
+            "description": "Every enemy that strikes this unit in Melee has a chance to become Blinded.",
+            "damage": "9 <x-physical_res></x-physical_res>",
+            "icon_name": "sun_shield",
+
+
+
+       },
+        {
+            "slug": "elemental",
+            "name": "Elemental",
+            "description": "This unit is an Elemental.",
+            "damage": "",
+            "icon_name": "elemental",
 
 
 
@@ -2765,6 +3186,14 @@ var jsonUnitAbilities = {
             "description": "This unit gains +1 Vision Range",
             "damage": "",
             "icon_name": "vision_range_upgrade",
+
+       },
+        {
+            "slug": "sea_creature",
+            "name": "Sea Creature",
+            "description": "This unit is a Sea Creature.",
+            "damage": "",
+            "icon_name": "sea_creature",
 
        },
         {
