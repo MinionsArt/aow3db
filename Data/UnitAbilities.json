@@ -46,6 +46,34 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "devour_corpse",
+            "name": "Devour Corpse",
+            "description": "<p>Devours target corpse to heal 25 <x-hp></x-hp>",
+            "damage": "",
+            "icon_name": "devour_corpse",
+            "range": "Touch",
+
+       },
+        {
+            "slug": "offering_of_bone",
+            "name": "Offering of Bone",
+            "description": "<p>Unit sacrifices itself to target Bone Collector, making it stronger. Bone collector gains heals 20 <x-hp></x-hp>, gains 2 <x-physical></x-physical> Melee strength, max Hitpoints increase by 20 and gains + 1 <x-resistance></x-resistance> until end of battle. Stacks with Collect Bones",
+            "damage": "",
+            "icon_name": "offering_of_bone",
+            "range": "Self",
+
+       },
+        {
+            "slug": "absorb_pain",
+            "name": "Absorb Pain",
+            "description": "<p>This unitlinks itself to target friendly unit. Linked unit takes 35% less damage and remaining damage is dealt to this unit instead. Ability cannot target Machines or other units with Absorb Pain\
+                                <li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "absorb_pain",
+            "range": "Touch",
+
+       },
+        {
             "slug": "lightning_shock",
             "name": "Lightning Shock",
             "description": "<p>Shoots shock bolts at target enemy unit\
@@ -53,6 +81,18 @@ var jsonUnitAbilities = {
                                 <li>Straight Shot</li>",
             "damage": "",
             "icon_name": "lightning_shock",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "spirit_blast",
+            "name": "Spirit Blast",
+            "description": "<p>Shoots a spirit ray at target enemy unit\
+                                <li>Does less damage at long range</li>\
+                                <li>Straight Shot</li>\
+<li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "spirit_blast",
             "range": "Medium",
 
        },
@@ -97,6 +137,18 @@ var jsonUnitAbilities = {
                                 <li>Cannot be used while unit is engaged</li>",
             "damage": "",
             "icon_name": "fire_bomb",
+            "range": "Medium",
+
+       },
+        {
+            "slug": "black_bolts",
+            "name": "Black Bolts",
+            "description": "<p>Shoots black bolts at target enemy unit.\
+                                <li>Can trigger up to 3 times</li>\
+ <li>Arcing Shot</li>\
+                                <li>Cannot be used while unit is engaged</li>",
+            "damage": "",
+            "icon_name": "black_bolts",
             "range": "Medium",
 
        },
@@ -243,6 +295,33 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "magic_bolts",
             "range": "Medium",
+
+       },
+        {
+            "slug": "despair_strike",
+            "name": "Despair Strike",
+            "description": "<p>Melee Attacks from this unit can inflict Despair. Cursed units suffer -200 <x-morale></x-morale> and 20% <x-spirit></x-spirit> weakness for 2 <x-turn></x-turn>",
+            "damage": "10 <x-spirit_res></x-spirit_res>",
+            "icon_name": "inflict_despair",
+            "range": "",
+
+       },
+        {
+            "slug": "inflict_despair",
+            "name": "Inflict Despair",
+            "description": "<p>Melee and Ranged Attacks from this unit can inflict Despair. Cursed units suffer -200 <x-morale></x-morale> and 20% <x-spirit></x-spirit> weakness for 2 <x-turn></x-turn>",
+            "damage": "10 <x-spirit_res></x-spirit_res>",
+            "icon_name": "inflict_despair",
+            "range": "",
+
+       },
+        {
+            "slug": "inflict_curse",
+            "name": "Inflict Curse",
+            "description": "<p>Attack from this unit can inflict Curse. Cursed units suffer -300 <x-morale></x-morale>, -2 <x-defense></x-defense> and -2 <x-resistance></x-resistance> until end of combat.",
+            "damage": "11 <x-blight_res></x-blight_res>",
+            "icon_name": "inflict_curse",
+            "range": "",
 
        },
         {
@@ -442,6 +521,15 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "maintenance",
             "range": "",
+
+       },
+        {
+            "slug": "heal_undead",
+            "name": "Heal Undead",
+            "description": "<p>Restores 25 <x-hp></x-hp> Hit Points to target friendly Undead unit.  Outside combat this ability will heal 20 <x-hp></x-hp> among all valid units in the stack . <li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "heal_undead",
+            "range": "Touch",
 
        },
         {
@@ -869,7 +957,47 @@ var jsonUnitAbilities = {
             "description": "Attempts to take control of target enemy unit. On fail, units are Shaken (-400 <x-morale></x-morale> Morale) for two <x-turn></x-turn><li>Can only be used once per battle.</li>",
             "damage": "12 <x-spirit_res></x-spirit_res>",
             "icon_name": "seduce",
-            "range": "",
+            "range": "Touch",
+
+
+       },
+        {
+            "slug": "mark_heretic",
+            "name": "Mark Heretic",
+            "description": "Marks target enemy unit as a Heretic",
+            "damage": "",
+            "icon_name": "heretic",
+            "range": "Long",
+
+
+       },
+        {
+            "slug": "touch_of_faith",
+            "name": "Touch of Faith",
+            "description": "Bestows +3 <x-resistance></x-resistance> and <x-morale></x-morale> Morale on target friendly unit until end of combat.<li>Can only be used once per battle.</li>",
+            "damage": "",
+            "icon_name": "touch_of_faith",
+            "range": "Touch",
+
+
+       },
+        {
+            "slug": "turn_undead",
+            "name": "Turn Undead",
+            "description": "Attempts to Panic target enemy Undead unit. Panicked units attempt to flee the battlefield for 2 <x-turn></x-turn><li>Can only be used once per battle.</li>",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "turn_undead",
+            "range": "Touch",
+
+
+       },
+        {
+            "slug": "convert",
+            "name": "Convert",
+            "description": "Attempts to take control of target enemy unit. Undead, Elemental, Machine or Animal units cannot be targeted<li>Can only be used once per battle.</li>",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "convert",
+            "range": "Touch",
 
 
        },
@@ -879,6 +1007,16 @@ var jsonUnitAbilities = {
             "description": "Attempts to take control of target enemy unit.<li>Can only be used once per battle.</li>",
             "damage": "9 <x-spirit_res></x-spirit_res>",
             "icon_name": "charm",
+            "range": "Touch",
+
+
+       },
+        {
+            "slug": "high_morale",
+            "name": "High Morale",
+            "description": "This unit gets +300 <x-morale></x-morale> Morale.",
+            "damage": "",
+            "icon_name": "inspiring_aura",
             "range": "",
 
 
@@ -1078,6 +1216,96 @@ var jsonUnitAbilities = {
             "description": "Upon death, this unit deals 10 <x-physical></x-physical> 10 <x-fire></x-fire> damage to all units surrounding it.",
             "damage": "",
             "icon_name": "explosive_death",
+            "range": "",
+
+
+       },
+        {
+            "slug": "collect_bones",
+            "name": "Collect Bones",
+            "description": "Collects the bones of dead units to make itself stronger. For each consumed corpse unit heals 20 Hitpoints, gains +2 Physical damage, max Hit Points increase by 20 and + 1 <x-resistance></x-resistance> until end of combat",
+            "damage": "",
+            "icon_name": "offering_of_bone",
+            "range": "Self",
+
+
+       },
+        {
+            "slug": "wail_of_despair",
+            "name": "Wail of Despair",
+            "description": "Emits a scream that tears at the soul of living units and causes havoc in Machines. Living units with Despair suffer -300 <x-morale></x-morale> and 20% <x-spirit></x-spirit> Weakness for 3 <x-turn></x-turn>. Affected Machines go Haywire for 3 <x-turn></x-turn> <li>Cooldown 1 <x-turn></x-turn></li>",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "wail_of_despair",
+            "range": "Short",
+
+
+       },
+        {
+            "slug": "invoke_death",
+            "name": "Invoke Death",
+            "description": "Target enemy unit must resist attack or die. When resisted, enemy unit loses 40 Hitpoints until end of turn. Affected units cannot go below 1 Hitpoint. Undead, Machine and Elemental units not affected. <li>Cooldown 2 <x-turn></x-turn></li>",
+            "damage": "11 <x-spirit_res></x-spirit_res>",
+            "icon_name": "invoke_death",
+            "range": "Long",
+
+
+       },
+        {
+            "slug": "inflict_ghoul_curse",
+            "name": "Inflict Ghoul Curse",
+            "description": "Each melee attack from this unit has a chance to ghoul curse its target. Curse target comes back under your control after combat if it dies during the battle. If resisted, target is immune until end of combat. Machine, Elemental,Incorporeal and Undead cannot be affected.",
+            "damage": "10 <x-spirit_res></x-spirit_res>",
+            "icon_name": "ghoul",
+            "range": "",
+
+
+       },
+        {
+            "slug": "energy_drain",
+            "name": "Energy Drain",
+            "description": "Attacks from this unit have a chance to drain 50% <x-mp></x-mp> from their target. Machine, Elemental,Incorporeal and Undead cannot be affected.",
+            "damage": "10 <x-spirit_res></x-spirit_res>",
+            "icon_name": "energy_drain",
+            "range": "",
+
+
+       },
+        {
+            "slug": "life_drain",
+            "name": "Life Drain",
+            "description": "Restores 6-10 <x-hp></x-hp> every time the unit performs a melee attack against an enemy.",
+            "damage": "",
+            "icon_name": "life_drain",
+            "range": "",
+
+
+       },
+        {
+            "slug": "path_of_decay",
+            "name": "Path of Decay",
+            "description": "This unit turns terrain into Blighted wasteland as the unit moves over it.",
+            "damage": "",
+            "icon_name": "path_of_decay",
+            "range": "",
+
+
+       },
+        {
+            "slug": "necromantic_aura",
+            "name": "Necromantic Aura",
+            "description": "Every time an enemy undead unit performs a Melee attack against this unit, the enemy undead has a chance to instantly come under this unit’s control.",
+            "damage": "",
+            "icon_name": "necromantic_aura",
+            "range": "",
+
+
+       },
+        {
+            "slug": "void_implosion",
+            "name": "Void Implosion",
+            "description": "Upon death, this unit deals 5 <x-frost></x-frost> 5 <x-blight></x-blight> 5 <x-spirit></x-spirit> damage to all units surrounding it.",
+            "damage": "",
+            "icon_name": "explosive_ice_death",
             "range": "",
 
 
@@ -1712,6 +1940,26 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "smiting_prayer_bolts",
+            "name": "Smiting Prayer Bolts",
+            "description": "Shoots bolts at target enemy unit. Damage increased by +2 <x-fire></x-fire> and +2 <x-spirit></x-spirit> for each Devout unit you control on the battlefield.<li>Stright Shot</li><li>Does less damage at long range</li>",
+            "damage": "",
+            "icon_name": "smiting_prayer_bolts",
+            "range": "Long",
+
+
+       },
+        {
+            "slug": "divine_vengeance",
+            "name": "Divine Vengeance",
+            "description": "Lays waste to an entire area by divine power Every unit in a 4 hex radius takes damage. Devout and Blinded units are immune.<li>Can only be used once per battle</li>",
+            "damage": "",
+            "icon_name": "divine_vengeance",
+            "range": "",
+
+
+       },
+        {
             "slug": "holy_relic",
             "name": "Holy Relic",
             "description": "This unit heals 2 <x-hp></x-hp> for each Devout unit in the same stack on the strategic map.",
@@ -1722,11 +1970,39 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "resurgence",
+            "name": "Resurgence",
+            "description": "When this unit dies in battle, it comes back after combat if its owner is victorious. Resurged units come back with 35% of its max Hit Points.",
+            "damage": "",
+            "icon_name": "resurgence",
+            "range": "",
+
+
+       }, {
+            "slug": "holy_champion",
+            "name": "Holy Champion",
+            "description": "This unit deals +5 <x-fire></x-fire> against Undead, Monster, and Dedicated to Evil units.",
+            "damage": "",
+            "icon_name": "fey_slayer",
+            "range": "",
+
+
+       }, {
             "slug": "fey_slayer",
             "name": "Fey Slayer",
             "description": "This unit deals +3 <x-physical></x-physical> damage against Fey units.",
             "damage": "",
             "icon_name": "fey_slayer",
+            "range": "",
+
+
+       },
+        {
+            "slug": "righteous_zeal",
+            "name": "Righteous Zeal",
+            "description": "This unit deals an additional +3 <x-fire></x-fire>, +3 <x-shock></x-shock> damage against Heretic units.",
+            "damage": "",
+            "icon_name": "righteous_zeal",
             "range": "",
 
 
@@ -2644,6 +2920,42 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "memories_of_joy",
+            "name": "Memories of Joy",
+            "description": "This unit awakens something in Undead that was thought long gone. All undead units in the stack gain +200 <x-morale></x-morale> Morale.",
+            "damage": "",
+            "icon_name": "memories_of_joy",
+
+       },
+        {
+            "slug": "exploit_despair",
+            "name": "Exploit Despair",
+            "description": "Unit takes advantage of the negative emotions in enemies. It does an extra + 2 <x-spirit></x-spirit> and + 1 <x-frost></x-frost> damage for each degree of low morale in its target",
+            "damage": "",
+            "icon_name": "exploit_despair",
+
+       }, {
+            "slug": "decaying",
+            "name": "Decaying",
+            "description": "This unit loses 8 <x-hp></x-hp> per turn on the adventure map.",
+            "damage": "",
+            "icon_name": "decaying",
+
+       }, {
+            "slug": "undead",
+            "name": "Undead",
+            "description": "This unit is undead and has Cannot Regenerate, 100% <x-blight></x-blight> Protection, 40% <x-frost></x-frost> Protection,  20% <x-fire></x-fire> Weakness, 40% <x-spirit></x-spirit> Weakness",
+            "damage": "",
+            "icon_name": "undead",
+
+       }, {
+            "slug": "undying",
+            "name": "Undying",
+            "description": "This unit comes back to life after 2 <x-turn></x-turn> with 35% of it’s Hitpoints. This effect only works once per battle",
+            "damage": "",
+            "icon_name": "undying",
+
+       }, {
             "slug": "floating",
             "name": "Floating",
             "description": "This unit can float and is able to traverse all terrain at a movement cost of 4. Except Mountains which cost 6 <x-mp></x-mp>, Road and Water cost 3 <x-mp></x-mp>. Only Cavern walls cannot be traversed",
