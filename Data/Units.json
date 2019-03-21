@@ -5848,8 +5848,1416 @@ var jsonUnits = {
                     },
         ]
 
-},
+}, {
+            "hp": "37",
+            "name": "dread_spider_baby",
+            "string": "Dread Spider Baby",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/DreadSpiderBaby",
+            "description": "\"Some trolls keep young dread spiders as pets, like dogs that climb the walls. If you can tolerate the webbing, they're quite clean creatures and hearty enough that playing trolls won't accidentally squish them, as happens with dogs. I recall one troll with six young dread spider pets. They had eated his mother, but he was happy. They'd saved him the trouble of having to clean up her mess, now that she'd lost her fight. He was pleased they'd wrapped her up all nicely in a bundle that he buried in his garbage heap.\" <br> <i>--Intimate Troll Interviews, by Vaulter Cronk.</i>\"",
+            "image_link": 'ArchDruid/dread_spider_baby.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
 
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 4<x-blight></x-blight>"
+        },
+                {
+                    "slug": "webbing_touch",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_dread_spider_baby"
+        }, {
+                    "slug": "cave_crawling"
+                },
+                {
+                    "slug": "improved_wall_climbing"
+                }, {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+}, {
+            "hp": "33",
+            "name": "hunter_spider_baby",
+            "string": "Hunter Spider Baby",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/HunterSpiderBaby",
+            "description": "\"When I heard the rustling and saw small trees shaking, I figured we were being stalked by a pair of wolves. Loud noise and a torch will scare them, so the camp cook took a pot and a log from the fire and began a ruckus. The bush went deathly still. This was no wolf. I tried to warn him, but was to late. Two young Hunter Spiders leapt onto the man, impaling his neck and arms with their venomous knife-like fangs. He fell dead. The creatures were so fast and could leap so far. They wounded a mercenary, two bowmen and our bard before I finished them off. Needless to say, the bard didn't write me a ballad.\" <br> <i>--Woodland Creatures, by Tye Buddler, Hunter</i>\"",
+            "image_link": 'ArchDruid/hunter_spider_baby.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 4<x-blight></x-blight>"
+        },
+                {
+                    "slug": "webbing_touch",
+
+        }, {
+                    "slug": "phase",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_hunter_spider_baby"
+        }, {
+                    "slug": "cave_crawling"
+                },
+                {
+                    "slug": "improved_wall_climbing"
+                }, {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+}, {
+            "hp": "36",
+            "name": "vampire_spider_baby",
+            "string": "Vampire Spider Baby",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/VampireSpiderBaby",
+            "description": "\"The pale pink spider was the size of a wolf. I hit first, with my axe, severing a mandible. To my suprise, instead of fleeing, the nasty thing leapt and sunk its remaining fang into my shoulder. I watched in horror as its missing limb slowly reformed. My arm fell numb. My life drained from me, and with my strength the horror healed itself. I lunged into the stone wall, crushing it, then chopped it three more times before its many legs stopped wriggling.\" <br> <i>--Slaying Monsters, by Uri Mahm, Warlord</i>\"",
+            "image_link": 'ArchDruid/vampire_spider_baby.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 4<x-blight></x-blight>"
+        },
+                {
+                    "slug": "webbing_touch",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_vampire_spider_baby"
+        }, {
+                    "slug": "life_steal"
+        }, {
+                    "slug": "cave_crawling"
+                },
+                {
+                    "slug": "improved_wall_climbing"
+                }, {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+}, {
+            "hp": "45",
+            "name": "tiger",
+            "string": "Tiger",
+            "armor": "10",
+            "shield": "8",
+            "mp": "36",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/Tiger",
+            "description": "\"TCh'k'tuk'kak'tik crept through the grass, his javelin at the level of his eye. All day, he'd hunted a dire zebra, and this feral specimen would bring fame and ample meat. The evening sun bathed the savannah with golden light. The Tigran drew back his arm, ready to strike a deathblow. Grasses shifted. A roar thundered. Ch'k'tuk'kak'tik froze. A great feline leapt onto the zebra. Its fangs sunk deeply into its thick neck. The dire zebra collapsed. Its legs flailed wildly. The great lion held it fixed. \"Eat well,brother!\" Ch'k'tuk'kak'tik bowed to his brother.\" <br> <i>--Wild Tigran Hunter, by Sambi K'tan</i>\"",
+            "image_link": 'ArchDruid/tiger.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "predator"
+        }, {
+                    "slug": "bloodthristy"
+        }, {
+                    "slug": "barrens_running"
+                },
+                {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+}, {
+            "hp": "40",
+            "name": "warg",
+            "string": "Warg",
+            "armor": "8",
+            "shield": "8",
+            "mp": "36",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/Warg",
+            "description": "\"There's a fable about a girl in a crimson cloak who meets a Warg. The Warg convinces her to pick some flowers, while it rushes ahead to eat her granny. I assure all children out there, that even if your parents are not trying to kill you by letting you wander a warg-infested forest alone, a real warg won't stop to talk, it will eat you. Sure, wargs are smarter than average wolves, but they are also more vicious. Further, it is unlikely to find just one warg, because they hunt in packs. The Moral of the story: Even if your parents want to kill you; disobey and don't enter a warg-infested forest alone.\" <br> <i>--Fables that Mock Evil, by Chastity Flowers, Storyteller</i>\"",
+            "image_link": 'ArchDruid/warg.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "first_strike"
+                },
+                {
+                    "slug": "wetland_walking"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+}, {
+            "hp": "32",
+            "name": "dread_monkey",
+            "string": "Dread Monkey",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned:9 <x-mana></x-mana> ",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/DreadMonkey",
+            "description": "\"'Three dread monkeys jumping on the dead<br>\
+One fell off and broke his head.<br>\
+Momma called a Blightdoctor and the Blightdoctor said,<br>\
+'No dread monkeys jumping on the dead!\" <br> <i>--Origins of Nursery Songs, by Belva Beimsford, Archivist</i>\"",
+            "image_link": 'ArchDruid/dread_monkey.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Sabotage<span class=\"tooltiptext2\" id=\"sabotage\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 3<x-blight></x-blight>"
+        }, {
+                    "slug": "throw_filth",
+                    "damage": "4<x-physical> </x-physical> 10<x-blight></x-blight>"
+        }, {
+                    "slug": "sprint",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "disgusting_stench"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+},
+///HUNTERS-------------------------------------------------------------------------------------HUNTERS--------------------------------------
+        {
+            "hp": "35",
+            "name": "draconian_hunter",
+            "string": "Draconian Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "75 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/DraconianHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/draconian_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> "
+        }, {
+                    "slug": "shoot_bow",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "forestry"
+        },
+                {
+                    "slug": "animal_slayer"
+                },
+
+                {
+                    "slug": "mountaineering"
+                },
+
+                {
+                    "slug": "wetland_walking"
+                },
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                },
+
+        {
+            "hp": "35",
+            "name": "dwarf_hunter",
+            "string": "Dwarf Hunter",
+            "armor": "9",
+            "shield": "11",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "88 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/DwarfHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/dwarf_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> "
+        }, {
+                    "slug": "shoot_bow",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "forestry"
+        },
+                {
+                    "slug": "animal_slayer"
+                },
+
+
+                {
+                    "slug": "mountain_concealment",
+                    "unique": "yes"
+                },
+                {
+                    "slug": "armored",
+                    "unique": "yes",
+                },
+
+
+                {
+                    "slug": "wetland_walking"
+                },
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                },
+        {
+            "hp": "35",
+            "name": "frostling_hunter",
+            "string": "Frostling Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "75 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/FrostlingHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/frostling_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> "
+        }, {
+                    "slug": "shoot_bow",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "forestry"
+        },
+                {
+                    "slug": "animal_slayer"
+                },
+
+                {
+                    "slug": "mountaineering"
+                },
+                {
+                    "slug": "arctic_concealment",
+                    "unique": "yes"
+                },
+
+
+                {
+                    "slug": "wetland_walking"
+                },
+
+
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "frostling"
+                        },
+                {
+                    "slug": "arctic_walking"
+                        },
+                {
+                    "slug": "fast_embark"
+                        },
+                {
+                    "slug": "frost_protection_60"
+                        },
+                {
+                    "slug": "fire_weakness_40"
+                        },
+
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                }, {
+            "hp": "30",
+            "name": "goblin_hunter",
+            "string": "Goblin Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "69 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/GoblinHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/goblin_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> "
+        }, {
+                    "slug": "shoot_bow",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "forestry"
+        },
+                {
+                    "slug": "animal_slayer"
+                },
+
+                {
+                    "slug": "mountaineering"
+                },
+                {
+                    "slug": "wetlands_concealment",
+                    "unique": "yes"
+                },
+
+
+
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                },
+        {
+            "hp": "35",
+            "name": "halfling_hunter",
+            "string": "Halfling Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "69 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/HalflingHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/halfling_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> "
+        }, {
+                    "slug": "shoot_bow",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "animal_slayer"
+                },
+
+                {
+                    "slug": "mountaineering"
+                },
+                {
+                    "slug": "monster_slayer",
+                    "unique": "yes"
+                },
+
+
+                {
+                    "slug": "wetland_walking"
+                    },
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+
+
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                }, {
+            "hp": "32",
+            "name": "high_elf_hunter",
+            "string": "High Elf Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "85 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/HighElfHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/high_elf_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> "
+        }, {
+                    "slug": "shoot_longbow",
+                    "damage": "8<x-physical> </x-physical>",
+                    "unique": "yes",
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "animal_slayer"
+                },
+
+
+                {
+                    "slug": "mountaineering"
+                },
+
+
+
+                {
+                    "slug": "wetland_walking"
+                    },
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                }, {
+            "hp": "35",
+            "name": "human_hunter",
+            "string": "Human Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "85 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/HumanHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/human_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> "
+        }, {
+                    "slug": "shoot_bow",
+                    "damage": "8<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "throw_net",
+                    "unique": "yes",
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "animal_slayer"
+                },
+
+
+                {
+                    "slug": "mountaineering"
+                },
+
+
+
+                {
+                    "slug": "wetland_walking"
+                    },
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                }, {
+                    "slug": "water_concealment",
+                    "unique": "yes",
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                }, {
+            "hp": "35",
+            "name": "orc_hunter",
+            "string": "Orc Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "80 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/OrcHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/orc_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> ",
+                    "unique": "yes",
+        }, {
+                    "slug": "throw_javelin",
+                    "damage": "15<x-physical> </x-physical>",
+                    "unique": "yes",
+
+        }, {
+                    "slug": "war_cry",
+                    "unique": "yes",
+
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "animal_slayer"
+                },
+
+
+                {
+                    "slug": "mountaineering"
+                },
+
+
+
+                {
+                    "slug": "wetland_walking"
+                    },
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                }, {
+                    "slug": "shield",
+                    "unique": "yes",
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                }, {
+            "hp": "35",
+            "name": "tigran_hunter",
+            "string": "Tigran Hunter",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "80 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/TigranHunter",
+            "description": "\"The Hunter led us through the underbrush without making a sound. At times he would disappear, only to reappear with some woodland creature on his shoulder. He would squeak, squawk, or growl, and the creature would dart away, directing us along the shortest route through the forest to every significant landmark I wanted to see. Handy with his bow, he could hit a target even on a rocking river vessel. I can think of no one more capable of leading me when I want to cross through wild lands.\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/tigran_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> ",
+        }, {
+                    "slug": "throw_blades",
+                    "damage": "8<x-physical> </x-physical>",
+                    "unique": "yes",
+
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "animal_slayer"
+                },
+
+
+                {
+                    "slug": "mountaineering"
+                },
+
+
+
+                {
+                    "slug": "wetland_walking"
+                    },
+
+                {
+                    "slug": "arctic_walking"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "forest_concealment"
+                }, {
+                    "slug": "coup_de_grace",
+                    "unique": "yes",
+                },
+                {
+                    "slug": "razor_projectiles",
+                    "unique": "yes",
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+                },
 
             ]
 }

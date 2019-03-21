@@ -890,7 +890,7 @@ var jsonUnitAbilities = {
         {
             "slug": "evolve_draconian",
             "name": "Evolve (Draconian)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Crusher, Charger</li>\<li>Flamer, Elder</li>\<li>Flyer</li>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Crusher, Charger</li><li>Flamer, Elder</li><li>Flyer</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -898,7 +898,7 @@ var jsonUnitAbilities = {
        }, {
             "slug": "evolve_dread_spider_baby",
             "name": "Evolve (Dread Spider Queen)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Dread Spider Queen</li>>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Dread Spider Queen</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -906,7 +906,7 @@ var jsonUnitAbilities = {
        }, {
             "slug": "evolve_hunter_spider_baby",
             "name": "Evolve (Hunter Spider Queen)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Hunter Spider Queen</li>>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Hunter Spider Queen</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -914,7 +914,7 @@ var jsonUnitAbilities = {
        }, {
             "slug": "evolve_vampire_spider_baby",
             "name": "Evolve (Vampire Spider Queen)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Vampire Spider Queen</li>>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Vampire Spider Queen</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -922,7 +922,7 @@ var jsonUnitAbilities = {
        }, {
             "slug": "evolve_initiate",
             "name": "Evolve (Storm Sister)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>High Elf Storm Sister</li>>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>High Elf Storm Sister</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -930,7 +930,7 @@ var jsonUnitAbilities = {
        }, {
             "slug": "evolve_baby_reed_serpent",
             "name": "Evolve (Mature Reed Serpent)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Reed Serpent</li>>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Reed Serpent</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -938,7 +938,7 @@ var jsonUnitAbilities = {
        }, {
             "slug": "evolve_baby_shock_serpent",
             "name": "Evolve (Mature Shock Serpent)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Shock Serpent</li>>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Shock Serpent</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
@@ -947,7 +947,7 @@ var jsonUnitAbilities = {
         {
             "slug": "evolve_cavalry",
             "name": "Evolve (Knight)",
-            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Human Knight</li>>",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Human Knight</li>",
             "damage": "",
             "icon_name": "evolve",
             "range": "",
