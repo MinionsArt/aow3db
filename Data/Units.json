@@ -5622,6 +5622,176 @@ var jsonUnits = {
                     },
         ]
 
+}, {
+            "hp": "65",
+            "name": "mature_reed_serpent",
+            "string": "Mature Reed Serpent",
+            "armor": "13",
+            "shield": "10",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "30",
+            "cost": "170 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "marsh_of_the_serpents",
+            "location": "Units/ArchDruid/MatureReedSerpent",
+            "description": "\"I personally prefer eating the Mature Reed Serpent. The flesh is still tender, and you can get a man-sized chunk of solid meat from them. There's just something to be said for a slab of meat that can't be eaten in just one meal. And unlike the King Serpent, the hunters have a much better chance of survivng the hunt.\" <br> <i>--Culinary Secrets of the Bayou Brothers, by Cletus Munkin</i>\"",
+            "image_link": 'ArchDruid/mature_reed_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> 5<x-blight></x-blight>"
+        },
+                {
+                    "slug": "poison_spit",
+                    "damage": "13<x-blight></x-blight>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_mature_reed_serpent"
+        }, {
+                    "slug": "swimming"
+                },
+
+                {
+                    "slug": "wetland_walking"
+                },
+                {
+                    "slug": "inflict_severely_poisoned"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_60"
+                    },
+        ]
+
+}, {
+            "hp": "88",
+            "name": "king_reed_serpent",
+            "string": "King Reed Serpent",
+            "armor": "15",
+            "shield": "11",
+            "mp": "36",
+            "tier": "IV - 32 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "40",
+            "cost": "320 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/ArchDruid/KingReedSerpent",
+            "description": "\"The trouble with hunting for tasty baby reed serpents, a real delicacy, is when one of the full growns comes along and swallows my brother whole. They're so big they can damage trading ships, and are just as common to see in the swamps as on open water, so we have to carry around protection. We never go nowhere in the swamp without a couple clay pots full of pepper sauce. The stuff burns your skin, but the giant reed snakes won't try to eat you either.\" <br> <i>--Culinary Secrets of the Bayou Brothers, by Cletus Munkin</i>\"",
+            "image_link": 'ArchDruid/king_reed_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Charge<span class=\"tooltiptext2\" id=\"charge\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> 6<x-blight></x-blight>"
+        },
+                {
+                    "slug": "poison_spit",
+                    "damage": "16<x-blight></x-blight>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "swimming"
+                },
+
+                {
+                    "slug": "fearsome"
+                },
+                {
+                    "slug": "wetland_walking"
+                },
+                {
+                    "slug": "inflict_severely_poisoned"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_60"
+                    },
+        ]
+
 },
         {
             "hp": "40",

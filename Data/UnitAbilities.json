@@ -943,6 +943,22 @@ var jsonUnitAbilities = {
             "icon_name": "evolve",
             "range": "",
 
+       }, {
+            "slug": "evolve_mature_reed_serpent",
+            "name": "Evolve (King Reed Serpent)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>King Reed Serpent</li>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       }, {
+            "slug": "evolve_mature_shock_serpent",
+            "name": "Evolve (King Shock Serpent)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>King Shock Serpent</li>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
        },
         {
             "slug": "evolve_cavalry",
