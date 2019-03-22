@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="/Testing/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/Testing/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/Testing/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/Testing/Data/Builder.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+
+
+
+    <div class="unit_card">
+
+        <div style="position: absolute;  height: 25px; width: 400px;">
+
+            <p class="unit_name" style="left:70%; " id="unitstring"> Test</p>
+            <img class="unit_image" id="uniticon" src="" style="position: absolute; top: -40px;  left:55%; padding: 4px" width="100">
+        </div>
+        <div style="position: relative; float:left; height: 25px; width: 200px;">
+
+            <p class="unit_prod" id="productioncost"> Cost: 20 EN 150 PR</p>
+        </div>
+        <br><br>
+        <div style="position: relative; float:left; height: 25px; width: 150px;">
+
+            <p class="unit_prod" id="tier"> Tier 1: 4 EN</p>
+        </div>
+        <div style="position: relative; float:right;  height: 25px; width: auto;">
+
+            <p class="unit_prod" id="originresearch"></p>
+        </div>
+        <br><br>
+        <div style="position: relative; float:right;  height: 25px; width: auto;">
+
+            <p class="unit_prod" id="originbuilding"></p>
+        </div>
+        <div style="clear:both">
+            <div class="unit_ability_holder" id="unitabholder" style="width: 310px; float: left;">
+
+                <div class="unit_stats">
+
+                    <p style="font-size: 20px;position: relative; float: left; left:10%" id="hp"> hp </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" src="/Testing/Icons/Text/hp.png" width="25 " height="25 ">
+                        <span class="tooltiptext">Hit Points </span>
+                    </div>
+                    <p style="font-size: 20px;position: relative; float: left; left:10%" id="mp"> mp </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" id="mp_icon" src="/Testing/Icons/Text/mp.png" width="25 " height="25 ">
+                        <span class="tooltiptext">Move Points </span>
+                    </div>
+                    <p style="font-size: 20px;position: relative; float: left; left:10%" id="defense"> defense </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" src="/Testing/Icons/Text/defense.png" width="25 " height="25 ">
+                        <span class="tooltiptext">Defense </span>
+                    </div>
+                    <p style="font-size: 20px;position: relative; float: left; left:10%" id="resistance"> resistance </p>
+                    <div class="unit_stat_icon"> <img class="unit_stat_icon" src="/Testing/Icons/Text/resistance.png" width="25 " height="25 ">
+                        <span class="tooltiptext">Resistance </span>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="unit_levelup" id="levelups">
+                fdsfdsfds
+            </div>
+            <div class="unit_image_holder">
+                <img id="vid" src="" width="350 ">
+                <div class="unit_description_bg"></div>
+                <p class="unit_description" id="description"> "Test" </p>
+
+            </div>
+            <script>
+                setUnitIds('polar_bear');
+                showUnit('polar_bear');
+            </script>
+        </div>
+    </div>
+</body></html>

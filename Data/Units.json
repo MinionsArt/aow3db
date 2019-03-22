@@ -5537,7 +5537,7 @@ var jsonUnits = {
         ]
 
 },
-//ARCHDRUID--------------------------------------------------------------------------------------------------------ARCHDRUID--------------------
+//ANIMALS--------------------------------------------------------------------------------------------------------ANIMALS--------------------
 
         {
             "hp": "40",
@@ -5552,9 +5552,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "hatching_pool",
-            "location": "Units/ArchDruid/BabyReedSerpent",
+            "location": "Units/Animals/BabyReedSerpent",
             "description": "\"Baby Reed Serpents are a delicacy. The problem is, they are quite aggressive. They will swarm a man when they're desperate for food, so I take my brother along for the hunt. As they start biting him, I'm there with the club. I bash them on the head and catch them in a bucket. Mmm-mm! Good eatin!\" <br> <i>--Culinary Secrets of the Bayou Brothers, by Cletus Munkin</i>\"",
-            "image_link": 'ArchDruid/baby_reed_serpent.gif',
+            "image_link": 'Animals/baby_reed_serpent.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
@@ -5635,9 +5635,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "marsh_of_the_serpents",
-            "location": "Units/ArchDruid/MatureReedSerpent",
+            "location": "Units/Animals/MatureReedSerpent",
             "description": "\"I personally prefer eating the Mature Reed Serpent. The flesh is still tender, and you can get a man-sized chunk of solid meat from them. There's just something to be said for a slab of meat that can't be eaten in just one meal. And unlike the King Serpent, the hunters have a much better chance of survivng the hunt.\" <br> <i>--Culinary Secrets of the Bayou Brothers, by Cletus Munkin</i>\"",
-            "image_link": 'ArchDruid/mature_reed_serpent.gif',
+            "image_link": 'Animals/mature_reed_serpent.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+6 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
@@ -5718,9 +5718,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/KingReedSerpent",
+            "location": "Units/Animals/KingReedSerpent",
             "description": "\"The trouble with hunting for tasty baby reed serpents, a real delicacy, is when one of the full growns comes along and swallows my brother whole. They're so big they can damage trading ships, and are just as common to see in the swamps as on open water, so we have to carry around protection. We never go nowhere in the swamp without a couple clay pots full of pepper sauce. The stuff burns your skin, but the giant reed snakes won't try to eat you either.\" <br> <i>--Culinary Secrets of the Bayou Brothers, by Cletus Munkin</i>\"",
-            "image_link": 'ArchDruid/king_reed_serpent.gif',
+            "image_link": 'Animals/king_reed_serpent.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+8 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
@@ -5806,9 +5806,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/BabyShockSerpent",
+            "location": "Units/Animals/BabyShockSerpent",
             "description": "\"I watched in horror as half the fishermen on the fishing vessel dropped to the deck convulsing in slurred and buzzing agony. I took an oar and broke the grip of three man who could not release the fishing nets. Using the oar, I turned the winch that drew in the fish net, and meticulously pulled in the day's catch. Sure enough, hidded in the blue deep, a small swarm of juvenile shock serpents were entangled with a whole net-load of paralyzed fish.\" <br> <i>--Fish Tales, Helam Thurgood, Fisherman</i>\"",
-            "image_link": 'ArchDruid/baby_shock_serpent.gif',
+            "image_link": 'Animals/baby_shock_serpent.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
@@ -5826,7 +5826,7 @@ var jsonUnits = {
             "abilities": [
                 {
                     "slug": "melee_strike",
-                    "damage": "7<x-physical> </x-physical> 2<x-blight></x-blight>"
+                    "damage": "7<x-physical> </x-physical> 2<x-shock></x-shock>"
         },
 
 
@@ -5874,6 +5874,169 @@ var jsonUnits = {
         ]
 
 }, {
+            "hp": "65",
+            "name": "mature_shock_serpent",
+            "string": "Mature Shock Serpent",
+            "armor": "12",
+            "shield": "10",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "30",
+            "cost": "170 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/MatureShockSerpent",
+            "description": "\"Mature Shock Serpents can sometimes be a problem for inexperienced Inventors and Dreadnoughts who don't protect their power packs. A sufficiently large copper coil and a slight charge draws these critters like a magnet. Quite dangerous as the attempt to mate with your machines!\" <br> <i>--Technacalities, by Tonka Clunk, Inventor</i>\"",
+            "image_link": 'Animals/mature_shock_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> 5<x-shock></x-shock>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_mature_shock_serpent"
+        }, {
+                    "slug": "swimming"
+                },
+
+                {
+                    "slug": "wetland_walking"
+                },
+                {
+                    "slug": "inflict_stun"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "shock_protection_100"
+                    },
+        ]
+
+}, {
+            "hp": "86",
+            "name": "king_shock_serpent",
+            "string": "King Shock Serpent",
+            "armor": "14",
+            "shield": "11",
+            "mp": "36",
+            "tier": "IV - 32 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "40",
+            "cost": "170 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/KingShockSerpent",
+            "description": "\"The massive Shock Serpent was at least as long as the ship's mast, though, in the water, its full body length was difficult to see. The creature blended into the water naturally, making it hard to see. It lunged, snatching the quartermaster in its jaws. The man hardly moved as the snake dragged him over the rail. Moving as quick as any sailor might imagine, the giant snake, filled with the power of to much lightning trapped inside, plunged deep into the sea to feast on its captured prize. And that's how I became the new quartermaster.\" <br> <i>--Sailing a Perilous Sea, by Veron Millburn, Ship's Quartermaster</i>\"",
+            "image_link": 'Animals/king_shock_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+8<x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> 6<x-shock></x-shock>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_mature_shock_serpent"
+        }, {
+                    "slug": "swimming"
+                },
+
+                {
+                    "slug": "wetland_walking"
+                },
+                {
+                    "slug": "static_shield"
+                },
+                {
+                    "slug": "inflict_stun"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "shock_protection_100"
+                    },
+        ]
+
+}, {
             "hp": "44",
             "name": "boar",
             "string": "Boar",
@@ -5886,9 +6049,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/Boar",
+            "location": "Units/Animals/Boar",
             "description": "\"Boars are fiercely aggressive territorial creatures that like to burrow in holes deep under the ground. They charge down narrow tunnels, goring enemies trapped in their path. Dwarves have domesticated Boars as steeds, allowing them to traverse their underground kingdoms quickly and venture out to the surface. Boars have bad vision, but this is more than made up for with their excellent sense of smell.\" <br> <i>--Boars, Burlap and Boredom, by Boris the Bore</i>\"",
-            "image_link": 'ArchDruid/boar.gif',
+            "image_link": 'Animals/boar.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
@@ -5957,9 +6120,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/DirePenguin",
+            "location": "Units/Animals/DirePenguin",
             "description": "\"Assured that there was a trade route, and that the Frostling people would be profitable trading partners, we followed the direction of the Frostling King Frettic the Blue, northward beyond the glacial fields, across the tundra to a sea filled with icebergs. That's where we saw them first, out on the ice, like stiff fat dark men with glowing red eyes trundling towards us. But these were no men. They were far more deadly. They were killer penguins.\" <br> <i>--Diplomatic Mishaps, Volume 2:The Case against Frostlings, by Lady Flora Sweets</i>\"",
-            "image_link": 'ArchDruid/dire_penguin.gif',
+            "image_link": 'Animals/dire_penguin.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-frost> </x-frost> Melee</li>\
@@ -6031,9 +6194,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/DreadSpiderBaby",
+            "location": "Units/Animals/DreadSpiderBaby",
             "description": "\"Some trolls keep young dread spiders as pets, like dogs that climb the walls. If you can tolerate the webbing, they're quite clean creatures and hearty enough that playing trolls won't accidentally squish them, as happens with dogs. I recall one troll with six young dread spider pets. They had eated his mother, but he was happy. They'd saved him the trouble of having to clean up her mess, now that she'd lost her fight. He was pleased they'd wrapped her up all nicely in a bundle that he buried in his garbage heap.\" <br> <i>--Intimate Troll Interviews, by Vaulter Cronk.</i>\"",
-            "image_link": 'ArchDruid/dread_spider_baby.gif',
+            "image_link": 'Animals/dread_spider_baby.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
@@ -6095,6 +6258,82 @@ var jsonUnits = {
         ]
 
 }, {
+            "hp": "65",
+            "name": "dread_spider_queen",
+            "string": "Dread Spider Queen",
+            "armor": "12",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/DreadSpiderQueen",
+            "description": "\"A huge horned spider queen. So hungry. I let her feed. I knew she would give me what I wanted. Death. Death to any who trespassed. They fear her because they can't look her in the eyes. There are to many. And by the time they see them, they die. So I lured them in. She injected them with venom, wrapped them sleeping in a tight blanket, and fed on them. Their last nightmare. She let me take the bodies when she was done, and I made them my army of undead\" <br> <i>--Shadow Puppets, by Grimber Ambule, Necromancer.</i>\"",
+            "image_link": 'Animals/dread_spider_queen.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Fear Strike<span class=\"tooltiptext2\" id=\"fear_strike\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> 6<x-blight></x-blight>"
+        },
+                {
+                    "slug": "greater_webbing_touch",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "cave_crawling"
+                },
+                {
+                    "slug": "improved_wall_climbing"
+                }, {
+                    "slug": "inflict_severely_poisoned"
+                }, {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+        ]
+
+}, {
             "hp": "33",
             "name": "hunter_spider_baby",
             "string": "Hunter Spider Baby",
@@ -6107,9 +6346,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/HunterSpiderBaby",
+            "location": "Units/Animals/HunterSpiderBaby",
             "description": "\"When I heard the rustling and saw small trees shaking, I figured we were being stalked by a pair of wolves. Loud noise and a torch will scare them, so the camp cook took a pot and a log from the fire and began a ruckus. The bush went deathly still. This was no wolf. I tried to warn him, but was to late. Two young Hunter Spiders leapt onto the man, impaling his neck and arms with their venomous knife-like fangs. He fell dead. The creatures were so fast and could leap so far. They wounded a mercenary, two bowmen and our bard before I finished them off. Needless to say, the bard didn't write me a ballad.\" <br> <i>--Woodland Creatures, by Tye Buddler, Hunter</i>\"",
-            "image_link": 'ArchDruid/hunter_spider_baby.gif',
+            "image_link": 'Animals/hunter_spider_baby.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
@@ -6174,6 +6413,86 @@ var jsonUnits = {
         ]
 
 }, {
+            "hp": "60",
+            "name": "hunter_spider_queen",
+            "string": "Hunter Spider Queen",
+            "armor": "11",
+            "shield": "12",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/HunterSpiderQueen",
+            "description": "\"She said she was afraid of spiders, and I laughed. Then something lifted out of the dry grass, perfectly concealed, bigger than my wagon. I tried to scream but it caught in my throat. The thing leapt over the corral fence. It snatched a lamb in its fangs, then was up and over the wall. I grabbed a torch, some armor, a helmet and then rode into town. It would take the whole town together to keep it from the rest of the flock...and me! Now when she cries 'spider', I don't laugh.\" <br> <i>--Woodland Creatures, by Tye Buddler, Hunter</i>\"",
+            "image_link": 'Animals/hunter_spider_queen.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Noxious Vulnerability<span class=\"tooltiptext2\" id=\"inflict_noxious_vulnerability\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> 6<x-blight></x-blight>"
+        },
+                {
+                    "slug": "greater_webbing_touch",
+
+        }, {
+                    "slug": "phase",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_enfeebling_fever"
+        }, {
+                    "slug": "cave_crawling"
+                },
+                {
+                    "slug": "improved_wall_climbing"
+                }, {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+        ]
+
+}, {
             "hp": "36",
             "name": "vampire_spider_baby",
             "string": "Vampire Spider Baby",
@@ -6186,9 +6505,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/VampireSpiderBaby",
+            "location": "Units/Animals/VampireSpiderBaby",
             "description": "\"The pale pink spider was the size of a wolf. I hit first, with my axe, severing a mandible. To my suprise, instead of fleeing, the nasty thing leapt and sunk its remaining fang into my shoulder. I watched in horror as its missing limb slowly reformed. My arm fell numb. My life drained from me, and with my strength the horror healed itself. I lunged into the stone wall, crushing it, then chopped it three more times before its many legs stopped wriggling.\" <br> <i>--Slaying Monsters, by Uri Mahm, Warlord</i>\"",
-            "image_link": 'ArchDruid/vampire_spider_baby.gif',
+            "image_link": 'Animals/vampire_spider_baby.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
@@ -6252,6 +6571,88 @@ var jsonUnits = {
         ]
 
 }, {
+            "hp": "60",
+            "name": "vampire_spider_queen",
+            "string": "Vampire Spider Queen",
+            "armor": "12",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/VampireSpiderQueen",
+            "description": "\"There's a reason I don't like dark caves. Inevitably, there's something nasty in them. I once came face to face with a Vampire Spider Queen, as black as death, streaked in blood. A single venomous fang was my height, its body the size of a barn. I knew, if it bit me, I'd have no life left to drain. It crawled across the ceiling, raining strands of sticky silk. I knew it wouldn't be long before I'd be trapped, so I turned and raised my glowing blade to face the monster. Luckily, I tripped backwards, sliding into a narrow crevice, just out of reach.\" <br> <i>--Hidey Holes, by Ham the Wanderer</i>\"",
+            "image_link": 'Animals/vampire_spider_queen.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> 6<x-blight></x-blight>"
+        },
+                {
+                    "slug": "greater_webbing_touch",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_exhausting_fatigue"
+        }, {
+                    "slug": "life_steal"
+        }, {
+                    "slug": "cave_crawling"
+                },
+                {
+                    "slug": "dedicated_to_evil"
+                },
+                {
+                    "slug": "improved_wall_climbing"
+                }, {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+        ]
+
+}, {
             "hp": "45",
             "name": "tiger",
             "string": "Tiger",
@@ -6264,9 +6665,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/Tiger",
+            "location": "Units/Animals/Tiger",
             "description": "\"TCh'k'tuk'kak'tik crept through the grass, his javelin at the level of his eye. All day, he'd hunted a dire zebra, and this feral specimen would bring fame and ample meat. The evening sun bathed the savannah with golden light. The Tigran drew back his arm, ready to strike a deathblow. Grasses shifted. A roar thundered. Ch'k'tuk'kak'tik froze. A great feline leapt onto the zebra. Its fangs sunk deeply into its thick neck. The dire zebra collapsed. Its legs flailed wildly. The great lion held it fixed. \"Eat well,brother!\" Ch'k'tuk'kak'tik bowed to his brother.\" <br> <i>--Wild Tigran Hunter, by Sambi K'tan</i>\"",
-            "image_link": 'ArchDruid/tiger.gif',
+            "image_link": 'Animals/tiger.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
@@ -6338,9 +6739,9 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/Warg",
+            "location": "Units/Animals/Warg",
             "description": "\"There's a fable about a girl in a crimson cloak who meets a Warg. The Warg convinces her to pick some flowers, while it rushes ahead to eat her granny. I assure all children out there, that even if your parents are not trying to kill you by letting you wander a warg-infested forest alone, a real warg won't stop to talk, it will eat you. Sure, wargs are smarter than average wolves, but they are also more vicious. Further, it is unlikely to find just one warg, because they hunt in packs. The Moral of the story: Even if your parents want to kill you; disobey and don't enter a warg-infested forest alone.\" <br> <i>--Fables that Mock Evil, by Chastity Flowers, Storyteller</i>\"",
-            "image_link": 'ArchDruid/warg.gif',
+            "image_link": 'Animals/warg.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
@@ -6412,12 +6813,12 @@ var jsonUnits = {
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "",
-            "location": "Units/ArchDruid/DreadMonkey",
+            "location": "Units/Animals/DreadMonkey",
             "description": "\"'Three dread monkeys jumping on the dead<br>\
 One fell off and broke his head.<br>\
 Momma called a Blightdoctor and the Blightdoctor said,<br>\
 'No dread monkeys jumping on the dead!\" <br> <i>--Origins of Nursery Songs, by Belva Beimsford, Archivist</i>\"",
-            "image_link": 'ArchDruid/dread_monkey.gif',
+            "image_link": 'Animals/dread_monkey.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+2 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
@@ -6473,6 +6874,877 @@ Momma called a Blightdoctor and the Blightdoctor said,<br>\
                 {
 
                     },
+        ]
+
+}, {
+            "hp": "36",
+            "name": "felhorse",
+            "string": "Felhorse",
+            "armor": "8",
+            "shield": "9",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold> 10 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/Felhorse",
+            "description": "\"Foolishly, I had not thought of the dangers of a cookfire in the Firegas Caves, but I was hungry. As the cavern filled with fire, a horse, bright like a tiger, leaped through the flames. Its hooves spat fire as it clomped on the stones beside me. I thought I would die. It bent down and nuzzled my cookpot. I knew then we had a deal. I grabbed my pot with an overmitt, jumped onto its lowered neck. We dashed to safety. Though the fire singed the hair from my toes, the Felhorse was untouched by the inferno. When we stopped, I opened my steaming cookpot. Together, we finished a very fine apple cobbler.\" <br> <i>--Dining with Friends and Strangers, by Ham the Wanderer</i>\"",
+            "image_link": 'Animals/felhorse.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Overwhelm<span class=\"tooltiptext2\" id=\"overwhelm\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "dedicated_to_good"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+}, {
+            "hp": "35",
+            "name": "zephyr_bird",
+            "string": "Zephyr Bird",
+            "armor": "9",
+            "shield": "9",
+            "mp": "30",
+            "tier": "I - 4 <x-gold></x-gold>/ Summoned: 12 <x-mana></x-mana>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/ZephyrBird",
+            "description": "\"We fled all day as warg riders nipped at the heels of my pony. Unceasing, I rode hard, hoping in vain to lose them at the River Irinto. Then a shadow flashed over me, and I saw it in the sky. A great eagle swooped down, looked us over, and as fast as the wind, was away. Our enemy slowed, eventually retreating. They knew, as I did, that they were caught trespassing by my friend, Raidek, the Druid of the Gale Glade. For nothing escapes notice of his scouts, the Zephyr Birds.\" <br> <i>--Danger on the Dandellion Plains, by Ham the Wanderer</i>\"",
+            "image_link": 'Animals/zephyr_bird.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">First Strike<span class=\"tooltiptext2\" id=\"first_strike\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical>"
+        }, {
+                    "slug": "wing_beat",
+                    "damage": "9<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "vision_range_upgrade"
+        },
+                {
+                    "slug": "flying"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+}, {
+            "hp": "48",
+            "name": "bleak_warg",
+            "string": "Bleak Warg",
+            "armor": "10",
+            "shield": "9",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/BleakWarg",
+            "description": "\"The freezing mountain air grew colder as we heard the chilling howl of the Bleak Wargs. They emerged from the icy haze, invisible until they were in our camp. Their frosty eyes sent my swordsmen into fits of trembling and blubbering. I prayed aloud, hoping to inspire them, but the men seemed convinced of their deaths. The Bleak Wargs ran past the frightened swordsmen to attack my ranged troops like expert tacticians. They attacked with intelligence far beyond that of common wolves.\" <br> <i>--Clash on Castlemont, Sondra Grace, Priestess</i>\"",
+            "image_link": 'Animals/bleak_warg.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Frostbite<span class=\"tooltiptext2\" id=\"inflict_frostbite\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 4<x-frost></x-frost>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "arctic_concealment"
+        }, {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_100"
+        },
+        ]
+
+}, {
+            "hp": "47",
+            "name": "blight_tusk_boar",
+            "string": "Blight Tusk Boar",
+            "armor": "10",
+            "shield": "9",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/BlightTuskBoar",
+            "description": "\"The villagers pray to the Shrine, as the newcomers have taught us. Still, the rotted trees with leafless branches bloated with tumors continue to spread. The animals have changed, as if the whole world is poisonous. My father died yesterday. He was hunting giant boar. The animal they tracked was infected. The blight tusk boar struck my father. He weakened immediately; his flesh turned rancid. It took ten good men to kill the ferocious beast. I pleaded at the Shrine, but no healing came.\" <br> <i>--Petition to Commonwealth, Josua Hearts, Refugee</i>\"",
+            "image_link": 'Animals/blight_tusk_boar.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 4<x-frost></x-frost>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "wetland_walking"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+        },
+        ]
+
+}, {
+            "hp": "52",
+            "name": "dire_panther",
+            "string": "Dire Panther",
+            "armor": "11",
+            "shield": "9",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "110 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/DirePanther",
+            "description": "\"People ask me how one negotiates with an oversized feral black cat. It's a stupid question, because when you see one it's probably to late. Still, I seem to recall something like: \"Whoah! Nice Kitty. That's one seriously big cat. No, no! Bad Kitty. I'm not food. Stop! Don't eat me\"!\" <br> <i>--Where's Symba?, by Ham the Wanderer</i>\"",
+            "image_link": 'Animals/dire_panther.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\ <li> <div class = \"tooltip\">Forest Concealment<span class=\"tooltiptext2\" id=\"forest_concealment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>"
+        }, {
+                    "slug": "pounce",
+                    "damage": "16<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "predator"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "bloodthirsty"
+        }, {
+                    "slug": "athletics"
+        }, {
+                    "slug": "coup_de_grace"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        },
+        ]
+
+}, {
+            "hp": "67",
+            "name": "elephant",
+            "string": "Elephant",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "110 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/Elephant",
+            "description": "\"Crashing through the jungle, the mighty Elephant stampeded directly towards her. She piously stood her ground, insisting that the Allfather would keep her safe. A Goblin ran past shouting at her to get away. Then a Draconian begged her to flee. Just before it was upon her, an Orc yelled a last warning. At her grave, the priest observed that the Allfather must have loved her very much that he had sent such a group of messengers to try and save her.\" <br> <i>--Faces of Faith, by Geonn Hoodlum</i>\"",
+            "image_link": 'Animals/elephant.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\ <li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"inflict_crippling_wounds\" id=\"forest_concealment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "15<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "devastating_charge"
+        }, {
+                    "slug": "wall_crushing"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        },
+        ]
+
+}, {
+            "hp": "70",
+            "name": "mammoth",
+            "string": "Mammoth",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "110 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/Mammoth",
+            "description": "\"Crashing through the snow, the mighty mammoth stampeded directly towards her. She calmly awaited the beast, seemingly not concerned. As it neared, she spoke a single word and lifted an arm. The beast veered slightly to the side, and grabbing it's long hair as it rushed past she slung herself on its back. Never have I seen such a large animal used as mount.\" <br> <i>--Surprises of the North, by Penni Svaldkin</i>\"",
+            "image_link": 'Animals/mammoth.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\ <li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"inflict_crippling_wounds\" id=\"forest_concealment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "15<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "devastating_charge"
+        }, {
+                    "slug": "wall_crushing"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_80"
+                    },
+        ]
+
+}, {
+            "hp": "48",
+            "name": "gryphon",
+            "string": "Gryphon",
+            "armor": "12",
+            "shield": "10",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 12/16 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/Gryphon",
+            "description": "\"As a shepherd I learned to protect the sheep. I've driven off bears, mountain lions and wargs, but there's one creature I refuse to fight. Sadly, my brother didn't have my fear. The Gryphon flew over him, and snatched a sheep. My brother used his sling, but it only angered the thing. The gryphon must be proud, for it dropped the sheep, turning quicker than quick. Its eagle eyes anticipated my brother's attacks. Despite the long reach of a shepherd's crook, the gryphon struck him first. My brother no longer tends sheep.\" <br> <i>--Flowers on his Grave, Finwoll Solvan, Shepherd</i>\"",
+            "image_link": 'Animals/gryphon.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "first_strike"
+        }, {
+                    "slug": "dedicated_to_good"
+        },
+                {
+                    "slug": "flying"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+}, {
+            "hp": "46",
+            "name": "hell_hound",
+            "string": "Hell Hound",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 9 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/HellHound",
+            "description": "\"As a rite of manhood, young dwarves travel into the fiery heart of the mountain to hunt Hell hounds. I remember my hunt. We cornered a small pack against a lava vent. They could cross the magma without scorching their flaming fur. When they struck, my spear exploded in flames. I leapt back, grabbing a stalactite, as its jaws clamped on my arm. Its breath engulfed my in fire. I brought the stone down on the creature's head, again and again. Eventually it dropped. I wanted to die, until the Forge Priest healed me.\" <br> <i>--The Seals of the Firstborn', Malakite Stone, Dwarf Explorer</i>\"",
+            "image_link": 'Animals/hell_hound.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Scorching Heat<span class=\"tooltiptext2\" id=\"inflict_scorching_heat\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 5<x-fire></x-fire>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "dedicated_to_evil"
+        }, {
+                    "slug": "lava_walking"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_60"
+        }, {
+                    "slug": "fire_protection_100"
+        }, {
+                    "slug": "frost_weakness_40"
+        },
+        ]
+
+}, {
+            "hp": "52",
+            "name": "nightmare",
+            "string": "Nightmare",
+            "armor": "10",
+            "shield": "11",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 9 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/Nightmare",
+            "description": "\"As a horse thief, I consider myself a good judge of horseflesh. So when I saw a stallion grazing in the blighted field of an abandoned farm, I figured it was within my rights to take it. Not a single plant was alive in this field, so I slowed. The horse raised its head. Its mane and tail were fire. Its eyes glowed like dying embers. This creature was not grazing, but consuming a corpse. I may have screamed, and in response it let our a hissing shriek. I tumbled down the hillside. It was beside me before I could scream. It struck my shoulder with a hoof and my whole arm withered. I rolled away, then dashed into a ruined farmhouse and hid until the sun came up.\" <br> <i>--Bump in the Night, by Axel Lightfoot</i>\"",
+            "image_link": 'Animals/nightmare.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Scorching Heat<span class=\"tooltiptext2\" id=\"inflict_scorching_heat\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 4<x-fire></x-fire>"
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "life_steal"
+        }, {
+                    "slug": "unholy_champion"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "cave_crawling"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "dedicated_to_evil"
+        }, {
+                    "slug": "lava_walking"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+        },
+        ]
+
+}, {
+            "hp": "56",
+            "name": "polar_bear",
+            "string": "Polar Bear",
+            "armor": "11",
+            "shield": "9",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>/ Summoned: 9 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/PolarBear",
+            "description": "\"Ninanzi the Dancer run sobbing across the snowy tundra. The insult was clear: not one Frostling applauded his performance. Our Frostling search party tracked him. We heard a womanly cry. Cresting a tall drift, we spotted an angry polar bear. Its paws batted at the limber man. He dodged. Its toothy maw lunged. Ninanzi arched backwards, springing away. The melee repeated. Shrieking, the dancer spun and flipped.\<br>Inevitably, the bear's massive claw decapitated him, Alarmingly, the Frostlings erupted with applause. Poor Ninanzi never heard the Frostling's approval of his last dance..\" <br> <i>--Wandering Circus Capers, by Ringmaster Binks</i>\"",
+            "image_link": 'Animals/polar_bear.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> "
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "swimming"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_80"
+        },
+        ]
+
+}, {
+            "hp": "70",
+            "name": "dire_bear",
+            "string": "Dire Bear",
+            "armor": "11",
+            "shield": "9",
+            "mp": "36",
+            "tier": "III - 16 <x-gold></x-gold>/ Summoned: 9 <x-mana></x-mana>",
+            "xp": "30",
+            "cost": "100 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Animals/DireBear",
+            "description": "\"Hearken and heed my song, my Dearie,<br>\
+Lest you be fooled by tales to cheery.<br>\
+Though furry and soft, Bears are not nice<br>\
+Don't go in their dens, take my advice.<br>\
+Don't trespass during day, or the night.<br>\
+Don't sleep where it sleeps, That's just not right!<br>\
+Don't steal a bear's bowl of soupy rice,<br>\
+Yes, there are tales that state otherwise.<br>\
+Cute golden smiles won't save your head,<br>\
+It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nursery Rhymes, by Willa Loveday, Master Bard</i>\"",
+            "image_link": 'Animals/dire_bear.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Fear Strike<span class=\"tooltiptext2\" id=\"fear_strike\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "18<x-physical> </x-physical> "
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "swimming"
+        }, {
+                    "slug": "bloodthirsty"
+        }, {
+                    "slug": "predator"
+        }, {
+                    "slug": "athletics"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        },
         ]
 
 },
