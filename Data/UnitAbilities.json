@@ -936,6 +936,14 @@ var jsonUnitAbilities = {
             "range": "",
 
        }, {
+            "slug": "evolve_baby_kraken",
+            "name": "Evolve (Kraken)",
+            "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Kraken</li>",
+            "damage": "",
+            "icon_name": "evolve",
+            "range": "",
+
+       }, {
             "slug": "evolve_baby_shock_serpent",
             "name": "Evolve (Mature Shock Serpent)",
             "description": "This unit evolves to adult when reaching <x-medal_elite></x-medal_elite>. <li>Mature Shock Serpent</li>",

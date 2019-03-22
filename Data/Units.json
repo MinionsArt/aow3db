@@ -7748,6 +7748,87 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
         ]
 
 },
+///MONSTERS-------------------------------------------------------------------------------------MONSTERS--------------------------------------
+        {
+            "hp": "55",
+            "name": "baby_kraken",
+            "string": "Baby Kraken",
+            "armor": "11",
+            "shield": "11",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/Summoned: 9<x-mana></x-mana>",
+            "xp": "10",
+            "cost": "75 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "deep_sea_trench",
+            "location": "Units/Monsters/BabyKraken",
+            "description": "\"We pulled in our nets, eagerly awaiting a bounteous haul. But another creature thought to steal the catch from my nets. Its tentacles wrapped around my ropes pulling my ship low in the water. 'You shall not claim my prize!', I shouted. I rushed to my father's trunk and pulled out his enchanted trident and plunged it into the briny deep. I saw it there, a tangle of tentacles, its razor sharp beak chewing holes in my net, and those dead eyes like great unlit lantarns. I will not regale you with the details of the battle; it was long and tedious. Suffice it to say, with enough garlic butter and a light dusting of breadcrumbs, the Baby Kraken was as tasty a catch as anything I pulled from my nets.\" <br> <i>--Fishing Tales, by Captain Danues</i>\"",
+            "image_link": 'Monsters/baby_kraken.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "evolve_baby_kraken"
+        },
+                {
+                    "slug": "terror_from_the_deep"
+                },
+
+                {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "sea_creature"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                },
+
+                                  ],
+            "resistances": [
+
+                {
+                    "slug": "spirit_protection_40"
+                },
+                {
+                    "slug": "blight_protection_40"
+                },
+
+
+
+        ]
+
+                },
+
 ///HUNTERS-------------------------------------------------------------------------------------HUNTERS--------------------------------------
         {
             "hp": "35",

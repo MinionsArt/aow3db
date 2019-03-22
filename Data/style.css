@@ -163,15 +163,15 @@ p {
     color: white;
     position: relative;
     font-size: 13px;
-    margin-top: -200px;
+    margin-top: -150px;
     padding: 9px;
 
 }
 
 .unit_description_bg {
     background-color: rgba(0, 0, 0, 0.8);
-    height: 200px;
-    margin-top: -90px;
+    height: 150px;
+    margin-top: -30px;
     filter: blur(8px);
 }
 
