@@ -2494,86 +2494,6 @@ var jsonUnits = {
 
         ]
 
-}, {
-            "hp": "68",
-            "name": "tame_troll",
-            "string": "Tame Troll",
-            "armor": "12",
-            "shield": "10",
-            "mp": "30",
-            "tier": "III - 16 <x-gold></x-gold>",
-            "xp": "30",
-            "cost": "150 <x-gold></x-gold>",
-            "movement_type": "mp",
-            "origin_research": "",
-            "origin_building": "",
-            "location": "Units/Other/TameTroll",
-            "description": "\"A savage troll lived under Deepwood Bridge, getting hungrier and hungrier, when along came a few goat-footed Satyrs. The first was scrawny and bleated to go across the bridge, promising his two older, fatter brothers would come and be easier to catch. So the greedy troll let the first go, licking his chops. The second satyr came. It told the hungry troll that his fatter brother would be tastier and even easier to catch. So it let him pass. Of course, you know how this story ends. No third brother came, because there were only two satyrs. So the troll ate the poisonous mushrooms that always grew there in abundance because no one else can eat them without dying. Moral of the story: Don't be a stupid troll.\" <br> <i>--Fables that Mock Evil, Chastity Flowers, Storyteller.</i>\"",
-            "image_link": 'Rest/troll.gif',
-            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
- <li>+6 <x-hp> </x-hp> Hit Points</li>",
-            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
- <li>+6 <x-hp> </x-hp> Hit Points</li>\
-<li>+1 <x-defense> </x-defense> Defense</li>\
- <li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
-            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
- <li>+6 <x-hp> </x-hp> Hit Points </li>\
-<li>+1 <x-resistance> </x-resistance> Resistance</li>",
-            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
- <li>+12 <x-hp> </x-hp> Hit Points</li>\
-<li>+1 <x-defense> </x-defense> Defense</li>\
-<li><div class=\"tooltip\">Fearsome<span class=\"tooltiptext2\" id=\"fearsome\"></span></div></li>",
-
-
-            "abilities": [
-                {
-                    "slug": "melee_strike",
-                    "damage": "17<x-physical> </x-physical>"
-        },
-               ],
-            "passives": [
-                {
-                    "slug": "demolisher"
-        },
-
-                {
-                    "slug": "wall_crushing"
-                }, {
-                    "slug": "guard_breaker"
-        }, {
-                    "slug": "regrowth"
-        }, {
-                    "slug": "night_vision"
-        }, {
-                    "slug": "cave_crawling"
-        }, {
-                    "slug": "wetland_walking"
-        }, {
-                    "slug": "monster"
-        },
-                {
-                    "slug": "walking"
-                }
-
-
-
-        ],
-
-            "resistances": [
-
-                {
-                    "slug": "blight_protection_60"
-                    },
-                {
-                    "slug": "fire_weakness_40"
-                    },
-
-
-
-
-
-        ]
-
 },
  //HALFLING--------------------------------------------------------------------------------------------------------HALFLING--------------------
 
@@ -7757,7 +7677,7 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
             "shield": "11",
             "mp": "32",
             "tier": "II - 8 <x-gold></x-gold>/Summoned: 9<x-mana></x-mana>",
-            "xp": "10",
+            "xp": "20",
             "cost": "75 <x-gold></x-gold>",
             "movement_type": "swimming",
             "origin_research": "",
@@ -7765,15 +7685,14 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
             "location": "Units/Monsters/BabyKraken",
             "description": "\"We pulled in our nets, eagerly awaiting a bounteous haul. But another creature thought to steal the catch from my nets. Its tentacles wrapped around my ropes pulling my ship low in the water. 'You shall not claim my prize!', I shouted. I rushed to my father's trunk and pulled out his enchanted trident and plunged it into the briny deep. I saw it there, a tangle of tentacles, its razor sharp beak chewing holes in my net, and those dead eyes like great unlit lantarns. I will not regale you with the details of the battle; it was long and tedious. Suffice it to say, with enough garlic butter and a light dusting of breadcrumbs, the Baby Kraken was as tasty a catch as anything I pulled from my nets.\" <br> <i>--Fishing Tales, by Captain Danues</i>\"",
             "image_link": 'Monsters/baby_kraken.gif',
-            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+4 <x-hp> </x-hp> Hit Points</li>",
-            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
-<li>+1 <x-physical> </x-physical> Melee</li>\
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+4 <x-hp> </x-hp> Hit Points</li>",
-            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+4 <x-hp> </x-hp> Hit Points </li>\
 <li>+1 <x-resistance> </x-resistance> Resistance</li>",
-            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+8 <x-hp> </x-hp> Hit Points</li>\
 <li>+1 <x-defense> </x-defense> Defense</li>",
 
@@ -7828,6 +7747,846 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
         ]
 
                 },
+        {
+            "hp": "44",
+            "name": "bone_wyvern",
+            "string": "Bone Wyvern",
+            "armor": "11",
+            "shield": "11",
+            "mp": "30",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/BoneWyvern",
+            "description": "\"We ventured into the blight, looking for any living thing capable of resisting its sickening effects. The passing days darkened our minds, until even looking at the sky burdened me. We were easy prey to the Bone Wyverns. Being undead, they hunted not for food, but our of pure enmity against anything with a heartbeat. I gathered my wits. I am the Allfather's servant. Their jagged teeth and swordlike hind-leg claws shredded the man beside me. Humbly penitent, I clutched my holy symbol. The pure light of creation filled me. We would survive.\" <br> <i>--Sick Lands, Ethan Wildlight, Temple Scribe</i>\"",
+            "image_link": 'Monsters/bone_wyvern.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Noxious Vulnerability<span class=\"tooltiptext2\" id=\"inflict_noxious_vulnerability\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 6<x-blight></x-blight> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_brain_rot"
+        },
+                {
+                    "slug": "dedicated_to_evil"
+                },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                }, {
+                    "slug": "undead"
+                }, {
+                    "slug": "cannot_regenerate"
+                }, {
+                    "slug": "blight_protection_100"
+                },
+
+                {
+                    "slug": "frost_protection_40"
+                }, {
+                    "slug": "spirit_weakness_40"
+                }, {
+                    "slug": "fire_weakness_20"
+                }, {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+
+                },
+
+
+
+
+        ]
+
+                },
+        {
+            "hp": "45",
+            "name": "carrion_bird",
+            "string": "Carrion Bird",
+            "armor": "11",
+            "shield": "10",
+            "mp": "30",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/CarrionBird",
+            "description": "\"In our studies of the spread of the blight we discovered creatures corrupted by its encroachment. I first saw a Carrion Bird in the ruined wasteland below the Sunbirth Mountains. The thing circled overhead like an oversized vulture. I suppose it expected our party to collapse with disease from the sickened land, but when we didn't do that, it swooped down. It attacked, spreading blight sickness through its bony talons and daggerlike beak. When it struck an unlucky guardsman, it gained strength feasting upon the life it stole from him. Realizing the thing was undead, I lifted the holy symbol of life, driving away the evil\" <br> <i>--Sick Lands, Ethan Wildlight, Temple Scribe</i>\"",
+            "image_link": 'Monsters/carrion_bird.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 4<x-blight></x-blight> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "life_steal"
+        },
+                {
+                    "slug": "dedicated_to_evil"
+                },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                }, {
+                    "slug": "undead"
+                }, {
+                    "slug": "cannot_regenerate"
+                }, {
+                    "slug": "blight_protection_100"
+                },
+
+                {
+                    "slug": "frost_protection_40"
+                }, {
+                    "slug": "spirit_weakness_40"
+                }, {
+                    "slug": "fire_weakness_20"
+                },
+
+                                  ],
+            "resistances": [
+                {
+
+                },
+
+
+
+
+        ]
+
+                }, {
+            "hp": "75",
+            "name": "cockatrice",
+            "string": "Cockatrice",
+            "armor": "13",
+            "shield": "11",
+            "mp": "36",
+            "tier": "III - 16 <x-gold></x-gold>/Summoned:28 <x-mana></x-mana>",
+            "xp": "30",
+            "cost": "190 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/Cockatrice",
+            "description": "\"I had taken care of farm animals before and when I heard that old Farmer Tuckett was having trouble with a rooster, I expected him to mean an actual chicken, not a dragon-sized cock with a tendency to go on bloody rampages. So imagine my suprise when I came face to face with a Cockatrice. The thing charged with the force of a stampeding bull. It seemed to gather strength by squaking and thrashing its whole body in a fit of rage. That's when I remembered, Farmer Tuckett wants me dead. After that experience, I decided to raise safer livestock.\" <br> <i>--Lion Farming, by Tam Rand, Farmer</i>\"",
+            "image_link": 'Monsters/cockatrice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical>  "
+        }, {
+                    "slug": "doom_gaze",
+                    "damage": "6<x-physical> </x-physical> 10<x-spirit></x-spirit> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "first_strike"
+        },
+                {
+                    "slug": "dedicated_to_evil"
+                },
+                {
+                    "slug": "charge"
+                },
+
+
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                }, {
+                    "slug": "magical_origin"
+                },
+
+
+                                  ],
+            "resistances": [
+                {
+
+                },
+
+
+
+
+        ]
+
+                },
+        {
+            "hp": "68",
+            "name": "tame_troll",
+            "string": "Tame Troll",
+            "armor": "12",
+            "shield": "10",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/TameTroll",
+            "description": "\"A savage troll lived under Deepwood Bridge, getting hungrier and hungrier, when along came a few goat-footed Satyrs. The first was scrawny and bleated to go across the bridge, promising his two older, fatter brothers would come and be easier to catch. So the greedy troll let the first go, licking his chops. The second satyr came. It told the hungry troll that his fatter brother would be tastier and even easier to catch. So it let him pass. Of course, you know how this story ends. No third brother came, because there were only two satyrs. So the troll ate the poisonous mushrooms that always grew there in abundance because no one else can eat them without dying. Moral of the story: Don't be a stupid troll.\" <br> <i>--Fables that Mock Evil, Chastity Flowers, Storyteller.</i>\"",
+            "image_link": 'Monsters/troll.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Fearsome<span class=\"tooltiptext2\" id=\"fearsome\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "17<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "demolisher"
+        },
+
+                {
+                    "slug": "wall_crushing"
+                }, {
+                    "slug": "guard_breaker"
+        }, {
+                    "slug": "regrowth"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "cave_crawling"
+        }, {
+                    "slug": "wetland_walking"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+
+
+
+
+        ]
+
+}, {
+            "hp": "68",
+            "name": "troll",
+            "string": "Troll",
+            "armor": "12",
+            "shield": "10",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/Troll",
+            "description": "\"A savage troll lived under Deepwood Bridge, getting hungrier and hungrier, when along came a few goat-footed Satyrs. The first was scrawny and bleated to go across the bridge, promising his two older, fatter brothers would come and be easier to catch. So the greedy troll let the first go, licking his chops. The second satyr came. It told the hungry troll that his fatter brother would be tastier and even easier to catch. So it let him pass. Of course, you know how this story ends. No third brother came, because there were only two satyrs. So the troll ate the poisonous mushrooms that always grew there in abundance because no one else can eat them without dying. Moral of the story: Don't be a stupid troll.\" <br> <i>--Fables that Mock Evil, Chastity Flowers, Storyteller.</i>\"",
+            "image_link": 'Monsters/troll.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Fearsome<span class=\"tooltiptext2\" id=\"fearsome\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "17<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "demolisher"
+        },
+
+                {
+                    "slug": "wall_crushing"
+                }, {
+                    "slug": "guard_breaker"
+        }, {
+                    "slug": "regrowth"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "cave_crawling"
+        }, {
+                    "slug": "wetland_walking"
+        }, {
+                    "slug": "dedicated_to_evil"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+
+
+
+
+        ]
+
+}, {
+            "hp": "70",
+            "name": "yeti",
+            "string": "Yeti",
+            "armor": "12",
+            "shield": "11",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "160 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/yeti",
+            "description": "\"We never managed to reach any of the Frostling Kings, but occasionally we were attacked by their allies, the Yeti. We were unable to communicate our good intentions as they attack without warning. We were forced to slay many, but not without significant damage. It isn't good enough to wound a yeti, for in a day they are healed. They strike with freezing blows, chilling ice biting and numbing what they hit. My recommendation remains. The Frostlings don't trust us. The Commonwealth should abandon its plan in the North and reach out to more hospitable lands.\" <br> <i>--Diplomatic Mishaps, Volume 2:The Case against Frostlings, by Lady Flora Sweets.</i>\"",
+            "image_link": 'Monsters/yeti.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Freezing Cold<span class=\"tooltiptext2\" id=\"inflict_freezing_cold\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+ <li> <div class = \"tooltip\">Arctic Walking<span class=\"tooltiptext2\" id=\"arctic_walking\"></span></div></li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Path of Frost<span class=\"tooltiptext2\" id=\"path_of_frost\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> 6<x-frost></x-frost>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_frostbite"
+        },
+
+                {
+                    "slug": "regeneration"
+                }, {
+                    "slug": "arctic_concealment"
+        }, {
+                    "slug": "mountaineering"
+        }, {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+
+
+
+
+        ]
+
+}, {
+            "hp": "72",
+            "name": "watcher",
+            "string": "Watcher",
+            "armor": "12",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>/Summoned: 12<x-mana></x-mana>",
+            "xp": "30",
+            "cost": "160 <x-gold></x-gold>",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/Watcher",
+            "description": "\"I discovered the Tigrans missing from the Ashen Steppe when I went to visit my friend Symba. Not a single Tigran was to be found. All that remained were some very angry Watchers left to haunt the sandstone ruins. These floating balls of teeth and death-gazing eye stalks did not want to discuss matters. Instead, they were hungry. They ate both my camels and would have eaten me had I not gotten caught on a tent flap while fleeing into a fierce sandstorm. The canvas wings sent me flying out of their reach like a bird. I do not recommend flight by tent, however lifesaving. The landing, even in sand dunes, was excruciating.\" <br> <i>--Where's Symba?, by Ham the Wanderer</i>\"",
+            "image_link": 'Monsters/watcher.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Spirit Breaking<span class=\"tooltiptext2\" id=\"inflict_spirit_breaking\"></span></div></li>",
+            "level_expert": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Daze<span class=\"tooltiptext2\" id=\"inflict_daze\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> 3<x-spirit></x-spirit> 3<x-blight></x-blight>"
+        }, {
+                    "slug": "doom_gaze",
+                    "damage": "6<x-physical> </x-physical>10<x-spirit></x-spirit>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "true_sight"
+        },
+
+                {
+                    "slug": "vision_range_upgrade"
+                }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "total_awareness"
+        }, {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "floating"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+                {
+                    "slug": "magical_origin"
+                    },
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "spirit_protection_60"
+                    },
+
+
+
+
+
+        ]
+
+}, {
+            "hp": "60",
+            "name": "feathered_serpent",
+            "string": "Feathered Serpent",
+            "armor": "11",
+            "shield": "12",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/Summoned: 18<x-mana></x-mana>",
+            "xp": "30",
+            "cost": "160 <x-gold></x-gold> 20<x-mana></x-mana>",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "temple_of_the_eternal_serpent",
+            "location": "Units/Monsters/FeatheredSerpent",
+            "description": "\'Snakes are fast enough, so when I saw the serpents with feathers I didn't need our Ranger guide's warning that the winged serpents were quicker than quick. It lunged towards me, and in an attempt to avoid being swallowed I hid in the ice chest. The floating serpents despised the cold of my hiding place, so I survived.'\" <br> <i>--Peril in the Tropics, by Ham the Wanderer</i>\"",
+            "image_link": 'Monsters/feathered_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Projectile Resistance<span class=\"tooltiptext2\" id=\"projectile_resistance\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Life Steal<span class=\"tooltiptext2\" id=\"life_steal\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> 3<x-blight></x-blight> 3<x-fire></x-fire>"
+        }, {
+                    "slug": "healing",
+        }, {
+                    "slug": "sprint",
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "true_sight"
+        },
+
+                {
+                    "slug": "vision_range_upgrade"
+                }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "inflict_enfeebling_fever"
+        }, {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "floating"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+                {
+                    "slug": "magical_origin"
+                    },
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_60"
+                    },
+                {
+                    "slug": "fire_protection_60"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+
+
+
+
+
+        ]
+
+},
+        {
+            "hp": "35",
+            "name": "kobold",
+            "string": "Kobold",
+            "armor": "7",
+            "shield": "7",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>/Summoned: 6<x-mana></x-mana>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/Kobold",
+            "description": "\'Folk said the cave was haunted by evil spirits that raided chicken coops in the night. Knowing the undead to be less about chickens and more about murdering the living, I knew not to fear spirits. As I suspected, I found no one in the cave. So I set camp at the mouth of the cave and pretended to sleep. It wasn't to long before my packs were raided. I jumped up, and beheld twelve kobolds. They hissed as I pulled the hood from my lantarn. Knowing they were no match for the power of my gleaming blade, they retreated with what they could pull from my pack. I managed to cut down all but two. They stole a few stale biscuits and a pair of dirty socks. Another sigh that dishonesty doesn't pay well.'\" <br> <i>--Face Your Fears, by Sir Locke Olme, Paladin</i>\"",
+            "image_link": 'Monsters/kobold.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Enfeebling Fever<span class=\"tooltiptext2\" id=\"inflict_enfeebling_fever\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li><div class=\"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Taunt<span class=\"tooltiptext2\" id=\"taunt\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 8<x-blight></x-blight> "
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "cave_crawling"
+        },
+
+                {
+                    "slug": "cave_concealment"
+                }, {
+                    "slug": "tunneling"
+        }, {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_60"
+                    },
+
+
+
+
+
+        ]
+
+}, {
+            "hp": "110",
+            "name": "kraken",
+            "string": "Kraken",
+            "armor": "16",
+            "shield": "13",
+            "mp": "28",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "280 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Monsters/Kraken",
+            "description": "\'When it first hit, I was knocked into my wash basin and catapulted overboard. Salty sea brine and sour lye soap made my skin burn. I saw upright, drifting in my tiny vessel. Thick leathery tentacles constricted about the ship's hull. Struts cracked. The crewman were mere ant fighting this voracious behemoth. One by one they died. The mass of tentacles tore the ship apart. Then the Kraken carefully sifted through the wreckage, dragging anything that flailed in the surf down to the depths to devour, leaving no witnesses. I survived because I was drenched in lye soap that the creature evidently found unpalatable and irritated my sensitive Halfling skin.'\" <br> <i>--Abducted by Pirates, by Ham the Wanderer</i>\"",
+            "image_link": 'Monsters/kraken.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "25<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "terror_of_the_deep"
+        },
+
+                {
+                    "slug": "true_sight"
+                }, {
+                    "slug": "inflict_crippling_wounds"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "swallow_whole"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "sea_creature"
+                    },
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_60"
+                    }, {
+                    "slug": "spirit_protection_60"
+                    },
+
+
+
+
+
+        ]
+
+},
+
 
 ///HUNTERS-------------------------------------------------------------------------------------HUNTERS--------------------------------------
         {
