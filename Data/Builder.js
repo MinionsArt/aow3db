@@ -98,6 +98,8 @@ function addAbilityslot(a, unique, damage, c) {
             }
             if (damage != "") {
                 abilityDam = damage;
+            } else {
+                abilityDam = "";
             }
             tex.innerHTML = abilityName;
             var dam = document.createElement("DIV");
