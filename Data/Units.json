@@ -9541,5 +9541,1129 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
 
                 },
 
-            ]
+///SHAMANS-------------------------------------------------------------------------------------SHAMANS--------------------------------------
+        {
+            "hp": "60",
+            "name": "draconian_shaman",
+            "string": "Draconian Shaman",
+            "armor": "11",
+            "shield": "12",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "130 <x-gold></x-gold> 40 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/DraconianShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/draconian_shaman.gif',
+            "level_trooper": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> "
+        }, {
+                    "slug": "fire_bolts",
+                    "damage": "8<x-fire> </x-fire>",
+                    "unique": "yes"
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+    },
+        {
+            "hp": "60",
+            "name": "dwarf_shaman",
+            "string": "Dwarf Shaman",
+            "armor": "13",
+            "shield": "13",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "143 <x-gold></x-gold> 33 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/DwarfShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/dwarf_shaman.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> "
+        }, {
+                    "slug": "poison_bolts",
+                    "damage": "8<x-blight> </x-blight>",
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        }, {
+                    "slug": "armored",
+                    "unique": "yes"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_60"
+                    },
+                    ],
+            "resistances": [
+
+        ]
+
+    }, {
+            "hp": "60",
+            "name": "frostling_shaman",
+            "string": "Frostling Shaman",
+            "armor": "11",
+            "shield": "12",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "130 <x-gold></x-gold> 30 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/FrostlingShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/frostling_shaman.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> "
+        }, {
+                    "slug": "frost_bolts",
+                    "damage": "8<x-frost> </x-frost>",
+                    "unique": "yes"
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        }, {
+                    "slug": "inflict_chilling",
+                    "unique": "yes"
+        }, {
+                    "slug": "arctic_concealment",
+                    "unique": "yes"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                        },
+                {
+                    "slug": "arctic_walking"
+                        },
+                {
+                    "slug": "fast_embark"
+                        },
+                {
+                    "slug": "frost_protection_60"
+                        },
+                {
+                    "slug": "fire_weakness_40"
+                        },
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+    },
+        {
+            "hp": "55",
+            "name": "goblin_shaman",
+            "string": "Goblin Shaman",
+            "armor": "11",
+            "shield": "12",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "126 <x-gold></x-gold> 26 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/GoblinShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/goblin_shaman.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 2<x-physical></x-physical> ",
+                    "unique": "yes"
+
+        }, {
+                    "slug": "poison_bolts",
+                    "damage": "10<x-blight> </x-blight>",
+                    "unique": "yes"
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        }, {
+                    "slug": "inflict_noxious_vulnerability",
+                    "unique": "yes"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_80"
+                    },
+                    ],
+            "resistances": [
+
+        ]
+
+    }, {
+            "hp": "60",
+            "name": "halfling_shaman",
+            "string": "Halfling Shaman",
+            "armor": "11",
+            "shield": "12",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "140 <x-gold></x-gold> 30 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/HalflingShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/halfling_shaman.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "poison_bolts",
+                    "damage": "8<x-blight> </x-blight>",
+
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        }, {
+                    "slug": "minor_bard_skills",
+                    "unique": "yes"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+    }, {
+            "hp": "60",
+            "name": "high_elf_shaman",
+            "string": "High Elf Shaman",
+            "armor": "11",
+            "shield": "13",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "135 <x-gold></x-gold> 30 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/HighElfShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/high_elf_shaman.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "poison_bolts",
+                    "damage": "8<x-blight> </x-blight>",
+
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        }, {
+                    "slug": "total_awareness",
+                    "unique": "yes"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+    }, {
+            "hp": "60",
+            "name": "human_shaman",
+            "string": "Human Shaman",
+            "armor": "11",
+            "shield": "12",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "130 <x-gold></x-gold> 30 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/HumanShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/human_shaman.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "poison_bolts",
+                    "damage": "8<x-blight> </x-blight>",
+
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+    }, {
+            "hp": "60",
+            "name": "orc_shaman",
+            "string": "Orc Shaman",
+            "armor": "11",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "130 <x-gold></x-gold> 30 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/OrcShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/orc_shaman.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "bane_fire",
+                    "damage": "3<x-blight> </x-blight> 3<x-fire></x-fire> 3<x-spirit></x-spirit>",
+                    "unique": "yes"
+
+
+        }, {
+                    "slug": "war_cry",
+                    "unique": "yes"
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        },
+                {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+    }, {
+            "hp": "60",
+            "name": "tigran_shaman",
+            "string": "Tigran Shaman",
+            "armor": "11",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold> 40 <x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "arch_druids_dolmen",
+            "location": "Units/ArchDruid/TigranShaman",
+            "description": "\'The Arch-Druid stood at the center of a gathering of hunters. After holding aloft an acorn, he put it to his ear and spoke 'All worthy men, but the plant chooses a shaman.' He nodded to my sister Siska and announced, 'You are chosen. Hold out your bow.' She held out her bow and the Arch-Druid handed her the acorn. 'Speak to the wood in it. Make it your staff.' She concentrated. The bow straightened into a staff. No longer a hunter, she was a shaman, speaking for both plant and animal life.'\" <br> <i>--Mapping Plumwood Forest, by Salfi Anuxi, Cartographer</i>\"",
+            "image_link": 'ArchDruid/tigran_shaman.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+    <li> <div class =\"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Healing<span class=\"tooltiptext2\" id=\"healing\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "poison_bolts",
+                    "damage": "8<x-blight> </x-blight>",
+
+
+        }, {
+                    "slug": "were_bear",
+                    "unique": "yes"
+
+        },
+                {
+                    "slug": "awaken_spirit",
+
+        }, {
+                    "slug": "befriend_animal",
+
+        }, {
+                    "slug": "entangling_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "free_movement"
+        }, {
+                    "slug": "forest_concealment"
+                },
+
+                {
+                    "slug": "wetlands_concealment"
+                },
+
+                {
+                    "slug": "mountain_concealment"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "support"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_40"
+                    },
+        ]
+
+    },
+//OTHER ARCHDRUID---------------------------------------------------------------------------------------------------OTHER ARCHDRUID-----------
+        {
+            "hp": "92",
+            "name": "horned_god",
+            "string": "Horned God",
+            "armor": "16",
+            "shield": "13",
+            "mp": "36",
+            "tier": "IV - 32 <x-gold></x-gold>/Summoned: 36<x-mana></x-mana>",
+            "xp": "40",
+            "cost": "240 <x-casting></x-casting> 40 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Summon Horned God",
+            "origin_building": "",
+            "location": "Units/ArchDruid/HornedGod",
+            "description": "\''In the quiet forest walks the Horned God. Like the mighty oak, it will weather an ice storm and despises destructive fire. Lightning crackles at its call. The animals of the forest are its children. Like the one great buck that all hunters envy with its impossibly large antlers, it passes through tangled trees and hunter's nets unobstructed. With its staff it drives out all defilers of the sacred glades as furiously as a mad bull. When it arrives, flee, for your prayers will not impede this strange god.''\" <br> <i>--Protecting the Virgin Forest, Cedric Aster, Hunter</i>\"",
+            "image_link": 'ArchDruid/horned_god.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Summon Erymanthian Boar<span class=\"tooltiptext2\" id=\"summon_erymanthian_boar\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "20<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "call_lightning",
+                    "damage": "18<x-shock> </x-shock>",
+
+
+        }, {
+                    "slug": "befriend_animal",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "strong_will"
+                },
+
+                {
+                    "slug": "free_movement"
+                },
+
+                {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "entangling_strike"
+                },
+
+                {
+                    "slug": "swimming"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "giant"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "wall_crushing"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "shock_protection_100"
+                    }, {
+                    "slug": "frost_protection_40"
+                    }, {
+                    "slug": "fire_weakness_20"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+        ]
+
+    },
+]
 }
