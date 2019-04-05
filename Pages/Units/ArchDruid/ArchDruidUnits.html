@@ -12,15 +12,16 @@
     <script>
         $(function loadheader() {
             $("#header").load("/aow3db/Pages/header.html");
-            $("#TigranCheetah").load("/aow3db/Pages/Units/ArchDruid/DraconianHunter.html");
-            $("#TigranShredder").load("/aow3db/Pages/Units/Tigrans/TigranShredder.html");
-            $("#TigranSunGuard").load("/aow3db/Pages/Units/Tigrans/TigranSunGuard.html");
-            $("#TigranProwler").load("/aow3db/Pages/Units/Tigrans/TigranProwler.html");
-            $("#TigranMystic").load("/aow3db/Pages/Units/Tigrans/TigranMystic.html");
-            $("#TigranSabretoothChariot").load("/aow3db/Pages/Units/Tigrans/TigranSabretoothChariot.html");
-            $("#TigranSphinx").load("/aow3db/Pages/Units/Tigrans/TigranSphinx.html");
+            $("#DraconianHunter").load("/aow3db/Pages/Units/ArchDruid/DraconianHunter.html");
+            $("#DwarfHunter").load("/aow3db/Pages/Units/ArchDruid/DwarfHunter.html");
+            $("#FrostlingHunter").load("/aow3db/Pages/Units/ArchDruid/FrostlingHunter.html");
+            $("#GoblinHunter").load("/aow3db/Pages/Units/ArchDruid/GoblinHunter.html");
+            $("#HalflingHunter").load("/aow3db/Pages/Units/ArchDruid/HalflingHunter.html");
+            $("#HighElfHunter").load("/aow3db/Pages/Units/ArchDruid/HighElfHunter.html");
+            $("#HumanHunter").load("/aow3db/Pages/Units/ArchDruid/HumanHunter.html");
+            $("#OrcHunter").load("/aow3db/Pages/Units/ArchDruid/OrcHunter.html");
+            $("#TigranHunter").load("/aow3db/Pages/Units/ArchDruid/TigranHunter.html");
         });
-
     </script>
 
     <title>AOW3 Database - Arch Druid Units</title>
@@ -40,9 +41,75 @@
         <hr>
 
     </div>
-
     <br><br>
-    <div id="TigranCheetah"></div>
+    <div class="unit_card">
+
+
+        <button class="collapsible">Open Collapsible</button>
+        <div class="content">
+            <p>
+
+            </p>
+        </div>
+
+        <p>Hunters:</p>
+        <button class="collapsible">Draconian Hunter</button>
+        <div class="content">
+            <p>
+                <div id="DraconianHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">Dwarf Hunter</button>
+        <div class="content">
+            <p>
+                <div id="DwarfHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">Frostling Hunter</button>
+        <div class="content">
+            <p>
+                <div id="FrostlingHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">Goblin Hunter</button>
+        <div class="content">
+            <p>
+                <div id="GoblinHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">Halfling Hunter</button>
+        <div class="content">
+            <p>
+                <div id="HalflingHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">High Elf Hunter</button>
+        <div class="content">
+            <p>
+                <div id="HighElfHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">Human Hunter</button>
+        <div class="content">
+            <p>
+                <div id="HumanHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">Orc Hunter</button>
+        <div class="content">
+            <p>
+                <div id="OrcHunter"></div>
+            </p>
+        </div>
+        <button class="collapsible">Tigran Hunter</button>
+        <div class="content">
+            <p>
+                <div id="TigranHunter"></div>
+            </p>
+        </div>
+    </div>
+    <br><br>
+
     <br><br>
     <div id="TigranShredder"></div>
     <br><br>
@@ -55,6 +122,21 @@
     <div id="TigranSabretoothChariot"></div>
     <br><br>
     <div id="TigranSphinx"></div>
-</body>
 
-</html>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body></html>
