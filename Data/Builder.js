@@ -245,17 +245,19 @@ function showUnit(a) {
             prodcost.innerHTML = "Cost: " + jsonUnits.units[i].cost;
             if (jsonUnits.units[i].origin_building != "") {
                 origin_building = document.getElementById("originbuilding_" + a);
-                var aTag = document.createElement('a');
-                aTag.setAttribute('href', "/aow3db/Pages/Other/buildings.html#" + jsonUnits.units[i].origin_building);
-                aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_building;
-                origin_building.appendChild(aTag);
+                //  var aTag = document.createElement('a');
+                //aTag.setAttribute('href', "/aow3db/Pages/Other/buildings.html#" + jsonUnits.units[i].origin_building);
+                //aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_building;
+                origin_building.innerHTML = "Requires: " + jsonUnits.units[i].origin_building;
+                //origin_building.appendChild(aTag);
             }
             if (jsonUnits.units[i].origin_research != "") {
                 origin_research = document.getElementById("originresearch_" + a);
-                var aTag = document.createElement('a');
-                aTag.setAttribute('href', "DraconianHatchling.html");
-                aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_research;
-                origin_research.appendChild(aTag);
+                // var aTag = document.createElement('a');
+                //aTag.setAttribute('href', "DraconianHatchling.html");
+                //aTag.innerHTML = "Requires: " + jsonUnits.units[i].origin_research;
+                origin_research.innerHTML = "Requires: " + jsonUnits.units[i].origin_research;
+                //origin_research.appendChild(aTag);
             }
             levels = document.getElementById("levelups_" + a);
             levels.innerHTML = "<div style=\"background-color: rgba(30, 30, 40, 1); padding:10px; padding-bottom:5px; margin-bottom: 5 px;\"> Level Up: <x-medal_none> </x-medal_none> Recruit 0/" + jsonUnits.units[i].xp + " <x-xp></x-xp></div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_trooper> </x-medal_trooper> Trooper" + jsonUnits.units[i].level_trooper + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><p><x-medal_veteran> </x-medal_veteran> Veteran</p>" + jsonUnits.units[i].level_veteran + "</div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_expert> </x-medal_expert> Expert" + jsonUnits.units[i].level_expert + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><x-medal_elite> </x-medal_elite> Elite" + jsonUnits.units[i].level_elite + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;background-color: #23545B;\"><p><x-medal_champion> </x-medal_champion> Champion</p><li> +10 <x-hp> </x-hp> Hit Points</li>" + "</div>";
