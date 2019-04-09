@@ -580,6 +580,13 @@ x-blight_res {
     position: relative;
 }
 
+x-physical_res {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/physical_res.png);
+    position: relative;
+}
+
 x-fire {
     max-height: 20px;
     top: 5px;
@@ -598,6 +605,14 @@ x-frost_res {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/frost_res.png);
+    position: relative;
+
+}
+
+x-spirit_res {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/spirit_res.png);
     position: relative;
 
 }

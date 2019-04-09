@@ -72,7 +72,7 @@ function addUnitTypeIcon(a, b, c) {
 }
 
 function addAbilityslot(a, unique, damage, c) {
-    var abilityName, abilityIcon, abilityDescr, abilityDam, abilityRange = "";
+    var abilityName, abilityIcon, abilityDescr, abilityDam, abilityRange, abilityDamageFinal = "";
 
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
@@ -96,17 +96,20 @@ function addAbilityslot(a, unique, damage, c) {
             if (unique == "yes") {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
-            if (damage != "") {
-                abilityDam = damage;
+
+            if (abilityDam != "") {
+                abilityDamageFinal = abilityDam;
+            } else if (damage != undefined) {
+                abilityDamageFinal = damage;
             } else {
-                abilityDam = "";
+                abilityDamageFinal = "-";
             }
             tex.innerHTML = abilityName;
             var dam = document.createElement("DIV");
             dam.className = "ability_damage";
-            dam.innerHTML = abilityDam;
+            dam.innerHTML = abilityDamageFinal;
             spa.className = "tooltiptext";
-            spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDam + "</span>" + "</p>" +
+            spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDamageFinal + "</span>" + "</p>" +
                 abilityRange + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aow3db/Icons/Abilities/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
