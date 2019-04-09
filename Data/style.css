@@ -8,6 +8,13 @@ html {
 }
 
 
+h2 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 0px 0 0 0;
+
+}
 
 iframe {
 
@@ -152,8 +159,11 @@ a {
 }
 
 .collapsible {
-    background-color: #777;
+    background-color: rgba(0, 0, 0, 1);
     color: white;
+    border: 3px solid white;
+    border-color: rgba(255, 255, 200, 0.8);
+
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -165,7 +175,7 @@ a {
 
 .active,
 .collapsible:hover {
-    background-color: #555;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .collapsible:after {
@@ -185,7 +195,7 @@ a {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: black;
 }
 
 p {
