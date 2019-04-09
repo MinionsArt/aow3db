@@ -599,6 +599,15 @@ var jsonUnitAbilities = {
 
        },
         {
+            "slug": "hurl_net",
+            "name": "Hurl Net",
+            "description": "<p>Hurl Net Attempts to Ensnare target enemy in a net. Ensnared units cannot take actions for 2 turns. <li>Cooldown 3 <x-turn></x-turn></li>",
+            "damage": "11 <x-physical_def> </x-physical_def>",
+            "icon_name": "throw_net",
+            "range": "Short",
+
+       },
+        {
             "slug": "wing_beat",
             "name": "Wing Beat",
             "description": "<p>Wing Beat hits the frontal 3 enemies for normal melee damage, and has no retaliation. <li>Cooldown 1 <x-turn></x-turn></li>",
@@ -1859,6 +1868,16 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "plains_running",
             "range": "",
+
+
+       },
+        {
+            "slug": "invigorate",
+            "name": "Invigorate",
+            "description": "Restores all movement and action points of target Tigran unit",
+            "damage": "",
+            "icon_name": "plains_running",
+            "range": "Touch",
 
 
        },
