@@ -10564,6 +10564,92 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
     },
 //OTHER ARCHDRUID---------------------------------------------------------------------------------------------------OTHER ARCHDRUID-----------
         {
+            "hp": "45",
+            "name": "ancestral_spirits",
+            "string": "Ancestral Spirits",
+            "armor": "9",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "Combat Summon: 20 <x-casting></x-casting> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Call Ancestral Spirits",
+            "origin_building": "",
+            "location": "Units/ArchDruid/AncestralSpirits",
+            "description": "\''They saw us as easy prey, a halfling and a man with twigs in his hair. The orc horde surrounded us. They demanded our surrender. Then Raidek lifted his staff. Ghostlike figures appeared to defend us, hardly tangible, passing through a solid rock wall. The massive warriors cowered as spirit hosts drove them away. One pleaded to his grandfather, another cowered at the disapproving spirit of his grandmother. Later, I asked Raidek why a druid would summon the ancestral spirits of his attackers. He explained, 'We all carry spirits with us, pieces of ourselves. There's always one pricking the conscience, displeased with the direction of our lives. Like the vengeful spirit of nature, these willingly come when I call.''\" <br> <i>--Danger on the Dandelion Plains, by Ham the Wanderer</i>\"",
+            "image_link": 'ArchDruid/ancestral_spirits.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+20% <x-physical></x-physical> Protection</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+20% <x-physical></x-physical> Protection</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 4<x-spirit></x-spirit>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_spirit_breaking"
+        }, {
+                    "slug": "strong_will"
+                },
+
+                {
+                    "slug": "infantry"
+                },
+
+                {
+                    "slug": "shield"
+                },
+
+                {
+                    "slug": "wall_climbing"
+                },
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "incorporeal"
+                    },
+                {
+                    "slug": "pass_wall"
+                    }, {
+                    "slug": "physical_protection_60"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_100"
+                    },
+        ]
+
+    },
+        {
             "hp": "92",
             "name": "horned_god",
             "string": "Horned God",

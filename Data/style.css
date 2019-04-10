@@ -762,3 +762,94 @@ x-xp {
 
 
 }
+
+x-morale {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/happiness.png);
+    position: relative;
+
+
+}
+
+x-population {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/population.png);
+    position: relative;
+
+
+}
+
+x-undead_population {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/undead_pop.png);
+    position: relative;
+
+
+}
+
+x-casting_points {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/casting_points.png);
+    position: relative;
+
+
+}
+
+x-casting {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/casting_points.png);
+    position: relative;
+
+
+}
+
+
+x-knowledge {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/knowledge.png);
+    position: relative;
+
+
+}
+
+table {
+    width: 100%;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid #030405;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #3a4f60;
+    color: white;
+
+}
+
+table tr:nth-child(odd) {
+    background-color: #4d6980;
+    color: white;
+}
+
+table th {
+    background-color: black;
+    color: white;
+    border: 2px solid #ffffb2;
+}
