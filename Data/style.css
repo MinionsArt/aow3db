@@ -261,7 +261,7 @@ p {
     background-color: #19313d;
     color: white;
     width: 940px;
-
+    border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
