@@ -10751,5 +10751,314 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
         ]
 
     },
+
+//DREADNAUGHT---------------------------------------------------------------------------------------------------------------------------DREADNAUGHT---------------------------------
+        {
+            "hp": "25",
+            "name": "spy_drone",
+            "string": "Spy Drone",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>/Summoned: 9<x-mana></x-mana>",
+            "xp": "10",
+            "cost": "30 <x-casting></x-casting> 40 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Summon Spy Drone",
+            "origin_building": "",
+            "location": "Units/DreadNought/SpyDrone",
+            "description": "\''It looked like a mechanical fish swimming in the sky. It looked flimsy, and our archers could have easily dispatched it, but we ignored them--for what could they do compared to Emperor Leonus's war machines and mounted cavalry? This proved a serious tactical error, for each of these drones that enabled the Emperor to see our movements, also was equipped with a powerful explosive. He drove them into our city gates. The force of the explosion tore through my best defenders. That is how we lost the City of Evermont.''\" <br> <i>--Tactical Failures of the Elven Court, by Commandant Wincer Ludstar</i>\"",
+            "image_link": 'Dreadnought/spy_drone.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">True Sight<span class=\"tooltiptext2\" id=\"true_sight\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "explosive_death"
+        }, {
+                    "slug": "floating"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+    },
+        {
+            "hp": "60",
+            "name": "golem",
+            "string": "Golem",
+            "armor": "14",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Golem",
+            "origin_building": "Dreadnought's Foundry",
+            "location": "Units/DreadNought/Golem",
+            "description": "\'I climbed into the hatch and sealed the overhead latch. Locking my body into the harness, I activated the compact boilers and tapped the fuel gauge. The mana-cells glowed with energy. Fresh and ready for battle, I released the first steam valve and locked in the marionette-like motion activators. Every movement of my body caused the Golem to react in like manner. I stomped across the battlefield, and struck a rock giant in the chest. It grabbed me. I half expected the whole contraption to explode, but the Golem stood solid. I pushed back, grappling hand to hand with the creature! Imagine! Me! A simple engineer locked in combat with a legend!'\" <br> <i>--Golem Activation Test Report #1830, Abinadi Wishman, Test Engineer</i>\"",
+            "image_link": 'Dreadnought/golem.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li><div class =\"tooltip\">Guard Breaker<span class=\"tooltiptext2\" id=\"guard_breaker\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Defender<span class=\"tooltiptext2\" id=\"defender\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        }, {
+                    "slug": "reinforced"
+                },
+                {
+                    "slug": "armored"
+        }, {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "wall_crushing"
+        }, {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "shock_weakness_40"
+                    },
+        ]
+
+    },
+        {
+            "hp": "55",
+            "name": "party_robot_prototype",
+            "string": "Party Robot Prototype",
+            "armor": "13",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Golem",
+            "origin_building": "Dreadnought's Foundry",
+            "location": "Units/DreadNought/PartyRobotPrototype",
+            "description": "\'They were designed by my Great-Uncle Danforth to serve Nibbles and Dips. I suppose they may also function as terrifying engines of destruction, though why anyone would need something like that I'll never know...'\" <br> <i>--Clarissa Forget-Smythe</i>\"",
+            "image_link": 'Rest/party_robot.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li><div class =\"tooltip\">Guard Breaker<span class=\"tooltiptext2\" id=\"guard_breaker\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Fireworks<span class=\"tooltiptext2\" id=\"fireworks\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "nourishing_meal",
+                    "unique": "yes"
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        }, {
+                    "slug": "reinforced"
+                },
+                {
+                    "slug": "armored"
+        }, {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "wall_crushing"
+        }, {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "shock_weakness_40"
+                    },
+        ]
+
+    },
+        {
+            "hp": "60",
+            "name": "cannon",
+            "string": "Cannon",
+            "armor": "11",
+            "shield": "10",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "130 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Cannon",
+            "origin_building": "Dreadnought's Foundry",
+            "location": "Units/DreadNought/Cannon",
+            "description": "\'We kept the Cannons concealed at the highest point of the battlefield. I made sure to move my Ogres and Trolls into a protective ring around them. Nothing can withstand the blast, and they are easy to aim. The orcs manning the cannons had no difficulty blasting enemies from between their guardians. The beauty of a good cannon is in its destructive capacity. In a few volleys, we cleared the battlefield and blasted down the city gates. The High Elf city of Bellowine was mine.'\" <br> <i>--Infantry and Artillery, Lady Loki</i>\"",
+            "image_link": 'Dreadnought/cannon.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "fire_cannon",
+                    "damage": "30<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "reinforced"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "shock_weakness_20"
+                    },
+        ]
+
+    },
 ]
 }
