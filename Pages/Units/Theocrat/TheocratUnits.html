@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/aow3db/Icons/UI/icon.ico">
+    <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function loadheader() {
+            $("#header").load("/aow3db/Pages/header.html");
+
+
+            // $("#SpyDrone").load("/aow3db/Pages/Units/Theocrat/SpyDrone.html");
+
+
+        });
+    </script>
+
+    <title>AOW3 Database - Theocrat Units</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="unit_card">
+        <p style="background-color:black; font-size: 26px" class="unit_name">Theocrat</p>
+        <img class="unit_image" src="/aow3db/Icons/Passives/theocrat.png" style="position: relative; padding: 4px" width="100">
+        <img src="/aow3db/PreviewGifs/StrategicMap/theocrat.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
+
+        <p>Because theocrats tend not to wield many offensive powers, it is tempting to believe that territories ruled by theocrats are easy to conquer. History has proven this to be foolishness. <br>
+            Theocrats lead the masses by the heart. They heal, persuade, minister and convert. Their zealots are fiercely loyal, convinced to the core that any action they perform will earn them a greater reward in the afterlife. Theocrats bestow power upon their most faithful from two theological sources: the Mandate of Heaven or the terror of the Underworld.</p>
+        <hr>
+        <div style="clear: both"></div>
+        <p style="background-color:black; font-size: 26px" class="unit_name">Hero Traits</p>
+        <div style="float:left; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px">
+            <h2 style="text-align: center">All Theocrat Heroes start with:</h2>
+            <hr>
+
+            <li>+2 <x-resistance></x-resistance> Resistance
+            </li>
+
+            <li>
+                <div class="tooltip" style="color:aqua">Devout<span class="tooltiptext2" id="devout"></span></div>
+            </li>
+        </div>
+
+        <div style="clear: both"></div>
+        <br><br>
+        <p style="background-color:black; font-size: 26px" class="unit_name">City Buildings</p>
+        <a href="https://imgur.com/aurhSYc">Full Tech Tree Image</a><br><br>
+        <button class="collapsible">Theocrat City Buildings</button>
+        <div class="content">
+            <p>
+                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+   ;margin: 30px">
+                    <img class="unit_image" src="/aow3db/Icons/Buildings/theocrats_conclave.png" style="position: relative; padding: 4px" width="150">
+
+
+                    <p>
+                        <h2 style="float: left">Produce Theocrats' Conclave</h2>
+                        <br><br>
+                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                        </p>
+                        <div style="clear: both"></div>
+                        <hr>
+
+                        Allows the production of Martyrs, Crusaders, and Evangelists<br><br>
+                        <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
+                        <li>Celestial Chamber</li>
+                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                        <li>Racial Martyrs</li>
+                        <li>Racial Crusaders</li>
+                        <li>Racial Evangelists</li>
+                    </p>
+
+
+
+                </div>
+                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+   ;margin: 30px">
+                    <img class="unit_image" src="/aow3db/Icons/Buildings/celestial_chamber.png" style="position: relative; padding: 4px" width="150">
+
+
+                    <p>
+                        <h2 style="float: left">Produce Celestial Chamber</h2>
+                        <br><br>
+                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                        </p>
+                        <div style="clear: both"></div>
+                        <hr>
+
+
+                        This city generates an additional +100 <x-morale></x-morale> Happiness<br>
+                        Allows the production of Exalted
+                        <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
+                        <li>Holiest of Holies</li>
+                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                        <li>Racial Exalted</li>
+
+                    </p>
+
+
+
+                </div>
+                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+   ;margin: 30px">
+                    <img class="unit_image" src="/aow3db/Icons/Buildings/holiest_of_holies.png" style="position: relative; padding: 4px" width="150">
+
+
+                    <p>
+                        <h2 style="float: left">Produce Holiest of Holies</h2>
+                        <br><br>
+                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                        </p>
+                        <div style="clear: both"></div>
+                        <hr>
+
+                        City gains +100 <x-mana></x-mana> Mana Capacity<br>
+                        Allows the production of Shrines of Smiting
+                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                        <li>Shrine of Smiting</li>
+                    </p>
+
+
+
+                </div>
+            </p>
+        </div>
+        <br><br>
+        <p style="background-color:black; font-size: 26px" class="unit_name">Hero Level Upgrades</p>
+        <button class="collapsible">Theocrat Hero Upgrades - Level 1</button>
+        <div class="content">
+            <p>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Skill</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #7cd200;color:black">Divine Channeling I</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #f37735;color:black">Cure Disease</span><br>Hero gains the <a class="tooltip" href="#">- Cure Disease<span>Dispells all Blight debuffs on target friendy unit</span>
+                            </a> ability</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #f37735;color:black">Undead Slayer</span><br>Hero gains the <a class="tooltip" href="#">Undead Slayer<span>Deals an additional +3 Physical Damage against Undead</span></a> ability</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #f37735;color:black">Bestow Iron Heart</span><br>Hero gains the <a class="tooltip" href="#">- Bestow Iron Heart<span> Restores 15 Hitpoints to target friendly unit and gives +1 Defense, +1 Resistance and Strong Will until end of combat. Automatically heals 15 Hitpoints on the Strategic map among all valid units in the stack.<br> - Can only be used once per battle</span>
+                            </a> ability</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #bf7fbf;color:black">Healing Aura</span><br>Army Stack heals an additional 6 <a class="tooltip" href="#">
+                                <figure data-orig-height="20" data-orig-width="20" data-orig-src="https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png"><img src="https://66.media.tumblr.com/0c9c4a3ea20d13393420eb16e3e58740/tumblr_inline_pjf2mdmzlm1qkvi0e_540.png" alt="image" data-orig-height="20" data-orig-width="20" data-orig-src="https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png"></figure><span> Hitpoints</span>
+                            </a> per turn. Machine and Undead are not affected
+                        </td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span style="background-color: #bf7fbf;color:black">Chaplain</span><br>Army Stack gains +200 <a class="tooltip" href="#"> <img src="https://66.media.tumblr.com/fc1c52e8b6a15dc0843affd4a35d7bcb/tumblr_inline_nnqvhztdtA1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Morale</span></a> Undead, Machine, and Elemetanl are not affected
+                        </td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #bf7fbf;color:black">Aura of Resistance</span><br>Army Stack gains +1 <a class="tooltip" href="#"> <img src="https://66.media.tumblr.com/2d9b846a27c8102f5fc556c6257b38ba/tumblr_inline_nmg0hq7g4E1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span> Resistence</span></a>Resistance
+                        </td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #74a8e9;color:black">Divine Protection</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#divineprotection">Divine Protection</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #74a8e9;color:black">Instant Wrath</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#instantwrath">Instant Wrath</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #74a8e9;color:black">Slayer's Doubt</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#slayersdoubt">Slayer's Doubt</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #74a8e9;color:black">Smite</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#smite">Smite</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+
+        <button class="collapsible">Theocrat Hero Upgrades - Level 3</button>
+        <div class="content">
+            <p>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Skill</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span style="background-color: #7cd200;color:black">Divine Channeling II</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span style="background-color: #f37735;color:black">Touch of Faith</span><br>Hero gains the <a class="tooltip" href="#"> - Touch of Faith <span> Bestows + 3 Resistance and + 400 Morale to target friendly unit. Undead cannot be affected<br> - Can only be used once per battle</span>
+                            </a>
+                            ability</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span style="background-color: #f37735;color:black">Turn Undead</span><br>Hero gains the <a class="tooltip" href="#"> - Turn Undead <span> Attempts to Panick target Undead unit. Panicked units don't obey orders and attempt to flee for 2 turns</span>
+                            </a>
+                            ability</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span style="background-color: #f37735;color:black">Strong Will</span><br>Hero gains <a class="tooltip" href="#">Strong Will<span>Unit is immune to mind control effects and has 100% Spirit Protection</span></a> ability
+                        </td>
+
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><span style="background-color: #bf7fbf;color:black">Sacred Arms</span><br>Army Stack gains +1 <img src="https://66.media.tumblr.com/4f63a55c6f55e4a0a17cc031d09531c3/tumblr_inline_nmraawf42a1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> strength
+                        </td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+
+        <button class="collapsible">Theocrat Hero Upgrades - Level 5</button>
+        <div class="content">
+            <p>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Skill</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span style="background-color: #7cd200;color:black">Divine Channeling III</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                        <td>7</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span style="background-color: #f37735;color:black">Break Control</span><br>Hero gains <a class="tooltip" href="#">- Break Control <span> Removes all Spirit debuffs</span>
+                            </a> ability
+                        </td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span style="background-color: #f37735;color:black">Monster Slayer</span><br>Hero gains<a class="tooltip" href="#">Monster Slayer<span>Deals an additional +3 Physical Damage against Monster</span></a> ability
+                        </td>
+
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span style="background-color: #74a8e9;color:black">Mighty Meek</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#mightymeek">Mighty Meek</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span style="background-color: #74a8e9;color:black">Purifying Burst</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#purifyingburst">Purifying Burst</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+
+        <button class="collapsible">Theocrat Hero Upgrades - Level 7</button>
+        <div class="content">
+            <p>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Skill</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #7cd200;color:black">Divine Channeling IV</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #f37735;color:black">Absorb Pain</span><br>Hero gains <a class="tooltip" href="#"> - Absorb Pain <span> This unitlinks itself to target friendly unit. Linked unit takes 35% less damage and remaining damage is dealt to this unit instead. Ability cannot target Machines or other units with Absorb Pain<br>- Can only used once per battle </span>
+                            </a> ability
+                        </td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #f37735;color:black">Healing</span><br>Hero gains the <a class="tooltip" href="#">- Healing <span> Restores 20 Hitpoints to target friendly unit. Automatically restores 20 Hitpoints to all viable untis in the stack while on the Strategic map. Elemental, Undead an Machine units not affected.<br> Cooldown 2 turns</span>
+                            </a> ability</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #f37735;color:black">Convert</span><br>Hero gains <a class="tooltip" href="#"> - Convert<span> Attempts to take control of target unit<br>- Range Short<br>- Can only be used once per battle</span>
+                            </a> ability
+                        </td>
+
+
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #74a8e9;color:black">Blessing of Health</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#blessingofhealth">Blessing of Health</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #74a8e9;color:black">Rebirth</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#rebirth">Rebirth</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #bf7fbf;color:black">Holy Champions</span><br>Army Stack gains <a class="tooltip" href="#"> Holy Champion<span> Unit deals an additional 5 Fire damage against Undead, Monster and Dedicated to Evil units</span> </a>
+                        </td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+        <button class="collapsible">Theocrat Hero Upgrades - Level 9</button>
+        <div class="content">
+            <p>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Skill</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><span style="background-color: #7cd200;color:black">Divine Channeling V</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span style="background-color: #bf7fbf;color:black">Vow of Poverty</span><br>Army Stack requires -50% Gold upkeep
+                        </td>
+                        <td>6</td>
+                    </tr>
+                    <tr></tr>
+                </table>
+            </p>
+        </div>
+        <button class="collapsible">Theocrat Hero Upgrades - Level 11-13</button>
+        <div class="content">
+            <p>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Skill</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><span style="background-color: #7cd200;color:black">Divine Channeling VI</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><span style="background-color: #74a8e9;color:black">Holy War</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillstheocrat#holywar">Holy War</a> Combat Spell
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><span style="background-color: #bf7fbf;color:black">Divine Justicars</span><br>Army Stack gains <a class="tooltip" href="#"> Resurgence<span>When this unit dies in battle, it comes back after combat if its owner is victorious. Resurged units come back with 35% of its max Hitpoints</span></a>
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><span style="background-color: #7cd200;color:black">Divine Channeling VII</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+
+    </div>
+
+    <br><br>
+    <div id="SpyDrone"></div>
+    <br><br>
+
+    <div class="unit_card">
+
+
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Hunters</p>
+        <div style="margin-left: -15px">
+            <button class="collapsible">Draconian Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="DraconianHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dwarf Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="DwarfHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Frostling Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="FrostlingHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Goblin Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="GoblinHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Halfling Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="HalflingHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">High Elf Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="HighElfHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Human Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="HumanHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Orc Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="OrcHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Tigran Hunter</button>
+            <div class="content">
+                <p>
+                    <div id="TigranHunter"></div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="unit_card">
+
+
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Eldritch Animal</p>
+        <div style="margin-left: -15px">
+            Units summoned with the Summon Eldritch Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait<br><br>
+            <button class="collapsible">Bleak Warg</button>
+            <div class="content">
+                <p>
+                    <div id="BleakWarg"></div>
+                </p>
+            </div>
+            <button class="collapsible">Blight Tusk Boar</button>
+            <div class="content">
+                <p>
+                    <div id="BlightTuskBoar"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dire Panther</button>
+            <div class="content">
+                <p>
+                    <div id="DirePanther"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dire Bear</button>
+            <div class="content">
+                <p>
+                    <div id="DireBear"></div>
+                </p>
+            </div>
+            <button class="collapsible">Mammoth</button>
+            <div class="content">
+                <p>
+                    <div id="Mammoth"></div>
+                </p>
+            </div>
+            <button class="collapsible">Polar Bear</button>
+            <div class="content">
+                <p>
+                    <div id="PolarBear"></div>
+                </p>
+            </div>
+            <button class="collapsible">Gryphon</button>
+            <div class="content">
+                <p>
+                    <div id="Gryphon"></div>
+                </p>
+            </div>
+            <button class="collapsible">Elephant</button>
+            <div class="content">
+                <p>
+                    <div id="Elephant"></div>
+                </p>
+            </div>
+
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <br><br>
+    <div id="AncestralSpirits"></div>
+
+
+
+    <br><br>
+    <div class="unit_card">
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Shamans</p>
+        <div style="margin-left: -15px">
+            <button class="collapsible">Draconian Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="DraconianShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dwarf Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="DwarfShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Frostling Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="FrostlingShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Goblin Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="GoblinShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Halfling Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="HalflingShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">High Elf Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="HighElfShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Human Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="HumanShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Orc Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="OrcShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Tigran Shaman</button>
+            <div class="content">
+                <p>
+                    <div id="TigranShaman"></div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="unit_card">
+
+
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Gargentuan Animal</p>
+        <div style="margin-left: -15px">
+            Units summoned with the Summon Gargentuan Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait<br><br>
+            <button class="collapsible">Cockatrice</button>
+            <div class="content">
+                <p>
+                    <div id="Cockatrice"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dread Spider Queen</button>
+            <div class="content">
+                <p>
+                    <div id="DreadSpiderQueen"></div>
+                </p>
+            </div>
+            <button class="collapsible">Hunter Spider Queen</button>
+            <div class="content">
+                <p>
+                    <div id="HunterSpiderQueen"></div>
+                </p>
+            </div>
+            <button class="collapsible">Mature Reed Serpent</button>
+            <div class="content">
+                <p>
+                    <div id="MatureReedSerpent"></div>
+                </p>
+            </div>
+            <button class="collapsible">Mature Shock Serpent</button>
+            <div class="content">
+                <p>
+                    <div id="MatureShockSerpent"></div>
+                </p>
+            </div>
+            <button class="collapsible">King Reed Serpent</button>
+            <div class="content">
+                <p>
+                    <div id="KingReedSerpent"></div>
+                </p>
+            </div>
+            <button class="collapsible">King Shock Serpent</button>
+            <div class="content">
+                <p>
+                    <div id="KingShockSerpent"></div>
+                </p>
+            </div>
+
+
+
+            </p>
+        </div>
+    </div>
+
+    <br><br>
+    <div id="HornedGod"></div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body></html>

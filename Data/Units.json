@@ -10996,7 +10996,7 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
             "cost": "130 <x-gold></x-gold> 20 <x-mana></x-mana>",
             "movement_type": "mp",
             "origin_research": "Produce Cannon",
-            "origin_building": "Dreadnought's Foundry",
+            "origin_building": "Blast Furnace",
             "location": "Units/DreadNought/Cannon",
             "description": "\'We kept the Cannons concealed at the highest point of the battlefield. I made sure to move my Ogres and Trolls into a protective ring around them. Nothing can withstand the blast, and they are easy to aim. The orcs manning the cannons had no difficulty blasting enemies from between their guardians. The beauty of a good cannon is in its destructive capacity. In a few volleys, we cleared the battlefield and blasted down the city gates. The High Elf city of Bellowine was mine.'\" <br> <i>--Infantry and Artillery, Lady Loki</i>\"",
             "image_link": 'Dreadnought/cannon.gif',
@@ -11056,6 +11056,346 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
             "resistances": [
                 {
                     "slug": "shock_weakness_20"
+                    },
+        ]
+
+    },
+        {
+            "hp": "60",
+            "name": "flame_tank",
+            "string": "Flame Tank",
+            "armor": "12",
+            "shield": "10",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "130 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Flame Tank",
+            "origin_building": "Blast Furnace",
+            "location": "Units/DreadNought/FlameTank",
+            "description": "\'Set the town on fire, for just a few easy payments, with the Commonwealth's latest in Flame Throwing technology! Improving this classic invention, what was once a highly volatile weapon is now an elegant vehicle capable of drenching your enemies in flaming hot death, without the hassle of setting other flame throwers ablaze. With a secret fire-proof coating, a few operators can drive a whole fleet of Flame Tanks!'\" <br> <i>--Tech-Inventors Catalog, Londo Mouler, Dreadnought Equipment Salesman</i>\"",
+            "image_link": 'Dreadnought/flame_tank.gif',
+            "level_trooper": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "flame_throwing",
+                    "damage": "25<x-fire> </x-fire>",
+
+        }, {
+                    "slug": "ram",
+                    "damage": "16<x-physical> </x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "explosive_death"
+                },
+                {
+                    "slug": "armored"
+                },
+                {
+                    "slug": "reinforced"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+                {
+                    "slug": "shock_weakness_20"
+                    },
+        ]
+
+    },
+        {
+            "hp": "60",
+            "name": "frost_tank",
+            "string": "Frost Tank",
+            "armor": "12",
+            "shield": "10",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "130 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Flame Tank",
+            "origin_building": "Blast Furnace",
+            "location": "Units/DreadNought/FrostTank",
+            "description": "\''The Frost Tank is a devilish modification that has been made to the Flame Tank by the secretive Frostlings. The recipe for the freezing mixture is known solely to them and all attempts at replicating it by other have thus far failed. But I, Lord Mayharp III, am on the verge of discovering the formula. Tomorrow I will test the prototype. Even though I am a modest man, it seems fate wants me to become the most famous scholar in the lands!''\" <br> <i>--the frozen diary of Lord Mayharp III, last entry</i>\"",
+            "image_link": 'Dreadnought/frost_tank.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Freezing Cold<span class=\"tooltiptext2\" id=\"inflict_freezing_cold\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "frost_throwing",
+                    "damage": "25<x-frost> </x-frost>",
+
+        }, {
+                    "slug": "ram",
+                    "damage": "16<x-physical> </x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "explosive_death"
+                },
+                {
+                    "slug": "armored"
+                },
+                {
+                    "slug": "reinforced"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "shock_weakness_20"
+                    },
+        ]
+
+    },
+        {
+            "hp": "110",
+            "name": "juggernaut",
+            "string": "Juggernaut",
+            "armor": "15",
+            "shield": "11",
+            "mp": "28",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "320 <x-gold></x-gold> 80 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Juggernaut",
+            "origin_building": "Industrial Plant",
+            "location": "Units/DreadNought/Juggernaut",
+            "description": "\''The earth rumbled. My teeth chattered, forced together by the rapid vibrations beneath me. The Juggernaut lumbered forward, crushing everything in its path. The thing was massive--a fortress on crushing grinding wheels that stopped for nothing, not even the walls of a city. The thing was lined with cannons and blasted its way through the enemy lines. The troops that rode atop the massive contraption could strike us with impunity, and in the end we had no choice but to surrender of flee. Who can stand against the Commonwealth now?''\" <br> <i>--The Fall of Everwind City, Pinchleaf Farseer, Elf Prisoner</i>\"",
+            "image_link": 'Dreadnought/juggernaut.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+<li> <div class =\"tooltip\">Free Movement<span class=\"tooltiptext2\" id=\"free_movement\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "fire_mortar",
+                    "damage": "18<x-fire> </x-fire>",
+
+        }, {
+                    "slug": "ram",
+                    "damage": "18<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "fire_broadside",
+                    "damage": "25<x-physical> </x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "wall_crushing"
+                },
+                {
+                    "slug": "treecrusher"
+                },
+                {
+                    "slug": "reinforced"
+                },
+                {
+                    "slug": "armored"
+                },
+                {
+                    "slug": "forestry"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+
+                {
+                    "slug": "shock_weakness_40"
+                    },
+        ]
+
+    },
+        {
+            "hp": "90",
+            "name": "ironclad_warship",
+            "string": "Ironclad Warship",
+            "armor": "15",
+            "shield": "12",
+            "mp": "40",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "150 <x-gold></x-gold> 80 <x-mana></x-mana>",
+            "movement_type": "seafaring",
+            "origin_research": "Produce Ironclad Warship",
+            "origin_building": "Harbor",
+            "location": "Units/DreadNought/IroncladWarship",
+            "description": "\'The Emperor's warship cut through the rebellious sea-faring like the blade of a plow harrows the rich earth. The armored steel ship deflected every flaming ballista javelin. The ship's cannons punched splintery holes in the pirate ships that were thirstely swallowed by the sea. Men fled in every direction, abandoning their ships whenever the Emperor's vessel focussed its wrath towards them. Soon nothing remained of the rebellion but a fog of smoke, a sea of broken timbers, and a single smoking island of churning steel.'\" <br> <i>--The Battle on Brick Sea, by Grig Cantlebottom, Imperial Poet</i>\"",
+            "image_link": 'Dreadnought/ironclad_warship.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "fire_mortar",
+                    "damage": "18<x-fire> </x-fire>",
+
+        }, {
+                    "slug": "ram",
+                    "damage": "18<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "fire_broadside",
+                    "damage": "25<x-physical> </x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "seafaring"
+                },
+                {
+                    "slug": "boat"
+                },
+                {
+                    "slug": "reinforced"
+                },
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+
+                {
+                    "slug": "fire_protection_40"
+                    }, {
+                    "slug": "shock_weakness_40"
                     },
         ]
 
