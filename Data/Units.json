@@ -13387,5 +13387,530 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
         ]
 
                 },
-]
+
+//REANIMATOR----------------------------------------------------------------------------------------------------REANIMATOR-----------------
+        {
+            "hp": "40",
+            "name": "draconian_reanimator",
+            "string": "Draconian Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/DraconianReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/draconian_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> "
+        },
+                {
+                    "slug": "bane_fire",
+                    "damage": "3 <x-spirit></x-spirit>3 <x-blight></x-blight> 3<x-fire></x-fire>",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_20"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+},
+        {
+            "hp": "40",
+            "name": "dwarf_reanimator",
+            "string": "Dwarf Reanimator",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "99 <x-gold></x-gold> 11<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/DwarfReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/dwarf_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> "
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "4 <x-blight></x-blight> 4<x-frost></x-frost>",
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "armored",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+},
+        {
+            "hp": "40",
+            "name": "frostling_reanimator",
+            "string": "Frostling Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "95 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/FrostlingReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/frostling_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> "
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "4 <x-blight></x-blight> 4<x-frost></x-frost>",
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "inflict_chilling",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_60"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+},
+        {
+            "hp": "35",
+            "name": "goblin_reanimator",
+            "string": "Goblin Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "95 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/GoblinReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/goblin_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> "
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "6 <x-blight></x-blight> 4<x-frost></x-frost>",
+                    "unique": "yes",
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_80"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+},
+        {
+            "hp": "40",
+            "name": "halfling_reanimator",
+            "string": "Halfling Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/HalflingReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/halfling_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> "
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "4 <x-blight></x-blight> 4<x-frost></x-frost>",
+
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "memories_of_joy",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+                },
+            ]
 }
