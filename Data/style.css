@@ -587,6 +587,14 @@ x-physical_res {
     position: relative;
 }
 
+x-physical_def {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/physical_res.png);
+    position: relative;
+}
+
+
 x-fire {
     max-height: 20px;
     top: 5px;

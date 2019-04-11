@@ -11400,5 +11400,1992 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
         ]
 
     },
+//ENGINEERS-=----------------------------------------------------------------------------------------ENGINEERS--------------------------
+        {
+            "hp": "32",
+            "name": "draconian_engineer",
+            "string": "Draconian Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/DraconianEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/draconian_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_immolation",
+                    "unique": "yes"
+        }, {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_60"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "32",
+            "name": "dwarf_engineer",
+            "string": "Dwarf Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "83 <x-gold></x-gold> 11<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/DwarfEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/dwarf_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "projectile_resistance",
+                    "unique": "yes"
+        }, {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+}, {
+            "hp": "32",
+            "name": "frostling_engineer",
+            "string": "Frostling Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/FrostlingEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/frostling_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_20"
+                    },
+        ]
+
+                },
+        {
+            "hp": "27",
+            "name": "goblin_engineer",
+            "string": "Goblin Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/GoblinEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/goblin_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "6 <x-physical></x-physical> 5<x-blight></x-blight>6<x-fire> </x-fire>",
+                    "unique": "yes",
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "2 <x-physical></x-physical> 5<x-blight></x-blight>2 <x-fire> </x-fire>",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "rapid_reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_noxious_vulnerability",
+                    "unique": "yes",
+        }, {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+                },
+        {
+            "hp": "32",
+            "name": "halfling_engineer",
+            "string": "Halfling Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/HalflingEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/halfling_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+                },
+        {
+            "hp": "32",
+            "name": "high_elf_engineer",
+            "string": "High Elf Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/HighElfEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/high_elf_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+                },
+        {
+            "hp": "32",
+            "name": "human_engineer",
+            "string": "Human Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/HumanEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/human_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        }, {
+                    "slug": "throw_net",
+                    "unique": "yes",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+                },
+        {
+            "hp": "32",
+            "name": "orc_engineer",
+            "string": "Orc Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "75 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/OrcEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/orc_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "razor_projectiles",
+                    "unique": "yes",
+
+        },
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+                },
+        {
+            "hp": "32",
+            "name": "tigran_engineer",
+            "string": "Tigran Engineer",
+            "armor": "10",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/TigranEngineer",
+            "description": "\'This man was nothing like Leonus. He was an Engineer, and though very gifted with machines, completely oblivious to personal hygiene and incapable of normal conversation. He droned on about pulley ratios and how to improve siege engines. Naturally, I thought the man mad, but when we reached the battlefield, he fixed a damaged landship that kept us both alive. With just a few well-placed taps of his wrench, he located a weak point in the city's wall and broke a hole so the troops could advance unobstructed. I see now why our leader favors Engineers.'\" <br> <i>--Triumph of an Emperor, Hannah Azenat, Biographer</i>\"",
+            "image_link": 'Dreadnought/tigran_engineer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Emergency Repair<span class=\"tooltiptext2\" id=\"emergency_repair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_blunderbuss",
+                    "damage": "8 <x-physical></x-physical>8 <x-fire> </x-fire>"
+        }, {
+                    "slug": "flash_bang",
+                    "damage": "4 <x-physical></x-physical>4 <x-fire> </x-fire>"
+        },
+                {
+                    "slug": "rapid_reload",
+
+        }, {
+                    "slug": "sprint",
+                    "unique": "yes",
+
+        },
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "irregular"
+                }, {
+                    "slug": "maintenance"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+                },
+//MUSKETEER---------------------------------------------------------------------------------------------------------------MUSKETEER----------
+        {
+            "hp": "45",
+            "name": "draconian_musketeer",
+            "string": "Draconian Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/DraconianMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/draconian_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "25 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_60"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "dwarf_musketeer",
+            "string": "Dwarf Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "88 <x-gold></x-gold> 22<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/DwarfMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/dwarf_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "25 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+        {
+            "hp": "45",
+            "name": "frostling_musketeer",
+            "string": "Frostling Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/FrostlingMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/frostling_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "25 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "40",
+            "name": "goblin_musketeer",
+            "string": "Goblin Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/GoblinMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/goblin_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "25 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_60"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "halfling_musketeer",
+            "string": "Halfling Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/HalflingMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/halfling_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "26 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "high_elf_musketeer",
+            "string": "High Elf Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "85 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/HighElfMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/high_elf_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "26 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        }, {
+                    "slug": "forest_concealment",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "human_musketeer",
+            "string": "Human Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/HumanMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/human_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "26 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "orc_musketeer",
+            "string": "Orc Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/OrcMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/orc_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "24 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+}, {
+            "hp": "45",
+            "name": "tigran_musketeer",
+            "string": "Tigran Musketeer",
+            "armor": "11",
+            "shield": "9",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Engineer",
+            "origin_building": "Dreadnoughts' Foundry",
+            "location": "Units/Dreadnought/OrcMusketeer",
+            "description": "\'The Musketeer leered at the horde before lifting the long iron tube to his shoulder. He loosed a blast into the enemy berserkers. Ducking behind the cover of a tree, he prepared a second shot. With each shot, he downed another man with such range and accuracy that by the time we engaged the enemy, most were wounded. We kept them away from him, which wasn't to difficult, because Musketeers can run quite fast. Within a few moments, we were the last ones standing on the battlefield. Now for every battle I hope we have musketeers in my company.'\" <br> <i>--Proof of Insurance, Warden Raworty</i>\"",
+            "image_link": 'Dreadnought/tigran_musketeer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fphysicalire> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Armor Piercing<span class=\"tooltiptext2\" id=\"armor_piercing\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_musket",
+                    "damage": "24 <x-physical></x-physical>"
+        },
+                {
+                    "slug": "reload",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "armored"
+        },
+                {
+                    "slug": "archer"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+//NECROMANCER--------------------------------------------------------------------------------------------------NECROMANCER--------------
+        {
+            "hp": "32",
+            "name": "cadaver",
+            "string": "Cadaver",
+            "armor": "9",
+            "shield": "9",
+            "mp": "28",
+            "tier": "I - 4 <x-mana></x-mana>>",
+            "xp": "10",
+            "cost": "45 <x-gold></x-gold>  ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Necromancer/Cadaver",
+            "description": "\'Bilkin Butterbum took Lutinda Loo to an abandoned cemetery, to act brave while she shrieked. Lutinda screamed when they discovered the mangled corpse. Lutinda screamed as the corpse animated, impaling Bilkin with jagged finger bones. Lutinda screamed as the creepy corpse consumed Bilkins and his body became part of what killed him. She screamed as the Cadaver advanced. She screamed as she fled and it decayed. Boys, if you bring your girl to a cemetery to hear her scream, just be sure it isn't actually infested with undead.'\" <br> <i>--Advice to Young Lovers, by Godwin the Seducer</i>\"",
+            "image_link": 'Necromancer/cadaver.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Resurgence<span class=\"tooltiptext2\" id=\"resurgence\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 3<x-blight></x-blight> "
+        },
+                {
+                    "slug": "offering_of_bone",
+
+        }, {
+                    "slug": "devour_corpse",
+
+        },
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "cave_crawling"
+        },
+                {
+                    "slug": "urban_concealment"
+                }, {
+                    "slug": "blight_conealment"
+                },
+                {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing"
+                }, {
+                    "slug": "projectile_resistance"
+                },
+                {
+                    "slug": "decaying"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+
+                },
+        ]
+
+                },
+        {
+            "hp": "16",
+            "name": "lost_soul",
+            "string": "Lost Soul",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold> /10 <x-mana></x-mana>>",
+            "xp": "10",
+            "cost": "50 <x-gold></x-gold>/ 50 <x-casting></x-casting> ",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Necromancer/LostSoul",
+            "description": "\'The swamp rang with wailing remorse from dead things. The Lost Soul hovered over the bog. I, priestess of the Holy Arm, approached it. 'Help me!' it cried. I tried to calm it, but the malevolent spirit lashed out with rage. The entity was little more than raw emotions. My attempts to strike its incorporeal form left me feeling despair. I tried to banish it. Even when it appeared to dissipate by Holy power; after a few minutes, it reappeared, tormenting us with its tireless weeping. Slowly, it drained our will to survive.'\" <br> <i>--Beyond Redemption, by Sister Hannah Perkins</i>\"",
+            "image_link": 'Necromancer/lost_soul.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Shadow Step<span class=\"tooltiptext2\" id=\"shadow_step\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "3<x-frost> </x-frost> 3<x-spirit></x-spirit> "
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "undying"
+                }, {
+                    "slug": "incorporeal"
+                },
+                {
+                    "slug": "exploit_despair"
+                }, {
+                    "slug": "floating"
+                },
+                {
+                    "slug": "blight_concealment"
+                }, {
+                    "slug": "pass_wall"
+                },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "wall_climbing"
+                },
+                {
+                    "slug": "floating"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+                ],
+            "resistances": [
+
+                {
+                    "slug": "physical_protection_60"
+                    },
+
+        ]
+
+                },
+        {
+            "hp": "40",
+            "name": "banshee",
+            "string": "Banshee",
+            "armor": "9",
+            "shield": "10",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold> /12 <x-mana></x-mana>>",
+            "xp": "20",
+            "cost": "120 <x-gold></x-gold> 20<x-mana></x-mana>/ 90 <x-casting></x-casting> ",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Necromancer/Banshee",
+            "description": "\'Only the most sensitive can hear it without help from the Banshee: That sweet sickly cry of life leaving the body, surrendering to despair. I raise them, the Banshees, to proselytize the eventuality of their futile flailing life - A premonition of that moment when they embrace my obsession. Despair is inevitable. Mortal life is an illusion. Death is certainty. Fly my howling messengers. Herald my revelation. Abandon all hope. Only fools deny the embrace of frigid fetid death at the hand of my Banshee children.'\" <br> <i>--Shadow Puppets, by Ambule Grimber, Necromancer</i>\"",
+            "image_link": 'Necromancer/banshee.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Frostbite<span class=\"tooltiptext2\" id=\"inflict_frostbite\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+ <li> <div class = \"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class =\"tooltip\">Inflict Spirit Breaking<span class=\"tooltiptext2\" id=\"inflict_spirit_breaking\"></span></div></li>\
+<li> <div class =\"tooltip\">Cause Fear<span class=\"tooltiptext2\" id=\"cause_fear\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "4<x-frost> </x-frost> 8<x-spirit></x-spirit> "
+        }, {
+                    "slug": "phase",
+
+        }, {
+                    "slug": "wail_of_despair",
+
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "despair_strike"
+                }, {
+                    "slug": "incorporeal"
+                },
+                {
+                    "slug": "exploit_despair"
+                },
+                {
+                    "slug": "pass_wall"
+                },
+                {
+                    "slug": "monster"
+                },
+                {
+                    "slug": "floating"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+                ],
+            "resistances": [
+
+                {
+                    "slug": "physical_protection_60"
+                    },
+
+        ]
+
+                },
+
+        {
+            "hp": "70",
+            "name": "bone_collector",
+            "string": "Bone Collector",
+            "armor": "11",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "180 <x-gold></x-gold>  ",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Burial Grounds",
+            "location": "Units/Necromancer/BoneCollector",
+            "description": "\'It crawled out of a nearby graveyard. This construct of bone and dead things tore up the earth to hoard the bones of the fallen. The Bone Collector scuttled onto our battlefield, drawn to the dying. Trundling over all obstacles, taking no sides, it gathered both elf and orc corpses. The jumbled mountain bones grew in strength and power. I had no choice but to order my orc battalions to attack it. Remarkably, the elves did the same. Our archers did little - for how effective is an arrow against a pile of bones?'\" <br> <i>--Battlefield Horrors, by Lady Loki</i>\"",
+            "image_link": 'Necromancer/bone_collector.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+6<x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Fearsome<span class=\"tooltiptext2\" id=\"fearsome\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "15<x-physical> </x-physical>"
+        }, {
+                    "slug": "collect_bones",
+
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "demolisher"
+                }, {
+                    "slug": "demolisher"
+                }, {
+                    "slug": "wall_crushing"
+                },
+                {
+                    "slug": "killing_momentum"
+                }, {
+                    "slug": "reinforced"
+                },
+                {
+                    "slug": "tunneling"
+                },
+                {
+                    "slug": "monster"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+                ],
+            "resistances": [
+
+                {
+
+                    },
+
+        ]
+
+                },
+
+        {
+            "hp": "66",
+            "name": "dread_reaper",
+            "string": "Dread Reaper",
+            "armor": "12",
+            "shield": "13",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold> /36 <x-mana></x-mana>>",
+            "xp": "40",
+            "cost": "260 <x-gold></x-gold> 60<x-mana></x-mana>/ 260 <x-casting></x-casting> ",
+            "movement_type": "flying",
+            "origin_research": "Summon Dread Reaper",
+            "origin_building": "",
+            "location": "Units/Necromancer/DreadReaper",
+            "description": "\We thought to trap Ambule Grimber in the Blighted hills of Shadomont. A foolish assumption, now that I reflect, for the mad Necromancer had great power in this place. Before we could assemble the whole force for a final assault, Ambule summoned the embodiment of death. All life withered in the dread Reaper's wake. Men fell like puppets with severed strings. It passed through our makeshift walls as easily as it did our ineffective swords. What damage we did to it healed as it struck us, proving without question that no one cheats death'\" <br> <i>--Casualties, by Sir Rod Dundley</i>\"",
+            "image_link": 'Necromancer/dread_reaper.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+ <li> <div class = \"tooltip\>Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class =\"tooltip\">Necromantic Aura<span class=\"tooltiptext2\" id=\"necromantic_aura\"></span></div></li>\
+<li> <div class =\"tooltip\">Path of Decay<span class=\"tooltiptext2\" id=\"path_of_decay\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-frost> </x-frost> 8<x-spirit></x-spirit> 8<x-blight></x-blight> "
+        }, {
+                    "slug": "invoke_death",
+
+        },
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "fearsome"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "life_drain"
+                }, {
+                    "slug": "incorporeal"
+                },
+                {
+                    "slug": "energy_drain"
+                }, {
+                    "slug": "void_implosion"
+                },
+                {
+                    "slug": "pass_wall"
+                },
+                {
+                    "slug": "monster"
+                },
+                {
+                    "slug": "flying"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+                ],
+            "resistances": [
+
+                {
+                    "slug": "physical_protection_60"
+                    },
+
+        ]
+
+                },
 ]
 }

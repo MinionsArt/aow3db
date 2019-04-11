@@ -1966,7 +1966,7 @@ var jsonUnitAbilities = {
             "name": "Fearsome",
             "description": "Every time an enemy unit performs an attack against this unit it has a chance to become Panicked. Panicked units don’t obey orders and attempt to flee for 2 turns.",
             "damage": "9 <x-spirit_res></x-spirit_res>",
-            "icon_name": "fearsome",
+            "icon_name": "cause_fear",
             "range": "",
 
 
