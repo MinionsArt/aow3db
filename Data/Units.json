@@ -13813,7 +13813,7 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
             "mp": "28",
             "tier": "II - 8 <x-gold></x-gold>",
             "xp": "20",
-            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "cost": "95 <x-gold></x-gold> 10<x-mana></x-mana> ",
             "movement_type": "walking",
             "origin_research": "Produce Reanimator",
             "origin_building": "Necromancers' Dark Tower",
@@ -13857,9 +13857,6 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
             "passives": [
                 {
                     "slug": "night_vision"
-        }, {
-                    "slug": "memories_of_joy",
-                    "unique": "yes",
         },
                 {
                     "slug": "support"
@@ -13912,5 +13909,2489 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
         ]
 
                 },
-            ]
+        {
+            "hp": "40",
+            "name": "high_elf_reanimator",
+            "string": "High Elf Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/HighElfReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/high_elf_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> ",
+
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "4 <x-blight></x-blight> 4<x-frost></x-frost>",
+
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "total_awareness",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "blight_protection_80"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+
+                },
+        {
+            "hp": "40",
+            "name": "human_reanimator",
+            "string": "Human Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/HumanReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/human_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 4 <x-spirit></x-spirit> ",
+                    "unique": "yes"
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "4 <x-blight></x-blight> 4<x-frost></x-frost>",
+
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+                },
+        {
+            "hp": "40",
+            "name": "orc_reanimator",
+            "string": "Orc Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/OrcReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/orc_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> ",
+
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "4 <x-blight></x-blight> 4<x-frost></x-frost>",
+
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        }, {
+                    "slug": "throw_curse",
+                    "unique": "yes"
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+                },
+        {
+            "hp": "40",
+            "name": "tigran_reanimator",
+            "string": "Tigran Reanimator",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Reanimator",
+            "origin_building": "Necromancers' Dark Tower",
+            "location": "Units/Necromancer/TigranReanimator",
+            "description": "\'Sirs. I have petitioned for aide and your response remains ineffective. There is evil on the Blight Frontier. I am forced to repeat my petition. We are desperate. Send us your best soldiers. Inexperienced soldiers despair easily before the enemy. These hooded fiends conjure death from their skeletal limbs and my troops do little to fight back. Every man that falls is another soldier for the enemy. We are becoming their army. I do not know for how much longer we can hold against these Reanimators.'\" <br> <i>--Final Report from the Blight Frontier Outpost, by Commandant Crost Lostiff</i>\"",
+            "image_link": 'Necromancer/tigran_reanimator.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 2 <x-spirit></x-spirit> ",
+
+        },
+                {
+                    "slug": "black_bolts",
+                    "damage": "4 <x-blight></x-blight> 4<x-frost></x-frost>",
+
+
+        },
+                {
+                    "slug": "raise_corpse",
+
+        }, {
+                    "slug": "heal_undead",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "true_sight"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_20"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+
+        ]
+
+                },
+///////////DEATHBRINGERS----------------------------------------------------------------------------DEATHBRINGERS---------------------------
+        {
+            "hp": "60",
+            "name": "draconian_death_bringer",
+            "string": "Draconian Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/DraconianDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/draconian_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class =\"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> "
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_20"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+
+        ]
+
+},
+
+        {
+            "hp": "60",
+            "name": "dwarf_death_bringer",
+            "string": "Dwarf Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/DwarfDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/dwarf_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> "
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_20"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+        ]
+
+}, {
+            "hp": "60",
+            "name": "frostling_death_bringer",
+            "string": "Frostling Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/FrostlingDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/frostling_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> "
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        }, {
+                    "slug": "frost_weapons",
+                    "unique": "yes",
+        },
+
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "fire_weakness_60"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+            },
+                {
+                    "slug": "spirit_weakness_40"
+            },
+
+
+        ]
+
+    },
+        {
+            "hp": "55",
+            "name": "goblin_death_bringer",
+            "string": "Goblin Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/GoblinDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/goblin_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>\
+ <li> <div class = \"tooltip\">Inflict Severely Poisoned<span class=\"tooltiptext2\" id=\"inflict_severely_poisoned\"></span></div></li>\
+ <li> <div class = \"tooltip\">Inflict Weakened<span class=\"tooltiptext2\" id=\"inflict_weakened\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> "
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "backstab",
+                    "unique": "yes",
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakenss_20"
+                    },
+
+        ]
+
+    },
+
+        {
+            "hp": "60",
+            "name": "halfling_death_bringer",
+            "string": "Halfling Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/HalflingDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/halfling_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> "
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+
+
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "frost_protection_40"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakenss_20"
+                    },
+
+        ]
+
+
+
+
+    },
+        {
+            "hp": "60",
+            "name": "high_elf_death_bringer",
+            "string": "High Elf Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/HighElfDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/high_elf_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> "
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "shock_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_80"
+                    },
+
+                {
+                    "slug": "frost_protection_40"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+        ]
+
+    },
+
+        {
+            "hp": "60",
+            "name": "human_death_bringer",
+            "string": "Human Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/HumanDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/human_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-spirit></x-spirit> ",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                {
+                    "slug": "frost_protection_40"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+        ]
+
+    },
+
+        {
+            "hp": "60",
+            "name": "orc_death_bringer",
+            "string": "Orc Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/OrcDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/orc_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> ",
+
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+                {
+                    "slug": "war_cry",
+                    "unique": "yes",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                {
+                    "slug": "frost_protection_40"
+                    },
+
+                {
+                    "slug": "spirit_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+        ]
+
+    },
+        {
+            "hp": "60",
+            "name": "tigran_death_bringer",
+            "string": "Tigran Death Bringer",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Death Bringer",
+            "origin_building": "Basilica",
+            "location": "Units/Necromancer/TigranDeathBringer",
+            "description": "\'Like a regal queen towering above her courtly subjects, the black horned Deathbringer strode through the battlefield. Though her helmet blocked her sight, this ghastly sorceress of death knew every strike and counter strike - the perfect weapon, exploiting every mortal weakness with unrelenting precision. Her sword struck effortlessly like a shadow. I watched whole groups of soldiers, of every discipline and rank, turn pale and succumb her hellish curse. Soldiers fell only to rise as ghouls, fated to pick the battlefield clean of the flesh of their friends.'\" <br> <i>--When Death Fights for the Enemy, by General Silkenah Tirris</i>\"",
+            "image_link": 'Necromancer/tigran_death_bringer.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>\
+<li> <div class =\"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class =\"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 3 <x-blight></x-blight> ",
+
+        },
+                {
+                    "slug": "shadow_step",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "tireless"
+        }, {
+                    "slug": "bloodthirsty",
+                    "unique": "yes",
+        },
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "armored"
+                }, {
+                    "slug": "inflict_ghoul_curse"
+                }, {
+                    "slug": "total_awareness"
+                }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "inflict_despair"
+                },
+                {
+                    "slug": "walking"
+                },
+                {
+                    "slug": "undead"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    },
+
+                {
+                    "slug": "frost_protection_20"
+                    },
+
+
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+        ]
+
+    },
+//----SORCERER-------------------------------------------------------------------------------------------------------------------------SORCERER---
+        {
+            "hp": "16",
+            "name": "wisp",
+            "string": "Wisp",
+            "armor": "7",
+            "shield": "10",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>/Summoned: 9<x-mana></x-mana>",
+            "xp": "10",
+            "cost": "70 <x-gold></x-gold>/ 40 <x-casting></x-casting>",
+            "movement_type": "floating",
+            "origin_research": "Summon Wisp",
+            "origin_building": "",
+            "location": "Units/Sorcerer/wisp",
+            "description": "\'There is something alive in mana. When I draw upon it, I hear the tiny voices of a million helpers. It is potential. Things that might happen, whisperings of what might be. It is a kinship between me and unlikely events. Upon that power I draw--the residual sparkle in a spell--to summon the Wisp. It responds my music, resisting other casters. Through its visage I see what is hidden. It excites living matter, shocking those with violent intent.'\" <br> <i>--Manaworld, Garidan Hubin, Sorcerer</i>\"",
+            "image_link": 'Sorcerer/wisp.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>\
+ <li> <div class = \"tooltip\">True Sight<span class=\"tooltiptext2\" id=\"true_sight\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "3<x-physical> </x-physical> 7<x-shock></x-shock> "
+        }, {
+                    "slug": "phase",
+
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "static_shield"
+        },
+
+                {
+                    "slug": "magical_origin"
+                }, {
+                    "slug": "pass_wall"
+        }, {
+                    "slug": "incorporeal"
+        },
+                {
+                    "slug": "floating"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "fey"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    },
+                {
+                    "slug": "blight_weakness_40"
+                    },
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "physical_protection_60"
+                    },
+                {
+                    "slug": "shock_protection_100"
+                    },
+
+
+
+
+        ]
+
+},
+        {
+            "hp": "48",
+            "name": "phantasm_warrior",
+            "string": "Phantasm Warrior",
+            "armor": "9",
+            "shield": "8",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>/Summoned: 9<x-mana></x-mana>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold>/ 80 <x-casting></x-casting>",
+            "movement_type": "floating",
+            "origin_research": "Summon Phantasm Warrior",
+            "origin_building": "",
+            "location": "Units/Sorcerer/PhantasmWarrior",
+            "description": "\'Gorgax charged the sorcerer, raising his mighty axe. 'Your body and head have been joined for to long!' The barbarian's quip was clever, but he should have struck without speaking. A blinding flash followed, Three Phantasm Warriors stood where the sorcerer had been. Their bodies were faded; their faces a patch of sickly blue light. Gorgax hewed at one incorporeal form with his axe, but it did little noticable damage. These spectral warriors struck Gorgax from three sides. Then, one saw me in my hiding place. I wish I could tell you the fate of Gorgax, but I fled.\" <br> <i>--Incomplete Tales, Mason Goldson, Bard</i>\"",
+            "image_link": 'Sorcerer/phantasm_warrior.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+20% <x-shock></x-shock> Protection</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+20% <x-shock></x-shock> Protection</li>\
+ <li> <div class = \"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 7<x-shock></x-shock> "
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "shield"
+        }, {
+                    "slug": "inflict_shocking"
+        }, {
+                    "slug": "infantry"
+        }, {
+                    "slug": "wall_climbing"
+        },
+
+
+
+
+                {
+                    "slug": "magical_origin"
+                }, {
+                    "slug": "pass_wall"
+        }, {
+                    "slug": "incorporeal"
+        },
+                {
+                    "slug": "floating"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "incorporeal"
+                    },
+                {
+                    "slug": "pass_wall"
+                    },
+                {
+                    "slug": "physical_protection_60"
+                    },
+
+                    ],
+
+            "resistances": [
+
+
+                {
+                    "slug": "shock_protection_40"
+                    },
+
+
+
+
+        ]
+
+}, {
+            "hp": "75",
+            "name": "node_serpent",
+            "string": "Node Serpent",
+            "armor": "12",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/Summoned: 18<x-mana></x-mana>",
+            "xp": "30",
+            "cost": "175 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "floating",
+            "origin_research": "Summon Node Serpent",
+            "origin_building": "",
+            "location": "Units/Sorcerer/NodeSerpent",
+            "description": "\'The serpent was a construct of magic. It floated in the swirling air beside its summoner. We tried to gather in a defensive formation, but before we could organize, the thing appeared behind us. With a shower of crackling sparks it struck like a bolt of lightning. Our strongest warrior stood stunned, unable to strike. Other footmen rushed the thing. Blow after blow struck the creature, and eventually it succumbed to our counterattack. By then, the sorcerer had another, less pleasant, attack ready.'\" <br> <i>--Magic Hunter, Cortam Tugkill, Mage Slayer</i>\"",
+            "image_link": 'Sorcerer/node_serpent.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+6<x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Movement Upgrade<span class=\"tooltiptext2\" id=\"movement_upgrade\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Stun<span class=\"tooltiptext2\" id=\"inflict_stun\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 11<x-shock></x-shock> "
+        }, {
+                    "slug": "phase",
+
+        }, {
+                    "slug": "sprint",
+
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "magical_origin"
+        }, {
+                    "slug": "inflict_shocking"
+        },
+                {
+                    "slug": "floating"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+
+
+                {
+                    "slug": "shock_protection_100"
+                    },
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "75",
+            "name": "eldritch_horror",
+            "string": "Eldritch Horror",
+            "armor": "12",
+            "shield": "11",
+            "mp": "32",
+            "tier": "IV - 32 <x-gold></x-gold>/Summoned: 36<x-mana></x-mana>",
+            "xp": "40",
+            "cost": "175 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "floating",
+            "origin_research": "Summon Eldritch Horror",
+            "origin_building": "",
+            "location": "Units/Sorcerer/EldritchHorror",
+            "description": "\''It writhed like the scream caught in my throat. Teeth. Eyes. The smell of blood, fear and something exiled by nature to the forgotten depths. Drooling mouths and so many tentacles. Oh, Eldritch Horror! The mind slides off thee like slime from a fish, an absurdity. It wriggles impossibly floating. What dark age do we beckon, that a mind could concieve of such a force of destruction, and then will all the will of insanity, allow it to continue breaking walls, piercing flesh with barbs? Even here in the asylum, I cannot hide from the memory of it.'\" <br> <i>--A Madwoman's Rant, Tela Mulkior, Inmate</i>\"",
+            "image_link": 'Sorcerer/eldritch_horror.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8<x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Daze<span class=\"tooltiptext2\" id=\"inflict_daze\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> 4<x-spirit></x-spirit> 4<x-blight></x-blight> "
+        }, {
+                    "slug": "shock_breath",
+                    "damage": "16<x-shock> </x-shock>",
+
+        }, {
+                    "slug": "dominate",
+
+
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "magical_origin"
+        }, {
+                    "slug": "fearsome"
+        },
+                {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "magical_origin"
+        }, {
+                    "slug": "mind_control_immunity"
+        },
+                {
+                    "slug": "floating"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+
+
+                {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "spirit_protection_60"
+                    },
+
+
+
+        ]
+
+},
+
+/////DRAGONS---------------------------------------------------------------------------------------------------------DRAGONS--------
+        {
+            "hp": "44",
+            "name": "frost_wyvern",
+            "string": "Frost Wyvern",
+            "armor": "11",
+            "shield": "10",
+            "mp": "30",
+            "tier": "II - 8 <x-gold></x-gold>/ 12<x-mana>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>/110<x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Fantastic Creature",
+            "origin_building": "Burrow of Frost",
+            "location": "Units/Dragons/FrostWyvern",
+            "description": "\"After Artica disappeared, our people abandoned the temperate lands. Het ice domain melted. We returned to the northlands where perpetual ice grinds the rocks. There, we discovered offshoots of Frost Dragons, called Frost Wyverns. They are small enough to serve as mounts for the bravest heroes. They have a vicious bite, and are excellent fliers. Their immunity to the effects of snow and ice make them very mobile in the winter months, when most animals would stay in hibernation or tunnel beneath the snow cover. A few of our kind have made a decent fortune trading Frost Wyvern eggs for High Elf magic.'\" <br> <i>--Frozen Freedom, by Eccolo III, Frostling King</i>\"",
+            "image_link": 'Dragons/frost_wyvern.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Freezing Cold<span class=\"tooltiptext2\" id=\"inflict_freezing_cold\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 6<x-frost></x-frost> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_frostbite"
+        },
+
+                {
+                    "slug": "monster"
+        },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_100"
+                },
+                {
+                    "slug": "fire_weakness_20"
+                },
+
+
+        ]
+
+                },
+        {
+            "hp": "96",
+            "name": "frost_dragon",
+            "string": "Frost Dragon",
+            "armor": "15",
+            "shield": "12",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "350 <x-gold></x-gold> 50 <x-mana></x-mana>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "Frost Lair",
+            "location": "Units/Dragons/FrostDragon",
+            "description": "\"After Artica disappeared, our people abandoned the temperate lands. Het ice domain melted. We returned to the northlands where perpetual ice grinds the rocks. There, we discovered offshoots of Frost Dragons, called Frost Wyverns. They are small enough to serve as mounts for the bravest heroes. They have a vicious bite, and are excellent fliers. Their immunity to the effects of snow and ice make them very mobile in the winter months, when most animals would stay in hibernation or tunnel beneath the snow cover. A few of our kind have made a decent fortune trading Frost Wyvern eggs for High Elf magic.'\" <br> <i>--Frozen Freedom, by Eccolo III, Frostling King</i>\"",
+            "image_link": 'Dragons/frost_dragon.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+ <li> <div class = \"tooltip\">Inflict Frostbite<span class=\"tooltiptext2\" id=\"inflict_frostbite\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Freezing Cold<span class=\"tooltiptext2\" id=\"inflict_freezing_cold\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "19<x-physical> </x-physical> 5<x-frost></x-frost> "
+        }, {
+                    "slug": "frost_breath",
+                    "damage": "20<x-frost></x-frost> "
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_chilling"
+        },
+
+                {
+                    "slug": "fearsome"
+        },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_100"
+                },
+                {
+                    "slug": "fire_weakness_20"
+                },
+
+
+        ]
+
+                },
+
+        {
+            "hp": "44",
+            "name": "fire_wyvern",
+            "string": "Fire Wyvern",
+            "armor": "11",
+            "shield": "10",
+            "mp": "30",
+            "tier": "II - 8 <x-gold></x-gold>/ 12<x-mana>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>/110<x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Fantastic Creature",
+            "origin_building": "Burrow of Fire",
+            "location": "Units/Dragons/FireWyvern",
+            "description": "\"Of all the wyverns I've raised, Firebolt is the only one I kept. He's also my friend. I raised him from an egg. To care for him, I build a large bonfire and let him take a fire bath. In the winter months, he practically lives in the castle furnace room. Of course, I love flying with him. Though his bite is dangerous, he's never hurt any man who didn't deserve it. Once, he rescued me from a man, Birt, who demanded I marry him. I don't know why he hates Firebolt. Sure, he lost a leg, but his other leg is perfectly functional.''\" <br> <i>--Dragonkin, Katie Handler, Wyvern Breeder</i>\"",
+            "image_link": 'Dragons/fire_wyvern.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 6<x-fire></x-fire> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_scorching_heat"
+        },
+
+                {
+                    "slug": "monster"
+        },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                },
+                {
+                    "slug": "frost_weakness_20"
+                },
+
+
+        ]
+
+                },
+        {
+            "hp": "44",
+            "name": "fire_dragon",
+            "string": "Fire Dragon",
+            "armor": "16",
+            "shield": "13",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "360 <x-gold></x-gold> 50 <x-mana></x-mana>",
+            "movement_type": "flying",
+            "origin_research": "Summon Fantastic Creature",
+            "origin_building": "Fire Lair",
+            "location": "Units/Dragons/FireDragon",
+            "description": "\The desperate folk knew the risks, but the earth was fertile and they had nothing. Within two generations, they were all wealthy due to the number of their flocks and herds, the bountious harvest and clean water. It's all gone now. The mountain did not erupt. It gave birth to something worse. A dragon of ancient days has returned to claim these lands. Its breath left their homes in heaps of ash. It consumed the livestock and villagers alike. What treasure they once had now belongs to the beast.'\" <br> <i>--The Fire Dragon of Cinder Mountain, Dirk Slate, Commonwealth Claims Investigatorr</i>\"",
+            "image_link": 'Dragons/fire_dragon.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+ <li> <div class =\"tooltip\">Inflict Scorching Heat<span class=\"tooltiptext2\" id=\"inflict_scorching_heat\"></span></div></li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "20<x-physical> </x-physical> 5<x-fire></x-fire> "
+        }, {
+                    "slug": "fire_breath",
+                    "damage": "20<x-fire></x-fire> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "fearsome"
+        },
+
+
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                },
+                {
+                    "slug": "frost_weakness_20"
+                },
+
+
+        ]
+
+                },
+        {
+            "hp": "46",
+            "name": "gold_wyvern",
+            "string": "Gold Wyvern",
+            "armor": "12",
+            "shield": "12",
+            "mp": "30",
+            "tier": "II - 8 <x-gold></x-gold>/ 9<x-mana>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>/70<x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Eldritch Animal",
+            "origin_building": "Burrow of Gold",
+            "location": "Units/Dragons/GoldWyvern",
+            "description": "\The gold wyvern spiraled down to the battlefield with a trumpeting cry. Its swordlike talons crunched through the skull of a troll. Its teeth sunk into the monsters neck. A flame tank discharged a torrent of fire over the company, singeing friend and foe alike, but the Gold Wyvern's scales sparkled with renewed health. It launched into the sky seeking a blight-tusk boar. It landed on the vile thing's back, carving out a mass of rotted flesh. The boar spun and struck the sturdy wyvern, denting a scale. Still, no sickness grew in the small wound. The wyvern slew the sickened boar, then flew to hunt new prey.'\" <br> <i>--Defending the Precipice, by Kelesy Chunkwater, Naturalist</i>\"",
+            "image_link": 'Dragons/gold_wyvern.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Daze<span class=\"tooltiptext2\" id=\"inflict_daze\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 6<x-spirit></x-spirit> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "dedicated_to_good"
+        }, {
+                    "slug": "true_sight"
+        },
+
+                {
+                    "slug": "monster"
+        },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                }, {
+                    "slug": "blight_protection_100"
+                },
+                {
+                    "slug": "frost_weakness_20"
+                },
+
+
+        ]
+
+                },
+
+        {
+            "hp": "110",
+            "name": "golden_dragon",
+            "string": "Golden Dragon",
+            "armor": "16",
+            "shield": "13",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "450 <x-gold></x-gold> 50 <x-mana></x-mana>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "Gold Lair",
+            "location": "Units/Dragons/GoldenDragon",
+            "description": "\'Shadowy twitching cadavers surrounded us. I prayed in despair, knowing our corpses would soon join the Necromancer's army. Then it appeared. The Embodiment of Hope! The Golden Dragon burned through the blackness with its fiery breath. Fierce and aware of every enemy no matter how it attempted to hide in the dark. The Necromancer launched waves of wicked magic that the dragon shrugged off. Its fangs and claws shredded hundreds of undead. We charged in, joining the fight, suddenly inspired by the very honor that we had a moment to fight alongside this noble creature.'\" <br> <i>--Second Death, by Derek Shipley, Crusader</i>\"",
+            "image_link": 'Dragons/golden_dragon.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Spirit Breaking<span class=\"tooltiptext2\" id=\"inflict_spirit_breaking\"></span></div></li>",
+            "level_expert": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Daze<span class=\"tooltiptext2\" id=\"inflict_daze\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "19<x-physical> </x-physical> 5<x-spirit></x-spirit> ",
+        }, {
+                    "slug": "spirit_breath",
+                    "damage": "20<x-spirit></x-spirit> "
+            },
+
+        ],
+            "passives": [
+                {
+                    "slug": "dedicated_to_good"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "strong_will"
+        }, {
+                    "slug": "golden_dragon_inspiration"
+        }, {
+                    "slug": "fearsome"
+        },
+
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                }, {
+                    "slug": "blight_protection_100"
+                }, {
+                    "slug": "spirit_protection_100"
+                },
+                {
+                    "slug": "frost_weakness_20"
+                },
+
+
+        ]
+
+    },
+        {
+            "hp": "90",
+            "name": "bone_dragon",
+            "string": "Bone Dragon",
+            "armor": "16",
+            "shield": "13",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>/32<x-mana></x-mana>",
+            "xp": "40",
+            "cost": "320 <x-gold></x-gold> 50 <x-mana></x-mana>/190<x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Bone Dragon",
+            "origin_building": "",
+            "location": "Units/Dragons/BoneDragon",
+            "description": "\'Despise me if you must, but I live in truth. My way is your way. Even the mightiest immortals fail, and all that remains are the fragments of the greatest lie, the lie called 'life'. We are but puppets to the spinning darkness, and my mighty bone dragon rises to play that role until the end of days. Mightiest of all undead, let envy be your strength and break the living. Breathe blight upon all that fear and hate, and tremble before my beloved mistress Death. Fester. Corrode. All succumb to her call.'\" <br> <i>--Shadow Puppets, by Grimber Ambule, Necromancer</i>\"",
+            "image_link": 'Dragons/bone_dragon.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Noxious Vulnerability<span class=\"tooltiptext2\" id=\"inflict_noxious_vulnerability\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Enfeebling Fever<span class=\"tooltiptext2\" id=\"inflict_enfeebling_fever\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "17<x-physical> </x-physical> 5<x-blight></x-blight> ",
+        }, {
+                    "slug": "gas_breath",
+                    "damage": "20<x-blight></x-blight> "
+            },
+
+        ],
+            "passives": [
+                {
+                    "slug": "dedicated_to_evil"
+        }, {
+                    "slug": "inflict_brain_rot"
+        }, {
+                    "slug": "fearsome"
+        },
+
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "undead"
+                }, {
+                    "slug": "cannot_regenerate"
+                }, {
+                    "slug": "blight_protection_100"
+                },
+
+                {
+                    "slug": "frost_protection_40"
+                }, {
+                    "slug": "spirit_weakness_40"
+                }, {
+                    "slug": "fire_weakness_20"
+                },
+
+                                  ],
+            "resistances": [
+                {},
+
+
+        ]
+
+    },
+
+        {
+            "hp": "80",
+            "name": "obsidian_dragon",
+            "string": "Obsidian Dragon",
+            "armor": "15",
+            "shield": "14",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>/32 <x-mana></x-mana>",
+            "xp": "40",
+            "cost": "360 <x-gold></x-gold> 50 <x-mana></x-mana>/230 <x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Obsidian Dragon",
+            "origin_building": "",
+            "location": "Units/Dragons/ObsidianDragon",
+            "description": "\'Of all dragons, the most coveted I hunt are Obsidian Dragons. Their scales are more precious than jewels. I remember the first time I hunted one. The creature attacked at night, but day or night, you won't see it coming without magic. It doused our camp with its inky breath that made us all weak as kittens. We hid, but it spotted us and slew every hunter. I survived only because a wandering Halfling fell into a well. In attempting to fish him out, in my weakened state, I fell in myself. The dragon could not reach us down the narrow shaft.\" <br> <i>--Fortune Hunter, Connor Jens, Dragon Slayer</i>\"",
+            "image_link": 'Dragons/obsidian_dragon.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Severely Poisoned<span class=\"tooltiptext2\" id=\"inflict_severely_poisoned\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Path of Decay<span class=\"tooltiptext2\" id=\"path_of_decay\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "18<x-physical> </x-physical> 4<x-blight></x-blight> ",
+        }, {
+                    "slug": "weakening_breath",
+                    "damage": "8<x-blight></x-blight> "
+            },
+
+        ],
+            "passives": [
+                {
+                    "slug": "dedicated_to_evil"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "cave_concealment"
+        }, {
+                    "slug": "mountain_concealment"
+        }, {
+                    "slug": "water_concealment"
+        }, {
+                    "slug": "wetlands_concealment"
+        }, {
+                    "slug": "blight_concealment"
+        }, {
+                    "slug": "fearsome"
+        },
+
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                },
+
+
+        ]
+
+    },
+        {
+            "hp": "40",
+            "name": "obsidian_wyvern",
+            "string": "Obsidian Wyvern",
+            "armor": "12",
+            "shield": "12",
+            "mp": "30",
+            "tier": "II - 8 <x-gold></x-gold>/ 9<x-mana>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>/70<x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Fantastic Creature",
+            "origin_building": "",
+            "location": "Units/Dragons/ObsidianWyvern",
+            "description": "\I've never considered myself a hero. In fact I'm more of a coward. The reason why I am still alive is simple, I give all credit for my survival entirely to my steed Foxy, an Obsidian Wyvern, whose skill in flight and stealth has kept me alive on more than one occasion. I prefer to use her as a spy. She sees everything. With the exception of a full grown dragon, she can take care of herself against anything with hostile intentions. Of course, Foxy's something of a coward too. If we run up against something too tough, she'll be the first to flee.'\" <br> <i>--Intelligence and Common Sense, by Amos Ondbay, Spy</i>\"",
+            "image_link": 'Dragons/obsidian_wyvern.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Weakened<span class=\"tooltiptext2\" id=\"inflict_weakened\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> "
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "dedicated_to_evil"
+        }, {
+                    "slug": "wetlands_concealment"
+        }, {
+                    "slug": "blight_concealment"
+        },
+
+                {
+                    "slug": "cave_concealment"
+        },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dragon"
+                }, {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "charge"
+                }, {
+                    "slug": "mind_control_immunity"
+                },
+
+                                  ],
+            "resistances": [
+                {
+
+                },
+
+
+        ]
+
+                },
+]
 }
