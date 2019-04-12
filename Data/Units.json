@@ -29876,6 +29876,8 @@ Listened to the Grimbeak Crows' chortling chaotic song.'\" <br> <i>--Lost Warson
             "passives": [
                 {
                     "slug": "shield"
+        }, {
+                    "slug": "unholy_champion"
         },
                 {
                     "slug": "dedicated_to_evil"
@@ -29970,7 +29972,7 @@ Listened to the Grimbeak Crows' chortling chaotic song.'\" <br> <i>--Lost Warson
                ],
             "passives": [
                 {
-                    "slug": "shield"
+                    "slug": "good_slayer"
         },
                 {
                     "slug": "dedicated_to_evil"
@@ -29980,14 +29982,11 @@ Listened to the Grimbeak Crows' chortling chaotic song.'\" <br> <i>--Lost Warson
                     "slug": "projectile_resistance"
         },
                 {
-                    "slug": "infantry"
+                    "slug": "archer"
                 },
 
 
 
-                {
-                    "slug": "wall_climbing"
-                },
 
                 {
                     "slug": "walking"
@@ -30031,9 +30030,9 @@ Listened to the Grimbeak Crows' chortling chaotic song.'\" <br> <i>--Lost Warson
             "armor": "9",
             "shield": "9",
             "mp": "28",
-            "tier": "I - 4 <x-gold></x-gold>",
-            "xp": "10",
-            "cost": "40 <x-gold></x-gold> 10 <x-mana></x-mana>",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 20 <x-mana></x-mana>",
             "movement_type": "mp",
             "origin_research": "",
             "origin_building": "Barrow",
@@ -30041,18 +30040,18 @@ Listened to the Grimbeak Crows' chortling chaotic song.'\" <br> <i>--Lost Warson
             "description": "\'We encountered the first Archon Revenant Priestesses just outside the Holy of Holies, beside a sacrifical altar. These abominations had mastery over death like nothing I even witnessed. The bodies on the altar leapt to life with a flick of their bony wrists. My men were sluggish and clumsy in their presence as though a dark shadow dulled their senses. We dispatched the animated corpses, only to find the creature had the power to repair the damage we did to their warriors. All gifts they once used against the undead, their mortal enemy in life, they now used on us. They have become what they fought hardest.'\" <br> <i>--Expedition to Starwall, by Ricker the Third, Ranger</i>\"",
             "image_link": 'Archon/archon_revenant_caster.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
- <li>+2 <x-hp> </x-hp> Hit Points</li>",
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-frost> </x-frost>Ranged</li>\
 <li>+1 <x-physical> </x-physical> Melee</li>\
- <li>+2 <x-hp> </x-hp> Hit Points</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
 <li> <div class = \"tooltip\">Steal Enchantment<span class=\"tooltiptext2\" id=\"steal_enchantment\"></span></div></li>",
             "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
 <li>+1 <x-blight> </x-blight> Melee</li>\
- <li>+2 <x-hp> </x-hp> Hit Points </li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
 <li>+1 <x-resistance> </x-resistance> Resistance</li>\
 <li> <div class = \"tooltip\">Inflict Brain Rot<span class=\"tooltiptext2\" id=\"inflict_brain_rot\"></span></div></li>",
             "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
- <li>+4 <x-hp> </x-hp> Hit Points</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
 <li>+1 <x-defense> </x-defense> Defense</li>\
 <li> <div class = \"tooltip\">Lesser Reanimate Dead<span class=\"tooltiptext2\" id=\"lesser_reanimate_dead\"></span></div></li>",
 
@@ -30127,6 +30126,1811 @@ Listened to the Grimbeak Crows' chortling chaotic song.'\" <br> <i>--Lost Warson
         ]
 
                 },
+        {
+            "hp": "100",
+            "name": "archon_titan",
+            "string": "Archon Titan",
+            "armor": "15",
+            "shield": "13",
+            "mp": "36",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "300 <x-gold></x-gold> 40 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Mausoleum",
+            "location": "Units/Archon/ArchonTitan",
+            "description": "\'Plinthian, a religious scholar, interpreted the symbol of a fallen god, named Urrath, inscribed atop a giant sacrophagus sealed in the Inner Sanctum. His face sprung alive announcing the name, as if he finally understood all our questions about the fall of the Archons. Before he could explain, the great slab covering the massive stone coffin flew open, crushing the scholar. In the center of this tomb, the animated remains of a titan rose, its eyes glowing wickedly. Swinging a mace the size of a horse, it swung at me. I jumped through the exit hallway as walls around me exploded into a hail of splinters and rubble. Only I survived the temple's collapse. Only I live to record this tale. I hope that the horrors we found stay buried in that ruin.''\" <br> <i>--Expedition to Starwall, by Ricker the Third, Ranger</i>\"",
+            "image_link": 'Archon/archon_titan.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical>Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Good Slayer<span class=\"tooltiptext2\" id=\"goodl_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Unholy Champion<span class=\"tooltiptext2\" id=\"unholy_champion\"></span></div></li>",
 
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "25<x-physical> </x-physical> "
+        },
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "dedicated_to_evil"
+                },
+
+                {
+                    "slug": "projectile_resistance"
+        },
+                {
+                    "slug": "guard_breaker"
+                },
+
+
+
+                {
+                    "slug": "overwhelm"
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "giant"
+                }, {
+                    "slug": "mountaineering"
+                }, {
+                    "slug": "wall_crushing"
+                }, {
+                    "slug": "undead"
+                }, {
+                    "slug": "cannot_regenerate"
+                }, {
+                    "slug": "blight_protection_100"
+                },
+
+                {
+                    "slug": "frost_protection_40"
+                }, {
+                    "slug": "spirit_weakness_40"
+                }, {
+                    "slug": "fire_weakness_20"
+                },
+
+                                  ],
+            "resistances": [
+                {
+
+                },
+
+
+
+
+        ]
+
+                },
+
+        {
+            "hp": "45",
+            "name": "wraith",
+            "string": "Wraith",
+            "armor": "9",
+            "shield": "10",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "120 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "Haunted Vault",
+            "location": "Units/Archon/Wraith",
+            "description": "\'Something about the tomb felt wrong. I tried to warn him, but Alamastirr rushed into the chamber, his hands extended to reach for the smoking crystal. He let out a cry, pulling back. That's when we noticed the figure of a man in flowing robes, standing in the shadow. Its arms reached into Alamastirr, and the greedy mage's skin bubbled with blight. Ringer's arrows passed through the wraith, doing it no harm. Alamastirr managed to break free of its grasp by striking the wraith with his enchanted staff, while my fervent prayer to the Allfather drove it into the dust.'\" <br> <i>--Discovering the City Throne, by Father Prevellis</i>\"",
+            "image_link": 'Archon/wraith.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight>Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> 2<x-blight></x-blight>"
+        },
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "dedicated_to_evil"
+                },
+
+                {
+                    "slug": "inflict_brain_rot"
+        },
+                {
+                    "slug": "life_steal"
+                },
+
+
+
+                {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "undead"
+                }, {
+                    "slug": "cannot_regenerate"
+                }, {
+                    "slug": "blight_protection_100"
+                },
+
+                {
+                    "slug": "frost_protection_40"
+                }, {
+                    "slug": "spirit_weakness_40"
+                }, {
+                    "slug": "fire_weakness_20"
+                },
+                {
+                    "slug": "incorporeal"
+                    },
+                {
+                    "slug": "pass_wall"
+                    }, {
+                    "slug": "physical_protection_60"
+                    },
+
+                                  ],
+            "resistances": [
+                {
+
+                },
+
+
+
+
+        ]
+
+                },
+        {
+            "hp": "45",
+            "name": "wraith_king",
+            "string": "Wraith King",
+            "armor": "12",
+            "shield": "11",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "180 <x-gold></x-gold> 40 <x-mana></x-mana>",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "Throne of Bone",
+            "location": "Units/Archon/Wraith King",
+            "description": "\'The words were bitter dust in my mounth as I prayed. Unlike the other wraiths, this one was darker, larger and mocked my being. Just looking into it, emptiness filled me with a dread that makes a man afraid to sleep at night. As I petitioned the Supreme Allfather, despair filled me. My acolytes quavered, crying out as the incorporeal nightmare reached out, inflicting disease on the crown of each of their shaved heads. Choking back my doubts, I confessed my deepest hidden sins, forsaking all for my belief that the Allfather might save, forgiving my hubris. Only then could I turn the terrible King of Wraiths.'\" <br> <i>--The Pride of Piety, by Father Prevellis</i>\"",
+            "image_link": 'Archon/wraith_king.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight>Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Enfeebling Fever<span class=\"tooltiptext2\" id=\"inflict_enfeebling_fever\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Throw Curse<span class=\"tooltiptext2\" id=\"throw_curse\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> 4<x-blight></x-blight>"
+        },
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "dedicated_to_evil"
+                },
+
+                {
+                    "slug": "inflict_brain_rot"
+        },
+                {
+                    "slug": "life_steal"
+                },
+
+
+
+                {
+                    "slug": "night_vision"
+                },
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "undead"
+                }, {
+                    "slug": "cannot_regenerate"
+                }, {
+                    "slug": "blight_protection_100"
+                },
+
+                {
+                    "slug": "frost_protection_40"
+                }, {
+                    "slug": "spirit_weakness_40"
+                }, {
+                    "slug": "fire_weakness_20"
+                },
+                {
+                    "slug": "incorporeal"
+                    },
+                {
+                    "slug": "pass_wall"
+                    }, {
+                    "slug": "physical_protection_60"
+                    },
+
+                                  ],
+            "resistances": [
+                {
+
+                },
+
+
+
+
+        ]
+
+                },
+
+//FEY----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------FEY--------------------------------
+
+        {
+            "hp": "30",
+            "name": "buttercup_fairy",
+            "string": "Buttercup Fairy",
+            "armor": "8",
+            "shield": "11",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold> 20<x-mana></x-mana>",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "Buttercup Meadow",
+            "location": "Units/Fey/ButtercupFairy",
+            "description": "\'I believe they were watching a group of children playing. To them, the laughter of children is intoxicating music. So when the troll lumbered from the trees, before I could raise and alarm, the whole meadow of gold flowers erupted revealing a swarm of buttercup fairies. The troll never saw it coming. They darted with deft wings in and out of the reach of the lumbering creature, stinging it with blasts of Fairy Fire from their hands. They struck the monster and drove it back into the depths of the forest, undeterred by the foul breath of the creature that made my stomach lurch.'.\" <br> <i>--Fairy Folk:A Field Guide, by Aronut Sandhill, Naturalist</i>\"",
+            "image_link": 'Fey/buttercup_fairy.gif',
+            "level_trooper": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Projectile Resistance<span class=\"tooltiptext2\" id=\"projectile_resistance\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "3<x-fire> </x-fire> 3<x-shock></x-shock> 3<x-frost></x-frost>",
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "bard_skills"
+        },
+                {
+                    "slug": "forest_concealment"
+        },
+                {
+                    "slug": "night_vision"
+                },
+                {
+                    "slug": "magical_origin"
+        },
+                {
+                    "slug": "floating"
+                },
+
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "fey"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+                {
+                    "slug": "wetlands_walking"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_40"
+                    }, {
+                    "slug": "fire_protection_40"
+                    },
+                {
+                    "slug": "shock_protection_40"
+                    },
+        ]
+
+},
+        {
+            "hp": "40",
+            "name": "toadstool_fairy",
+            "string": "Toadstool Fairy",
+            "armor": "10",
+            "shield": "12",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "60 <x-gold></x-gold> 30<x-mana></x-mana>",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "Toadstool Ring",
+            "location": "Units/Fey/ToadstoolFairy",
+            "description": "\'I don't know if Toadstool Fairies favor toadstools, but they are called such because they are most frequently encountered by hedge witches and magicians who rummage in the depths of forests for reagents for potions: Shelf fungus, mushrooms and rare woodmold. I once watched a single toadstool fairy drive a group of apothecaries out of its territory, whizzing about, blasting fairy fire, and hiding when not attacking. One man attempted to use a wand against the creature, but it laughed off the magic and burned a hole right through the seat of his pants.'.\" <br> <i>--Perils of Potions, by Buppy Snap, Alchemist</i>\"",
+            "image_link": 'Fey/toadstool_fairy.gif',
+            "level_trooper": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+<li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Noxious Vulnerability<span class=\"tooltiptext2\" id=\"inflict_noxious_vulnerability\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 4 <x-blight></x-blight>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "4<x-fire> </x-fire> 4<x-shock></x-shock> 4<x-frost></x-frost>",
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_brain_rot"
+        },
+                {
+                    "slug": "forest_concealment"
+        },
+                {
+                    "slug": "night_vision"
+                },
+                {
+                    "slug": "magical_origin"
+        },
+                {
+                    "slug": "floating"
+                },
+
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "fey"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+                {
+                    "slug": "wetlands_walking"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_60"
+                    }, {
+                    "slug": "fire_protection_60"
+                    },
+                {
+                    "slug": "shock_protection_60"
+                    },
+        ]
+
+},
+
+        {
+            "hp": "50",
+            "name": "nightshade_fairy",
+            "string": "Nightshade Fairy",
+            "armor": "11",
+            "shield": "14",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "110 <x-gold></x-gold> 40<x-mana></x-mana>",
+            "movement_type": "floating",
+            "origin_research": "",
+            "origin_building": "Nightshade Hollow",
+            "location": "Units/Fey/NightshadeFairy",
+            "description": "\The Nightshade Fairy is perhaps the most powerful and elusive specimen of the fairykin. It is difficult to describe because it is invisible to the natural eye. They are territorial, and flit about protecting their wilderness areas. I once observed one fairy methodically decimating a village of goblin settlers. The Nightshade Fairy giggled as it attacked them with poisons, magic and the elemental forces of nature. It could teleport within and without the walls of the town, never staying in one place long enough to be seriously hurt. It tormented the goblin elders, setting their headdresses ablaze with fairy fire. Day in and day out it tormented the garbage dwellers with its fairy mischief, until they abandoned their hovels.\" <br> <i>--Fairy Folk:A Field Guide, by Aronut Sandhill, Naturalist</i>\"",
+            "image_link": 'Fey/nightshade_fairy.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+<li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Cure Disease<span class=\"tooltiptext2\" id=\"cure_disease\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "5<x-fire> </x-fire> 5<x-shock></x-shock> 5<x-frost></x-frost>",
+        }, {
+                    "slug": "phase",
+
+        },
+                {
+                    "slug": "break_control",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "invisibility"
+        },
+                {
+                    "slug": "strong_will"
+        },
+                {
+                    "slug": "night_vision"
+                },
+                {
+                    "slug": "magical_origin"
+        },
+                {
+                    "slug": "floating"
+                },
+
+
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "fey"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+                {
+                    "slug": "wetlands_walking"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_100"
+                    }, {
+                    "slug": "fire_protection_100"
+                    },
+                {
+                    "slug": "shock_protection_100"
+                    },
+        ]
+
+},
+
+        {
+            "hp": "52",
+            "name": "unicorn",
+            "string": "Unicorn",
+            "armor": "10",
+            "shield": "11",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 10 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Unicorn Glade",
+            "location": "Units/Fey/Unicorn",
+            "description": "\'Fairest creature of the forest mists,\
+a regal ringing voice persists.\
+A horned stallion appears fantastic,\
+even singing that friendship is magic.'\
+'A glow of power, it teleports fast,\
+beauty and grace, never surpassed. \
+It prances for a song of ponies born,\
+impaling evil on its enchanted horn.'\
+'Sparkle, twinkle twilight gleam,\
+My mystical magical unicorn dream!'\" <br> <i>--Dance of the Unicorn, by Willa Lovaday, Master Bard</i>\"",
+            "image_link": 'Fey/unicorn.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">First Strike<span class=\"tooltiptext2\" id=\"first_strike\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 4<x-spirit></x-spirit>"
+        },
+                {
+                    "slug": "phase",
+
+        },
+                {
+                    "slug": "cure_disease",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "dedicated_to_good"
+        }, {
+                    "slug": "fast_healing"
+        }, {
+                    "slug": "armor_piercing"
+        }, {
+                    "slug": "strong_will"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "fey"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+                {
+                    "slug": "wetlands_walking"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_100"
+                    },
+        ]
+
+},
+
+        {
+            "hp": "38",
+            "name": "nymph",
+            "string": "Nymph",
+            "armor": "7",
+            "shield": "12",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold> 10 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Nymph Pond",
+            "location": "Units/Fey/Nymph",
+            "description": "\We heard a musical laugh and saw a splash. None of us could turn away. A girl, impossibly beautiful, bathed alone in the spring. The sway of her hips made the ogling men groan. Soon, it was all we could do to please her. Even the caravan's livestock obeyed her. And we would have done anything for her to scratch us behind the ear the way she did my horse. We fought to give her everything we had, and she rewarded us with a touch on the chin. It was more than generous so we wished her happily on her way. Eventually we came to our senses. None of us wanted to report to King Jorsen how we'd given away all our treasure to a forest nymph, so we pummeled one another and told him we'd been robbed by bandits.'\" <br> <i>--Trading Places, by Jadon Chandler, Merchant</i>\"",
+            "image_link": 'Fey/nymph.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Spirit Breaking<span class=\"tooltiptext2\" id=\"inflict_spirit_breaking\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "seduce",
+
+        },
+                {
+                    "slug": "befriend_animal",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "forest_concealment"
+        }, {
+                    "slug": "dedicated_to_good"
+        }, {
+                    "slug": "mind_control_immunity"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "fey"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+                {
+                    "slug": "wetlands_walking"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
+},
+
+//GIANT-----------------------------------------------------------------------------------------------------------------------------------------GIANT------------------------------------------------------
+        {
+            "hp": "66",
+            "name": "ogre",
+            "string": "Ogre",
+            "armor": "11",
+            "shield": "9",
+            "mp": "30",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Burrow of the Degenerate Children",
+            "location": "Units/Giants/Ogre",
+            "description": "\"Some of the more depressed monsters I deal with often are Ogres. They're moody, pouty monsters, too large to be humanoid, but lacking the skills of giant kin. They cannot break down city walls, climb mountains or hurl boulders. They also make lousy cooks. I try to remind them they're still capable of beating anything with their sizable club. I suspect they'd be happier if they didn't decorate their clothes with bones, but ogres are stupidly fixated on bony décor. I suppose that's symbolic of something.'\" <br> <i>--Happy, Healthy Monsters, Ziggler Froud, Battlefield Therapist.</i>\"",
+            "image_link": 'Giants/ogre.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Overwhelm<span class=\"tooltiptext2\" id=\"overwhelm\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "21<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+                {
+                    "slug": "giant"
+                    }, {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "wall_crushing"
+                    },
+                    ],
+
+            "resistances": [
+
+                {
+
+                    },
+
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "96",
+            "name": "fire_giant",
+            "string": "Fire Giant",
+            "armor": "16",
+            "shield": "12",
+            "mp": "36",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "290 <x-gold></x-gold> 40<x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Menhir of Fire",
+            "location": "Units/Giants/FireGiant",
+            "description": "\'The passage swept downward. The air was hot as a furnace and smelled of brimstone. My heart raced as I saw an orange glow. The Fire Giant stood in a pool of molten lava. Its skin was rippled with veins of glowing magma, its beard a fan of flames. It held aloft a sword that was little more than a column of flame. It wore black iron armor, and I groaned. Unsheating my blue blade, Frostbiter, I knew that even with magic, we would not pass this way without burning.'\" <br> <i>--The Seals of the Firstborn, Malakite Stone, Dwarf Explorer.</i>\"",
+            "image_link": 'Giants/fire_giant.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "17<x-physical> </x-physical> 5<x-fire></x-fire>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_scorching_heat"
+        }, {
+                    "slug": "lava_walking"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "giant"
+                    }, {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "wall_crushing"
+                    },
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "fire_protection_100"
+                    },
+
+                {
+                    "slug": "frost_weakness_20"
+                    },
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "96",
+            "name": "frost_giant",
+            "string": "Frost Giant",
+            "armor": "15",
+            "shield": "12",
+            "mp": "36",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "290 <x-gold></x-gold> 40<x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Menhir of Frost",
+            "location": "Units/Giants/FrostGiant",
+            "description": "\'When the city of Icefell was taken by Commonwealth conquerers, I fled into the ice floes. Unaffected by cold, my Frostling people made peace with the Frost Giants ages ago. I convinced them to save us. They relished the cacophony of combat, blasting our enemies with an avalance of ice blows from their hammers. Of course, in their zeal to save our city, they broke down the wall, but eventually I got their attention before they leveled everything. Our friendship with these bellicose giants is priceless.'\" <br> <i>--Frozen Freedom, Eccolo III, Iceking.</i>\"",
+            "image_link": 'Giants/frost_giant.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Freezing Cold<span class=\"tooltiptext2\" id=\"inflict_freezing_cold\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> 5<x-frost></x-frost>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_frostbite"
+        }, {
+                    "slug": "lava_walking"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "giant"
+                    }, {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "wall_crushing"
+                    },
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "frost_protection_100"
+                    },
+
+                {
+                    "slug": "fire_weakness_20"
+                    },
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "92",
+            "name": "stone_giant",
+            "string": "Frost Giant",
+            "armor": "14",
+            "shield": "11",
+            "mp": "36",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "280 <x-gold></x-gold> 40<x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Menhir of Granite",
+            "location": "Units/Giants/StoneGiant",
+            "description": "\'The rock-encrusted brute was like a hillside with legs. It lumbered forward hefting in its hands a stone fragment larger than my mother-in-law. I dove through a great stone arch, before realizing it was a second Rock Giant. The two behemoths faces off against one another, as I scampered into a small hiding place. The first hurled his boulder against the head of the second, but to my suprise the second caught it out of the air. They started to wrestle, destroying cliff walls and reshaping the earth, completely forgetting about me.'\" <br> <i>--Middletooth Mountain Mysteries, by Ham the Wanderer.</i>\"",
+            "image_link": 'Giants/stone_giant.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "18<x-physical> </x-physical>"
+        }, {
+                    "slug": "hurl_boulder",
+                    "damage": "25<x-physical> </x-physical>"
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "tunneling"
+        }, {
+                    "slug": "demolisher"
+        },
+                {
+                    "slug": "walking"
+                }
+
+
+
+        ],
+            "unit_types": [
+
+                {
+                    "slug": "giant"
+                    }, {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "wall_crushing"
+                    },
+                    ],
+
+            "resistances": [
+
+                {
+
+                    },
+
+
+
+        ]
+
+},
+
+///NAGA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------NAGA------------------------------------------------------------------------
+        {
+            "hp": "48",
+            "name": "naga_slither",
+            "string": "Nage Slither",
+            "armor": "10",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Serpent Hall",
+            "location": "Units/Naga/NagaSlither",
+            "description": "\Hidden in the colors of the marsh, horned serpents arose, silent as a shadow. Four arms, each clutching wicked curved blades, ready to ambush the hapless travelers. Foolishly, the thought to save five days of travel trespassing through Naga territory. I can only imagine this, of course, for I arrived five days later, unlike them, who never arrived.'\" <br> <i>--Path Untaken, by Bradden Jezz, Ranger</i>\"",
+            "image_link": 'Naga/naga_slither.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Martial Arts<span class=\"tooltiptext2\" id=\"martial_arts\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "slip_away",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "vision_range_upgrade"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "backstab"
+        }, {
+                    "slug": "regrowth"
+        }, {
+                    "slug": "wetlands_concealment"
+        }, {
+                    "slug": "swimming"
+        }, {
+                    "slug": "infantry"
+        }, {
+                    "slug": "wall_climbing"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    }, {
+                    "slug": "naga"
+                    },
+
+                {
+                    "slug": "wetlands_walking"
+                    },
+
+
+                ],
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_40"
+                }, {
+                    "slug": "fire_protection_40"
+                }, {
+                    "slug": "frost_weakness_40"
+                },
+
+        ]
+
+},
+
+        {
+            "hp": "58",
+            "name": "naga_guardian",
+            "string": "Nage Guardian",
+            "armor": "12",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Viper Fortress",
+            "location": "Units/Naga/NagaGuardian",
+            "description": "\'Though our powers be limited, we will die to protect her. The Matriarch must be protected. If she survives, we all survive. If she dies, we all die. We are her arms. We wield the trident and strike down any who would strike at her.''\" <br> <i>--Vow of the Naga, Ugglugglugg the Naga Guardianr</i>\"",
+            "image_link": 'Naga/naga_guardian.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "slip_away",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "armor_piercing"
+        }, {
+                    "slug": "first_strike"
+        }, {
+                    "slug": "pikeman"
+        }, {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "regrowth"
+        }, {
+                    "slug": "wetlands_concealment"
+        }, {
+                    "slug": "swimming"
+        }, {
+                    "slug": "pike_square"
+        }, {
+                    "slug": "polearm"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    }, {
+                    "slug": "naga"
+                    },
+
+                {
+                    "slug": "wetlands_walking"
+                    },
+
+
+                ],
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_40"
+                }, {
+                    "slug": "fire_protection_40"
+                }, {
+                    "slug": "frost_weakness_40"
+                },
+
+        ]
+
+}, {
+            "hp": "62",
+            "name": "naga_matriarch",
+            "string": "Nage Matriarch",
+            "armor": "10",
+            "shield": "13",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "90 <x-gold></x-gold> 20 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Altar of the Great Mother",
+            "location": "Units/Naga/NagaMatriarch",
+            "description": "\'I worshipped her, the mother-snake. Quick. Clever. Deceptive. Strangely Enticing. My Naga Matriarch embodied all these things. I served her with eager haste. She leeched the enchantments of rivals and cursed those condemned to death. Then one day, she let me wander and I knew this snake queen as the Deceiver.''\" <br> <i>--Servitude, by Sir Randall the Severely Chastened</i>\"",
+            "image_link": 'Naga/naga_matriarch.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Minor Bard Skills<span class=\"tooltiptext2\" id=\"minor_bard_skills\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Call Lightning<span class=\"tooltiptext2\" id=\"call_lightning\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "14<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "throw_curse",
+
+        }, {
+                    "slug": "charm",
+
+        }, {
+                    "slug": "cause_fear",
+
+        }, {
+                    "slug": "steal_enchantment",
+
+        }, {
+                    "slug": "slip_away",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_severely_poisoned"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "regrowth"
+        }, {
+                    "slug": "wetlands_concealment"
+        }, {
+                    "slug": "swimming"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    }, {
+                    "slug": "naga"
+                    },
+
+                {
+                    "slug": "wetlands_walking"
+                    },
+
+
+                ],
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_40"
+                }, {
+                    "slug": "fire_protection_40"
+                }, {
+                    "slug": "frost_weakness_40"
+                },
+
+        ]
+
+},
+
+        {
+            "hp": "120",
+            "name": "naga_glutton",
+            "string": "Naga Glutton",
+            "armor": "8",
+            "shield": "15",
+            "mp": "28",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "300 <x-gold></x-gold> 60 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Marsh of the Serpents",
+            "location": "Units/Naga/NagaGlutton",
+            "description": "\While seeking Naga secrets, we discovered what surely must be their god. The fearsome fiend rose like an island, its mouth a cavern. Horses and riders disappeared into the monster's quivering gullet. Our blows bounced from mountains of blubber as it gobbled up my hunting party. The Naga were so grateful we fed their god, they let me live to tell the tale.'\" <br> <i>--Peril in the Tropics, by Ham the Wanderer</i>\"",
+            "image_link": 'Naga/naga_glutton.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+20% <x-blight></x-blight> Protection</li>\
+<li> <div class = \"tooltip\">Regeneration<span class=\"tooltiptext2\" id=\"regeneration\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+20% <x-blight></x-blight> Protection</li>\
+<li> <div class = \"tooltip\">Fearsome<span class=\"tooltiptext2\" id=\"fearsome\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "24<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "gas_breath",
+                    "damage": "20<x-blight> </x-blight> "
+
+        }, {
+                    "slug": "taunt",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "inflict_severely_poisoned"
+        }, {
+                    "slug": "swallow_whole"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "wall_crushing"
+        }, {
+                    "slug": "cave_crawling"
+        }, {
+                    "slug": "wetlands_concealment"
+        }, {
+                    "slug": "swimming"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    }, {
+                    "slug": "naga"
+                    },
+
+                {
+                    "slug": "wetlands_walking"
+                    },
+
+
+                ],
+            "resistances": [
+
+                {
+                    "slug": "blight_protection_60"
+                }, {
+                    "slug": "fire_protection_40"
+                }, {
+                    "slug": "frost_weakness_40"
+                },
+
+        ]
+
+},
+
+///MERFOLK-------------------------------------------------------------------------------------------------------------------------------------------------------------MERFOLK-------------------------------
+        {
+            "hp": "42",
+            "name": "mermaid",
+            "string": "Mermaid",
+            "armor": "9",
+            "shield": "13",
+            "mp": "40",
+            "tier": "II - 8 <x-gold></x-gold>/9<x-mana></x-mana>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold>/ 80 <x-casting></x-casting>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "Sanctuary of the Deep/Mermaid's Cove",
+            "location": "Units/ReefColony/Mermaid",
+            "description": "\'Big-breasted they may be. Ain't fer floatation neither. Steer clear of fishy wives. Sink any man, they will. Any woman too. Ain't picky. Why? Who knows what goes around their fishy brains. Blasted creatures! Lost my pappy to 'em. They do make for good ship ornaments though.'\" <br> <i>--Harbor Folk Having Their Say, by Imelda Troutfisher</i>\"",
+            "image_link": 'ReefColony/mermaid.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Water Concealment<span class=\"tooltiptext2\" id=\"water_concealment\"></span></div></li>\
+<li> <div class = \"tooltip\">Projectile Resistance<span class=\"tooltiptext2\" id=\"projectile_resistance\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Dispel Magic<span class=\"tooltiptext2\" id=\"dispel_magic\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "7<x-physical> </x-physical> 3<x-frost></x-frost> "
+        },
+                {
+                    "slug": "seduce",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "eolve_siren"
+        },
+                {
+                    "slug": "swimming"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "sea_creature"
+                    },
+
+
+                ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_40"
+                }, {
+                    "slug": "blight_weakness_40"
+                },
+
+        ]
+
+}, {
+            "hp": "50",
+            "name": "lost_mariner",
+            "string": "Lost Mariner",
+            "armor": "10",
+            "shield": "10",
+            "mp": "28",
+            "tier": "II - 4 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "Treacherous Cliffs",
+            "location": "Units/ReefColony/LostMariner",
+            "description": "\'They told me my brother drowned, but I refused to believe it. I searched for him. I found him among the Lost Mariners. His mind is gone. He ignored me as he carried a sea chest heaped with treasures for cackling fishlike woman. They were his only fixation. He dwelt in the hull of a ruined ship, wasting away in mindless servitude to those repungnant things of the briny depths. He brought shame to our family, and I don't admit it openly anymore. Instead I tell people, he was taken by the sea.'\" <br> <i>--Lost at Sea, by Marina Telanave</i>\"",
+            "image_link": 'ReefColony/lost_mariner.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Coup de Grace<span class=\"tooltiptext2\" id=\"coup_de_grace\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Support Slayer<span class=\"tooltiptext2\" id=\"support_slayer\"></span></div></li>\
+<li> <div class = \"tooltip\">Hero Slayer<span class=\"tooltiptext2\" id=\"hero_slayer\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>  "
+        }, {
+                    "slug": "fire_pistol",
+                    "damage": "18<x-physical> </x-physical>  "
+        },
+                {
+                    "slug": "hurl_net",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "volunteer"
+        }, {
+                    "slug": "irregular"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "walking"
+        },
+                {
+                    "slug": "swimming"
+                },
+
+
+
+        ],
+            "unit_types": [
+
+
+
+                ],
+            "resistances": [
+                {
+
+                },
+
+        ]
+
+},
+
+        {
+            "hp": "42",
+            "name": "siren",
+            "string": "Siren",
+            "armor": "9",
+            "shield": "13",
+            "mp": "40",
+            "tier": "III - 16 <x-gold></x-gold>/9<x-mana></x-mana>",
+            "xp": "30",
+            "cost": "120 <x-gold></x-gold> 20<x-mana></x-mana>/ 80 <x-casting></x-casting>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "Sanctuary of the Deep/Siren's Rock",
+            "location": "Units/ReefColony/Siren",
+            "description": "\Some say sailors go mad with lust, out on the sea with no woman. Mostly, that's just tales for barmaids, when they come to harbor. But then again, I've heard plenty tell of lost comrades who failed to plug their ears with wax when hearing the song of the Siren. Madly, the men plunged into their carnivorous embrace, and only their bones were found.'\" <br> <i>--Sailor Lines, by Godwin the Seducer</i>\"",
+            "image_link": 'ReefColony/siren.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Taunt<span class=\"tooltiptext2\" id=\"taunt\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "11<x-physical> </x-physical> 4<x-frost></x-frost> "
+        }, {
+                    "slug": "sirens_wail",
+                    "damage": "20<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "dominate",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "water_concealment"
+        },
+                {
+                    "slug": "swimming"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "sea_creature"
+                    },
+
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_weakness_40"
+                },
+
+        ]
+
+},
+
+
+        {
+            "hp": "80",
+            "name": "lord_of_the_deep",
+            "string": "Lord of the Deep",
+            "armor": "12",
+            "shield": "13",
+            "mp": "40",
+            "tier": "IV - 32 <x-gold></x-gold>/9<x-mana></x-mana>",
+            "xp": "40",
+            "cost": "250 <x-gold></x-gold> 60<x-mana></x-mana>",
+            "movement_type": "swimming",
+            "origin_research": "",
+            "origin_building": "Abyssal Ridge",
+            "location": "Units/ReefColony/LordOfTheDeep",
+            "description": "\The fishermen of Golans Harbor always release their final catch back into the sea. They call it: \"Paying tribute to the Lord of the Deep \". Thinking them fools, I ignored the superstition. I regretted my foolishness, when lightning set my mainsail ablaze. A sea giant appeared with a white beard like froth on massive waves. My poor vessel cracked with one thrust of his massive trident. My crew surrendered. He claimed them as his lost mariners. He left me to warn others not to be as foolish as me.'\" <br> <i>-Gods of the Sea, by Onda Barca.</i>\"",
+            "image_link": 'ReefColony/lord_of_the_deep.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Stunning Touch<span class=\"tooltiptext2\" id=\"stunning_touch\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Total Awareness<span class=\"tooltiptext2\" id=\"total_awareness\"></span></div></li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Static Shield<span class=\"tooltiptext2\" id=\"static_shield\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> 6<x-shock></x-shock> "
+        }, {
+                    "slug": "slip_away",
+
+        }, {
+                    "slug": "thunderstorm",
+
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "pikeman"
+        }, {
+                    "slug": "polearm"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "first_strike"
+        }, {
+                    "slug": "pike_square"
+        }, {
+                    "slug": "projectile_reflection"
+        },
+                {
+                    "slug": "swimming"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "sea_creature"
+                    },
+
+
+                ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_80"
+                }, {
+                    "slug": "frost_weakness_40"
+                },
+
+        ]
+
+},
 ]
 }
