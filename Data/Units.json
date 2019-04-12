@@ -31932,5 +31932,2107 @@ My mystical magical unicorn dream!'\" <br> <i>--Dance of the Unicorn, by Willa L
         ]
 
 },
-]
+
+//MACHINES-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------MACHINES------------------------------------------------
+
+        {
+            "hp": "65",
+            "name": "battering_ram",
+            "string": "Battering Ram",
+            "armor": "12",
+            "shield": "10",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "50 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Siege Workshop",
+            "location": "Units/Rest/BatteringRam",
+            "description": "\'The Battering Ram serves one purpose: Break down walls. Press a few of the local farmers to carry the thing. They don't need training. It's just a big log. You bash it. If the guys on the wall kill the guys with the ram, there are plenty of farmers ready to take their place.'\" <br> <i>--How to Kill Things Cheaply, by Groktok the Warlord</i>\"",
+            "image_link": 'Rest/battering_ram.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Sprint<span class=\"tooltiptext2\" id=\"sprint\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "ram",
+                    "damage": "16<x-physical> </x-physical> "
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "wall_crushing"
+        }, {
+                    "slug": "reinforced"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+
+                {
+
+                },
+
+        ]
+
+},
+
+        {
+            "hp": "65",
+            "name": "trebuchet",
+            "string": "Trebuchet",
+            "armor": "12",
+            "shield": "10",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "150 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Siege Workshop",
+            "location": "Units/Rest/Trebuchet",
+            "description": "\'Our armies camped around the city of Orkastrol. Orc razorbows stood ready behind high stone walls. Arrows slew anything close to the city gates, but I came prepared. We rolled the trebuchets into position and gathered a supply of boulders from the surrounding countryside. After the first volley, though their walls still stood, the enemy's cavalry desperately charged our war machines. Trebuchets are weak in melee, but my pikeman formed a wall to protect them as they launched volley after volley. When the walls were down, the trebuchets launched boulders into the the enemy troops.'\" <br> <i>--Killing the Enemy, by Lady Loki</i>\"",
+            "image_link": 'Rest/trebuchet.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Crippling Wounds<span class=\"tooltiptext2\" id=\"inflict_crippling_wounds\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "hurl_boulder",
+                    "damage": "20<x-physical> </x-physical> "
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "wall_crushing"
+        }, {
+                    "slug": "reinforced"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+
+                {
+
+                },
+
+        ]
+
+},
+
+        {
+            "hp": "60",
+            "name": "settler",
+            "string": "Settler",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "250 <x-gold></x-gold> 2000<x-population></x-population>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Builder's Hall",
+            "location": "Units/Rest/Settler",
+            "description": "\''Sellodunk City was overcrowded and my wife nagged me about getting a nicer place, but life in the city was all I knew. Then one day, Lord Vellaxis sent out a call for volunteers to join a settler caravan, and with the wife's nagging, I was eager to try something new. On our way, we formed a trail that would form a trade route to Sellodunk. We had to move quickly, because none of us settlers knew how to defend ourselves from anything more than a lone wolf. When we found a clear plateau we founded Vellaxis Town, and that's how we settled here.'\" <br> <i>--Family History, by Paulo Deen.</i>\"",
+            "image_link": 'Rest/settler.gif',
+            "level_trooper": "<li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": " <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "found_city"
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "laborer",
+                    }
+
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "fire_weakness_40",
+                },
+
+        ]
+
+                },
+        {
+            "hp": "60",
+            "name": "builder",
+            "string": "Builder",
+            "armor": "8",
+            "shield": "8",
+            "mp": "28",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "60 <x-gold></x-gold> ",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Builder's Hall",
+            "location": "Units/Rest/Builder",
+            "description": "\'Surrounded by the troops I managed to regroup, I directed the builder foreman and his slaves to build fortifications for the remainder of my forces. Builders are not fighters. He directed a massive crane on a wheeled platform, outfitted with gears, pulleys and winches. In a matter of days, with the correct balance of bribes and death threats, they constructed a watch tower and beside it a fortress at the mouth of a steep ravine. As the enemy furrowed into the narrow channel we spied them coming. From our walls, we rained arrows on the attackers. Most commanders despise the slow pace of a builder, but my army was fortunate to have them. And unlike those other warlords, I lived to tell the tale.'\" <br> <i>--Killing the Enemy, by Lady Loki.</i>\"",
+            "image_link": 'Rest/builder.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": " <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "build_a_fortress"
+        }, {
+                    "slug": "build_a_watchtower"
+        },
+                {
+                    "slug": "build_a_road"
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "tunneling"
+        },
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "laborer",
+                    }
+
+                    ],
+
+            "resistances": [
+
+                {
+                    "slug": "fire_weakness_40",
+                },
+
+        ]
+
+                },
+
+        {
+            "hp": "70",
+            "name": "frigate_warship",
+            "string": "Frigate Warship",
+            "armor": "13",
+            "shield": "10",
+            "mp": "36",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "80 <x-gold></x-gold>",
+            "movement_type": "seafaring",
+            "origin_research": "Basic Seafaring",
+            "origin_building": "Harbor",
+            "location": "Units/Rest/FrigateWarship",
+            "description": "\'We tried first to sneak past them, but the pirates had quick frigate warships and sharp eyes. A volley of great arrows streaked through the sky, launched from on-deck ballistae. We'd never make it safely to port. Our transport vessel had no chance against that fleet, so the captain turned to open seas. As suspected, once we got into rough weather, we became more trouble than we were worth. We lost the brigands in the high rolling seas, and I lost the contents of my stomach.'\" <br> <i>--Revisiting Aldor, by Ham the Wanderer</i>\"",
+            "image_link": 'Rest/frigate_warship.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Immolating Projectiles<span class=\"tooltiptext2\" id=\"immolating_projectiles\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "ram",
+                    "damage": "22<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_ballista",
+                    "damage": "22<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "volley_of_flaming_arrows",
+                    "damage": "15<x-fire> </x-fire> "
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "seafaring"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "boat"
+                    }, {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+
+                {
+
+                },
+
+        ]
+
+}, {
+            "hp": "80",
+            "name": "galleon_warship",
+            "string": "Galleon Warship",
+            "armor": "14",
+            "shield": "11",
+            "mp": "36",
+            "tier": "III - 16 <x-gold></x-gold>",
+            "xp": "30",
+            "cost": "120 <x-gold></x-gold>",
+            "movement_type": "seafaring",
+            "origin_research": "Advanced Seafaring",
+            "origin_building": "Harbor",
+            "location": "Units/Rest/GalleonWarship",
+            "description": "\The trade routes are safe. I verified it myself. We ran continuous patrols to protect all our trade ships. Our galleons are amply present, well-armed, and capable of ramming any of the smaller vessels into splinters. They are sufficient to protect our non-military vessels. We were never challenged. My only conclusion is that reports that the colonies cannot repel pirates and therefore they cannot pay the required tribute are not credible.'\" <br> <i>--Report of Tribute, Spice Colonies, by Clarisse Casale, Tax Collector</i>\"",
+            "image_link": 'Rest/galleon_warship.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+6<x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Immolating Projectiles<span class=\"tooltiptext2\" id=\"immolating_projectiles\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "ram",
+                    "damage": "26<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "fire_cannon",
+                    "damage": "30<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "volley_of_flaming_arrows",
+                    "damage": "15<x-fire> </x-fire> "
+        },
+
+
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "seafaring"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "boat"
+                    }, {
+                    "slug": "machine"
+                    },
+                {
+                    "slug": "cannot_regenerate"
+                    }, {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                    ],
+            "resistances": [
+
+                {
+
+                },
+
+        ]
+
+},
+
+//ANGELS---------------------------------------------------------------------------------------------------------------------------------------------------------ANGELS---------------------------------------------
+
+        {
+            "hp": "88",
+            "name": "arch_angel",
+            "string": "Arch Angel",
+            "armor": "16",
+            "shield": "12",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>/ Summoned:36 <x-mana></x-mana> ",
+            "xp": "40",
+            "cost": "350 <x-gold></x-gold>/ 280 <x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Arch Angel",
+            "origin_building": "",
+            "location": "Units/Rest/ArchAngel",
+            "description": "\'It's spear burned with divine fire, shredding the Undead hosts that filled us with dread. My wife smiled. Her face glowed. She announced 'The All-Father sends a servant! My prayer is answered.' Our despair evaporated. We were filled with pure joy. We knew that there were better things from other worlds - things with power that fought for our cause. The Arch Angel smote our foes with brutal determination. We were all inspired to fight. Before ascending to heaven, the angel touched the wounded and they were made whole.'\" <br> <i>--Husband to a Saint by Ugrid Grovle</i>\"",
+            "image_link": 'Rest/arch_angel.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Daze<span class=\"tooltiptext2\" id=\"inflict_daze\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Path of Life<span class=\"tooltiptext2\" id=\"path_of_life\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> 10<x-spirit></x-spirit>"
+        },
+                {
+                    "slug": "medidate",
+
+        }, {
+                    "slug": "healing",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "first_strike"
+        }, {
+                    "slug": "polearm"
+                },
+
+                {
+                    "slug": "inspiring_aura"
+                },
+                {
+                    "slug": "dedicated_to_good"
+                },
+                {
+                    "slug": "resurgence"
+                },
+                {
+                    "slug": "armored"
+                },
+
+                {
+                    "slug": "support"
+                }, {
+                    "slug": "magical_origin"
+                }, {
+                    "slug": "true_sight"
+                },
+                {
+                    "slug": "holy_champion"
+                }, {
+                    "slug": "blinding_aura"
+                },
+
+                {
+                    "slug": "support"
+                },
+
+
+                {
+                    "slug": "flying"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "blight_weakness_40"
+                    },
+        ]
+
+},
+
+        {
+            "hp": "88",
+            "name": "fallen_angel",
+            "string": "Fallen Angel",
+            "armor": "14",
+            "shield": "12",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>/ Summoned:36 <x-mana></x-mana> ",
+            "xp": "40",
+            "cost": "350 <x-gold></x-gold>/ 260 <x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Fallen Angel",
+            "origin_building": "",
+            "location": "Units/Rest/FallenAngel",
+            "description": "\'Attacked by a mob wielding repugnant symbols of faith, I fled to my summoning chamber. I unfurled my wickedest scroll and spat the language of corruption, to attract a fiend - something that kept souls trapped in hell. Gouts of inky death swirled from the summoning circle. A Fallen Angel burst into the room. It needed no command. The walls quaked. My enemies screamed with each infernal blow. It's shriek petrified even the most confident priest. With each death it grew in power. My enemies fell.'\" <br> <i>--Breaking the Faithful by Master Dark</i>\"",
+            "image_link": 'Rest/fallen_angel.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Coup de Grace<span class=\"tooltiptext2\" id=\"coup_de_grace\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Path of Decay<span class=\"tooltiptext2\" id=\"path_of_decay\"></span></div></li>\
+<li> <div class = \"tooltip\">Inflict Despair<span class=\"tooltiptext2\" id=\"inflict_despair\"></span></div></li>\
+<li> <div class = \"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 5<x-blight></x-blight> 5<x-frost></x-frost> 5<x-spirit></x-spirit>"
+        },
+                {
+                    "slug": "petrifying_scream",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "life_drain"
+        }, {
+                    "slug": "total_awareness"
+                },
+
+                {
+                    "slug": "night_vision"
+                },
+                {
+                    "slug": "true_sight"
+                },
+                {
+                    "slug": "undying"
+                },
+                {
+                    "slug": "armored"
+                },
+
+                {
+                    "slug": "infantry"
+                }, {
+                    "slug": "wall_climbing"
+                }, {
+                    "slug": "dedicated_to_evil"
+                },
+                {
+                    "slug": "unholy_champion"
+                }, {
+                    "slug": "polearm"
+                },
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+                {
+                    "slug": "flying"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "spirit_weakness_40"
+                    },
+        ]
+
+},
+
+        {
+            "hp": "88",
+            "name": "chthonic_guardian",
+            "string": "Chthonic Guardian",
+            "armor": "15",
+            "shield": "11",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>/ Summoned:36 <x-mana></x-mana> ",
+            "xp": "40",
+            "cost": "350 <x-gold></x-gold>/ 280 <x-casting></x-casting>",
+            "movement_type": "flying",
+            "origin_research": "Summon Fallen Angel",
+            "origin_building": "",
+            "location": "Units/Rest/ChthonicGuardian",
+            "description": "\'Attacked by a mob wielding repugnant symbols of faith, I fled to my summoning chamber. I unfurled my wickedest scroll and spat the language of corruption, to attract a fiend - something that kept souls trapped in hell. Gouts of inky death swirled from the summoning circle. A Fallen Angel burst into the room. It needed no command. The walls quaked. My enemies screamed with each infernal blow. It's shriek petrified even the most confident priest. With each death it grew in power. My enemies fell.'\" <br> <i>--Breaking the Faithful by Master Dark</i>\"",
+            "image_link": 'Rest/fallen_angel.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Total Awareness<span class=\"tooltiptext2\" id=\"total_awareness\"></span></div></li>\
+<li> <div class = \"tooltip\">Instant Wrath<span class=\"tooltiptext2\" id=\"instant_wrath\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "18<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "defensive_strike",
+                    "damage": "21<x-physical> </x-physical> "
+
+        }, {
+                    "slug": "rallying_cry",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "good_slayer"
+        }, {
+                    "slug": "evil_slayer"
+                },
+
+                {
+                    "slug": "defender"
+                },
+                {
+                    "slug": "shield"
+                },
+                {
+                    "slug": "first_strike"
+                },
+                {
+                    "slug": "armored"
+                },
+
+                {
+                    "slug": "pikeman"
+                }, {
+                    "slug": "pike_square"
+                }, {
+                    "slug": "dedicated_to_neutral"
+                },
+                {
+                    "slug": "polearm"
+                },
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+                {
+                    "slug": "flying"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+
+                    },
+
+                ],
+            "resistances": [
+
+        ]
+
+},
+
+//ELEMENTALS------------------------------------------------------------------------------------------------------------------------------------------------ELEMENTALS--------------------------------------
+        {
+            "hp": "45",
+            "name": "lesser_air_elemental",
+            "string": "Lesser Air Elemental",
+            "armor": "9",
+            "shield": "10",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": " 110 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Lesser Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/LesserAirElemental",
+            "description": "\'Study the invisible breeze. A breath upon my arm, a blast of wind able to deliver a powerful punch. The citizens of the realms of air are not all monstrous beasts. Many are finer, more like us. Not monsters, but man and woman that pull the air around themselves like we pull flesh around our souls.'\" <br> <i>--The Tome of Sky, by Aril Tempestus</i>\"",
+            "image_link": 'Rest/lesser_air_elemental.gif',
+            "level_trooper": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Stunning Touch<span class=\"tooltiptext2\" id=\"stunning_touch\"></span></div></li>",
+            "level_expert": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Phase<span class=\"tooltiptext2\" id=\"phase\"></span></div></li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 6<x-shock></x-shock>",
+
+        }, {
+                    "slug": "lightning_shock",
+                    "damage": " 11<x-shock></x-shock>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "evolve_air_elemental"
+                },
+
+                {
+                    "slug": "projectile_resistence"
+                },
+
+                {
+                    "slug": "inflict_shocking"
+                },
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "shock_protection_100"
+                    }, {
+                    "slug": "physical_protection_40"
+                    }, {
+                    "slug": "fire_weakness_60"
+                    }, {
+                    "slug": "frost_weakness_60"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "45",
+            "name": "air_elemental",
+            "string": "Lesser Air Elemental",
+            "armor": "9",
+            "shield": "10",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/18 <x-mana></x-mana>",
+            "xp": "30",
+            "cost": " 200 <x-gold></x-gold>/ 150 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Air Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/AirElemental",
+            "description": "\'A dust storm. That's what I thought at first. It flew at me with the force of a tornado. The air buzzed. The hair on my feet stood on end. I drove my camel towards the oasis, thinking the well would make a decent hiding place. I suddenly found myself falling head over heels in a pile of thorny weeds. The Air Elemental came at me, and all around me flew a hundred tumbleweed balls. The things must have been distracted because it forgot entirely about me, and flew off with all the tumbleweeds.'\" <br> <i>--Where's Symba?, Ham the Wanderer</i>\"",
+            "image_link": 'Rest/air_elemental.gif',
+            "level_trooper": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-shock> </x-shock> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Static Shield<span class=\"tooltiptext2\" id=\"static_shield\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 14<x-shock></x-shock>",
+
+        }, {
+                    "slug": "phase",
+
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "inflict_stun"
+                },
+
+                {
+                    "slug": "projectile_resistence"
+                },
+
+                {
+                    "slug": "inflict_shocking"
+                },
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "shock_protection_100"
+                    }, {
+                    "slug": "physical_protection_40"
+                    }, {
+                    "slug": "fire_weakness_60"
+                    }, {
+                    "slug": "frost_weakness_60"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "55",
+            "name": "lesser_blight_elemental",
+            "string": "Lesser Blight Elemental",
+            "armor": "12",
+            "shield": "10",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": " 110 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Lesser Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/LesserBlightElemental",
+            "description": "\''At Arcanus Academy, we would summon Lesser Blight Elementals, loosing them into the dormitories the night before the Final Exams to spread a little nausea and plague before the big test. I like to think of it as the first test question, whether they could handle a little anxiety.'\" <br> <i>--More than Lectures, by Headmaster Myke Gonnagull</i>\"",
+            "image_link": 'Rest/lesser_blight_elemental.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Enfeebling Fever<span class=\"tooltiptext2\" id=\"inflict_enfeebling_fever\"></span></div></li>\
+<li> <div class = \"tooltip\">Inflict Exhausting Fatigue<span class=\"tooltiptext2\" id=\"inflict_exhausting_fatigue\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Inflict Severely Poisoned<span class=\"tooltiptext2\" id=\"inflict_severely_poisoned\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 7<x-blight></x-blight>",
+
+        }, {
+                    "slug": "poison_spit",
+                    "damage": " 11<x-blight></x-blight>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "evolve_blight_elemental"
+                },
+
+
+
+                {
+                    "slug": "inflict_noxious_vulnerability"
+                }, {
+                    "slug": "disgusting_stench"
+                },
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "fire_weakness_40"
+                    }, {
+                    "slug": "spirit_weakness_60"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "75",
+            "name": "blight_elemental",
+            "string": "Blight Elemental",
+            "armor": "12",
+            "shield": "10",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/18 <x-mana></x-mana>",
+            "xp": "30",
+            "cost": " 200 <x-gold></x-gold>/ 150 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Blight Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/BlightElemental",
+            "description": "\'I don't know why they were surprised. Blight creeps across fertile lands, like a beast. That it suddenly assumed a living form and ruthlessly blasted the kings knights with infection and corrosive ooze...I didn't wait for their flesh to melt from their bones.''\" <br> <i>--Reason for Retreat, by Ham the Wanderer</i>\"",
+            "image_link": 'Rest/blight_elemental.gif',
+            "level_trooper": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-blight> </x-blight> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-blight> </x-blight> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 14<x-blight></x-blight>",
+
+        }, {
+                    "slug": "weakening_breath",
+                    "damage": " 8<x-blight></x-blight>",
+
+        }, {
+                    "slug": "weakening",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "inflict_enfeebling_fever"
+                }, {
+                    "slug": "inflict_exhausting_fatigue"
+                },
+                {
+                    "slug": "inflict_severely_poisoned"
+                },
+                {
+                    "slug": "inflict_brain_rot"
+                },
+
+
+
+
+                {
+                    "slug": "inflict_noxious_vulnerability"
+                }, {
+                    "slug": "disgusting_stench"
+                },
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "blight_protection_100"
+                    }, {
+                    "slug": "fire_weakness_40"
+                    }, {
+                    "slug": "spirit_weakness_60"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "55",
+            "name": "lesser_earth_elemental",
+            "string": "Lesser Earth Elemental",
+            "armor": "12",
+            "shield": "8",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": " 110 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Lesser Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/LesserEarthElemental",
+            "description": "\'Petra loved rocks. While other kids played with friends, she gathered earth friends. Unbreakable. Solid. Supportive. Not like her heartless father. One night, he thought to fix his girl's peculiarities. As her father's cudgel struck, Petra's friends rose, forming a man of stone. Petra entered the Druid's Enclave an orphan. She taught us all to trust the earth.'\" <br> <i>-Oakenshire Enclave, by Antlerianis</i>\"",
+            "image_link": 'Rest/lesser_earth_elemental.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Defender<span class=\"tooltiptext2\" id=\"defender\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Regrowth<span class=\"tooltiptext2\" id=\"regrowth\"></span></div></li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical>",
+
+        }, {
+                    "slug": "throw_stones",
+                    "damage": " 11<x-physical></x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "evolve_earth_elemental"
+                },
+
+
+
+                {
+                    "slug": "inflict_crippling_wounds"
+                },
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                    }, {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "physical_protection_40"
+                    }, {
+                    "slug": "shock_weakness_60"
+                    }, {
+                    "slug": "blight_weakness_60"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "75",
+            "name": "earth_elemental",
+            "string": "Earth Elemental",
+            "armor": "13",
+            "shield": "9",
+            "mp": "32",
+            "tier": "III - 8 <x-gold></x-gold>/18 <x-mana></x-mana>",
+            "xp": "30",
+            "cost": " 200 <x-gold></x-gold>/ 150 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Earth Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/EarthElemental",
+            "description": "\The hulking mass of dirt lifted the earth beneath our feet. An inexperienced Storm Sister loosed a barrage of lightning. The thing didn't even flinch. The spearman and archers struck, but it pounded those that didn't flee into the ground. I ordered the troops to spread out. We struck it over and over, but how do you know how well you're fighting a being of earth? Eventually, the earth elemental could not sustain its form and crumbled back into the clods of dirt from which it rose.''\" <br> <i>--Dirty Jobs, Xenock Treestar, Ranger</i>\"",
+            "image_link": 'Rest/earth_elemental.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Petrifying Touch<span class=\"tooltiptext2\" id=\"petrifying_touch\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "20<x-physical> </x-physical>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "regrowth"
+                },
+
+
+
+                {
+                    "slug": "defender"
+                },
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                    }, {
+                    "slug": "frost_protection_100"
+                    },
+                {
+                    "slug": "physical_protection_40"
+                    }, {
+                    "slug": "shock_weakness_60"
+                    }, {
+                    "slug": "blight_weakness_60"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "55",
+            "name": "lesser_fire_elemental",
+            "string": "Lesser Fire Elemental",
+            "armor": "12",
+            "shield": "8",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": " 110 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Lesser Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/LesserFireElemental",
+            "description": "\'I stared at the campfire, feeling cold. Then a voice spoke, 'I'll grant your wish and make you warmer.' I told the voice I would accept the offer only after donning my red ring. I highly recommend magic rings. The Lesser Fire Elemental rose from the fire and I embraced it without being burned, for the red ring protected me.'\" <br> <i>--Must-Have Magic Items, Bezos the Mage</i>\"",
+            "image_link": 'Rest/lesser_fire_elemental.gif',
+            "level_trooper": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Immolation<span class=\"tooltiptext2\" id=\"inflict_immolation\"></span></div></li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Fire Aura<span class=\"tooltiptext2\" id=\"fire_aura\"></span></div></li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 9<x-fire></x-fire>",
+
+        }, {
+                    "slug": "fire_bolts",
+                    "damage": " 9<x-fire></x-fire>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "explosive_death"
+        }, {
+                    "slug": "evolve_fire_elemental"
+                },
+
+
+
+                {
+                    "slug": "inflict_scorching_heat"
+                },
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "frost_weakness_100"
+                    },
+        ]
+
+    },
+
+
+        {
+            "hp": "55",
+            "name": "fire_elemental",
+            "string": "Fire Elemental",
+            "armor": "12",
+            "shield": "8",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": " 110 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Fire Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/FireElemental",
+            "description": "\'The creature moved just like a man made of flames, this Fire Elemental. It cut us off before we could get to the river, blasting our company with its fists of flame. I wished for a frost cannon, but with the withdrawal of the Frostlings to the northern tundra, the technology to build such devices was lost. We were forced to extinguish is by force of steel. Many of our blows did little damage, but little by little the sparks faded to embers and the flames smoldered.'\" <br> <i>--Encounters in Invention, by Roper Hetlam, Dreadnought</i>\"",
+            "image_link": 'Rest/fire_elemental.gif',
+            "level_trooper": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Killing Momentum<span class=\"tooltiptext2\" id=\"killing_momentum\"></span></div></li>\
+<li> <div class = \"tooltip\">Charge<span class=\"tooltiptext2\" id=\"charge\"></span></div></li>",
+
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 18<x-fire></x-fire>",
+
+        }, {
+                    "slug": "sprint",
+
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "explosive_death"
+        }, {
+                    "slug": "inflict_immolation"
+                },
+
+
+
+                {
+                    "slug": "inflict_scorching_heat"
+                },
+                {
+                    "slug": "fire_aura"
+                },
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "fire_protection_100"
+                    }, {
+                    "slug": "blight_protection_100"
+                    },
+                {
+                    "slug": "frost_weakness_100"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "50",
+            "name": "lesser_frost_elemental",
+            "string": "Lesser Frost Elemental",
+            "armor": "13",
+            "shield": "10",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": " 110 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Lesser Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/LesserFrostElemental",
+            "description": "\I know that Ice chests are the latest rage among magical appliances. Though personally, I prefer to summon a few Lesser Frost Elementals to carry my supplies that require refrigeration. They aren't as powerful in battle, but are much more obedient than their elder brethren.'\" <br> <i>--Sorcery for Everyday, by Vondervuvu Flickenstin, Magician</i>\"",
+            "image_link": 'Rest/lesser_frost_elemental.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Chilling<span class=\"tooltiptext2\" id=\"inflict_chilling\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Defender<span class=\"tooltiptext2\" id=\"defender\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Frost Aura<span class=\"tooltiptext2\" id=\"frost_aura\"></span></div></li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 5<x-frost></x-frost>",
+
+        }, {
+                    "slug": "frost_shard",
+                    "damage": " 9<x-frost></x-frost>",
+
+        }, {
+                    "slug": "freezing_touch",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "inflict_frostbite"
+        }, {
+                    "slug": "evolve_frost_elemental"
+                },
+
+
+
+                {
+                    "slug": "projectile_resistance"
+                },
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_100"
+                    }, {
+                    "slug": "physical_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_100"
+                    },
+        ]
+
+    },
+
+
+        {
+            "hp": "70",
+            "name": "frost_elemental",
+            "string": "Frost Elemental",
+            "armor": "14",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/18 <x-mana></x-mana>",
+            "xp": "30",
+            "cost": " 200 <x-gold></x-gold>/ 150 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Frost Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/FrostElemental",
+            "description": "'Most summoners agree, it's no longer trendy to summon water elementals, and with a slight alteration to the old spell, you can freshen it and summon something much more in vogue for all your battlefield needs. So imagine my excitement when I got my summoners license and clearance papers from the Commonwealth Ministry of Sorcery and Summoning(CMOSS) to summon my first Frost Elemental. Keep them away from fire, and feed them a steady diet of ice cubes, and they'll freeze any enemy that tries to siege your castle. And in case of dinner parties, they're great for chilling drinks.'\" <br> <i>--Conjurer's Chic, by Babbette Mumraht, Magic-Reporter</i>\"",
+            "image_link": 'Rest/frost_elemental.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Melee</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Defensive Strike<span class=\"tooltiptext2\" id=\"defensive_strike\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Frost Aura<span class=\"tooltiptext2\" id=\"frost_aura\"></span></div></li>",
+            "level_elite": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li>+20% <x-fire></x-fire> Protection</li>\
+<li>+20% <x-physical></x-fire> physical</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "5<x-physical> </x-physical> 12<x-frost></x-frost>",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "inflict_frostbite"
+        }, {
+                    "slug": "defender"
+                },
+                {
+                    "slug": "inflict_freezing_cold"
+        }, {
+                    "slug": "frost_aura"
+        }, {
+                    "slug": "inflict_chilling"
+                },
+
+
+                {
+                    "slug": "projectile_resistance"
+                },
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "frost_protection_100"
+                    }, {
+                    "slug": "physical_weakness_40"
+                    },
+                {
+                    "slug": "fire_weakness_100"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "50",
+            "name": "lesser_spirit_elemental",
+            "string": "Lesser Spirit Elemental",
+            "armor": "12",
+            "shield": "10",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>/12 <x-mana></x-mana>",
+            "xp": "20",
+            "cost": " 100 <x-gold></x-gold>/ 120 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Lesser Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/LesserSpiritElemental",
+            "description": "\'Let your candle flame glow,\
+Servants of the sunrise.\
+Let lady light shine so.\
+Worry not that with it tries,\
+To burn away the fog.\
+Morning fire ignite,\
+Pierce the darkest bog,\
+Come to me and fight,\
+Set the world alight.\
+'\" <br> <i>--A Song for the Lesser Lights, by Willa Loveday, Master Bard</i>\"",
+            "image_link": 'Rest/lesser_spirit_elemental.gif',
+            "level_trooper": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Inflict Spirit Breaking<span class=\"tooltiptext2\" id=\"inflict_spirit_breaking\"></span></div></li>",
+            "level_expert": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li> <div class = \"tooltip\">Inflict Daze<span class=\"tooltiptext2\" id=\"inflict_daze\"></span></div></li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 6<x-spirit></x-spirit>",
+
+        }, {
+                    "slug": "spirit_blast",
+                    "damage": " 9<x-spirit></x-spirit>",
+
+        }, {
+                    "slug": "bestow_iron_heart",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "evolve_spirit_elemental"
+                },
+
+
+
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "frost_protection_80"
+                    }, {
+                    "slug": "fire_protection_80"
+                    }, {
+                    "slug": "shock_protection_80"
+                    },
+                {
+                    "slug": "blight_weakness_100"
+                    },
+        ]
+
+    },
+
+        {
+            "hp": "70",
+            "name": "spirit_elemental",
+            "string": "Lesser Spirit Elemental",
+            "armor": "13",
+            "shield": "11",
+            "mp": "32",
+            "tier": "III - 16 <x-gold></x-gold>/18 <x-mana></x-mana>",
+            "xp": "30",
+            "cost": " 200 <x-gold></x-gold>/ 150 <x-casting></x-casting>",
+            "movement_type": "mp",
+            "origin_research": "Summon Spirit Elemental",
+            "origin_building": "",
+            "location": "Units/Rest/SpiritElemental",
+            "description": "\'When the edged of the world fray, we'll see that there is life in all things, including light itself. Some sorcerers sense what I divulge tonight. Beings that strike with the sacred glow of stars and move as quickly as a blinding flash can be coaxed through mana-conduits from their bright realms to dance across our own.'\" <br> <i>--Mages Amused, by Merra Lynn</i>\"",
+            "image_link": 'Rest/spirit_elemental.gif',
+            "level_trooper": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points</li>",
+            "level_expert": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+6 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+12 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Projectile Reflection<span class=\"tooltiptext2\" id=\"projectile_reflection\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical> 14<x-spirit></x-spirit>",
+
+        }, {
+                    "slug": "spirit_ray",
+                    "damage": " 11<x-spirit></x-spirit>",
+
+        }, {
+                    "slug": "bestow_iron_heart",
+
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "night_vision"
+        }, {
+                    "slug": "inflict_daze"
+                },
+                {
+                    "slug": "inflict_spirit_breaking"
+                },
+
+
+
+
+                {
+                    "slug": "magical_origin"
+                },
+
+
+
+                {
+                    "slug": "floating"
+                },
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "elemental"
+                    },
+
+
+                    ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_100"
+                    }, {
+                    "slug": "frost_protection_80"
+                    }, {
+                    "slug": "fire_protection_80"
+                    }, {
+                    "slug": "shock_protection_80"
+                    },
+                {
+                    "slug": "blight_weakness_100"
+                    },
+        ]
+
+    },
+
+//-OTHER----------------------------------------------------------------------------------------------------------------------------------OTHER-----------------------------------------------
+        {
+            "hp": "80",
+            "name": "phoenix",
+            "string": "Phoenix",
+            "armor": "14",
+            "shield": "13",
+            "mp": "30",
+            "tier": "IV - 32 <x-gold></x-gold>/ Summoned:28 <x-mana></x-mana> ",
+            "xp": "40",
+            "cost": "320 <x-gold></x-gold>",
+            "movement_type": "flying",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Rest/Phoenix",
+            "description": "\"'The immortal Phoenix takes the sky,\
+reminding all who live will die.\
+Like life itself it burns too bright,\
+and for a moment takes its flight.\
+Then in death, as one remembers,\
+newborn hope from smoldered embers.\
+Oh Phoenix, take my soul with you,\
+and give me back my life anew.\
+Ever may I as I retire,\
+embrace new life in blazing fire.'.\" <br> <i>--Phoenix Song, by Willa Loveday, Master Bard</i>\"",
+            "image_link": 'Rest/phoenix.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Fire Aura<span class=\"tooltiptext2\" id=\"fire_aura\"></span></div></li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "14<x-physical> </x-physical> 8<x-fire></x-fire>"
+        },
+                {
+                    "slug": "fire_breath",
+                    "damage": "20<x-fire></x-fire>"
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "vision_range_upgrade"
+        }, {
+                    "slug": "strong_will"
+                },
+
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "resurgence"
+                },
+                {
+                    "slug": "regeneration"
+                },
+
+                {
+                    "slug": "inflict_immolation"
+                },
+                {
+                    "slug": "dedicated_to_good"
+                },
+                {
+                    "slug": "true_sight"
+                },
+
+
+
+                {
+                    "slug": "flying"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                ],
+            "resistances": [
+                {
+                    "slug": "spirit_protection_60"
+                    }, {
+                    "slug": "fire_protection_60"
+                    },
+        ]
+
+},
+
+        {
+            "hp": "111",
+            "name": "elder_eldritch",
+            "string": "Elder Eldritch",
+            "armor": "14",
+            "shield": "14",
+            "mp": "32",
+            "tier": "IV - 32 <x-gold></x-gold>",
+            "xp": "40",
+            "cost": "500 <x-gold></x-gold>",
+            "movement_type": "floating",
+            "origin_research": "Campaign Only",
+            "origin_building": "",
+            "location": "Units/Rest/ElderEldritch",
+            "description": "\'Unspeakable, nameless. One of the horrors from the unknown realms. Who knows what awaits us when we win? When my eyes fell upon this entity for the first time, I knew we had meddled with things far beyond our control. Am I, first of our Loyal Legion, suddenly doubtful of our cause?''\" <br> <i>--Scribblings of a Shadowborn Loyalist, by Enanuel of Yondele</i>\"",
+            "image_link": 'Rest/elder_eldritch.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-spirit> </x-spirit> Melee</li>\
+ <li>+8<x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Inflict Spirit Breaking<span class=\"tooltiptext2\" id=\"inflict_spirit_breaking\"></span></div></li>",
+            "level_expert": "<li>+1 <x-shock> </x-shock> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+ <li> <div class = \"tooltip\">Inflict Curse<span class=\"tooltiptext2\" id=\"inflict_curse\"></span></div></li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+16 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Exploit Despair<span class=\"tooltiptext2\" id=\"exploit_despair\"></span></div></li>\
+ <li> <div class = \"tooltip\">Despair Strike<span class=\"tooltiptext2\" id=\"despair_strike\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "18<x-physical> </x-physical> 5<x-spirit></x-spirit> 5<x-shock></x-shock> "
+        }, {
+                    "slug": "spirit_breath",
+                    "damage": "16<x-spirit> </x-spirit>",
+
+        }, {
+                    "slug": "shadow_step",
+
+
+        },
+               ],
+            "passives": [
+                {
+                    "slug": "magical_origin"
+        }, {
+                    "slug": "elemental_slayer"
+        },
+                {
+                    "slug": "night_vision"
+                }, {
+                    "slug": "guard_breaker"
+        }, {
+                    "slug": "mind_control_immunity"
+        }, {
+                    "slug": "fearsome"
+        }, {
+                    "slug": "fear_strike"
+        },
+                {
+                    "slug": "blinding_aura"
+                }, {
+                    "slug": "life_drain"
+        }, {
+                    "slug": "somethings_inside"
+        }, {
+                    "slug": "void_implosion"
+        }, {
+                    "slug": "total_awareness"
+        },
+                {
+                    "slug": "tireless"
+                }, {
+                    "slug": "electrical_skin"
+        },
+                {
+                    "slug": "floating"
+                }
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "monster"
+                    },
+
+                    ],
+
+            "resistances": [
+                {
+                    "slug": "physical_protection_20"
+                    },
+                {
+                    "slug": "frost_protection_20"
+                    },
+                {
+                    "slug": "fire_protection_20"
+                    },
+                {
+                    "slug": "shock_protection_60"
+                    },
+                {
+                    "slug": "spirit_protection_100"
+                    },
+                {
+                    "slug": "blight_weakenss_60"
+                    },
+
+
+        ]
+
+},
+
+
+            ]
 }
