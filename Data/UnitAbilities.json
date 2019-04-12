@@ -3190,6 +3190,13 @@ var jsonUnitAbilities = {
             "damage": "",
             "icon_name": "improved_wall_climbing",
 
+       }, {
+            "slug": "wall_climbing",
+            "name": "Wall Climbing",
+            "description": "This unit is able to climb city walls, but suffers a wall climbing penalty",
+            "damage": "",
+            "icon_name": "wall_climbing",
+
        },
         {
             "slug": "lava_walking",
