@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/aow3db/Icons/UI/icon.ico">
+    <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function loadheader() {
+            $("#header").load("/aow3db/Pages/header.html");
+
+
+            $("#ErymanthianBoar").load("/aow3db/Pages/Units/ArchDruid/ErymanthianBoar.html");
+            $("#ElderEldritch").load("/aow3db/Pages/Units/Rest/ElderEldritch.html");
+            $("#TameTroll").load("/aow3db/Pages/Units/Monsers/TameTroll.html");
+
+
+        });
+    </script>
+
+    <title>AOW3 Database - Machine Units</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="ErymanthianBoar"></div>
+    <br><br>
+    <div id="ElderEldritch"></div>
+    <br><br>
+
+    <div id="TameTroll"></div>
+    <br><br>
+
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body></html>

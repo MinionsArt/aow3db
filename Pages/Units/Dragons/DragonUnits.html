@@ -14,32 +14,32 @@
             $("#header").load("/aow3db/Pages/header.html");
 
 
-            $("#ArchonRevenantInfantry").load("/aow3db/Pages/Units/Archon/ArchonRevenantInfantry.html");
+            $("#FireWyvern").load("/aow3db/Pages/Units/Dragons/FireWyvern.html");
 
-            $("#ArchonRevenantArcher").load("/aow3db/Pages/Units/Archon/ArchonRevenantArcher.html");
+            $("#FrostWyvern").load("/aow3db/Pages/Units/Dragons/FrostWyvern.html");
 
-            $("#ArchonRevenantCaster").load("/aow3db/Pages/Units/Archon/ArchonRevenantCaster.html");
+            $("#GoldWyvern").load("/aow3db/Pages/Units/Dragons/GoldWyvern.html");
 
-            $("#Wraith").load("/aow3db/Pages/Units/Archon/Wraith.html");
+            $("#FireDragon").load("/aow3db/Pages/Units/Dragons/FireDragon.html");
 
-            $("#WraithKing").load("/aow3db/Pages/Units/Archon/WraithKing.html");
+            $("#FrostDragon").load("/aow3db/Pages/Units/Dragons/FrostDragon.html");
 
-            $("#ArchonTitan").load("/aow3db/Pages/Units/Archon/ArchonTitan.html");
+            $("#GoldenDragon").load("/aow3db/Pages/Units/Dragons/GoldenDragon.html");
         });
     </script>
 
-    <title>AOW3 Database - Archon Units</title>
+    <title>AOW3 Database - Dragon Units</title>
 </head>
 
 <body>
     <div id="header"></div>
 
     <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Necropolis(Archon)</p>
-        <img class="unit_image" src="/aow3db/Icons/Passives/archon.png" style="position: relative; padding: 4px" width="100">
-        <img src="/aow3db/PreviewGifs/StrategicMap/archon.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
+        <p style="background-color:black; font-size: 26px" class="unit_name">Dragons' Peak(Dragon)</p>
+        <img class="unit_image" src="/aow3db/Icons/Passives/dragon.png" style="position: relative; padding: 4px" width="100">
+        <img src="/aow3db/PreviewGifs/StrategicMap/dragon.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
 
-        <p>Archon Revenants are corruptions of the glorious and noble Archon. In life, the Archon were a race of enlightened men. Outwardly very similar to humans, their inner peace and nature resembled that of the elves. Always helping humanity, their most fervent goal was fighting and obliterating the undead, who they saw as their ultimate nemesis. They eventually left, leaving behind tombs of warriors in large necropoles. By some cruel twist of fate, they eventually rose from their resting places as undead themselves. Nothing like their former selves, these Archon Revenants are soulless beings intend on spreading death and destruction.</p>
+        <p>The Dragons are an ancient race of powerfull reptilian creatures. Born into this world during its creation, the Dragons are said the have shaped the world for the other races to inhabit. Each Dragon type to emerge represented one element; ranging from metals and gems to fire and frost. The Giants came next, shaping the land in finer detail, often changing what the Dragons had formed. This is thought to be the source of the fiercy animosity between the two races. All Dragons can fly and possess powerful magical abilities and immunities, combining breath attacks with powerful claws.</p>
         <hr>
         <div style="clear: both"></div>
         <p style="background-color:black; font-size: 26px" class="unit_name">Terrain and Traits</p>
@@ -47,7 +47,9 @@
             <h2 style="text-align: center">Terrain</h2>
             <hr>
 
-            <li>No Terrain Preferences or Dislikes
+            <li>Likes: Barrens
+            </li>
+            <li>Dislikes: Blighted
             </li>
 
 
@@ -56,13 +58,12 @@
         <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px">
             <h2 style="text-align: center">Traits</h2>
             <hr>
+            <div class="tooltip" style="color:aqua">Dragon<span class="tooltiptext2" id="Dragon"></span></div>
+            <div class="tooltip" style="color:aqua">Mind Control Immunity<span class="tooltiptext2" id="mind_control_immunity"></span></div>
+            <div class="tooltip" style="color:aqua">Night Vision<span class="tooltiptext2" id="night_vision"></span></div>
+            <div class="tooltip" style="color:aqua">Charge<span class="tooltiptext2" id="charge"></span></div>
+            <div class="tooltip" style="color:aqua">Flying<span class="tooltiptext2" id="flying"></span></div>
 
-            <div class="tooltip" style="color:aqua">Undead<span class="tooltiptext2" id="undead"></span></div>
-            <div class="tooltip" style="color:aqua">Cannot Regenerate<span class="tooltiptext2" id="cannot_regenerate"></span></div>
-            <li>40% <x-frost></x-frost> Protection</li>
-            <li>100% <x-blight></x-blight> Protection</li>
-            <li>40% <x-fire></x-fire> Weakness</li>
-            <div class="tooltip" style="color:aqua">Dedicated to Evil<span class="tooltiptext2" id="dedicated_to_evil"></span></div>
         </div>
 
         <div style="clear: both"></div>
@@ -110,10 +111,10 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Infantry units<br><br>
+                        Unlocks the production of Dragon Revenant Infantry units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Infantry</li>
+                        <li>Dragon Revenant Infantry</li>
 
                     </p>
 
@@ -134,10 +135,10 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Archer units<br><br>
+                        Unlocks the production of Dragon Revenant Archer units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Archer</li>
+                        <li>Dragon Revenant Archer</li>
 
                     </p>
 
@@ -206,13 +207,13 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Caster units<br><br>
+                        Unlocks the production of Dragon Revenant Caster units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
                         <li>Haunted Vault</li>
                         <li>Chamber of the Rite</li>
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Caster</li>
+                        <li>Dragon Revenant Caster</li>
                     </p>
 
 
@@ -264,7 +265,7 @@
                         <hr>
 
                         This Dwelling regenerates image Hitpoints of garrisoned Undead units.<br>
-                        In addition when combat takes place on the center of this Dwelling, it reanimates corpses of Racial units that have died, as Archon Revenant Infantry<br><br>
+                        In addition when combat takes place on the center of this Dwelling, it reanimates corpses of Racial units that have died, as Dragon Revenant Infantry<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
                         <li>Mausoleum</li>
@@ -296,7 +297,7 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Titan units<br><br>
+                        Unlocks the production of Dragon Titan units<br><br>
                         <br><br>
 
 
@@ -328,20 +329,20 @@
     </div>
 
     <br><br>
-    <div id="ArchonRevenantInfantry"></div>
+    <div id="FireWyvern"></div>
     <br><br>
 
-    <div id="ArchonRevenantArcher"></div>
+    <div id="FrostWyvern"></div>
     <br><br>
-    <div id="ArchonRevenantCaster"></div>
+    <div id="GoldWyvern"></div>
     <br><br>
-    <div id="Wraith"></div>
+    <div id="FireDragon"></div>
     <br><br>
-    <div id="WraithKing"></div>
+    <div id="FrostDragon"></div>
     <br><br>
 
 
-    <div id="ArchonTitan"></div>
+    <div id="GoldenDragon"></div>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");

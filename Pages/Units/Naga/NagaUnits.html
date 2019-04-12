@@ -14,32 +14,32 @@
             $("#header").load("/aow3db/Pages/header.html");
 
 
-            $("#ArchonRevenantInfantry").load("/aow3db/Pages/Units/Archon/ArchonRevenantInfantry.html");
+            $("#BabyReedSerpent").load("/aow3db/Pages/Units/Animals/BabyReedSerpent.html");
 
-            $("#ArchonRevenantArcher").load("/aow3db/Pages/Units/Archon/ArchonRevenantArcher.html");
+            $("#NagaSlither").load("/aow3db/Pages/Units/Naga/NagaSlither.html");
 
-            $("#ArchonRevenantCaster").load("/aow3db/Pages/Units/Archon/ArchonRevenantCaster.html");
+            $("#NagaGuardian").load("/aow3db/Pages/Units/Naga/NagaGuardian.html");
 
-            $("#Wraith").load("/aow3db/Pages/Units/Archon/Wraith.html");
+            $("#NagaMatriarch").load("/aow3db/Pages/Units/Naga/NagaMatriarch.html");
 
-            $("#WraithKing").load("/aow3db/Pages/Units/Archon/WraithKing.html");
+            $("#MatureReedSerpent").load("/aow3db/Pages/Units/Animals/MatureReedSerpent.html");
 
-            $("#ArchonTitan").load("/aow3db/Pages/Units/Archon/ArchonTitan.html");
+            $("#NagaGlutton").load("/aow3db/Pages/Units/Naga/NagaGlutton.html");
         });
     </script>
 
-    <title>AOW3 Database - Archon Units</title>
+    <title>AOW3 Database - Naga Units</title>
 </head>
 
 <body>
     <div id="header"></div>
 
     <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Necropolis(Archon)</p>
-        <img class="unit_image" src="/aow3db/Icons/Passives/archon.png" style="position: relative; padding: 4px" width="100">
-        <img src="/aow3db/PreviewGifs/StrategicMap/archon.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
+        <p style="background-color:black; font-size: 26px" class="unit_name">Naga Lair(Naga)</p>
+        <img class="unit_image" src="/aow3db/Icons/Passives/naga.png" style="position: relative; padding: 4px" width="100">
+        <img src="/aow3db/PreviewGifs/StrategicMap/naga.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
 
-        <p>Archon Revenants are corruptions of the glorious and noble Archon. In life, the Archon were a race of enlightened men. Outwardly very similar to humans, their inner peace and nature resembled that of the elves. Always helping humanity, their most fervent goal was fighting and obliterating the undead, who they saw as their ultimate nemesis. They eventually left, leaving behind tombs of warriors in large necropoles. By some cruel twist of fate, they eventually rose from their resting places as undead themselves. Nothing like their former selves, these Archon Revenants are soulless beings intend on spreading death and destruction.</p>
+        <p>The Naga are an ancient race of powerful, reptilian creatures. They tend to hide in their swamps and only come out when provoked or hired in mercenary armies. Ruled by Matriarchs, they have a strictly organized society, so much so that the different roles and duties have started influencing their appearance. All Naga are strong melee fighters, with the slightly dimwitted Glutton the strongest of them all. The Matriarch possesses powerful magical abilities to control her subjects and neutralize enemy threats.</p>
         <hr>
         <div style="clear: both"></div>
         <p style="background-color:black; font-size: 26px" class="unit_name">Terrain and Traits</p>
@@ -47,7 +47,9 @@
             <h2 style="text-align: center">Terrain</h2>
             <hr>
 
-            <li>No Terrain Preferences or Dislikes
+            <li>Likes: Dense Vegetation
+            </li>
+            <li>Dislikes: Volcanic
             </li>
 
 
@@ -56,13 +58,12 @@
         <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px">
             <h2 style="text-align: center">Traits</h2>
             <hr>
-
-            <div class="tooltip" style="color:aqua">Undead<span class="tooltiptext2" id="undead"></span></div>
-            <div class="tooltip" style="color:aqua">Cannot Regenerate<span class="tooltiptext2" id="cannot_regenerate"></span></div>
-            <li>40% <x-frost></x-frost> Protection</li>
-            <li>100% <x-blight></x-blight> Protection</li>
-            <li>40% <x-fire></x-fire> Weakness</li>
-            <div class="tooltip" style="color:aqua">Dedicated to Evil<span class="tooltiptext2" id="dedicated_to_evil"></span></div>
+            <div class="tooltip" style="color:aqua">Naga<span class="tooltiptext2" id="naga"></span></div>
+            <div class="tooltip" style="color:aqua">Swimming<span class="tooltiptext2" id="swimming"></span></div>
+            <div class="tooltip" style="color:aqua">Wetland Walking<span class="tooltiptext2" id="wetland_walking"></span></div>
+            <li>40% <x-blight></x-blight>Blight Protection</li>
+            <li>40% <x-fire></x-fire>Fire Protection</li>
+            <li>40% <x-frost></x-frost>Frost Weakness</li>
         </div>
 
         <div style="clear: both"></div>
@@ -110,10 +111,10 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Infantry units<br><br>
+                        Unlocks the production of Naga Revenant Infantry units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Infantry</li>
+                        <li>Naga Revenant Infantry</li>
 
                     </p>
 
@@ -134,10 +135,10 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Archer units<br><br>
+                        Unlocks the production of Naga Revenant Archer units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Archer</li>
+                        <li>Naga Revenant Archer</li>
 
                     </p>
 
@@ -206,13 +207,13 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Caster units<br><br>
+                        Unlocks the production of Naga Revenant Caster units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
                         <li>Haunted Vault</li>
                         <li>Chamber of the Rite</li>
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Caster</li>
+                        <li>Naga Revenant Caster</li>
                     </p>
 
 
@@ -264,7 +265,7 @@
                         <hr>
 
                         This Dwelling regenerates image Hitpoints of garrisoned Undead units.<br>
-                        In addition when combat takes place on the center of this Dwelling, it reanimates corpses of Racial units that have died, as Archon Revenant Infantry<br><br>
+                        In addition when combat takes place on the center of this Dwelling, it reanimates corpses of Racial units that have died, as Naga Revenant Infantry<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
                         <li>Mausoleum</li>
@@ -296,7 +297,7 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Titan units<br><br>
+                        Unlocks the production of Naga Titan units<br><br>
                         <br><br>
 
 
@@ -328,20 +329,20 @@
     </div>
 
     <br><br>
-    <div id="ArchonRevenantInfantry"></div>
+    <div id="BabyReedSerpent"></div>
     <br><br>
 
-    <div id="ArchonRevenantArcher"></div>
+    <div id="NagaSlither"></div>
     <br><br>
-    <div id="ArchonRevenantCaster"></div>
+    <div id="NagaGuardian"></div>
     <br><br>
-    <div id="Wraith"></div>
+    <div id="NagaMatriarch"></div>
     <br><br>
-    <div id="WraithKing"></div>
+    <div id="MatureReedSerpent"></div>
+    <br><br>
+    <div id="NagaGlutton"></div>
     <br><br>
 
-
-    <div id="ArchonTitan"></div>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/aow3db/Icons/UI/icon.ico">
+    <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function loadheader() {
+            $("#header").load("/aow3db/Pages/header.html");
+
+
+            $("#Settler").load("/aow3db/Pages/Units/Rest/Settler.html");
+            $("#Builder").load("/aow3db/Pages/Units/Rest/Builder.html");
+            $("#Trebuchet").load("/aow3db/Pages/Units/Rest/Trebuchet.html");
+            $("#BatteringRam").load("/aow3db/Pages/Units/Rest/BatteringRam.html");
+            $("#FrigateWarship").load("/aow3db/Pages/Units/Rest/FrigateWarship.html");
+            $("#GalleonWarship").load("/aow3db/Pages/Units/Rest/GalleonWarship.html");
+
+
+        });
+    </script>
+
+    <title>AOW3 Database - Machine Units</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="Settler"></div>
+    <br><br>
+    <div id="Builder"></div>
+    <br><br>
+
+    <div id="BatteringRam"></div>
+    <br><br>
+    <div id="Trebuchet"></div>
+    <br><br>
+    <div id="FrigateWarship"></div>
+    <br><br>
+    <div id="GalleonWarship"></div>
+    <br><br>
+
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body></html>

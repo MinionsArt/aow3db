@@ -14,32 +14,30 @@
             $("#header").load("/aow3db/Pages/header.html");
 
 
-            $("#ArchonRevenantInfantry").load("/aow3db/Pages/Units/Archon/ArchonRevenantInfantry.html");
+            $("#ButtercupFairy").load("/aow3db/Pages/Units/Fey/ButtercupFairy.html");
 
-            $("#ArchonRevenantArcher").load("/aow3db/Pages/Units/Archon/ArchonRevenantArcher.html");
+            $("#ToadstoolFairy").load("/aow3db/Pages/Units/Fey/ToadstoolFairy.html");
 
-            $("#ArchonRevenantCaster").load("/aow3db/Pages/Units/Archon/ArchonRevenantCaster.html");
+            $("#NightshadeFairy").load("/aow3db/Pages/Units/Fey/NightshadeFairy.html");
 
-            $("#Wraith").load("/aow3db/Pages/Units/Archon/Wraith.html");
+            $("#Unicorn").load("/aow3db/Pages/Units/Fey/Unicorn.html");
 
-            $("#WraithKing").load("/aow3db/Pages/Units/Archon/WraithKing.html");
-
-            $("#ArchonTitan").load("/aow3db/Pages/Units/Archon/ArchonTitan.html");
+            $("#Nymph").load("/aow3db/Pages/Units/Fey/Nymph.html");
         });
     </script>
 
-    <title>AOW3 Database - Archon Units</title>
+    <title>AOW3 Database - Fey Units</title>
 </head>
 
 <body>
     <div id="header"></div>
 
     <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Necropolis(Archon)</p>
-        <img class="unit_image" src="/aow3db/Icons/Passives/archon.png" style="position: relative; padding: 4px" width="100">
-        <img src="/aow3db/PreviewGifs/StrategicMap/archon.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
+        <p style="background-color:black; font-size: 26px" class="unit_name">Sylvan Court(Fey)</p>
+        <img class="unit_image" src="/aow3db/Icons/Passives/fey.png" style="position: relative; padding: 4px" width="100">
+        <img src="/aow3db/PreviewGifs/StrategicMap/fey.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
 
-        <p>Archon Revenants are corruptions of the glorious and noble Archon. In life, the Archon were a race of enlightened men. Outwardly very similar to humans, their inner peace and nature resembled that of the elves. Always helping humanity, their most fervent goal was fighting and obliterating the undead, who they saw as their ultimate nemesis. They eventually left, leaving behind tombs of warriors in large necropoles. By some cruel twist of fate, they eventually rose from their resting places as undead themselves. Nothing like their former selves, these Archon Revenants are soulless beings intend on spreading death and destruction.</p>
+        <p>Fey are supernatural beings with a close connection to nature. As caretakers of the woods they favor deep forests and often shun the other races. However, due to their playfulness, curiosity and carefree nature, the strongly individual Fey can be found all over Athla supporting a wide variety of different causes. All Fey are highly magical and possess unique magic abilities.</p>
         <hr>
         <div style="clear: both"></div>
         <p style="background-color:black; font-size: 26px" class="unit_name">Terrain and Traits</p>
@@ -47,7 +45,9 @@
             <h2 style="text-align: center">Terrain</h2>
             <hr>
 
-            <li>No Terrain Preferences or Dislikes
+            <li>Likes: Dense Vegetation
+            </li>
+            <li>Dislikes: Volcanic
             </li>
 
 
@@ -56,13 +56,10 @@
         <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px">
             <h2 style="text-align: center">Traits</h2>
             <hr>
-
-            <div class="tooltip" style="color:aqua">Undead<span class="tooltiptext2" id="undead"></span></div>
-            <div class="tooltip" style="color:aqua">Cannot Regenerate<span class="tooltiptext2" id="cannot_regenerate"></span></div>
-            <li>40% <x-frost></x-frost> Protection</li>
-            <li>100% <x-blight></x-blight> Protection</li>
-            <li>40% <x-fire></x-fire> Weakness</li>
-            <div class="tooltip" style="color:aqua">Dedicated to Evil<span class="tooltiptext2" id="dedicated_to_evil"></span></div>
+            <div class="tooltip" style="color:aqua">Fey<span class="tooltiptext2" id="fey"></span></div>
+            <div class="tooltip" style="color:aqua">Forestry<span class="tooltiptext2" id="forestry"></span></div>
+            <div class="tooltip" style="color:aqua">Wetland Walking<span class="tooltiptext2" id="wetland_walking"></span></div>
+            <li>40% <x-blight></x-blight>Blight Weakness</li>
         </div>
 
         <div style="clear: both"></div>
@@ -110,10 +107,10 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Infantry units<br><br>
+                        Unlocks the production of Fey Revenant Infantry units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Infantry</li>
+                        <li>Fey Revenant Infantry</li>
 
                     </p>
 
@@ -134,10 +131,10 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Archer units<br><br>
+                        Unlocks the production of Fey Revenant Archer units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Archer</li>
+                        <li>Fey Revenant Archer</li>
 
                     </p>
 
@@ -206,13 +203,13 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Revenant Caster units<br><br>
+                        Unlocks the production of Fey Revenant Caster units<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
                         <li>Haunted Vault</li>
                         <li>Chamber of the Rite</li>
                         <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Archon Revenant Caster</li>
+                        <li>Fey Revenant Caster</li>
                     </p>
 
 
@@ -264,7 +261,7 @@
                         <hr>
 
                         This Dwelling regenerates image Hitpoints of garrisoned Undead units.<br>
-                        In addition when combat takes place on the center of this Dwelling, it reanimates corpses of Racial units that have died, as Archon Revenant Infantry<br><br>
+                        In addition when combat takes place on the center of this Dwelling, it reanimates corpses of Racial units that have died, as Fey Revenant Infantry<br><br>
 
                         <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
                         <li>Mausoleum</li>
@@ -296,7 +293,7 @@
                         <div style="clear: both"></div>
                         <hr>
 
-                        Unlocks the production of Archon Titan units<br><br>
+                        Unlocks the production of Fey Titan units<br><br>
                         <br><br>
 
 
@@ -328,20 +325,18 @@
     </div>
 
     <br><br>
-    <div id="ArchonRevenantInfantry"></div>
+    <div id="ButtercupFairy"></div>
     <br><br>
 
-    <div id="ArchonRevenantArcher"></div>
+    <div id="ToadstoolFairy"></div>
     <br><br>
-    <div id="ArchonRevenantCaster"></div>
+    <div id="NightshadeFairy"></div>
     <br><br>
-    <div id="Wraith"></div>
+    <div id="Unicorn"></div>
     <br><br>
-    <div id="WraithKing"></div>
+    <div id="Nymph"></div>
     <br><br>
 
-
-    <div id="ArchonTitan"></div>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");

@@ -32601,7 +32601,7 @@ My mystical magical unicorn dream!'\" <br> <i>--Dance of the Unicorn, by Willa L
             "origin_building": "",
             "location": "Units/Rest/ChthonicGuardian",
             "description": "\'Attacked by a mob wielding repugnant symbols of faith, I fled to my summoning chamber. I unfurled my wickedest scroll and spat the language of corruption, to attract a fiend - something that kept souls trapped in hell. Gouts of inky death swirled from the summoning circle. A Fallen Angel burst into the room. It needed no command. The walls quaked. My enemies screamed with each infernal blow. It's shriek petrified even the most confident priest. With each death it grew in power. My enemies fell.'\" <br> <i>--Breaking the Faithful by Master Dark</i>\"",
-            "image_link": 'Rest/fallen_angel.gif',
+            "image_link": 'Rest/chthonic_guardian.gif',
             "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
  <li>+8 <x-hp> </x-hp> Hit Points</li>",
             "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
