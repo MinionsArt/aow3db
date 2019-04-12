@@ -3224,8 +3224,6 @@ var jsonUnits = {
                 {
                     "slug": "forestry"
                     }, {
-                    "slug": "shock_protection_40"
-                    }, {
                     "slug": "blight_weakness_20"
                     },
 
@@ -3300,8 +3298,6 @@ var jsonUnits = {
                     },
                 {
                     "slug": "forestry"
-                    }, {
-                    "slug": "shock_protection_40"
                     }, {
                     "slug": "blight_weakness_20"
                     },
@@ -3380,8 +3376,6 @@ var jsonUnits = {
                     },
                 {
                     "slug": "forestry"
-                    }, {
-                    "slug": "shock_protection_40"
                     }, {
                     "slug": "blight_weakness_20"
                     },
@@ -15635,6 +15629,797 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
 
 },
 
+///APPRENTICES----------------------------------------------------------------------------------------------------APPRENTICES---------------------------------------------
+
+        {
+            "hp": "40",
+            "name": "draconian_apprentice",
+            "string": "Draconian Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/DraconianApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/draconian_apprentice.gif',
+            "level_trooper": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "fire_bolts",
+                    "damage": "8<x-fire> </x-fire>",
+                    "unique": "yes",
+        }, {
+                    "slug": "fire_bomb",
+                    "damage": "4 <x-physical></x-physical>7<x-fire> </x-fire>",
+                    "unique": "yes",
+        }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_20"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "40",
+            "name": "dwarf_apprentice",
+            "string": "Dwarf Apprentice",
+            "armor": "11",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/DwarfApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/dwarf_apprentice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "3<x-fire> </x-fire> 3<x-shock></x-shock> 3<x-frost></x-frost>",
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "armored",
+                    "unique": "yes",
+        }, {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "40",
+            "name": "frostling_apprentice",
+            "string": "Frostling Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/FrostlingApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/frostling_apprentice.gif',
+            "level_trooper": "<li>+1 <x-frost> </x-frost> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "1<x-physical> </x-physical> 5<x-frost></x-frost>",
+                    "unique": "yes",
+        }, {
+                    "slug": "rime_fire",
+                    "damage": "3<x-blight> </x-blight> 3<x-spirit></x-spirit> 3<x-frost></x-frost>",
+                    "unique": "yes"
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "frost_weapons",
+                    "unique": "yes",
+        }, {
+                    "slug": "inflict_chilling",
+                    "unique": "yes",
+        }, {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "goblin_apprentice",
+            "string": "Goblin Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/GoblinApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/goblin_apprentice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-blight> </x-blight> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "bane_fire",
+                    "damage": "3<x-fire> </x-fire> 3<x-blight></x-blight> 3<x-spirit></x-spirit>",
+                    "unique": "yes",
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
+
+        {
+            "hp": "40",
+            "name": "halfling_apprentice",
+            "string": "Halfling Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/HalflingApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/halfling_apprentice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "3<x-fire> </x-fire> 3<x-shock></x-shock> 3<x-frost></x-frost>",
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "minor_bard_skills",
+                    "unique": "yes",
+        }, {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "40",
+            "name": "high_elf_apprentice",
+            "string": "High Elf Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "100 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/HighElfApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/high_elf_apprentice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "3<x-fire> </x-fire> 3<x-shock></x-shock> 3<x-frost></x-frost>",
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "total_awareness",
+                    "unique": "yes",
+        }, {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "40",
+            "name": "human_apprentice",
+            "string": "Human Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/HumanApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/human_apprentice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "3<x-fire> </x-fire> 3<x-shock></x-shock> 3<x-frost></x-frost>",
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+}, {
+            "hp": "40",
+            "name": "orc_apprentice",
+            "string": "Orc Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/OrcApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/orc_apprentice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-frost> </x-frost> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-shock> </x-shock> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "fairy_fire",
+                    "damage": "3<x-fire> </x-fire> 3<x-shock></x-shock> 3<x-frost></x-frost>",
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
+        {
+            "hp": "40",
+            "name": "tigran_apprentice",
+            "string": "Tigran Apprentice",
+            "armor": "9",
+            "shield": "11",
+            "mp": "28",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "90 <x-gold></x-gold> 25 <x-mana></x-mana>",
+            "movement_type": "mp",
+            "origin_research": "Produce Apprentice",
+            "origin_building": "Sorcerers' Conflux",
+            "location": "Units/Sorcerer/TigranApprentice",
+            "description": "\A Sorcerer's ability to manipulate magic by channeling it purely through will is extremely dangerous and rare. They test their followers with the hopes that one of them has the same elusive trait. Most apprentices never progress beyond the ability to project bolts of magic at enemies and disrupt enchantments with a touch. Though these abilities seem small compared to the Sorcerer, when a dozen apprentices rain deadly force upon an army and magical enchantments fail to function properly, it is little wonder the Sorcerer keeps so many around.'\" <br> <i>--Cost of Sorcery, by Quillom the Moral</i>\"",
+            "image_link": 'Sorcerer/tigran_apprentice.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-fire> </x-fire> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-spirit> </x-spirit> Ranged</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+ <li> <div class = \"tooltip\">Floating<span class=\"tooltiptext2\" id=\"floating\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "6<x-physical> </x-physical>"
+        }, {
+                    "slug": "magic_bolts",
+                    "damage": "5<x-fire> </x-fire> 5<x-spirit></x-spirit>",
+                    "unique": "yes"
+                           }, {
+                    "slug": "mend_magical_being",
+                    },
+                {
+                    "slug": "steal_enchantment",
+                    },
+                {
+                    "slug": "dispel_magic",
+                    },
+               ],
+            "passives": [
+                {
+                    "slug": "support"
+        }, {
+                    "slug": "true_sight"
+        }, {
+                    "slug": "walking"
+        },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+
+
+                {},
+
+
+
+
+        ]
+
+},
+
 /////DRAGONS---------------------------------------------------------------------------------------------------------DRAGONS--------
         {
             "hp": "44",
@@ -16393,5 +17178,1642 @@ It will rip it right off; then you'll be dead.\" <br> <i>--Countering Nasty Nurs
         ]
 
                 },
+
+
+//WARLORD--------------------------------------------------------------------------------------------------------------------------------------------WARLORD---------------------
+//SCOUTS---------------------------------------------------------------------------------------------------------------------------------------------SCOUTS-------------
+        {
+            "hp": "35",
+            "name": "draconian_scout",
+            "string": "Draconian Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/DraconianScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/draconian_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_40"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "dwarf_scout",
+            "string": "Dwarf Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/DwarfScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/dwarf_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "frostling_scout",
+            "string": "Frostling Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/FrostlingScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/frostling_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "30",
+            "name": "goblin_scout",
+            "string": "Goblin Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/GoblinScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/goblin_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "halfling_scout",
+            "string": "Halfling Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/HalflingScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/halfling_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "high_elf_scout",
+            "string": "High Elf Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/HighElfScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/high_elf_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "human_scout",
+            "string": "Human Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/HumanScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/human_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "orc_scout",
+            "string": "Orc Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/OrcScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/orc_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "10<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "35",
+            "name": "tigran_scout",
+            "string": "Tigran Scout",
+            "armor": "7",
+            "shield": "7",
+            "mp": "32",
+            "tier": "I - 4 <x-gold></x-gold>",
+            "xp": "10",
+            "cost": "30 <x-gold></x-gold> ",
+            "movement_type": "walking",
+            "origin_research": "",
+            "origin_building": "",
+            "location": "Units/Warlord/TigranScout",
+            "description": "\"Once there was a fool who fell in love with a Scout. All day he stared at her running. He loved her with his entire heart. She was fast, and loved running more than she loved the fool. So even faster she left him, leaving behind nothing but air.\" <br> <i>--The Scout and the Fool' by Theodin the Bard</i>\"",
+            "image_link": 'Warlord/tigran_scout.gif',
+            "level_trooper": "<li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li> <div class = \"tooltip\">Vision Range Upgrade<span class=\"tooltiptext2\" id=\"vision_range_upgrade\"></span></div></li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\ ",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li> <div class = \"tooltip\">Backstab<span class=\"tooltiptext2\" id=\"backstab\"></span></div></li>",
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "9<x-physical> </x-physical> "
+        },
+                {
+                    "slug": "sprint",
+        },
+
+               ],
+            "passives": [
+                {
+                    "slug": "mountaineering"
+        },
+                {
+                    "slug": "swimming"
+                },
+                {
+                    "slug": "irregular"
+                },
+                {
+                    "slug": "walking"
+                },
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+//BERSERKERS--------------------------------------------------------------------------------------------------------------------------BERSERKERS-------------
+        {
+            "hp": "57",
+            "name": "draconian_berserker",
+            "string": "Draconian Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/DraconianBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/draconian_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> "
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        },
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "improved_wall_climbing",
+                    "unique": "yes",
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_40"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "57",
+            "name": "dwarf_berserker",
+            "string": "Dwarf Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "77 <x-gold></x-gold> 11<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/DwarfBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/dwarf_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical> "
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "projectile_resistance",
+                    "unique": "yes",
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing",
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "dwarf"
+                    },
+                {
+                    "slug": "mountaineering"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "57",
+            "name": "frostling_berserker",
+            "string": "Frostling Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/FrostlingBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/frostling_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "8<x-physical> </x-physical> 5<x-frost></x-frost>",
+                    "unique": "yes",
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "frost_weapons",
+                    "unique": "yes",
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing",
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "frostling"
+                    },
+                {
+                    "slug": "arctic_walking"
+                    }, {
+                    "slug": "fast_embark"
+                    }, {
+                    "slug": "frost_protection_60"
+                    },
+                {
+                    "slug": "fire_weakness_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "52",
+            "name": "goblin_berserker",
+            "string": "Goblin Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/GoblinBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/goblin_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing",
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "goblin"
+                    },
+                {
+                    "slug": "wetland_walking"
+                    }, {
+                    "slug": "wetland_foraging"
+                    }, {
+                    "slug": "cave_crawling"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "blight_protection_40"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+
+        {
+            "hp": "57",
+            "name": "halfling_berserker",
+            "string": "Halfling Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/HalflingBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/halfling_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing",
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "halfling"
+                    },
+                {
+                    "slug": "lucky"
+                    }, {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "physical_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "57",
+            "name": "high_elf_berserker",
+            "string": "High Elf Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/HighElfBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/high_elf_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing",
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "highelf"
+                    },
+                {
+                    "slug": "forestry"
+                    }, {
+                    "slug": "blight_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "57",
+            "name": "human_berserker",
+            "string": "Human Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/HumanBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/human_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing",
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "human"
+                    },
+                {
+                    "slug": "mariner"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+
+        {
+            "hp": "57",
+            "name": "orc_berserker",
+            "string": "Orc Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/OrcBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/orc_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "14<x-physical> </x-physical>",
+
+        },
+                {
+                    "slug": "war_cry",
+                    "unique": "yes",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "wall_climbing",
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "orc"
+                    },
+                {
+                    "slug": "victory_rush"
+                    },
+                {
+                    "slug": "night_vision"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+        {
+            "hp": "57",
+            "name": "tigran_berserker",
+            "string": "Tigran Berserker",
+            "armor": "11",
+            "shield": "9",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "65 <x-gold></x-gold> 10<x-mana></x-mana> ",
+            "movement_type": "walking",
+            "origin_research": "Produce Berserker",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/TigranBerserker",
+            "description": "\'My brother, Rogan, was just a scrawny farm boy when he was pressed into service by a Warlord. He trained Rogan to be a Berserker. Before long, Rogan could chop down enemies with his two-handed axe, charge fearlessly into any conflict and overwhelm enemy combatants. He never again wore a shirt. His torso was covered with scars, mostly from arrows he failed to dodge. He fought with pure rage. Unfortunately, he never did learn to control his temper, and sadly, he didn't live long.'\" <br> <i>--Fuss about Family, by Leanne Finn, Keeper</i>\"",
+            "image_link": 'Warlord/tigran_berzerker.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Inflict Bleeding Wounds<span class=\"tooltiptext2\" id=\"inflict_bleeding_wounds\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Tireless<span class=\"tooltiptext2\" id=\"tireless\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "13<x-physical> </x-physical>",
+
+        },
+                {
+                    "slug": "pounce",
+                    "damage": "13<x-physical> </x-physical>",
+                    "unique": "yes",
+
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        }, {
+                    "slug": "bloodthirsty",
+                    "unique": "yes",
+
+        },
+
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "improved_wall_climbing",
+                    "unique": "yes",
+
+                  },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "tigran"
+                    },
+                {
+                    "slug": "predator"
+                    }, {
+                    "slug": "athletics"
+                    }, {
+                    "slug": "barrens_running"
+                    }, {
+                    "slug": "night_vision"
+                    },
+                {
+                    "slug": "spirit_protection_40"
+                    },
+                {
+                    "slug": "frost_weakness_20"
+                    },
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+//MONSTERHUNTERS--------------------------------------------------------------------------------------------------------------------------MONSTERHUNTERS-------------
+        {
+            "hp": "50",
+            "name": "draconian_monster_hunter",
+            "string": "Draconian Monster Hunter",
+            "armor": "12",
+            "shield": "10",
+            "mp": "32",
+            "tier": "II - 8 <x-gold></x-gold>",
+            "xp": "20",
+            "cost": "70 <x-gold></x-gold> 20<x-mana></x-mana> ",
+            "movement_type": "swimming",
+            "origin_research": "Produce Monster Hunter",
+            "origin_building": "Warlords' Command",
+            "location": "Units/Warlord/DraconianMonsterHunter",
+            "description": "\Nippling County's swamp was filled with undisirables. Every winter when food got scarce, the swamp's denizens would leave the swamp to snack on the villagers. The people complained to their Warlord who decided, rather than ignore his people, he'd train them to fight back. He trained the whole village of Nippling to be Monster Hunters. The next winter when the hungry creatures shambled from the bogs, the villagers used their newly acquired skills in slaying monsters with their crossbows and great swords. Within a decade, the citizens cleared the swamps of all predators larger than a tadpole.'\" <br> <i>--Catch Them All, by Ashley Katsun, Shepherd Scholar</i>\"",
+            "image_link": 'Warlord/draconian_monster_hunter.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Ranged</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense </li>\
+<li><div class=\"tooltip\">Undead Slayer<span class=\"tooltiptext2\" id=\"undead_slayer\"></span></div></li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>\
+<li><div class=\"tooltip\">Summon Slayer<span class=\"tooltiptext2\" id=\"summon_slayer\"></span></div></li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+8 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>\
+<li><div class=\"tooltip\">Throw Net<span class=\"tooltiptext2\" id=\"throw_net\"></span></div></li>",
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "12<x-physical> </x-physical> "
+        }, {
+                    "slug": "fire_spit",
+                    "damage": "11<x-fire> </x-fire> ",
+                    "unique": "yes",
+        },
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "overwhelm"
+        },
+                {
+                    "slug": "charge"
+                },
+                {
+                    "slug": "mind_control_immunity"
+                },
+                {
+                    "slug": "demolisher"
+                },
+                {
+                    "slug": "infantry"
+                },
+                {
+                    "slug": "improved_wall_climbing",
+                    "unique": "yes",
+                },
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "draconian"
+                    },
+                {
+                    "slug": "fast_healing"
+                    }, {
+                    "slug": "fire_protection_40"
+                    }, {
+                    "slug": "frost_weakness_20"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+        }
+
+        ]
+
+},
+
+
 ]
 }
