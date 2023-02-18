@@ -1,0 +1,68 @@
+@@ -1,63 +0,0 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="/aow3db/Icons/UI/icon.ico">
+    <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                var classList = document.getElementsByClassName('units');
+                showUnitsFromClassList(classList);
+            });
+
+
+        });
+
+    </script>
+
+    <title>AOW3 Database - Machine Units</title>
+</head>
+
+<body>
+    <div class="" id="header"></div>
+    <div class="units" id="Settler"></div>
+    <br><br>
+    <div class="units" id="Builder"></div>
+    <br><br>
+
+    <div class="units" id="BatteringRam"></div>
+    <br><br>
+    <div class="units" id="Trebuchet"></div>
+    <br><br>
+    <div class="units" id="FrigateWarship"></div>
+    <br><br>
+    <div class="units" id="GalleonWarship"></div>
+    <br><br>
+
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
