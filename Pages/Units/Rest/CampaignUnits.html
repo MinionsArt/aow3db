@@ -10,29 +10,29 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(function loadheader() {
-            $("#header").load("/aow3db/Pages/header.html");
+        $("#body").ready(function() {
 
 
-            $("#ErymanthianBoar").load("/aow3db/Pages/Units/ArchDruid/ErymanthianBoar.html");
-            $("#ElderEldritch").load("/aow3db/Pages/Units/Rest/ElderEldritch.html");
-            $("#TameTroll").load("/aow3db/Pages/Units/Monsers/TameTroll.html");
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                var classList = document.getElementsByClassName('units');
+                showUnitsFromClassList(classList);
+            });
 
 
         });
     </script>
 
-    <title>AOW3 Database - Machine Units</title>
+    <title>AOW3 Database - Campaign Units</title>
 </head>
 
 <body>
-    <div id="header"></div>
-    <div id="ErymanthianBoar"></div>
+    <div class="" id="header"></div>
+    <div class="units" id="ErymanthianBoar"></div>
     <br><br>
-    <div id="ElderEldritch"></div>
+    <div class="units" id="ElderEldritch"></div>
     <br><br>
 
-    <div id="TameTroll"></div>
+    <div class="units" id="TameTroll"></div>
     <br><br>
 
 

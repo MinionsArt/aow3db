@@ -1088,7 +1088,7 @@ var jsonUnits = {
         {
             "hp": "70",
             "name": "dwarf_firstborn",
-            "string": "Dwarf Boar Rider",
+            "string": "Dwarf Firstborn",
             "armor": "14",
             "shield": "12",
             "mp": "28",

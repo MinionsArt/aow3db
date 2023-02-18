@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<link rel="shortcut icon" type="image/x-icon" href="/aowp/favicon.ico" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
+    <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $("#body").ready(function() {
+
+
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                var classList = document.getElementsByClassName('units');
+                showUnitsFromClassList(classList);
+            });
+
+
+        });
+
+    </script>
+
+
+    <title>Age of Wonders 3 - Archdruid Units</title>
+</head>
+
+<body>
+    <div class="" id="header"></div>
+    <h2 style="text-align: center; color: aliceblue">
+        Archdruid Units </h2>
+    <div class="unit_card">
+
+
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Wild Animal</p>
+        <div style="margin-left: -15px">
+            Units summoned with the Summon Wild Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait<br><br>
+            <button class="collapsible">Boar</button>
+            <div class="content">
+
+                <div class="units" id="Boar"></div>
+
+            </div>
+            <button class="collapsible">Dire Penguin</button>
+            <div class="content">
+                <p>
+
+                <div class="units" id="DirePenguin"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dread Spider Baby</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DreadSpiderBaby"></div>
+                </p>
+            </div>
+            <button class="collapsible">Hunter Spider Baby</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HunterSpiderBaby"></div>
+                </p>
+            </div>
+            <button class="collapsible">Warg</button>
+            <div class="content">
+                <p>
+                <div class="units" id="Warg"></div>
+                </p>
+            </div>
+            <button class="collapsible">Baby Reed Serpent</button>
+            <div class="content">
+                <p>
+                <div class="units" id="BabyReedSerpent"></div>
+                </p>
+            </div>
+            <button class="collapsible">Vampire Spider Baby</button>
+            <div class="content">
+                <p>
+                <div class="units" id="VampireSpiderBaby"></div>
+                </p>
+            </div>
+            <button class="collapsible">Tiger</button>
+            <div class="content">
+                <p>
+                <div class="units" id="Tiger"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dread Monkey</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DreadMonkey"></div>
+                </p>
+            </div>
+
+            </p>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="unit_card">
+
+
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Hunters</p>
+        <div style="margin-left: -15px">
+            <button class="collapsible">Draconian Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DraconianHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dwarf Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DwarfHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Frostling Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="FrostlingHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Goblin Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="GoblinHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Halfling Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HalflingHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">High Elf Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HighElfHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Human Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HumanHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Orc Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="OrcHunter"></div>
+                </p>
+            </div>
+            <button class="collapsible">Tigran Hunter</button>
+            <div class="content">
+                <p>
+                <div class="units" id="TigranHunter"></div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="unit_card">
+
+
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Eldritch Animal</p>
+        <div style="margin-left: -15px">
+            Units summoned with the Summon Eldritch Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait<br><br>
+            <button class="collapsible">Bleak Warg</button>
+            <div class="content">
+                <p>
+                <div class="units" id="BleakWarg"></div>
+                </p>
+            </div>
+            <button class="collapsible">Blight Tusk Boar</button>
+            <div class="content">
+                <p>
+                <div class="units" id="BlightTuskBoar"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dire Panther</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DirePanther"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dire Bear</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DireBear"></div>
+                </p>
+            </div>
+            <button class="collapsible">Mammoth</button>
+            <div class="content">
+                <p>
+                <div class="units" id="Mammoth"></div>
+                </p>
+            </div>
+            <button class="collapsible">Polar Bear</button>
+            <div class="content">
+                <p>
+                <div class="units" id="PolarBear"></div>
+                </p>
+            </div>
+            <button class="collapsible">Gryphon</button>
+            <div class="content">
+                <p>
+                <div class="units" id="Gryphon"></div>
+                </p>
+            </div>
+            <button class="collapsible">Elephant</button>
+            <div class="content">
+                <p>
+                <div class="units" id="Elephant"></div>
+                </p>
+            </div>
+
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <br><br>
+    <div class="units" id="AncestralSpirits"></div>
+
+
+
+    <br><br>
+    <div class="unit_card">
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Shamans</p>
+        <div style="margin-left: -15px">
+            <button class="collapsible">Draconian Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DraconianShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dwarf Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DwarfShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Frostling Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="FrostlingShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Goblin Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="GoblinShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Halfling Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HalflingShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">High Elf Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HighElfShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Human Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HumanShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Orc Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="OrcShaman"></div>
+                </p>
+            </div>
+            <button class="collapsible">Tigran Shaman</button>
+            <div class="content">
+                <p>
+                <div class="units" id="TigranShaman"></div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="unit_card">
+
+
+
+        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Gargentuan Animal</p>
+        <div style="margin-left: -15px">
+            Units summoned with the Summon Gargentuan Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait<br><br>
+            <button class="collapsible">Cockatrice</button>
+            <div class="content">
+                <p>
+                <div class="units" id="Cockatrice"></div>
+                </p>
+            </div>
+            <button class="collapsible">Dread Spider Queen</button>
+            <div class="content">
+                <p>
+                <div class="units" id="DreadSpiderQueen"></div>
+                </p>
+            </div>
+            <button class="collapsible">Hunter Spider Queen</button>
+            <div class="content">
+                <p>
+                <div class="units" id="HunterSpiderQueen"></div>
+                </p>
+            </div>
+            <button class="collapsible">Mature Reed Serpent</button>
+            <div class="content">
+                <p>
+                <div class="units" id="MatureReedSerpent"></div>
+                </p>
+            </div>
+            <button class="collapsible">Mature Shock Serpent</button>
+            <div class="content">
+                <p>
+                <div class="units" id="MatureShockSerpent"></div>
+                </p>
+            </div>
+            <button class="collapsible">King Reed Serpent</button>
+            <div class="content">
+                <p>
+                <div class="units" id="KingReedSerpent"></div>
+                </p>
+            </div>
+            <button class="collapsible">King Shock Serpent</button>
+            <div class="content">
+                <p>
+                <div class="units" id="KingShockSerpent"></div>
+                </p>
+            </div>
+
+
+
+            </p>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="units" id="HornedGod"></div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+    </script>
+
+
+</body>
+
+</html>

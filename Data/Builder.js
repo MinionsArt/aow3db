@@ -211,6 +211,51 @@ function addResistanceSlot(a, b, c) {
     }
 }
 
+async function spawnCards(list) {
+
+    for (var i = 0; i < list.length; i++) {
+        var iDiv = unit_card_template.content.cloneNode(true);
+        list[i].appendChild(iDiv);
+    }
+
+}
+
+
+async function showUnitsFromClassList(list) {
+
+
+    await spawnCards(list);
+
+    for (var i = 0; i < list.length; i++) {
+        var id = list[i].id;
+
+        var stringarray = id.match(/[A-Z][a-z]+/g);
+        id = stringarray.join('_').toLowerCase();
+        setUnitIds(id);
+        showUnit(id);
+    };
+
+
+
+
+}
+
+async function showUnitsFromList(list) {
+
+
+    await spawnCards(list);
+
+    for (var i = 0; i < list.length; i++) {
+        setUnitIds(list[i]);
+        showUnit(list[i]);
+
+    };
+
+
+
+
+}
+
 
 
 
@@ -293,6 +338,8 @@ function showUnit(a) {
 
         }
     }
+
+
 
 }
 

@@ -10,80 +10,13 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(function loadheader() {
-            $("#header").load("/aow3db/Pages/header.html");
-
-            $("#DraconianScout").load("/aow3db/Pages/Units/Warlord/DraconianScout.html");
-            $("#DwarfScout").load("/aow3db/Pages/Units/Warlord/DwarfScout.html");
-            $("#FrostlingScout").load("/aow3db/Pages/Units/Warlord/FrostlingScout.html");
-            $("#GoblinScout").load("/aow3db/Pages/Units/Warlord/GoblinScout.html");
-            $("#HalflingScout").load("/aow3db/Pages/Units/Warlord/HalflingScout.html");
-            $("#HighElfScout").load("/aow3db/Pages/Units/Warlord/HighElfScout.html");
-            $("#HumanScout").load("/aow3db/Pages/Units/Warlord/HumanScout.html");
-            $("#OrcScout").load("/aow3db/Pages/Units/Warlord/OrcScout.html");
-            $("#TigranScout").load("/aow3db/Pages/Units/Warlord/TigranScout.html");
-
-            $("#DraconianBerserker").load("/aow3db/Pages/Units/Warlord/DraconianBerserker.html");
-            $("#DwarfBerserker").load("/aow3db/Pages/Units/Warlord/DwarfBerserker.html");
-            $("#FrostlingBerserker").load("/aow3db/Pages/Units/Warlord/FrostlingBerserker.html");
-            $("#GoblinBerserker").load("/aow3db/Pages/Units/Warlord/GoblinBerserker.html");
-            $("#HalflingBerserker").load("/aow3db/Pages/Units/Warlord/HalflingBerserker.html");
-            $("#HighElfBerserker").load("/aow3db/Pages/Units/Warlord/HighElfBerserker.html");
-            $("#HumanBerserker").load("/aow3db/Pages/Units/Warlord/HumanBerserker.html");
-            $("#OrcBerserker").load("/aow3db/Pages/Units/Warlord/OrcBerserker.html");
-            $("#TigranBerserker").load("/aow3db/Pages/Units/Warlord/TigranBerserker.html");
-
-            $("#DraconianMonsterHunter").load("/aow3db/Pages/Units/Warlord/DraconianMonsterHunter.html");
-            $("#DwarfMonsterHunter").load("/aow3db/Pages/Units/Warlord/DwarfMonsterHunter.html");
-            $("#FrostlingMonsterHunter").load("/aow3db/Pages/Units/Warlord/FrostlingMonsterHunter.html");
-            $("#GoblinMonsterHunter").load("/aow3db/Pages/Units/Warlord/GoblinMonsterHunter.html");
-            $("#HalflingMonsterHunter").load("/aow3db/Pages/Units/Warlord/HalflingMonsterHunter.html");
-            $("#HighElfMonsterHunter").load("/aow3db/Pages/Units/Warlord/HighElfMonsterHunter.html");
-            $("#HumanMonsterHunter").load("/aow3db/Pages/Units/Warlord/HumanMonsterHunter.html");
-            $("#OrcMonsterHunter").load("/aow3db/Pages/Units/Warlord/OrcMonsterHunter.html");
-            $("#TigranMonsterHunter").load("/aow3db/Pages/Units/Warlord/TigranMonsterHunter.html");
-
-            $("#DraconianMountedArcher").load("/aow3db/Pages/Units/Warlord/DraconianMountedArcher.html");
-            $("#DwarfMountedArcher").load("/aow3db/Pages/Units/Warlord/DwarfMountedArcher.html");
-            $("#FrostlingMountedArcher").load("/aow3db/Pages/Units/Warlord/FrostlingMountedArcher.html");
-            $("#GoblinMountedArcher").load("/aow3db/Pages/Units/Warlord/GoblinMountedArcher.html");
-            $("#HalflingMountedArcher").load("/aow3db/Pages/Units/Warlord/HalflingMountedArcher.html");
-            $("#HighElfMountedArcher").load("/aow3db/Pages/Units/Warlord/HighElfMountedArcher.html");
-            $("#HumanMountedArcher").load("/aow3db/Pages/Units/Warlord/HumanMountedArcher.html");
-            $("#OrcMountedArcher").load("/aow3db/Pages/Units/Warlord/OrcMountedArcher.html");
-            $("#TigranMountedArcher").load("/aow3db/Pages/Units/Warlord/TigranMountedArcher.html");
-
-            $("#DraconianPhalanx").load("/aow3db/Pages/Units/Warlord/DraconianPhalanx.html");
-            $("#DwarfPhalanx").load("/aow3db/Pages/Units/Warlord/DwarfPhalanx.html");
-            $("#FrostlingPhalanx").load("/aow3db/Pages/Units/Warlord/FrostlingPhalanx.html");
-            $("#GoblinPhalanx").load("/aow3db/Pages/Units/Warlord/GoblinPhalanx.html");
-            $("#HalflingPhalanx").load("/aow3db/Pages/Units/Warlord/HalflingPhalanx.html");
-            $("#HighElfPhalanx").load("/aow3db/Pages/Units/Warlord/HighElfPhalanx.html");
-            $("#HumanPhalanx").load("/aow3db/Pages/Units/Warlord/HumanPhalanx.html");
-            $("#OrcPhalanx").load("/aow3db/Pages/Units/Warlord/OrcPhalanx.html");
-            $("#TigranPhalanx").load("/aow3db/Pages/Units/Warlord/TigranPhalanx.html");
+        $("#body").ready(function() {
 
 
-            $("#DraconianWarbreed").load("/aow3db/Pages/Units/Warlord/DraconianWarbreed.html");
-            $("#DwarfWarbreed").load("/aow3db/Pages/Units/Warlord/DwarfWarbreed.html");
-            $("#FrostlingWarbreed").load("/aow3db/Pages/Units/Warlord/FrostlingWarbreed.html");
-            $("#GoblinWarbreed").load("/aow3db/Pages/Units/Warlord/GoblinWarbreed.html");
-            $("#HalflingWarbreed").load("/aow3db/Pages/Units/Warlord/HalflingWarbreed.html");
-            $("#HighElfWarbreed").load("/aow3db/Pages/Units/Warlord/HighElfWarbreed.html");
-            $("#HumanWarbreed").load("/aow3db/Pages/Units/Warlord/HumanWarbreed.html");
-            $("#OrcWarbreed").load("/aow3db/Pages/Units/Warlord/OrcWarbreed.html");
-            $("#TigranWarbreed").load("/aow3db/Pages/Units/Warlord/TigranWarbreed.html");
-
-            $("#DraconianManticoreRider").load("/aow3db/Pages/Units/Warlord/DraconianManticoreRider.html");
-            $("#DwarfManticoreRider").load("/aow3db/Pages/Units/Warlord/DwarfManticoreRider.html");
-            $("#FrostlingManticoreRider").load("/aow3db/Pages/Units/Warlord/FrostlingManticoreRider.html");
-            $("#GoblinManticoreRider").load("/aow3db/Pages/Units/Warlord/GoblinManticoreRider.html");
-            $("#HalflingManticoreRider").load("/aow3db/Pages/Units/Warlord/HalflingManticoreRider.html");
-            $("#HighElfManticoreRider").load("/aow3db/Pages/Units/Warlord/HighElfManticoreRider.html");
-            $("#HumanManticoreRider").load("/aow3db/Pages/Units/Warlord/HumanManticoreRider.html");
-            $("#OrcManticoreRider").load("/aow3db/Pages/Units/Warlord/OrcManticoreRider.html");
-            $("#TigranManticoreRider").load("/aow3db/Pages/Units/Warlord/TigranManticoreRider.html");
-
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                var classList = document.getElementsByClassName('units');
+                showUnitsFromClassList(classList);
+            });
 
 
         });
@@ -93,7 +26,7 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <div class="" id="header"></div>
 
     <div class="unit_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Warlord</p>
@@ -124,81 +57,81 @@
         <button class="collapsible">Warlord City Buildings</button>
         <div class="content">
             <p>
-                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+            <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
    ;margin: 30px">
-                    <img class="unit_image" src="/aow3db/Icons/Buildings/warlords_command.png" style="position: relative; padding: 4px" width="150">
+                <img class="unit_image" src="/aow3db/Icons/Buildings/warlords_command.png" style="position: relative; padding: 4px" width="150">
 
 
-                    <p>
-                        <h2 style="float: left">Produce Warlords' Command</h2>
-                        <br><br>
-                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
-                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
-                        </p>
-                        <div style="clear: both"></div>
-                        <hr>
+                <p>
+                <h2 style="float: left">Produce Warlords' Command</h2>
+                <br><br>
+                <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                    </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                </p>
+                <div style="clear: both"></div>
+                <hr>
 
-                        Allows the production of Berserkers, Monster Hunters, and Mounted Archers<br><br>
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
-                        <li>Gladiator Pit</li>
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Racial Berserkers</li>
-                        <li>Racial Monster Hunters</li>
-                        <li>Racial Mounted Archers</li>
-                    </p>
+                Allows the production of Berserkers, Monster Hunters, and Mounted Archers<br><br>
+                <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
+                <li>Gladiator Pit</li>
+                <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                <li>Racial Berserkers</li>
+                <li>Racial Monster Hunters</li>
+                <li>Racial Mounted Archers</li>
+                </p>
 
 
 
-                </div>
-                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+            </div>
+            <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
    ;margin: 30px">
-                    <img class="unit_image" src="/aow3db/Icons/Buildings/gladiator_pit.png" style="position: relative; padding: 4px" width="150">
+                <img class="unit_image" src="/aow3db/Icons/Buildings/gladiator_pit.png" style="position: relative; padding: 4px" width="150">
 
 
-                    <p>
-                        <h2 style="float: left">Produce Gladiator Pit</h2>
-                        <br><br>
-                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
-                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
-                        </p>
-                        <div style="clear: both"></div>
-                        <hr>
+                <p>
+                <h2 style="float: left">Produce Gladiator Pit</h2>
+                <br><br>
+                <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                    </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                </p>
+                <div style="clear: both"></div>
+                <hr>
 
 
-                        This city generates an additional +100 <x-morale></x-morale> Happiness<br>
-                        Allows the production of Phalanxes and Warbreeds
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
-                        <li>Great Beast Lair</li>
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Racial Phalanxes</li>
-                        <li>Racial Warbreeds</li>
-                    </p>
+                This city generates an additional +100 <x-morale></x-morale> Happiness<br>
+                Allows the production of Phalanxes and Warbreeds
+                <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
+                <li>Great Beast Lair</li>
+                <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                <li>Racial Phalanxes</li>
+                <li>Racial Warbreeds</li>
+                </p>
 
 
 
-                </div>
-                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+            </div>
+            <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
    ;margin: 30px">
-                    <img class="unit_image" src="/aow3db/Icons/Buildings/great_beast_lair.png" style="position: relative; padding: 4px" width="150">
+                <img class="unit_image" src="/aow3db/Icons/Buildings/great_beast_lair.png" style="position: relative; padding: 4px" width="150">
 
 
-                    <p>
-                        <h2 style="float: left">Produce Great Beast Lair</h2>
-                        <br><br>
-                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
-                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
-                        </p>
-                        <div style="clear: both"></div>
-                        <hr>
+                <p>
+                <h2 style="float: left">Produce Great Beast Lair</h2>
+                <br><br>
+                <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                    </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                </p>
+                <div style="clear: both"></div>
+                <hr>
 
-                        City generates an additional +5 <x-knowledge></x-knowledge>Knowledge<br> Allows the production of Manticore Riders
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Racial Manticore Riders</li>
-                    </p>
+                City generates an additional +5 <x-knowledge></x-knowledge>Knowledge<br> Allows the production of Manticore Riders
+                <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                <li>Racial Manticore Riders</li>
+                </p>
 
 
 
-                </div>
+            </div>
             </p>
         </div>
         <br><br>
@@ -206,301 +139,301 @@
         <button class="collapsible">Warlord Hero Upgrades - Level 1</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #7cd200;color:black">Warfare I</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/90f6ee09a3180ff0190de7315a3d3c8a/tumblr_inline_nml1hafniz1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Armor Piercing</span><br>Hero gains the <a class="tooltip" href="#">Armor Piercing<span>Deals an additional +2 Physical damage against Armoured units</span></a> ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Overwhelm</span><br>Hero gains the <a class="tooltip" href="#">Overwhelm<span> This unit gains +2 Physical Melee damage against Pikeman and Shielded Units</span>
-                            </a> ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Wall Climbing</span><br>Hero gains the <a class="tooltip" href="#">Wall Climbing<span>Unit can climb on wall but suffers a climbing penalty</span></a> ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Break Control</span><br>Hero gains the <a class="tooltip" href="#">- Break Control <span> Removes all Spirit debuffs</span>
-                            </a> ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Blood Honor</span><br>Army Stack gains Warrior's Honor. When a unit with Warrior's Honor dies in combat, all units owned by the same player gain +100 <a class="tooltip" href="#"> <img src="https://66.media.tumblr.com/fc1c52e8b6a15dc0843affd4a35d7bcb/tumblr_inline_nnqvhztdtA1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Morale</span></a> until end of combat
-                        </td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Defense Command</span><br>Army Stack +1 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/f46d4c36999a6ae6cb62e5f73755c3de/tumblr_inline_nmg0hw5d1Q1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span> Defense</span></a> Defense
-                        </td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Last Stand</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#laststand">Last Stand</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Lion's Courage</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#lionscourage">Lion's Courage</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Berserk</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#berserk">Berserk</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Shout of Intimidation</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#shoutofintimidation">Shout of Intimidation</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Field Medic</span><br>Army Stack regenerate an additional 6 <a class="tooltip" href="#">
-                                <figure data-orig-height="20" data-orig-width="20" data-orig-src="https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png"><img src="https://66.media.tumblr.com/0c9c4a3ea20d13393420eb16e3e58740/tumblr_inline_pjzr1t2Z4Q1qkvi0e_540.png" alt="image" data-orig-height="20" data-orig-width="20" data-orig-src="https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png"></figure><span> Hitpoints</span>
-                            </a> each turn. Machine and Undead are not affected.
-                        </td>
-                        <td>5</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #7cd200;color:black">Warfare I</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/90f6ee09a3180ff0190de7315a3d3c8a/tumblr_inline_nml1hafniz1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Armor Piercing</span><br>Hero gains the <a class="tooltip" href="#">Armor Piercing<span>Deals an additional +2 Physical damage against Armoured units</span></a> ability</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Overwhelm</span><br>Hero gains the <a class="tooltip" href="#">Overwhelm<span> This unit gains +2 Physical Melee damage against Pikeman and Shielded Units</span>
+                        </a> ability</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Wall Climbing</span><br>Hero gains the <a class="tooltip" href="#">Wall Climbing<span>Unit can climb on wall but suffers a climbing penalty</span></a> ability</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Break Control</span><br>Hero gains the <a class="tooltip" href="#">- Break Control <span> Removes all Spirit debuffs</span>
+                        </a> ability</td>
+                    <td>2</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Blood Honor</span><br>Army Stack gains Warrior's Honor. When a unit with Warrior's Honor dies in combat, all units owned by the same player gain +100 <a class="tooltip" href="#"> <img src="https://66.media.tumblr.com/fc1c52e8b6a15dc0843affd4a35d7bcb/tumblr_inline_nnqvhztdtA1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Morale</span></a> until end of combat
+                    </td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Defense Command</span><br>Army Stack +1 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/f46d4c36999a6ae6cb62e5f73755c3de/tumblr_inline_nmg0hw5d1Q1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span> Defense</span></a> Defense
+                    </td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Last Stand</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#laststand">Last Stand</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Lion's Courage</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#lionscourage">Lion's Courage</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Berserk</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#berserk">Berserk</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Shout of Intimidation</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#shoutofintimidation">Shout of Intimidation</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Field Medic</span><br>Army Stack regenerate an additional 6 <a class="tooltip" href="#">
+                            <figure data-orig-height="20" data-orig-width="20" data-orig-src="https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png"><img src="https://66.media.tumblr.com/0c9c4a3ea20d13393420eb16e3e58740/tumblr_inline_pjzr1t2Z4Q1qkvi0e_540.png" alt="image" data-orig-height="20" data-orig-width="20" data-orig-src="https://66.media.tumblr.com/e10c88a45102475c7921c6571553b4a6/tumblr_inline_nmg0i9Sjzc1qkvi0e_540.png"></figure><span> Hitpoints</span>
+                        </a> each turn. Machine and Undead are not affected.
+                    </td>
+                    <td>5</td>
+                </tr>
+            </table>
             </p>
         </div>
 
         <button class="collapsible">Warlord Hero Upgrades - Level 3</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #7cd200;color:black">Warfare II</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/d58d16262c3dd1a34d9f7468526713f8/tumblr_inline_nmg3hvXgC01qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">Giant Slayer</span><br>Hero gains the <a class="tooltip" href="#">Giant Slayer<span>Deals an additional +3 Physical Damage against Giants</span></a>
-                            ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">Monster Slayer</span><br>Hero gains the <a class="tooltip" href="#">Monster Slayer<span>Deals an additional +3 Physical Damage against Monsters</span></a>
-                            ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">War Cry</span><br>Hero gains <a class="tooltip" href="#">- War Cry<span>This unit receives + 3 Physical Melee damage until end of turn<br> - Cooldown 3 turns</span></a> ability
-                        </td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">Martial Arts</span><br>Hero gains <a class="tooltip" href="#">Martial Arts<span>Unit gains +5 Defense against Attacks of Opportunity and Retaliationsunits</span></a> ability
-                        </td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Ranged Command</span><br>Army Stack gains +1 Ranged strength
-                        </td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Melee Command</span><br>Army Stack gains +1 <img src="https://66.media.tumblr.com/2a7e56b358716f9afbf0009827e810d4/tumblr_inline_nmg3i80DKG1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image">Melee strength
-                        </td>
-                        <td>4</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #7cd200;color:black">Warfare II</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/d58d16262c3dd1a34d9f7468526713f8/tumblr_inline_nmg3hvXgC01qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">Giant Slayer</span><br>Hero gains the <a class="tooltip" href="#">Giant Slayer<span>Deals an additional +3 Physical Damage against Giants</span></a>
+                        ability</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">Monster Slayer</span><br>Hero gains the <a class="tooltip" href="#">Monster Slayer<span>Deals an additional +3 Physical Damage against Monsters</span></a>
+                        ability</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">War Cry</span><br>Hero gains <a class="tooltip" href="#">- War Cry<span>This unit receives + 3 Physical Melee damage until end of turn<br> - Cooldown 3 turns</span></a> ability
+                    </td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">Martial Arts</span><br>Hero gains <a class="tooltip" href="#">Martial Arts<span>Unit gains +5 Defense against Attacks of Opportunity and Retaliationsunits</span></a> ability
+                    </td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Ranged Command</span><br>Army Stack gains +1 Ranged strength
+                    </td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Melee Command</span><br>Army Stack gains +1 <img src="https://66.media.tumblr.com/2a7e56b358716f9afbf0009827e810d4/tumblr_inline_nmg3i80DKG1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image">Melee strength
+                    </td>
+                    <td>4</td>
+                </tr>
+            </table>
             </p>
         </div>
 
         <button class="collapsible">Warlord Hero Upgrades - Level 5</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #7cd200;color:black">Warfare III</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>7</td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/1df07a0116dd36556ca054fc4c800ba9/tumblr_inline_nmg3i3WlUX1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/25f52a2ab2a839f49270f54222690622/tumblr_inline_nmr5a8XJPI1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #f37735;color:black">Dragon Slayer</span><br>Hero gains<a class="tooltip" href="#">Dragon Slayer<span>Deals an additional +3 Physical Damage against Dragons</span></a> ability
-                        </td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #f37735;color:black">First Strike</span><br>Hero gains <a class="tooltip" href="#">First Strike<span> This unit attacks first when defending</span>
-                            </a> ability
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #74a8e9;color:black">Phoenix Warrior</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#phoenixwarrior">Phoenix Warrior</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Charge Command</span><br>Army Stack gains <a class="tooltip" href="#">Charge <span> This unit gains +6 Physical Melee damage on it's first strike when moving 4 or more hexes</span>
-                            </a>
-                        </td>
-                        <td>5</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #7cd200;color:black">Warfare III</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>7</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/1df07a0116dd36556ca054fc4c800ba9/tumblr_inline_nmg3i3WlUX1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/25f52a2ab2a839f49270f54222690622/tumblr_inline_nmr5a8XJPI1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #f37735;color:black">Dragon Slayer</span><br>Hero gains<a class="tooltip" href="#">Dragon Slayer<span>Deals an additional +3 Physical Damage against Dragons</span></a> ability
+                    </td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #f37735;color:black">First Strike</span><br>Hero gains <a class="tooltip" href="#">First Strike<span> This unit attacks first when defending</span>
+                        </a> ability
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #74a8e9;color:black">Phoenix Warrior</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#phoenixwarrior">Phoenix Warrior</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Charge Command</span><br>Army Stack gains <a class="tooltip" href="#">Charge <span> This unit gains +6 Physical Melee damage on it's first strike when moving 4 or more hexes</span>
+                        </a>
+                    </td>
+                    <td>5</td>
+                </tr>
+            </table>
             </p>
         </div>
 
         <button class="collapsible">Warlord Hero Upgrades - Level 7</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #7cd200;color:black">Warfare IV</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Fleet Command</span><br>Army Stack gains <a class="tooltip" href="#">Mariner<span> Embarking does not give the -3 Defense and -1 Resistance penalty and gives extra +3 Movement points when embarked</span> </a>
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #f37735;color:black">Inflict Bleeding Wounds</span><br>Hero gains <a class="tooltip" href="#">Inflict Bleeding Wounds<span> Attacks from this unit can inflict Bleeding Wounds. Bleeding units suffer 4 Physical damage for 2 turns
-                                </span></a> ability
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #74a8e9;color:black">Killing Spree</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#killingspree">Killing Spree</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #74a8e9;color:black">Steadfast Ward</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#steadfastward">Steadfast Ward</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Blood Brothers</span><br>Army Stack gains <a class="tooltip" href="#">Strong Will<span>Unit is immune to mind control effects and has 100% Spirit Protection</span></a>
-                        </td>
-                        <td>5</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #7cd200;color:black">Warfare IV</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Fleet Command</span><br>Army Stack gains <a class="tooltip" href="#">Mariner<span> Embarking does not give the -3 Defense and -1 Resistance penalty and gives extra +3 Movement points when embarked</span> </a>
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #f37735;color:black">Inflict Bleeding Wounds</span><br>Hero gains <a class="tooltip" href="#">Inflict Bleeding Wounds<span> Attacks from this unit can inflict Bleeding Wounds. Bleeding units suffer 4 Physical damage for 2 turns
+                            </span></a> ability
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #74a8e9;color:black">Killing Spree</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#killingspree">Killing Spree</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #74a8e9;color:black">Steadfast Ward</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillswarlord#steadfastward">Steadfast Ward</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Blood Brothers</span><br>Army Stack gains <a class="tooltip" href="#">Strong Will<span>Unit is immune to mind control effects and has 100% Spirit Protection</span></a>
+                    </td>
+                    <td>5</td>
+                </tr>
+            </table>
             </p>
         </div>
         <button class="collapsible">Warlord Hero Upgrades - Level 9</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><span style="background-color: #7cd200;color:black">Warfare V</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><span style="background-color: #f37735;color:black">Tireless</span><br>Hero gains <a class="tooltip" href="#">Tireless<span>Retaliations and Attacks of Opportunity do not cost Action Points</span></a> ability
-                        </td>
-                        <td>6</td>
-                    </tr>
-                    <tr></tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><span style="background-color: #7cd200;color:black">Warfare V</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><span style="background-color: #f37735;color:black">Tireless</span><br>Hero gains <a class="tooltip" href="#">Tireless<span>Retaliations and Attacks of Opportunity do not cost Action Points</span></a> ability
+                    </td>
+                    <td>6</td>
+                </tr>
+                <tr></tr>
+            </table>
             </p>
         </div>
         <button class="collapsible">Warlord Hero Upgrades - Level 11-13</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><span style="background-color: #7cd200;color:black">Warfare V</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><span style="background-color: #f37735;color:black">Tireless</span><br>Hero gains <a class="tooltip" href="#">Tireless<span>Retaliations and Attacks of Opportunity do not cost Action Points</span></a> ability
-                        </td>
-                        <td>6</td>
-                    </tr>
-                    <tr></tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><span style="background-color: #7cd200;color:black">Warfare V</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><span style="background-color: #f37735;color:black">Tireless</span><br>Hero gains <a class="tooltip" href="#">Tireless<span>Retaliations and Attacks of Opportunity do not cost Action Points</span></a> ability
+                    </td>
+                    <td>6</td>
+                </tr>
+                <tr></tr>
+            </table>
             </p>
         </div>
 
@@ -514,55 +447,55 @@
             <button class="collapsible">Draconian Scout</button>
             <div class="content">
                 <p>
-                    <div id="DraconianScout"></div>
+                <div class="units" id="DraconianScout"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Scout</button>
             <div class="content">
                 <p>
-                    <div id="DwarfScout"></div>
+                <div class="units" id="DwarfScout"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Scout</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingScout"></div>
+                <div class="units" id="FrostlingScout"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Scout</button>
             <div class="content">
                 <p>
-                    <div id="GoblinScout"></div>
+                <div class="units" id="GoblinScout"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Scout</button>
             <div class="content">
                 <p>
-                    <div id="HalflingScout"></div>
+                <div class="units" id="HalflingScout"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Scout</button>
             <div class="content">
                 <p>
-                    <div id="HighElfScout"></div>
+                <div class="units" id="HighElfScout"></div>
                 </p>
             </div>
             <button class="collapsible">Human Scout</button>
             <div class="content">
                 <p>
-                    <div id="HumanScout"></div>
+                <div class="units" id="HumanScout"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Scout</button>
             <div class="content">
                 <p>
-                    <div id="OrcScout"></div>
+                <div class="units" id="OrcScout"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Scout</button>
             <div class="content">
                 <p>
-                    <div id="TigranScout"></div>
+                <div class="units" id="TigranScout"></div>
                 </p>
             </div>
         </div>
@@ -576,55 +509,55 @@
             <button class="collapsible">Draconian Berserker</button>
             <div class="content">
                 <p>
-                    <div id="DraconianBerserker"></div>
+                <div class="units" id="DraconianBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Berserker</button>
             <div class="content">
                 <p>
-                    <div id="DwarfBerserker"></div>
+                <div class="units" id="DwarfBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Berserker</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingBerserker"></div>
+                <div class="units" id="FrostlingBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Berserker</button>
             <div class="content">
                 <p>
-                    <div id="GoblinBerserker"></div>
+                <div class="units" id="GoblinBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Berserker</button>
             <div class="content">
                 <p>
-                    <div id="HalflingBerserker"></div>
+                <div class="units" id="HalflingBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Berserker</button>
             <div class="content">
                 <p>
-                    <div id="HighElfBerserker"></div>
+                <div class="units" id="HighElfBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">Human Berserker</button>
             <div class="content">
                 <p>
-                    <div id="HumanBerserker"></div>
+                <div class="units" id="HumanBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Berserker</button>
             <div class="content">
                 <p>
-                    <div id="OrcBerserker"></div>
+                <div class="units" id="OrcBerserker"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Berserker</button>
             <div class="content">
                 <p>
-                    <div id="TigranBerserker"></div>
+                <div class="units" id="TigranBerserker"></div>
                 </p>
             </div>
         </div>
@@ -638,55 +571,55 @@
             <button class="collapsible">Draconian Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="DraconianMonsterHunter"></div>
+                <div class="units" id="DraconianMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="DwarfMonsterHunter"></div>
+                <div class="units" id="DwarfMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingMonsterHunter"></div>
+                <div class="units" id="FrostlingMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="GoblinMonsterHunter"></div>
+                <div class="units" id="GoblinMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="HalflingMonsterHunter"></div>
+                <div class="units" id="HalflingMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="HighElfMonsterHunter"></div>
+                <div class="units" id="HighElfMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">Human Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="HumanMonsterHunter"></div>
+                <div class="units" id="HumanMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="OrcMonsterHunter"></div>
+                <div class="units" id="OrcMonsterHunter"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Monster Hunter</button>
             <div class="content">
                 <p>
-                    <div id="TigranMonsterHunter"></div>
+                <div class="units" id="TigranMonsterHunter"></div>
                 </p>
             </div>
         </div>
@@ -700,55 +633,55 @@
             <button class="collapsible">Draconian Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="DraconianMountedArcher"></div>
+                <div class="units" id="DraconianMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="DwarfMountedArcher"></div>
+                <div class="units" id="DwarfMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingMountedArcher"></div>
+                <div class="units" id="FrostlingMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="GoblinMountedArcher"></div>
+                <div class="units" id="GoblinMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="HalflingMountedArcher"></div>
+                <div class="units" id="HalflingMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="HighElfMountedArcher"></div>
+                <div class="units" id="HighElfMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">Human Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="HumanMountedArcher"></div>
+                <div class="units" id="HumanMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="OrcMountedArcher"></div>
+                <div class="units" id="OrcMountedArcher"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Mounted Archer</button>
             <div class="content">
                 <p>
-                    <div id="TigranMountedArcher"></div>
+                <div class="units" id="TigranMountedArcher"></div>
                 </p>
             </div>
         </div>
@@ -762,55 +695,55 @@
             <button class="collapsible">Draconian Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="DraconianPhalanx"></div>
+                <div class="units" id="DraconianPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="DwarfPhalanx"></div>
+                <div class="units" id="DwarfPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingPhalanx"></div>
+                <div class="units" id="FrostlingPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="GoblinPhalanx"></div>
+                <div class="units" id="GoblinPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="HalflingPhalanx"></div>
+                <div class="units" id="HalflingPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="HighElfPhalanx"></div>
+                <div class="units" id="HighElfPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">Human Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="HumanPhalanx"></div>
+                <div class="units" id="HumanPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="OrcPhalanx"></div>
+                <div class="units" id="OrcPhalanx"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Phalanx</button>
             <div class="content">
                 <p>
-                    <div id="TigranPhalanx"></div>
+                <div class="units" id="TigranPhalanx"></div>
                 </p>
             </div>
         </div>
@@ -825,55 +758,55 @@
             <button class="collapsible">Draconian Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="DraconianWarbreed"></div>
+                <div class="units" id="DraconianWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="DwarfWarbreed"></div>
+                <div class="units" id="DwarfWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingWarbreed"></div>
+                <div class="units" id="FrostlingWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="GoblinWarbreed"></div>
+                <div class="units" id="GoblinWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="HalflingWarbreed"></div>
+                <div class="units" id="HalflingWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="HighElfWarbreed"></div>
+                <div class="units" id="HighElfWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">Human Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="HumanWarbreed"></div>
+                <div class="units" id="HumanWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="OrcWarbreed"></div>
+                <div class="units" id="OrcWarbreed"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Warbreed</button>
             <div class="content">
                 <p>
-                    <div id="TigranWarbreed"></div>
+                <div class="units" id="TigranWarbreed"></div>
                 </p>
             </div>
         </div>
@@ -886,55 +819,55 @@
             <button class="collapsible">Draconian Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="DraconianManticoreRider"></div>
+                <div class="units" id="DraconianManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="DwarfManticoreRider"></div>
+                <div class="units" id="DwarfManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingManticoreRider"></div>
+                <div class="units" id="FrostlingManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="GoblinManticoreRider"></div>
+                <div class="units" id="GoblinManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="HalflingManticoreRider"></div>
+                <div class="units" id="HalflingManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="HighElfManticoreRider"></div>
+                <div class="units" id="HighElfManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">Human Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="HumanManticoreRider"></div>
+                <div class="units" id="HumanManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="OrcManticoreRider"></div>
+                <div class="units" id="OrcManticoreRider"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Manticore Rider</button>
             <div class="content">
                 <p>
-                    <div id="TigranManticoreRider"></div>
+                <div class="units" id="TigranManticoreRider"></div>
                 </p>
             </div>
         </div>

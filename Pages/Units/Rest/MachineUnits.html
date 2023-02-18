@@ -10,16 +10,13 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(function loadheader() {
-            $("#header").load("/aow3db/Pages/header.html");
+        $("#body").ready(function() {
 
 
-            $("#Settler").load("/aow3db/Pages/Units/Rest/Settler.html");
-            $("#Builder").load("/aow3db/Pages/Units/Rest/Builder.html");
-            $("#Trebuchet").load("/aow3db/Pages/Units/Rest/Trebuchet.html");
-            $("#BatteringRam").load("/aow3db/Pages/Units/Rest/BatteringRam.html");
-            $("#FrigateWarship").load("/aow3db/Pages/Units/Rest/FrigateWarship.html");
-            $("#GalleonWarship").load("/aow3db/Pages/Units/Rest/GalleonWarship.html");
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                var classList = document.getElementsByClassName('units');
+                showUnitsFromClassList(classList);
+            });
 
 
         });
@@ -29,19 +26,19 @@
 </head>
 
 <body>
-    <div id="header"></div>
-    <div id="Settler"></div>
+    <div class="" id="header"></div>
+    <div class="units" id="Settler"></div>
     <br><br>
-    <div id="Builder"></div>
+    <div class="units" id="Builder"></div>
     <br><br>
 
-    <div id="BatteringRam"></div>
+    <div class="units" id="BatteringRam"></div>
     <br><br>
-    <div id="Trebuchet"></div>
+    <div class="units" id="Trebuchet"></div>
     <br><br>
-    <div id="FrigateWarship"></div>
+    <div class="units" id="FrigateWarship"></div>
     <br><br>
-    <div id="GalleonWarship"></div>
+    <div class="units" id="GalleonWarship"></div>
     <br><br>
 
 

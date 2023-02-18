@@ -10,43 +10,13 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(function loadheader() {
-            $("#header").load("/aow3db/Pages/header.html");
+        $("#body").ready(function() {
 
 
-            $("#SpyDrone").load("/aow3db/Pages/Units/Dreadnought/SpyDrone.html");
-
-            $("#DraconianEngineer").load("/aow3db/Pages/Units/Dreadnought/DraconianEngineer.html");
-            $("#DwarfEngineer").load("/aow3db/Pages/Units/Dreadnought/DwarfEngineer.html");
-            $("#FrostlingEngineer").load("/aow3db/Pages/Units/Dreadnought/FrostlingEngineer.html");
-            $("#GoblinEngineer").load("/aow3db/Pages/Units/Dreadnought/GoblinEngineer.html");
-            $("#HalflingEngineer").load("/aow3db/Pages/Units/Dreadnought/HalflingEngineer.html");
-            $("#HighElfEngineer").load("/aow3db/Pages/Units/Dreadnought/HighElfEngineer.html");
-            $("#HumanEngineer").load("/aow3db/Pages/Units/Dreadnought/HumanEngineer.html");
-            $("#OrcEngineer").load("/aow3db/Pages/Units/Dreadnought/OrcEngineer.html");
-            $("#TigranEngineer").load("/aow3db/Pages/Units/Dreadnought/TigranEngineer.html");
-
-            $("#DraconianMusketeer").load("/aow3db/Pages/Units/Dreadnought/DraconianMusketeer.html");
-            $("#DwarfMusketeer").load("/aow3db/Pages/Units/Dreadnought/DwarfMusketeer.html");
-            $("#FrostlingMusketeer").load("/aow3db/Pages/Units/Dreadnought/FrostlingMusketeer.html");
-            $("#GoblinMusketeer").load("/aow3db/Pages/Units/Dreadnought/GoblinMusketeer.html");
-            $("#HalflingMusketeer").load("/aow3db/Pages/Units/Dreadnought/HalflingMusketeer.html");
-            $("#HighElfMusketeer").load("/aow3db/Pages/Units/Dreadnought/HighElfMusketeer.html");
-            $("#HumanMusketeer").load("/aow3db/Pages/Units/Dreadnought/HumanMusketeer.html");
-            $("#OrcMusketeer").load("/aow3db/Pages/Units/Dreadnought/OrcMusketeer.html");
-            $("#TigranMusketeer").load("/aow3db/Pages/Units/Dreadnought/TigranMusketeer.html");
-
-            $("#Golem").load("/aow3db/Pages/Units/Dreadnought/Golem.html");
-            $("#PartyRobotPrototype").load("/aow3db/Pages/Units/Dreadnought/PartyRobotPrototype.html");
-
-            $("#Cannon").load("/aow3db/Pages/Units/Dreadnought/Cannon.html");
-
-            $("#FlameTank").load("/aow3db/Pages/Units/Dreadnought/FlameTank.html");
-            $("#FrostTank").load("/aow3db/Pages/Units/Dreadnought/FrostTank.html");
-
-            $("#Juggernaut").load("/aow3db/Pages/Units/Dreadnought/Juggernaut.html");
-
-            $("#IroncladWarship").load("/aow3db/Pages/Units/Dreadnought/IroncladWarship.html");
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                var classList = document.getElementsByClassName('units');
+                showUnitsFromClassList(classList);
+            });
 
 
         });
@@ -56,7 +26,7 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <div class="" id="header"></div>
 
     <div class="unit_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Dreadnought</p>
@@ -85,83 +55,83 @@
         <button class="collapsible">Dreadnought City Buildings</button>
         <div class="content">
             <p>
-                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+            <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
    ;margin: 30px">
-                    <img class="unit_image" src="/aow3db/Icons/Buildings/dreadnoughts_foundry.png" style="position: relative; padding: 4px" width="150">
+                <img class="unit_image" src="/aow3db/Icons/Buildings/dreadnoughts_foundry.png" style="position: relative; padding: 4px" width="150">
 
 
-                    <p>
-                        <h2 style="float: left">Produce Dreadnoughts' Foundry</h2>
-                        <br><br>
-                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
-                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
-                        </p>
-                        <div style="clear: both"></div>
-                        <hr>
+                <p>
+                <h2 style="float: left">Produce Dreadnoughts' Foundry</h2>
+                <br><br>
+                <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                    </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                </p>
+                <div style="clear: both"></div>
+                <hr>
 
-                        Allows the production of Engineers, Musketeers, Golemsand Tanks<br><br>
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
-                        <li>Blast Furnace</li>
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Racial Engineer</li>
-                        <li>Racial Musketeer</li>
-                        <li>Golem/ Party Robot Prototype</li>
-                        <li>Flame Tank/ Frost Tank</li>
-                    </p>
+                Allows the production of Engineers, Musketeers, Golemsand Tanks<br><br>
+                <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
+                <li>Blast Furnace</li>
+                <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                <li>Racial Engineer</li>
+                <li>Racial Musketeer</li>
+                <li>Golem/ Party Robot Prototype</li>
+                <li>Flame Tank/ Frost Tank</li>
+                </p>
 
 
 
-                </div>
-                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+            </div>
+            <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
    ;margin: 30px">
-                    <img class="unit_image" src="/aow3db/Icons/Buildings/blast_furnace.png" style="position: relative; padding: 4px" width="150">
+                <img class="unit_image" src="/aow3db/Icons/Buildings/blast_furnace.png" style="position: relative; padding: 4px" width="150">
 
 
-                    <p>
-                        <h2 style="float: left">Produce Blast Furnace</h2>
-                        <br><br>
-                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
-                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
-                        </p>
-                        <div style="clear: both"></div>
-                        <hr>
+                <p>
+                <h2 style="float: left">Produce Blast Furnace</h2>
+                <br><br>
+                <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                    </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                </p>
+                <div style="clear: both"></div>
+                <hr>
 
 
-                        This city generates an additional +5 <x-production></x-production>Production.<br><br>
-                        Allows the production of Cannons
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
-                        <li>Industrial Plant</li>
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Cannon</li>
+                This city generates an additional +5 <x-production></x-production>Production.<br><br>
+                Allows the production of Cannons
+                <span style="color:cadetblue; font-weight: bold">Unlocks Building:</span>
+                <li>Industrial Plant</li>
+                <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                <li>Cannon</li>
 
-                    </p>
+                </p>
 
 
 
-                </div>
-                <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
+            </div>
+            <div style="padding-left: 30px;padding-right: 30px; padding: 10px;border: 1px solid;background-color: rgba(20, 20, 30, 1); border-color: rgba(255, 255, 200, 0.8);
    ;margin: 30px">
-                    <img class="unit_image" src="/aow3db/Icons/Buildings/industrial_plant.png" style="position: relative; padding: 4px" width="150">
+                <img class="unit_image" src="/aow3db/Icons/Buildings/industrial_plant.png" style="position: relative; padding: 4px" width="150">
 
 
-                    <p>
-                        <h2 style="float: left">Produce Industrial Plant</h2>
-                        <br><br>
-                        <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
-                            </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
-                        </p>
-                        <div style="clear: both"></div>
-                        <hr>
+                <p>
+                <h2 style="float: left">Produce Industrial Plant</h2>
+                <br><br>
+                <p style="float: left"> <span style="color:cadetblue; font-weight: bold">Building Cost: </span> 100 <x-gold>
+                    </x-gold> 50<x-mana></x-mana> / 150 <x-production></x-production>
+                </p>
+                <div style="clear: both"></div>
+                <hr>
 
-                        This city regenerates the <x-hp></x-hp>Hitpoints of garrisoned Machines
-                        Allows the production of Juggernaut
-                        <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
-                        <li>Juggernaut</li>
-                    </p>
+                This city regenerates the <x-hp></x-hp>Hitpoints of garrisoned Machines
+                Allows the production of Juggernaut
+                <span style="color:cadetblue; font-weight: bold">Unlocks Units:</span>
+                <li>Juggernaut</li>
+                </p>
 
 
 
-                </div>
+            </div>
             </p>
         </div>
         <br><br>
@@ -169,307 +139,307 @@
         <button class="collapsible">Dreadnought Hero Upgrades - Level 1</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #7cd200;color:black">Invention I</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Vision Range Upgrade</span><br>Hero gains +1 Vision Range
-                        </td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Tunneling</span><br>Hero gains the <a class="tooltip" href="#"> Tunneling<span> This unit is able to dig through Dirt Cavern Walls. Each hex cleared grants a small amount of gold
-                                </span></a> ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Cure Disease</span><br>Hero gains the <a class="tooltip" href="#"> - Cure Disease<span>Dispells all Blight debuffs on target friendy unit</span>
-                            </a> ability</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #f37735;color:black">Emergency Repair</span><br>Hero gains <a class="tooltip" href="#"> Emergency Repair<span>Restores 25 Hitpoints to target friendly Machine Unit. Outside combat this ability will heal 25 Hitpoints among all vallid units in the stack. Once per battle</span></a> ability
-                        </td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Imperial Authority</span><br>Army Stack gains High Morale
-                        </td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Flash Bang</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#flashbang">Flash Bang</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Force Field</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#forcefield">Force Field</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Overload</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#overload">Overload</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #74a8e9;color:black">Repair Fortification</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#repairfortification">Repair Fortification</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Lightning Rod Banner</span><br>Army Stack gains +40% <img src="https://66.media.tumblr.com/25f52a2ab2a839f49270f54222690622/tumblr_inline_nmr5a8XJPI1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection
-                        </td>
-                        <td>4</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #7cd200;color:black">Invention I</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Vision Range Upgrade</span><br>Hero gains +1 Vision Range
+                    </td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Tunneling</span><br>Hero gains the <a class="tooltip" href="#"> Tunneling<span> This unit is able to dig through Dirt Cavern Walls. Each hex cleared grants a small amount of gold
+                            </span></a> ability</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Cure Disease</span><br>Hero gains the <a class="tooltip" href="#"> - Cure Disease<span>Dispells all Blight debuffs on target friendy unit</span>
+                        </a> ability</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #f37735;color:black">Emergency Repair</span><br>Hero gains <a class="tooltip" href="#"> Emergency Repair<span>Restores 25 Hitpoints to target friendly Machine Unit. Outside combat this ability will heal 25 Hitpoints among all vallid units in the stack. Once per battle</span></a> ability
+                    </td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Imperial Authority</span><br>Army Stack gains High Morale
+                    </td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Flash Bang</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#flashbang">Flash Bang</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Force Field</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#forcefield">Force Field</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Overload</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#overload">Overload</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #74a8e9;color:black">Repair Fortification</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#repairfortification">Repair Fortification</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Lightning Rod Banner</span><br>Army Stack gains +40% <img src="https://66.media.tumblr.com/25f52a2ab2a839f49270f54222690622/tumblr_inline_nmr5a8XJPI1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection
+                    </td>
+                    <td>4</td>
+                </tr>
+            </table>
             </p>
         </div>
 
         <button class="collapsible">Dreadnought Hero Upgrades - Level 3</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #7cd200;color:black">Invention II</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">Inflict Immolation</span><br>Hero gains <a class="tooltip" href="#"> Inflict Immolation<span> Attacks from this unit can inflict Immolation. Immolated units suffer 3 Fire damage, -2 Physical strength, -1 Defense, -400 Morale and -1 Resistance for 2 turns
-                                </span></a> ability
-                        </td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">Rapid Reload</span><br>Hero gains <a class="tooltip" href="#"> - Rapid Reload<span>Reloads weapon of target friendly Machine or Musketeer to reset their cooldown</span></a> ability
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">Guardian Flame</span><br>Hero gains the <a class="tooltip" href="#"> - Guardian Flame<span> Restores 10 Hitpoints to target friendly unit, also gives +40% Fire Protection and an additional +2 Fire Damage to Melee attacks until end of combat<br>-Can only be used once per battle</span>
-                            </a> ability
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #f37735;color:black">True Sight</span><br>Hero gains <a class="tooltip" href="#"> True Sight<span> This unit can see Concealed or Invisible units</span>
-                            </a> ability
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Forge Aprons</span><br>Army Stack gains +40 <img src="https://66.media.tumblr.com/d58d16262c3dd1a34d9f7468526713f8/tumblr_inline_nmg3hvXgC01qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection
-                        </td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Wizard Engineers</span><br>Army Stack gains +1 <a class="tooltip" href="#"> <img src="https://66.media.tumblr.com/2d9b846a27c8102f5fc556c6257b38ba/tumblr_inline_nmg0hq7g4E1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span> Resistence</span></a> and <a class="tooltip" href="#"> Summon Slayer<span> Deals an additional +3 Physical Damage against Combat Summons and Summoned units</span> </a>
-                        </td>
-                        <td>4</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #7cd200;color:black">Invention II</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">Inflict Immolation</span><br>Hero gains <a class="tooltip" href="#"> Inflict Immolation<span> Attacks from this unit can inflict Immolation. Immolated units suffer 3 Fire damage, -2 Physical strength, -1 Defense, -400 Morale and -1 Resistance for 2 turns
+                            </span></a> ability
+                    </td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">Rapid Reload</span><br>Hero gains <a class="tooltip" href="#"> - Rapid Reload<span>Reloads weapon of target friendly Machine or Musketeer to reset their cooldown</span></a> ability
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">Guardian Flame</span><br>Hero gains the <a class="tooltip" href="#"> - Guardian Flame<span> Restores 10 Hitpoints to target friendly unit, also gives +40% Fire Protection and an additional +2 Fire Damage to Melee attacks until end of combat<br>-Can only be used once per battle</span>
+                        </a> ability
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #f37735;color:black">True Sight</span><br>Hero gains <a class="tooltip" href="#"> True Sight<span> This unit can see Concealed or Invisible units</span>
+                        </a> ability
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Forge Aprons</span><br>Army Stack gains +40 <img src="https://66.media.tumblr.com/d58d16262c3dd1a34d9f7468526713f8/tumblr_inline_nmg3hvXgC01qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection
+                    </td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Wizard Engineers</span><br>Army Stack gains +1 <a class="tooltip" href="#"> <img src="https://66.media.tumblr.com/2d9b846a27c8102f5fc556c6257b38ba/tumblr_inline_nmg0hq7g4E1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span> Resistence</span></a> and <a class="tooltip" href="#"> Summon Slayer<span> Deals an additional +3 Physical Damage against Combat Summons and Summoned units</span> </a>
+                    </td>
+                    <td>4</td>
+                </tr>
+            </table>
             </p>
         </div>
 
         <button class="collapsible">Dreadnought Hero Upgrades - Level 5</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #7cd200;color:black">Invention III</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>5</td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #f37735;color:black">Wall Climbing</span><br>Hero gains <a class="tooltip" href="#"> Wall Climbing<span> Unit can climb on wall but suffers a climbing penalty</span> </a> ability
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Pest Control Squad</span><br>Army Stack gains <a class="tooltip" href="#"> Monster Slayer<span> Deals an additional +3 Physical damage against Monsters</span> </a>, <a class="tooltip" href="#"> Animal Slayer<span> Deals an additional +3 Physical damage against Animals</span> </a>, and <a class="tooltip" href="#"> Fey Slayer<span> Deals an additional +3 Physical damage against Fey</span> </a>
-                        </td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #f37735;color:black">Sabotage</span><br>Hero gains <a class="tooltip" href="#"> - Sabotage<span> Deals 15 Physical and 15 Fire damage to target Machine unit, or 40 Physical damage to target wall</span> </a> ability
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #f37735;color:black">Throw Net</span><br>Hero gains <a class="tooltip" href="#"> - Throw Net<span> Attempts to Ensnare target enemy in a net. Ensnared units cannot take actions for 2 turns<br>
-                                    - Cooldown 2 turns<br></span> </a> ability
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><span style="background-color: #74a8e9;color:black">Weapon Kit</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#weaponkit">Weapon Kit</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #7cd200;color:black">Invention III</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>5</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #f37735;color:black">Wall Climbing</span><br>Hero gains <a class="tooltip" href="#"> Wall Climbing<span> Unit can climb on wall but suffers a climbing penalty</span> </a> ability
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Pest Control Squad</span><br>Army Stack gains <a class="tooltip" href="#"> Monster Slayer<span> Deals an additional +3 Physical damage against Monsters</span> </a>, <a class="tooltip" href="#"> Animal Slayer<span> Deals an additional +3 Physical damage against Animals</span> </a>, and <a class="tooltip" href="#"> Fey Slayer<span> Deals an additional +3 Physical damage against Fey</span> </a>
+                    </td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #f37735;color:black">Sabotage</span><br>Hero gains <a class="tooltip" href="#"> - Sabotage<span> Deals 15 Physical and 15 Fire damage to target Machine unit, or 40 Physical damage to target wall</span> </a> ability
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #f37735;color:black">Throw Net</span><br>Hero gains <a class="tooltip" href="#"> - Throw Net<span> Attempts to Ensnare target enemy in a net. Ensnared units cannot take actions for 2 turns<br>
+                                - Cooldown 2 turns<br></span> </a> ability
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span style="background-color: #74a8e9;color:black">Weapon Kit</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#weaponkit">Weapon Kit</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+            </table>
             </p>
         </div>
 
         <button class="collapsible">Dreadnought Hero Upgrades - Level 7</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #7cd200;color:black">Invention IV</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #f37735;color:black">Fire Bomb</span><br>Hero gains the <a class="tooltip" href="#"> - Fire Bomb <img src="https://66.media.tumblr.com/2a7e56b358716f9afbf0009827e810d4/tumblr_inline_nmg3i80DKG1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><img src="https://66.media.tumblr.com/d58d16262c3dd1a34d9f7468526713f8/tumblr_inline_nmg3hvXgC01qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span> Launches a volley of fire explosions at target unit<br>
-                                    - 1 Hex Area of Effect </span>
-                            </a> ability
-                        </td>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #7cd200;color:black">Invention IV</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #f37735;color:black">Fire Bomb</span><br>Hero gains the <a class="tooltip" href="#"> - Fire Bomb <img src="https://66.media.tumblr.com/2a7e56b358716f9afbf0009827e810d4/tumblr_inline_nmg3i80DKG1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><img src="https://66.media.tumblr.com/d58d16262c3dd1a34d9f7468526713f8/tumblr_inline_nmg3hvXgC01qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span> Launches a volley of fire explosions at target unit<br>
+                                - 1 Hex Area of Effect </span>
+                        </a> ability
+                    </td>
 
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #74a8e9;color:black">Reassemble</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#reassemble">Reassemble</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/2a7e56b358716f9afbf0009827e810d4/tumblr_inline_nmg3i80DKG1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span>
-                        </td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><span style="background-color: #74a8e9;color:black">Summon Siege Engine</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#summonsiegeengine">Summon Siege Engine</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                </table>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #74a8e9;color:black">Reassemble</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#reassemble">Reassemble</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #7cd200;color:black">+20% <img src="https://66.media.tumblr.com/2a7e56b358716f9afbf0009827e810d4/tumblr_inline_nmg3i80DKG1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"> Protection</span>
+                    </td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><span style="background-color: #74a8e9;color:black">Summon Siege Engine</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#summonsiegeengine">Summon Siege Engine</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+            </table>
             </p>
         </div>
         <button class="collapsible">Dreadnought Hero Upgrades - Level 9</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><span style="background-color: #7cd200;color:black">Invention V</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><span style="background-color: #74a8e9;color:black">Choking Fumes</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#chokingfumes">Choking Fumes</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><span style="background-color: #f37735;color:black">Tree Crusher</span><br>Hero gains the <a class="tooltip" href="#"> Tree Crusher <span> This unit turns dense vegetation into barrens as it moves over it. Each hex cleared gives a small amount of gold</span>
-                            </a> ability
-                        </td>
-                        <td>10</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><span style="background-color: #7cd200;color:black">Invention V</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><span style="background-color: #74a8e9;color:black">Choking Fumes</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#chokingfumes">Choking Fumes</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><span style="background-color: #f37735;color:black">Tree Crusher</span><br>Hero gains the <a class="tooltip" href="#"> Tree Crusher <span> This unit turns dense vegetation into barrens as it moves over it. Each hex cleared gives a small amount of gold</span>
+                        </a> ability
+                    </td>
+                    <td>10</td>
+                </tr>
+            </table>
             </p>
         </div>
         <button class="collapsible">Dreadnought Hero Upgrades - Level 11-13</button>
         <div class="content">
             <p>
-                <table>
-                    <tr>
-                        <th>Level</th>
-                        <th>Skill</th>
-                        <th>Points</th>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td><span style="background-color: #7cd200;color:black">Invention VI</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td><span style="background-color: #74a8e9;color:black">Dampening Field</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#dampeningfield">Dampening Field</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td><span style="background-color: #bf7fbf;color:black">Bomb Squad</span><br>Army Stack gains <a class="tooltip" href="#"> Explosive Death<span>When this unit dies it explodes, dealing 10 Physical and 10 Fire damage to all units within a 1 hex radius</span></a>
-                        </td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td><span style="background-color: #7cd200;color:black">Invention VII</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td><span style="background-color: #74a8e9;color:black">Destabilized Mana Core</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#manacore">Destabilized Mana Core</a> Combat Spell
-                        </td>
-                        <td>5</td>
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><span style="background-color: #7cd200;color:black">Invention VI</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><span style="background-color: #74a8e9;color:black">Dampening Field</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#dampeningfield">Dampening Field</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><span style="background-color: #bf7fbf;color:black">Bomb Squad</span><br>Army Stack gains <a class="tooltip" href="#"> Explosive Death<span>When this unit dies it explodes, dealing 10 Physical and 10 Fire damage to all units within a 1 hex radius</span></a>
+                    </td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><span style="background-color: #7cd200;color:black">Invention VII</span><br>Hero gains +10 <a class="tooltip" href="#"><img src="https://66.media.tumblr.com/111dbc8b3b008f5c135bdeb3a92a3ee8/tumblr_inline_nnnwatQk4n1qkvi0e_540.png" data-orig-height="20" data-orig-width="20" alt="image"><span>Casting Points</span></a> Casting Points</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td><span style="background-color: #74a8e9;color:black">Destabilized Mana Core</span><br>Hero gains <a href="http://aow3db.tumblr.com/tagged/skillsdreadnought#manacore">Destabilized Mana Core</a> Combat Spell
+                    </td>
+                    <td>5</td>
+                </tr>
+            </table>
             </p>
         </div>
 
     </div>
 
     <br><br>
-    <div id="SpyDrone"></div>
+    <div class="units" id="SpyDrone"></div>
     <br><br>
 
     <div class="unit_card">
@@ -481,55 +451,55 @@
             <button class="collapsible">Draconian Engineer</button>
             <div class="content">
                 <p>
-                    <div id="DraconianEngineer"></div>
+                <div class="units" id="DraconianEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Engineer</button>
             <div class="content">
                 <p>
-                    <div id="DwarfEngineer"></div>
+                <div class="units" id="DwarfEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Engineer</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingEngineer"></div>
+                <div class="units" id="FrostlingEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Engineer</button>
             <div class="content">
                 <p>
-                    <div id="GoblinEngineer"></div>
+                <div class="units" id="GoblinEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Engineer</button>
             <div class="content">
                 <p>
-                    <div id="HalflingEngineer"></div>
+                <div class="units" id="HalflingEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Engineer</button>
             <div class="content">
                 <p>
-                    <div id="HighElfEngineer"></div>
+                <div class="units" id="HighElfEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">Human Engineer</button>
             <div class="content">
                 <p>
-                    <div id="HumanEngineer"></div>
+                <div class="units" id="HumanEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Engineer</button>
             <div class="content">
                 <p>
-                    <div id="OrcEngineer"></div>
+                <div class="units" id="OrcEngineer"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Engineer</button>
             <div class="content">
                 <p>
-                    <div id="TigranEngineer"></div>
+                <div class="units" id="TigranEngineer"></div>
                 </p>
             </div>
         </div>
@@ -546,55 +516,55 @@
             <button class="collapsible">Draconian Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="DraconianMusketeer"></div>
+                <div class="units" id="DraconianMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">Dwarf Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="DwarfMusketeer"></div>
+                <div class="units" id="DwarfMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">Frostling Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="FrostlingMusketeer"></div>
+                <div class="units" id="FrostlingMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">Goblin Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="GoblinMusketeer"></div>
+                <div class="units" id="GoblinMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">Halfling Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="HalflingMusketeer"></div>
+                <div class="units" id="HalflingMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">High Elf Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="HighElfMusketeer"></div>
+                <div class="units" id="HighElfMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">Human Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="HumanMusketeer"></div>
+                <div class="units" id="HumanMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">Orc Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="OrcMusketeer"></div>
+                <div class="units" id="OrcMusketeer"></div>
                 </p>
             </div>
             <button class="collapsible">Tigran Musketeer</button>
             <div class="content">
                 <p>
-                    <div id="TigranMusketeer"></div>
+                <div class="units" id="TigranMusketeer"></div>
                 </p>
             </div>
         </div>
@@ -609,11 +579,11 @@
         <p style="background-color:black; font-size: 26px" class="unit_name">Produce Golem</p>
 
         <div style="margin-left: -15px">
-            <div id="Golem"></div>
+            <div class="units" id="Golem"></div>
             <button class="collapsible">Party Robot Prototype (Halfling Only)</button>
             <div class="content">
                 <p>
-                    <div id="PartyRobotPrototype"></div>
+                <div class="units" id="PartyRobotPrototype"></div>
                 </p>
             </div>
 
@@ -625,7 +595,7 @@
     </div>
 
     <br><br>
-    <div id="Cannon"></div>
+    <div class="units" id="Cannon"></div>
     <br><br>
     <div class="unit_card">
 
@@ -634,11 +604,11 @@
         <p style="background-color:black; font-size: 26px" class="unit_name">Produce Flame Tank</p>
 
         <div style="margin-left: -15px">
-            <div id="FlameTank"></div>
+            <div class="units" id="FlameTank"></div>
             <button class="collapsible">Frost Tank (Frostling Only)</button>
             <div class="content">
                 <p>
-                    <div id="FrostTank"></div>
+                <div class="units" id="FrostTank"></div>
                 </p>
             </div>
 
@@ -650,9 +620,9 @@
     </div>
 
     <br><br>
-    <div id="Juggernaut"></div>
+    <div class="units" id="Juggernaut"></div>
     <br><br>
-    <div id="IroncladWarship"></div>
+    <div class="units" id="IroncladWarship"></div>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
