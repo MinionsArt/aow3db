@@ -2,44 +2,343 @@
 <html lang="en">
 
 <head>
-
     <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
-    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/aowp/favicon.ico" />
     <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
+
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
     <script>
-        $(function loadheader() {
+        $("#body").ready(function() {
+
             $("#header").load("/aow3db/Pages/header.html");
+            showhide3('unitS');
+
         });
 
-    </script>
 
-    <title>AowDatabase - Search Results</title>
+        $(".togglelink").click(function() {
+            $(".togglelink").css("color", "white");
+
+            $(this).css("color", "cyan");
+        });
+    </script>
+    <title>Age of Wonders Planetfall - Search</title>
 </head>
 
 <body>
-    <div class="" id="header"></div>
+    <div id="header"></div>
 
 
+    <div id="unitS" style=" width:100%;margin: auto;">
+        <h2 style="color:white;text-align: center">Unit Search</h2>
+        <p style="color:white;text-align: center">use "+" to search for up to 3 keywords <br> E.G: <span style="color:aqua">halfling+overwhelm+charge</span>
+            <br>
+        <div style="margin-right: auto; margin-left: auto; width: 300px;">
+            <input type="text" style="margin-right: auto; margin-left: auto; width: 300px;" id="searchInput">
+            <input type="submit" value="Submit" id="button">
+            <p id="searchResult" style="color: aqua"></p>
 
+        </div>
+        <div id="searchOutput">test</div>
+    </div>
+    <div id="modS" style=" width:100%;margin: auto; display: none">
+        <h2 style="color:white;text-align: center">Mod Search</h2>
+        <p style="color:white;text-align: center">Search name and description of mods</p>
+        <br>
+        <div style="margin-right: auto; margin-left: auto; width: 300px;">
+            <input type="text" style="margin-right: auto; margin-left: auto; width: 300px;" id="searchInputMod">_+
+            <input type="submit" value="Submit" id="buttonMod">
+            <p id="searchResultMod" style="color: aqua"></p>
 
-    <input type="text" id="searchInput" placeholder="Search.." name="search">
-    <button id="example"><i class="fa fa-search"></i></button>
-    <div id="searchOutput" style="font-size: 30px; color: aqua">text</div>
-    <div id="re" style="font-size: 30px; color: aqua">text</div>
-    <script>
-        $("#example").click(function(event) {
-            var string = $("#searchInput").val();
-            alert("Handler for .keyup() called.");
-
-            searchData(string);
+        </div>
+        <div id="searchOutputMod">test</div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $('#button').click(function() {
+            searchData();
 
         });
+        /* $('#buttonMod').click(function() {
+             searchDataMod();
+         });*/
+    });
 
-    </script>
-</body>
+    $(document).ready(function() {
 
-</html>
+    });
+
+    $(function() {
+        $("#searchInput").keyup(function(event) {
+            if (event.which === 13) {
+                searchData();
+
+            }
+        })
+        $("#searchInputMod").keyup(function(event) {
+            if (event.which === 13) {
+                searchDataMod();
+            }
+        })
+    });
+
+    function isInArray(array, search) {
+        return array.indexOf(search) >= 0;
+    }
+
+
+    function searchData() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInput");
+        output = document.getElementById("searchOutput");
+        output.innerHTML = "";
+
+
+        filter = input.value.toUpperCase();
+        var test = filter.replaceAll(' ', "_");
+        searchUnits(test);
+
+    }
+
+
+    function searchDataMod() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInputMod");
+        output = document.getElementById("searchOutputMod");
+        output.innerHTML = "";
+
+
+        filter = input.value.toUpperCase();
+        //var test = filter.replace(' ', "_");
+        searchMods(filter);
+
+    }
+
+    function searchMods(keyword) {
+        var i, output, textvalue, j, l, result = "";
+
+        var fields = keyword.split('+', 3);
+        var listMod = new Array();
+        output = document.getElementById("searchOutputMod");
+        result = document.getElementById("searchResultMod");
+
+        for (i = 0; i < jsonMods.mods.length; i++) {
+            textvalue = jsonMods.mods[i].name;
+            if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
+                if (listMod.length >= 1) {
+                    if (!isInArray(listMod, jsonMods.mods[i].slug)) {
+                        listMod.push(jsonMods.mods[i].slug);
+                    }
+                } else {
+                    listMod.push(jsonMods.mods[i].slug);
+                }
+
+
+
+            }
+            textvalue = jsonMods.mods[i].description;
+            if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
+                if (listMod.length >= 1) {
+                    if (!isInArray(listMod, jsonMods.mods[i].slug)) {
+                        listMod.push(jsonMods.mods[i].slug);
+                    }
+                } else {
+                    listMod.push(jsonMods.mods[i].slug);
+                }
+
+
+
+            }
+
+            textvalue = jsonMods.mods[i].type;
+            if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
+                if (listMod.length >= 1) {
+                    if (!isInArray(listMod, jsonMods.mods[i].slug)) {
+                        listMod.push(jsonMods.mods[i].slug);
+                    }
+                } else {
+                    listMod.push(jsonMods.mods[i].slug);
+                }
+
+
+
+            }
+
+
+        }
+        result.innerHTML = listMod.length.toString() + " results found";
+        for (j = 0; j < listMod.length; j++) {
+
+            addModCard(listMod[j]);
+        }
+
+    }
+
+    function searchUnits(keyword) {
+        var i, output, textvalue, j, l, result = "";
+
+        var fields = keyword.split('+', 3);
+        var list = new Array();
+        output = document.getElementById("searchOutput");
+        result = document.getElementById("searchResult");
+
+        for (i = 0; i < jsonUnits.units.length; i++) {
+            textvalue = jsonUnits.units[i].name;
+            if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
+                if (list.length >= 1) {
+                    if (!isInArray(list, jsonUnits.units[i].name)) {
+                        list.push(jsonUnits.units[i].name);
+                    }
+                } else {
+                    list.push(jsonUnits.units[i].name);
+                }
+            }
+            searchArray(fields[0], jsonUnits.units[i].abilities, list, i);
+            searchArray(fields[0], jsonUnits.units[i].passives, list, i);
+            searchArray(fields[0], jsonUnits.units[i].unit_types, list, i);
+            searchArray(fields[0], jsonUnits.units[i].resistances, list, i);
+        }
+
+        if (fields.length > 1) {
+            var workinglist = structuredClone(list);;
+            var newWorkingList = new Array();
+
+            newWorkingList = searchUnitsMultiple(workinglist, fields[1]);
+            list = structuredClone(newWorkingList);
+
+        }
+        if (fields.length >= 3) {
+            var workinglist2 = structuredClone(list);;
+            finalworkingList = new Array();
+
+            finalworkingList = searchUnitsMultiple(workinglist2, fields[2]);
+            list = structuredClone(finalworkingList);
+        }
+
+        result.innerHTML = list.length.toString() + " results found";
+        for (j = 0; j < list.length; j++) {
+
+            addUnitCard(list[j]);
+        }
+
+    }
+
+    function searchArray(keyword, arraytosearch, listToPushTo, index) {
+        for (j in arraytosearch) {
+            if (arraytosearch[j].slug != null) {
+                textvalue = arraytosearch[j].slug;
+                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                    if (listToPushTo.length >= 1) {
+                        if (!isInArray(listToPushTo, jsonUnits.units[index].name)) {
+                            listToPushTo.push(jsonUnits.units[index].name);
+                        }
+                    } else {
+                        listToPushTo.push(jsonUnits.units[index].name);
+                    }
+
+
+
+                }
+            }
+            if (arraytosearch.unique != null) {
+                textvalue = arraytosearch.unique;
+                if (textvalue.toUpperCase().indexOf(keyword) > -1) {
+                    if (listToPushTo.length >= 1) {
+                        if (!isInArray(listToPushTo, jsonUnits.units[index].name)) {
+                            listToPushTo.push(jsonUnits.units[index].name);
+                        }
+                    } else {
+                        listToPushTo.push(jsonUnits.units[index].name);
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    function searchArrayMultiple(keyword, workingarray, arraytosearch, listToPush, index) {
+        for (j in arraytosearch) {
+            if (arraytosearch[j].slug != null) {
+                textvalue = arraytosearch[j].slug;
+                if (textvalue.toUpperCase().indexOf(keyword) > -1 && isInArray(workingarray, jsonUnits.units[index].name)) {
+                    if (listToPush.length >= 1) {
+                        if (!isInArray(listToPush, jsonUnits.units[index].name)) {
+                            listToPush.push(jsonUnits.units[index].name);
+                        }
+                    } else {
+                        listToPush.push(jsonUnits.units[index].name);
+                    }
+
+
+
+                }
+            }
+            if (arraytosearch.unique != null) {
+                textvalue = arraytosearch.unique;
+                if (textvalue.toUpperCase().indexOf(keyword) > -1 && isInArray(workingarray, jsonUnits.units[index].name)) {
+                    if (listToPush.length >= 1) {
+                        if (!isInArray(listToPush, jsonUnits.units[index].name)) {
+                            listToPush.push(jsonUnits.units[index].name);
+                        }
+                    } else {
+                        listToPush.push(jsonUnits.units[index].name);
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    function searchUnitsMultiple(workinglist, fieldToSearch) {
+
+        var newlist = new Array();
+        for (i = 0; i < jsonUnits.units.length; i++) {
+            textvalue = jsonUnits.units[i].name;
+            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].name)) {
+                if (newlist.length >= 1) {
+                    if (!isInArray(newlist, jsonUnits.units[i].name)) {
+                        newlist.push(jsonUnits.units[i].name);
+                    }
+                } else {
+                    newlist.push(jsonUnits.units[i].name);
+                }
+
+            }
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].abilities, newlist, i);
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].passives, newlist, i);
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].unit_types, newlist, i);
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].resistances, newlist, i);
+        }
+        return newlist;
+    }
+
+    function addUnitCard(unit) {
+
+        var iDiv = unit_card_template.content.cloneNode(true);
+        document.getElementById("searchOutput").appendChild(iDiv);
+        setUnitIds(unit);
+        showUnit(unit);
+
+
+
+
+    }
+
+    function addModCard(mod) {
+
+        var iDiv = mod_card_template.content.cloneNode(true);
+        document.getElementById("searchOutputMod").appendChild(iDiv);
+
+        showMod(mod);
+
+
+
+
+    }
+</script></html>

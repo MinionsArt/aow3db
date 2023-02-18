@@ -32,6 +32,26 @@ function setUnitIds(a) {
     holder.id = "unitabholder_" + a;
 }
 
+
+var divsearch = ["unitS", "modS"];
+
+function showhide3(id) {
+    if (document.getElementById) {
+        var divid = document.getElementById(id);
+        //close others
+        for (var i = 0; i < divsearch.length; i++) {
+
+            var e = document.getElementById(divsearch[i])
+            e.style.display = 'none'; // hide
+            //  divStateweapon1[div] = false; // reset status
+        }
+
+
+        divid.style.display = 'contents';
+    }
+}
+
+
 function addUnitTypeIcon(a, b, c) {
     var abilityName, abilityIcon, abilityDescr, j = "";
     for (j in jsonUnitAbilities.abilities) {
@@ -365,93 +385,7 @@ function showAbility(a) {
     return text;
 }
 
-function searchData() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
-    searchUnits(filter);
-}
 
-function searchUnits(keyword) {
-    var i, output, textvalue, j, l = "";
-    var list = new Array();
-    output = document.getElementById("searchOutput");
-
-    for (i = 0; i < jsonUnits.units.length; i++) {
-        textvalue = jsonUnits.units[i].string;
-        if (textvalue.toUpperCase().indexOf(keyword) > -1) {
-            if (list.length >= 1) {
-                if (!isInArray(list, jsonUnits.units[i].name)) {
-                    list.push(jsonUnits.units[i].name);
-                }
-            } else {
-                list.push(jsonUnits.units[i].name);
-            }
-
-
-
-        }
-        for (j = 0; j < jsonUnits.units[i].abilities.length; j++) {
-            textvalue = jsonUnits.units[i].abilities[j].slug;
-            if (textvalue.toUpperCase().indexOf(keyword) > -1) {
-                if (list.length >= 1) {
-                    if (!isInArray(list, jsonUnits.units[i].string)) {
-                        list.push(jsonUnits.units[i].name);
-                    }
-                } else {
-                    list.push(jsonUnits.units[i].name);
-                }
-
-
-
-            }
-        }
-        for (j = 0; j < jsonUnits.units[i].passives.length; j++) {
-            textvalue = jsonUnits.units[i].passives[j].slug;
-            if (textvalue.toUpperCase().indexOf(keyword) > -1) {
-                if (list.length >= 1) {
-                    if (!isInArray(list, jsonUnits.units[i].string)) {
-                        list.push(jsonUnits.units[i].name);
-                    }
-                } else {
-                    list.push(jsonUnits.units[i].name);
-                }
-
-
-
-            }
-        }
-        for (j = 0; j < list.length; j++) {
-            addSearchResultUnit(list[j]);
-        }
-
-        // output.innerHTML = list.toString();
-    }
-}
-
-function addSearchResultUnit(unit) {
-    var output = document.getElementById("searchOutput");
-    for (l = 0; l < jsonUnits.units.length; l++)
-        if (unit == jsonUnits.units[l].name) {
-            var holder = document.createElement("div");
-            holder.className = ".unit_abilityslot ";
-            var icon = document.createElement("img");
-            icon.setAttribute("src", "/aow3db/Icons/UnitIcons/" + unit + ".png");
-            var unitName = document.createElement("p");
-            unitName.innerHTML = jsonUnits.units[l].string;
-            output.innerHTML = "done the thing";
-            output.appendChild(holder);
-            holder.appendChild(icon);
-            holder.append(unitName);
-        } else {
-            //output.innerHTML = "done some thing";
-        }
-
-}
-
-function isInArray(array, search) {
-    return array.indexOf(search) >= 0;
-}
 
 function showBuilding(a, b) {
     var buildingName, description, cost, type, prereq, j, imagelink = "";

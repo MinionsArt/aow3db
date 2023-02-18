@@ -34031,6 +34031,90 @@ embrace new life in blazing fire.'.\" <br> <i>--Phoenix Song, by Willa Loveday, 
 
         ]
 
+}, {
+            "hp": "44",
+            "name": "erymanthian_boar",
+            "string": "Erymanthian Boar",
+            "armor": "9",
+            "shield": "8",
+            "mp": "36",
+            "tier": "I - 4 <x-gold></x-gold> ",
+            "xp": "10",
+            "cost": "40 <x-gold></x-gold>",
+            "movement_type": "mp",
+            "origin_research": "",
+            "origin_building": "Horned God - Combat Summon",
+            "location": "Units/Animals/Boar",
+            "description": "\"Boars are fiercely aggressive territorial creatures that like to burrow in holes deep under the ground. They charge down narrow tunnels, goring enemies trapped in their path. Dwarves have domesticated Boars as steeds, allowing them to traverse their underground kingdoms quickly and venture out to the surface. Boars have bad vision, but this is more than made up for with their excellent sense of smell.\" <br> <i>--Boars, Burlap and Boredom, by Boris the Bore</i>\"",
+            "image_link": 'Animals/erymanthian_boar.gif',
+            "level_trooper": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>",
+            "level_veteran": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+            "level_expert": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+2 <x-hp> </x-hp> Hit Points </li>\
+<li>+1 <x-resistance> </x-resistance> Resistance</li>",
+            "level_elite": "<li>+1 <x-physical> </x-physical> Melee</li>\
+ <li>+4 <x-hp> </x-hp> Hit Points</li>\
+<li>+1 <x-defense> </x-defense> Defense</li>",
+
+
+
+            "abilities": [
+                {
+                    "slug": "melee_strike",
+                    "damage": "16<x-physical> </x-physical> "
+        },
+
+
+
+               ],
+            "passives": [
+                {
+                    "slug": "charge"
+        }, {
+                    "slug": "fast_healing"
+                }, {
+                    "slug": "awakened"
+                },
+                {
+                    "slug": "savage_rage"
+                }, {
+                    "slug": "first_strike"
+                },
+                {
+                    "slug": "overwhelm"
+                }, {
+                    "slug": "wall_crushing"
+                },
+                {
+                    "slug": "armor_piercing"
+                },
+
+
+                {
+                    "slug": "walking"
+                },
+
+
+
+        ],
+            "unit_types": [
+                {
+                    "slug": "animal"
+                    },
+                {
+                    "slug": "forestry"
+                    },
+
+                ],
+            "resistances": [
+                {
+
+                    },
+        ]
+
 },
 
 
