@@ -10,38 +10,20 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(function loadheader() {
-            $("#header").load("/aow3db/Pages/header.html");
+        $("#body").ready(function() {
 
 
-            $("#GoblinSkewer").load("/aow3db/Pages/Units/Goblins/GoblinSkewer.html");
-
-            $("#Felhorse").load("/aow3db/Pages/Units/Animals/Felhorse.html");
-
-
-            $("#Nightmare").load("/aow3db/Pages/Units/Animals/Nightmare.html");
-            $("#DirePanther").load("/aow3db/Pages/Units/Animals/DirePanther.html");
-
-            $("#Troll").load("/aow3db/Pages/Units/Monster/Troll.html");
-            $("#PolarBear").load("/aow3db/Pages/Units/Animals/PolarBear.html");
-            $("#VampireSpiderBaby").load("/aow3db/Pages/Units/Animals/VampireSpiderBaby.html");
-            $("#DreadMonkey").load("/aow3db/Pages/Units/Animals/DreadMonkey.html");
-            $("#Tiger").load("/aow3db/Pages/Units/Animals/Tiger.html");
-            $("#CarrionBird").load("/aow3db/Pages/Units/Monsters/CarrionBird.html");
-            $("#BoneWyvern").load("/aow3db/Pages/Units/Monsters/BoneWyvern.html");
-            $("#Mammoth").load("/aow3db/Pages/Units/Animals/Mammoth.html");
-            $("#DireBear").load("/aow3db/Pages/Units/Animals/DireBear.html");
-            $("#Kraken").load("/aow3db/Pages/Units/Monsters/Kraken.html");
-            $("#Yeti").load("/aow3db/Pages/Units/Monsters/Yeti.html");
-
-
-            $("#VampireSpiderQueen").load("/aow3db/Pages/Units/Animals/VampireSpiderQueen.html");
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                var classList = document.getElementsByClassName('units');
+                showUnitsFromClassList(classList);
+            });
 
 
         });
+
     </script>
 
-    <title>AOW3 Database - Specialisation Units</title>
+    <title>AOW3 Database - Roaming Units</title>
 </head>
 
 <body>
@@ -82,5 +64,8 @@
                 }
             });
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
