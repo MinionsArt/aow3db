@@ -1896,7 +1896,7 @@ var jsonUnits = {
 }, {
             "hp": "40",
             "name": "goblin_marauder",
-            "string": "Goblin Untouchable",
+            "string": "Goblin Marauder",
             "armor": "10",
             "shield": "8",
             "mp": "28",
