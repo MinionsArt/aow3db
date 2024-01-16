@@ -109,7 +109,6 @@ function showhide3(id) {
             //  divStateweapon1[div] = false; // reset status
         }
 
-
         divid.style.display = 'contents';
     }
 }
@@ -202,7 +201,6 @@ function addAbilityslot(a, unique, damage, c) {
             btn.appendChild(imag);
             btn.append(tex);
             btn.append(dam);
-
         }
     }
     if (abilityName === "") {
@@ -278,9 +276,6 @@ function addResistanceSlot(a, b, c) {
             addTooltipListeners(tex, spa);
             btn.appendChild(imag);
             btn.append(tex);
-
-
-
         }
     }
     if (abilityName === "") {
@@ -294,22 +289,35 @@ async function spawnCards(list) {
         var iDiv = unit_card_template.content.cloneNode(true);
         list[i].appendChild(iDiv);
     }
-
 }
 
-async function spawnCardsNew(list, holder) {
-
-
-    for (var i = 0; i < list.length; i++) {
+async function spawnCardsNew(list, holder, multiple) {
+    if(multiple === true){
+        for (var i = 0; i < list.length; i++) {
+            var iDiv = unit_card_template.content.cloneNode(true);
+            holder.appendChild(iDiv);
+            var id = list[i];
+    
+            var stringarray = id.match(/[A-Z][a-z]+/g);
+            id = stringarray.join('_').toLowerCase();
+            setUnitIds(id);
+            showUnit(id, iDiv);
+        }
+    } else{
         var iDiv = unit_card_template.content.cloneNode(true);
         holder.appendChild(iDiv);
+        var id = list;
+
+        var stringarray = id.match(/[A-Z][a-z]+/g);
+        id = stringarray.join('_').toLowerCase();
+        setUnitIds(id);
+        showUnit(id, iDiv);
     }
+   
 
 }
 
-
 async function showUnitsFromClassList(list) {
-
 
     await spawnCards(list);
 
@@ -322,54 +330,75 @@ async function showUnitsFromClassList(list) {
         showUnit(id);
     };
 
-
-
-
 }
 
 async function showUnitsFromList(list) {
 
     var holder = document.getElementById("UnitHolder");
-    await spawnCardsNew(list, holder);
+    await spawnCardsNew(list, holder, true);
 
+    // for (var i = 0; i < list.length; i++) {
+       
+    // };
+
+}
+
+async function showUnitsFromListVariants(list, name, extratext) {
+
+
+    var holder = document.getElementById("UnitHolder");
+    var variantHolder = document.createElement("div");
+    variantHolder.className = "unit_card";
+    holder.append(variantHolder);
+    variantHolder.innerHTML = "<p style=\"background-color:black; font-size: 26px\" class=\"unit_name\">" + name + "</p>";
+    if(extratext != undefined){
+        variantHolder.innerHTML += extratext;
+    }
+   
     for (var i = 0; i < list.length; i++) {
-        var id = list[i];
+      
+      
+        var buttonHolder = document.createElement("button");
+        buttonHolder.className = "collapsible";
+        buttonHolder.addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+        var contentHolder = document.createElement("div");
+        contentHolder.className = "content";
+        variantHolder.append(buttonHolder);
+        variantHolder.append(contentHolder);  
+        await spawnCardsNew(list[i], contentHolder, false);
+         var id = list[i];
+         var stringarray = id.match(/[A-Z][a-z]+/g);
+         id = stringarray.join('_').toLowerCase();
+        //setUnitIds(id);
+       
+      
+        
 
-        var stringarray = id.match(/[A-Z][a-z]+/g);
-        id = stringarray.join('_').toLowerCase();
-        setUnitIds(id);
+       
+        buttonHolder.innerHTML = stringarray.join(' ');
+       
+      
         showUnit(id);
     };
-
-
-
+   
 
 }
-
-/*async function showUnitsFromList(list) {
-
-
-    await spawnCards(list);
-
-    for (var i = 0; i < list.length; i++) {
-        setUnitIds(list[i]);
-        showUnit(list[i]);
-
-    };
-
-
-
-
-}
-
-*/
-
 
 function showUnit(a) {
 
     var hp, mp, shield, armor, descr, j, k, x, t, y, z, unitName, icon, imagelink, mpicon, prodcost, tier, levels = "";
+    var found = false;
     for (i in jsonUnits.units) {
         if (a == jsonUnits.units[i].name) {
+            found = true;
             icon = document.getElementById("uniticon_" + a);
             icon.setAttribute("src", "/aow3db/Icons/UnitIcons/" + a + ".png");
             unitName = document.getElementById("unitstring_" + a);
@@ -438,15 +467,12 @@ function showUnit(a) {
             for (t in extratooltips) {
                 extratooltips[t].innerHTML = showAbility(extratooltips[t].id);
             }
-
-
-
-
         }
     }
 
-
-
+    if(found === false){
+        console.log("Couldn't find " + a);
+    }
 }
 
 function showAbility(a) {
@@ -469,7 +495,7 @@ function showAbility(a) {
         }
 
     }
-    return div;
+    return div.innerHTML;
 }
 
 
