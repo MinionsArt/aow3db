@@ -1,62 +1,196 @@
-var jsonBuildings = {
-    "buildings": [{
-            "slug": "barracks",
-            "name": "Barracks",
-            "description": "Unlocks the production of Infantry and Archer units for a city",
-            "cost": "100 <x-gold> </x-gold> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gold",
-            "requires":[
-                {
-                    
-        }],
-        "leadsto": [
-                {
-                    "slug": "shooting_grounds"
-        },
-         {
-                    "slug": "war_hall"
-        },
-         {
-                    "slug": "arena"
-        }],
-         "unlocksunit": [
-                {
-                    "slug": "draconian_crusher"
-        },
-         {
-                    "slug": "draconian_flamer"
-        }
-        ],
-            "image_link": "barracks",
-        },
-                  {
-            "slug": "war_hall",
-            "name": "War Hall",
-            "description": "Unlocks the production of Pikeman and Cavalry units for a city",
-            "cost": "175 <x-gold> </x-gold> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gold",
-            "requires":[
-                {
-                     "slug": "barracks"
-        }],
-        "leadsto": [
-                {
-                    "slug": "guard_house"
-        },
-         {
-                    "slug": "riders_hall"
-        },
-         {
-                    "slug": "peak_of_the_forefathers"
-        }],
-         "unlocksunit": [
-                {
-                    "slug": "draconian_charger"
-        },
-         {
-                    "slug": "draconian_raptor"
-        }
-        ],
-            "image_link": "war_hall",
-        },
+[{
+        "slug": "barracks",
+        "name": "Barracks",
+        "description": "Unlocks the production of Infantry and Archer units for a city",
+        "cost": "100 <gold></gold> Gold",
 
+        "leadsto": [
+            {
+                "slug": "shooting_grounds"
+        },
+            {
+                "slug": "war_hall"
+        },
+            {
+                "slug": "arena"
+        }],
+        "unlocksunit": [
+            {
+                "slug": "draconian_crusher"
+        },
+            {
+                "slug": "draconian_flamer"
+        }
+        ]
+        },
+    {
+        "slug": "war_hall",
+        "name": "War Hall",
+        "description": "Unlocks the production of Pikeman and Cavalry units for a city",
+        "cost": "175 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "barracks"
+        }],
+        "leadsto": [
+            {
+                "slug": "guard_house"
+        },
+            {
+                "slug": "riders_hall"
+        },
+            {
+                "slug": "peak_of_the_forefathers"
+        }],
+        "unlocksunit": [
+            {
+                "slug": "draconian_charger"
+        },
+            {
+                "slug": "draconian_raptor"
+        }
+        ],
+        "image_link": "war_hall"
+        },
+    {
+        "slug": "sigil_of_awakening",
+        "name": "Sigil of Awakening",
+        "description": "This city generates an additional +10 <mana></mana>  per turn",
+        "cost": "50 <mana></mana> 50 <gold></gold>",
+
+        "leadsto": [
+            {
+                "slug": "burrow",
+                "additional": "obelisk_of_undeath"
+        }
+                ]
+
+        },
+    {
+        "slug": "graveyard",
+        "name": "Graveyard",
+        "description": "Unlocks the production of Archon Revenant Infantry units",
+        "cost": "100 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "archon_revenant_infantry"
+        }
+        ]
+
+        },
+    {
+        "slug": "charnel_house",
+        "name": "Charnel House",
+        "description": "Unlocks the production of Archon Revenant Archer units",
+        "cost": "100 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "archon_revenant_archer"
+        }
+        ]
+
+        },
+    {
+        "slug": "obelisk_of_undeath",
+        "name": "Obelisk of Undeath",
+        "description": "Non-Undead units in the domain of this Dwelling are Cursed.",
+        "cost": "100 <gold></gold>",
+
+        "leadsto": [
+            {
+                "slug": "burrow",
+                "additional": "sigil_of_awakening"
+        }
+
+        ]
+
+        },
+    {
+        "slug": "merchandise",
+        "name": "Merchandise",
+        "description": " Increases <gold></gold> Gold income by 50%",
+        "cost": ""
+        },
+    {
+        "slug": "barrow",
+        "name": "Barrow",
+        "description": "Unlocks the production of Archon Revenant Caster units",
+        "cost": "100 <gold></gold>",
+        "requires": [
+            {
+                "slug": "sigil_of_awakening"
+        }, {
+                "slug": "obelisk_of_undeath"
+        }],
+        "unlocksunit": [
+            {
+                "slug": "archon_revenant_caster"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "haunted_vault"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "haunted_vault",
+        "name": "Haunted Vault",
+        "description": "Unlocks the production of Wraith units",
+        "cost": "100 <gold></gold>",
+        "requires": [
+            {
+                "slug": "burrow"
+
+        }],
+        "unlocksunit": [
+            {
+                "slug": "wraith"
+        }
+        ]
+
+        },
+    {
+        "slug": "chamber_of_the_rite",
+        "name": "Chamber of the Rite",
+        "description": "Unlocks the production of Archon Revenant Infantry units",
+        "cost": "100 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "archon_revenant_infantry"
+        }
+        ]
+
+        },
+    {
+        "slug": "mausoleum",
+        "name": "Mausoleum",
+        "description": "Unlocks the production of Archon Revenant Infantry units",
+        "cost": "100 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "archon_revenant_infantry"
+        }
+        ]
+
+        },
+    {
+        "slug": "throne_of_bone",
+        "name": "Throne of Bone",
+        "description": "Unlocks the production of Archon Revenant Infantry units",
+        "cost": "100 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "archon_revenant_infantry"
+        }
+        ]
+
+        }
     ]
-}

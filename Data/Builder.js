@@ -1,3 +1,67 @@
+var jsonRaceDescriptions, jsonBuildings;
+
+function fetchJsonFiles(filePaths) {
+    return Promise.all(
+        filePaths.map(filePath =>
+            fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return response.json();
+            })
+        )
+    );
+}
+
+async function GetAllData() {
+
+    const jsonFilePaths = ['/aow3db/Data/RaceDescriptions.json', '/aow3db/Data/Buildings.json'];
+    await fetchJsonFiles(jsonFilePaths)
+        .then(dataArray => {
+            dataArray.forEach((data, index) => {
+                // console.log(`Data from ${jsonFilePaths[index]}:`, data);
+                if (index == 0) {
+                    jsonRaceDescriptions = data;
+                } else if (index == 1) {
+                    jsonBuildings = data;
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching JSON files:', error.message);
+        });
+
+}
+async function CheckData() {
+    if (jsonRaceDescriptions === undefined) {
+        await GetAllData();
+        // Example usage
+      
+        HandlePage();
+    }
+}
+
+
+function handleCollapsible() {
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+}
+
 function setUnitIds(a) {
     var icon, unitName, descr, imagelink, hp, armor, shield, mpicon, mp, tier, prodcost, origin_building, origin_research, levels, holder = "";
     icon = document.getElementById("uniticon");
@@ -32,14 +96,13 @@ function setUnitIds(a) {
     holder.id = "unitabholder_" + a;
 }
 
-
 var divsearch = ["unitS", "modS"];
 
 function showhide3(id) {
     if (document.getElementById) {
         var divid = document.getElementById(id);
         //close others
-        for (var i = 0; i < divsearch.length; i++) {
+        for (let i = 0; i < divsearch.length; i++) {
 
             var e = document.getElementById(divsearch[i])
             e.style.display = 'none'; // hide
@@ -71,18 +134,17 @@ function addUnitTypeIcon(a, b, c) {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
             tex.innerHTML = abilityName;
-            spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aow3db/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
             document.getElementById("unitabholder_" + c).appendChild(btn);
-            tex.appendChild(spa);
+
+            addTooltipListeners(tex, spa);
 
             btn.appendChild(imag);
             btn.append(tex);
-
         }
     }
     if (abilityName === "") {
@@ -128,7 +190,6 @@ function addAbilityslot(a, unique, damage, c) {
             var dam = document.createElement("DIV");
             dam.className = "ability_damage";
             dam.innerHTML = abilityDamageFinal;
-            spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDamageFinal + "</span>" + "</p>" +
                 abilityRange + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aow3db/Icons/Abilities/" + abilityIcon + ".png");
@@ -136,8 +197,8 @@ function addAbilityslot(a, unique, damage, c) {
             imag.setAttribute("height", "40");
 
             document.getElementById("unitabholder_" + c).appendChild(btn);
-            tex.appendChild(spa);
 
+            addTooltipListeners(tex, spa);
             btn.appendChild(imag);
             btn.append(tex);
             btn.append(dam);
@@ -168,15 +229,13 @@ function addPassiveslot(a, b, c) {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
             tex.innerHTML = abilityName;
-
-            spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aow3db/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
             document.getElementById("unitabholder_" + c).appendChild(btn);
-            tex.appendChild(spa);
+            addTooltipListeners(tex, spa);
 
             btn.appendChild(imag);
             btn.append(tex);
@@ -209,16 +268,14 @@ function addResistanceSlot(a, b, c) {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
             tex.innerHTML = abilityName;
-
-            spa.className = "tooltiptext";
             spa.innerHTML = "<p>" + "<span style=\"font-size=20px\">" + abilityName + "</p>" + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aow3db/Icons/Passives/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
             imag.setAttribute("height", "40");
 
             document.getElementById("unitabholder_" + c).appendChild(btn);
-            tex.appendChild(spa);
 
+            addTooltipListeners(tex, spa);
             btn.appendChild(imag);
             btn.append(tex);
 
@@ -236,6 +293,16 @@ async function spawnCards(list) {
     for (var i = 0; i < list.length; i++) {
         var iDiv = unit_card_template.content.cloneNode(true);
         list[i].appendChild(iDiv);
+    }
+
+}
+
+async function spawnCardsNew(list, holder) {
+
+
+    for (var i = 0; i < list.length; i++) {
+        var iDiv = unit_card_template.content.cloneNode(true);
+        holder.appendChild(iDiv);
     }
 
 }
@@ -262,6 +329,25 @@ async function showUnitsFromClassList(list) {
 
 async function showUnitsFromList(list) {
 
+    var holder = document.getElementById("UnitHolder");
+    await spawnCardsNew(list, holder);
+
+    for (var i = 0; i < list.length; i++) {
+        var id = list[i];
+
+        var stringarray = id.match(/[A-Z][a-z]+/g);
+        id = stringarray.join('_').toLowerCase();
+        setUnitIds(id);
+        showUnit(id);
+    };
+
+
+
+
+}
+
+/*async function showUnitsFromList(list) {
+
 
     await spawnCards(list);
 
@@ -276,7 +362,7 @@ async function showUnitsFromList(list) {
 
 }
 
-
+*/
 
 
 function showUnit(a) {
@@ -365,6 +451,7 @@ function showUnit(a) {
 
 function showAbility(a) {
     var j, text, abilityDam, abilityName, abilityDescr, abilityType = "";
+    var div = document.createElement("Span");
     for (j in jsonUnitAbilities.abilities) {
         if (a == jsonUnitAbilities.abilities[j].slug) {
             abilityName = jsonUnitAbilities.abilities[j].name;
@@ -373,40 +460,320 @@ function showAbility(a) {
             abilityDam = jsonUnitAbilities.abilities[j].damage;
             abilityType = jsonUnitAbilities.abilities[j].range;
             if (abilityType != null) {
-                text = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp;" + abilityDam + "</span>" + "</p>" +
+                div.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp;" + abilityDam + "</span>" + "</p>" +
                     abilityType + "<hr>" + abilityDescr;
             } else {
-                text = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "" + abilityDam + "</span>" + "<hr>" + abilityDescr;
+                div.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "" + abilityDam + "</span>" + "<hr>" + abilityDescr;
             }
 
         }
 
     }
-    return text;
+    return div;
 }
 
 
 
-function showBuilding(a, b) {
+
+
+function showBuilding(a) {
     var buildingName, description, cost, type, prereq, j, imagelink = "";
-    for (j in jsonBuildings.buildings) {
-        if (a == jsonBuildings.buildings[j].slug) {
-            buildingName = document.getElementById("buildingname" + b);
-            buildingName.innerHTML = jsonBuildings.buildings[j].name;
-            description = document.getElementById("buildingdescription" + b);
-            description.innerHTML = jsonBuildings.buildings[j].description;
-            type = document.getElementById("buildingtype" + b);
-            type.innerHTML = jsonBuildings.buildings[j].type;
+    for (j in jsonBuildings) {
+        if (a == jsonBuildings[j].slug) {
+            buildingName = document.getElementById("buildingname");
+            buildingName.innerHTML = jsonBuildings[j].name;
+            buildingName.setAttribute("id", "buildingName" + a);
+            description = document.getElementById("buildingdescription");
+            description.innerHTML = jsonBuildings[j].description;
+            description.setAttribute("id", "buildingdescription" + a);
 
-            cost = document.getElementById("buildingcost" + b);
-            cost.innerHTML = "Cost : " + jsonBuildings.buildings[j].cost;
-            if (jsonBuildings.buildings[j].prereq != "") {
+           if('unlocksunit' in jsonBuildings[j]){
 
-                prereq = document.getElementById("buildingprereq" + b);
-                prereq.innerHTML = jsonBuildings.buildings[j].prereq;
+           description.innerHTML += "<br><br>Unlocks Units: <br>";
+            for (let index = 0; index < jsonBuildings[j].unlocksunit.length; index++) {
+              
+                description.innerHTML += "<bullet>" + jsonBuildings[j].unlocksunit[index].slug;
             }
-            imagelink = document.getElementById("buildingicon" + b);
-            imagelink.setAttribute("src", "/aow3db//Icons/Buildings/" + jsonBuildings.buildings[j].image_link + ".png");
+        }
+
+        if('requires' in jsonBuildings[j]){
+
+            description.innerHTML += "<br><br>Requires Building: <br>";
+             for (let index = 0; index < jsonBuildings[j].requires.length; index++) {
+               
+                 description.innerHTML += "<bullet>" + jsonBuildings[j].requires[index].slug;
+             }
+         }
+
+        if('leadsto' in jsonBuildings[j]){
+
+            description.innerHTML += "<br><br>Unlocks Building: <br>";
+             for (let index = 0; index < jsonBuildings[j].leadsto.length; index++) {
+               
+                 description.innerHTML += "<bullet>" + jsonBuildings[j].leadsto[index].slug;
+             }
+         }
+            // type = document.getElementById("buildingtype");
+            //type.innerHTML = jsonBuildings[j].type;
+
+            //cost = document.getElementById("buildingcost");
+            //cost.innerHTML = "Cost : " + jsonBuildings[j].cost;
+            // if (jsonBuildings[j].prereq != "") {
+
+            //     prereq = document.getElementById("buildingprereq");
+            //   prereq.innerHTML = jsonBuildings[j].prereq;
+            //}
+            imagelink = document.getElementById("buildingicon");
+            imagelink.setAttribute("src", "/aow3db//Icons/Buildings/" + jsonBuildings[j].slug + ".png");
+            imagelink.setAttribute("id", "buildingicon" + a);
         }
     }
+}
+
+
+function addTooltipListeners(tooltip, span) {
+    tooltip.addEventListener('mouseenter', function (event) {
+        TurnOnTooltip(span);
+        if (tooltip != hoverDiv) {
+            updateHoverDivPosition(event);
+        }
+
+    });
+
+    tooltip.addEventListener('mouseleave', function () {
+        TurnOffTooltip();
+    });
+}
+
+function removeToolTipListeners(tooltip) {
+    tooltip.removeEventListener('mouseenter', tooltip);
+
+    tooltip.removeEventListener('mouseleave', tooltip);
+
+}
+
+function TurnOnTooltip(spa) {
+    hoverDiv = document.getElementById("hoverDiv");
+    // console.log('Mouse entered the div');
+    hoverDiv.style.display = 'block';
+    if (spa != null) {
+        hoverDiv.innerHTML = spa.innerHTML;
+    }
+
+}
+
+function TurnOffTooltip() {
+    hoverDiv = document.getElementById("hoverDiv");
+    hoverDiv.style.display = 'none';
+}
+
+
+function getNormalizedPosition(event) {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    // event.clientX and event.clientY give the position of the mouse
+    const xPosition = event.clientX;
+    const yPosition = event.clientY;
+
+    // Normalize to a range of 0 to 1
+    const normalizedX = xPosition / screenWidth;
+    const normalizedY = yPosition / screenHeight;
+
+    return {
+        x: normalizedX,
+        y: normalizedY
+    };
+}
+
+function updateHoverDivPosition(event) {
+
+    // const settings = getUserSettings();
+
+    var offset = 10;
+    /* if (settings.tooltipselectable) {
+        hoverDiv.setAttribute("Style", "pointer-events: all;");
+
+
+    } else {
+        hoverDiv.setAttribute("Style", "pointer-events: none;");
+        offset = 10;
+    }
+*/
+    var normalizedPos = getNormalizedPosition(event);
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+    if (normalizedPos.x > 0.8) {
+        hoverDiv.style.left = (mouseX - hoverDiv.getBoundingClientRect().width - offset + scrollLeft) + 'px';
+    } else {
+        hoverDiv.style.left = (mouseX + offset + scrollLeft) + 'px';
+    }
+
+    if (normalizedPos.y > 0.8) {
+        hoverDiv.style.top = (mouseY - hoverDiv.getBoundingClientRect().height - offset + scrollTop) + 'px';
+    } else {
+        hoverDiv.style.top = (mouseY + offset + scrollTop) + 'px';
+    }
+
+
+}
+
+
+async function spawnCardRace(holder) {
+
+
+
+    var iDiv = race_description_template.content.cloneNode(true);
+    holder.appendChild(iDiv);
+
+
+}
+
+
+async function BuildRaceDescription(raceID) {
+    var raceHolder = document.getElementById("raceHolder");
+
+    await spawnCardRace(raceHolder);
+    SetRaceDescription(raceID);
+
+
+}
+
+function SetRaceDescription(raceID) {
+    for (let index = 0; index < jsonRaceDescriptions.length; index++) {
+        if (jsonRaceDescriptions[index].id === raceID) {
+           
+            var raceName = document.getElementById("race_name");
+            if ('cityname' in jsonRaceDescriptions[index]) {
+                raceName.innerHTML = jsonRaceDescriptions[index].cityname + "(" + jsonRaceDescriptions[index].name + ")";
+            } else {
+                raceName.innerHTML = jsonRaceDescriptions[index].name;
+            }
+
+
+            var raceDescription = document.getElementById("race_descr");
+            raceDescription.innerHTML = jsonRaceDescriptions[index].description;
+            var raceWMPic = document.getElementById("race_wm");
+            raceWMPic.setAttribute("src", "/aow3db/PreviewGifs/StrategicMap/" + jsonRaceDescriptions[index].id + ".png");
+            var raceIcon = document.getElementById("race_icon");
+            raceIcon.setAttribute("src", "/aow3db/Icons/Passives/" + jsonRaceDescriptions[index].id + ".png");
+
+
+            var raceTerrain = document.getElementById("race_terrain");
+            var raceTraits = document.getElementById("race_traits");
+
+            var cityTier1name = document.getElementById("city_t1_name");
+
+            var cityTier2name = document.getElementById("city_t2_name");
+
+            var cityTier3name = document.getElementById("city_t3_name");
+
+            var cityTier4name = document.getElementById("city_t4_name");
+
+
+
+            if ('terrain_prefs' in jsonRaceDescriptions[index]) {
+                for (let i = 0; i < jsonRaceDescriptions[index].terrain_prefs.length; i++) {
+                    var Div = document.createElement("DIV");
+                    Div.innerHTML = jsonRaceDescriptions[index].terrain_prefs[i].entry;
+                    raceTerrain.appendChild(Div);
+
+                }
+            }
+            if ('traits' in jsonRaceDescriptions[index]) {
+                for (let i = 0; i < jsonRaceDescriptions[index].traits.length; i++) {
+                    var Div = document.createElement("DIV");
+                    Div.innerHTML = "<bullet>" + jsonRaceDescriptions[index].traits[i].name;
+                    if ('slug' in jsonRaceDescriptions[index].traits[i]) {
+                        Div.innerHTML = "<bullet>" + getAbilityName(jsonRaceDescriptions[index].traits[i].slug);
+                        var spa = showAbility(jsonRaceDescriptions[index].traits[i].slug);
+                        addTooltipListeners(Div, spa);
+                    }
+                    raceTraits.appendChild(Div);
+
+                }
+            }
+
+
+
+            if ('buildings_t1' in jsonRaceDescriptions[index]) {
+                var buildings = jsonRaceDescriptions[index].buildings_t1.split(",");
+                var buildingsHolder1 = document.getElementById("city_t1");
+                cityTier1name.innerHTML = jsonRaceDescriptions[index].name + " City Tier 1 Buildings";
+                for (let i = 0; i < buildings.length; i++) {
+                    spawnBuildingCards(buildingsHolder1);
+                    showBuilding(buildings[i]);
+                    // var newDiv = document.createElement("Div");
+                    // newDiv.innerHTML = buildings[i];
+                    // buildingsHolder1.appendChild(newDiv);
+                }
+            }
+            if ('buildings_t2' in jsonRaceDescriptions[index]) {
+                var buildings = jsonRaceDescriptions[index].buildings_t2.split(",");
+                var buildingsHolder1 = document.getElementById("city_t2");
+                cityTier2name.innerHTML = jsonRaceDescriptions[index].name + " City Tier 2 Buildings";
+                for (let i = 0; i < buildings.length; i++) {
+                    spawnBuildingCards(buildingsHolder1);
+                    showBuilding(buildings[i]);
+                    // var newDiv = document.createElement("Div");
+                    // newDiv.innerHTML = buildings[i];
+                    // buildingsHolder1.appendChild(newDiv);
+                }
+            }
+            if ('buildings_t3' in jsonRaceDescriptions[index]) {
+                var buildings = jsonRaceDescriptions[index].buildings_t3.split(",");
+                var buildingsHolder1 = document.getElementById("city_t3");
+                cityTier3name.innerHTML = jsonRaceDescriptions[index].name + " City Tier 3 Buildings";
+                for (let i = 0; i < buildings.length; i++) {
+                    // var newDiv = document.createElement("Div");
+                    // newDiv.innerHTML = buildings[i];
+                    // buildingsHolder1.appendChild(newDiv);
+                    spawnBuildingCards(buildingsHolder1);
+                    showBuilding(buildings[i]);
+                }
+            }
+            if ('buildings_t4' in jsonRaceDescriptions[index]) {
+                var buildings = jsonRaceDescriptions[index].buildings_t4.split(",");
+                var buildingsHolder1 = document.getElementById("city_t4");
+                cityTier4name.innerHTML = jsonRaceDescriptions[index].name + " City Tier 4 Buildings";
+                for (let i = 0; i < buildings.length; i++) {
+                    // var newDiv = document.createElement("Div");
+                    // newDiv.innerHTML = buildings[i];
+                    // buildingsHolder1.appendChild(newDiv);
+                    spawnBuildingCards(buildingsHolder1);
+                    showBuilding(buildings[i]);
+                }
+            }
+
+        }
+
+
+    }
+
+
+}
+
+function getAbilityName(slug){
+    for (j in jsonUnitAbilities.abilities) {
+        if (slug == jsonUnitAbilities.abilities[j].slug) {
+           return jsonUnitAbilities.abilities[j].name;
+        }
+
+    }
+}
+
+
+
+async function spawnBuildingCards(holder) {
+
+
+
+    var iDiv = building_template.content.cloneNode(true);
+    holder.appendChild(iDiv);
+
+
 }
