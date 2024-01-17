@@ -28,6 +28,11 @@ a {
     color: cyan;
 }
 
+.hyperlink{
+    color: beige;
+    text-decoration: underline;
+}
+
 #menu {
     background: #343434;
     color: #eee;
@@ -274,9 +279,10 @@ p {
     width: 940px;
     border-radius: 15px;
     margin-left: auto;
+    margin-bottom:20px;
     margin-right: auto;
     padding: 15px;
-    padding-top: 40px;
+  
     border: 3px solid white;
     border-color: rgba(255, 255, 200, 1);
     display: table;
@@ -504,9 +510,7 @@ p {
     display: inline-block;
 }
 
-.tooltiptext2 {
-    display: inline-block;
-}
+
 
 /* Tooltip text */
 .tooltip .tooltiptext {

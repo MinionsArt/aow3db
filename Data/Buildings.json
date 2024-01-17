@@ -192,5 +192,29 @@
         }
         ]
 
+        },
+    {
+        "slug": "arch_druids_dolmen",
+        "name": "Arch Druid’s Dolmen",
+        "description": "Allows the production of Hunters and Shamans",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "racial_hunter"
+            },
+            {
+
+                "slug": "racial_shaman"
+            }
+        ],
+        "leadsto": [
+            {
+                "slug": "henge"
+
+        }]
+
+
         }
+   
     ]

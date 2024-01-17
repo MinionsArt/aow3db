@@ -664,6 +664,7 @@ async function BuildRaceDescription(raceID) {
 
     await spawnCardRace(raceHolder);
     SetRaceDescription(raceID);
+    handleCollapsible();
 
 
 }
@@ -714,8 +715,9 @@ function SetRaceDescription(raceID) {
                     var Div = document.createElement("DIV");
                     Div.innerHTML = "<bullet>" + jsonRaceDescriptions[index].traits[i].name;
                     if ('slug' in jsonRaceDescriptions[index].traits[i]) {
-                        Div.innerHTML = "<bullet>" + getAbilityName(jsonRaceDescriptions[index].traits[i].slug);
-                        var spa = showAbility(jsonRaceDescriptions[index].traits[i].slug);
+                        Div.innerHTML = "<p class=\"hyperlink\"><bullet>" + getAbilityName(jsonRaceDescriptions[index].traits[i].slug) + "</p>";
+                        var spa = document.createElement("span");
+                        spa.innerHTML = showAbility(jsonRaceDescriptions[index].traits[i].slug);
                         addTooltipListeners(Div, spa);
                     }
                     raceTraits.appendChild(Div);
