@@ -36,7 +36,6 @@ async function GetAllData() {
 async function CheckData() {
     if (jsonRaceDescriptions === undefined) {
         await GetAllData();
-        // Example usage
       
         HandlePage();
     }

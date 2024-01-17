@@ -40,7 +40,7 @@
          "id": "dragon",
          "name": "Dragon",
          "cityname": "Dragons' Peak",
-         "description": "The Dragons are an ancient race of powerfull reptilian creatures. Born into this world during its creation, the Dragons are said the have shaped the world for the other races to inhabit. Each Dragon type to emerge represented one element; ranging from metals and gems to fire and frost. The Giants came next, shaping the land in finer detail, often changing what the Dragons had formed. This is thought to be the source of the fiercy animosity between the two races. All Dragons can fly and possess powerful magical abilities and immunities, combining breath attacks with powerful claws.",
+         "description": "The Dragons are an ancient race of powerful reptilian creatures. Born into this world during its creation, the Dragons are said the have shaped the world for the other races to inhabit. Each Dragon type to emerge represented one element; ranging from metals and gems to fire and frost. The Giants came next, shaping the land in finer detail, often changing what the Dragons had formed. This is thought to be the source of the fiercy animosity between the two races. All Dragons can fly and possess powerful magical abilities and immunities, combining breath attacks with powerful claws.",
          "terrain_prefs": [
              {
                  "entry": "Likes: Barrens",
@@ -75,4 +75,20 @@
          "buildings_t2": "barrow",
          "buildings_t3": "haunted_vault,chamber_of_the_rite",
          "buildings_t4": "mausoleum,throne_of_bone"
+ }, {
+         "id": "arch_druid",
+         "name": "Archdruid",
+         "description": "Arch Druids lead from natural sanctuaries in remote locales. Their cities are natural self-sufficient places founded on the bedrock of natural balance. Their lands burst with life, sweet springs overflow bringing lush wilderness to arid wastelands. Their domains are well guarded by hunters, shamans, and wild beasts. Even the trees appear to bend to the Arch Druid’s will. The Arch Druid Lords I encountered ruled with unquestioned power that at times seemed cruel, but upon reflection is justified by their need for constant balance. To master the forces of nature, they do not blindly protect life, for death is the natural consequence of life.",
+
+         "hero_traits": [
+             {
+                 "slug": "+5 <hp></hp> Hit Points",
+                 "slug": "+1 <reistance></resistance> Resistance",
+                 "slug": "vision_range_upgrade"
+         }
+     ],
+
+         "buildings_class": "arch_druids_dolmen,henge,megalith",
+         "hero_levels": "",
+
  }]
