@@ -51,10 +51,17 @@ a {
 }
 
 #menu {
+
+
     background: #343434;
     color: #eee;
+    width: 100%;
     height: 35px;
-    border-bottom: 4px solid #eeeded
+    background-image: url(/aow3db/Interface/topbar.png);
+    background-size: 981px;
+    background-position-y: -20px;
+    background-repeat: repeat-x;
+}
 }
 
 #menu ul,
@@ -83,10 +90,13 @@ a {
 
 #menu a {
     display: block;
-    line-height: 35px;
+    line-height: 46px;
+
     padding: 0 14px;
     text-decoration: none;
-    color: #eee;
+    color: white;
+
+    text-shadow: 1px 1px 10px black;
 }
 
 #menu li:hover > a,
@@ -150,7 +160,9 @@ a {
 }
 
 #menu a.prett {
-    padding: 0 100px 0 14px
+    margin: 0 5px 0 5px;
+
+
 }
 
 #menu a.prett::after {
