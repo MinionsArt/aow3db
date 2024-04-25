@@ -1,5 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@font-face {
+    font-family: 'Header';
+    src: url(/aow3db/Style/HEADER.ttf);
+}
+
+@font-face {
+    font-family: 'Decorative';
+    src: url(/aow3db/Style/DECORATIVE.ttf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(/aow3db/Style/REGULAR.ttf);
+}
+
+@font-face {
+    font-family: 'Number';
+    src: url(/aow3db/Style/NUMBER.ttf);
+}
 
 html {
     background-color: #151518;
@@ -9,7 +26,7 @@ html {
 
 
 h2 {
-    font-family: 'IM Fell English SC', serif;
+    font-family: 'Decorative', serif;
     font-size: 28px;
     font-weight: 100;
     margin: 0px 0 0 0;
@@ -28,7 +45,7 @@ a {
     color: cyan;
 }
 
-.hyperlink{
+.hyperlink {
     color: beige;
     text-decoration: underline;
 }
@@ -110,6 +127,11 @@ a {
     z-index: 99;
     display: none;
     border: 0;
+}
+
+.medals {
+    position: relative;
+    left: -10px;
 }
 
 #menu ul.menus li {
@@ -204,20 +226,31 @@ a {
 }
 
 p {
-    font-family: 'IM Fell English SC', serif;
+    font-family: 'decorative', serif;
     font-size: 15px;
     margin: 0px 0 0 0;
 
 }
 
 .unit_description {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'regular', sans-serif;
     color: white;
     position: relative;
     font-size: 13px;
-    margin-top: -150px;
+    margin-top: -5px;
     padding: 9px;
+    background-color: rgb(20 26 31);
+    text-shadow: 1px 1px 10px black;
 
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 407px;
+    box-shadow: inset 0px 0px 20px 14px rgb(20 26 31);
+    top: 0;
+    left: 0;
 }
 
 .unit_description_bg {
@@ -254,37 +287,77 @@ p {
     position: relative;
     width: 350px;
     float: left;
-    background-color: rgba(0, 0, 0, 1);
-    border: 3px solid white;
-    border-color: rgba(255, 255, 200, 0.8);
-    margin: 5px;
+
+    border-style: solid;
+
+    border-image: url(/aow3db/Interface/9slicePanel.png);
+    border-width: 10px;
+    border-image-slice: 12 12 12 12 fill;
+
     overflow: hidden;
+}
+
+.unit_levelupAlternate {
+    background-color: #23545B;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    position: relative;
+    width: 200px;
+    float: left;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: inset 0 0 5px #000000;
+
+    font-family: 'regular';
+    font-size: 14px;
+}
+
+.unit_levelupAlternate2 {
+    // background-color: #23545B;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    position: relative;
+    width: 200px;
+    float: left;
+    text-shadow: 2px 2px 3px black;
+
+
+    font-family: 'regular';
+    font-size: 14px;
 }
 
 .unit_levelup {
     position: relative;
     width: 220px;
     float: left;
-
+    text-shadow: 2px 2px 3px black;
     box-shadow: inset 0 0 10px #000000;
-    border: 3px solid white;
-    border-color: rgba(255, 255, 200, 0.8);
-    margin: 5px;
+
+    font-family: 'regular';
+    font-size: 14px;
+    /* border-image: url(/aow3db/Interface/9slicePanel.png);
+     border-style: solid;
+    border-width: 10px;
+    border-image-slice: 12 12 12 12 fill;
+*/
     margin-bottom: -10px;
 }
 
 .unit_card {
-    background-color: #263039;
+    background-image: url(/aow3db/Interface/outerMiddleCenter.png);
+    background-size: cover;
     color: white;
     width: 940px;
-    border-radius: 15px;
     margin-left: auto;
-    margin-bottom:20px;
+    margin-bottom: 50px;
     margin-right: auto;
-    padding: 15px;
-  
-    border: 3px solid white;
-    border-color: rgba(255, 255, 200, 1);
+    margin-top: 30px;
+    padding: 5px;
+    border-style: solid;
+
+    border-image: url(/aow3db/Interface/9slicePanel.png);
+    border-image-slice: 11 21 21 21;
     display: table;
 
 }
@@ -321,6 +394,7 @@ p {
     width: 308px;
     height: 40px;
     margin: 1px;
+    font-family: 'Decorative';
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     border-top: 1px solid black;
@@ -369,10 +443,12 @@ p {
     float: left;
     width: 310px;
     box-shadow: inset 0 0 10px #000000;
-    border: 3px solid white;
-    border-color: rgba(255, 255, 200, 1);
-    background-color: rgba(20, 20, 30, 1);
-    margin: 5px;
+    border-style: solid;
+
+    border-image: url(/aow3db/Interface/9slicePanel.png);
+    border-width: 10px;
+    border-image-slice: 12 12 12 12 fill;
+
     height: auto;
 
 }
@@ -385,7 +461,10 @@ p {
     box-shadow: 0 0 10px #000000;
     border-bottom: 4px solid white;
     box-shadow: inset 0 0 30px #000000;
-    border-color: rgba(255, 255, 200, 0.8);
+    border-style: solid;
+
+    border-image: url(/aow3db/Interface/9slicePanel.png);
+    border-image-slice: 38 18 12 22;
     background-color: rgba(30, 30, 40, 1);
 
 
@@ -431,7 +510,7 @@ p {
     padding: 10px;
     position: absolute;
     z-index: 1;
-    min-width: 100px;
+    min-width: 250px;
     max-width: 400px;
     min-height: 20px;
     margin-left: 50px;
@@ -449,13 +528,13 @@ p {
     background-color: black;
     color: #fff;
 
-    border-radius: 10px 0px 10px 0px;
-    border: 1px solid darkgrey;
+
+    border: 1px solid #8080808a;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     position: absolute;
     z-index: 1;
-    min-width: 100px;
+    min-width: 250px;
     max-width: 400px;
     min-height: 20px;
     margin-left: 50px;
@@ -465,19 +544,21 @@ p {
 
 
 .unit_prod {
-    color: bisque;
+    color: white;
     font-size: 18px;
     position: relative;
     top: -15px;
+    font-family: 'decorative';
     padding: 10px;
     text-align: left;
+    text-shadow: 2px 2px 3px black;
 }
 
 .ability_damage {
     float: right;
     font-size: 16px;
     align-content: right;
-
+    font-family: 'Number';
     margin-top: 10px;
     display: inline-block;
 
@@ -486,24 +567,24 @@ p {
 
 
 .unit_name {
-    font-size: 20px;
+    font-family: 'Header';
+
+    font-size: 22px;
     position: relative;
-    top: -15px;
+    top: -13px;
     text-align: center;
-    border-radius: 0 0 25px 25px;
     height: 30px;
-    box-shadow: inset 0 0 30px #000000;
     text-shadow: 1px 1px 10px black;
-    border: 3px solid white;
-    border-color: #c9c39f;
-    background: linear-gradient(0deg, #1e2831, transparent);
+
 
 }
 
 .tooltip {
-    color: white;
+    color: aliceblue;
     display: inline-block;
     padding: 10px;
+
+    text-shadow: 2px 2px 3px black;
 }
 
 .tooltiptext {
@@ -540,14 +621,13 @@ p {
     background-color: black;
     color: #fff;
 
-    border-radius: 10px 0px 10px 0px;
-    border: 1px solid grey;
+    border: 1px solid #8080808a;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     position: absolute;
     z-index: 1;
     font-size: 16px;
-    min-width: 200px;
+    min-width: 250px;
 
     min-height: 50px;
     margin-left: 100px;
@@ -896,7 +976,7 @@ table th {
 }
 
 bullet:before {
-    content: "\25C6";
+    content: "\25CF";
     padding-right: 5px;
 }
 

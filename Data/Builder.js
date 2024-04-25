@@ -36,7 +36,7 @@ async function GetAllData() {
 async function CheckData() {
     if (jsonRaceDescriptions === undefined) {
         await GetAllData();
-      
+
         HandlePage();
     }
 }
@@ -291,18 +291,18 @@ async function spawnCards(list) {
 }
 
 async function spawnCardsNew(list, holder, multiple) {
-    if(multiple === true){
+    if (multiple === true) {
         for (var i = 0; i < list.length; i++) {
             var iDiv = unit_card_template.content.cloneNode(true);
             holder.appendChild(iDiv);
             var id = list[i];
-    
+
             var stringarray = id.match(/[A-Z][a-z]+/g);
             id = stringarray.join('_').toLowerCase();
             setUnitIds(id);
             showUnit(id, iDiv);
         }
-    } else{
+    } else {
         var iDiv = unit_card_template.content.cloneNode(true);
         holder.appendChild(iDiv);
         var id = list;
@@ -312,7 +312,7 @@ async function spawnCardsNew(list, holder, multiple) {
         setUnitIds(id);
         showUnit(id, iDiv);
     }
-   
+
 
 }
 
@@ -337,7 +337,7 @@ async function showUnitsFromList(list) {
     await spawnCardsNew(list, holder, true);
 
     // for (var i = 0; i < list.length; i++) {
-       
+
     // };
 
 }
@@ -350,13 +350,13 @@ async function showUnitsFromListVariants(list, name, extratext) {
     variantHolder.className = "unit_card";
     holder.append(variantHolder);
     variantHolder.innerHTML = "<p style=\"background-color:black; font-size: 26px\" class=\"unit_name\">" + name + "</p>";
-    if(extratext != undefined){
+    if (extratext != undefined) {
         variantHolder.innerHTML += extratext;
     }
-   
+
     for (var i = 0; i < list.length; i++) {
-      
-      
+
+
         var buttonHolder = document.createElement("button");
         buttonHolder.className = "collapsible";
         buttonHolder.addEventListener("click", function () {
@@ -371,23 +371,23 @@ async function showUnitsFromListVariants(list, name, extratext) {
         var contentHolder = document.createElement("div");
         contentHolder.className = "content";
         variantHolder.append(buttonHolder);
-        variantHolder.append(contentHolder);  
+        variantHolder.append(contentHolder);
         await spawnCardsNew(list[i], contentHolder, false);
-         var id = list[i];
-         var stringarray = id.match(/[A-Z][a-z]+/g);
-         id = stringarray.join('_').toLowerCase();
+        var id = list[i];
+        var stringarray = id.match(/[A-Z][a-z]+/g);
+        id = stringarray.join('_').toLowerCase();
         //setUnitIds(id);
-       
-      
-        
 
-       
+
+
+
+
         buttonHolder.innerHTML = stringarray.join(' ');
-       
-      
+
+
         showUnit(id);
     };
-   
+
 
 }
 
@@ -407,7 +407,7 @@ function showUnit(a) {
             imagelink = document.getElementById("vid_" + a);
             imagelink.setAttribute('src', "/aow3db/PreviewGifs/" + jsonUnits.units[i].image_link);
             hp = document.getElementById("hp_" + a);
-            hp.innerHTML = jsonUnits.units[i].hp + "/" + jsonUnits.units[i].hp;
+            hp.innerHTML = jsonUnits.units[i].hp;
             armor = document.getElementById("defense_" + a);
             armor.innerHTML = jsonUnits.units[i].armor;
             shield = document.getElementById("resistance_" + a);
@@ -442,7 +442,7 @@ function showUnit(a) {
                 //origin_research.appendChild(aTag);
             }
             levels = document.getElementById("levelups_" + a);
-            levels.innerHTML = "<div style=\"background-color: rgba(30, 30, 40, 1); padding:10px; padding-bottom:5px; margin-bottom: 5 px;\"> Level Up: <x-medal_none> </x-medal_none> Recruit 0/" + jsonUnits.units[i].xp + " <x-xp></x-xp></div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_trooper> </x-medal_trooper> Trooper" + jsonUnits.units[i].level_trooper + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><p><x-medal_veteran> </x-medal_veteran> Veteran</p>" + jsonUnits.units[i].level_veteran + "</div>" + "<div style=\"background-color: #23545B; padding:10px; padding-bottom:3px;padding-top:3px; \">" + "<p><x-medal_expert> </x-medal_expert> Expert" + jsonUnits.units[i].level_expert + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;\"><x-medal_elite> </x-medal_elite> Elite" + jsonUnits.units[i].level_elite + "</div>" + "<div style=\"padding:10px; padding-bottom:3px;padding-top:3px;background-color: #23545B;\"><p><x-medal_champion> </x-medal_champion> Champion</p><li> +10 <x-hp> </x-hp> Hit Points</li>" + "</div>";
+            levels.innerHTML = "<div style=\"padding-bottom: 5px;margin-bottom: 5 px;position: absolute;right: 83px;top: -30px; font-family:'Number';\">0/" + jsonUnits.units[i].xp + " <x-xp></x-xp></div>" + "<div class=\"unit_levelupAlternate\">" + "<p class=\"medals\"><x-medal_trooper> </x-medal_trooper> Trooper</p>" + jsonUnits.units[i].level_trooper + "</div>" + "<div class=\"unit_levelupAlternate2\"> <p class = \"medals\"><x-medal_veteran> </x-medal_veteran> Veteran</p>" + jsonUnits.units[i].level_veteran + "</div>" + "<div class=\"unit_levelupAlternate\">" + "<p class=\"medals\"><x-medal_expert> </x-medal_expert> Expert</p>" + jsonUnits.units[i].level_expert + "</div>" + "<div class=\"unit_levelupAlternate2\"><p class=\"medals\"><x-medal_elite> </x-medal_elite> Elite </p>" + jsonUnits.units[i].level_elite + "</div>" + "<div class=\"unit_levelupAlternate\"><p class=\"medals\"><x-medal_champion> </x-medal_champion> Champion</p><bullet> +10 <x-hp> </x-hp> Hit Points</bullet>" + "</div>";
             for (k in jsonUnits.units[i].abilities) {
                 addAbilityslot(jsonUnits.units[i].abilities[k].slug, jsonUnits.units[i].abilities[k].unique, jsonUnits.units[i].abilities[k].damage, a);
 
@@ -469,7 +469,7 @@ function showUnit(a) {
         }
     }
 
-    if(found === false){
+    if (found === false) {
         console.log("Couldn't find " + a);
     }
 }
@@ -512,32 +512,32 @@ function showBuilding(a) {
             description.innerHTML = jsonBuildings[j].description;
             description.setAttribute("id", "buildingdescription" + a);
 
-           if('unlocksunit' in jsonBuildings[j]){
+            if ('unlocksunit' in jsonBuildings[j]) {
 
-           description.innerHTML += "<br><br>Unlocks Units: <br>";
-            for (let index = 0; index < jsonBuildings[j].unlocksunit.length; index++) {
-              
-                description.innerHTML += "<bullet>" + jsonBuildings[j].unlocksunit[index].slug;
+                description.innerHTML += "<br><br>Unlocks Units: <br>";
+                for (let index = 0; index < jsonBuildings[j].unlocksunit.length; index++) {
+
+                    description.innerHTML += "<bullet>" + jsonBuildings[j].unlocksunit[index].slug;
+                }
             }
-        }
 
-        if('requires' in jsonBuildings[j]){
+            if ('requires' in jsonBuildings[j]) {
 
-            description.innerHTML += "<br><br>Requires Building: <br>";
-             for (let index = 0; index < jsonBuildings[j].requires.length; index++) {
-               
-                 description.innerHTML += "<bullet>" + jsonBuildings[j].requires[index].slug;
-             }
-         }
+                description.innerHTML += "<br><br>Requires Building: <br>";
+                for (let index = 0; index < jsonBuildings[j].requires.length; index++) {
 
-        if('leadsto' in jsonBuildings[j]){
+                    description.innerHTML += "<bullet>" + jsonBuildings[j].requires[index].slug;
+                }
+            }
 
-            description.innerHTML += "<br><br>Unlocks Building: <br>";
-             for (let index = 0; index < jsonBuildings[j].leadsto.length; index++) {
-               
-                 description.innerHTML += "<bullet>" + jsonBuildings[j].leadsto[index].slug;
-             }
-         }
+            if ('leadsto' in jsonBuildings[j]) {
+
+                description.innerHTML += "<br><br>Unlocks Building: <br>";
+                for (let index = 0; index < jsonBuildings[j].leadsto.length; index++) {
+
+                    description.innerHTML += "<bullet>" + jsonBuildings[j].leadsto[index].slug;
+                }
+            }
             // type = document.getElementById("buildingtype");
             //type.innerHTML = jsonBuildings[j].type;
 
@@ -672,7 +672,7 @@ async function BuildRaceDescription(raceID) {
 function SetRaceDescription(raceID) {
     for (let index = 0; index < jsonRaceDescriptions.length; index++) {
         if (jsonRaceDescriptions[index].id === raceID) {
-           
+
             var raceName = document.getElementById("race_name");
             if ('cityname' in jsonRaceDescriptions[index]) {
                 raceName.innerHTML = jsonRaceDescriptions[index].cityname + "(" + jsonRaceDescriptions[index].name + ")";
@@ -784,10 +784,10 @@ function SetRaceDescription(raceID) {
 
 }
 
-function getAbilityName(slug){
+function getAbilityName(slug) {
     for (j in jsonUnitAbilities.abilities) {
         if (slug == jsonUnitAbilities.abilities[j].slug) {
-           return jsonUnitAbilities.abilities[j].name;
+            return jsonUnitAbilities.abilities[j].name;
         }
 
     }
