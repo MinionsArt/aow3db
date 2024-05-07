@@ -113,7 +113,7 @@ a {
 .w3-bar .w3-bar-item {
     color: white;
     margin: 0 0 0 0;
-
+    font-family: 'Header';
     float: left;
     position: relative;
     height: 45px;
@@ -126,7 +126,7 @@ a {
     outline: 0;
     border-width: 3px;
     border-style: solid;
-    border-image: url(/aow4db/Icons/9slicetooltip.png);
+    border-image: url(/aow3db/Interface/9slicePanel.png);
     border-image-slice: 10 10 10 10;
     background-color: rgb(0, 0, 0);
     border-image-repeat: stretch;
@@ -374,26 +374,28 @@ p {
     grid-auto-columns: auto;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 13px;
+
     color: #bbcdf6;
     text-align: left;
     border-style: solid;
-    border-image: url(/aow4db/Icons/9slicetooltip.png);
+    border-image: url(/aow3db/Interface/9slicePanel.png);
     border-image-slice: 4 10 4 10 fill;
     text-shadow: 2px 2px 3px black;
     z-index: 2;
 }
 
 .collapsibleUnits {
+    font-family: 'Header';
     color: white;
     cursor: pointer;
-    padding: 8px 6px;
+    padding: 2px 2px;
+    font-size: 16px;
     border: none;
     text-align: left;
     outline: 0;
     border-width: 10px;
     border-style: solid;
-    border-image: url(/aowp/UI/modbackgroundPlain.png);
+    border-image: url(/aow3db/Interface/9slicePanel.png);
     border-image-slice: 10 10 10 10;
     background-color: black;
     border-image-repeat: stretch;
@@ -1122,7 +1124,7 @@ x-knowledge {
 }
 
 unitInfantry {
-    max-height: 20px;
+    max-height: 30px;
     top: 5px;
     content: url(../Icons/Text/infantry.png);
     position: relative;
@@ -1132,7 +1134,7 @@ unitInfantry {
 
 
 unitIrregular {
-    max-height: 20px;
+    max-height: 30px;
     top: 5px;
     content: url(../Icons/Text/irregular.png);
     position: relative;
@@ -1144,6 +1146,123 @@ unitArcher {
     max-height: 30px;
     top: 5px;
     content: url(../Icons/Text/archer.png);
+    position: relative;
+
+
+}
+
+unitDragon {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/dragon.png);
+    position: relative;
+
+
+}
+
+unitFey {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/fey.png);
+    position: relative;
+
+
+}
+
+unitSupport {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/support.png);
+    position: relative;
+
+
+}
+
+unitPike {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/pikeman.png);
+    position: relative;
+
+
+}
+
+unitElemental {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/elemental.png);
+    position: relative;
+
+
+}
+
+unitSeaCreature {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/sea_creature.png);
+    position: relative;
+
+
+}
+
+unitBoat {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/boat.png);
+    position: relative;
+
+
+}
+
+unitGiant {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/giant.png);
+    position: relative;
+
+
+}
+
+unitMachine {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/machine.png);
+    position: relative;
+
+
+}
+
+unitCavalry {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/cavalry.png);
+    position: relative;
+
+
+}
+
+unitAnimal {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/animal.png);
+    position: relative;
+
+
+}
+
+unitMonster {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/monster.png);
+    position: relative;
+
+
+}
+
+unitUndead {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/undead.png);
     position: relative;
 
 

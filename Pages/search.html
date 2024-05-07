@@ -24,7 +24,6 @@
 
             $(this).css("color", "cyan");
         });
-
     </script>
     <title>Age of Wonders Planetfall - Search</title>
 </head>
@@ -43,7 +42,8 @@
             <p id="searchResult" style="color: aqua"></p>
 
         </div>
-        <div id="searchOutput">test</div>
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units">test</div>
     </div>
     <div id="modS" style=" width:100%;margin: auto; display: none">
         <h2 style="color:white;text-align: center">Mod Search</h2>
@@ -55,6 +55,7 @@
             <p id="searchResultMod" style="color: aqua"></p>
 
         </div>
+
         <div id="searchOutputMod">test</div>
     </div>
 </body>
@@ -95,7 +96,7 @@
     function searchData() {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInput");
-        output = document.getElementById("searchOutput");
+        output = document.getElementById("units");
         output.innerHTML = "";
 
 
@@ -221,10 +222,11 @@
         }
 
         result.innerHTML = list.length.toString() + " results found";
-        for (j = 0; j < list.length; j++) {
+        showUnitsFromListTest(list);
+        // for (j = 0; j < list.length; j++) {
 
-            addUnitCard(list[j]);
-        }
+        //     addUnitCard(list[j]);
+        // }
 
     }
 
@@ -342,7 +344,4 @@
 
 
     }
-
-</script>
-
-</html>
+</script></html>
