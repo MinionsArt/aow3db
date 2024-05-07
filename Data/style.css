@@ -1121,6 +1121,25 @@ x-knowledge {
 
 }
 
+unitInfantry {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/infantry.png);
+    position: relative;
+
+
+}
+
+
+unitIrregular {
+    max-height: 20px;
+    top: 5px;
+    content: url(../Icons/Text/irregular.png);
+    position: relative;
+
+
+}
+
 table {
     width: 100%;
 

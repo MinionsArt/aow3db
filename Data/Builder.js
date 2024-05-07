@@ -569,7 +569,7 @@ function GetUnitTierAndName(id) {
             var tier = jsonUnits.units[i].tier.split("-")[0];
 
 
-            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" +/* getUnitTypeTag(jsonUnits.units[i].unit_types) +*/ " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (tier) + "</p>";
+            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + /* getUnitTypeTag(jsonUnits.units[i].passives) + */ " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (tier) + "</p>";
 
 
 
@@ -578,6 +578,55 @@ function GetUnitTierAndName(id) {
     }
 }
 
+
+function getUnitTypeTag(passivesList) {
+    var i = "";
+    for (i in passivesList) {
+        if (passivesList[i].slug === "irregular") {
+            return "<unitIrregular></unitIrregular>";
+        }
+        if (passivesList[i].slug === "infantry") {
+            return "<unitInfantry></unitInfantry>";
+        }
+
+        if (passivesList[i].slug === "elite") {
+            return "<unitElite></unitElite>";
+        }
+        if (passivesList[i].slug === "core") {
+            return "<unitCore></unitCore>";
+        }
+        if (passivesList[i].slug === "scout") {
+            return "<unitScout></unitScout>";
+        }
+        if (passivesList[i].slug === "ship") {
+            return "<unitShip></unitShip>";
+        }
+        if (passivesList[i].slug === "battle_mage_unit") {
+            return "<unitBattlemage></unitBattlemage>";
+        }
+        if (passivesList[i].slug === "polearm_unit") {
+            return "<unitPolearm></unitPolearm>";
+        }
+        if (passivesList[i].slug === "shield_unit") {
+            return "<unitShield></unitShield>";
+        }
+        if (passivesList[i].slug === "tower") {
+            return "<unitTower></unitTower>";
+        }
+        if (passivesList[i].slug === "siegecraft") {
+            return "<unitSiegecraft></unitSiegecraft>";
+        }
+        if (passivesList[i].slug === "mythic_unit") {
+            return "<unitMythic></unitMythic>";
+        }
+        if (passivesList[i].slug === "civilian") {
+            return "<unitCivilian></unitCivilian>";
+        }
+
+
+    }
+    return "";
+}
 
 async function showUnitsFromListTest(list, overwritetext, extraCheckForLists) {
 
