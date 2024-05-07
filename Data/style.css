@@ -1140,6 +1140,15 @@ unitIrregular {
 
 }
 
+unitArcher {
+    max-height: 30px;
+    top: 5px;
+    content: url(../Icons/Text/archer.png);
+    position: relative;
+
+
+}
+
 table {
     width: 100%;
 

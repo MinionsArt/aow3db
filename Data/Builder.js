@@ -589,8 +589,8 @@ function getUnitTypeTag(passivesList) {
             return "<unitInfantry></unitInfantry>";
         }
 
-        if (passivesList[i].slug === "elite") {
-            return "<unitElite></unitElite>";
+        if (passivesList[i].slug === "archer") {
+            return "<unitArcher></unitArcher>";
         }
         if (passivesList[i].slug === "core") {
             return "<unitCore></unitCore>";
