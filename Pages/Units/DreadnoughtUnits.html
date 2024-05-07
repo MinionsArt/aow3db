@@ -10,16 +10,39 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitArray = ["spy_drone"];
+        var engineerArray = ["draconian_engineer", "dwarf_engineer", "frostling_engineer", "goblin_engineer", "halfling_engineer", "high_elf_engineer", "human_engineer", "orc_engineer", "tigran_engineer"];
+        var musketeerArray = ["draconian_musketeer", "dwarf_musketeer", "frostling_musketeer", "goblin_musketeer", "halfling_musketeer", "high_elf_musketeer", "human_musketeer", "orc_musketeer", "tigran_musketeer"];
+        var unitArray2 = ["cannon"];
+        var unitArray3 = ["golem", "party_robot_prototype"];
+        var tankArray = ["flame_tank", "frost_tank"];
+        var unitArray4 = ["juggernaut"];
+        var unitArray5 = ["ironclad_warship"];
+
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                CheckData();
+
             });
 
-
+            //  handleCollapsible();
         });
+
+        function HandlePage() {
+            // BuildRaceDescription("arch_druid");
+            showUnitsFromListTest(unitArray, "Spy Drone", "first");
+            showUnitsFromListTest(engineerArray, "Engineers", "");
+            showUnitsFromListTest(musketeerArray, "Musketeers", "");
+            showUnitsFromListTest(unitArray3, "Golem", "");
+            showUnitsFromListTest(unitArray2, "Cannon", " ");
+            showUnitsFromListTest(tankArray, "Flame Tank", " ");
+            showUnitsFromListTest(unitArray4, "Juggernaut", "");
+            showUnitsFromListTest(unitArray5, "Ironclad Warship", "last");
+
+        }
+
     </script>
 
     <title>AOW3 Database - Dreadnought Units</title>
@@ -28,7 +51,7 @@
 <body>
     <div class="" id="header"></div>
 
-    <div class="unit_card">
+    <div class="description_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Dreadnought</p>
         <img class="unit_image" src="/aow3db/Icons/Passives/dreadnought.png" style="position: relative; padding: 4px" width="100">
         <img src="/aow3db/PreviewGifs/StrategicMap/dreadnought.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
@@ -438,206 +461,11 @@
 
     </div>
 
-    <br><br>
-    <div class="units" id="SpyDrone"></div>
-    <br><br>
 
-    <div class="unit_card">
-
-
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Engineers</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcEngineer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Engineer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranEngineer"></div>
-                </p>
-            </div>
-        </div>
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
     </div>
-    <br><br>
+</body>
 
-
-
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Musketeers</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcMusketeer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Musketeer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranMusketeer"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-
-    <div class="unit_card">
-
-
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Produce Golem</p>
-
-        <div style="margin-left: -15px">
-            <div class="units" id="Golem"></div>
-            <button class="collapsible">Party Robot Prototype (Halfling Only)</button>
-            <div class="content">
-                <p>
-                <div class="units" id="PartyRobotPrototype"></div>
-                </p>
-            </div>
-
-
-
-
-            </p>
-        </div>
-    </div>
-
-    <br><br>
-    <div class="units" id="Cannon"></div>
-    <br><br>
-    <div class="unit_card">
-
-
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Produce Flame Tank</p>
-
-        <div style="margin-left: -15px">
-            <div class="units" id="FlameTank"></div>
-            <button class="collapsible">Frost Tank (Frostling Only)</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostTank"></div>
-                </p>
-            </div>
-
-
-
-
-            </p>
-        </div>
-    </div>
-
-    <br><br>
-    <div class="units" id="Juggernaut"></div>
-    <br><br>
-    <div class="units" id="IroncladWarship"></div>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-</body></html>
+</html>

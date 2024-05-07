@@ -10,13 +10,13 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        var unitList1 = ["Boar", "DirePenguin", "DreadSpiderBaby", "HunterSpiderBaby", "Warg", "BabyReedSerpent", "VampireSpiderBaby", "Tiger", "DreadMonkey"];
-        var unitList2 = ["DraconianHunter", "DwarfHunter", "FrostlingHunter", "GoblinHunter", "HalflingHunter", "HighElfHunter", "HumanHunter", "OrcHunter", "TigranHunter"];
-        var unitList3 = ["BleakWarg", "BlightTuskBoar", "DirePanther", "DireBear", "Mammoth", "PolarBear", "Gryphon", "Elephant"];
-        var unitList4 = ["DraconianShaman", "DwarfShaman", "FrostlingShaman", "GoblinShaman", "HalflingShaman", "HighElfShaman", "HumanShaman", "OrcShaman", "TigranShaman"];
-        var unitList5 = ["Cockatrice", "DreadSpiderQueen", "HunterSpiderQueen", "MatureReedSerpent", "MatureShockSerpent", "KingReedSerpent", "KingShockSerpent"];
-        var unitList6 = ["HornedGod"];
-        var unitList7 = ["AncestralSpirits"];
+        var unitList1 = ["boar", "dire_penguin", "dread_spider_baby", "hunter_spider_baby", "warg", "baby_reed_serpent", "vampire_spider_baby", "tiger", "dread_monkey"];
+        var unitList2 = ["draconian_hunter", "dwarf_hunter", "frostling_hunter", "goblin_hunter", "halfling_hunter", "high_elf_hunter", "human_hunter", "orc_hunter", "tigran_hunter"];
+        var unitList3 = ["bleak_warg", "blight_tusk_boar", "dire_panther", "dire_bear", "mammoth", "polar_bear", "gryphon", "elephant"];
+        var unitList4 = ["draconian_shaman", "dwarf_shaman", "frostling_shaman", "goblin_shaman", "halfling_shaman", "high_elf_shaman", "human_shaman", "orc_shaman", "tigran_shaman"];
+        var unitList5 = ["cockatrice", "dread_spider_queen", "hunter_spider_queen", "mature_reed_serpent", "mature_shock_serpent", "king_reed_serpent", "king_shock_serpent"];
+        var unitList6 = ["horned_god"];
+        var unitList7 = ["ancestral_spirits"];
 
         $("#body").ready(function() {
 
@@ -26,18 +26,18 @@
 
             });
 
-            handleCollapsible();
+            //  handleCollapsible();
         });
 
         function HandlePage() {
             // BuildRaceDescription("arch_druid");
-            showUnitsFromListVariants(unitList1, "Summon Wild Animal", " Units summoned with the Summon Wild Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait");
-            showUnitsFromListVariants(unitList2, "Hunters", " Units summoned with the Summon Wild Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait");
-            showUnitsFromListVariants(unitList3, "Summon Eldritch Animal", " Units summoned with the Summon Eldritch Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait");
-            showUnitsFromList(unitList7);
-            showUnitsFromListVariants(unitList4, "Shamans", " Units summoned with the Summon Wild Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait");
-            showUnitsFromListVariants(unitList5, "Summon Gargantuan Animal", " Units summoned with the Summon Gargantuan Animal spell will lose Dedicated to Evil/Good trait and gain the Summoned trait");
-            showUnitsFromList(unitList6);
+            showUnitsFromListTest(unitList1, "Summon Wild Animal", "first");
+            showUnitsFromListTest(unitList2, "Hunters", "");
+            showUnitsFromListTest(unitList3, "Summon Eldritch Animal", "");
+            showUnitsFromListTest(unitList7, "Ancestral Spirits", "");
+            showUnitsFromListTest(unitList4, "Shamans", " ");
+            showUnitsFromListTest(unitList5, "Summon Gargantuan Animal", " ");
+            showUnitsFromListTest(unitList6, "Test2", "last");
 
         }
 
@@ -50,7 +50,7 @@
 <body>
     <div id="header"></div>
 
-    <div class="unit_card">
+    <div class="description_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Arch Druid</p>
         <img class="unit_image" src="/aow3db/Icons/Passives/arch_druid.png" style="position: relative; padding: 4px" width="100">
         <img src="/aow3db/PreviewGifs/StrategicMap/arch_druid.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
@@ -483,7 +483,10 @@
         <br><br>
     </div>
 
-    <div id="UnitHolder"></div>
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
+    </div>
 
 </body>
 

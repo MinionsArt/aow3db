@@ -10,16 +10,39 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var scoutArray = ["draconian_scout", "dwarf_scout", "frostling_scout", "goblin_scout", "halfling_scout", "high_elf_scout", "human_scout", "orc_scout", "tigran_scout"];
+        var monster_hunterArray = ["draconian_monster_hunter", "dwarf_monster_hunter", "frostling_monster_hunter", "goblin_monster_hunter", "halfling_monster_hunter", "high_elf_monster_hunter", "human_monster_hunter", "orc_monster_hunter", "tigran_monster_hunter"];
+        var berserkerArray = ["draconian_berserker", "dwarf_berserker", "frostling_berserker", "goblin_berserker", "halfling_berserker", "high_elf_berserker", "human_berserker", "orc_berserker", "tigran_berserker"];
+        var mounted_archerArray = ["draconian_mounted_archer", "dwarf_mounted_archer", "frostling_mounted_archer", "goblin_mounted_archer", "halfling_mounted_archer", "high_elf_mounted_archer", "human_mounted_archer", "orc_mounted_archer", "tigran_mounted_archer"];
+        var phalanxArray = ["draconian_phalanx", "dwarf_phalanx", "frostling_phalanx", "goblin_phalanx", "halfling_phalanx", "high_elf_phalanx", "human_phalanx", "orc_phalanx", "tigran_phalanx"];
+
+        var warbreedArray = ["draconian_warbreed", "dwarf_warbreed", "frostling_warbreed", "goblin_warbreed", "halfling_warbreed", "high_elf_warbreed", "human_warbreed", "orc_warbreed", "tigran_warbreed"];
+        var manticore_riderArray = ["draconian_manticore_rider", "dwarf_manticore_rider", "frostling_manticore_rider", "goblin_manticore_rider", "halfling_manticore_rider", "high_elf_manticore_rider", "human_manticore_rider", "orc_manticore_rider", "tigran_manticore_rider"];
+
+
+
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                CheckData();
+
             });
 
-
+            //  handleCollapsible();
         });
+
+        function HandlePage() {
+            // BuildRaceDescription("arch_druid");
+            showUnitsFromListTest(scoutArray, "Scout", "first");
+            showUnitsFromListTest(berserkerArray, "Berserker", "");
+            showUnitsFromListTest(monster_hunterArray, "Monster Hunter", "");
+            showUnitsFromListTest(mounted_archerArray, "Mounted Archer", " ");
+            showUnitsFromListTest(phalanxArray, "Phalanx", " ");
+            showUnitsFromListTest(warbreedArray, "Warbreed", " ");
+            showUnitsFromListTest(manticore_riderArray, "Manticore Rider", "last");
+
+        }
 
     </script>
 
@@ -29,7 +52,7 @@
 <body>
     <div class="" id="header"></div>
 
-    <div class="unit_card">
+    <div class="description_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Warlord</p>
         <img class="unit_image" src="/aow3db/Icons/Passives/warlord.png" style="position: relative; padding: 4px" width="100">
         <img src="/aow3db/PreviewGifs/StrategicMap/warlord.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
@@ -440,456 +463,10 @@
 
     </div>
 
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Scouts</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcScout"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Scout</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranScout"></div>
-                </p>
-            </div>
-        </div>
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
     </div>
-
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Berserkers</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcBerserker"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Berserker</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranBerserker"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Monster Hunters</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcMonsterHunter"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Monster Hunter</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranMonsterHunter"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Mounted Archers</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcMountedArcher"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Mounted Archer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranMountedArcher"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Phalanx</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcPhalanx"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Phalanx</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranPhalanx"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Warbreeds</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcWarbreed"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Warbreed</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranWarbreed"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Manticore Riders</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcManticoreRider"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Manticore Rider</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranManticoreRider"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-
-    </script>
 </body>
 
 </html>

@@ -9,14 +9,14 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        var unitList = ["ArchonRevenantInfantry", "ArchonRevenantArcher", "ArchonRevenantCaster", "Wraith", "WraithKing", "ArchonTitan"];
+        var unitList = ["archon_revenant_infantry", "archon_revenant_archer", "archon_revenant_caster", "wraith", "wraith_king", "archon_titan"];
 
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
                 CheckData();
-              
+
             });
 
 
@@ -25,9 +25,11 @@
 
         function HandlePage() {
             BuildRaceDescription("archon");
-            showUnitsFromList(unitList);
+            showUnitsFromListTest(unitList);
+            //showUnitsFromList(unitList);
 
         }
+
     </script>
 
     <title>AOW3 Database - Archon Units</title>
@@ -37,12 +39,14 @@
     <div class="" id="header"></div>
 
     <div id="raceHolder"></div>
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
 
-
-    <div id="UnitHolder"></div>
+    <div id="units"></div>
 
 
 </body>
 <script>
 
-</script></html>
+</script>
+
+</html>

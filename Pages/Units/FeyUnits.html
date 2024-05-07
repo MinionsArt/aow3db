@@ -10,16 +10,19 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitList = ["buttercup_fairy", "toadstool_fairy", "nightshade_fairy", "unicorn", "nymph"];
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                showUnitsFromListTest(unitList);
             });
 
 
+
+
         });
+
     </script>
 
     <title>AOW3 Database - Fey Units</title>
@@ -28,7 +31,7 @@
 <body>
     <div class="" id="header"></div>
 
-    <div class="unit_card">
+    <div class="description_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Sylvan Court(Fey)</p>
         <img class="unit_image" src="/aow3db/Icons/Passives/fey.png" style="position: relative; padding: 4px" width="100">
         <img src="/aow3db/PreviewGifs/StrategicMap/fey.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
@@ -320,19 +323,10 @@
 
     </div>
 
-    <br><br>
-    <div class="units" id="ButtercupFairy"></div>
-    <br><br>
-
-    <div class="units" id="ToadstoolFairy"></div>
-    <br><br>
-    <div class="units" id="NightshadeFairy"></div>
-    <br><br>
-    <div class="units" id="Unicorn"></div>
-    <br><br>
-    <div class="units" id="Nymph"></div>
-    <br><br>
-
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
+    </div>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
@@ -349,5 +343,8 @@
                 }
             });
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

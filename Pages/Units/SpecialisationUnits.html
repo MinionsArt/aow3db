@@ -10,16 +10,41 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitListAir = ["zephyr_bird"];
+        var unitListAir2 = ["air_elemental"];
+        var unitListEarth = ["earth_elemental"];
+        var unitListFire = ["hell_hound"];
+        var unitListFire2 = ["fire_elemental"];
+        var unitListWater = ["baby_kraken"];
+        var unitListWater2 = ["frost_elemental"];
+        var unitListWild = ["lesser_air_elemental", "lesser_blight_elemental", "lesser_earth_elemental", "lesser_fire_elemental", "lesser_frost_elemental", "lesser_spirit_elemental"];
+        var unitListKeeper = ["arch_angel"];
+        var unitListGrey = ["chthonic_guardian"];
+        var unitListShadow = ["fallen_angel"];
+        var unitListSecret = ["dire_penguin", "kobold", "mermaid", "siren", "feathered_serpent", "blight_elemental", "spirit_elemental", "bone_dragon", "obsidian_dragon", "phoenix"];
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                showUnitsFromListTest(unitListAir, "Air Adept", "first");
+                showUnitsFromListTest(unitListAir2, "Air Master", "");
+                showUnitsFromListTest(unitListEarth, "Earth Master", "");
+                showUnitsFromListTest(unitListFire, "Fire Adept", "");
+                showUnitsFromListTest(unitListFire2, "Fire Master", "");
+                showUnitsFromListTest(unitListWater, "Water Adept", "");
+                showUnitsFromListTest(unitListWater2, "Water Master", "");
+                showUnitsFromListTest(unitListWild, "Wild Adept", "");
+                showUnitsFromListTest(unitListKeeper, "Keeper of the Peace Master", "");
+                showUnitsFromListTest(unitListGrey, "Grey Guard Master", "");
+                showUnitsFromListTest(unitListShadow, "Shadowborn Master", "");
+                showUnitsFromListTest(unitListSecret, "Secret Summons", "last");
+
             });
 
 
+
         });
+
     </script>
 
     <title>AOW3 Database - Specialisation Units</title>
@@ -27,153 +52,17 @@
 
 <body>
     <div class="" id="header"></div>
-
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Air</p>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Air Adept - Summon Zephyr Bird</p>
-        <div class="units" id="ZephyrBird"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Air Master - Summon Air Elemental</p>
-        <div class="units" id="AirElemental"></div>
-
-
+    <div style="clear:both"></div>
+    <div class="textblocktitle">
+        <img src="/aow4db/Icons/Abilities/celestial.png" height="40px"> Specialisation Units <img src="/aow4db/Icons/Abilities/celestial.png" height="40px">
     </div>
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Earth</p>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Earth Master - Summon Earth Elemental</p>
-        <div class="units" id="EarthElemental"></div>
-
-
-    </div>
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Fire</p>
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Fire Adept - Summon Hellhound</p>
-        <div class="units" id="Hellhound"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Fire Master - Summon Fire Elemental</p>
-        <div class="units" id="FireElemental"></div>
-
-
-    </div>
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Water</p>
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Water Adept - Summon Baby Kraken</p>
-        <div class="units" id="BabyKraken"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Water Master - Summon Frost Elemental</p>
-        <div class="units" id="FrostElemental"></div>
-
-
-    </div>
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Wild Magic</p>
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Wild Adept - Summon Lesser Elemental</p>
-        <div class="units" id="LesserAirElemental"></div>
-        <br><br>
-        <div class="units" id="LesserBlightElemental"></div>
-        <br><br>
-        <div class="units" id="LesserEarthElemental"></div>
-        <br><br>
-
-        <div class="units" id="LesserFireElemental"></div>
-        <br><br>
-        <div class="units" id="LesserFrostElemental"></div>
-        <br><br>
-        <div class="units" id="LesserSpiritElemental"></div>
-        <br><br>
-
-
-    </div>
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Keeper of the Peace</p>
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Keeper of the Peace Master - Summon Arch Angel</p>
-        <div class="units" id="ArchAngel"></div>
-        <br><br>
-
-
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
     </div>
 
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Grey Guard</p>
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Grey Guard Master - Summon Chthonic Guardian</p>
-        <div class="units" id="ChthonicGuardian"></div>
-        <br><br>
 
 
-    </div>
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Shadowborn</p>
+</body>
 
-        <p style="background-color:black; font-size: 26px" class="unit_name">Shadowborn Master - Summon Fallen Angel</p>
-        <div class="units" id="FallenAngel"></div>
-        <br><br>
-
-
-    </div>
-    <br><br>
-    <div class="unit_card">
-        <p style="background-color:black; font-size: 26px" class="unit_name">Secret Summon Spells</p>
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Dire Penguin</p>
-        <div class="units" id="DirePenguin"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Kobold</p>
-        <div class="units" id="Kobold"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Water Nymph</p>
-        <div class="units" id="Mermaid"></div>
-        <br><br>
-        <div class="units" id="Siren"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Feathered Serpent</p>
-        <div class="units" id="FeatheredSerpent"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Blight Elemental</p>
-        <div class="units" id="BlightElemental"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Spirit Elemental</p>
-        <div class="units" id="SpiritElemental"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Bone Dragon</p>
-        <div class="units" id="BoneDragon"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Obsidian Dragon</p>
-        <div class="units" id="ObsidianDragon"></div>
-        <br><br>
-        <p style="background-color:black; font-size: 26px" class="unit_name">Summon Phoenix</p>
-        <div class="units" id="Phoenix"></div>
-        <br><br>
-
-
-
-    </div>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-</body></html>
+</html>

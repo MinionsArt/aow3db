@@ -50,6 +50,119 @@ a {
     text-decoration: underline;
 }
 
+.textblocktitle {
+    border-width: 5px;
+    border-style: solid;
+    border-image: url(/aow4db/Icons/Interface/panel_name_border.png);
+    border-image-slice: 50 fill;
+    border-image-repeat: stretch;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: beige;
+    overflow: hidden;
+    padding-top: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+
+.w3-container {
+    display: grid;
+}
+
+.w3-containerBlock {
+    display: block;
+}
+
+.w3-bar {
+    max-height: calc(100vh - var(--offset) * 2);
+    margin: 0 0 0 0;
+    overflow-y: auto;
+    width: 240px;
+    max-height: 800px;
+    display: grid;
+    grid-auto-columns: auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.w3-bar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: black;
+}
+
+.w3-bar::-webkit-scrollbar {
+    width: 12px;
+    background-color: black;
+}
+
+.w3-bar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(105, 255, 255, 0.4);
+    ;
+}
+
+.w3-bar .w3-button {
+    white-space: normal;
+}
+
+.w3-bar .w3-bar-item {
+    color: white;
+    margin: 0 0 0 0;
+
+    float: left;
+    position: relative;
+    height: 45px;
+    font-size: 12px;
+    border: none;
+    display: block;
+
+    display: flex;
+    justify-content: space-between;
+    outline: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-image: url(/aow4db/Icons/9slicetooltip.png);
+    border-image-slice: 10 10 10 10;
+    background-color: rgb(0, 0, 0);
+    border-image-repeat: stretch;
+}
+
+
+.w3-red,
+.w3-hover-red:hover {
+    color: #fff !important;
+    background-color: #4b1d63 !important;
+}
+
+.w3-btn,
+.w3-button:hover {
+    background-color: darkslategrey;
+    filter: brightness(150%);
+}
+
+.w3-btn,
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 2px 2px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Regular', sans-serif;
+    color: #deb887;
+
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
 #menu {
 
 
@@ -256,6 +369,45 @@ p {
 
 }
 
+.contentUnits {
+    z-index: 1;
+    grid-auto-columns: auto;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    color: #bbcdf6;
+    text-align: left;
+    border-style: solid;
+    border-image: url(/aow4db/Icons/9slicetooltip.png);
+    border-image-slice: 4 10 4 10 fill;
+    text-shadow: 2px 2px 3px black;
+    z-index: 2;
+}
+
+.collapsibleUnits {
+    color: white;
+    cursor: pointer;
+    padding: 8px 6px;
+    border: none;
+    text-align: left;
+    outline: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-image: url(/aowp/UI/modbackgroundPlain.png);
+    border-image-slice: 10 10 10 10;
+    background-color: black;
+    border-image-repeat: stretch;
+}
+
+.active,
+.collapsibleUnits:hover {
+    background-color: darkslategray;
+}
+
+.collapsibleUnits:after {
+    content: '▼';
+}
+
 .shadow {
     position: absolute;
     width: 100%;
@@ -354,6 +506,24 @@ p {
     border-image-slice: 12 12 12 12 fill;
 */
     margin-bottom: -10px;
+}
+
+.description_card {
+    background-image: url(/aow3db/Interface/outerMiddleCenter.png);
+    background-size: cover;
+    color: white;
+    width: 940px;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 5px;
+    border-style: solid;
+
+    border-image: url(/aow3db/Interface/9slicePanel.png);
+    border-image-slice: 11 21 21 21;
+    display: table;
+
 }
 
 .unit_card {

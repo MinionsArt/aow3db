@@ -10,16 +10,38 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitArray = ["cherub"];
+        var martyrArray = ["draconian_martyr", "dwarf_martyr", "frostling_martyr", "goblin_martyr", "halfling_martyr", "high_elf_martyr", "human_martyr", "orc_martyr", "tigran_martyr"];
+        var crusaderArray = ["draconian_crusader", "dwarf_crusader", "frostling_crusader", "goblin_crusader", "halfling_crusader", "high_elf_crusader", "human_crusader", "orc_crusader", "tigran_crusader"];
+        var evangelistArray = ["draconian_evangelist", "dwarf_evangelist", "frostling_evangelist", "goblin_evangelist", "halfling_evangelist", "high_elf_evangelist", "human_evangelist", "orc_evangelist", "tigran_evangelist"];
+        var exaltedArray = ["draconian_exalted", "dwarf_exalted", "frostling_exalted", "goblin_exalted", "halfling_exalted", "high_elf_exalted", "human_exalted", "orc_exalted", "tigran_exalted"];
+        var unitArray3 = ["lesser_shadow_stalker"];
+
+
+        var unitArray5 = ["shrine_of_smiting"];
+
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                CheckData();
+
             });
 
-
+            //  handleCollapsible();
         });
+
+        function HandlePage() {
+            // BuildRaceDescription("arch_druid");
+            showUnitsFromListTest(unitArray, "Cherub", "first");
+            showUnitsFromListTest(martyrArray, "Martyr", "");
+            showUnitsFromListTest(crusaderArray, "Crusader", "");
+            showUnitsFromListTest(evangelistArray, "Evangelists", " ");
+            showUnitsFromListTest(exaltedArray, "Exalted", " ");
+            showUnitsFromListTest(unitArray5, "Shrine of Smiting", "last");
+
+        }
+
     </script>
 
     <title>AOW3 Database - Theocrat Units</title>
@@ -28,7 +50,7 @@
 <body>
     <div class="" id="header"></div>
 
-    <div class="unit_card">
+    <div class="description_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Theocrat</p>
         <img class="unit_image" src="/aow3db/Icons/Passives/theocrat.png" style="position: relative; padding: 4px" width="100">
         <img src="/aow3db/PreviewGifs/StrategicMap/theocrat.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
@@ -424,287 +446,10 @@
 
     </div>
 
-    <br><br>
-    <div class="units" id="Cherub"></div>
-    <br><br>
-
-    <div class="unit_card">
-
-
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Martyrs</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcMartyr"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Martyr</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranMartyr"></div>
-                </p>
-            </div>
-        </div>
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
     </div>
-    <br><br>
+</body>
 
-
-
-
-
-
-
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Crusaders</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcCrusader"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Crusader</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranCrusader"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <br><br>
-
-    <div class="unit_card">
-
-
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Evangelists</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcEvangelist"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Evangelist</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranEvangelist"></div>
-                </p>
-            </div>
-        </div>
-    </div><br><br>
-
-    <div class="unit_card">
-
-
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Exalted</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcExalted"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Exalted</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranExalted"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <div class="units" id="ShrineOfSmiting"></div>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-</body></html>
+</html>

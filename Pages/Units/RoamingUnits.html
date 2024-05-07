@@ -10,13 +10,15 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitList = ["polar_bear", "felhorse", "goblin_skewer", "vampire_spider_baby", "dread_monkey", "tiger", "bone_wyvern", "carrion_bird", "dire_panther", "mammoth", "nightmare", "dire_bear", "troll", "vampire_spider_queen", "yeti", "kraken"];
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                showUnitsFromListTest(unitList);
             });
+
+
 
 
         });
@@ -28,24 +30,16 @@
 
 <body>
     <div class="" id="header"></div>
-    <div class="units" id="PolarBear"></div>
-    <div class="units" id="Felhorse"></div>
+    <div style="clear:both"></div>
+    <div class="textblocktitle">
+        <img src="/aow4db/Icons/Abilities/celestial.png" height="40px"> Roaming Units <img src="/aow4db/Icons/Abilities/celestial.png" height="40px">
+    </div>
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
+    </div>
 
-    <div class="units" id="GoblinSkewer"></div>
-    <div class="units" id="VampireSpiderBaby"></div>
-    <div class="units" id="DreadMonkey"></div>
-    <div class="units" id="Tiger"></div>
-    <div class="units" id="BoneWyvern"></div>
-    <div class="units" id="CarrionBird"></div>
-    <div class="units" id="DirePanther"></div>
-    <div class="units" id="Mammoth"></div>
 
-    <div class="units" id="Nightmare"></div>
-    <div class="units" id="DireBear"></div>
-    <div class="units" id="Troll"></div>
-    <div class="units" id="VampireSpiderQueen"></div>
-    <div class="units" id="Yeti"></div>
-    <div class="units" id="Kraken"></div>
 
 
 

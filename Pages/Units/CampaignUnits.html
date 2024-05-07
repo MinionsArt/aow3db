@@ -10,16 +10,19 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitList = ["erymanthian_boar", "elder_eldritch", "tame_troll"];
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                showUnitsFromListTest(unitList);
             });
 
 
+
+
         });
+
     </script>
 
     <title>AOW3 Database - Campaign Units</title>
@@ -27,31 +30,14 @@
 
 <body>
     <div class="" id="header"></div>
-    <div class="units" id="ErymanthianBoar"></div>
-    <br><br>
-    <div class="units" id="ElderEldritch"></div>
-    <br><br>
+    <div style="clear:both"></div>
+    <div class="textblocktitle">
+        <img src="/aow4db/Icons/Abilities/celestial.png" height="40px"> Campaign Units <img src="/aow4db/Icons/Abilities/celestial.png" height="40px">
+    </div>
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
+    </div>
+</body>
 
-    <div class="units" id="TameTroll"></div>
-    <br><br>
-
-
-
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-</body></html>
+</html>

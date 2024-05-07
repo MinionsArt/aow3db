@@ -1,15 +1,16 @@
+var searchParams = new URLSearchParams(window.location.search);
 var jsonRaceDescriptions, jsonBuildings;
 
 function fetchJsonFiles(filePaths) {
     return Promise.all(
         filePaths.map(filePath =>
             fetch(filePath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Network response was not ok: ${response.statusText}`);
-                }
-                return response.json();
-            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response was not ok: ${response.statusText}`);
+                    }
+                    return response.json();
+                })
         )
     );
 }
@@ -284,9 +285,413 @@ function addResistanceSlot(a, b, c) {
 
 async function spawnCards(list) {
 
+    var doc = document.getElementById("units");
     for (var i = 0; i < list.length; i++) {
         var iDiv = unit_card_template.content.cloneNode(true);
-        list[i].appendChild(iDiv);
+
+        doc.appendChild(iDiv);
+        document.getElementById("unit_cardID").setAttribute("id", list[i] + "_card");
+    }
+}
+
+function SetButtonsAndDivs(list, parent, cardType, extraCheckForLists) {
+
+    if (parent === undefined) {
+        var buttonHolder = document.getElementById("buttonHolder");
+    } else {
+        var buttonHolder = document.getElementById(parent);
+    }
+    buttonHolder.innerHTML = "";
+    AddListView(list, parent, cardType, extraCheckForLists);
+
+    for (let i = 0; i < list.length; i++) {
+
+
+        var dataHolder = document.getElementById("units");
+        if (dataHolder === null) {
+            dataHolder = document.getElementById("mods");
+        }
+        if (cardType === "searchMod") {
+            dataHolder = document.getElementById("mods");
+        }
+        var div = document.createElement("DIV");
+        div.className = "w3-container w3-border city";
+        div.setAttribute("id", list[i]);
+        dataHolder.appendChild(div);
+
+        var divChild = document.createElement("DIV");
+
+        div.appendChild(divChild);
+        divChild.setAttribute("id", list[i] + "_card");
+        var btn = document.createElement("BUTTON");
+        btn.className = "w3-bar-item w3-button tablink";
+        btn.type = "button";
+        btn.setAttribute("id", list[i] + "-button");
+        switch (cardType) {
+
+
+            case "unit":
+                showUnit(list[i], list[i]);
+                btn.innerHTML = GetUnitTierAndName(list[i]);
+                // btn.innerHTML = list[i];
+                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
+                break;
+            case "mod":
+                showMod(list[i], list[i]);
+                btn.innerHTML = GetModTierAndName(list[i]);
+
+                // btn.innerHTML = list[i];
+                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
+                break;
+            case "searchMod":
+                showMod(list[i], list[i]);
+
+                btn.innerHTML = GetModTierAndName(list[i]);
+                var buttonHolder = document.getElementById("buttonHolder2");
+                // btn.innerHTML = list[i];
+                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
+                break;
+
+        }
+
+        buttonHolder.appendChild(btn);
+
+
+        var holderHeight = buttonHolder.offsetHeight;
+        dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px; margin-left:200px");
+
+    }
+
+}
+
+function AddListView(list, parent, cardType, extraCheckForLists) {
+    // add list view first
+    console.log(parent);
+    if (parent != undefined) { // but only if its a non-tiered one, if tiered only do the first one
+
+        if (extraCheckForLists.indexOf("first") != -1) {
+
+
+        } else {
+            return;
+        }
+
+
+    }
+
+
+
+    var buttonHolder = document.getElementById("buttonHolder");
+
+
+    var btn = document.createElement("BUTTON");
+
+
+    btn.className = "w3-bar-item w3-button tablink";
+    btn.type = "button";
+    btn.innerHTML = "<i class=\"fa fa-solid fa-list\"></i>";
+
+    btn.setAttribute("onclick", 'openDiv(event, "' + list + '")');
+
+
+
+    var firstChild = buttonHolder.firstChild;
+    buttonHolder.insertBefore(btn, firstChild);
+}
+
+
+
+function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
+    var modName, description, cost, type, tier, i, nameString = "";
+    if (cardType === "searchMod") {
+        var buttonHolder = document.getElementById("buttonHolder2");
+    } else {
+        var buttonHolder = document.getElementById("buttonHolder");
+    }
+
+    var btn = document.createElement("BUTTON");
+    btn.type = "button";
+
+    btn.innerHTML = overwrite + " (" + list.length + ")";
+    if (cardType != "mod" && cardType.indexOf("search") === -1) {
+        // btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\')');
+        // btn.setAttribute("id", overwrite + "-");
+    } else if (cardType.indexOf("search") != -1) {
+        console.log("search");
+        btn.setAttribute("onclick", 'openDiv(event,\'' + overwrite + '\',true)');
+        btn.setAttribute("id", overwrite + "-");
+    }
+
+    buttonHolder.appendChild(btn);
+
+
+    btn.className = "w3-bar-item w3-button tablink";
+    var dataHolder = document.getElementById("units");
+
+    if (dataHolder === null) {
+        dataHolder = document.getElementById("mods");
+    }
+    if (cardType === "searchMod") {
+        parentDiv = document.getElementById("mods");
+    }
+    var holderHeight = buttonHolder.offsetHeight + 50;
+    dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
+    var div = document.createElement("DIV");
+
+    div.className = "w3-container w3-border city";
+    div.setAttribute("id", overwrite);
+
+
+    dataHolder.appendChild(div);
+
+
+
+    switch (cardType) {
+
+        case "unit":
+            var holderHeight = buttonHolder.offsetHeight;
+            dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
+            btn.className = "collapsibleUnits";
+            var content = document.createElement("DIV");
+            content.setAttribute("id", overwrite + "-button");
+            content.className = "contentUnits";
+            buttonHolder.append(content);
+            // showModsFromList(list, overwrite);
+            break;
+        case "searchMod":
+            var holderHeight = buttonHolder.offsetHeight;
+            dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
+            btn.className = "collapsibleUnits";
+            var content = document.createElement("DIV");
+            content.setAttribute("id", overwrite + "-button");
+            content.className = "contentUnits";
+            buttonHolder.append(content);
+            // showModsFromList(list, overwrite);
+            break;
+
+        // case "unit":
+        //     btn.className = "collapsibleUnits";
+        //     var content = document.createElement("DIV");
+        //     content.setAttribute("id", overwrite + "-button");
+        //     content.className = "contentUnits";
+        //     buttonHolder.append(content);
+        //     break;
+    }
+
+
+}
+
+async function SetCollapsibleStuff() {
+    var coll = document.getElementsByClassName("collapsibleUnits");
+
+
+    for (i = 0; i < coll.length; i++) {
+
+        coll[i].addEventListener("click", function () {
+            var contents = document.getElementsByClassName("contentUnits");
+            var content = this.nextElementSibling;
+
+            for (j = 0; j < contents.length; j++) {
+
+
+                if (contents[j].style != null) {
+                    if (contents[j].style.display === "grid") {
+                        if (contents[j].id === content.id) {
+
+                        } else {
+
+                            coll[j].classList.toggle("active");
+                            contents[j].style.display = "none";
+                        }
+
+                    }
+                }
+
+            }
+            this.classList.toggle("active");
+
+            if (content.style.display === "grid") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "grid";
+            }
+
+
+
+
+            var buttonHolder = document.getElementById("buttonHolder");
+            var holderHeight = buttonHolder.offsetHeight;
+            var dataHolder = document.getElementById("units");
+
+
+            if (dataHolder === null) {
+                dataHolder = document.getElementById("mods");
+            }
+            dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px; margin-left:200px");
+        });
+
+
+    }
+
+    var buttonHolder = document.getElementById("buttonHolder");
+    var holderHeight = buttonHolder.offsetHeight;
+    var dataHolder = document.getElementById("units");
+    if (dataHolder === null) {
+        dataHolder = document.getElementById("mods");
+    }
+    dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;; margin-left:200px");
+}
+
+function romanize(num) {
+    if (isNaN(num))
+        return NaN;
+    var digits = String(+num).split(""),
+        key = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
+            "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
+            "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"
+        ],
+        roman = "",
+        i = 3;
+    while (i--)
+        roman = (key[+digits.pop() + (i * 10)] || "") + roman;
+    return Array(+digits.join("") + 1).join("M") + roman;
+}
+function GetUnitTierAndName(id) {
+
+
+    for (i in jsonUnits.units) {
+        if (id === jsonUnits.units[i].name) {
+
+
+
+            var name = jsonUnits.units[i].string;
+
+            var tier = jsonUnits.units[i].tier.split("-")[0];
+
+
+            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" +/* getUnitTypeTag(jsonUnits.units[i].unit_types) +*/ " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (tier) + "</p>";
+
+
+
+
+        }
+    }
+}
+
+
+async function showUnitsFromListTest(list, overwritetext, extraCheckForLists) {
+
+    await spawnCards(list);
+    for (var i = 0; i < list.length; i++) {
+
+        setUnitIds(list[i]);
+    }
+
+    var typeMod = "unit";
+    if (overwritetext != undefined) {
+        SetCollapsibleButtonsAndDivs(overwritetext, list, typeMod);
+        SetButtonsAndDivs(list, overwritetext + "-button", typeMod, extraCheckForLists);
+    } else {
+
+        SetButtonsAndDivs(list, undefined, typeMod);
+    }
+
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = searchParams.get('type');
+
+
+    if (product != undefined) {
+        var splits = product.split("&");
+        closeTabLinks(product);
+
+        document.getElementById(splits[0] + "-button").className += " w3-red";
+
+
+        await openDiv(event, splits[0]);
+
+
+    }
+    if (extraCheckForLists === "last") {
+        await SetCollapsibleStuff();
+    }
+    //  await SetCollapsibleStuff();
+}
+
+
+async function openDiv(evt, cityName, search) {
+
+
+    if (cityName != undefined) {
+        currentView = cityName;
+    }
+
+    var i, x, tablinks;
+    x = document.getElementsByClassName("unit_card");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+
+    closeTabLinks(cityName);
+
+    if (evt != null) {
+        evt.currentTarget.className += " w3-red";
+    }
+    if (cityName.indexOf(",") != -1 || cityName.indexOf("zephyr_bird") != -1 || cityName.indexOf("spy_drone") != -1 || cityName.indexOf("cherub") != -1 || cityName.indexOf("wisp") != -1 || cityName.indexOf("grimbeak_crows") != -1 || cityName.indexOf("cadaver") != -1) {
+        console.log("is array");
+        var parentDiv = document.getElementById("units");
+        if (parentDiv === null) {
+            parentDiv = document.getElementById("mods");
+        }
+
+        if (search === true) {
+            parentDiv = document.getElementById("units");
+        }
+
+        // Get all direct children of the parent div
+        var children = parentDiv.children;
+
+        // Loop through each child and set its display to "block"
+        for (var i = 0; i < children.length; i++) {
+            children[i].style.display = "table";
+        }
+
+    } else {
+
+        var currentEl = document.getElementById(cityName + "_card");
+        if (currentEl != null) {
+            currentEl.style.display = "table";
+        }
+
+        var currenturl = window.location.href.split('?')[0];
+        var currentadditive = currenturl.split('&')[1];
+        if (currentadditive === undefined) {
+            currentadditive = "";
+        }
+        console.log(currenturl + search);
+        if (search === undefined) {
+            window.history.replaceState({}, 'foo', currenturl + "?type=" + cityName + "&" + currentadditive);
+        }
+
+
+        // if (sorting != undefined) {
+        //     var splits = sorting.split(":");
+        //     setTimeout(function () {
+        //         sortDivs(splits[0], splits[1]);
+        //     }, 50);
+        //     // console.log(cityName);
+        // }
+    }
+}
+
+
+function closeTabLinks(cityName) {
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].id != cityName + "-button") {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+
     }
 }
 
@@ -316,20 +721,6 @@ async function spawnCardsNew(list, holder, multiple) {
 
 }
 
-async function showUnitsFromClassList(list) {
-
-    await spawnCards(list);
-
-    for (var i = 0; i < list.length; i++) {
-        var id = list[i].id;
-
-        var stringarray = id.match(/[A-Z][a-z]+/g);
-        id = stringarray.join('_').toLowerCase();
-        setUnitIds(id);
-        showUnit(id);
-    };
-
-}
 
 async function showUnitsFromList(list) {
 
@@ -618,8 +1009,8 @@ function updateHoverDivPosition(event) {
     var offset = 10;
     /* if (settings.tooltipselectable) {
         hoverDiv.setAttribute("Style", "pointer-events: all;");
-
-
+ 
+ 
     } else {
         hoverDiv.setAttribute("Style", "pointer-events: none;");
         offset = 10;

@@ -10,16 +10,38 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitArray = ["cadaver"];
+        var reanimatorArray = ["draconian_reanimator", "dwarf_reanimator", "frostling_reanimator", "goblin_reanimator", "halfling_reanimator", "high_elf_reanimator", "human_reanimator", "orc_reanimator", "tigran_reanimator"];
+        var deathBringerArray = ["draconian_death_bringer", "dwarf_death_bringer", "frostling_death_bringer", "goblin_death_bringer", "halfling_death_bringer", "high_elf_death_bringer", "human_death_bringer", "orc_death_bringer", "tigran_death_bringer"];
+        var unitArray2 = ["lost_soul"];
+        var unitArray3 = ["banshee"];
+
+        var unitArray4 = ["bone_collector"];
+        var unitArray5 = ["dread_reaper"];
+
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+                CheckData();
+
             });
 
-
+            //  handleCollapsible();
         });
+
+        function HandlePage() {
+            // BuildRaceDescription("arch_druid");
+            showUnitsFromListTest(unitArray, "Cadaver", "first");
+            showUnitsFromListTest(unitArray2, "Lost Soul", "");
+            showUnitsFromListTest(reanimatorArray, "Reanimators", "");
+            showUnitsFromListTest(unitArray3, "Banshee", "");
+            showUnitsFromListTest(unitArray4, "Bone Collector", " ");
+            showUnitsFromListTest(deathBringerArray, "Death Bringer", " ");
+            showUnitsFromListTest(unitArray5, "Dread Reaper", "last");
+
+        }
+
     </script>
 
     <title>AOW3 Database - Necromancer Units</title>
@@ -28,7 +50,7 @@
 <body>
     <div class="" id="header"></div>
 
-    <div class="unit_card">
+    <div class="description_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Necromancer</p>
         <img class="unit_image" src="/aow3db/Icons/Passives/necromancer.png" style="position: relative; padding: 4px" width="100">
         <img src="/aow3db/PreviewGifs/StrategicMap/necromancer.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
@@ -579,169 +601,11 @@
 
     </div>
 
-    <br><br>
-    <div class="units" id="Cadaver"></div>
-    <br><br>
-    <div class="units" id="LostSoul"></div>
-    <br><br>
 
-    <div class="unit_card">
-
-
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Reanimators</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcReanimator"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Reanimator</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranReanimator"></div>
-                </p>
-            </div>
-        </div>
+    <div class="w3-containerBlock">
+        <div id="buttonHolder" class="w3-bar w3-black"></div>
+        <div id="units"></div>
     </div>
-    <br><br>
+</body>
 
-
-    <div class="units" id="Banshee"></div>
-    <br><br>
-
-
-    <div class="units" id="BoneCollector"></div>
-    <br><br>
-
-
-
-    <br><br>
-    <div class="unit_card">
-
-        <p style="background-color:black; font-size: 26px" class="unit_name">Death Bringers</p>
-        <div style="margin-left: -15px">
-            <button class="collapsible">Draconian Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DraconianDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Dwarf Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="DwarfDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Frostling Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="FrostlingDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Goblin Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="GoblinDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Halfling Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HalflingDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">High Elf Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HighElfDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Human Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="HumanDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Orc Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="OrcDeathBringer"></div>
-                </p>
-            </div>
-            <button class="collapsible">Tigran Death Bringer</button>
-            <div class="content">
-                <p>
-                <div class="units" id="TigranDeathBringer"></div>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="units" id="DreadReaper"></div>
-    <br><br>
-
-
-
-
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-</body></html>
+</html>

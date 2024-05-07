@@ -10,16 +10,18 @@
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+        var unitList = ["draconian_hatchling", "draconian_crusher", "draconian_flamer", "draconian_charger", "draconian_elder", "draconian_raptor", "draconian_flyer"];
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                var classList = document.getElementsByClassName('units');
-                showUnitsFromClassList(classList);
+
+                showUnitsFromListTest(unitList);
             });
 
 
         });
+
     </script>
 
     <title>AOW3 Database - Draconian Units</title>
@@ -28,7 +30,7 @@
 <body>
     <div class="" id="header"></div>
 
-    <div class="unit_card">
+    <div class="description_card">
         <p style="background-color:black; font-size: 26px" class="unit_name">Draconians</p>
         <img class="unit_image" src="/aow3db/Icons/Passives/draconian.png" style="position: relative; padding: 4px" width="100">
         <img src="/aow3db/PreviewGifs/StrategicMap/draconian.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
@@ -905,24 +907,14 @@
 
             </div>
             <div style="clear: both"></div>
-            </p>
+
+
         </div>
     </div>
 
-    <br><br>
-    <div class="units" id="DraconianHatchling"></div>
-    <br><br>
-    <div class="units" id="DraconianCrusher"></div>
-    <br><br>
-    <div class="units" id="DraconianFlamer"></div>
-    <br><br>
-    <div class="units" id="DraconianCharger"></div>
-    <br><br>
-    <div class="units" id="DraconianElder"></div>
-    <br><br>
-    <div class="units" id="DraconianRaptor"></div>
-    <br><br>
-    <div class="units" id="DraconianFlyer"></div>
+    <div id="buttonHolder" class="w3-bar w3-black"></div>
+    <div id="units"></div>
+
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
@@ -938,5 +930,8 @@
                 }
             });
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

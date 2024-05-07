@@ -28,7 +28,6 @@ var jsonUnits = {
             "level_elite": "<bullet>+1 <x-fire> </x-fire> Ranged</bullet>\
  <bullet>+4 <x-hp> </x-hp> Hit Points</bullet>\
 <bullet>+1 <x-defense> </x-defense> Defense</bullet>",
-
             "abilities": [
                 {
                     "slug": "melee_strike",
