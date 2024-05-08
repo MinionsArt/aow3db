@@ -203,15 +203,349 @@
  }, {
          "id": "draconian",
          "name": "Draconian",
-         "description": "When the Human race rose to power, the race of dragons, especially the young dragons, suffered a terrible price. Among the Humans, dragons were more valuable dead than alive, hunted for glory, sport, money, and to mix in their foul-smelling potions. With no regard to the intelligent creatures that dragons might become in time, the humans devastated the dragon kin. The Dragons turned to the Wizards of Evermore, using powerful magic to create a new breed of followers. They sacrificed their remaining young for the power to keep the humans at bay. The dragons unleashed the power in their eggs, vowing that once they achieved supremacy they would reform themselves into ancient dragonkind again. Draconians recover from their wounds more quickly than other races, and are resistant to fire while being more vulnerable to the cold. Most Draconian spell casters have the ability to hurl fire at their enemies.",
+         "description": "When the Human race rose to power, the race of dragons, especially the young dragons, suffered a terrible price. Among the Humans, dragons were more valuable dead than alive, hunted for glory, sport, money, and to mix in their foul-smelling potions. With no regard to the intelligent creatures that dragons might become in time, the humans devastated the dragon kin. The Dragons turned to the Wizards of Evermore, using powerful magic to create a new breed of followers. They sacrificed their remaining young for the power to keep the humans at bay. The dragons unleashed the power in their eggs, vowing that once they achieved supremacy they would reform themselves into ancient dragonkind again. <br>Draconians recover from their wounds more quickly than other races, and are resistant to fire while being more vulnerable to the cold. Most Draconian spell casters have the ability to hurl fire at their enemies.",
 
-         "hero_traits": [
+         "terrain_prefs": [
              {
-                 "slug": "+5 <hp></hp> Hit Points",
-                 "slug": "+1 <reistance></resistance> Resistance",
-                 "slug": "vision_range_upgrade"
-         }
-     ],
+                 "entry": "Likes: Barrens, Lava"
+
+        }, {
+                 "entry": "Dislikes: Arctic"
+
+        }, {
+                 "entry": "Hates: Blighted"
+
+        }],
+         "traits": [
+             {
+                 "slug": "fast_healing"
+        },
+             {
+                 "name": "Cities generate +3 <mana></mana> Mana"
+        },
+
+             {
+
+                 "name": "20% <x-fire></x-fire> Protection"
+        },
+             {
+
+                 "name": "20% <x-frost></x-frost> Weakness"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "dwarf",
+         "name": "Dwarf",
+         "description": "Dwarves are hardy mountain kin which live in the earth and rugged placed of the land. They value strength and hard work. Their minds are slow to the subtle ways of diplomacy, preferring to strike the enemy with the force of their blows over spending inordinate amounts of energy in lengthy, sleep-inducing talk. They love to create things, and find great satisfaction in creating vast structures adorned with the treasures discovered deep within the earth.<br>Dwarves are strong fighters, some preferring to forego armor and shield to wield two axes and pure rage. Their surefooted strides carry them over the high slopes they revere.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: (Coastal) Mountains"
+
+        }, {
+                 "entry": "Dislikes: Tropical"
+
+        }, {
+                 "entry": "Hates: Blighted"
+
+        }],
+         "traits": [
+             {
+                 "slug": "mountaineering"
+        }, {
+                 "slug": "cave_crawling"
+        }, {
+                 "slug": "night_vision"
+        },
+             {
+                 "name": "+1 <defense></defense> Defense"
+        },
+
+             {
+
+                 "name": "+1 <resistance></resistance> Resistance"
+        },
+             {
+
+                 "name": "20% <x-blight></x-blight> Protection"
+        }, {
+
+                 "name": "Unit cost increased by 10%"
+        }, {
+
+                 "name": "Siege Workshop is 50<gold></gold> Gold cheaper"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "frostling",
+         "name": "Frostling",
+         "description": "Frostlings are a race of frigid humanoids that emerged from the frozen north in an age before recorded history. Pale and flue, like the ice they shape into dwellings, they can weather the most extreme cold. When the Commonwealth came to power, the Frostlings had to retreat deep into the frozen north. They blamed the Elves for the loss of their goddess, Artica, and devoted themselves to the preservation of powerful female beings that could trap the power of ice and snow. Their Ice Queens and White Witches chose the heartiest Frostlings to be their mates, and a new matriarchal society was forged.<br>Now, Frostlings are bold and barbaric, directed by their cold hearts. They embark on frequent raids to the warmer lands. Their seafaring skills, offensive fighting style and frost magic spread fear among the coastline villages they pillage.But Frostlings are even more deadly in their home arctic clime, where they build big cities carved into the very glaciers they hope will someday grow to cover the earth.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Fertile Plains"
+
+        }, {
+                 "entry": "Dislikes: Blighted, Subterrainean, and Tropical"
+
+        }, {
+                 "entry": "Hates: Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "arctic_walk"
+        }, {
+                 "slug": "fast_embark"
+        },
+             {
+
+                 "name": "60% <x-frost></x-frost> Protection"
+        },
+             {
+
+                 "name": "40% <x-fire></x-fire> Weakness"
+        }, {
+
+                 "name": "War Hall cost reduced by 50<gold></gold> Gold"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "goblin",
+         "name": "Goblin",
+         "description": "Goblins squirmed forth from the bowels of the earth, far before they were supposed to, so says a myth. Goblins are filthy sadistic creatures, which delights in destruction and chaos. They bubble from the earth as a filthy mass. They desire to reclaim all dark caves from any other living thing.<br>Goblins are short and skinny, hunched over with lengthy arms that dangle near to the ground. Their skins are typically faded orange and brown, matching the earth. They have considerable eyesight underground, and are seldom taken by suprise.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Wetlands"
+
+        }, {
+                 "entry": "Dislikes: Arctic and Tropical"
+
+        }, {
+                 "entry": "Hates: Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "night_vision"
+        }, {
+                 "slug": "cave_crawling"
+        }, {
+                 "slug": "wetland_walking"
+        }, {
+                 "slug": "wetland_foraging"
+        },
+             {
+
+                 "name": "40% <x-blight></x-blight> Protection"
+        },
+             {
+
+                 "name": "-5 <hp></hp> Hit Points"
+        }, {
+
+                 "name": "Unit cost reduced by 10%"
+        }, {
+                 "name": "Cities generate +20% <population></population> Population Growth"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "halfling",
+         "name": "Halfling",
+         "description": "To Halflings every day is an idyllic dream, filled with the possibility of simple pleasures and prosperity. Halflings are masters of happiness. They seek the path to everlasting joy. As a result, there are many factions among the small folk, from the pious priests who seek joy in service and doing good to others, to the eccentric pranksters, and celebrant revelers filled with any brew that might bring them closer to a stupor of laughter and song.<br>Halflings are extraordinary cooks, and eat well. They enjoy music, and telling stories. Adept at trade, they spend their wealth as quickly as they earn it. They are content to work the land and harvest its bounty, but at times they are carried away to waste and silliness that separates them from the more proud faerie folk and Elven kin.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Fertile Plains and Dense Vegetation"
+
+        }, {
+                 "entry": "Dislikes: Subterranean"
+
+        }, {
+                 "entry": "Hates: Arctic, Blighted, and Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "forestry"
+        }, {
+                 "slug": "lucky"
+        }, {
+                 "name": "-1 <physical></physical> Melee Strength"
+        }, {
+                 "name": "+1 <physical></physical> Ranged Strength"
+        }, {
+                 "name": "20% <physical></physical> Physical Weakness"
+        }, {
+                 "name": "Cities have +50 <happiness></happiness> Happiness"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "high_elf",
+         "name": "High Elf",
+         "description": "Elves are immortal, living a life without an end. These delicate and gracefull being are the elders of this world. Elves have close ties to nature and life. They love music, lore and dance, but are solitary beings, preferring to seek their pleasures far from the prying eyes of the world. When intruders come to their forests they seldom escape, and those who are taked from an Elven forest, after having dwelt among elves, often die of broken hearts and remorse.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Dense Vegetation"
+
+        }, {
+                 "entry": "Dislikes: Tropical, Subterranean"
+
+        }, {
+                 "entry": "Hates:  Blighted, and Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "forestry"
+        }, {
+                 "name": "+1 <x-resistance></x-resistance> Resistance"
+        }, {
+                 "name": "+1 <x-shock></x-shock> Ranged Strength"
+        }, {
+                 "name": "+1 <physical></physical> Ranged Strength"
+        }, {
+                 "name": "Cities generate -10% <population></population> Population"
+        }, {
+                 "name": "Cities generate an additional +3 <knowledge></knowledge> Knowledge"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "human",
+         "name": "Human",
+         "description": "Humans are a strange mix of all races. Some desire to invent and build things. Others desire to rule and wield power, while others are content to sit in the shade of the trees and tell stories to children. Some humans are deeply spiritual, while others show a knack for learning powers that were thought forgotten. Their Governments are in a state of constant evolution, while every induvidual is of their own mind. Every man walks after their own pursuit with brazen disregard for the laws of nature or the order of life.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Fertile Plains"
+
+        }, {
+                 "entry": "Dislikes:  Subterranean"
+
+        }, {
+                 "entry": "Hates:  Blighted, and Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "mariner"
+        }, {
+                 "name": "Cities generate +10 <production></production> Production"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "orc",
+         "name": "Orc",
+         "description": "Orcs are creatures of destruction. They live to break things down, and so it is with great difficulty that a master of Orcs must gather the tribes together and form a city. They care little for magic, but prefer to trust in the power of cruelty and strength.<br>Orcs hate things of beauty, unless that thing is cruel. When bored, they will just as readily destroy themselves as any particular race, but as a result, they are efficient workers when organized by powerful leaders, and they are accustomed to working under duress of harsh taskmasters.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Barrens"
+
+        }, {
+                 "entry": "Dislikes: Arctic and Blighted"
+        }, {
+                 "entry": "Hates:  Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "night_vision"
+        }, {
+                 "slug": "victory_rush"
+        }, {
+                 "name": "+5 <hp></hp> Hit Points"
+        }, {
+                 "name": "-1 <x-resistance></x-resistance> Resistance"
+        }, {
+                 "name": "+1 <physical></physical> Melee Strength"
+        }, {
+                 "name": "-1 <physical></physical> Ranged Strength"
+        }, {
+                 "name": "Barracks are 50 <gold></gold> Gold Cheaper"
+        }
+         ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
+ }, {
+         "id": "tigran",
+         "name": "Tigran",
+         "description": "Tigrans are a race of feline humanoids, hailing from remote desert lands. Reclusive and mystical, they tend not to get involved in the conflicts of the pupulous northern lands. But when opportunity favors them, they pounce and kill without mercy.<br>Their reclusiveness has given rise to some rather extreme religious sects. A large proportion of Tigrans worship a new incarnation of the ancient Fire Wizard-god Yaka as the Sun God. Tigran ferocity is legendary. The most devout strive to unleash their inner predator, seeing mercy as weakness. They worship the sun and track the cycle of day and night; life and death. Their natural curiosity about necromancy and the passing of regal souls into kingdoms of glory in the afterlife inspires them to construct massive tombs.<br>Tigrans are lean, muscular and agile. They are clever with magic and move quickly across the battlefield, able to avoid many obstacles in combat. Many are masters of the flame, which they believe pleases their god.",
+
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Barrens"
+
+        }, {
+                 "entry": "Hates: Arctic and Blighted"
+        }],
+         "traits": [
+             {
+                 "slug": "night_vision"
+        }, {
+                 "slug": "barrens_running"
+        }, {
+                 "slug": "athletics"
+        }, {
+                 "slug": "predator"
+        }, {
+                 "name": "40% <x-spirit></x-spirit> Protection"
+        }, {
+                 "name": "-1 <x-resistance></x-resistance> Resistance"
+        }, {
+                 "name": "20% <x-frost></x-frost> Weakness"
+        }, {
+                 "name": "Cities generate +5 <gold></gold> Gold"
+        }
+         ],
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
@@ -219,5 +553,3 @@
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
  }]
-
- ]
