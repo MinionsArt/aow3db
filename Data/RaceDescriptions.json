@@ -200,4 +200,24 @@
          "buildings_class": "arch_druids_dolmen,henge,megalith",
          "hero_levels": ""
 
+ }, {
+         "id": "draconian",
+         "name": "Draconian",
+         "description": "When the Human race rose to power, the race of dragons, especially the young dragons, suffered a terrible price. Among the Humans, dragons were more valuable dead than alive, hunted for glory, sport, money, and to mix in their foul-smelling potions. With no regard to the intelligent creatures that dragons might become in time, the humans devastated the dragon kin. The Dragons turned to the Wizards of Evermore, using powerful magic to create a new breed of followers. They sacrificed their remaining young for the power to keep the humans at bay. The dragons unleashed the power in their eggs, vowing that once they achieved supremacy they would reform themselves into ancient dragonkind again. Draconians recover from their wounds more quickly than other races, and are resistant to fire while being more vulnerable to the cold. Most Draconian spell casters have the ability to hurl fire at their enemies.",
+
+         "hero_traits": [
+             {
+                 "slug": "+5 <hp></hp> Hit Points",
+                 "slug": "+1 <reistance></resistance> Resistance",
+                 "slug": "vision_range_upgrade"
+         }
+     ],
+
+         "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
+         "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
+
  }]
+
+ ]
