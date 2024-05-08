@@ -23,13 +23,12 @@
         });
 
 
-        function HandlePage() {
-            BuildRaceDescription("dragon");
+        async function HandlePage() {
+            await BuildRaceDescription("dragon");
             showUnitsFromListTest(unitList);
-
+            handleCollapsible();
 
         }
-
     </script>
 
     <title>AOW3 Database - Dragon Units</title>
@@ -46,6 +45,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>

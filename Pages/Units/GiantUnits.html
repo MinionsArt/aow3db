@@ -23,13 +23,12 @@
         });
 
 
-        function HandlePage() {
-            BuildRaceDescription("giant");
+        async function HandlePage() {
+            await BuildRaceDescription("giant");
             showUnitsFromListTest(unitList);
-
+            handleCollapsible();
 
         }
-
     </script>
 
     <title>AOW3 Database - Giant Units</title>
@@ -45,6 +44,4 @@
         <div id="units"></div>
     </div>
 
-</body>
-
-</html>
+</body></html>

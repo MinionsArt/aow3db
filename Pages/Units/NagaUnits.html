@@ -23,13 +23,12 @@
         });
 
 
-        function HandlePage() {
-            BuildRaceDescription("naga");
+        async function HandlePage() {
+            await BuildRaceDescription("naga");
             showUnitsFromListTest(unitList);
 
-
+            handleCollapsible();
         }
-
     </script>
 
     <title>AOW3 Database - Naga Units</title>
@@ -46,6 +45,4 @@
     </div>
 
 
-</body>
-
-</html>
+</body></html>

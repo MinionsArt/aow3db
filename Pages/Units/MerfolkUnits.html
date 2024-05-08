@@ -23,13 +23,12 @@
         });
 
 
-        function HandlePage() {
-            BuildRaceDescription("merfolk");
+        async function HandlePage() {
+            await BuildRaceDescription("merfolk");
             showUnitsFromListTest(unitList);
-
+            handleCollapsible();
 
         }
-
     </script>
 
     <title>AOW3 Database - Merfolk Units</title>
@@ -45,6 +44,4 @@
         <div id="units"></div>
     </div>
 
-</body>
-
-</html>
+</body></html>

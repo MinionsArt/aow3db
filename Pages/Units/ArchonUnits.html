@@ -23,13 +23,13 @@
         });
 
 
-        function HandlePage() {
-            BuildRaceDescription("archon");
+        async function HandlePage() {
+            await BuildRaceDescription("archon");
             showUnitsFromListTest(unitList);
+            handleCollapsible();
 
 
         }
-
     </script>
 
     <title>AOW3 Database - Archon Units</title>
@@ -47,6 +47,4 @@
 </body>
 <script>
 
-</script>
-
-</html>
+</script></html>

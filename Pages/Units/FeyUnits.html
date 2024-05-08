@@ -23,13 +23,12 @@
         });
 
 
-        function HandlePage() {
-            BuildRaceDescription("fey");
+        async function HandlePage() {
+            await BuildRaceDescription("fey");
             showUnitsFromListTest(unitList);
-
+            handleCollapsible();
 
         }
-
     </script>
 
     <title>AOW3 Database - Fey Units</title>
@@ -45,6 +44,4 @@
     </div>
 
 
-</body>
-
-</html>
+</body></html>
