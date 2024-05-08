@@ -1,5 +1,6 @@
  [{
          "id": "draconian",
+         "name": "Draconian",
          "military_1": "Draconian Flamers gain +1 <x-defense></x-defense> and +5 <x-hp></x-hp> Hit Points",
          "military_2": "Draconian Crushers and Chargers gain the </p><div class=\"tooltip\" style=\"color:aqua\">Regrowth<span class=\"tooltiptext2\" id=\"regrowth\"></span></div><p style=\"font-size: 18px\">ability",
          "military_3": "All your Draconian Support units are 20% cheaper",
@@ -13,6 +14,7 @@
          },
      {
          "id": "dwarf",
+         "name": "Dwarf",
          "military_1": "Dwarf Crossbowmen deal an additional +2 <x-physical></x-physical> ranged damage",
          "military_2": "Dwarf Axeman and Deepguard deal an additional +2 <x-physical></x-physical> melee strength",
          "military_3": "All Dwarf Firstborn units get the Ancient Ancestor ability, giving all adjecent units +300 <x-morale></x-morale> Morale and deal an additional +3 <x-fire></x-fire> damage",
@@ -26,6 +28,7 @@
      },
      {
          "id": "frostling",
+         "name": "Frostling",
          "military_1": "Frostling Harpoon Throwers get +10 <x-hp></x-hp> Hit Points",
          "military_2": " Frostling Royal Guards have +1 <x-defense></x-defense> Defense and the </p><div class=\"tooltip\" style=\"color:aqua\">Life Steal<span class=\"tooltiptext2\" id=\"life_steal\"></span></div><p style=\"font-size: 18px\">ability",
          "military_3": "All Frostling Mammoth Riders are 15 % cheaper to produce and deal an additonal +2 <x-physical></x-physical> Melee damage",
@@ -39,6 +42,7 @@
              },
      {
          "id": "goblin",
+         "name": "Goblin",
          "military_1": "All Goblin Untouchables gain </p><div class=\"tooltip\" style=\"color:aqua\">Projectile Resistance<span class=\"tooltiptext2\" id=\"projectile_resistance\"></span></div> and<div class=\"tooltip\" style=\"color:aqua\">Sprint<span class=\"tooltiptext2\" id=\"sprint\"></span></div>",
          "military_2": " Goblin Swarm Darters get +10 <x-hp></x-hp> Hitpoints and Goblin Irregulars get +5<x-hp></x-hp> Hitpoints",
          "military_3": "Goblin Big Beetles get<div class=\"tooltip\" style=\"color:aqua\">Disgusting Stench<span class=\"tooltiptext2\" id=\"disgusting_stench\"></span></div> and +5 <x-hp></x-hp>",
@@ -52,6 +56,7 @@
              },
      {
          "id": "halfling",
+         "name": "Halfling",
          "military_1": "All Halfling Nightwatch gets +1 <x-defense></x-defense> Defense and +2 <x-physical></x-physical> Physical melee damage",
          "military_2": " Halfling Adventurer, Martyr, Scoundrel and Bard gain +1 <x-physical></x-physical> Physical ranged damage.",
          "military_3": "Halfling Eagle Riders are Very Lucky",
@@ -65,6 +70,7 @@
              },
      {
          "id": "high_elf",
+         "name": "High Elf",
          "military_1": "Shooting Grounds give High Elf Longbowmen and High Elf Hunters +1 <x-physical></x-physical> ranged damage.",
          "military_2": "High Elf Unicorn Rider now has a 1 turn cooldown on Phase",
          "military_3": "All High Elf Storm Sisters get +1 <x-shock></x-shock> ranged damage and ignore range penalties with their attacks",
@@ -78,6 +84,7 @@
              },
      {
          "id": "human",
+         "name": "Human",
          "military_1": "Human Civic Guards gain the<div class=\"tooltip\" style=\"color:aqua\">Throw Net<span class=\"tooltiptext2\" id=\"throw_net\"></span></div> ability",
          "military_2": "Human Cavalry earns +50% XP",
          "military_3": "All Human Cavalry units deal an additional +2 <x-physical></x-physical> Melee damage",
@@ -92,6 +99,7 @@
 
      {
          "id": "orc",
+         "name": "Orc",
          "military_1": "Orc Greatsword and Impaler units deal an additional +1 <x-physical></x-physical> Melee damage",
          "military_2": "Orc Razorbows gain +5 <x-hp></x-hp> Hitpoints and deal an additional +3 <x-physical></x-physical> Melee damage",
          "military_3": "Orc Black Knights gain +1 image Melee damage and <div class=\"tooltip\" style=\"color:aqua\">Guard Breaker<span class=\"tooltiptext2\" id=\"guard_breaker\"></span></div>",
@@ -106,6 +114,7 @@
 
      {
          "id": "tigran",
+         "name": "Tigran",
          "military_1": "Tigran Sun Guards and Tigran Sabretooth Chariots gain +7 <x-hp></x-hp> Hit Points",
          "military_2": "Tigran Prowlers gain the </p><div class=\"tooltip\" style=\"color:aqua\">Hurl Net<span class=\"tooltiptext2\" id=\"hurl_net\"></span></div><p style=\"font-size: 18px\">ability",
          "military_3": "Tigran Sphinx has +1 Vision Range and deals an additional +2 Ranged <x-fire></x-fire> damage and +2 <x-physical></x-physical> Melee damage",

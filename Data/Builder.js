@@ -1,5 +1,5 @@
 var searchParams = new URLSearchParams(window.location.search);
-var jsonRaceDescriptions, jsonBuildings;
+var jsonRaceDescriptions, jsonBuildings, jsonRaceGovernance;
 
 function fetchJsonFiles(filePaths) {
     return Promise.all(
@@ -17,7 +17,7 @@ function fetchJsonFiles(filePaths) {
 
 async function GetAllData() {
 
-    const jsonFilePaths = ['/aow3db/Data/RaceDescriptions.json', '/aow3db/Data/Buildings.json'];
+    const jsonFilePaths = ['/aow3db/Data/RaceDescriptions.json', '/aow3db/Data/Buildings.json', '/aow3db/Data/RaceGovernance.json'];
     await fetchJsonFiles(jsonFilePaths)
         .then(dataArray => {
             dataArray.forEach((data, index) => {
@@ -26,6 +26,8 @@ async function GetAllData() {
                     jsonRaceDescriptions = data;
                 } else if (index == 1) {
                     jsonBuildings = data;
+                } else if (index == 2) {
+                    jsonRaceGovernance = data;
                 }
             });
         })
@@ -369,6 +371,56 @@ function SetButtonsAndDivs(list, parent, cardType, extraCheckForLists) {
     }
 
 }
+
+async function buildGovernance(race) {
+    await spawnGovernanceCards();
+    setRaceGovernance(race);
+    jsonRaceGovernance[i]
+}
+async function spawnGovernanceCards() {
+    var doc = document.getElementById("raceGovernance");
+
+    var iDiv = race_governance_template.content.cloneNode(true);
+
+    doc.appendChild(iDiv);
+
+
+}
+
+function setRaceGovernance(race) {
+    for (let i = 0; i < jsonRaceGovernance.length; i++) {
+        if (jsonRaceGovernance[i].id == race) {
+            var nameDiv = document.getElementById("race_governance_name");
+            nameDiv.innerHTML = jsonRaceGovernance[i].name + " Race Governance";
+
+            var nameButton = document.getElementById("race_governance_button");
+            nameButton.innerHTML = jsonRaceGovernance[i].name + " Governance";
+            var mil1 = document.getElementById("patron_military");
+            mil1.innerHTML = jsonRaceGovernance[i].military_1;
+            var mil2 = document.getElementById("protector_military");
+            mil2.innerHTML = jsonRaceGovernance[i].military_2;
+            var mil3 = document.getElementById("champion_military");
+            mil3.innerHTML = jsonRaceGovernance[i].military_3;
+            var mil4 = document.getElementById("prophet_military");
+            mil4.innerHTML = jsonRaceGovernance[i].military_4;
+            var mil5 = document.getElementById("deity_military");
+            mil5.innerHTML = jsonRaceGovernance[i].military_5;
+            var eco1 = document.getElementById("patron_economic");
+            eco1.innerHTML = jsonRaceGovernance[i].economic_1;
+            var eco2 = document.getElementById("protector_economic");
+            eco2.innerHTML = jsonRaceGovernance[i].economic_2;
+            var eco3 = document.getElementById("champion_economic");
+            eco3.innerHTML = jsonRaceGovernance[i].economic_3;
+            var eco4 = document.getElementById("prophet_economic");
+            eco4.innerHTML = jsonRaceGovernance[i].economic_4;
+            var eco5 = document.getElementById("deity_economic");
+            eco5.innerHTML = jsonRaceGovernance[i].economic_5;
+        }
+
+
+    }
+}
+
 
 function AddListView(list, parent, cardType, extraCheckForLists) {
     // add list view first
