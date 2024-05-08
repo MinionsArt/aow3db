@@ -137,6 +137,814 @@
 
         ]
         },
+
+    {
+        "slug": "burrow_of_fire",
+        "name": "Burrow of Fire",
+        "description": "Unlocks the production of Fire Wyvern units",
+        "cost": "200 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "fire_wyvern"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "fire_dragon_ward"
+
+        }, {
+                "slug": "fire_lair"
+
+        }
+
+        ]
+        },
+
+    {
+        "slug": "burrow_of_frost",
+        "name": "Burrow of Frost",
+        "description": "Unlocks the production of Frost Wyvern units",
+        "cost": "200 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "frost_wyvern"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "frost_dragon_ward"
+
+        }, {
+                "slug": "frost_lair"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "burrow_of_gold",
+        "name": "Burrow of Gold",
+        "description": "Unlocks the production of Gold Wyvern units",
+        "cost": "250 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "gold_wyvern"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "golden_lair"
+
+        }
+
+        ]
+        },
+
+    {
+        "slug": "incubation_chamber",
+        "name": "Incubation Chamber",
+        "description": "Wyverns gain <x-medal></x-medal>",
+        "cost": "250 <gold></gold> 50 <mana></mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "fire_lair"
+
+        }, {
+                "slug": "frost_lair"
+
+        },
+            {
+                "slug": "golden_lair"
+
+        }, {
+                "slug": "orb_of_the_first_age"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "fire_dragon_ward",
+        "name": "Fire Dragon Ward",
+        "description": "Each round: Fireballs on random enemy",
+        "cost": "150 <gold></gold> 50 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "burrow_of_fire"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "fire_lair",
+        "name": "Fire Lair",
+        "description": "Unlocks Fire Dragon",
+        "cost": "300 <gold></gold> 75 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "fire_dragon"
+        }
+        ],
+        "requires": [
+            {
+                "slug": "burrow_of_fire"
+
+        }, {
+                "slug": "incubation_chamber"
+
+        }
+
+        ]
+        }, {
+        "slug": "burrow_of_the_generate_children",
+        "name": "Burrow of the Generate Children",
+        "description": "Unlocks Ogre",
+        "cost": "150 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "ogre"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "fangirs_stone_ward"
+
+        }, {
+                "slug": "rock_of_ages"
+
+        }
+
+        ]
+        }, {
+        "slug": "stone_quarry",
+        "name": "Stone Quarry",
+        "description": "Dwelling income +20 <production></production>",
+        "cost": "120 <gold></gold>",
+
+
+        "leadsto": [
+            {
+                "slug": "rock_of_ages"
+
+        }
+
+        ]
+        }, {
+        "slug": "fangirs_stone_ward",
+        "name": "Fangir's Stone Ward",
+        "description": "Friendly units gain Stone Skin during Siege",
+        "cost": "160 <gold></gold>",
+
+
+        "leadsto": [
+            {
+                "slug": "menhir_of_fire"
+
+        }, {
+                "slug": "menhir_of_frost"
+
+        }, {
+                "slug": "menhir_of_granite"
+
+        }
+
+        ],
+        "requires": [
+            {
+                "slug": "burrow_of_the_degenerate_children"
+
+        }]
+    }, {
+        "slug": "rock_of_ages",
+        "name": "Rock of Ages",
+        "description": "Produced units gain Dragon Slayer",
+        "cost": "200 <gold></gold>",
+
+
+
+        "requires": [
+            {
+                "slug": "burrow_of_the_degenerate_children"
+
+        }, {
+                "slug": "stone_quarry"
+
+        }]
+    }, {
+        "slug": "menhir_of_fire",
+        "name": "Menhir of Fire",
+        "description": "Unlocks Fire Giant",
+        "cost": "300 <gold></gold> 50 <mana></mana>",
+
+
+        "unlocksunit": [
+            {
+                "slug": "fire_giant"
+        }],
+        "requires": [
+            {
+                "slug": "fangirs_stone_ward"
+
+        }]
+    }, {
+        "slug": "menhir_of_frost",
+        "name": "Menhir of Frost",
+        "description": "Unlocks Frost Giant",
+        "cost": "300 <gold></gold> 50 <mana></mana>",
+
+
+        "unlocksunit": [
+            {
+                "slug": "frost_giant"
+        }],
+        "requires": [
+            {
+                "slug": "fangirs_stone_ward"
+
+        }]
+    }, {
+        "slug": "menhir_of_granite",
+        "name": "Menhir of Granite",
+        "description": "Unlocks Stone Giant",
+        "cost": "350 <gold></gold> ",
+
+
+        "unlocksunit": [
+            {
+                "slug": "stone_giant"
+        }],
+        "requires": [
+            {
+                "slug": "fangirs_stone_ward"
+
+        }]
+    },
+    {
+        "slug": "frost_dragon_ward",
+        "name": "Frost Dragon Ward",
+        "description": "Each round: Frost Missiles on random enemy",
+        "cost": "150 <gold></gold> 50 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "burrow_of_frost"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "golden_lair",
+        "name": "Golden Lair",
+        "description": "Unlocks Golden Dragon",
+        "cost": "400 <gold></gold> 75 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "golden_dragon"
+        }
+        ],
+        "requires": [
+            {
+                "slug": "burrow_of_gold"
+
+        }, {
+                "slug": "incubation_chamber"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "frost_lair",
+        "name": "Frost Lair",
+        "description": "Unlocks Frost Dragon",
+        "cost": "300 <gold></gold> 75 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "frost_dragon"
+        }
+        ],
+        "requires": [
+            {
+                "slug": "burrow_of_frost"
+
+        }, {
+                "slug": "incubation_chamber"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "buttercup_meadow",
+        "name": "Buttercup Meadow",
+        "description": "Unlocks Buttercup Fairy",
+        "cost": "150 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "buttercup_fairy"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "toadstool_ring"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "unicorn_glade",
+        "name": "Unicorn Glade",
+        "description": "Unlocks Unicorn",
+        "cost": "150 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "unicorn"
+        }
+        ]
+
+        },
+    {
+        "slug": "fairy_charm",
+        "name": "Fairy Charm",
+        "description": "Garrisoned Units gain +4 <resistance></resistane>",
+        "cost": "160 <gold></gold>",
+
+
+        "leadsto": [
+            {
+                "slug": "nymph_pond"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "toadstool_ring",
+        "name": "Toadstool Ring",
+        "description": "Unlocks Toadstool Fairy",
+        "cost": "150 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "toadstool_fairy"
+        }
+        ],
+        "requires": [
+            {
+                "slug": "buttercup_meadow"
+
+        }
+
+        ],
+        "leadsto": [
+            {
+                "slug": "nightshade_hollow"
+
+        }]
+
+        },
+    {
+        "slug": "nymph_pond",
+        "name": "Nymph Pond",
+        "description": "Unlocks Nymph",
+        "cost": "150 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "nymph"
+        }
+        ],
+        "requires": [
+            {
+                "slug": "fairy_charm"
+
+        }
+
+        ],
+        "leadsto": [
+            {
+                "slug": "aphrodisiac_flowers"
+
+        }]
+
+        },
+    {
+        "slug": "nightshade_hollow",
+        "name": "Nightshade Hollow",
+        "description": "Unlocks Nightshade Fairy",
+        "cost": "200 <gold></gold>",
+
+        "unlocksunit": [
+            {
+                "slug": "nightshade_fairy"
+        }
+        ],
+        "requires": [
+            {
+                "slug": "toadstool_ring"
+
+        }
+
+        ]
+
+        },
+    {
+        "slug": "aphrodisiac_flowers",
+        "name": "Aphrodisiac Flowers",
+        "description": "Every non-Machine/Undead/Dragon units in domain suffer -4 <resistance></resistance>",
+        "cost": "200 <gold></gold>",
+
+
+        "requires": [
+            {
+                "slug": "nymph_pond"
+
+        }
+
+        ]
+
+        },
+    {
+        "slug": "orb_of_the_first_age",
+        "name": "Orb of the First Age",
+        "description": "Units produced gain True Sight and Giant Slayer",
+        "cost": "200 <gold></gold>",
+
+
+        "requires": [
+            {
+                "slug": "incubation_chamber"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "hatching_pool",
+        "name": "Hatching Pool",
+        "description": "Unlocks Baby Reed Serpent",
+        "cost": "50 <gold></gold> 25 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "baby_reed_serpent"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "serpent_hall"
+
+        }, {
+                "slug": "viper_fortress"
+
+        }
+
+        ]
+        }, {
+        "slug": "serpent_hall",
+        "name": "Serpent Hall",
+        "description": "Unlocks Naga Slither",
+        "cost": "75 <gold></gold> 50 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "naga_slither"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "altar_of_the_great_mother"
+
+        }
+
+        ],
+        "requires": [
+            {
+                "slug": "hatching_pool"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "viper_fortress",
+        "name": "Viper Fortress",
+        "description": "Unlocks Naga Guardian",
+        "cost": "75 <gold></gold> 50 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "naga_guardian"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "altar_of_the_great_mother"
+
+        }
+
+        ],
+        "requires": [
+            {
+                "slug": "hatching_pool"
+
+        }
+
+        ]
+        },
+    {
+        "slug": "altar_of_the_great_mother",
+        "name": "Altar of the Great Mother",
+        "description": "Unlocks Naga Matriarch",
+        "cost": "150 <gold></gold> 75 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "naga_matriarch"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "marsh_of_the_serpents"
+
+        }, {
+                "slug": "reptillian_oracle"
+
+        }
+
+        ],
+        "requires": [
+            {
+                "slug": "serpent_hall"
+
+        }, {
+                "slug": "viper_fortress"
+
+        }
+
+        ]
+        }, {
+        "slug": "marsh_of_the_serpents",
+        "name": "Marsh of the Serpents",
+        "description": "Unlocks Naga Glutton & Mature Reed Serpent",
+        "cost": "300 <gold></gold> 50 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "naga_glutton"
+        }, {
+                "slug": "mature_reed_serpent"
+        }
+        ],
+
+        "requires": [
+            {
+                "slug": "altar_of_the_great_mother"
+
+        }
+
+        ]
+        }, {
+        "slug": "reptillian_oracle",
+        "name": "Reptillian Oracle",
+        "description": "Produced units gain <x-medal></x-medal> Medal. Dwelling gains +1 Domain radius. Units in domain gain True Sight",
+        "cost": "100 <gold></gold> 100 <mana></mana>",
+
+
+
+        "requires": [
+            {
+                "slug": "altar_of_the_great_mother"
+
+        }
+
+        ]
+        }, {
+        "slug": "deep_sea_trench",
+        "name": "Deep Sea Trench",
+        "description": "Unlocks Baby Kraken",
+        "cost": "50 <gold></gold> 25 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "baby_kraken"
+        }
+        ],
+
+        "leadsto": [
+            {
+                "slug": "mermaids_cove"
+
+        }
+
+        ]
+        }, {
+        "slug": "whispering_rocks",
+        "name": "Whispering Rocks",
+        "description": "Enemy units in domain suffer -2 <resistance></resistance>",
+        "cost": "100 <gold></gold> 100 <mana></mana>",
+
+
+
+        "leadsto": [
+            {
+                "slug": "treacherous_cliffs"
+
+        }, {
+                "slug": "sirens_rock"
+
+        }
+
+        ]
+        }, {
+        "slug": "pearl_mine",
+        "name": "Pearl Mine",
+        "description": "Dwelling income +20 <gold></gold>",
+        "cost": "60 <gold></gold> 30 <mana></mana>",
+
+
+
+        "leadsto": [
+            {
+                "slug": "kelp_forest"
+
+        }
+
+        ]
+        }, {
+        "slug": "seagrass_meadow",
+        "name": "Seagrass Meadow",
+        "description": "Stationed units have no Embark Penalty",
+        "cost": "50 <gold></gold> 50 <mana></mana>"
+
+
+
+
+        }, {
+        "slug": "mermaids_cove",
+        "name": "Mermaid's Cove",
+        "description": "Unlocks Mermaid",
+        "cost": "25 <gold></gold> 50 <mana></mana>",
+
+        "unlocksunit": [
+            {
+                "slug": "mermaid"
+        }
+        ],
+        "requires": [
+            {
+                "slug": "deep_sea_trench"
+
+        }],
+        "leadsto": [
+            {
+                "slug": "sirens_rock"
+
+        }
+
+        ]
+        }, {
+        "slug": "treacherous_cliffs",
+        "name": "Treacherous Cliffs",
+        "description": "Unlocks Lost Mariner",
+        "cost": "80 <gold></gold> 40 <mana></mana>",
+
+        "requires": [
+            {
+                "slug": "whispering_rocks"
+
+        }],
+        "unlocksunit": [
+            {
+                "slug": "lost_mariner"
+        }
+        ]
+
+
+        }, {
+        "slug": "kelp_forest",
+        "name": "Kelp Forest",
+        "description": "Unlocks Mermaid",
+        "cost": "50 <gold></gold> 50 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "pearl_mine"
+
+        }],
+
+        "leadsto": [
+            {
+                "slug": "anemone_oasis"
+
+        }
+
+        ]
+        }, {
+        "slug": "anemone_oasis",
+        "name": "Anemone Oasis",
+        "description": "Dwelling income +20 <mana></mana>",
+        "cost": "30 <gold></gold> 60 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "kelp_forest"
+
+        }],
+
+        "leadsto": [
+            {
+                "slug": "basin_of_wisdom"
+
+        }
+
+        ]
+        }, {
+        "slug": "sirens_rock",
+        "name": "Siren's Rock",
+        "description": "Unlocks Siren",
+        "cost": "80 <gold></gold> 120 <mana></mana>",
+
+
+        "unlocksunit": [
+            {
+                "slug": "siren"
+        }
+        ],
+
+        "leadsto": [
+            {
+                "slug": "abyssal_ridge"
+
+        }
+
+        ],
+        "requires": [
+            {
+                "slug": "mermaids_cove"
+
+        }, {
+                "slug": "whispering_rocks"
+
+        }
+
+        ]
+        }, {
+        "slug": "abyssal_ridge",
+        "name": "Abyssal Ridge",
+        "description": "Unlocks Lord of the Deep",
+        "cost": "150 <gold></gold> 200 <mana></mana>",
+
+
+        "unlocksunit": [
+            {
+                "slug": "lord_of_the_deep"
+        }
+        ],
+
+        "requires": [
+            {
+                "slug": "sirens_rock"
+
+        }
+
+        ]
+        }, {
+        "slug": "basin_of_wisdom",
+        "name": "Basin of Wisdom",
+        "description": "Dwelling income +20 <knowledge></knowledge>",
+        "cost": "80 <gold></gold> 80 <mana></mana>",
+
+
+
+
+        "requires": [
+            {
+                "slug": "anemone_oasis"
+
+        }
+
+        ]
+        },
     {
         "slug": "haunted_vault",
         "name": "Haunted Vault",
@@ -216,5 +1024,5 @@
 
 
         }
-   
+
     ]

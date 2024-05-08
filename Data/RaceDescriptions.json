@@ -56,25 +56,134 @@
         },
              {
 
-                 "name": "night_vision"
+                 "slug": "night_vision"
         },
              {
 
-                 "name": "100% <x-blight></x-blight> Protection"
+                 "slug": "charge"
         },
              {
 
-                 "name": "40% <x-fire></x-fire> Weakness"
-        },
-             {
-                 "slug": "dedicated_to_evil",
-                 "name": "Dedicated To Evil"
+                 "slug": "flying"
         }
          ],
-         "buildings_t1": "sigil_of_awakening,graveyard,charnel_house,obelisk_of_undeath,merchandise",
-         "buildings_t2": "barrow",
-         "buildings_t3": "haunted_vault,chamber_of_the_rite",
-         "buildings_t4": "mausoleum,throne_of_bone"
+         "buildings_t1": "burrow_of_fire,burrow_of_frost,burrow_of_gold,incubation_chamber,merchandise",
+         "buildings_t2": "fire_dragon_ward,fire_lair,frost_dragon_ward,frost_lair,golden_lair,orb_of_the_first_age"
+
+ }, {
+         "id": "fey",
+         "name": "Fey",
+         "cityname": "Sylvan Court",
+         "description": "Fey are supernatural beings with a close connection to nature. As caretakers of the woods they favor deep forests and often shun the other races. However, due to their playfulness, curiosity and carefree nature, the strongly individual Fey can be found all over Athla supporting a wide variety of different causes. All Fey are highly magical and possess unique magic abilities.",
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Dense Vegetation",
+                 "entry": "Dislikes: Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "fey"
+        },
+             {
+                 "slug": "forestry"
+        },
+             {
+
+                 "slug": "wetland_walking"
+        },
+             {
+
+                 "name": "40% <x-blight></x-blight> Weakness"
+        }
+         ],
+         "buildings_t1": "buttercup_meadow,unicorn_glade,fairy_charm,merchandise",
+         "buildings_t2": "toadstool_ring,nymph_pond",
+         "buildings_t3": "nightshade_hollow,aphrodisiac_flowers"
+
+ }, {
+         "id": "giant",
+         "name": "Giant",
+         "cityname": "Giant's Keep",
+         "description": "According to ancient scripture, the Giant kin helped the Allfather form the continents, with Fire Giants directing the flow of molten rock, the Rock Giants shaping the solidified rock and the Storm Giants giving the lands their final polish through erosion. The Titans were the masters of the Giants and they oversaw the work of their kin, until the Giants rebelled. Now, Giants are rarely seen, and they keep mostly to themselves. They can sometimes be rallied behind a cause though, often with devastating results.",
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Mountains",
+                 "entry": "Dislikes: Blighted"
+
+        }],
+         "traits": [
+             {
+                 "slug": "giant"
+        },
+             {
+                 "slug": "mountaineering"
+        },
+             {
+
+                 "slug": "wall_crushing"
+        }
+         ],
+         "buildings_t1": "burrow_of_the_generate_children,stone_quarry,merchandise",
+         "buildings_t2": "fangirs_stone_ward,rock_of_ages",
+         "buildings_t3": "menhir_of_fire,menhir_of_frost,menhir_of_granite"
+
+ }, {
+         "id": "naga",
+         "name": "Naga",
+         "cityname": "Naga Lair",
+         "description": "The Naga are an ancient race of powerful, reptilian creatures. They tend to hide in their swamps and only come out when provoked or hired in mercenary armies. Ruled by Matriarchs, they have a strictly organized society, so much so that the different roles and duties have started influencing their appearance. All Naga are strong melee fighters, with the slightly dimwitted Glutton the strongest of them all. The Matriarch possesses powerful magical abilities to control her subjects and neutralize enemy threats.",
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Dense Vegetation",
+                 "entry": "Dislikes: Volcanic"
+
+        }],
+         "traits": [
+             {
+                 "slug": "naga"
+        },
+             {
+                 "slug": "swimming"
+        },
+             {
+
+                 "slug": "wetland_walking"
+        },
+             {
+
+                 "name": "40% <x-blight></x-blight> Protection"
+        },
+             {
+
+                 "name": "40% <x-fire></x-fire> Protection"
+        }, {
+                 "name": "40% <x-frost></x-frost> Weakness"
+             }
+         ],
+         "buildings_t1": "hatching_pool,merchandise",
+         "buildings_t2": "serpent_hall,viper_fortress",
+         "buildings_t3": "altar_of_the_great_mother",
+         "buildings_t4": "marsh_of_the_serpents,reptillian_oracle"
+
+ }, {
+         "id": "merfolk",
+         "name": "Merfolk",
+         "cityname": "Reef Colony",
+         "description": "Merfolk are mysterious creatures, able to breathe both water and air. It is said that the few Merfolk cities seen on the surface are just a tiny fraction of the nations the Merfolk have established in the deep beneath the oceans. Although most Merfolk cannot leave the water, the sailors they have enslaved with their magic are sometimes sent onto the land to act as their agents. Sailors also whisper of a mighty Lord of the Deep, a giant being who emerges from the waters to rain lightning down on those who threaten the sanctity of the Merfolk.",
+         "terrain_prefs": [
+             {
+                 "entry": "Likes: Water"
+
+        }],
+         "traits": [
+
+         ],
+         "buildings_t1": "deep_sea_trench,whispering_rocks,pearl_mine,seagrass_meadow,merchandise",
+         "buildings_t2": "mermaids_cove,treacherous_cliffs,kelp_forest",
+         "buildings_t3": "sirens_rock,anemone_oasis",
+         "buildings_t4": "abyssal_ridge,basin_of_wisdom"
+
  }, {
          "id": "arch_druid",
          "name": "Archdruid",
