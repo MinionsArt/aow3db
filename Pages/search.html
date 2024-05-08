@@ -14,16 +14,25 @@
         $("#body").ready(function() {
 
             $("#header").load("/aow3db/Pages/header.html");
-            showhide3('unitS');
+            setTimeout(() => {
+                rememberSearch();
+            }, 1000);
 
         });
 
 
-        $(".togglelink").click(function() {
-            $(".togglelink").css("color", "white");
 
-            $(this).css("color", "cyan");
-        });
+        async function rememberSearch() {
+
+            const searchKeyword = searchParams.get('search');
+            input = document.getElementById("searchInput");
+            input.value = searchKeyword;
+            if (searchKeyword != undefined) {
+                searchData(searchKeyword);
+            }
+
+        }
+
     </script>
     <title>Age of Wonders Planetfall - Search</title>
 </head>
@@ -45,19 +54,7 @@
         <div id="buttonHolder" class="w3-bar w3-black"></div>
         <div id="units">test</div>
     </div>
-    <div id="modS" style=" width:100%;margin: auto; display: none">
-        <h2 style="color:white;text-align: center">Mod Search</h2>
-        <p style="color:white;text-align: center">Search name and description of mods</p>
-        <br>
-        <div style="margin-right: auto; margin-left: auto; width: 300px;">
-            <input type="text" style="margin-right: auto; margin-left: auto; width: 300px;" id="searchInputMod">_+
-            <input type="submit" value="Submit" id="buttonMod">
-            <p id="searchResultMod" style="color: aqua"></p>
 
-        </div>
-
-        <div id="searchOutputMod">test</div>
-    </div>
 </body>
 <script>
     $(document).ready(function() {
@@ -93,16 +90,24 @@
     }
 
 
-    function searchData() {
+    async function searchData(value) {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInput");
         output = document.getElementById("units");
         output.innerHTML = "";
 
 
-        filter = input.value.toUpperCase();
+        if (value != null) {
+            filter = value.toUpperCase();
+        } else {
+            filter = input.value.toUpperCase();
+        }
+
         var test = filter.replaceAll(' ', "_");
         searchUnits(test);
+        var currenturl = window.location.href.split('?')[0];
+
+        window.history.replaceState({}, 'foo', currenturl + "?search=" + input.value);
 
     }
 
@@ -222,7 +227,7 @@
         }
 
         result.innerHTML = list.length.toString() + " results found";
-        showUnitsFromListTest(list);
+        showUnitsFromListTest(list, undefined, "", "search");
         // for (j = 0; j < list.length; j++) {
 
         //     addUnitCard(list[j]);
@@ -344,4 +349,7 @@
 
 
     }
-</script></html>
+
+</script>
+
+</html>

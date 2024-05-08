@@ -336,6 +336,12 @@ function SetButtonsAndDivs(list, parent, cardType, extraCheckForLists) {
                 // btn.innerHTML = list[i];
                 btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\')');
                 break;
+            case "unitSearch":
+                showUnit(list[i], list[i]);
+                btn.innerHTML = GetUnitTierAndName(list[i]);
+                // btn.innerHTML = list[i];
+                btn.setAttribute("onclick", 'openDiv(event,\'' + list[i] + '\',true)');
+                break;
             case "mod":
                 showMod(list[i], list[i]);
                 btn.innerHTML = GetModTierAndName(list[i]);
@@ -458,6 +464,16 @@ function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
             buttonHolder.append(content);
             // showModsFromList(list, overwrite);
             break;
+        case "searchUnit":
+            var holderHeight = buttonHolder.offsetHeight;
+            dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
+            btn.className = "collapsibleUnits";
+            var content = document.createElement("DIV");
+            content.setAttribute("id", overwrite + "-button");
+            content.className = "contentUnits";
+            buttonHolder.append(content);
+            // showModsFromList(list, overwrite);
+            break;
         case "searchMod":
             var holderHeight = buttonHolder.offsetHeight;
             dataHolder.setAttribute("style", "margin-top:-" + holderHeight + "px;");
@@ -569,7 +585,7 @@ function GetUnitTierAndName(id) {
             var tier = jsonUnits.units[i].tier.split("-")[0];
 
 
-            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" +  getUnitTypeTag(jsonUnits.units[i].passives) +  getUnitTypeTag(jsonUnits.units[i].unit_types) +  " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (tier) + "</p>";
+            return "<p style=\"width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-transform: none; margin:0;\" >" + getUnitTypeTag(jsonUnits.units[i].passives) + getUnitTypeTag(jsonUnits.units[i].unit_types) + " " + name + "</p>" + "<p style=\"text-align:right; color:white; position:relative; \">" + (tier) + "</p>";
 
 
 
@@ -634,7 +650,7 @@ function getUnitTypeTag(passivesList) {
     return "";
 }
 
-async function showUnitsFromListTest(list, overwritetext, extraCheckForLists) {
+async function showUnitsFromListTest(list, overwritetext, extraCheckForLists, search) {
 
     await spawnCards(list);
     for (var i = 0; i < list.length; i++) {
@@ -643,6 +659,10 @@ async function showUnitsFromListTest(list, overwritetext, extraCheckForLists) {
     }
 
     var typeMod = "unit";
+
+    if (search != null) {
+        typeMod = "unitSearch";
+    }
     if (overwritetext != undefined) {
         SetCollapsibleButtonsAndDivs(overwritetext, list, typeMod);
         SetButtonsAndDivs(list, overwritetext + "-button", typeMod, extraCheckForLists);
