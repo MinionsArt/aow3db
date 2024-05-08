@@ -1023,6 +1023,40 @@
         }]
 
 
+        },
+    {
+        "slug": "henge",
+        "name": "Henge",
+        "description": " This city generates an additional +100 <x-population></x-population>Population<br><br>",
+        "cost": "100 <x-gold></x-gold> 50<x-mana></x-mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "megalith"
+
+        }],
+        "requires": [
+            {
+                "slug": "arch_druids_dolmen"
+
+        }]
+
+        },
+    {
+        "slug": "megalith",
+        "name": "Megalith",
+        "description": "  This city generates an additional +20 <x-mana></x-mana> Mana and increases <x-mana></x-mana> Mana Capacity by 100 <br><br>",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "henge"
+
+        }]
+
+
         }
 
     ]

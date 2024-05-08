@@ -1,16 +1,21 @@
 var searchParams = new URLSearchParams(window.location.search);
 var jsonRaceDescriptions, jsonBuildings, jsonRaceGovernance;
 
+var raceList = ["draconian", "dwarf", "frostling", "goblin", "halfling", "high_elf", "human", "orc", "tigran"];
+
+var dwellingList = ["archon", "fey", "giant", "dragon", "merfolk", "naga"];
+var classList = ["arch_druid", "dreadnought", "necromancer", "sorcerer", "rogue", "theocrat", "warlord"];
+
 function fetchJsonFiles(filePaths) {
     return Promise.all(
         filePaths.map(filePath =>
             fetch(filePath)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Network response was not ok: ${response.statusText}`);
-                    }
-                    return response.json();
-                })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return response.json();
+            })
         )
     );
 }
@@ -47,12 +52,12 @@ async function CheckData() {
 
 function handleCollapsible() {
 
-   
+
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
     for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.maxHeight) {
@@ -180,6 +185,7 @@ function addAbilityslot(a, unique, damage, c) {
             if (unique == "yes") {
                 abilityName = "<span style=\"color:magenta\">" + abilityName + "</span>";
             }
+            var abilityHolder = document.createElement("DIV");
 
             if (abilityDam != "") {
                 abilityDamageFinal = abilityDam;
@@ -192,7 +198,7 @@ function addAbilityslot(a, unique, damage, c) {
             var dam = document.createElement("DIV");
             dam.className = "ability_damage";
             dam.innerHTML = abilityDamageFinal;
-            spa.innerHTML = "<p>" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDamageFinal + "</span>" + "</p>" +
+            spa.innerHTML = "<div class\"abilitySpan\">" + "<span style=\"font-size:18px\">" + abilityName + "&nbsp;&nbsp;&nbsp; " + abilityDamageFinal + "</span>" + "</div>" +
                 abilityRange + "<hr>" + abilityDescr;
             imag.setAttribute("src", "/aow3db/Icons/Abilities/" + abilityIcon + ".png");
             imag.setAttribute("width", "40");
@@ -202,8 +208,11 @@ function addAbilityslot(a, unique, damage, c) {
 
             addTooltipListeners(tex, spa);
             btn.appendChild(imag);
-            btn.append(tex);
-            btn.append(dam);
+            var abilityHolder = document.createElement("DIV");
+            abilityHolder.className = "abilitySpan";
+            btn.appendChild(abilityHolder);
+            abilityHolder.append(tex);
+            abilityHolder.append(dam);
         }
     }
     if (abilityName === "") {
@@ -376,7 +385,22 @@ function SetButtonsAndDivs(list, parent, cardType, extraCheckForLists) {
 async function buildGovernance(race) {
     await spawnGovernanceCards();
     setRaceGovernance(race);
-    jsonRaceGovernance[i]
+
+}
+
+async function buildClassLevelups(className) {
+    await spawnClassLevelCards();
+    // setClassLevelup(className);
+
+}
+async function spawnClassLevelCards() {
+    var doc = document.getElementById("levelUpClasses");
+
+    var iDiv = class_levelup_template.content.cloneNode(true);
+
+    doc.appendChild(iDiv);
+
+
 }
 async function spawnGovernanceCards() {
     var doc = document.getElementById("raceGovernance");
@@ -538,13 +562,13 @@ function SetCollapsibleButtonsAndDivs(overwrite, list, cardType) {
             // showModsFromList(list, overwrite);
             break;
 
-        // case "unit":
-        //     btn.className = "collapsibleUnits";
-        //     var content = document.createElement("DIV");
-        //     content.setAttribute("id", overwrite + "-button");
-        //     content.className = "contentUnits";
-        //     buttonHolder.append(content);
-        //     break;
+            // case "unit":
+            //     btn.className = "collapsibleUnits";
+            //     var content = document.createElement("DIV");
+            //     content.setAttribute("id", overwrite + "-button");
+            //     content.className = "contentUnits";
+            //     buttonHolder.append(content);
+            //     break;
     }
 
 
@@ -625,6 +649,7 @@ function romanize(num) {
         roman = (key[+digits.pop() + (i * 10)] || "") + roman;
     return Array(+digits.join("") + 1).join("M") + roman;
 }
+
 function GetUnitTierAndName(id) {
 
 
@@ -796,7 +821,6 @@ async function openDiv(evt, cityName, search) {
         if (currentadditive === undefined) {
             currentadditive = "";
         }
-        console.log(currenturl + search);
         if (search === undefined) {
             window.history.replaceState({}, 'foo', currenturl + "?type=" + cityName + "&" + currentadditive);
         }
@@ -1183,7 +1207,7 @@ async function BuildRaceDescription(raceID) {
 
     await spawnCardRace(raceHolder);
     SetRaceDescription(raceID);
-  //  handleCollapsible();
+    //  handleCollapsible();
 
 
 }
@@ -1197,6 +1221,19 @@ function SetRaceDescription(raceID) {
                 raceName.innerHTML = jsonRaceDescriptions[index].cityname + "(" + jsonRaceDescriptions[index].name + ")";
             } else {
                 raceName.innerHTML = jsonRaceDescriptions[index].name;
+            }
+
+            if (raceList.includes(jsonRaceDescriptions[index].id) || dwellingList.includes(jsonRaceDescriptions[index].id)) {
+                document.getElementById("traitsName").innerHTML = "Terrain and Traits";
+                document.getElementById("traits1").innerHTML = "Terrain";
+                document.getElementById("traits2").innerHTML = "Traits";
+            }
+
+            if (classList.includes(jsonRaceDescriptions[index].id)) {
+                document.getElementById("traitsName").innerHTML = "Hero Traits";
+                document.getElementById("traits1").innerHTML = "Heroes start with";
+                document.getElementById("secondList").style.display = "none";
+
             }
 
 
@@ -1220,7 +1257,24 @@ function SetRaceDescription(raceID) {
             var cityTier4name = document.getElementById("city_t4_name");
 
 
+            if ('hero_traits' in jsonRaceDescriptions[index]) {
+                for (let i = 0; i < jsonRaceDescriptions[index].hero_traits.length; i++) {
+                    var Div = document.createElement("DIV");
+                    Div.innerHTML = jsonRaceDescriptions[index].hero_traits[i].name;
+                    if ('slug' in jsonRaceDescriptions[index].hero_traits[i]) {
+                        Div.innerHTML = "<p class=\"hyperlink\"><bullet>" + getAbilityName(jsonRaceDescriptions[index].hero_traits[i].slug) + "</p>";
+                        var spa = document.createElement("span");
+                        spa.innerHTML = showAbility(jsonRaceDescriptions[index].hero_traits[i].slug);
+                        addTooltipListeners(Div, spa);
+                    } else if ('name' in jsonRaceDescriptions[index].hero_traits[i]) {
+                        Div.innerHTML = "<p class=\"hyperlink\"><bullet>" + jsonRaceDescriptions[index].hero_traits[i].name + "</p>";
 
+
+                    }
+                    raceTerrain.appendChild(Div);
+
+                }
+            }
             if ('terrain_prefs' in jsonRaceDescriptions[index]) {
                 for (let i = 0; i < jsonRaceDescriptions[index].terrain_prefs.length; i++) {
                     var Div = document.createElement("DIV");
@@ -1245,7 +1299,18 @@ function SetRaceDescription(raceID) {
             }
 
 
-
+            if ('buildings_class' in jsonRaceDescriptions[index]) {
+                var buildings = jsonRaceDescriptions[index].buildings_class.split(",");
+                var buildingsHolder1 = document.getElementById("city_t1");
+                cityTier1name.innerHTML = jsonRaceDescriptions[index].name + " Class Buildings";
+                for (let i = 0; i < buildings.length; i++) {
+                    spawnBuildingCards(buildingsHolder1);
+                    showBuilding(buildings[i]);
+                    // var newDiv = document.createElement("Div");
+                    // newDiv.innerHTML = buildings[i];
+                    // buildingsHolder1.appendChild(newDiv);
+                }
+            }
             if ('buildings_t1' in jsonRaceDescriptions[index]) {
                 var buildings = jsonRaceDescriptions[index].buildings_t1.split(",");
                 var buildingsHolder1 = document.getElementById("city_t1");
@@ -1269,6 +1334,8 @@ function SetRaceDescription(raceID) {
                     // newDiv.innerHTML = buildings[i];
                     // buildingsHolder1.appendChild(newDiv);
                 }
+            } else {
+                document.getElementById("city_t2_name").style.display = "none";
             }
             if ('buildings_t3' in jsonRaceDescriptions[index]) {
                 var buildings = jsonRaceDescriptions[index].buildings_t3.split(",");
@@ -1281,6 +1348,8 @@ function SetRaceDescription(raceID) {
                     spawnBuildingCards(buildingsHolder1);
                     showBuilding(buildings[i]);
                 }
+            } else {
+                document.getElementById("city_t3_name").style.display = "none";
             }
             if ('buildings_t4' in jsonRaceDescriptions[index]) {
                 var buildings = jsonRaceDescriptions[index].buildings_t4.split(",");
@@ -1293,14 +1362,23 @@ function SetRaceDescription(raceID) {
                     spawnBuildingCards(buildingsHolder1);
                     showBuilding(buildings[i]);
                 }
+            } else {
+                document.getElementById("city_t4_name").style.display = "none";
             }
 
-            buildGovernance(jsonRaceDescriptions[index].id);
+            if (raceList.includes(jsonRaceDescriptions[index].id)) {
+                buildGovernance(jsonRaceDescriptions[index].id);
+            }
+            if (classList.includes(jsonRaceDescriptions[index].id)) {
+                buildClassLevelups(jsonRaceDescriptions[index].id);
+            }
+
 
         }
 
 
     }
+
 
 
 }

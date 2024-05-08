@@ -1,0 +1,1453 @@
+[{
+        "id": "arch_druid",
+        "levelups": [
+            {
+                "Level": "1",
+                "Skill": "Druidry I\nHero gains +10  Casting Points",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Cure Disease\nHero gains the Cure Disease ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Free Movement\nHero gains the Free Movement ability",
+                "Points": "3"
+    },
+            {
+                "Level": "1",
+                "Skill": "Nature's Resistance\nArmy Stack gains +1  Resistence",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Rust Strike\nHero gains Rust Strike Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Savage Rage\nHero gains Savage Rage Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Revive Instinct\nHero gains Revive Instinct Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Root Spears\nHero gains Root Spears Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "+20%  Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "Warm at Night\nArmy Stack gains +40%  Protection",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Natural Immunity\nArmy Stack gains +40%  Protection",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Spirit of the Land\nArmy Stack gains +40%  Protection",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "Druidry II\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "3",
+                "Skill": "Night Vision\nHero gains Night Vision",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "Befriend Animal\nHero gains the Befriend Animal ability",
+                "Points": "1"
+    },
+            {
+                "Level": "3",
+                "Skill": "Awaken Spirit\nHero gains Awaken Spirit",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Nourishing Meal\nHero gains Nourishing Meal",
+                "Points": "4"
+    },
+            {
+                "Level": "3",
+                "Skill": "Inflict Bleeding Wounds\nHero gains Inflict Bleeding Wounds",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "Natural Healer\nArmy Stack gains Fast Healing",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Druidry III\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "5",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "5",
+                "Skill": "Vision Range Upgrade\nHero gains +1 Vision Range",
+                "Points": "1"
+    },
+            {
+                "Level": "5",
+                "Skill": "True Sight\nHero gains True Sight",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Swimming\nHero gains Swimming",
+                "Points": "4"
+    },
+            {
+                "Level": "9",
+                "Skill": "Hornet Swarm\nHero gains Hornet Swarm Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Call Ancestral Spirits\nHero gains Call Ancestral Spirits Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Twisting Roots\nHero gains Twisting Roots Combat Spell",
+                "Points": "5"
+    },
+
+            {
+                "Level": "7",
+                "Skill": "Druidry IV\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Entangling Touch\nHero gains the Entangling Touch ability",
+                "Points": "3"
+    },
+            {
+                "Level": "7",
+                "Skill": "Undead Slayer\nHero gains the Undead Slayer ability",
+                "Points": "2"
+    },
+            {
+                "Level": "7",
+                "Skill": "Revitalize\nHero gains Revitalize Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Vengeful Vines\nHero gains Vengeful Vines Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Druidry V\nHero gains +10 Casting Points Casting Points",
+                "Points": "2"
+    },
+            {
+                "Level": "9",
+                "Skill": "Healing\nHero gains Healing",
+                "Points": "7"
+    },
+            {
+                "Level": "9",
+                "Skill": "Sustainable Warfare\nArmy Stack gains Volunteer",
+                "Points": "8"
+    },
+            {
+                "Level": "11",
+                "Skill": "Druidry VI\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "11",
+                "Skill": "Call Beast Horde\nHero gains Call Beast Horde Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Call Lightning\nHero gains the Call Lightning ability",
+                "Points": "7"
+    },
+            {
+                "Level": "11",
+                "Skill": "One with the Trees\nArmy Stack gains Forest Concealment",
+                "Points": "6"
+    },
+            {
+                "Level": "11",
+                "Skill": "Regrowth\nHero gains the Regrowth ability",
+                "Points": "10"
+    },
+            {
+                "Level": "13",
+                "Skill": "Druidry VII\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    }
+
+]
+
+
+
+
+
+
+
+}, {
+        "id": "dreadnought",
+        "levelups": [
+            {
+                "Level": "1",
+                "Skill": "Invention I\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Vision Range Upgrade\nHero gains +1 Vision Range",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "Tunneling\nHero gains the Tunneling ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Cure Disease\nHero gains the Cure Disease ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Emergency Repair\nHero gains the Emergency Repair ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Imperial Authority\nArmy Stack gains High Morale",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Flash Bang\nHero gains Flash Bang Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Force Field\nHero gains Force Field Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Overload\nHero gains Overload Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Repair Fortification\nHero gains Repair Fortification Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Lightning Rod Banner\nArmy Stack gains +40% Protection",
+                "Points": "4"
+    },
+            {
+                "Level": "3",
+                "Skill": "Invention II\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Inflict Immolation\nHero gains the Inflict Immolation ability",
+                "Points": "4"
+    },
+            {
+                "Level": "3",
+                "Skill": "Rapid Reload\nHero gains the Rapid Reload ability",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Guardian Flame\nHero gains the Guardian Flame ability",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "True Sight\nHero gains the True Sight ability",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "Forge Aprons\nArmy Stack gains +40 Protection",
+                "Points": "4"
+    },
+            {
+                "Level": "3",
+                "Skill": "Wizard Engineers\nArmy Stack gains +1 Resistence and Summon Slayer",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Invention III\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Wall Climbing\nHero gains Wall Climbing ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Pest Control Squad\nArmy Stack gains Monster Slayer, Animal Slayer, and Fey Slayer",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Sabotage\nHero gains Sabotage ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Throw Net\nHero gains Throw Net ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Weapon Kit\nHero gains Weapon Kit Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Invention IV\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Fire Bomb\nHero gains the Fire Bomb ability",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Reassemble\nHero gains Reassemble Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "+20% Protection",
+                "Points": "3"
+    },
+            {
+                "Level": "7",
+                "Skill": "Summon Siege Engine\nHero gains Summon Siege Engine Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Invention V\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "9",
+                "Skill": "Choking Fumes\nHero gains Choking Fumes Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Tree Crusher\nHero gains the Tree Crusher ability",
+                "Points": "10"
+    },
+            {
+                "Level": "11",
+                "Skill": "Invention VI\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "11",
+                "Skill": "Dampening Field\nHero gains Dampening Field Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Bomb Squad\nArmy Stack gains Explosive Death",
+                "Points": "10"
+    },
+            {
+                "Level": "13",
+                "Skill": "Invention VII\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "13",
+                "Skill": "Destabilized Mana Core\nHero gains Destabilized Mana Core Combat Spell",
+                "Points": "5"
+
+}
+    ]
+        }, {
+        "id": "necromancer",
+        "levelups": [
+            {
+                "Level": "1",
+                "Skill": "Necromancy I\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "Cave Crawling\nHero gains the Cave Crawling ability",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "Dispel Magic\nHero gains the Dispel Magic ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Cause Fear\nHero gains the Cause Fear ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Inflict Despair\nHero gains Inflict Despair ability",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Desecration\nHero gains Desecration Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Corpus Furia\nHero gains Corpus Furia Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Death Ray\nHero gains Death Ray Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Stiffen Limbs\nHero gains Stiffen Limbs Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Protection from Light\nArmy Stack gains +20% Protection and 20% Protection",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Necromancy II\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Life Steal\nHero gains Life Steal ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Throw Curse\nHero gains Throw Curse ability",
+                "Points": "4"
+    },
+            {
+                "Level": "3",
+                "Skill": "Lesser Reanimate Undead\nHero gains Lesser Reanimate Undead ability",
+                "Points": "7"
+    },
+            {
+                "Level": "5",
+                "Skill": "Necromancy III\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "5",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "5",
+                "Skill": "Devour Corpse\nHero gains Devour Corpse ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Control Undead\nHero gains Control Undead ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Pass Wall\nHero gains Pass Wall ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Bane of the Good\nArmy Stack gains Unholy Champion",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Exploit Despair\nHero gains Exploit Despair ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Dark Gift\nHero gains Dark Gift Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Syphon Life\nHero gains Syphon Life Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Necromancy IV\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Energy Drain\nHero gains the Energy Drain ability",
+                "Points": "4"
+    },
+            {
+                "Level": "7",
+                "Skill": "Inflict Enfeebling Fever\nHero gains the Inflict Enfeebling Fever ability",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Raise Dead\nHero gains Raise Dead Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Greater Reanimate Undead\nHero gains Greater Reanimate Undead ability"
+    },
+            {
+                "Level": "9",
+                "Skill": "Necromancy V\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "9",
+                "Skill": "Shadow Step\nHero gains the Shadow Step ability",
+                "Points": "4"
+    },
+            {
+                "Level": "9",
+                "Skill": "Inflict Curse\nHero gains the Inflict Curse ability",
+                "Points": "4"
+    },
+            {
+                "Level": "9",
+                "Skill": "Mark of Death\nHero gains Mark of Death Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Inflict Ghoul Curse\nHero gains the Inflict Ghoul Curse ability",
+                "Points": "4"
+    },
+            {
+                "Level": "11",
+                "Skill": "Necromancy VI\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "11",
+                "Skill": "Scourge of Undead\nHero gains Scourge of Undead Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Invoke Death\nHero gains the Invoke Death ability",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Necromantic Aura\nHero gains the Necromantic Aura ability",
+                "Points": "8"
+    },
+            {
+                "Level": "11",
+                "Skill": "Undying\nHero gains the Undying ability",
+                "Points": "10"
+    },
+            {
+                "Level": "13",
+                "Skill": "Necromancy VII\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "13",
+                "Skill": "Undying Army\nHero gains Undying Army Combat Spell",
+                "Points": "5"
+    }
+]
+
+        }, {
+        "id": "rogue",
+        "levelups": [
+            {
+                "Level": "1",
+                "Skill": "Cloak and Dagger I\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Night Vision\nHero gains the Night Vision ability",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "Break Control\nHero gains the Break Control ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Armor Piercing\nHero gains the Armor Piercing ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Sabotage\nHero gains the Sabotage ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Undead Slayer\nHero gains the Undead Slayer ability",
+                "Points": "3"
+    },
+            {
+                "Level": "1",
+                "Skill": "Inflict Crippling Wounds\nHero gains the Inflict Crippling Wounds ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Panic Attack\nHero gains Panic Attack Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Quick Dash\nHero gains Quick Dash Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Rain of Poison Blades\nHero gains Rain of Poison Blades Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Blind\nHero gains Blind Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Infiltration Squad\nArmy Stack gains Wall Climbing",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Dirty Half Dozen\nArmy Stack gains Devout Slayer",
+                "Points": "4"
+    },
+            {
+                "Level": "3",
+                "Skill": "Cloak and Dagger II\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Cause Fear\nHero gains the Cause Fear ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Projectile Resistance\nHero gains Projectile Resistance ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Sprint\nHero gains Sprint ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "First Strike\nHero gains First Strike ability",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "Counterpoison\nArmy Stack gains +40% Protection",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Stronger than Steel\nArmy Stack gains Armor Piercing",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Cloak and Dagger III\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "5",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "5",
+                "Skill": "Free Movement\nHero gains Free Movement ability",
+                "Points": "2"
+    },
+            {
+                "Level": "5",
+                "Skill": "Coup de Grace\nHero gains Coup de Grace ability",
+                "Points": "2"
+    },
+            {
+                "Level": "5",
+                "Skill": "Taunt\nHero gains Taunt ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Poison Knowledge\nArmy Stack gains +1 strength",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Assassin's Strike\nHero gains Assassin's Strike ability",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Charm\nHero gains the Charm ability",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Cunning Escape\nHero gains Cunning Escape Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Moving Target\nHero gains Moving Target Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Stealth Commander\nArmy Stack gains Forest Concealment",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Cloak and Dagger IV\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Cloak and Dagger V\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "7",
+                "Skill": "Pass Wall\nHero gains Pass Wall ability",
+                "Points": "3"
+    },
+            {
+                "Level": "7",
+                "Skill": "Weapon Finesse\nArmy Stack gains +1 Melee strength",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Sadism\nHero gains Sadism Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Shadow Form\nHero gains Shadow Form Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Inflict Severely Poisoned\nHero gains Inflict Severely Poisoned ability",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Smoke Screen\nHero gains Smoke Screen Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Urban Stealth Commander\nArmy Stack gains Urban Concealment",
+                "Points": "6"
+    },
+            {
+                "Level": "11",
+                "Skill": "Cloak and Dagger VI\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "11",
+                "Skill": "Mass Battlefield Panic\nHero gains Mass Battlefield Panic Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Assassins of Kings\nArmy Stack gains Hero Slayer",
+                "Points": "6"
+    },
+            {
+                "Level": "11",
+                "Skill": "Total Awareness\nHero gains the Total Awareness ability",
+                "Points": "10"
+    },
+            {
+                "Level": "13",
+                "Skill": "Cloak and Dagger VII\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    }
+]
+
+
+        }, {
+        "id": "sorceror",
+        "levelups": [
+            {
+                "Level": "1",
+                "Skill": "Sorcery I\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "Break Control\nHero gains the - Break Control ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Steal Enchantment\nHero gains the - Steal Enchantment ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Dispel Magic\nHero gains the - Dispel Magic ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Charged Army\nArmy Stack gains +1 strength",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Magic Affinity\nArmy Stack gains +1 Resistance",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Harmonizing Energy\nHero gains Harmonizing Energy Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Sphere of Protection\nHero gains Sphere of Protection Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Star Blades\nHero gains Star Blades Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Magic Fist\nHero gains Magic Fist Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Sorcery II\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "3",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "3",
+                "Skill": "Vision Range Upgrade\nHero gains +1 Vision Range",
+                "Points": "1"
+    },
+            {
+                "Level": "3",
+                "Skill": "Stunning Touch\nHero gains the - Stunning Touch ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Dragon Slayer Party\nArmy Stack gains Dragon Slayer",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "Spirit Shield\nArmy Stack gains +40% Protection",
+                "Points": "4"
+    }
+,
+            {
+                "Level": "5",
+                "Skill": "Sorcery III\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "5",
+                "Skill": "Mend Magical Being\nHero gains - Mend Magical Being ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "True Sight\nHero gains True Sight ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Strong Will\nHero gains Strong Will ability",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Floating\nHero gains Floating ability",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Arcane Binding\nHero gains Arcane Binding Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Chain Lightning\nHero gains Chain Lightning Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Sorcery IV\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Phase\nHero gains - Phase ability",
+                "Points": "4"
+    },
+            {
+                "Level": "7",
+                "Skill": "Inflict Stun\nHero gains Inflict Stun ability",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Cosmic Spray\nHero gains Cosmic Spray Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Static Sphere\nHero gains Static Sphere Combat Spell",
+                "Points": "5"
+    },
+
+            {
+                "Level": "9",
+                "Skill": "Sorcery V\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "9",
+                "Skill": "Inflict Spirit Breaking\nHero gains the Inflict Spirit Breaking ability",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Projectile Reflection\nHero gains the Projectile Reflection ability",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Double Gravity\nHero gains Double Gravity Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Mass Stasis\nHero gains Mass Stasis Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Sorcery VI\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "11",
+                "Skill": "Static Electricity\nHero gains Static Electricity Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Master illusionist\nArmy Stack gains Invisibility",
+                "Points": "15"
+    },
+            {
+                "Level": "13",
+                "Skill": "Chaos Rift\nHero gains Chaos Rift Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "13",
+                "Skill": "Sorcery VII\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "13",
+                "Skill": "Thunderstorm\nHero gains the Thunderstorm ability",
+                "Points": "10"
+    }
+]
+
+        }, {
+        "id": "theocrat",
+        "levelups": [
+            {
+                "Level": "1",
+                "Skill": "Divine Channeling I\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Cure Disease\nHero gains the - Cure Disease ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Undead Slayer\nHero gains the Undead Slayer ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Bestow Iron Heart\nHero gains the - Bestow Iron Heart ability",
+                "Points": "3"
+    },
+            {
+                "Level": "1",
+                "Skill": "Healing Aura\nArmy Stack heals an additional 6 Hitpoints per turn",
+                "Points": "3"
+    },
+            {
+                "Level": "3",
+                "Skill": "Chaplain\nArmy Stack gains +200 Morale",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Aura of Resistance\nArmy Stack gains +1 Resistance",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Divine Protection\nHero gains Divine Protection Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Instant Wrath\nHero gains Instant Wrath Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Slayer's Doubt\nHero gains Slayer's Doubt Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Smite\nHero gains Smite Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Divine Channeling II\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Touch of Faith\nHero gains the - Touch of Faith ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Turn Undead\nHero gains the - Turn Undead ability",
+                "Points": "2"
+    },
+            {
+                "Level": "5",
+                "Skill": "Strong Will\nHero gains Strong Will ability",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Sacred Arms\nArmy Stack gains +1 strength",
+                "Points": "4"
+    },
+
+            {
+                "Level": "5",
+                "Skill": "Divine Channeling III\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "5",
+                "Skill": "Break Control\nHero gains - Break Control ability",
+                "Points": "2"
+    },
+            {
+                "Level": "5",
+                "Skill": "Monster Slayer\nHero gains Monster Slayer ability",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Mighty Meek\nHero gains Mighty Meek Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Purifying Burst\nHero gains Purifying Burst Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Divine Channeling IV\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Absorb Pain\nHero gains - Absorb Pain ability",
+                "Points": "2"
+    },
+            {
+                "Level": "7",
+                "Skill": "Healing\nHero gains the - Healing ability",
+                "Points": "2"
+    },
+            {
+                "Level": "7",
+                "Skill": "Convert\nHero gains - Convert ability",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Blessing of Health\nHero gains Blessing of Health Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Rebirth\nHero gains Rebirth Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Holy Champions\nArmy Stack gains Holy Champion",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Divine Channeling V\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Vow of Poverty\nArmy Stack requires -50% Gold upkeep",
+                "Points": "6"
+    },
+            {
+                "Level": "11",
+                "Skill": "Divine Channeling VI\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    },
+            {
+                "Level": "11",
+                "Skill": "Holy War\nHero gains Holy War Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "11",
+                "Skill": "Divine Justicars\nArmy Stack gains Resurgence",
+                "Points": "10"
+    },
+            {
+                "Level": "13",
+                "Skill": "Divine Channeling VII\nHero gains +10 Casting Points Casting Points",
+                "Points": "9"
+    }
+]
+        }, {
+        "id": "warlord",
+        "levelups": [
+            {
+                "Level": "1",
+                "Skill": "Warfare I\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "1",
+                "Skill": "Armor Piercing\nHero gains the Armor Piercing ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Overwhelm\nHero gains the Overwhelm ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Wall Climbing\nHero gains the Wall Climbing ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Break Control\nHero gains the - Break Control ability",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Blood Honor\nArmy Stack gains Warrior's Honor. When a unit with Warrior's Honor dies in combat, all units owned by the same player gain +100 Morale until end of combat",
+                "Points": "2"
+    },
+            {
+                "Level": "1",
+                "Skill": "Defense Command\nArmy Stack +1 Defense",
+                "Points": "4"
+    },
+            {
+                "Level": "1",
+                "Skill": "Last Stand\nHero gains Last Stand Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Lion's Courage\nHero gains Lion's Courage Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Berserk\nHero gains Berserk Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Shout of Intimidation\nHero gains Shout of Intimidation Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "1",
+                "Skill": "Field Medic\nArmy Stack regenerate an additional 6 Hitpoints each turn. Machine and Undead are not affected.",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "Warfare II\nHero gains +10 Casting Points Casting Points",
+                "Points": "5"
+    },
+            {
+                "Level": "3",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "3",
+                "Skill": "Giant Slayer\nHero gains the Giant Slayer ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Monster Slayer\nHero gains the Monster Slayer ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "War Cry\nHero gains - War Cry ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Martial Arts\nHero gains Martial Arts ability",
+                "Points": "2"
+    },
+            {
+                "Level": "3",
+                "Skill": "Ranged Command\nArmy Stack gains +1 Ranged strength",
+                "Points": "4"
+    },
+            {
+                "Level": "3",
+                "Skill": "Melee Command\nArmy Stack gains +1 Melee strength",
+                "Points": "4"
+    },
+            {
+                "Level": "5",
+                "Skill": "Warfare III\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "5",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "5",
+                "Skill": "+20% Protection",
+                "Points": "1"
+    },
+            {
+                "Level": "5",
+                "Skill": "Dragon Slayer\nHero gains the Dragon Slayer ability",
+                "Points": "2"
+    },
+            {
+                "Level": "5",
+                "Skill": "First Strike\nHero gains - First Strike ability",
+                "Points": "3"
+    },
+            {
+                "Level": "5",
+                "Skill": "Phoenix Warrior\nHero gains Phoenix Warrior Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "5",
+                "Skill": "Charge Command\nArmy Stack gains Charge",
+                "Points": "5"
+    },
+
+            {
+                "Level": "7",
+                "Skill": "Warfare IV\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "7",
+                "Skill": "Fleet Command\nArmy Stack gains Mariner",
+                "Points": "3"
+    },
+            {
+                "Level": "7",
+                "Skill": "Inflict Bleeding Wounds\nHero gains Inflict Bleeding Wounds ability",
+                "Points": "3"
+    },
+            {
+                "Level": "7",
+                "Skill": "Killing Spree\nHero gains Killing Spree Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Steadfast Ward\nHero gains Steadfast Ward Combat Spell",
+                "Points": "5"
+    },
+            {
+                "Level": "7",
+                "Skill": "Blood Brothers\nArmy Stack gains Strong Will",
+                "Points": "5"
+    },
+            {
+                "Level": "9",
+                "Skill": "Warfare V\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "9",
+                "Skill": "Tireless\nHero gains Tireless ability",
+                "Points": "6"
+    },
+
+            {
+                "Level": "9",
+                "Skill": "Warfare V\nHero gains +10 Casting Points Casting Points",
+                "Points": "7"
+    },
+            {
+                "Level": "9",
+                "Skill": "Tireless\nHero gains Tireless ability",
+                "Points": "6"
+    }
+]
+
+    ]
+
+
+
+
+
+
+
+
+
+    ]

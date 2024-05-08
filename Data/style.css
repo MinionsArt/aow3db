@@ -28,8 +28,8 @@ html {
 h2 {
     font-family: 'Decorative', serif;
     font-size: 28px;
-    font-weight: 100;
-    margin: 0px 0 0 0;
+    font-weight: 80;
+    margin: 4px 0 0 0;
 
 }
 
@@ -128,8 +128,10 @@ a {
     border-style: solid;
     border-image: url(/aow3db/Interface/9slicePanel.png);
     border-image-slice: 10 10 10 10;
-    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 15px rgb(0 0 0);
+    background-color: rgb(21 25 33);
     border-image-repeat: stretch;
+    align-items: center;
 }
 
 
@@ -311,35 +313,37 @@ a {
 }
 
 .collapsible {
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
-    border: 3px solid white;
-    border-color: rgba(255, 255, 200, 0.8);
 
+    color: white;
+    border: solid;
+    background-color: transparent;
+    border-image: url(/aow3db/Interface/panel9slice.png);
+    border-image-slice: 80 130 fill;
+    border-image-width: 22px;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
+    /* border: none; */
     text-align: left;
-    outline: none;
+    /* outline: none; */
     font-size: 15px;
 }
 
 .active,
 .collapsible:hover {
-    background-color: rgba(0, 0, 0, 1);
+    color: cyan;
 }
 
 .collapsible:after {
-    content: '\002B';
-    color: white;
+    content: '▼';
+    color: beige;
     font-weight: bold;
     float: right;
     margin-left: 5px;
 }
 
 .active:after {
-    content: "\2212";
+    content: "▲";
 }
 
 .content {
@@ -347,7 +351,7 @@ a {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: black;
+    background-color: transparent;
 }
 
 p {
@@ -393,12 +397,12 @@ p {
     border: none;
     text-align: left;
     outline: 0;
+    min-height: 35px;
     border-width: 10px;
-    border-style: solid;
-    border-image: url(/aow3db/Interface/9slicePanel.png);
-    border-image-slice: 10 10 10 10;
     background-color: black;
-    border-image-repeat: stretch;
+    border-image: url(/aow3db/Interface/panel9slice.png);
+    border-image-slice: 80 130 fill;
+    border-image-width: 22px;
 }
 
 .active,
@@ -430,11 +434,20 @@ p {
     float: left;
     max-height: 80px;
     max-width: 80px;
-    object-fit: none;
+
     background-image: url(../Icons/UI/unit_icon_bg.png);
     background-size: 80px;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.wm_image {
+    border-image: url(/aow3db/Interface/panel9slice.png);
+    border-image-slice: 5 5 fill;
+    border-image-width: -10px;
+    float: right;
+    padding: 15px;
     position: relative;
 }
 
@@ -510,11 +523,37 @@ p {
     margin-bottom: -10px;
 }
 
+hr {
+
+    border: 0;
+    margin: 10px;
+    margin-top: 5px;
+    position: relative;
+    top: -3px;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #b6af92, rgba(0, 0, 0, 0));
+}
+
+.list_background {
+    float: right;
+    border-image: url(/aow3db/Interface/panel9slice.png);
+
+    border-image-slice: 50 50 fill;
+
+    border-image-width: 22px;
+    width: 40%;
+    margin: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
 .description_card {
     background-image: url(/aow3db/Interface/outerMiddleCenter.png);
     background-size: cover;
     color: white;
     width: 940px;
+    position: relative;
     margin-left: auto;
     margin-bottom: 50px;
     margin-right: auto;
@@ -703,6 +742,12 @@ p {
 
 }
 
+.abilitySpan {
+
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .unit_stat_icon:hover .tooltiptext {
     visibility: visible;
@@ -713,7 +758,7 @@ p {
     color: #fff;
 
 
-    border: 1px solid #8080808a;
+    border: 2px solid #8080808a;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     position: absolute;
@@ -739,7 +784,7 @@ p {
 }
 
 .ability_damage {
-    float: right;
+    text-align: right;
     font-size: 16px;
     align-content: right;
     font-family: 'Number';
@@ -753,6 +798,22 @@ p {
 .unit_name {
     font-family: 'Header';
 
+    font-size: 22px;
+    position: relative;
+    top: -13px;
+    text-align: center;
+    height: 30px;
+    text-shadow: 1px 1px 10px black;
+
+
+}
+
+.subheader_name {
+    font-family: 'Header';
+
+    background-image: url(/aow3db/Interface/CenterBar1.png);
+    background-repeat: no-repeat;
+    background-position: center;
     font-size: 22px;
     position: relative;
     top: -13px;

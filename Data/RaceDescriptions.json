@@ -191,14 +191,14 @@
 
          "hero_traits": [
              {
-                 "slug": "+5 <hp></hp> Hit Points",
-                 "slug": "+1 <reistance></resistance> Resistance",
+                 "name": "+5 <hp></hp> Hit Points",
+                 "name": "+1 <reistance></resistance> Resistance",
                  "slug": "vision_range_upgrade"
          }
      ],
 
-         "buildings_class": "arch_druids_dolmen,henge,megalith",
-         "hero_levels": ""
+         "buildings_class": "arch_druids_dolmen,henge,megalith"
+
 
  }, {
          "id": "draconian",

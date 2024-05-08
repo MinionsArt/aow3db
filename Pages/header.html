@@ -29,17 +29,32 @@
 
     <template id="race_description_template">
         <div class="description_card">
-            <p style="background-color:black; font-size: 26px" class="unit_name" id="race_name">Test(Test)</p>
+
+            <img src="/aow3db/Interface/CenterBack.png" style="  
+    
+    position: absolute;
+  
+    width: 1050px;
+    top: -44px;
+    left: -55px;">
+            <p class="subheader_name" id="race_name">Test(Test)</p>
+
+
             <img class="unit_image" id="race_icon" src="/aow3db/Icons/Passives/archon.png" style="position: relative; padding: 4px" width="100">
-            <img id="race_wm" src="/aow3db/PreviewGifs/StrategicMap/archon.png" style="border-color:beige; border: 2px solid; float:right;position: relative; padding: 4px" width="150">
+            <img id="race_wm" class="wm_image" src="/aow3db/PreviewGifs/StrategicMap/archon.png" width="150">
 
             <p id="race_descr">Test Description.</p>
-            <hr>
+
             <div style="clear: both"></div>
-            <p style="background-color:black; font-size: 26px" class="unit_name">Terrain and Traits</p>
+
+
+            <hr>
+            <p class="subheader_name" id="traitsName">Terrain and Traits</p>
+
+
             <div style="display: flex;justify-content: space-between;">
-                <div style="float:left; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px">
-                    <h2 style="text-align: center">Terrain</h2>
+                <div class="list_background">
+                    <h2 style="text-align: center" id="traits1">Terrain</h2>
                     <hr>
 
                     <div id="race_terrain">
@@ -49,15 +64,17 @@
                     </div>
                 </div>
 
-                <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px">
-                    <h2 style="text-align: center">Traits</h2>
+                <div class="list_background" id="secondList">
+                    <h2 style="text-align: center" id="traits2">Traits</h2>
                     <hr>
                     <div id="race_traits">
 
                     </div>
                 </div>
             </div>
-            <p style="background-color:black; font-size: 26px" class="unit_name">City Buildings</p>
+
+            <hr>
+            <p class="subheader_name">City Buildings</p>
             <a href="https://imgur.com/qd2u9ui">Full Dwelling Tech Tree Image</a><br><br>
             <button class="collapsible" id="city_t1_name">First Tier </button>
             <div class="content" id="city_t1">
@@ -74,6 +91,7 @@
             </div>
 
             <div id="raceGovernance"></div>
+            <div id="levelUpClasses"></div>
         </div>
 
 
@@ -82,7 +100,8 @@
 
     <template id="race_governance_template">
         <div>
-            <p style="background-color:black; font-size: 26px" class="unit_name" id="race_governance_name">Race Governance</p>
+            <hr>
+            <p class="subheader_name" id="race_governance_name">Race Governance</p>
             <button class="collapsible" id="race_governance_button"></button>
             <div class="content">
                 <p>
@@ -161,6 +180,36 @@
 
             </div>
         </div>
+    </template>
+
+    <template id="class_levelup_template">
+        <div>
+            <hr>
+            <p class="subheader_name">Levelups</p>
+            <button class="collapsible">Levelups</button>
+            <div class="content">
+
+                <button class="collapsible">Levelup1</button>
+                <div class="content">
+                </div>
+                <button class="collapsible">Levelup3</button>
+                <div class="content">
+                </div>
+                <button class="collapsible">Levelup5</button>
+                <div class="content">
+                </div>
+                <button class="collapsible">Levelup7</button>
+                <div class="content">
+                </div>
+                <button class="collapsible">Levelup9</button>
+                <div class="content">
+                </div>
+                <button class="collapsible">Levelup11 -13</button>
+                <div class="content">
+                </div>
+            </div>
+        </div>
+
     </template>
 
     <template id="building_template">
