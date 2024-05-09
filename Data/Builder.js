@@ -1173,7 +1173,16 @@ function showAbility(a) {
 
 
 
+function buildingNameLookup(string) {
+    for (let index = 0; index < jsonBuildings.length; index++) {
+        if (jsonBuildings[index].slug == string) {
+            return jsonBuildings[index].name;
+        }
 
+    }
+    console.log("building not found : " + string);
+    return "";
+}
 
 function showBuilding(a) {
     var found = false;
@@ -1184,6 +1193,10 @@ function showBuilding(a) {
             buildingName = document.getElementById("buildingname");
             buildingName.innerHTML = jsonBuildings[j].name;
             buildingName.setAttribute("id", "buildingName" + a);
+
+            buildingCost = document.getElementById("building_cost");
+            buildingCost.innerHTML = "<span style=\"color:cadetblue; font-weight: bold\">Building Cost: </span> " + jsonBuildings[j].cost;
+            buildingCost.setAttribute("id", "building_cost" + a);
             description = document.getElementById("buildingdescription");
             description.innerHTML = jsonBuildings[j].description;
             description.setAttribute("id", "buildingdescription" + a);
@@ -1202,7 +1215,7 @@ function showBuilding(a) {
                 description.innerHTML += "<br><br>Requires Building: <br>";
                 for (let index = 0; index < jsonBuildings[j].requires.length; index++) {
 
-                    description.innerHTML += "<bullet>" + jsonBuildings[j].requires[index].slug;
+                    description.innerHTML += "<bullet>" + buildingNameLookup(jsonBuildings[j].requires[index].slug);
                 }
             }
 
@@ -1211,7 +1224,7 @@ function showBuilding(a) {
                 description.innerHTML += "<br><br>Unlocks Building: <br>";
                 for (let index = 0; index < jsonBuildings[j].leadsto.length; index++) {
 
-                    description.innerHTML += "<bullet>" + jsonBuildings[j].leadsto[index].slug;
+                    description.innerHTML += "<bullet>" + buildingNameLookup(jsonBuildings[j].leadsto[index].slug);
                 }
             }
             // type = document.getElementById("buildingtype");

@@ -365,7 +365,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,firestorm_pillar,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -415,7 +415,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,shattering_hammer,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -456,7 +456,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,glacial_totem,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -503,7 +503,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,filth_pit,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -541,7 +541,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,rabbit_burrows,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -579,7 +579,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,prismatic_spire,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -609,7 +609,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,bell_tower,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -648,7 +648,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,blood_pavilion,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          },
@@ -686,7 +686,7 @@
 
          "buildings_t1": "barracks,store_house;harvesters_guild,wooden_wall,builders_hall,laboratory,shrine,first_class_building,merchandise,build_housing",
          "buildings_t2": "shooting_grounds,war_hall,arena,public_baths;embalmers_guild,stone_wall,siege_workshop,observatory,temple,generate_mana,second_class_building,harbor",
-         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
+         "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,enchanted_thread,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
          }]
