@@ -11,17 +11,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         var unitList = ["polar_bear", "felhorse", "goblin_skewer", "vampire_spider_baby", "dread_monkey", "tiger", "bone_wyvern", "carrion_bird", "dire_panther", "mammoth", "nightmare", "dire_bear", "troll", "vampire_spider_queen", "yeti", "kraken"];
+
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                showUnitsFromListTest(unitList);
+                CheckData();
+
             });
 
-
-
-
+            //  handleCollapsible();
         });
+
+        async function HandlePage() {
+            showUnitsFromListTest(unitList);
+        }
 
     </script>
 

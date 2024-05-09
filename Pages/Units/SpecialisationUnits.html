@@ -22,28 +22,34 @@
         var unitListGrey = ["chthonic_guardian"];
         var unitListShadow = ["fallen_angel"];
         var unitListSecret = ["dire_penguin", "kobold", "mermaid", "siren", "feathered_serpent", "blight_elemental", "spirit_elemental", "bone_dragon", "obsidian_dragon", "phoenix"];
+
         $("#body").ready(function() {
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                showUnitsFromListTest(unitListAir, "Air Adept", "first");
-                showUnitsFromListTest(unitListAir2, "Air Master", "");
-                showUnitsFromListTest(unitListEarth, "Earth Master", "");
-                showUnitsFromListTest(unitListFire, "Fire Adept", "");
-                showUnitsFromListTest(unitListFire2, "Fire Master", "");
-                showUnitsFromListTest(unitListWater, "Water Adept", "");
-                showUnitsFromListTest(unitListWater2, "Water Master", "");
-                showUnitsFromListTest(unitListWild, "Wild Adept", "");
-                showUnitsFromListTest(unitListKeeper, "Keeper of the Peace Master", "");
-                showUnitsFromListTest(unitListGrey, "Grey Guard Master", "");
-                showUnitsFromListTest(unitListShadow, "Shadowborn Master", "");
-                showUnitsFromListTest(unitListSecret, "Secret Summons", "last");
+                CheckData();
 
             });
 
-
-
+            //  handleCollapsible();
         });
+
+        async function HandlePage() {
+            showUnitsFromListTest(unitListAir, "Air Adept", "first");
+            showUnitsFromListTest(unitListAir2, "Air Master", "");
+            showUnitsFromListTest(unitListEarth, "Earth Master", "");
+            showUnitsFromListTest(unitListFire, "Fire Adept", "");
+            showUnitsFromListTest(unitListFire2, "Fire Master", "");
+            showUnitsFromListTest(unitListWater, "Water Adept", "");
+            showUnitsFromListTest(unitListWater2, "Water Master", "");
+            showUnitsFromListTest(unitListWild, "Wild Adept", "");
+            showUnitsFromListTest(unitListKeeper, "Keeper of the Peace Master", "");
+            showUnitsFromListTest(unitListGrey, "Grey Guard Master", "");
+            showUnitsFromListTest(unitListShadow, "Shadowborn Master", "");
+            await showUnitsFromListTest(unitListSecret, "Secret Summons", "last");
+            handleCollapsible();
+
+        }
 
     </script>
 

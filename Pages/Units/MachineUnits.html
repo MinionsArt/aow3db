@@ -16,13 +16,16 @@
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                showUnitsFromListTest(unitList);
+                CheckData();
+
             });
 
-
-
-
+            //  handleCollapsible();
         });
+
+        async function HandlePage() {
+            showUnitsFromListTest(unitList);
+        }
 
     </script>
 

@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
     <meta charset="UTF-8">
     <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
-    <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -15,13 +14,16 @@
 
 
             $("#header").load("/aow3db/Pages/header.html", function() {
-                showUnitsFromListTest(unitList);
+                CheckData();
+
             });
 
-
-
-
+            //  handleCollapsible();
         });
+
+        async function HandlePage() {
+            showUnitsFromListTest(unitList);
+        }
 
     </script>
 

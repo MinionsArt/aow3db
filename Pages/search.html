@@ -13,13 +13,18 @@
     <script>
         $("#body").ready(function() {
 
-            $("#header").load("/aow3db/Pages/header.html");
-            setTimeout(() => {
-                rememberSearch();
-            }, 1000);
 
+            $("#header").load("/aow3db/Pages/header.html", function() {
+                CheckData();
+
+            });
+
+            //  handleCollapsible();
         });
 
+        async function HandlePage() {
+            rememberSearch();
+        }
 
 
         async function rememberSearch() {
@@ -193,21 +198,21 @@
         output = document.getElementById("searchOutput");
         result = document.getElementById("searchResult");
 
-        for (i = 0; i < jsonUnits.units.length; i++) {
-            textvalue = jsonUnits.units[i].name;
+        for (i = 0; i < jsonUnits.length; i++) {
+            textvalue = jsonUnits[i].name;
             if (textvalue.toUpperCase().indexOf(fields[0]) > -1) {
                 if (list.length >= 1) {
-                    if (!isInArray(list, jsonUnits.units[i].name)) {
-                        list.push(jsonUnits.units[i].name);
+                    if (!isInArray(list, jsonUnits[i].name)) {
+                        list.push(jsonUnits[i].name);
                     }
                 } else {
-                    list.push(jsonUnits.units[i].name);
+                    list.push(jsonUnits[i].name);
                 }
             }
-            searchArray(fields[0], jsonUnits.units[i].abilities, list, i);
-            searchArray(fields[0], jsonUnits.units[i].passives, list, i);
-            searchArray(fields[0], jsonUnits.units[i].unit_types, list, i);
-            searchArray(fields[0], jsonUnits.units[i].resistances, list, i);
+            searchArray(fields[0], jsonUnits[i].abilities, list, i);
+            searchArray(fields[0], jsonUnits[i].passives, list, i);
+            searchArray(fields[0], jsonUnits[i].unit_types, list, i);
+            searchArray(fields[0], jsonUnits[i].resistances, list, i);
         }
 
         if (fields.length > 1) {
@@ -237,11 +242,11 @@
                 textvalue = arraytosearch[j].slug;
                 if (textvalue.toUpperCase().indexOf(keyword) > -1) {
                     if (listToPushTo.length >= 1) {
-                        if (!isInArray(listToPushTo, jsonUnits.units[index].name)) {
-                            listToPushTo.push(jsonUnits.units[index].name);
+                        if (!isInArray(listToPushTo, jsonUnits[index].name)) {
+                            listToPushTo.push(jsonUnits[index].name);
                         }
                     } else {
-                        listToPushTo.push(jsonUnits.units[index].name);
+                        listToPushTo.push(jsonUnits[index].name);
                     }
 
 
@@ -252,11 +257,11 @@
                 textvalue = arraytosearch.unique;
                 if (textvalue.toUpperCase().indexOf(keyword) > -1) {
                     if (listToPushTo.length >= 1) {
-                        if (!isInArray(listToPushTo, jsonUnits.units[index].name)) {
-                            listToPushTo.push(jsonUnits.units[index].name);
+                        if (!isInArray(listToPushTo, jsonUnits[index].name)) {
+                            listToPushTo.push(jsonUnits[index].name);
                         }
                     } else {
-                        listToPushTo.push(jsonUnits.units[index].name);
+                        listToPushTo.push(jsonUnits[index].name);
                     }
                 }
 
@@ -269,13 +274,13 @@
         for (j in arraytosearch) {
             if (arraytosearch[j].slug != null) {
                 textvalue = arraytosearch[j].slug;
-                if (textvalue.toUpperCase().indexOf(keyword) > -1 && isInArray(workingarray, jsonUnits.units[index].name)) {
+                if (textvalue.toUpperCase().indexOf(keyword) > -1 && isInArray(workingarray, jsonUnits[index].name)) {
                     if (listToPush.length >= 1) {
-                        if (!isInArray(listToPush, jsonUnits.units[index].name)) {
-                            listToPush.push(jsonUnits.units[index].name);
+                        if (!isInArray(listToPush, jsonUnits[index].name)) {
+                            listToPush.push(jsonUnits[index].name);
                         }
                     } else {
-                        listToPush.push(jsonUnits.units[index].name);
+                        listToPush.push(jsonUnits[index].name);
                     }
 
 
@@ -284,13 +289,13 @@
             }
             if (arraytosearch.unique != null) {
                 textvalue = arraytosearch.unique;
-                if (textvalue.toUpperCase().indexOf(keyword) > -1 && isInArray(workingarray, jsonUnits.units[index].name)) {
+                if (textvalue.toUpperCase().indexOf(keyword) > -1 && isInArray(workingarray, jsonUnits[index].name)) {
                     if (listToPush.length >= 1) {
-                        if (!isInArray(listToPush, jsonUnits.units[index].name)) {
-                            listToPush.push(jsonUnits.units[index].name);
+                        if (!isInArray(listToPush, jsonUnits[index].name)) {
+                            listToPush.push(jsonUnits[index].name);
                         }
                     } else {
-                        listToPush.push(jsonUnits.units[index].name);
+                        listToPush.push(jsonUnits[index].name);
                     }
                 }
 
@@ -302,22 +307,22 @@
     function searchUnitsMultiple(workinglist, fieldToSearch) {
 
         var newlist = new Array();
-        for (i = 0; i < jsonUnits.units.length; i++) {
-            textvalue = jsonUnits.units[i].name;
-            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits.units[i].name)) {
+        for (i = 0; i < jsonUnits.length; i++) {
+            textvalue = jsonUnits[i].name;
+            if (textvalue.toUpperCase().indexOf(fieldToSearch) > -1 && isInArray(workinglist, jsonUnits[i].name)) {
                 if (newlist.length >= 1) {
-                    if (!isInArray(newlist, jsonUnits.units[i].name)) {
-                        newlist.push(jsonUnits.units[i].name);
+                    if (!isInArray(newlist, jsonUnits[i].name)) {
+                        newlist.push(jsonUnits[i].name);
                     }
                 } else {
-                    newlist.push(jsonUnits.units[i].name);
+                    newlist.push(jsonUnits[i].name);
                 }
 
             }
-            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].abilities, newlist, i);
-            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].passives, newlist, i);
-            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].unit_types, newlist, i);
-            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits.units[i].resistances, newlist, i);
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits[i].abilities, newlist, i);
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits[i].passives, newlist, i);
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits[i].unit_types, newlist, i);
+            searchArrayMultiple(fieldToSearch, workinglist, jsonUnits[i].resistances, newlist, i);
         }
         return newlist;
     }

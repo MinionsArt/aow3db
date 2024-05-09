@@ -191,8 +191,10 @@
 
          "hero_traits": [
              {
-                 "name": "+5 <hp></hp> Hit Points",
-                 "name": "+1 <reistance></resistance> Resistance",
+                 "name": "+5 <hp></hp> Hit Points"
+             }, {
+                 "name": "+1 <resistance></resistance> Resistance"
+             }, {
                  "slug": "vision_range_upgrade"
          }
      ],
@@ -201,6 +203,133 @@
 
 
  }, {
+         "id": "dreadnought",
+         "name": "Dreadnought",
+         "description": "Dreadnoughts work in a world of pulleys, boilers, engines and gears. They are inventors and engineers. The Commonwealth esteems their machines because they can automate everyday chores. Their tanks and battleships allow the common man to safely slay monstrous creatures. However, the power of steam doesn’t come without its price, so Dreadnought lords have pioneered new ways of stripping resources from the earth. I once heard one proclaim that when they ran out of fertile lands, they’d invent an alternative fuel. From what I’ve observed, he is probably right.",
+
+         "hero_traits": [
+             {
+
+                 "name": "+1 <defense></defense> Defense"
+             }, {
+                 "slug": "armored"
+         }
+     ],
+
+         "buildings_class": "dreadnoughts_foundry,blast_furnace,industrial_plant"
+
+
+ }, {
+         "id": "necromancer",
+         "name": "Necromancer",
+         "description": "Life and Death, separate as night and day, Only a Necromancer could realize the true power found in the twilight between the two. Only a Necromancer could push a man to the brink of death, and hold him there forever, a ghoulish shadow of his former self.<br>Only a Necromancer could pierce the veil and drag out the shadow creatures that lurk in the darkness, to be his slaves in the light.<br>Only a Necromancer could stand as lord of a lifeless land, hollowed out and filled with dark power, and laugh when you called him evil.",
+
+         "hero_traits": [
+             {
+
+                 "name": "+5 <hp></hp> Hit Points"
+             }, {
+
+                 "name": "-7 <x-physical></x-physical> Melee Damage"
+             }, {
+                 "name": "+1 <x-frost></x-frost> Melee Damage"
+             }, {
+                 "name": "+1 <x-blight></x-blight> Melee Damage"
+             }, {
+                 "name": "+1 <x-spirit></x-spirit> Melee Damage"
+             }, {
+                 "slug": "heal_undead"
+             }, {
+                 "slug": "raise_corpse"
+                 }
+             ],
+
+         "buildings_class": "necromancers_dark_tower,burial_grounds,basilica"
+
+
+         },
+     {
+         "id": "rogue",
+         "name": "Rogue",
+         "description": "Rogue Lords are masters of propaganda. Any foolish citizen who refuses to accept their lies disappears without a whisper of protest in the middle of the night. Rogues employ political scandal, poison, assassinations, theft, blackmail, and bribery to appease their subjects and manipulate rival lords. Rogues often have two faces: one they show the public, the other is a ruthless schemer directing their secret police force to brutalize his enemies. Rogue troops rely on stealth and speed, patiently waiting in shadow for the perfect moment to strike.",
+
+         "hero_traits": [
+          [
+                 {
+                     "name": "+2 <defense></defense> Defense"
+    },
+                 {
+                     "name": "+1 <x-physical></x-physical> Melee Damage"
+    },
+                 {
+                     "name": "+1 <x-physical></x-physical> Ranged Damage"
+    },
+                 {
+                     "slug": "backstab"
+    }
+]
+
+     ],
+
+         "buildings_class": "rogues_palace,planar_gate,shrouded_altar"
+
+
+         },
+     {
+         "id": "sorcerer",
+         "name": "Sorcerer",
+         "description": "After the ascension of the ancient Wizard Kings at the end of the Second Age, a new breed of magicians, called Sorcerers, claimed power. Seeking to unravel the mysteries of cosmos, they’ve learned to directly tap into the mana currents and wield magic in its purest form. Sorcerers are capable of summoning magical creatures ranging from shock Wisps to extra-dimensional Eldritch Horrors. Being the most magically focused of all the classes, the Sorcerer wields a wide arsenal of combat invocations and unit and domain enchantments.<br>Sorcerer’s domains tend to be loaded with protections such as anti magic domes and guarding glyphs, while they cast corrupting magic on their enemies. Needless to say, Sorcerers favor mana over gold and rely on spells instead of brute force. With their arcane knowledge, they strive to restore the dominance once held by the Wizard Kings.",
+
+         "hero_traits": [
+             {
+
+                 "name": "+2 <resistance></resistance> Resistance"
+             }, {
+                 "slug": "channeler"
+         }
+     ],
+
+         "buildings_class": "sorcerers_conflux,mana_vault,wizards_academy"
+
+
+         },
+     {
+         "id": "theocrat",
+         "name": "Theocrat",
+         "description": "Because theocrats tend not to wield many offensive powers, it is tempting to believe that territories ruled by theocrats are easy to conquer. History has proven this to be foolishness.<br>Theocrats lead the masses by the heart. They heal, persuade, minister and convert. Their zealots are fiercely loyal, convinced to the core that any action they perform will earn them a greater reward in the afterlife. Theocrats bestow power upon their most faithful from two theological sources: the Mandate of Heaven or the terror of the Underworld.",
+
+         "hero_traits": [
+             {
+
+                 "name": "+2 <resistance></resistance> Resistance"
+             }, {
+                 "slug": "devout"
+         }
+     ],
+
+         "buildings_class": "theocrats_enclave,celestial_chamber,holy_of_holies"
+
+
+         },
+     {
+         "id": "warlord",
+         "name": "Warlord",
+         "description": "Because Warlords tend not to wield many offensive powers, it is tempting to believe that territories ruled by Warlords are easy to conquer. History has proven this to be foolishness.<br>Warlords lead the masses by the heart. They heal, persuade, minister and convert. Their zealots are fiercely loyal, convinced to the core that any action they perform will earn them a greater reward in the afterlife. Warlords bestow power upon their most faithful from two theological sources: the Mandate of Heaven or the terror of the Underworld.",
+
+         "hero_traits": [
+             {
+
+                 "name": "+2 <x-physical></x-physical> Melee Damage"
+             }, {
+                 "slug": "armored"
+         }
+     ],
+
+         "buildings_class": "warlords_command,gladiator_pit,great_beast_lair"
+
+
+         },
+     {
          "id": "draconian",
          "name": "Draconian",
          "description": "When the Human race rose to power, the race of dragons, especially the young dragons, suffered a terrible price. Among the Humans, dragons were more valuable dead than alive, hunted for glory, sport, money, and to mix in their foul-smelling potions. With no regard to the intelligent creatures that dragons might become in time, the humans devastated the dragon kin. The Dragons turned to the Wizards of Evermore, using powerful magic to create a new breed of followers. They sacrificed their remaining young for the power to keep the humans at bay. The dragons unleashed the power in their eggs, vowing that once they achieved supremacy they would reform themselves into ancient dragonkind again. <br>Draconians recover from their wounds more quickly than other races, and are resistant to fire while being more vulnerable to the cold. Most Draconian spell casters have the ability to hurl fire at their enemies.",
@@ -239,7 +368,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "dwarf",
          "name": "Dwarf",
          "description": "Dwarves are hardy mountain kin which live in the earth and rugged placed of the land. They value strength and hard work. Their minds are slow to the subtle ways of diplomacy, preferring to strike the enemy with the force of their blows over spending inordinate amounts of energy in lengthy, sleep-inducing talk. They love to create things, and find great satisfaction in creating vast structures adorned with the treasures discovered deep within the earth.<br>Dwarves are strong fighters, some preferring to forego armor and shield to wield two axes and pure rage. Their surefooted strides carry them over the high slopes they revere.",
@@ -288,7 +418,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "frostling",
          "name": "Frostling",
          "description": "Frostlings are a race of frigid humanoids that emerged from the frozen north in an age before recorded history. Pale and flue, like the ice they shape into dwellings, they can weather the most extreme cold. When the Commonwealth came to power, the Frostlings had to retreat deep into the frozen north. They blamed the Elves for the loss of their goddess, Artica, and devoted themselves to the preservation of powerful female beings that could trap the power of ice and snow. Their Ice Queens and White Witches chose the heartiest Frostlings to be their mates, and a new matriarchal society was forged.<br>Now, Frostlings are bold and barbaric, directed by their cold hearts. They embark on frequent raids to the warmer lands. Their seafaring skills, offensive fighting style and frost magic spread fear among the coastline villages they pillage.But Frostlings are even more deadly in their home arctic clime, where they build big cities carved into the very glaciers they hope will someday grow to cover the earth.",
@@ -328,7 +459,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "goblin",
          "name": "Goblin",
          "description": "Goblins squirmed forth from the bowels of the earth, far before they were supposed to, so says a myth. Goblins are filthy sadistic creatures, which delights in destruction and chaos. They bubble from the earth as a filthy mass. They desire to reclaim all dark caves from any other living thing.<br>Goblins are short and skinny, hunched over with lengthy arms that dangle near to the ground. Their skins are typically faded orange and brown, matching the earth. They have considerable eyesight underground, and are seldom taken by suprise.",
@@ -374,7 +506,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "halfling",
          "name": "Halfling",
          "description": "To Halflings every day is an idyllic dream, filled with the possibility of simple pleasures and prosperity. Halflings are masters of happiness. They seek the path to everlasting joy. As a result, there are many factions among the small folk, from the pious priests who seek joy in service and doing good to others, to the eccentric pranksters, and celebrant revelers filled with any brew that might bring them closer to a stupor of laughter and song.<br>Halflings are extraordinary cooks, and eat well. They enjoy music, and telling stories. Adept at trade, they spend their wealth as quickly as they earn it. They are content to work the land and harvest its bounty, but at times they are carried away to waste and silliness that separates them from the more proud faerie folk and Elven kin.",
@@ -411,7 +544,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "high_elf",
          "name": "High Elf",
          "description": "Elves are immortal, living a life without an end. These delicate and gracefull being are the elders of this world. Elves have close ties to nature and life. They love music, lore and dance, but are solitary beings, preferring to seek their pleasures far from the prying eyes of the world. When intruders come to their forests they seldom escape, and those who are taked from an Elven forest, after having dwelt among elves, often die of broken hearts and remorse.",
@@ -448,7 +582,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "human",
          "name": "Human",
          "description": "Humans are a strange mix of all races. Some desire to invent and build things. Others desire to rule and wield power, while others are content to sit in the shade of the trees and tell stories to children. Some humans are deeply spiritual, while others show a knack for learning powers that were thought forgotten. Their Governments are in a state of constant evolution, while every induvidual is of their own mind. Every man walks after their own pursuit with brazen disregard for the laws of nature or the order of life.",
@@ -477,7 +612,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "orc",
          "name": "Orc",
          "description": "Orcs are creatures of destruction. They live to break things down, and so it is with great difficulty that a master of Orcs must gather the tribes together and form a city. They care little for magic, but prefer to trust in the power of cruelty and strength.<br>Orcs hate things of beauty, unless that thing is cruel. When bored, they will just as readily destroy themselves as any particular race, but as a result, they are efficient workers when organized by powerful leaders, and they are accustomed to working under duress of harsh taskmasters.",
@@ -515,7 +651,8 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }, {
+         },
+     {
          "id": "tigran",
          "name": "Tigran",
          "description": "Tigrans are a race of feline humanoids, hailing from remote desert lands. Reclusive and mystical, they tend not to get involved in the conflicts of the pupulous northern lands. But when opportunity favors them, they pounce and kill without mercy.<br>Their reclusiveness has given rise to some rather extreme religious sects. A large proportion of Tigrans worship a new incarnation of the ancient Fire Wizard-god Yaka as the Sun God. Tigran ferocity is legendary. The most devout strive to unleash their inner predator, seeing mercy as weakness. They worship the sun and track the cycle of day and night; life and death. Their natural curiosity about necromancy and the passing of regal souls into kingdoms of glory in the afterlife inspires them to construct massive tombs.<br>Tigrans are lean, muscular and agile. They are clever with magic and move quickly across the battlefield, able to avoid many obstacles in combat. Many are masters of the flame, which they believe pleases their god.",
@@ -552,4 +689,4 @@
          "buildings_t3": "guard_house,riders_hall,racial_building,hospital;cathedral_of_bones,masters_guild,racial_defense_building,arcane_item_forge,great_temple,third_class_building",
          "buildings_t4": "grand_palace;palace_of_the_perished,forge_item"
 
- }]
+         }]

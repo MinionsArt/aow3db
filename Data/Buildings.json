@@ -1,7 +1,7 @@
 [{
         "slug": "barracks",
         "name": "Barracks",
-        "description": "Unlocks the production of Infantry and Archer units for a city",
+        "description": "Unlocks the production of Infantry* and Archer units for a city.<br> *Pikeman for Tigrans",
         "cost": "100 <gold></gold> Gold",
 
         "leadsto": [
@@ -13,20 +13,527 @@
         },
             {
                 "slug": "arena"
-        }],
-        "unlocksunit": [
-            {
-                "slug": "draconian_crusher"
+        }]
+
         },
+    {
+        "slug": "public_baths",
+        "name": "Public Baths",
+        "description": "City income +100 <happiness></happiness> Happiness",
+        "cost": "150 <gold></gold> Gold",
+
+        "leadsto": [
             {
-                "slug": "draconian_flamer"
+                "slug": "hospital"
+        }]
+
+        }, {
+        "slug": "hospital",
+        "name": "Hospital",
+        "description": "City income +100 <happiness></happiness> Happiness, +100 <population></population> Population<br>Garrisoned non-Undead/Machine regenerate 50% <hap></hp>",
+        "cost": "250 <gold></gold> Gold",
+
+        "leadsto": [
+            {
+                "slug": "grand_palace"
+        }]
+
+        },
+
+    {
+        "slug": "embalmers_guild",
+        "name": "Embalmers Guild",
+        "description": "Ghouls gain +7<hp></hp> + 40% <x-fire></x-fire> Fire Protection.<br>Garrisoned Undead Regen 50% <hp></hp><br> City income +50</undeadpopulation>Undead Population",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+        "leadsto": [
+            {
+                "slug": "cathedral_of_bones"
+        }]
+
+        }, {
+        "slug": "cathedral_of_bones",
+        "name": "Cathedral of Bones",
+        "description": "City income +50</undeadpopulation>Undead Population<br>Undead gain <medal></medal> Medal",
+        "cost": "150 <gold></gold> Gold 50 <mana></mana> Mana",
+
+        "leadsto": [
+            {
+                "slug": "palace_of_the_perished"
+        }],
+        "requires": [
+            {
+                "slug": "embalmers_guild"
+        }]
+
+        }, {
+        "slug": "palace_of_the_perished",
+        "name": "Palace of the Perished",
+        "description": "City income +10<gold></gold>Gold, +10<mana></mana> Mana, +5 <knowledge></knowledge> Knowledge <br>City gains +1 Domain Radius<br>Leader gains +10 <castingpoint></castingpoint> Casting Points",
+        "cost": "350 <gold></gold> Gold",
+
+        "requires": [
+            {
+                "slug": "cathedral_of_bones"
+        }]
+
+        },
+    {
+        "slug": "store_house",
+        "name": "Store House",
+        "description": "City income +100 <population></population> Population",
+        "cost": "100 <gold></gold> Gold",
+
+        "leadsto": [
+            {
+                "slug": "public_baths"
+        }]
+
+        },
+
+    {
+        "slug": "harvesters_guild",
+        "name": "Harvesters Guild",
+        "description": "City income +100 <undeadpopulation></undeadpopulation>Undead Population",
+        "cost": "40 <gold></gold> Gold 10 <mana></mana> Mana",
+
+        "leadsto": [
+            {
+                "slug": "embalmers_guild"
+        }]
+
+        },
+    {
+        "slug": "wooden_wall",
+        "name": "Wooden Wall",
+        "description": "City gains Wooden Wall",
+        "cost": "100 <gold></gold> Gold",
+
+        "leadsto": [
+            {
+                "slug": "stone_wall"
+        }]
+
+        }, {
+        "slug": "stone_wall",
+        "name": "Stone Wall",
+        "description": "City gains Stone Walls.<br>City gains +1 Domain Radius",
+        "cost": "100 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "wooden_wall"
+            }
+       ]
+
+        },
+    {
+        "slug": "builders_hall",
+        "name": "Builders' Hall",
+        "description": "City income +20 <production></production> Production.<br>Unlocks Builder and Settler",
+        "cost": "100 <gold></gold> Gold",
+
+        "leadsto": [
+            {
+                "slug": "stone_wall"
+            }
+        , {
+                "slug": "siege_workshop"
+        }, {
+                "slug": "harbor"
+        }]
+
+        },
+    {
+        "slug": "harbor",
+        "name": "Harbor",
+        "description": "Unlocks Ships (requires water + Basic Seafaring Skill)",
+        "cost": "100 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "builders_hall"
+            }
+       ]
+
+
+        }, {
+        "slug": "siege_workshop",
+        "name": "Siege Workshop",
+        "description": "City income +10 <production></production> Production.<br>Unlocks Trebuchet",
+        "cost": "150 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "builders_hall"
+            }
+       ],
+        "leadsto": [
+            {
+                "slug": "masters_guild"
+            }
+        , {
+                "slug": "racial_defense_building"
+        }]
+
+        }, {
+        "slug": "masters_guild",
+        "name": "Masters' Guild",
+        "description": "City income +15 <production></production> Production.<br>Builders gain Repair Machine Ability<br>Machines gain <medal></medal> Medal",
+        "cost": "250 <gold></gold> Gold",
+
+        "leadsto": [
+            {
+                "slug": "grand_palace"
+            }
+        ],
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "racial_defense_building",
+        "name": "Racial Defense Building",
+        "description": "Siege structure that targets enemy units",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "firestorm_pillar",
+        "name": "Firestorm Pillar",
+        "description": "Each round: 4<x-physical></x-physical> Physical 8 <x-fire></x-fire> Fire Damage to random Enemy in 1 hex radius",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "shattering_hammer",
+        "name": "Shattering Hammer",
+        "description": "Each round: 12<x-physical></x-physical> Physical 4 <x-fire></x-fire> Fire Damage to random Enemy ",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "glacial_totem",
+        "name": "Glacial Totem",
+        "description": "Each round: Chance to Chill random enemy for 3 turns (-1 <defense></defense> Defense, 20% <x-frost></x-frost> Frost Weakness)",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "filth_pit",
+        "name": "Filth Pit",
+        "description": "Each round: 6<x-physical></x-physical> Physical 8 <x-blight></x-blight> Blight Damage, applies Weakened<br>Chance to inflict Noxious Vulnerability",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "rabbit_burrows",
+        "name": "Rabbit Burrows",
+        "description": "Each round: 3 x 6<x-physical></x-physical> Physical Damage to random enemy. <br> Chance to cause Misfortune (-400 <happiness></happiness> Happiness)",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "prismatic_spire",
+        "name": "Prismatic Spire",
+        "description": "Each round: 3<x-physical></x-physical> Physical 3 <x-blight></x-blight> Blight 3<x-frost></x-frost> Frost 3<x-fire></x-fire> Fire 3<x-spirit></x-spirit> Spirit 3<x-shock></x-shock> Shock Damage to random enemy",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "bell_tower",
+        "name": "Bell Tower",
+        "description": "Each round: 7<x-physical></x-physical> Physical  4<x-spirit></x-spirit> Spirit  Damage to random enemy in 1 hex radius",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "blood_pavilion",
+        "name": "Blood Pavilion",
+        "description": "Each round: 14<x-physical></x-physical> Physical  Damage to random enemy.<br> Chance to inflict Bleeding Wounds",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "enchanted_thread",
+        "name": "Enchanted Thread",
+        "description": "Each round: Attempt to Ensnare(immobilize) random enemy",
+        "cost": "75 <gold></gold> Gold 25 <mana></mana> Mana",
+
+
+        "requires": [
+            {
+                "slug": "siege_workshop"
+        }]
+
+        }, {
+        "slug": "arcane_item_forge",
+        "name": "Arcane Item Forge",
+        "description": "City income +10 <knowledge></knowledge> Knowledge.<br> Unlocks prodction of Items",
+        "cost": "200 <gold></gold> Gold 50 <mana></mana> Mana",
+
+        "leadsto": [
+            {
+                "slug": "forge_item"
+            }
+        ],
+        "requires": [
+            {
+                "slug": "observatory"
+        }]
+
+        },
+    {
+        "slug": "laboratory",
+        "name": "Laboratory",
+        "description": "City income +10 <knowledge></knowledge> Knowledge.<br> Support units gain <medal></medal> Medal",
+        "cost": "75 <gold></gold> Gold 50 <mana></mana> Mana",
+
+        "leadsto": [
+            {
+                "slug": "observatory"
+        }, {
+                "slug": "seek_knowledge"
+        }]
+
+        },
+    {
+        "slug": "observatory",
+        "name": "Obervatory",
+        "description": "City income +10 <knowledge></knowledge> Knowledge.<br> City gains +1 Domain Radius",
+        "cost": "75 <gold></gold> Gold 50 <mana></mana> Mana",
+
+        "leadsto": [
+            {
+                "slug": "observatory"
+        }, {
+                "slug": "seek_knowledge"
+        }]
+
+        }, {
+        "slug": "seek_knowledge",
+        "name": "Seek Knowledge",
+        "description": "City income +50% <knowledge></knowledge> Knowledge.",
+        "cost": ""
+
+        },
+    {
+        "slug": "shrine",
+        "name": "Shrine",
+        "description": "City income +10 <mana></mana> Mana.",
+        "cost": "75 <gold></gold> Gold",
+
+        "leadsto": [
+            {
+                "slug": "temple"
+        }, {
+                "slug": "generate_mana"
+        }]
+
+        }, {
+        "slug": "temple",
+        "name": "Temple",
+        "description": "City income +10 <mana></mana> Mana.<br>Unlocks Support",
+        "cost": "75 <gold></gold> Gold",
+
+        "leadsto": [
+            {
+                "slug": "great_temple"
+        }],
+        "leadsto": [
+            {
+                "slug": "shrine"
+        }]
+
+        }, {
+        "slug": "great_temple",
+        "name": "Great Temple",
+        "description": "City income +10 <mana></mana> Mana.<br>Mana Capacity +100 <mana></mana> Mana",
+        "cost": "150 <gold></gold> Gold 50<mana></mana> Mana",
+
+        "leadsto": [
+            {
+                "slug": "grand_palace"
+        }],
+        "requires": [
+            {
+                "slug": "temple"
+        }]
+
+        }, {
+        "slug": "grand_palace",
+        "name": "Grand Palace",
+        "description": "City gains +100 <happiness></happiness> Happiness.<br>City gains +1 Domain Radius<br>Leader gains +10 <castingpoint></castingpoint> Casting Points",
+        "cost": "350 <gold></gold> Gold",
+
+
+        "requires": [
+            {
+                "slug": "hospital"
+        }, {
+                "slug": "masters_guild"
+        }, {
+                "slug": "observatory"
+        }, {
+                "slug": "great_temple"
+        }]
+
+        },
+    {
+        "slug": "first_class_building",
+        "name": "First Class Building",
+        "description": "",
+        "cost": "",
+
+        "leadsto": [
+            {
+                "slug": "second_class_building"
         }
         ]
+
+        }, {
+        "slug": "second_class_building",
+        "name": "Second Class Building",
+        "description": "",
+        "cost": "",
+        "requires": [
+            {
+                "slug": "first_class_building"
+        }
+        ],
+        "leadsto": [
+            {
+                "slug": "third_class_building"
+        }
+        ]
+
+        }, {
+        "slug": "third_class_building",
+        "name": "Third Class Building",
+        "description": "",
+        "cost": ""
+
+        },
+    {
+        "slug": "build_housing",
+        "name": "Build Housing",
+        "description": "City income +50% <population></population> Population.",
+        "cost": ""
+
+        }, {
+        "slug": "generate_mana",
+        "name": "Generate Mana",
+        "description": "City income +50% <mana></mana> Mana.",
+        "cost": ""
+
+        }, {
+        "slug": "forge_item",
+        "name": "Forge Item",
+        "description": "Forge an item.<br> Cost depends on abilities chosen",
+        "cost": ""
+
+        },
+    {
+        "slug": "shooting_grounds",
+        "name": "Shooting Grounds",
+        "description": "Archers gain <medal></medal> Medal",
+        "cost": "50 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "barracks"
+        }]
+
+        },
+    {
+        "slug": "guard_house",
+        "name": "Guard House",
+        "description": "Pikman gain <medal></medal> Medal",
+        "cost": "50 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "war_hall"
+        }]
+
+        },
+    {
+        "slug": "riders_hall",
+        "name": "Riders' Hall",
+        "description": "Cavalry gain <medal></medal> Medal",
+        "cost": "50 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "war_hall"
+        }]
+
+        }, {
+        "slug": "racial_building",
+        "name": "Special Racial Building",
+        "description": "Tier I & Tier II gain <medal></medal> Medal<br>Unlocks Racial Tier III",
+        "cost": "300 <gold></gold> Gold 100 <mana></mana> Mana",
+        "requires": [
+            {
+                "slug": "war_hall"
+        }]
+
+        },
+    {
+        "slug": "arena",
+        "name": "Arena",
+        "description": "Infantry gain <medal></medal> Medal",
+        "cost": "50 <gold></gold> Gold",
+        "requires": [
+            {
+                "slug": "barracks"
+        }]
+
         },
     {
         "slug": "war_hall",
         "name": "War Hall",
-        "description": "Unlocks the production of Pikeman and Cavalry units for a city",
+        "description": "Unlocks the production of Pikeman* and Cavalry units for a city. <br> *Infantry for Tigrans",
         "cost": "175 <gold></gold> Gold",
         "requires": [
             {
@@ -40,16 +547,8 @@
                 "slug": "riders_hall"
         },
             {
-                "slug": "peak_of_the_forefathers"
+                "slug": "racial_defense_building"
         }],
-        "unlocksunit": [
-            {
-                "slug": "draconian_charger"
-        },
-            {
-                "slug": "draconian_raptor"
-        }
-        ],
         "image_link": "war_hall"
         },
     {
@@ -264,7 +763,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "burrow_of_the_generate_children",
         "name": "Burrow of the Generate Children",
         "description": "Unlocks Ogre",
@@ -285,7 +785,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "stone_quarry",
         "name": "Stone Quarry",
         "description": "Dwelling income +20 <production></production>",
@@ -299,7 +800,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "fangirs_stone_ward",
         "name": "Fangir's Stone Ward",
         "description": "Friendly units gain Stone Skin during Siege",
@@ -324,7 +826,8 @@
                 "slug": "burrow_of_the_degenerate_children"
 
         }]
-    }, {
+        },
+    {
         "slug": "rock_of_ages",
         "name": "Rock of Ages",
         "description": "Produced units gain Dragon Slayer",
@@ -340,7 +843,8 @@
                 "slug": "stone_quarry"
 
         }]
-    }, {
+        },
+    {
         "slug": "menhir_of_fire",
         "name": "Menhir of Fire",
         "description": "Unlocks Fire Giant",
@@ -356,7 +860,8 @@
                 "slug": "fangirs_stone_ward"
 
         }]
-    }, {
+        },
+    {
         "slug": "menhir_of_frost",
         "name": "Menhir of Frost",
         "description": "Unlocks Frost Giant",
@@ -372,7 +877,8 @@
                 "slug": "fangirs_stone_ward"
 
         }]
-    }, {
+        },
+    {
         "slug": "menhir_of_granite",
         "name": "Menhir of Granite",
         "description": "Unlocks Stone Giant",
@@ -388,7 +894,7 @@
                 "slug": "fangirs_stone_ward"
 
         }]
-    },
+        },
     {
         "slug": "frost_dragon_ward",
         "name": "Frost Dragon Ward",
@@ -617,7 +1123,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "serpent_hall",
         "name": "Serpent Hall",
         "description": "Unlocks Naga Slither",
@@ -700,7 +1207,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "marsh_of_the_serpents",
         "name": "Marsh of the Serpents",
         "description": "Unlocks Naga Glutton & Mature Reed Serpent",
@@ -721,7 +1229,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "reptillian_oracle",
         "name": "Reptillian Oracle",
         "description": "Produced units gain <x-medal></x-medal> Medal. Dwelling gains +1 Domain radius. Units in domain gain True Sight",
@@ -736,7 +1245,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "deep_sea_trench",
         "name": "Deep Sea Trench",
         "description": "Unlocks Baby Kraken",
@@ -755,7 +1265,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "whispering_rocks",
         "name": "Whispering Rocks",
         "description": "Enemy units in domain suffer -2 <resistance></resistance>",
@@ -773,7 +1284,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "pearl_mine",
         "name": "Pearl Mine",
         "description": "Dwelling income +20 <gold></gold>",
@@ -788,7 +1300,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "seagrass_meadow",
         "name": "Seagrass Meadow",
         "description": "Stationed units have no Embark Penalty",
@@ -797,7 +1310,8 @@
 
 
 
-        }, {
+        },
+    {
         "slug": "mermaids_cove",
         "name": "Mermaid's Cove",
         "description": "Unlocks Mermaid",
@@ -820,7 +1334,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "treacherous_cliffs",
         "name": "Treacherous Cliffs",
         "description": "Unlocks Lost Mariner",
@@ -838,7 +1353,8 @@
         ]
 
 
-        }, {
+        },
+    {
         "slug": "kelp_forest",
         "name": "Kelp Forest",
         "description": "Unlocks Mermaid",
@@ -858,7 +1374,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "anemone_oasis",
         "name": "Anemone Oasis",
         "description": "Dwelling income +20 <mana></mana>",
@@ -878,7 +1395,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "sirens_rock",
         "name": "Siren's Rock",
         "description": "Unlocks Siren",
@@ -908,7 +1426,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "abyssal_ridge",
         "name": "Abyssal Ridge",
         "description": "Unlocks Lord of the Deep",
@@ -928,7 +1447,8 @@
         }
 
         ]
-        }, {
+        },
+    {
         "slug": "basin_of_wisdom",
         "name": "Basin of Wisdom",
         "description": "Dwelling income +20 <knowledge></knowledge>",
@@ -1007,15 +1527,7 @@
         "description": "Allows the production of Hunters and Shamans",
         "cost": "100 <gold></gold> 50 <mana></mana>",
 
-        "unlocksunit": [
-            {
-                "slug": "racial_hunter"
-            },
-            {
 
-                "slug": "racial_shaman"
-            }
-        ],
         "leadsto": [
             {
                 "slug": "henge"
@@ -1047,12 +1559,288 @@
         "slug": "megalith",
         "name": "Megalith",
         "description": "  This city generates an additional +20 <x-mana></x-mana> Mana and increases <x-mana></x-mana> Mana Capacity by 100 <br><br>",
-        "cost": "100 <gold></gold> 50 <mana></mana>",
+        "cost": "100 <gold></gold> 100 <mana></mana>",
 
 
         "requires": [
             {
                 "slug": "henge"
+
+        }]
+
+
+        }, {
+        "slug": "dreadnoughts_foundry",
+        "name": "Dreadnought's Foundry",
+        "description": "Allows the production of Engineer, Golem, Musketeers, and Tanks",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "blast_furnace"
+
+        }]
+
+
+        }, {
+        "slug": "blast_furnace",
+        "name": "Blast Furnace",
+        "description": " This city generates an additional +5 <x-production></x-production>Production<br>Unlocks Cannon",
+        "cost": "100 <x-gold></x-gold> 100<x-mana></x-mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "industrial_plant"
+
+        }],
+        "requires": [
+            {
+                "slug": "dreadnoughts_foundry"
+
+        }]
+
+        }, {
+        "slug": "industrial_plant",
+        "name": "Industrial Plant",
+        "description": " Unlocks Juggernaut<br>Garrisoned Machine units Regen <hp></hp>",
+        "cost": "100 <gold></gold> 100 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "blast_furnace"
+
+        }]
+
+
+        }, {
+        "slug": "necromancers_dark_tower",
+        "name": "Necromancer's Dark Tower",
+        "description": "Allows the production of Reanimator",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "blast_furnace"
+
+        }]
+
+
+        }, {
+        "slug": "burial_grounds",
+        "name": "Burial Grounds",
+        "description": " Mana capacity +100 <mana></mana><br>Unlocks Bone Collector",
+        "cost": "100 <x-gold></x-gold> 100<x-mana></x-mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "necromancers_dark_tower"
+
+        }],
+        "requires": [
+            {
+                "slug": "dreadnoughts_foundry"
+
+        }]
+
+        }, {
+        "slug": "basilica",
+        "name": "Basilica",
+        "description": " Unlocks Death Bringer<br>City income +5<mana></mana> Mana",
+        "cost": "200 <gold></gold> 50 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "burial_grounds"
+
+        }]
+
+
+        }, {
+        "slug": "rogues_palace",
+        "name": "Rogue's Tower",
+        "description": "Allows the production of Scoundrel, Bard, and Assassin units",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "planar_gate"
+
+        }]
+
+
+        }, {
+        "slug": "planar_gate",
+        "name": "Planar Gate",
+        "description": " City income +5 <mana></mana><br>Unlocks Shadow Stalker and Succubus",
+        "cost": "100 <x-gold></x-gold> 100<x-mana></x-mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "shrouded_altar"
+
+        }],
+        "requires": [
+            {
+                "slug": "rogues_palace"
+
+        }]
+
+        }, {
+        "slug": "shrouded_altar",
+        "name": "Shrouded Altar",
+        "description": "Elemental and Irregular units gain <medal></medal> Medal",
+        "cost": "50 <gold></gold> 200 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "planar_gate"
+
+        }]
+
+
+        }, {
+        "slug": "sorcerers_conflux",
+        "name": "Sorcerer's Conflux",
+        "description": "Allows the production of Apprentice units",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "mana_vault"
+
+        }]
+
+
+        }, {
+        "slug": "mana_vault",
+        "name": "Mana Vault",
+        "description": "Mana Capacity +200 <mana></mana> ",
+        "cost": "50 <x-gold></x-gold> 100<x-mana></x-mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "wizards_academy"
+
+        }],
+        "requires": [
+            {
+                "slug": "sorcerers_conflux"
+
+        }]
+
+        }, {
+        "slug": "wizards_academy",
+        "name": "Wizard's Academy",
+        "description": "Units summoned in domain gain <medal></medal> Medal",
+        "cost": "50 <gold></gold> 200 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "mana_vault"
+
+        }]
+
+
+        }, {
+        "slug": "theocrats_conclave",
+        "name": "Theocrat's Conclave",
+        "description": "Allows the production of Martyr, Crusader, and Evangelist units",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "celestial_chamber"
+
+        }]
+
+
+        }, {
+        "slug": "celestial_chamber",
+        "name": "Celestial Chamber",
+        "description": " City income +100 <happiness></happiness><br>Unlocks Exalted",
+        "cost": "100 <x-gold></x-gold> 100<x-mana></x-mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "holy_of_holies"
+
+        }],
+        "requires": [
+            {
+                "slug": "theocrats_conclave"
+
+        }]
+
+        }, {
+        "slug": "holy_of_holies",
+        "name": "Holy of Holies",
+        "description": "Mana Capacity +100 <mana></mana> <br>Unlocks Shrine of Smiting",
+        "cost": "50 <gold></gold> 200 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "celestial_chamber"
+
+        }]
+
+
+        }, {
+        "slug": "warlords_command",
+        "name": "Warlord's Command",
+        "description": "Allows the production of Berserker, Monster Hunter, and Mounted Archer units",
+        "cost": "100 <gold></gold> 50 <mana></mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "gladiator_pit"
+
+        }]
+
+
+        }, {
+        "slug": "gladiator_pit",
+        "name": "Gladiator Pit",
+        "description": " City income +100 <happiness></happiness><br>Unlocks Warbreed and Phalanx",
+        "cost": "100 <x-gold></x-gold> 100<x-mana></x-mana>",
+
+
+        "leadsto": [
+            {
+                "slug": "great_beast_lair"
+
+        }],
+        "requires": [
+            {
+                "slug": "warlords_command"
+
+        }]
+
+        }, {
+        "slug": "great_beast_lair",
+        "name": "Great Beast Lair",
+        "description": "City income +5 <knowledge></knowledge> <br>Unlocks Manticore Rider",
+        "cost": "200 <gold></gold> 300 <mana></mana>",
+
+
+        "requires": [
+            {
+                "slug": "gladiator_pit"
 
         }]
 

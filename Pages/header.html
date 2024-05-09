@@ -6,8 +6,6 @@
     <link rel="stylesheet" type="text/css" href="/aow3db/Data/style.css">
     <meta charset="UTF-8">
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Buildings.json"></script>
-    <script type="text/javascript" language="javascript" src="/aow3db/Data/UnitAbilities.json"></script>
-    <script type="text/javascript" language="javascript" src="/aow3db/Data/Units.json"></script>
     <script type="text/javascript" language="javascript" src="/aow3db/Data/Builder.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -105,29 +103,29 @@
             <button class="collapsible" id="race_governance_button"></button>
             <div class="content">
                 <p>
-                <div style="float:left; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center;color:firebrick">Patron Military</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center;color:#e85757">I. Patron Military</h2>
                     <hr>
                     <p style="font-size: 18px" id="patron_military"></p>
 
                 </div>
 
-                <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color:darkgoldenrod">Patron Economic</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color:#eee275">I. Patron Economic</h2>
                     <hr>
                     <p style="font-size: 18px" id="patron_economic"></p>
 
 
                 </div>
                 <div style="clear: both"></div><br><br>
-                <div style="float:left; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color: firebrick">Protector Military</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color: #e85757">II. Protector Military</h2>
                     <hr>
                     <p style="font-size: 18px" id="protector_military"></p>
 
                 </div>
-                <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color:darkgoldenrod">Protector Economic</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color:#eee275">II. Protector Economic</h2>
                     <hr>
                     <p style="font-size: 18px" id="protector_economic"></p>
 
@@ -135,42 +133,42 @@
                 </div>
                 <div style="clear: both"></div>
                 <br><br>
-                <div style="float:left; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color: firebrick">Champion Military</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color: #e85757">III. Champion Military</h2>
                     <hr>
                     <p style="font-size: 18px" id="champion_military"></p>
 
                 </div>
-                <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color:darkgoldenrod">Champion Economic</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color:#eee275">III. Champion Economic</h2>
                     <hr>
                     <p style="font-size: 18px" id="champion_economic"></p>
 
 
                 </div>
                 <div style="clear: both"></div><br><br>
-                <div style="float:left; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color: firebrick">Prophet Military</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color: #e85757">IV. Prophet Military</h2>
                     <hr>
                     <p style="font-size: 18px" id="prophet_military"> </p>
 
                 </div>
-                <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color:darkgoldenrod">Prophet Economic</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color:#eee275">IV. Prophet Economic</h2>
                     <hr>
                     <p style="font-size: 18px" id="prophet_economic"> </p>
 
 
                 </div>
                 <div style="clear: both"></div><br><br>
-                <div style="float:left; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color: firebrick">Deity Military</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color: #e85757">V. Deity Military</h2>
                     <hr>
                     <p style="font-size: 18px" id="deity_military"></p>
 
                 </div>
-                <div style="float:right; background-color: black; width:40%; padding: 10px; padding-left: 30px;padding-right: 30px;border: 1px solid; background-color: rgba(20, 20, 30, 1);  border-color: rgba(255, 255, 200, 0.8);">
-                    <h2 style="text-align: center; color:darkgoldenrod">Deity Economic</h2>
+                <div class="governanceEntry">
+                    <h2 style="text-align: center; color:#eee275">V. Deity Economic</h2>
                     <hr>
                     <p style="font-size: 18px" id="deity_economic"></p>
 
@@ -186,26 +184,26 @@
         <div>
             <hr>
             <p class="subheader_name">Levelups</p>
-            <button class="collapsible">Levelups</button>
+            <button class="collapsible" style="text-align: center">Show all Level Upgrades</button>
             <div class="content">
 
-                <button class="collapsible">Levelup1</button>
-                <div class="content">
+                <button class="collapsible">Level 1 - Upgrades</button>
+                <div class="content" id="levelup1">
                 </div>
-                <button class="collapsible">Levelup3</button>
-                <div class="content">
+                <button class="collapsible">Level 3 - Upgrades</button>
+                <div class="content" id="levelup3">
                 </div>
-                <button class="collapsible">Levelup5</button>
-                <div class="content">
+                <button class="collapsible">Level 5 - Upgrades</button>
+                <div class="content" id="levelup5">
                 </div>
-                <button class="collapsible">Levelup7</button>
-                <div class="content">
+                <button class="collapsible">Level 7 - Upgrades</button>
+                <div class="content" id="levelup7">
                 </div>
-                <button class="collapsible">Levelup9</button>
-                <div class="content">
+                <button class="collapsible">Level 9 - Upgrades</button>
+                <div class="content" id="levelup9">
                 </div>
-                <button class="collapsible">Levelup11 -13</button>
-                <div class="content">
+                <button class="collapsible">Level 11-13 - Upgrades</button>
+                <div class="content" id="levelup11">
                 </div>
             </div>
         </div>

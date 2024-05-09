@@ -216,7 +216,8 @@ a {
 
 #menu li:hover > a,
 #menu li a:hover {
-    background: #111
+    text-shadow: 1px 1px 10px blue;
+    color: aqua;
 }
 
 #menu input {
@@ -247,11 +248,14 @@ a {
 #menu ul.menus {
     height: auto;
     width: 180px;
-    background: #111;
+    background-color: #00000087;
+    border-image: url(/aow3db/Interface/panel9slice.png);
+    border-image-slice: 80 130 fill;
+    border-image-width: 22px;
     position: absolute;
     z-index: 99;
     display: none;
-    border: 0;
+
 }
 
 .medals {
@@ -291,9 +295,7 @@ a {
     right: 9px
 }
 
-#menu ul.menus a:hover {
-    background: #333;
-}
+#menu ul.menus a:hover {}
 
 #menu ul.menus .submenu {
     display: none;
@@ -392,17 +394,19 @@ p {
     font-family: 'Header';
     color: white;
     cursor: pointer;
-    padding: 2px 2px;
+    /* padding: 2px 2px; */
     font-size: 16px;
+    width: auto;
     border: none;
     text-align: left;
     outline: 0;
-    min-height: 35px;
+    min-height: 32px;
     border-width: 10px;
-    background-color: black;
+    background-color: #2d3c4b;
     border-image: url(/aow3db/Interface/panel9slice.png);
     border-image-slice: 80 130 fill;
-    border-image-width: 22px;
+    border-image-width: 30px;
+    padding: 14px;
 }
 
 .active,
@@ -412,6 +416,19 @@ p {
 
 .collapsibleUnits:after {
     content: '▼';
+}
+
+.governanceEntry {
+
+    float: left;
+    width: 40%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-image: url(/aow3db/Interface/panel9slice.png);
+    border-image-slice: 130 100 fill;
+    border-image-width: 30px;
+    background-color: transparent;
 }
 
 .shadow {
@@ -532,6 +549,25 @@ hr {
     top: -3px;
     height: 1.5px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #b6af92, rgba(0, 0, 0, 0));
+}
+
+.levelupList {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+    background-color: black;
+    margin: 5px;
+    align-items: center;
+}
+
+.levelupList2 {
+    display: flex;
+    justify-content: space-between;
+    width: 71%;
+    margin-right: 100px;
+    align-items: center;
 }
 
 .list_background {
@@ -727,8 +763,8 @@ hr {
     background-color: black;
     color: #fff;
 
-    border-radius: 10px 0px 10px 0px;
-    border: 1px solid darkgrey;
+
+    border: 2px solid #8080808a;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     padding: 10px;
     position: absolute;
@@ -924,7 +960,8 @@ hr {
     visibility: visible;
 }
 
-x-blight {
+x-blight,
+blight {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/blight.png);
@@ -953,7 +990,8 @@ x-physical_def {
 }
 
 
-x-fire {
+x-fire,
+fire {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/fire.png);
@@ -983,84 +1021,96 @@ x-spirit_res {
 
 }
 
-x-spirit {
+x-spirit,
+spirit {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/spirit.png);
     position: relative;
 }
 
-x-shock {
+x-shock,
+shock {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/shock.png);
     position: relative;
 }
 
-x-physical {
+x-physical,
+physical {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/physical.png);
     position: relative;
 }
 
-x-turn {
+x-turn,
+turn {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/turn.png);
     position: relative;
 }
 
-x-resistance {
+x-resistance,
+resistance {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/resistance.png);
     position: relative;
 }
 
-x-defense {
+x-defense,
+defense {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/defense.png);
     position: relative;
 }
 
-x-gold {
+x-gold,
+gold {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/gold.png);
     position: relative;
 }
 
-x-mana {
+x-mana,
+mana {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/mana.png);
     position: relative;
 }
 
-x-happiness {
+x-happiness,
+happiness {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/happiness.png);
     position: relative;
 }
 
-x-hp {
+x-hp,
+hp {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/hp.png);
     position: relative;
 }
 
-x-mp {
+x-mp,
+mp {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/mp.png);
     position: relative;
 }
 
-x-production {
+x-production,
+production {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/production.png);
@@ -1068,14 +1118,16 @@ x-production {
 }
 
 
-x-frost {
+x-frost,
+frost {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/frost.png);
     position: relative;
 }
 
-x-medal_trooper {
+x-medal_trooper,
+medal {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/medal_trooper.png);
@@ -1120,7 +1172,8 @@ x-medal_champion {
     position: relative;
 }
 
-x-xp {
+x-xp,
+xp {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/xp.png);
@@ -1129,7 +1182,9 @@ x-xp {
 
 }
 
-x-morale {
+x-morale,
+morale,
+happiness {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/happiness.png);
@@ -1138,7 +1193,8 @@ x-morale {
 
 }
 
-x-population {
+x-population,
+population {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/population.png);
@@ -1147,7 +1203,9 @@ x-population {
 
 }
 
-x-undead_population {
+x-undead_population,
+undead_population,
+undeadpopulation {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/undead_pop.png);
@@ -1156,7 +1214,9 @@ x-undead_population {
 
 }
 
-x-casting_points {
+x-casting_points,
+castingpoints,
+castingpoint {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/casting_points.png);
@@ -1165,7 +1225,8 @@ x-casting_points {
 
 }
 
-x-casting {
+x-casting,
+casting {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/casting_points.png);
@@ -1175,7 +1236,8 @@ x-casting {
 }
 
 
-x-knowledge {
+x-knowledge,
+knowledge {
     max-height: 20px;
     top: 5px;
     content: url(../Icons/Text/knowledge.png);
